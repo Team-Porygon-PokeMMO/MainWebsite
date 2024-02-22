@@ -1,3 +1,6 @@
+# Team Porygon Main Website
+[![Netlify Status](https://api.netlify.com/api/v1/badges/017c4ae5-9dd5-4df9-9194-6df14ceece2d/deploy-status)](https://app.netlify.com/sites/teamporygon/deploys)
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
