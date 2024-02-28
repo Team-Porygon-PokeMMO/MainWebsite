@@ -1,5 +1,29 @@
+<script setup>
+import { contributors } from '~/src/data.json'
+const colorMode = useColorMode()
+const formatContributors = () => {
+    return contributors.join(', ')
+}
+const isDark = computed({
+    get() {
+        return colorMode.value === 'dark'
+    },
+    set() {
+        colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
+    }
+})
+</script>
+
 <template>
-    <UContainer class="bg-neutral-800 w-full">
-        Footer
-    </UContainer>
+    <footer class="p-2 shadow-md">
+        <UContainer>
+            <div>
+                <div>
+                    Brought to you by: {{ formatContributors() }}
+                    <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray"
+                        variant="ghost" aria-label="Theme" @click="isDark = !isDark" />
+                </div>
+            </div>
+        </UContainer>
+    </footer>
 </template>
