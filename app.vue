@@ -1,26 +1,7 @@
 <template>
-  <body>
-    <div id="app">
-      <h1>{{ msg }}</h1>
-      <img :src="signatureLink" alt="Pory Team Signature" />
-    </div>
-  </body>
+  <div class="flex flex-col h-screen justify-between">
+    <NavBar class="h-8 w-full" />
+    <NuxtPage class="mb-auto h-10 w-full" />
+    <Footer class="h-7 w-full" />
+  </div>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      msg: 'Team Porygon (PokeMMO) WebSite under construction',
-      signatureLink: 'https://i.ibb.co/fq874Kt/Pory-Team-Signature.gif'
-    }
-  }
-}
-</script>
-
-<style>
-body {
-  background-color: black;
-  color: white;
-}
-</style>
