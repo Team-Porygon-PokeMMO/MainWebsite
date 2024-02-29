@@ -1,29 +1,20 @@
 import type { Config } from 'tailwindcss'
 const colors = require('tailwindcss/colors')
+const srcDir = 'src'
 
 export default <Partial<Config>>{
     darkMode: 'class',
-    theme: {
-        extend: {
-            colors: {
-                red: {
-                    100: '#FF0000',
-                    200: '#FF0000',
-                }
-            }
-        },
-        colors: {
-            transparent: 'transparent',
-            current: 'currentColor',
-            black: colors.black,
-            white: colors.white,
-            gray: colors.gray,
-            emerald: colors.emerald,
-            indigo: colors.indigo,
-            yellow: colors.yellow,
-        },
-    },
     content: [
-        'docs/content/**/*.md'
+        `${srcDir}/components/**/*.{vue,js,ts}`,
+        `${srcDir}/layouts/**/*.vue`,
+        `${srcDir}/pages/**/*.vue`,
+        `${srcDir}/composables/**/*.{js,ts}`,
+        `${srcDir}/plugins/**/*.{js,ts}`,
+        `${srcDir}/utils/**/*.{js,ts}`,
+        `${srcDir}/App.{js,ts,vue}`,
+        `${srcDir}/app.{js,ts,vue}`,
+        `${srcDir}/Error.{js,ts,vue}`,
+        `${srcDir}/error.{js,ts,vue}`,
+        `${srcDir}/app.config.{js,ts}`
     ]
 }

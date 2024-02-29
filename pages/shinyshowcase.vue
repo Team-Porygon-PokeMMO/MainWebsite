@@ -6,6 +6,3 @@
         <h3>WIP</h3>
     </UContainer>
 </template>
-
-<script setup>
-</script>

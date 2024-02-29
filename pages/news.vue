@@ -6,7 +6,3 @@
         <h3>WIP</h3>
     </UContainer>
 </template>
-
-<script setup>
-import { members } from '~/src/data.json'
-</script>
