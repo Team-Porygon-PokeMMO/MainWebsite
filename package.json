@@ -12,6 +12,7 @@
   "dependencies": {
     "@nuxt/ui": "^2.14.1",
     "nuxt": "^3.10.3",
+    "nuxt-storage": "^1.2.2",
     "vue": "^3.4.19",
     "vue-router": "^4.3.0"
   }
