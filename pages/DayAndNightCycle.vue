@@ -114,7 +114,6 @@ export default {
 <template>
     <div class="container mx-auto">
         <h1>Day and Night Cycle</h1>
-        <h2>Current Cycle: {{ currentTime }}</h2>
         <h2 v-for="cycle in getNextCycles()" :key="cycle.cycle" :class="{ isActive: cycle.current }">
         {{ cycle.cycle }} {{ getTimeLeft(cycle.cycle, cycle.time) }} 
         </h2>
