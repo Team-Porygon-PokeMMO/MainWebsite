@@ -52,7 +52,6 @@ else {
     if (currentTime >= dayStart && currentTime >= nightStart) {
         dayStart = addHoursToDate(dayStart, 6);
     }
-    console.dir(dayEnd)
     if (currentTime >= nightStart && currentTime >= morningStart) {
         nightStart = addHoursToDate(nightStart, 6);
     }
