@@ -62,7 +62,8 @@ export default {
                 newCurrentGameTime = Cycle.MORNING
             else if (inGameHours < 21)
                 newCurrentGameTime = Cycle.DAY
-            newCurrentGameTime = Cycle.NIGHT
+            else
+                newCurrentGameTime = Cycle.NIGHT
             this.currentGameTime = newCurrentGameTime
         }
     }
