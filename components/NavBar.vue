@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const links = [
     { label: 'Home', to: '/' },
-    // { label: 'Day and Night Cycle', to: '/DayAndNightCycle' },
+    { label: 'PokeMMO Clock and Time', to: '/DayAndNightCycle' },
     { label: 'Hatch Cycle Timer', to: '/HatchCycleTimer' },
     { label: 'PokéMMO', to: 'https://pokemmo.eu/', target: "_blank" },
     { label: 'Forums Club', to: 'https://forums.pokemmo.com/index.php?/clubs/219-pory-porygon/', target: "_blank" },
