@@ -114,7 +114,8 @@ export default {
                                     <div v-show="gymTrainer.IsVisible" class="m-2">
                                         <ul>
                                             <li v-for="lead in gymTrainer.Leads" :key="lead.Name">
-                                                <a @click="toggleView(lead)">{{ lead.Name }} {{ lead.IsVisible ? "-" : "+" }}</a>
+                                                <a @click="toggleView(lead)">{{ lead.Name }} {{ lead.IsVisible ? "-" :
+                                                    "+" }}</a>
                                                 <div v-show="lead.IsVisible" class="m-2">
                                                     <ul>
                                                         <li v-for="step in lead.Steps" :class="step.Classes.join(' ')">
