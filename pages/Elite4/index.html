@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu</title>
+  <!-- Include Vue.js library -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+  <!-- Include compiled CSS from style.css -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app" class="tile is-ancestor">
+  <section class="section">
+    <div class="box" style="width: 250px;">
+      <aside class="menu">
+        <p class="menu-label">
+          Region
+        </p>
+        <ul class="menu-list">
+          <!-- region options -->
+          <li v-for="(region, index) in regions" :key="index">
+            <a @click="toggleRegion(index)">{{ region.name }} - Click to expand</a>
+            <expanding v-show="region.visible">
+              <ul>
+                <li v-for="(option, optionIndex) in region.options" :key="optionIndex">
+                  <a @click="toggleOption(region, option)">{{ option }}</a>
+                  <expanding v-show="region.selectedOption === option && option === 'Will'">
+                    <ul>
+                      <li v-for="pokemon in willLeadPokemon" :key="pokemon">
+                        <a @click="togglePokemon(pokemon)">{{ pokemon }}</a>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Absol'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If opponent uses Night Slash, switch to Poliwrath X.Speed + Belly Drum</a></li>
+                            <li><a>If opponent uses Close Combat, switch to Chandelure x4 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick as it switches into Absol/Flareon, then switch to Chandelure x4 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches out into Empoleon, switch into Blissey and use Softboiled. Switch into Chandelure x4 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Altaria'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If opponent uses Fire Blast, switch immediately into Chandelure Calm Mind</a></li>
+                            <li><a>If opponent stays, x3 Calm Mind + X.Speed + X.Defend</a></li>
+                            <li><a>If opponent switches out into Empoleon while you set up, immediately switch to Poliwrath then switch to the second Metagross Trick;</a></li>
+                            <li><a>If opponent switches back into Altaria, switch into Chandelure x4 Calm Mind + X.Speed + X.Defend</a></li>
+                            <li><a>If opponent stays, switch back to Poliwrath Belly Drum + X.Speed</a></li>
+                            <li><a>If opponent uses Flamethrower, switch into Chandelure x3 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches out into Clefable, switch to Blissey and use Trick as it switches out into Lucario. Switch into Chandelure x5 Calm Mind + X.Speed.</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Bronzong'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If it switches out into Exeggutor, then switch to Blissey and use Softboiled.</a></li>
+                            <li><a>If it switches into Absol, switch into Chandelure x4 Calm Mind + X.Speed</a></li>
+                            <li><a>If it switches into Flareon, switch into Chandelure then use Flamethrower to kill Empoleon. Switch into Blissey and use Softboiled;</a></li>
+                            <li><a>If it switches into Absol, switch into Chandelure x4 Calm Mind + X.Speed</a></li>
+                            <li><a>If it switches into Flareon, switch into Chandelure x3 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Claydol'">
+                          <ul>
+                            <li><a>Switch to Blissey</a></li>
+                            <li><a>Use Trick as it switches into Girafarig. Use Stealth Rock and switch into Chandelure x4 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Clefable'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If opponent uses Seismic Toss, immediately switch into Chandelure x5 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent uses Fire Blast, immediately switch into Chandelure x3 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Golurk, switch to Excadrill ×2 Swords Dance + X.Speed</a></li>
+                            <li><a>If opponent switches into Umbreon, immediately switch to Blissey and use Trick as it switches out into Golurk. Switch into Chandelure x6 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Chansey'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>Then use Stealth Rock, switch to Chandelure ×2 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Electivire'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If you get Life Orb, use Stealth Rock and immediately switch to Chandelure x3 Calm Mind + X.Speed</a></li>
+                            <li><a>If you get Choice Scarf, switch to Blissey and use Trick then immediately switch to Chandelure x4 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Chansey, use Stealth Rock then switch to Chandelure ×2 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Umbreon, switch to Blissey and use Trick as it switches into Lucario. Switch to Chandelure x4 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Espeon'">
+                          <ul>
+                            <li><a>Switch to Blissey and use Trick as it switches out into Lucario.</a></li>
+                            <li><a>Switch to Chandelure x4 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Empoleon'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If opponent doesn’t switch out and uses Hydro Pump/Surf, switch to Poliwrath Belly Drum + X.Speed</a></li>
+                            <li><a>If opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick;</a></li>
+                            <li><a>If opponent switches into Absol, then switch to Chandelure x4 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Flareon, immediately switch to Chandelure and then use Flamethrower. Then switch to Blissey and use Softboiled.</a></li>
+                            <li><a>If opponent switches to Absol, then switch to Chandelure x4 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches to Flareon, switch to Chandelure x3 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches out into Chansey, use Stealth Rock then switch to Chandelure ×2 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Golurk, switch into Excadrill 2x Swords Dance + X.Speed</a></li>
+                            <li><a>If opponent switches into Umbreon, immediately switch to Blissey and use Trick as it switches out into Golurk/Lucario. Switch into Chandelure x6 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Exeggutor'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>Switch to Blissey. Use Softboiled;</a></li>
+                            <li><a>If it switches to Absol, switch to Chandelure ×4 Calm Mind + X.Speed</a></li>
+                            <li><a>If it switches into Flareon, switch to Chandelure then switch to Blissey and use Softboiled;</a></li>
+                            <li><a>If it switches into Absol, switch to Chandelure ×4 Calm Mind + X.Speed</a></li>
+                            <li><a>If it switches into Flareon, switch to Chandelure ×3 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Flareon'">
+                          <ul>
+                            <li><a>Switch to Chandelure ×2 Calm Mind + X.Speed.</a></li>
+                            <li><a>If Empoleon is sent out, use Flamethrower to kill. Switch back into Blissey and use Softboiled.</a></li>
+                            <li><a>If opponent switches into Absol, switch to Chandelure ×4 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Flareon, switch to Chandelure ×3 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Gardevoir'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If opponent uses Shadow Ball, switch to Blissey and use Trick. Switch to Chandelure ×5 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Altaria, switch to Chandelure ×3 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Clefable, switch to the second Metagross and use Trick. Switch to Chandelure ×5 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Girafarig'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If opponent stays, 3x Swords Dance + X.Speed</a></li>
+                            <li><a>If opponent switches into Mantine, switch into Blissey and use Trick. Switch into Chandelure ×4 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Golduck'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>Switch immediately to Blissey and use Trick as it locks Lucario.</a></li>
+                            <li><a>Switch to Chandelure ×4 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Golurk'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If you get Leftovers, switch to Excadrill ×2 Swords Dance + X.Speed</a></li>
+                            <li><a>If you get Expert Belt, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Grumpig'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>Stealth Rock then swap into Chandelure x2 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Hypno'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If opponent switches out into Golurk, switch to Excadrill ×2 Swords Dance + X.Speed</a></li>
+                            <li><a>If opponent switches out into Umbreon, switch to Blissey Trick as it switches back to Golurk. Switch back to Chandelure ×6 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Jolteon'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>Switch to Excadrill into Stealth Rock. 2x Swords Dance + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Jynx'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If opponent uses Hidden Power, switch in Chandelure x2 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Chansey, use Stealth Rock. Switch in Chandelure x2 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Liepard'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If opponent stays, switch to Blissey and use Trick it switches out to Golurk. Switch in Chandelure x2 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Golurk, switch into Excadrill Stealth Rock into 2x Swords Dance + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Lucario'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If opponent uses Aura Sphere, use Stealth Rock then switch to Chandelure ×2 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent uses Close Combat, switch to Chandelure ×5 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches out to Altaria, switch to Chandelure ×3 Calm Mind + X.Speed </a></li>
+                            <li><a>If opponent switches out to Clefable, switch to Blissey then use Trick as it locks Lucario. Switch into Chandelure ×5 Calm Mind + X.Speed </a></li>
+                            <li><a>If opponent switches out into Umbreon, switch to Blissey and use Trick. Switch to Chandelure ×4 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Mantine'">
+                          <ul>
+                            <li><a>Switch to Blissey then use trick</a></li>
+                            <li><a>Use Stealth Rock then switch to Chandelure ×4 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Magnezone'">
+                          <ul>
+                            <li><a>Switch to Blissey then use trick</a></li>
+                            <li><a>Use Stealth Rock then switch to Chandelure ×4 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Slowbro'">
+                          <ul>
+                            <li><a>Switch to Blissey then use trick</a></li>
+                            <li><a>Use Stealth Rock then switch to Chandelure ×2 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Typhlosion'">
+                          <ul>
+                            <li><a>TWO OPTIONS</a></li>
+                            <li><a>Switch to Chandelure ×4 Calm Mind + X.Speed, use recovery items if necessary OR Switch to Blissey and use Trick as it switches out into Girafarig. Use Stealth Rock then switch into Chandelure ×4 Calm Mind + X.Speed </a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Umbreon'">
+                          <ul>
+                            <li><a>Switch to Blissey then use trick</a></li>
+                            <li><a>If opponent switches out into Golurk, switch into Chandelure ×6 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches out into Lucario, switch into Chandelure ×4 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                        <expanding v-show="selectedPokemon === pokemon && pokemon === 'Xatu'">
+                          <ul>
+                            <li><a>Use Trick</a></li>
+                            <li><a>If you got Assault Vest, switch to Chandelure ×4 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches out into Lucario, switch into Chandelure ×4 Calm Mind + X.Speed</a></li>
+
+                            <li><a>If you got Choice Specs, switch to Chandelure ×2 Calm Mind + X.Speed</a></li>
+                            <li><a>If you got Leftovers, switch into Chandelure x5 Calm Mind + X.Speed (Crit Foul Play from Liepard doesn’t kill, no priority)</a></li>
+                            <li><a>If opponent switches switches into Altaria, switch into Chandelure ×3 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches to Bronzong, switch to Blissey as it switches out into Exeggutor and use Trick as it switches out into Flareon. Switch out into Chandelure ×4 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Chansey, use Stealth Rock then switch into Chandelure ×2 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Claydol, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed 
+                              If it switches into Mantine while you set up, switch to Blissey Trick as it switches out into Girafarig. Then switch into Chandelure ×4 Calm Mind + X.Speed</a></li>
+                            <li><a>If opponent switches into Golurk;
+                                and you get Leftovers, switch to Excadrill ×2 Swords Dance + X.Speed
+                                and you get Expert Belt, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed</a></li>
+                            <li><a>If opponent switches out into Umbreon, switch to Blissey and use Trick as it switches into Lucario. Switch into Chandelure ×6 Calm Mind + X.Speed</a></li>
+                          </ul>
+                        </expanding>
+                      </li>
+                    </ul>
+                  </expanding>
+                </li>
+              </ul>
+            </expanding>
+          </li>
+        </ul>
+      </aside>
+    </div>
+  </section>
+</div>
+
+<!-- Include script.js -->
+<script src="script.js"></script>
+
+</body>
+</html>
