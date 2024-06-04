@@ -1977,321 +1977,633 @@
                             "Description": "Step 2b: If Opponent switches out into Salamence, use Stealth Rock then switch in Chandelure ×3 Calm Mind + X.Speed then sweep",
                             "Classes": []
                         }
-            ]
-        },
-        {
-            "Name": "Blastoise",
-            "IsVisible": false,
-            "Steps": [
-                {
-                    "Description": "Step 1: Use Trick",
-                    "Classes": []
-                },
-                {
-                    "Description": "Step 2a: If Opponent switches out to Quagsire, switch to Excadrill Stealth Rock then ×3 Swords Dance + X.Speed then sweep",
-                    "Classes": [
-                        {
-                            "Description": "Step 2a.a: If Opponent switches out into Salamence after you use Stealth Rock, switch to Blissey and use Trick as it switches out into Absol Close Combat. Switch in Chandelure ×3 Calm Mind + X.Speed then sweep",
-                            "Classes": []
-                        }
                     ]
                 },
                 {
-                    "Description": "Step 2b: If Opponent switches out into Salamence, switch to Blissey and use Trick as it switches out into Absol Close Combat. Switch in Chandelure ×5 Calm Mind + X.Speed then sweep",
-                    "Classes": []
-                }
-    ]
-},
-{
-    "Name": "Electrode",
-    "IsVisible": false,
-    "Steps": [
-        {
-            "Description": "Step 1: Use Trick, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
-            "Classes": [
-                {
-                    "Description": "Step 1.a: If Opponent switches out into Garchomp after using Trick, switch to Blissey and use Trick",
-                    "Classes": [
+                    "Name": "Blastoise",
+                    "IsVisible": false,
+                    "Steps": [
                         {
-                            "Description": "Step 1.a.a: If Opponent uses Earthquake, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
+                            "Description": "Step 1: Use Trick",
                             "Classes": []
                         },
                         {
-                            "Description": "Step 1.a.a: If Opponentswitches out into Feraligatr, switch into Poliwrath Belly Drum + X.Speed then sweep",
+                            "Description": "Step 2a: If Opponent switches out to Quagsire, switch to Excadrill Stealth Rock then ×3 Swords Dance + X.Speed then sweep",
+                            "Classes": [
+                                {
+                                    "Description": "Step 2a.a: If Opponent switches out into Salamence after you use Stealth Rock, switch to Blissey and use Trick as it switches out into Absol Close Combat. Switch in Chandelure ×3 Calm Mind + X.Speed then sweep",
+                                    "Classes": []
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches out into Salamence, switch to Blissey and use Trick as it switches out into Absol Close Combat. Switch in Chandelure ×5 Calm Mind + X.Speed then sweep",
                             "Classes": []
                         }
                     ]
-                }
-            ]
-        }
-        
-]
-},
-{
-    "Name": "Excadrill",
-    "IsVisible": false,
-    "Steps": [
-        {
-            "Description": "Trick then switch into Excadrill Stealth Rock then x2 Swords Dance + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        }
-    ]
-},
-{
-    "Name": "Feraligatr",
-    "IsVisible": false,
-    "Steps": [
-        {
-            "Description": "Step 1: Use Trick",
-            "Classes": [],
-            "Substeps": []
-        },
-        {
-            "Description": "Step 2a: If Opponent switches out into Garchomp, immediately switch into Excadrill Stealth Rock",
-            "Classes": [],
-            "Substeps": [
+                },
                 {
-                "Description": "Step 2a.a: If Opponent does not switch out x2 Swords Dance + X.Speed then sweep",
-                "Classes": [],
-                "Substeps": []
-            },
-            {
-                "Description": "Step 2a.b: If Opponent switches out into Feraligatr, switch into Poliwrath Belly Drum + X.Speed then sweep",
-                "Classes": [],
-                "Substeps": []
-            }
-        ]
-        },
-        {
-            "Description": "Step 2b: If Opponent switches out into Rhyperior, switch into Excadrill Stealth Rock then x2 Swords Dance + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        },
-        {
-            "Description": "Step 2c: If Opponent switches out to Umbreon, switch to Blissey and use Stealth Rock as it switches out into Feraligatr. Switch into Poliwrath Belly Drum + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        }
-    ]
-},
-{
-    "Name": "Flareon",
-    "IsVisible": false,
-    "Steps": [
-        {
-            "Description": "Switch in Chandelure and switch into Metagross Stealth Rock. Then switch back to Chandelure ×3 Calm Mind + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        }
-    ]
-},
-{
-    "Name": "Gallade",
-    "IsVisible": false,
-    "Steps": [
-        {
-            "Description": "Trick as it switches out into Rhyperior. Switch into Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        }
-    ]
-},
-{
-    "Name": "Garchomp",
-    "IsVisible": false,
-    "Steps": [
-        {
-            "Description": "Step 1: Trick then switch into Excadrill Stealth Rock",
-            "Classes": [],
-            "Substeps": []
-        },
-        {
-            "Description": "Step 2a: If Opponent does not switch out x2 Swords Dance + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        },
-        {
-            "Description": "Step 2b: If Opponent switches out into Feraligatr, switch into Poliwrath Belly Drum + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        }
-    ]
-},
-{
-    "Name": "Gengar",
-    "IsVisible": false,
-    "Steps": [
-        {
-            "Description": "Step 1: Switch to Blissey and use Trick",
-            "Classes": [],
-            "Substeps": []
-        },
-        {
-            "Description": "Step 2a: If Opponent switches out to Absol, then switch to Chandelure ×5 Calm Mind + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        },
-        {
-            "Description": "Step 2b: If Opponent Gengar doesn't switch out after using Trick, switch back to Metagross Trick as it switches back to Absol/Quagsire. Switch to Excadrill Stealth Rock into ×3 Swords Dance + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        }
-    ]
-},
-{
-    "Name": "Gyarados",
-    "IsVisible": false,
-    "Steps": [
-        {
-            "Description": "Step 1: Switch to the second Metagross",
-            "Classes": [],
-            "Substeps": []
-        },
-        {
-            "Description": "Step 2a: If Opponent uses Earthquake, switch to Excadrill Stealth Rock. Switch to Blissey then switch to Metagross. Use Trick then switch back into Excadrill ×2 Swords Dance + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        },
-        {
-            "Description": "Step 2b: If Opponent uses Waterfall, use Thunder Punch to KO’it. Out comes Rhyperior. Switch to Chandelure then switch to Blissey and use Trick as it locks Earthquake. switch into Excadrill ×2 Swords Dance + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        },
-        {
-            "Description": "Step 2b: If Opponent switches to Excadrill comes out, use Trick then Stealth Rock. Then switch into Excadrill ×2 Swords Dance + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        }
-    ]
-},
-{
-    "Name": "Honchkrow",
-    "IsVisible": false,
-    "Steps": [
-        {
-            "Description": "Step 1: Use Trick",
-            "Classes": [],
-            "Substeps": []
-        },
-        {
-            "Description": "Step 2a: If Opponent switches out into Rhyperior, switch into Excadrill Stealth Rock then x2 Swords Dance + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        },
-        {
-            "Description": "Step 2b: If Opponent switches out into Vileplume, use Stealth Rock then switch into Blissey and use Trick as it switches out to Honchkrow once more. Switch into Chandelure 3x Calm Mind + X.Speed then sweep",
-            "Classes": [],
-            "Substeps": []
-        }
-    ]
-},
-{
-    "Name": "Houndoom",
-    "IsVisible": false,
-    "Steps": [
-        {
-            "Description": "Step 1: Immediately switch to Blissey",
-            "Classes": [],
-            "Substeps": []
-        },
-        {
-            "Description": "Step 2a: If Houndoom gets damaged by Life Orb, use Stealth Rock",
-            "Classes": [],
-            "Substeps": [
-                {
-                    "Description": "Step 2a.a: If Opponent switches out to Rhyperior,switch into Excadrill then switch to Blissey Trick",
-                    "Classes": [],
-                    "Substeps": [
+                    "Name": "Electrode",
+                    "IsVisible": false,
+                    "Steps": [
                         {
-                        "Description": "Step 2a.a.a: If Opponent uses Earthquake, switch into Chandelure ×3 Calm Mind + X.Speed then sweep",
-                        "Classes": [],
-                        "Substeps": []
-                    },
-                    {
-                        "Description": "Step 2a.a.b: If Opponent uses Stone Edge, switch into the second Metagross and use Trick. Switch to Chandelure ×3 Calm Mind + X.Speed then sweep",
-                        "Classes": [],
-                        "Substeps": []
-                    }
-                ]
-                }
-            ]
-        },
-        {
-            "Description": "Step 2b: Houndoom doesn’t take any damage after attacking, immediately switch back to Metagross",
-            "Classes": [],
-            "Substeps": [
-                {
-                    "Description": "Step 2b.a: If Opponent switches into Absol",
-                    "Classes": [],
-                    "Substeps": [
-                         {
-                        "Description": "Step 2b.a.a: and it switches into Quagsire, switch into Excadrill Stealth Rock then x3 Swords Dance + X.Speed then sweep",
-                        "Classes": [],
-                        "Substeps": []
-                    },
-                    {
-                        "Description": "Step 2b.a.b: and it switches into Salamence, use Stealth Rock then switch into Chandelure ×3 Calm Mind + X.Speed then sweep",
-                        "Classes": [],
-                        "Substeps": []
-                    }
-                ]
+                            "Description": "Step 1: Use Trick, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
+                            "Classes": [
+                                {
+                                    "Description": "Step 1.a: If Opponent switches out into Garchomp after using Trick, switch to Blissey and use Trick",
+                                    "Classes": [
+                                        {
+                                            "Description": "Step 1.a.a: If Opponent uses Earthquake, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
+                                            "Classes": []
+                                        },
+                                        {
+                                            "Description": "Step 1.a.a: If Opponentswitches out into Feraligatr, switch into Poliwrath Belly Drum + X.Speed then sweep",
+                                            "Classes": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                    "Description": "Step 2b.b: If Opponent switches into Excadrill is sent out, use Trick, locking Earthquake. Switch into Excadrill then use Stealth Rock",
-                    "Classes": [],
-                    "Substeps": [
+                    "Name": "Excadrill",
+                    "IsVisible": false,
+                    "Steps": [
                         {
-                        "Description": "Step 2b.b.a: If Opponent does not switch, 2x Swords Dance + X.Speed then sweep",
-                        "Classes": [],
-                        "Substeps": []
-                    },
-                    {
-                        "Description": "Step 2b.b.b: If Opponent switches out into Slowbro, switch into Poliwrath Belly Drum + X.Speed then sweep",
-                        "Classes": [],
-                        "Substeps": []
-                    }
-                ]
+                            "Description": "Trick then switch into Excadrill Stealth Rock then x2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
                 },
                 {
-                    "Description": "Step 2b.c: If Opponent switches out into Primeape, use Stealth Rock as it switches out into Hydreigon. Switch into Chandelure 3x Calm Mind + X.Speed then sweep",
-                    "Classes": [],
-                    "Substeps": []
-                },
-                {
-                    "Description": "Step 2b.d: If Opponent switches out into Excadrill is sent out, switch back to Metagross then use Trick, locking Earthquake. Switch into Excadrill then use Stealth Rock. x2 Swords Dance + X.Speed then sweep",
-                    "Classes": [],
-                    "Substeps": []
-                },
-                {
-                    "Description": "Step 2b.e: If Opponent switches out into Honchkrow, use Trick",
-                    "Classes": [],
-                    "Substeps": [
+                    "Name": "Feraligatr",
+                    "IsVisible": false,
+                    "Steps": [
                         {
-                            "Description": "Step 2b.e.a: If Opponent switches out into Vileplume, use Stealth Rock then switch into Blissey and use Trick as it switches out to Honchkrow once more. Switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                            "Description": "Step 1: Use Trick",
                             "Classes": [],
                             "Substeps": []
                         },
                         {
-                            "Description": "Step 2b.e.b: If Opponent switches out into Rhyperior, switch into Excadrill then use Stealth Rock. x2 Swords Dance + X.Speed then sweep",
+                            "Description": "Step 2a: If Opponent switches out into Garchomp, immediately switch into Excadrill Stealth Rock",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2a.a: If Opponent does not switch out x2 Swords Dance + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 2a.b: If Opponent switches out into Feraligatr, switch into Poliwrath Belly Drum + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches out into Rhyperior, switch into Excadrill Stealth Rock then x2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2c: If Opponent switches out to Umbreon, switch to Blissey and use Stealth Rock as it switches out into Feraligatr. Switch into Poliwrath Belly Drum + X.Speed then sweep",
                             "Classes": [],
                             "Substeps": []
                         }
-                        
                     ]
                 },
                 {
-                    "Description": "Step 2b.f: If Opponent switches out Excadrill is sent out, switch into Chandelure then switch to Metagross then use Trick, locking Earthquake. Switch into Excadrill then use Stealth Rock. x2 Swords Dance + X.Speed then sweep",
-                    "Classes": [],
-                    "Substeps": []
+                    "Name": "Flareon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Switch in Chandelure and switch into Metagross Stealth Rock. Then switch back to Chandelure ×3 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gallade",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Trick as it switches out into Rhyperior. Switch into Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Garchomp",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Trick then switch into Excadrill Stealth Rock",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent does not switch out x2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches out into Feraligatr, switch into Poliwrath Belly Drum + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gengar",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Switch to Blissey and use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent switches out to Absol, then switch to Chandelure ×5 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent Gengar doesn't switch out after using Trick, switch back to Metagross Trick as it switches back to Absol/Quagsire. Switch to Excadrill Stealth Rock into ×3 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gyarados",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Switch to the second Metagross",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent uses Earthquake, switch to Excadrill Stealth Rock. Switch to Blissey then switch to Metagross. Use Trick then switch back into Excadrill ×2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent uses Waterfall, use Thunder Punch to KO’it. Out comes Rhyperior. Switch to Chandelure then switch to Blissey and use Trick as it locks Earthquake. switch into Excadrill ×2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches to Excadrill comes out, use Trick then Stealth Rock. Then switch into Excadrill ×2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Honchkrow",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent switches out into Rhyperior, switch into Excadrill Stealth Rock then x2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches out into Vileplume, use Stealth Rock then switch into Blissey and use Trick as it switches out to Honchkrow once more. Switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Houndoom",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Immediately switch to Blissey",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Houndoom gets damaged by Life Orb, use Stealth Rock",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2a.a: If Opponent switches out to Rhyperior,switch into Excadrill then switch to Blissey Trick",
+                                    "Classes": [],
+                                    "Substeps": [
+                                        {
+                                            "Description": "Step 2a.a.a: If Opponent uses Earthquake, switch into Chandelure ×3 Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        },
+                                        {
+                                            "Description": "Step 2a.a.b: If Opponent uses Stone Edge, switch into the second Metagross and use Trick. Switch to Chandelure ×3 Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Step 2b: Houndoom doesn’t take any damage after attacking, immediately switch back to Metagross",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2b.a: If Opponent switches into Absol",
+                                    "Classes": [],
+                                    "Substeps": [
+                                        {
+                                            "Description": "Step 2b.a.a: and it switches into Quagsire, switch into Excadrill Stealth Rock then x3 Swords Dance + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        },
+                                        {
+                                            "Description": "Step 2b.a.b: and it switches into Salamence, use Stealth Rock then switch into Chandelure ×3 Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "Step 2b.b: If Opponent switches into Excadrill is sent out, use Trick, locking Earthquake. Switch into Excadrill then use Stealth Rock",
+                                    "Classes": [],
+                                    "Substeps": [
+                                        {
+                                            "Description": "Step 2b.b.a: If Opponent does not switch, 2x Swords Dance + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        },
+                                        {
+                                            "Description": "Step 2b.b.b: If Opponent switches out into Slowbro, switch into Poliwrath Belly Drum + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "Step 2b.c: If Opponent switches out into Primeape, use Stealth Rock as it switches out into Hydreigon. Switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 2b.d: If Opponent switches out into Excadrill is sent out, switch back to Metagross then use Trick, locking Earthquake. Switch into Excadrill then use Stealth Rock. x2 Swords Dance + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 2b.e: If Opponent switches out into Honchkrow, use Trick",
+                                    "Classes": [],
+                                    "Substeps": [
+                                        {
+                                            "Description": "Step 2b.e.a: If Opponent switches out into Vileplume, use Stealth Rock then switch into Blissey and use Trick as it switches out to Honchkrow once more. Switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        },
+                                        {
+                                            "Description": "Step 2b.e.b: If Opponent switches out into Rhyperior, switch into Excadrill then use Stealth Rock. x2 Swords Dance + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "Step 2b.f: If Opponent switches out Excadrill is sent out, switch into Chandelure then switch to Metagross then use Trick, locking Earthquake. Switch into Excadrill then use Stealth Rock. x2 Swords Dance + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Hydreigon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Stealth Rock then switch to Chandelure ×3 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Leafeon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent does not switch, use Stealth Rock",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2a.a: If Opponent does not switch, switch to Chandelure 3x Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 2a.b: If Opponent switches out into Rhyperior, switch into Excadrill Stealth Rock then x3 Swords Dance + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches out into Rhyperior, switch into Excadrill Stealth Rock then x3 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Lucario",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Trick then use Stealth Rock. Switch into Chandelure x3 Calm Mind + X.Speed then sweep then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Luxray",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Use Stealth Rock as it switches out into Hydreigon. Switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Mismagius",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Switch into Blissey",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent switches into Excadrill, switch into your own Excadrill then use Stealth Rock. Switch into Poliwrath Belly Drum + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches out into Primeape, use Trick. Switch into Chandelure 5x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2c: If Opponent switches into Umbreon/Garchomp, use Stealth Rock as it switches out into Feraligatr. Switch into Poliwrath Belly Drum + X.Speed",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Primeape",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Trick as it switches into Hydreigon. Stealth Rock then Chandelure x3 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Quagsire",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Switch into Blissey and use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent switches out into Absol, switch into Chandelure x5 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches out to Rapidash, use Stealth Rock then switch into Chandelure x3 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2c: If Opponent switches out into Rhyperior, switch in Excadrill Stealth Rock then 3x Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Rapidash",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Immediately switch into Chandelure x5 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Rhyperior",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Trick into switching in Excadrill Stealth Rock then 2x Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Sableye",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Stealth Rock",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If it stays, switch to Blissey and use Trick as it switches to Rhyperior. Switch to Excadrill ×3 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If it stays, switches to Rhyperior, send in Excadrill then switch to Blissey and use Trick to lock Earthquake. Switch into Chandelure x3 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Salamence",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Player gets Dragon Gem, switch to Blissey then use Trick. It will switch out into Absol and locks Close Combat. Switch into Chandelure x5 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent gets Life Orb, switch to Excadrill Stealth Rock then Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Slowbro",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Player gets Choice Band, switch to Blissey and use Trick. Switch to Excadrill Stealth Rock then x2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Player gets Leftovers, switch to Blissey then switch to the second Metagross and use Trick. Use Stealth Rock then switch to Excadrill x2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2c: If Opponent switches into Vileplume, use Stealth Rock then switch into Poliwrath Belly Drum",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2c.a: If Opponent does not switch X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 2c.b: If Opponent dswitches out into Vileplume again, switch into Excadrill Stealth Rock then x2 Swords Dance + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Tyranitar",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Trick, will switch into Excadrill X-Scissor. Use Stealth Rock then switch into Poliwrath Belly Drum + X.Speed then sweep (Slowbro will survive EQ)",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Umbreon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey and use Stealth Rock as it switch out into Feraligator, Poliwrath Belly Drum + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Victreebel",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Switch into the second Metagross and use Trick. Use Stealth Rock then switch into Excadrill x2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Vileplume",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent switches out into Slowbro, switch into Blissey and use Trick. Switch out to Excadrill Stealth Rock into ×2 Swords Dance + X.Speed then sweep (Use Earthquake vs. Vileplume)",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches out to Rhyperior, switch out to Excadrill Stealth Rock into ×2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Weavile",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent uses Low Kick, Stealth Rock then switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches out into Vileplume, switch into the second Metagross and use Stealth Rock",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2b.a: If Opponent does not switch, switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 2b.b: If Opponent switches into Slowbro, switch into Poliwrath Belly Drum + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
-        }
-    ]
-}
-    ]
-},
-
+        },
         {
             "Name": "Lance",
             "IsVisible": false,
