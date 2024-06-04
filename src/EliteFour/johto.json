@@ -7,14 +7,696 @@
             "IsVisible": false,
             "Leads": [
                 {
-                    "Name": "Exeggutor",
+                    "Name": "Absol",
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Add step here",
-                            "Classes": [
-                                "AddCustomClassNameHereForStyling Or Empty array [] if no styling."
+                            "Description": "Step 1: Use Trick",
+                            "Classes": []
+                        },
+                        {
+                            "Description": "Step 2a) If opponent uses Night Slash, switch to Poliwrath X.Speed + Belly Drum then sweep",
+                            "Classes": []
+                        },
+                        {
+                            "Description": "Step 2b) If opponent uses Close Combat, switch to Chandelure x4 Calm Mind + X.Speed then sweep",
+                            "Classes": []
+                        },
+                        {
+                            "Description": "Step 2c) If opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick as it switches into Absol/Flareon, then switch to Chandelure x4 Calm Mind + X.Speed then sweep",
+                            "Classes": []
+                        },
+                        {
+                            "Description": "Step 2d) If opponent switches out into Empoleon, switch into Blissey and use Softboiled. Switch into Chandelure x4 Calm Mind + X.Speed then sweep",
+                            "Classes": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Altaria",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": []
+                        },
+                        {
+                            "Description": "Step 2: If opponent uses Fire Blast",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2a: Switch immediately into Chandelure Calm Mind",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 2b: If opponent does not swap out, x3 Calm Mind + X.Speed + X.Defend then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 2c: If opponent switches out into Empoleon while you set up, immediately switch to Poliwrath then switch to the second Metagross Trick",
+                                    "Classes": [],
+                                    "Substeps": [
+                                        {
+                                            "Description": "Step 2c.a: If opponent switches back into Altaria, switch into Chandelure x4 Calm Mind + X.Speed + X.Defend then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        },
+                                        {
+                                            "Description": "Step 2c.b: If opponent does not swap out, switch back to Poliwrath Belly Drum + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        }
+                                    ]
+                                }
                             ]
+                        },
+                        {
+                            "Description": "Step 2: If opponent uses Fire Flamethrower",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2a: Switch into Chandelure x3 Calm Mind + X.Speed then sweep",
+                                    "Classes": []
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Step 2: If opponent switches out into Clefable",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2a: Switch to Blissey and use Trick as it switches out into Lucario.",
+                                    "Classes": []
+                                },
+                                {
+                                    "Description": "Step 2b: Switch into Chandelure x5 Calm Mind + X.Speed then sweep",
+                                    "Classes": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Bronzong",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2) Opponent switches into Exeggutor. Switch to Blissey and use Softboiled.",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2a If opponent switches into Absol, switch into Chandelure x4 Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 2b If opponent switches into Flareon, switch into Chandelure then use Flamethrower to kill Empoleon. Switch into Blissey and use Softboiled",
+                                    "Classes": [],
+                                    "Substeps": [
+                                        {
+                                            "Description": "Step 2b.a If opponent switches into Absol, If it switches into Absol, switch into Chandelure x4 Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        },
+                                        {
+                                            "Description": "Step 2b.b If opponent switches into Flareon, switch into Chandelure x3 Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Claydol",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Switch to Blissey and use Trick as it switches into Girafarig",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2: Use Stealth Rock",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 3: Switch into Chandelure x4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Clefable",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a) If Opponent uses Seismic Toss, immediately switch into Chandelure x5 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b) If Opponent uses Fire Blast, immediately switch into Chandelure x3 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2c) If Opponent switches into Golurk, switch to Excadrill ×2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2d) If Opponent switches into Umbreon, immediately switch to Blissey and use Trick as it switches out into Golurk. Switch into Chandelure x6 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Chansey",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2: Use Stealth Rock",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 3: Switch to Chandelure ×2 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Electivire",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2: If player gets Life Orb, use Stealth Rock and immediately switch to Chandelure x3 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If player gets get Choice Scarf, switch to Blissey and use Trick then immediately switch to Chandelure x4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches into Chansey, use Stealth Rock then switch to Chandelure ×2 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches into Umbreon, switch to Blissey and use Trick as it switches into Lucario. Switch to Chandelure x4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Espeon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Switch to Blissey and use Trick as it switches out into Lucario",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2: Switch to Chandelure x4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Empoleon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent does not switch out and uses Hydro Pump/Surf, switch to Poliwrath Belly Drum + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2b.a: If Opponent switches into Absol, then switch to Chandelure x4 Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 2b.b: If Opponent switches into Flareon, immediately switch to Chandelure and then use Flamethrower. Then switch to Blissey and use Softboiled",
+                                    "Classes": [],
+                                    "Substeps": [
+                                        {
+                                            "Description": "Step 2b.b.a: If Opponent switches to Absol,then switch to Chandelure x4 Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        },
+                                        {
+                                            "Description": "Step 2b.b.b: If Opponent switches to Flareon, switch to Chandelure x3 Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Step 2c: If Opponent switches out into Chansey, use Stealth Rock then switch to Chandelure ×2 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2d: If Opponent switches into Golurk, switch into Excadrill 2x Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2e: If Opponent switches into Umbreon, immediately switch to Blissey and use Trick as it switches out into Golurk/Lucario. Switch into Chandelure x6 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Exeggutor ",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick then switch to Blissey. Use Softboiled",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent switches to Absol, switch to Chandelure ×4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches into Flareon, switch to Chandelure then switch to Blissey and use Softboiled",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2b.a: If Opponent switches into Absol, switch to Chandelure ×4 Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 2b.b: If Opponent switches into Flareon, switch to Chandelure ×3 Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Flareon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Switch to Chandelure ×2 Calm Mind + X.Speed then sweep.",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 1a: If Opponent switches and Empoleon is sent out, use Flamethrower to kill. Switch back into Blissey  and use Softboiled",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 1a.a: If Opponent switches switches into Absol, switch to Chandelure ×4 Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 1a.b: If Opponent switches into Flareon, switch to Chandelure ×3 Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gardevoir",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent uses Shadow Ball, switch to Blissey and use Trick. Switch to Chandelure ×5 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches into Altaria, switch to Chandelure ×3 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2c: If Opponent switches into Clefable, switch to the second Metagross and use Trick. Switch to Chandelure ×5 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Girafarig",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick as it switches out and locks Claydol. Switch into Excadrill Stealth Rock",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent does not switch out 3x Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches into Mantine, switch into Blissey and use Trick. Switch into Chandelure ×4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Golduck",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick as it switches into Umbreon. Switch immediately to Blissey and use Trick as it locks Lucario. Switch to Chandelure ×4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Golurk",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If player gets Leftovers, switch to Excadrill ×2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If player gets Expert Belt, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Grumpig",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Trick as it swaps into Chansey. Stealth Rock into Chandelure x2 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Hypno",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent switches out into Golurk, switch to Excadrill ×2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent switches out into Umbreon, switch to Blissey Trick as it switches back to Golurk. Switch back to Chandelure ×6 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Jolteon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Trick. It will lock Thunderbolt. Switch to Excadrill into Stealth Rock. 2x Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Jynx",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent uses Hidden Power, switch in Chandelure x2 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent switches into Chansey, use Stealth Rock. Switch in Chandelure x2 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Liepard",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent does not switch, switch to Blissey and use Trick it switches out to Golurk. Switch in Chandelure x2 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches into Golurk, switch into Excadrill Stealth Rock into 2x Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Lucario",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent uses Close Combat, switch to Chandelure ×5 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches out to Altaria, switch to Chandelure ×3 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2c: If Opponent switches out to Clefable, switch to Blissey then use Trick as it locks Lucario. Switch into Chandelure ×5 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2d: If Opponent switches out into Umbreon, switch to Blissey and use Trick. Switch to Chandelure ×4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Mantine",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Switch to Blissey and use Trick as it switches out into Girafarig. Use Stealth Rock then switch to Chandelure ×4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Magnezone",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Switch to Blissey and use Trick as it switches out into Girafarig. Use Stealth Rock then switch to Chandelure ×4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Slowbro",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Switch to Blissey and use Trick as it switches out to Golurk. Use Stealth Rock then switch to Chandelure ×2 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Typhlosion",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Switch to Chandelure ×4 Calm Mind + X.Speed then sweep, use recovery items if necessary OR Switch to Blissey and use Trick as it switches out into Girafarig. Use Stealth Rock then switch into Chandelure ×4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Umbreon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Switch to Blissey and use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If Opponent switches out into Golurk, switch into Chandelure ×6 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If Opponent switches out into Lucario, switch into Chandelure ×4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Xatu",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Use Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If player gets Assault Vest, switch to Chandelure ×4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If player gets Choice Specs, switch to Chandelure ×2 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2c: If player gets Leftovers, switch into Chandelure x5 Calm Mind + X.Speed then sweep (Crit Foul Play from Liepard doesn’t kill, no priority)",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2d: If Opponent switches into Altaria, switch into Chandelure ×3 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2e: If Opponent switches to Bronzong, switch to Blissey as it switches out into Exeggutor and use Trick as it switches out into Flareon. Switch out into Chandelure ×4 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2f: If Opponent switches into Chansey, use Stealth Rock then switch into Chandelure ×2 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2g: If Opponent switches into Claydol, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2g.a: If Opponent switches into Mantine while you set up, switch to Blissey Trick as it switches out into Girafarig. Then switch into Chandelure ×4 Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Step 2h: If Opponent switches into Golurk and you get Leftovers, switch to Excadrill ×2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2i: If Opponent switches into Golurk and you get Expert Belt, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2j: If Opponent switches into Umbreon, switch to Blissey and use Trick as it switches into Lucario. Switch into Chandelure ×6 Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
                         }
                     ]
                 }
