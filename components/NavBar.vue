@@ -3,6 +3,7 @@ const links = [
     { label: 'Home', to: '/' },
     { label: 'PokeMMO Clock and Time', to: '/DayAndNightCycle' },
     { label: 'Hatch Cycle Timer', to: '/HatchCycleTimer' },
+    { label: 'Elite Four Guide', to: '/EliteFour' },
     { label: 'PokéMMO', to: 'https://pokemmo.eu/', target: "_blank" },
     { label: 'Forums Club', to: 'https://forums.pokemmo.com/index.php?/clubs/219-pory-porygon/', target: "_blank" },
     { label: 'Shiny Showcase', to: 'https://forums.pokemmo.com/index.php?/topic/159659-pory-ot-shiny-showcase/', target: "_blank" },

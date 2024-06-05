@@ -1,0 +1,40 @@
+{
+    "Name": "Kanto",
+    "IsVisible": false,
+    "GymTrainers": [
+        {
+            "Name": "Lorelei",
+            "IsVisible": false,
+            "Leads": [
+                {
+                    "Name": "Exeggutor",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                "AddCustomClassNameHereForStyling Or Empty array [] if no styling."
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Bruno",
+            "IsVisible": false
+        },
+        {
+            "Name": "Agatha",
+            "IsVisible": false
+        },
+        {
+            "Name": "Lance",
+            "IsVisible": false
+        },
+        {
+            "Name": "Blue",
+            "IsVisible": false
+        }
+    ]
+}
