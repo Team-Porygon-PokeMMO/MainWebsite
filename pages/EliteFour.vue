@@ -120,7 +120,26 @@ export default {
                                                     <ul>
                                                         <li v-for="step in lead.Steps" :class="step.Classes.join(' ')">
                                                             {{
-                                                                step.Description }}</li>
+                                                                step.Description }}
+                                                            <div class="m-2.5">
+                                                                <ul>
+                                                                    <li v-for="subStep in step.Substeps"
+                                                                        :class="subStep.Classes.join(' ')">
+                                                                        {{
+                                                                            subStep.Description }}
+                                                                        <div class="m-2.5">
+                                                                            <ul>
+                                                                                <li v-for="subSubStep in subStep.Substeps"
+                                                                                    :class="subSubStep.Classes.join(' ')">
+                                                                                    {{
+                                                                                        subSubStep.Description }}
+                                                                                </li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </li>
                                                     </ul>
                                                 </div>
                                             </li>
