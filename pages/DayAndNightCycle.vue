@@ -71,15 +71,17 @@ export default {
 </script>
 
 <template>
-    <div class="container mx-auto">
-        <h1>Current PokeMMO Time</h1>
-        <h2>
-            {{ currentGameClock }}
-        </h2>
-        <h2>
-            {{ currentGameTime }}
-        </h2>
-    </div>
+    <UContainer>
+        <div class="container mx-auto">
+            <h1>Current PokeMMO Time</h1>
+            <h2>
+                {{ currentGameClock }}
+            </h2>
+            <h2>
+                {{ currentGameTime }}
+            </h2>
+        </div>
+    </UContainer>
 </template>
 
 <style scoped>
