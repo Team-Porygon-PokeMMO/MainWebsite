@@ -11,7 +11,7 @@ export default {
         };
     },
     methods: {
-        toggleView(option) {
+        toggleView(option: any) {
             option.IsVisible = !option.IsVisible
         },
     }
@@ -118,12 +118,12 @@ export default {
                                                     "+" }}</a>
                                                 <div v-show="lead.IsVisible" class="m-2">
                                                     <ul>
-                                                        <li v-for="step in lead.Steps" :class="step.Classes.join(' ')">
+                                                        <li v-for="step in lead.Steps" :class="step?.Classes?.join(' ')">
                                                             {{
                                                                 step.Description }}
                                                             <div class="m-2.5">
                                                                 <ul>
-                                                                    <li v-for="subStep in step.Substeps"
+                                                                    <li v-for="subStep in step?.Substeps"
                                                                         :class="subStep.Classes.join(' ')">
                                                                         {{
                                                                             subStep.Description }}
