@@ -1511,13 +1511,530 @@
             "IsVisible": false,
             "Leads": [
                 {
-                    "Name": "Sceptile",
+                    "Name": "Arbok",
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Add step here",
+                            "Description": "Step 1: Trick",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 1a: If player gets Expert Belt, switch to Excadrill Stealth Rock then Swords Dance + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 1b: If player gets Life Orb, switch to Excadrill 2x Swords Dance + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 1c: If opponent switches into Hydreigon, switch into Blissey then switch into the second Metagross and use Stealth Rock then switch into Chandelure Calm Mind + X.Speed then sweep (Use Shadow Ball vs. Gengar)",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Alakazam",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Stealth Rock then switch into Chandelure Calm Mind + X.Speed then sweep (Use Shadow Ball vs. Gengar)",
                             "Classes": [],
                             "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Crobat",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Stealth Rock",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "If opponent switches out into Krookodile, switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "If opponent switches out into Rotom-W, switch to Blissey then use Softboiled. Switch to Chandelure 3x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gengar",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Switch into Blissey",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 1a: If opponent uses Flamethrower, use Trick then switch to Excadrill Stealth Rock then Swords Dance + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 1b: If opponent uses Shadow Ball, use Trick",
+                                    "Classes": [],
+                                    "Substeps": [
+                                        {
+                                            "Description": "Step 1b.a: If opponent uses Focus Blast, switch to Metagross and use Trick",
+                                            "Classes": [],
+                                            "Substeps": [
+                                                {
+                                                    "Description": "Step 1b.a.a: If opponent switches into Marowak, Excadrill 2x Swords Dance + X.Speed then sweep",
+                                                    "Classes": [],
+                                                    "Substeps": []
+                                                },
+                                                {
+                                                    "Description": "Step 1b.a.b: If opponent switches into Marowak, Excadrill 2x Swords Dance + X.Speed then sweep (Use Iron Head vs. Gengar)",
+                                                    "Classes": [],
+                                                    "Substeps": []
+                                                },
+                                                {
+                                                    "Description": "Step 1b.a.c: If opponent switches out into Muk, switch to Chandelure 4x Calm Mind + X.Speed then sweep (Use Flamethrower vs. Gengar)",
+                                                    "Classes": [],
+                                                    "Substeps": []
+                                                },
+                                                {
+                                                    "Description": "Step 1b.a.d: If opponent switches out to Lucario/Toxicroak,  switch to Chandelure 5x Calm Mind + 2x X.Speed then sweep (If Houndoom is not dead, use Flamethrower vs. Gengar)",
+                                                    "Classes": [],
+                                                    "Substeps": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "Step 1b.b: If opponent switches out into Alakazam, switch to Metagross and use Stealth Rock. Switch to Chandelure Calm Mind + 2x X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        },
+                                        {
+                                            "Description": "Step 1b.c: If opponent switches out into Krookodile, switch into switch to Excadrill Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        },
+                                        {
+                                            "Description": "Step 1b.d: If opponent switches out to Lucario, switch to Chandelure 5x Calm Mind + 2x X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        },
+                                        {
+                                            "Description": "Step 1b.e: If opponent switches out into Muk, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": [
+                                                {
+                                                    "Description": "Step 1b.e.a: Use Iron Head vs. Gengar. If it gets Cursed Body and Gyarados comes out, switch to Chandelure 5x Calm Mind + X.Speed then sweep",
+                                                    "Classes": [],
+                                                    "Substeps": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "Step 1b.f: If opponent switches into Marowak, switch into  Excadrill 2x Swords Dance + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": [
+                                                {
+                                                    "Description": "Step 1b.f.a: Use Iron Head vs. Gengar. If it gets Cursed Body and Rotom-Frost comes out, switch to Poliwrath Belly Drum + X.Speed then sweep",
+                                                    "Classes": [],
+                                                    "Substeps": []
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "Step 1b.g: If opponent switches out to Toxicroak, switch to Chandelure 5x Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "Step 1c: If opponent switches out to Hydreigon is sent out, switch to Metagross and use Stealth Rock. Switch to Chandelure Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Golduck",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If opponent stays, switch into Blissey Trick then switch into Excadrill",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "If opponent uses Bonemerang, 2x Swords Dance + X.Speed then sweep (Use Iron Head vs. Gengar)",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "If opponent uses Double Edge, switch to Chandelure 4x Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Step 2b: If opponent switches out into Marowak/Rotom, switch into  Excadrill 2x Swords Dance + X.Speed then sweep (Use Iron Head vs. Gengar)",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2c: If opponent switches out into Umbreon, switch into Blissey Trick. Switch into  Excadrill 2x Swords Dance + X.Speed then sweep (Use Iron Head vs. Gengar)",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gyarados",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Use Thunder Punch then switch to Excadrill",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "If Gyarados didn’t die, use Stealth Rock then 2x Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "If Seismitoad is sent out, 2x Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Houndoom",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "If opponent switches out into Crobat, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "If opponent switches out into Krookodile, switch to Excadrill Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "If opponent switches out to Lucario/Toxicroak,  switch to Chandelure 5x Calm Mind +  X.Speed then sweep (If Houndoom is not dead, use Flamethrower vs. Gengar)",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Hydreigon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey then switch into Metagross and use Stealth Rock. Switch to Chandelure Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Krookodile",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "If opponent has Moxie, switch into Excadrill using Stealth Rock then 2x Swords Dance + X.Speed then sweep (EQ Gengar)",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "If opponent has Intimidate, use Trick then switch into Excadrill using Stealth Rock. Switch into Chandelure 3x Calm Mind + X.Speed then sweep (If Houndoom is not dead, use Flamethrower vs. Gengar)",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Lucario",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Trick",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 1a: If opponent uses Aura Sphere, use Stealth Rock then switch to Chandelure 5x Calm Mind + X.Speed then sweep (If Houndoom is not dead, use Flamethrower vs. Gengar)",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 1b: If opponent uses Close Combat, switch to Chandelure 5x Calm Mind + X.Speed then sweep (Use Shadow Ball vs. Gengar)",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "Step 1b: If opponent switches out into Hydreigon, Stealth Rock then switch into Chandelure Calm Mind + X.Speed then sweep (Use Shadow Ball vs. Gengar)",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Mandibuzz",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2a: If opponent stays, switch into Blissey Trick. Switch to Chandelure 5x Calm Mind + X.Speed then sweep (If Houndoom is not dead, use Flamethrower vs. Gengar)",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2b: If opponent switches out into Krookodile, switch into Excadrill Stealth Rock. Switch into Blissey Trick then switch to Chandelure 3x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "Step 2c: If opponent switches out into Seismitoad, switch to Excadrill Stealth Rock then switch to Chandelure 4x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "Step 2c.a: If opponent switches back to Mandibuzz after setting up Stealth Rock, switch into Blissey Trick then switch to Chandelure 3x Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Marowak",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Step 1: Trick (Always use Iron Head vs. Gengar.)",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "If opponent uses Bonemerang, switch to Excadrill 2x Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "If opponent uses Earthquake, switch to Excadrill Stealth Rock then Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Muk",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Trick then switch into Chandelure 4x Calm Mind + X.Speed then sweep. (Use Flamethrower vs. Gengar)",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": "If opponent switches out into Gyarados, switch into Poliwrath then switch into Blissey Stealth Rock. Switch into Excadrill 3x Swords Dance + X.Speed. Always use Iron Head vs. Gengar",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "If Iron Head is Cursed Bodied and Gyarados is sent out, switch into Poliwrath Belly Drum + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Rotom-Fan",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey Trick then switch to Chandelure 5x Calm Mind + X.Speed then sweep. (Houndoom is not dead, use Flamethrower vs. Gengar)",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Rotom-Frost",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Switch into Excadrill 2x Swords Dance + X.Speed.then sweep. (Iron Head the Gengar)",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Rotom-Heat",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey Trick then Switch into Excadrill Stealth Rock then 3x Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "If Iron Head is Cursed Bodied and Gyarados is sent out, switch into Poliwrath Belly Drum + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Rotom-Wash",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Stealth Rock;",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "If opponent uses Hydro Pump, switch into Poliwrath X.Speed + Belly Drum then sweep (Use Earthquake vs. Gengar)",
+                                    "Classes": [],
+                                    "Substeps": [
+                                        {
+                                            "Description": "If opponent switches to Mandibuzz, Switch into Blissey Trick then switch to Chandelure 3x Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If opponent uses Thunderbolt, switch into Excadrill Stealth Rock then 3x Swords Dance + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "If opponent uses Will-O-Wisp, switch into Blissey",
+                                    "Classes": [],
+                                    "Substeps": [
+                                        {
+                                            "Description": "If opponent stays, use Trick then switch to Chandelure 3x Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        },
+                                        {
+                                            "Description": "If opponent switches out into Houndoom, use Trick then switch to Chandelure 3x Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        },
+                                        {
+                                            "Description": "If opponent switches into Krookodile, Trick then switch to Chandelure 3x Calm Mind + X.Speed then sweep (Use Flamethrower vs. Gengar)",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Seismitoad",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Trick",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "If opponent uses Earth Power, switch to Chandelure 4x Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                },
+                                {
+                                    "Description": "If opponent uses Earthquake",
+                                    "Classes": [],
+                                    "Substeps": [
+                                        {
+                                            "Description": "and player gets Leftovers, switch into Excadrill Stealth Rock then 3x Swords Dance + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        },
+                                        {
+                                            "Description": "and player gets Rocky Helmet, switch into Excadrill Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Shiftry",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Trick then switch to Chandelure 4x Calm Mind + X.Speed then sweep (Use Flamethrower vs. Gengar)",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Toxicroak",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Trick then switch to Chandelure 5x Calm Mind + X.Speed (If Houndoom is not dead, use Flamethrower vs. Gengar)",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Umbreon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey Trick then switch to Excadrill 2x Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": "If Excadrill gets locked out of Iron Head by Cursed Body, switch into Chandelure 5x Calm Mind + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
                         }
                     ]
                 }
