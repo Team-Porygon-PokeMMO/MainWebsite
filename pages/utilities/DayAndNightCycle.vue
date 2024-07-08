@@ -67,15 +67,15 @@ const daysOfTheWeek: GameDay[] = [
         dayOfTheWeek: 3
     },]
 
-const alteringCaveCycle = [
-    ['Zubat', 'Shuppet', 'Snubbull', 'Pineco', 'Houndour', 'Zigzagoon', 'Duskull', 'Aipom'],
-    ['Zubat', 'Aron', 'Snubbull', 'Stantler', 'Shuppet', 'Pineco', 'Poochyena', 'Zigzagoon', 'Aipom'],
-    ['Zubat', 'Hondour', 'Pineco', 'Mareep', 'Stantler', 'Teddiursa', 'Smeargle'],
-    ['Zubat', 'Stantler', 'Teddiursa', 'Smeargle', 'Snubbull', 'Poochyena', 'Bagon'],
-    ['Zubat', 'Mawile', 'Poochyena', 'Snubbull', 'Slakoth', 'Spinda', 'Mareep', 'Sableye'],
-    ['Zubat', 'Mareep', 'Hondour', 'Teddiursa', 'Aipom', 'Stantler', 'Pineco', 'Smeargle', 'Shuckle'],
-    ['Zubat', 'Mawile', 'Poochyena', 'Mareep', 'Teddiursa', 'Spinda'],
-]
+const alteringCaveCycle: { [key: number]: string[] } = {
+    [0]: ['Zubat', 'Mareep', 'Hondour', 'Teddiursa', 'Aipom', 'Stantler', 'Pineco', 'Smeargle', 'Shuckle'],
+    [1]: ['Zubat', 'Mawile', 'Poochyena', 'Mareep', 'Teddiursa', 'Spinda'],
+    [5]: ['Zubat', 'Shuppet', 'Snubbull', 'Pineco', 'Houndour', 'Zigzagoon', 'Duskull', 'Aipom'], // Thursday 5
+    [2]: ['Zubat', 'Aron', 'Snubbull', 'Stantler', 'Shuppet', 'Pineco', 'Poochyena', 'Zigzagoon', 'Aipom'],
+    [6]: ['Zubat', 'Hondour', 'Pineco', 'Mareep', 'Stantler', 'Teddiursa', 'Smeargle'],
+    [4]: ['Zubat', 'Stantler', 'Teddiursa', 'Smeargle', 'Snubbull', 'Poochyena', 'Bagon'], // Wednesday 4
+    [3]: ['Zubat', 'Mawile', 'Poochyena', 'Snubbull', 'Slakoth', 'Spinda', 'Mareep', 'Sableye'],
+}
 
 const emptyStringArray: string[] = []
 
@@ -181,7 +181,7 @@ export default {
         },
         refreshActiveAlteringCaveCycle: function () {
             let activeDayOfTheWeek: number = this.getGameWeek.find(day => day.active)?.dayOfTheWeek ?? 0
-            this.activeAlteringCaveCycle = alteringCaveCycle[activeDayOfTheWeek]
+            this.activeAlteringCaveCycle = alteringCaveCycle[activeDayOfTheWeek] ?? emptyStringArray[0]
         }
     },
     computed: {
@@ -190,7 +190,7 @@ export default {
             return daysOfTheWeek
         },
         getActiveAlteringCaveCycle: function () {
-            return this.activeAlteringCaveCycle
+            return this.activeAlteringCaveCycle.sort()
         }
     }
 };
@@ -210,7 +210,11 @@ export default {
             </div>
             <div v-if="getActiveAlteringCaveCycle.length > 0" class="container mx-auto grid grid-cols-1">
                 <h1>Altering Cave Rotation</h1>
-                <span v-for="pokemon in getActiveAlteringCaveCycle">{{ pokemon }}</span>
+                <div class="grid grid-cols-4">
+                    <span v-for="pokemon in getActiveAlteringCaveCycle">{{ pokemon }}</span>
+                </div>
+                <span>WIP: Testing if cycles are correct, they're not in sequence. Currently Wednesday and Thursday are
+                    added correctly.</span>
             </div>
         </div>
     </UContainer>
