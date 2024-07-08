@@ -7,7 +7,7 @@ export default {
     data() {
         return {
             currentTimer: new Date(),
-            endTimer: null,
+            endTimer: new Date(),
             timerSet: false,
             eggHatchSecond: 6,
             remainingTimer: '',
@@ -19,12 +19,12 @@ export default {
             hasFlameBody: false,
             hatchCycleMinutes: 6,
             notificationSecondsBefore: 0,
-            notificationEndTimer: null
+            notificationEndTimer: new Date()
         };
     },
     mounted() {
         this.updateTime();
-        let timer = setInterval(this.updateTime, 200);
+        let timer = setInterval(this.updateTime, 333);
     },
     methods: {
         updateTime() {
@@ -98,6 +98,10 @@ export default {
             let endTimer = new Date(this.endTimer)
             this.addMinutesToDate(endTimer, 1)
             this.endTimer = endTimer
+
+            let notificationEndTimer = new Date(this.notificationEndTimer)
+            this.addMinutesToDate(notificationEndTimer, 1)
+            this.notificationEndTimer = notificationEndTimer
         },
         sendAlert() {
             if (!this.notificationSoundPlayed) {
