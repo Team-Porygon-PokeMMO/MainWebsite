@@ -1,13 +1,13 @@
 <script lang="ts">
-let currentTimer: Date | null = new Date()
+let currentTimer: Date | null = null
 let endTimer: Date | null = new Date()
-let notificationEndTimer: Date | null = new Date()
+let notificationEndTimer: Date | null = null
 let volume = 100
 export default {
     data() {
         return {
             currentTimer: new Date(),
-            endTimer: new Date(),
+            endTimer: endTimer as Date | null,
             timerSet: false,
             eggHatchSecond: 6,
             remainingTimer: '',
@@ -19,7 +19,7 @@ export default {
             hasFlameBody: false,
             hatchCycleMinutes: 6,
             notificationSecondsBefore: 0,
-            notificationEndTimer: new Date()
+            notificationEndTimer: notificationEndTimer as Date | null
         };
     },
     mounted() {
@@ -95,13 +95,17 @@ export default {
             date.setSeconds(date.getSeconds() - seconds);
         },
         missedInterval() {
-            let endTimer = new Date(this.endTimer)
-            this.addMinutesToDate(endTimer, 1)
-            this.endTimer = endTimer
+            if (this.endTimer) {
+                let endTimer = new Date(this.endTimer)
+                this.addMinutesToDate(endTimer, 1)
+                this.endTimer = endTimer
+            }
 
-            let notificationEndTimer = new Date(this.notificationEndTimer)
-            this.addMinutesToDate(notificationEndTimer, 1)
-            this.notificationEndTimer = notificationEndTimer
+            if (this.notificationEndTimer) {
+                let notificationEndTimer = new Date(this.notificationEndTimer)
+                this.addMinutesToDate(notificationEndTimer, 1)
+                this.notificationEndTimer = notificationEndTimer
+            }
         },
         sendAlert() {
             if (!this.notificationSoundPlayed) {
