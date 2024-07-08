@@ -1,47 +1,64 @@
 <script lang="ts">
-let currentTimer: Date | null = null
-let endTimer: Date | null = null
-let volume = 50
-let timer = null
+let currentTimer: Date | null = new Date()
+let endTimer: Date | null = new Date()
+let notificationEndTimer: Date | null = new Date()
+let volume = 100
 export default {
     data() {
         return {
             currentTimer: new Date(),
-            endTimer: new Date(),
+            endTimer: null,
             timerSet: false,
-            pingMinute: 0,
-            pingSecond: 0,
             eggHatchSecond: 6,
             remainingTimer: '',
-            volume: 50,
+            remainingNotificationTimer: '',
+            notificationSoundPlayed: true,
+            volume: 100,
+            notificationTimers: [],
+            hasDonator: false,
+            hasFlameBody: false,
+            hatchCycleMinutes: 6,
+            notificationSecondsBefore: 0,
+            notificationEndTimer: null
         };
     },
     mounted() {
         this.updateTime();
-        timer = setInterval(this.updateTime, 200);
+        let timer = setInterval(this.updateTime, 200);
     },
     methods: {
         updateTime() {
             this.currentTimer = new Date();
-            if (this.timerSet) {
-                this.checkTimer()
-            }
+            this.checkTimer()
         },
         checkTimer() {
-            if (this.endTimer == null) {
+            if (this.endTimer == null || this.notificationEndTimer == null) {
                 return
             }
             let currentTimer = new Date(this.currentTimer)
-            let endTimer = new Date(this.endTimer)
-            let diff = endTimer.getTime() - currentTimer.getTime();
-            if (diff <= 0) {
+            let notificationEndTimer = new Date(this.notificationEndTimer)
+            let notificationDiff = notificationEndTimer.getTime() - currentTimer.getTime();
+            if (notificationDiff <= 0) {
                 this.sendAlert()
+            }
+
+            let endTimer = new Date(this.endTimer)
+            let endTimerDiff = endTimer.getTime() - currentTimer.getTime();
+            if (endTimerDiff <= 0) {
                 this.startTimer()
                 return
             }
-            let minutes = Math.floor(diff / 1000 / 60 % 60);
-            let seconds = Math.floor(diff / 1000 % 60);
+            let minutes = Math.floor(endTimerDiff / 1000 / 60 % 60);
+            let seconds = Math.floor(endTimerDiff / 1000 % 60);
             this.remainingTimer = (minutes > 0 ? `${minutes} minutes and ` : '') + `${seconds} seconds`
+            let notificationMinutes = Math.floor(notificationDiff / 1000 / 60 % 60);
+            let notificationSeconds = Math.floor(notificationDiff / 1000 % 60);
+            if (notificationMinutes > 0 || notificationSeconds > 0) {
+                this.remainingNotificationTimer = (minutes > 0 ? `${notificationMinutes} minutes and ` : '') + `${notificationSeconds} seconds`
+            }
+            else {
+                this.remainingNotificationTimer = ''
+            }
         },
         startTimer() {
             let startTimer = new Date()
@@ -51,14 +68,16 @@ export default {
             }
             this.setSecondsToDate(startTimer, eggHatchSecond)
 
-            let pingMinute = this.pingMinute
-            let pingSecond = this.pingSecond
+            let pingMinute = this.hatchCycleMinutes
 
             let endTimer = new Date(startTimer)
             this.addMinutesToDate(endTimer, pingMinute)
-            this.addSecondsToDate(endTimer, pingSecond)
             this.endTimer = endTimer;
+            let notificationEndTimer = new Date(endTimer)
+            this.removeSecondsToDate(notificationEndTimer, this.notificationSecondsBefore)
+            this.notificationEndTimer = notificationEndTimer
             this.timerSet = true
+            this.notificationSoundPlayed = false
         },
         addMinutesToDate(date: Date, minutes: number) {
             date.setMinutes(date.getMinutes() + minutes);
@@ -72,14 +91,18 @@ export default {
         addSecondsToDate(date: Date, seconds: number) {
             date.setSeconds(date.getSeconds() + seconds);
         },
+        removeSecondsToDate(date: Date, seconds: number) {
+            date.setSeconds(date.getSeconds() - seconds);
+        },
         missedInterval() {
             let endTimer = new Date(this.endTimer)
             this.addMinutesToDate(endTimer, 1)
             this.endTimer = endTimer
         },
         sendAlert() {
-            if (this.timerSet) {
+            if (!this.notificationSoundPlayed) {
                 this.playAudio()
+                this.notificationSoundPlayed = true
             }
         },
         playAudio() {
@@ -88,11 +111,26 @@ export default {
             audio.play();
         },
         stopTimer() {
-            this.endTimer = new Date()
+            this.endTimer = null
+            this.notificationEndTimer = null
             this.timerSet = false
+            this.notificationSoundPlayed = true
+        },
+    },
+    computed: {
+        getHatchCycleMinutes() {
+            let hatchCycleMinutes = 6
+            if (this.hasDonator) {
+                hatchCycleMinutes--
+            }
+            if (this.hasFlameBody) {
+                hatchCycleMinutes--
+            }
+            this.hatchCycleMinutes = hatchCycleMinutes
+            return hatchCycleMinutes
         }
     }
-};
+}
 </script>
 
 <style scoped>
@@ -116,47 +154,49 @@ button {
             <h1>Hatch Cycle Timer</h1>
             <div class="grid gap-2 mb-2 md:grid-cols-1 text-center">
                 <h1 v-if="currentTimer != null">Current Time: {{ currentTimer.toLocaleTimeString() }}</h1>
+                <UDivider />
             </div>
             <div class="grid gap-2 mb-2 md:grid-cols-1">
                 <label>Egg-Hatching Second:</label>
                 <UInput v-model="eggHatchSecond" />
-            </div>
-            <h2>Timer (starts from last Egg Hatch Second): </h2>
-            <div class="grid gap-4 mb-2 md:grid-cols-2">
-                <div>
-                    <label>Minutes</label>
-                    <UInput v-model="pingMinute" type="number" placeholder="Minutes" />
-                </div>
-                <div>
-                    <label>Seconds</label>
-                    <UInput v-model="pingSecond" type="number" placeholder="Seconds" />
-                </div>
-                <div>
-                    <UButton @click="startTimer()">Start</UButton>
-                    <UButton @click="stopTimer()">Stop</UButton>
-                    <UButton @click="missedInterval()">Missed Interval</UButton>
+                <label>Options:</label>
+                <UFormGroup label="Donator Status">
+                    <UToggle color="primary" v-model="hasDonator" />
+                </UFormGroup>
+                <UFormGroup label="Flame Body">
+                    <UToggle color="primary" v-model="hasFlameBody" />
+                </UFormGroup>
+                <label>Calculated time for hatch: {{ getHatchCycleMinutes }} minutes</label>
+                <label>Seconds before cycle ends for notification sound:</label>
+                <div class="grid grid-cols-3">
+                    <UInput placeholder="Seconds" v-model="notificationSecondsBefore" />
                 </div>
             </div>
-            <div class="grid md:grid-cols-1" v-if="timerSet">
-                <div class="text-center">
-                    <h1 v-if="endTimer != null">End Timer: {{ endTimer.toLocaleTimeString() }}</h1>
-                </div>
-                <div class="text-center">
-                    <h3>Timer ends in {{ remainingTimer }}.</h3>
-                </div>
+            <div class="gap-2 mb-2">
+                <UButton @click="startTimer()">Start</UButton>
+                <UButton @click="stopTimer()">Stop</UButton>
+                <UButton @click="missedInterval()">Missed Interval (+1 cycle)</UButton>
             </div>
-            <h1>Notification Style:</h1>
-            <div class="grid gap-2 mb-2 md:grid-cols-1">
-                <div>
-                    <label for="default-range"
-                        class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Audio
-                        Volume</label>
-                    <input id="default-range" v-model="volume" type="range"
-                        class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
-                </div>
-                <div>
-                    <UButton @click="playAudio()">Test Audio</UButton>
-                </div>
+            <div class="gap-2 mb-2 text-center" v-if="timerSet">
+                <h1 v-if="endTimer != null">End Timer: {{ endTimer.toLocaleTimeString() }}</h1>
+                <h3>Cycle ends in {{ remainingTimer }}.</h3>
+                <h3 v-if="remainingNotificationTimer != ''">Notification in {{ remainingNotificationTimer }}.</h3>
+            </div>
+        </div>
+        <div class="gap-2 mb-2 grid grid-cols-1">
+            <UDivider />
+            <div v-if="notificationTimers && notificationTimers.length > 0">
+                <label>Notifications:</label>
+            </div>
+            <label>Notification Options:</label>
+            <div class="gap-2 mb-2">
+                <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Audio
+                    Volume</label>
+                <input id="default-range" v-model="volume" type="range"
+                    class="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer dark:bg-gray-700">
+            </div>
+            <div class="gap-2 mb-2">
+                <UButton @click="playAudio()">Test Audio</UButton>
             </div>
         </div>
     </UContainer>

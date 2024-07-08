@@ -4,4 +4,5 @@
     <NuxtPage class="mb-auto w-full" />
     <Footer />
   </div>
+  <UNotifications />
 </template>
