@@ -42,7 +42,6 @@ export default {
     },
     beforeMount() {
         setInterval(() => {
-            console.dir("running")
             this.getCurrentGameClock();
             this.getCurrentGameTime();
         }, 1000)
