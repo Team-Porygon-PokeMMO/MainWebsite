@@ -92,13 +92,13 @@ const sableyeCave = 'Sableye (Lv 12-28)'
 const unownCave = 'Unown (Lv 18-25)'
 
 const alteringCaveCycle: { [key: number]: string[] } = {
-    [1]: [zubatSixteenCave, hondourCave, mareepCave, pinecoCave, aipomCave, teddiursaCave, stantlerCave, smeargleCave], // Sunday
-    [2]: [zubatTwentyCave, bagonCave, stantlerCave, snubbullCave, poochyenaCave, teddiursaCave, smeargleCave], // Monday
-    [3]: [zubatTwentyFiveCave, mawileCave, poochyenaCave, snubbullCave, slakothCave, spindaCave, mareepCave, sableyeCave], // Tuesday
-    [4]: [zubatTwentyFiveCave], // Wednesday
-    [5]: [zubatSixteenCave, unownCave, poochyenaCave, mareepCave, teddiursaCave, mawileCave, spindaCave], // Thursday
-    [6]: [zubatSixteenCave, absolCave, duskullCave, shuppetCave, pinecoCave, hondourCave, zigzagoonCave, aipomCave, snubbullCave], // Friday
-    [7]: [zubatSixteenCave, aronCave, stantlerCave, shuppetCave, pinecoCave, poochyenaCave, zigzagoonCave, aipomCave, snubbullCave], // Saturday
+    [0]: [zubatSixteenCave, hondourCave, mareepCave, pinecoCave, aipomCave, teddiursaCave, stantlerCave, smeargleCave], // Sunday
+    [1]: [zubatTwentyCave, bagonCave, stantlerCave, snubbullCave, poochyenaCave, teddiursaCave, smeargleCave], // Monday
+    [2]: [zubatTwentyFiveCave, mawileCave, poochyenaCave, snubbullCave, slakothCave, spindaCave, mareepCave, sableyeCave], // Tuesday
+    [3]: [zubatTwentyFiveCave], // Wednesday
+    [4]: [zubatSixteenCave, unownCave, poochyenaCave, mareepCave, teddiursaCave, mawileCave, spindaCave], // Thursday
+    [5]: [zubatSixteenCave, absolCave, duskullCave, shuppetCave, pinecoCave, hondourCave, zigzagoonCave, aipomCave, snubbullCave], // Friday
+    [6]: [zubatSixteenCave, aronCave, stantlerCave, shuppetCave, pinecoCave, poochyenaCave, zigzagoonCave, aipomCave, snubbullCave], // Saturday
 }
 
 const emptyStringArray: string[] = []
