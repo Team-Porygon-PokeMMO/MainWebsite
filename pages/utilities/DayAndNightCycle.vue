@@ -67,14 +67,38 @@ const daysOfTheWeek: GameDay[] = [
         dayOfTheWeek: 3
     },]
 
+const zubatSixteenCave = 'Zubat (Lv 5-16)'
+const zubatTwentyCave = 'Zubat (Lv 10-20)'
+const zubatTwentyFiveCave = 'Zubat (Lv 18-25)'
+const hondourCave = 'Hondour (Lv 5-16)'
+const mareepCave = 'Mareep (Lv 18-26)'
+const pinecoCave = 'Pineco (Lv 19-29)'
+const aipomCave = 'Aipom (Lv 18-28)'
+const teddiursaCave = 'Teddiursa (Lv 5-16)'
+const stantlerCave = 'Stantler (Lv 12-20)'
+const smeargleCave = 'Smeargle (Lv 18-29)'
+const absolCave = 'Absol (Lv 18-25)'
+const duskullCave = 'Duskull (Lv 12-20)'
+const shuppetCave = 'Shuppet (Lv 18-28)'
+const zigzagoonCave = 'Zigzagoon (Lv 5-16)'
+const snubbullCave = 'Snubbull (Lv 18-26)'
+const aronCave = 'Aron (Lv 18-28)'
+const poochyenaCave = 'Poochyena (Lv 12-20)'
+const bagonCave = 'Bagon (Lv 18-25)'
+const mawileCave = 'Mawile (Lv 18-25)'
+const slakothCave = 'Slakoth (Lv 12-16)'
+const spindaCave = 'Spinda (Lv 19-29)'
+const sableyeCave = 'Sableye (Lv 12-28)'
+const unownCave = 'Unown (Lv 18-25)'
+
 const alteringCaveCycle: { [key: number]: string[] } = {
-    [0]: ['Zubat', 'Mareep', 'Hondour', 'Teddiursa', 'Aipom', 'Stantler', 'Pineco', 'Smeargle', 'Shuckle'],
-    [1]: ['Zubat', 'Mawile', 'Poochyena', 'Mareep', 'Teddiursa', 'Spinda'],
-    [5]: ['Zubat', 'Shuppet', 'Snubbull', 'Pineco', 'Houndour', 'Zigzagoon', 'Duskull', 'Aipom'], // Thursday 5
-    [2]: ['Zubat', 'Aron', 'Snubbull', 'Stantler', 'Shuppet', 'Pineco', 'Poochyena', 'Zigzagoon', 'Aipom'],
-    [6]: ['Zubat', 'Hondour', 'Pineco', 'Mareep', 'Stantler', 'Teddiursa', 'Smeargle'],
-    [4]: ['Zubat', 'Stantler', 'Teddiursa', 'Smeargle', 'Snubbull', 'Poochyena', 'Bagon'], // Wednesday 4
-    [3]: ['Zubat', 'Mawile', 'Poochyena', 'Snubbull', 'Slakoth', 'Spinda', 'Mareep', 'Sableye'],
+    [1]: [zubatSixteenCave, hondourCave, mareepCave, pinecoCave, aipomCave, teddiursaCave, stantlerCave, smeargleCave], // Sunday
+    [2]: [zubatTwentyCave, bagonCave, stantlerCave, snubbullCave, poochyenaCave, teddiursaCave, smeargleCave], // Monday
+    [3]: [zubatTwentyFiveCave, mawileCave, poochyenaCave, snubbullCave, slakothCave, spindaCave, mareepCave, sableyeCave], // Tuesday
+    [4]: [zubatTwentyFiveCave], // Wednesday
+    [5]: [zubatSixteenCave, unownCave, poochyenaCave, mareepCave, teddiursaCave, mawileCave, spindaCave], // Thursday
+    [6]: [zubatSixteenCave, absolCave, duskullCave, shuppetCave, pinecoCave, hondourCave, zigzagoonCave, aipomCave, snubbullCave], // Friday
+    [7]: [zubatSixteenCave, aronCave, stantlerCave, shuppetCave, pinecoCave, poochyenaCave, zigzagoonCave, aipomCave, snubbullCave], // Saturday
 }
 
 const emptyStringArray: string[] = []
@@ -213,15 +237,17 @@ export default {
                 <div class="grid grid-cols-4">
                     <span v-for="pokemon in getActiveAlteringCaveCycle">{{ pokemon }}</span>
                 </div>
-                <span>WIP: Testing if cycles are correct, they're not in sequence. Currently Wednesday and Thursday are
-                    added correctly.</span>
+                <span>Credits: <a
+                        href="https://discord.com/oauth2/authorize?client_id=731734090365141062&permissions=137707703360&scope=bot%20applications.commands"
+                        target="_blank">Pokévents#7341</a> discord App.</span>
             </div>
         </div>
     </UContainer>
 </template>
 
 <style scoped>
-.isActive {
+.isActive,
+a:hover {
     color: lightcoral;
 }
 </style>
