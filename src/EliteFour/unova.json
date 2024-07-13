@@ -3,12 +3,375 @@
     "IsVisible": false,
     "GymTrainers": [
         {
+            "Name": "Shauntal",
+            "Leads": [
+                {
+                    "Name": "",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Marshal",
+            "Leads": [
+                {
+                    "Name": "",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Grimsly",
+            "Leads": [
+                {
+                    "Name": "",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Caitlin",
+            "Leads": [
+                {
+                    "Name": "Absol",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Alakazam",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Altaria",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Blissey",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Bronzong",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Cinccino",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Emolga",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Empoleon",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Entei",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gallade",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gothitelle",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Houndoom",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Jolteon",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Leafeon",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Metagross",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Mienshao",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Milotic",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Musharna",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Nidoqueen",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Raichu",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Reuniclus",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Serperior",
+                    "Steps": [
+                        {
+                            "Description": ""
+                        }
+                    ]
+                },
+                {
+                    "Name": "Sigilyph",
+                    "Steps": [
+                        {
+                            "Description": "Trick:",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Heat Wave, switch into Blissey and use Trick. Make sure it's locked to Stone Edge and not High Jump Kick. Switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Snorlax, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Mienshao, switch into Chandelure, then switch into Metagross. Switch back into Chandelure, then switch into Poliwrath: Belly Drum + X.Speed."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Slowking",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Chandelure: 3x Calm Mind + X.Speed.",
+                            "Steps": [
+                                {
+                                    "Description": "If it switches into Togekiss, switch into Blissey and use Trick. Switch back into Chandelure: 5x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Snorlax",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then use Stealth Rock. Switch into Chandelure: 3x Calm Mind + X.Speed.",
+                            "Steps": [
+                                {
+                                    "Description": "If it switches into Mienshao, switch into Chandelure, then switch into Metagross. It will use High Jump Kick again, so switch back into Chandelure. It sends in Snorlax Crunch, so switch into Poliwrath: Belly Drum + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Sigilyph, switch into Chandelure, then switch into Metagross and use Trick. Switch back into Chandelure: 4x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Staraptor",
+                    "Steps": [
+                        {
+                            "Description": "If it has Intimidate, switch into Chandelure: 6x Calm Mind + X.Speed."
+                        },
+                        {
+                            "Description": "If it doesn't, use Trick:",
+                            "Steps": [
+                                {
+                                    "Description": "If it stays, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Reuniclus, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Metagross, switch into the second Metagross and use Trick. Switch back into Chandelure: 3x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it switches into Vaporeon, switch into Blissey and use Trick. Switch into Excadrill: 2x Swords Dance + X.Speed."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Togekiss",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Chandelure: 3x Calm Mind + X.Speed.",
+                            "Steps": [
+                                {
+                                    "Description": "If it switches into Togekiss, switch into Blissey and use Trick. Switch back into Chandelure: 5x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Umbreon",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey and use Trick.",
+                            "Steps": [
+                                {
+                                    "Description": "If it switches into Metagross, switch into Chandelure: 6x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Mienshao, use Stealth Rock, then switch into Metagross and use Trick:",
+                                    "Steps"[
+                                        {
+                                            "Description": "If it switches into Altaria, switch into Chandelure: 4x Calm Mind + X.Speed.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it switches into Umbreon, switch into Blissey and use Stealth Rock. Switch into Chandelure, then switch into the second Metagross and use Trick. Switch back into Chandelure: 3x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "If it switches into Entei, switch into Chandelure: 3x Calm Mind + X.Speed.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it switches into Umbreon, switch into Blissey and use Softboiled.",
+                                                    "Steps": [
+                                                        {
+                                                            "Description": "If it switches into Entei, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                                        },
+                                                        {
+                                                            "Description": "If it switches into Mienshao, use Softboiled twice, then switch back into Chandelure: 3x Calm Mind + X.Speed."
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Vaporeon",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Chandelure: 3x Calm Mind + X.Speed.",
+                            "Steps": [
+                                {
+                                    "Description": "If it switches out, switch into Poliwrath, then switch into the second Metagross and use Trick. Switch back into Chandelure: 5x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+            ]
+        },
+        {
             "Name": "Alder",
-            "IsVisible": false,
             "Leads": [
                 {
                     "Name": "Archeops",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick, then switch into Chandelure: 4x Calm Mind + X.Speed.",
@@ -25,7 +388,6 @@
                 },
                 {
                     "Name": "Boufallant",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick, then use Stealth Rock. Switch into Chandelure: Calm Mind + X.Speed."
@@ -34,7 +396,6 @@
                 },
                 {
                     "Name": "Chandelure",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Switch into your own Chandelure: 2x Calm Mind + X.Speed.",
@@ -48,7 +409,6 @@
                 },
                 {
                     "Name": "Conkeldurr",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick:",
@@ -73,7 +433,6 @@
                 },
                 {
                     "Name": "Dragonite",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Stealth Rock, then switch into Blissey and use Trick. Switch into Chandelure: 2x Calm Mind + X.Speed."
@@ -82,14 +441,13 @@
                 },
                 {
                     "Name": "Druddigon",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick, then switch into Chandelure: 4x Calm Mind + X.Speed.",
                             "Steps": [
                                 {
                                     "Description": "If it switches into Vaporeon, switch into Poliwrath: Belly Drum + X.Speed.",
-                                    "Steps":[
+                                    "Steps": [
                                         {
                                             "Description": "If it switches into Conkeldurr, switch back to Chandelure: 4x Calm Mind + X.Speed."
                                         }
@@ -104,7 +462,6 @@
                 },
                 {
                     "Name": "Escavalier",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Stealth Rock, then let Metagross die. Send in Chandelure: Calm Mind + X.Speed."
@@ -113,7 +470,6 @@
                 },
                 {
                     "Name": "Excadrill",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick:",
@@ -130,7 +486,6 @@
                 },
                 {
                     "Name": "Feraligator",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick:",
@@ -153,7 +508,6 @@
                 },
                 {
                     "Name": "Floatzel",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick, then use Stealth Rock. Switch into Poliwrath: Belly Drum + X.Speed."
@@ -162,7 +516,6 @@
                 },
                 {
                     "Name": "Gigalith",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick:",
@@ -179,7 +532,6 @@
                 },
                 {
                     "Name": "Krookodile",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
@@ -188,7 +540,6 @@
                 },
                 {
                     "Name": "Latias",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick, then use Stealth Rock.",
@@ -213,14 +564,13 @@
                 },
                 {
                     "Name": "Latios",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick:",
                             "Steps": [
                                 {
                                     "Description": "If it uses Earthquake, switch into Excadrill: 2x Swords Dance + X.Speed.",
-                                    "Steps"[
+                                    "Steps": [
                                         {
                                             "Description": "If it switches into Vaporeon, switch into Blissey and use Trick. Switch back into Excadrill: 2x Swords Dance + X.Speed."
                                         }
@@ -235,7 +585,6 @@
                 },
                 {
                     "Name": "Lucario",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick.",
@@ -289,7 +638,7 @@
                                 },
                                 {
                                     "Description": "If it switches out into Reuniclus, use Stealth Rock, then switch into Chandelure: Calm Mind + X.Speed.",
-                                    "Steps":[
+                                    "Steps": [
                                         {
                                             "Description": "If it switches out into Latios, switch into the second Metagross and use Trick. Switch back into Chandelure: Calm Mind + X.Speed."
                                         }
@@ -301,17 +650,16 @@
                 },
                 {
                     "Name": "Manectric",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Switch into Blissey and use Stealth Rock;",
                             "Steps": [
                                 {
                                     "Description": "If it got damaged by Life Orb, switch into Poliwrath: Belly Drum + X.Speed.",
-                                    "Steps":[
+                                    "Steps": [
                                         {
                                             "Description": "If it uses Meteor Mash, switch into Chandelure and use Flamethrower. Switch into second Metagross and use Trick.",
-                                            "Steps":[
+                                            "Steps": [
                                                 {
                                                     "Description": "If Sandslash used Earthquake, switch into Excadrill: 2x Swords Dance + X.Speed."
                                                 },
@@ -331,7 +679,6 @@
                 },
                 {
                     "Name": "Reuniclus",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick, then use Stealth rock. Switch into Chandelure: Calm Mind + X.Speed.",
@@ -345,7 +692,6 @@
                 },
                 {
                     "Name": "Samurott",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick:",
@@ -370,7 +716,6 @@
                 },
                 {
                     "Name": "Sandslash",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick:",
@@ -392,7 +737,6 @@
                 },
                 {
                     "Name": "Seismitoad",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Trick, then switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
@@ -401,7 +745,6 @@
                 },
                 {
                     "Name": "Vanilluxe",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Switch into Chandelure: 3x Cal Mind + X.Speed."
@@ -410,7 +753,6 @@
                 },
                 {
                     "Name": "Vaporeon",
-                    "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Use Trick.",
