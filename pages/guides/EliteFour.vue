@@ -108,17 +108,17 @@ export default {
                     <!-- region options -->
                     <li v-for="region in regions" :key="region.Name">
                         <a class="m-0" @click="toggleView(region)">{{ region.Name }} {{ region.IsVisible ?
-                            "-" : "+" }}</a>
+                            "🔽" : "▶" }}</a>
                         <div v-show="region.IsVisible" class="pl-6">
                             <ul>
                                 <li v-for="gymTrainer in region.GymTrainers" :key="gymTrainer.Name">
                                     <a @click="toggleView(gymTrainer)">{{ gymTrainer.Name }} {{ gymTrainer.IsVisible ?
-                                        "-" : "+" }}</a>
+                                        "🔽" : "▶" }}</a>
                                     <div v-show="gymTrainer.IsVisible" class="pl-6">
                                         <ul>
                                             <li v-for="lead in gymTrainer.Leads" :key="lead.Name">
-                                                <a @click="toggleView(lead)">{{ lead.Name }} {{ lead.IsVisible ? "-" :
-                                                    "+" }}</a>
+                                                <a @click="toggleView(lead)">{{ lead.Name }} {{ lead.IsVisible ? "🔽" :
+                                                    "▶" }}</a>
                                                 <div v-show="lead.IsVisible">
                                                     <Steps v-for="(step, index) in lead.Steps" :currentStep="step"/>
                                                 </div>

@@ -12,7 +12,10 @@ export default {
             this.currentStep.IsVisible = !this.currentStep.IsVisible
         },
         getIfExpandable() {
-            return this.currentStep?.Steps?.length > 0 ? '▶' : ''
+            if (this.currentStep?.Steps != null) {
+                return this.currentStep?.IsVisible ? '🔽' : '▶️'
+            }
+            return ''
         },
     },
 };
