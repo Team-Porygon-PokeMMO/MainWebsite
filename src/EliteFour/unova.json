@@ -13,7 +13,7 @@
                         {
                             "Description": "Add step here",
                             "Classes": [
-                                "AddCustomClassNameHereForStyling Or Empty array [] if no styling."
+                                ""
                             ]
                         }
                     ]
@@ -34,7 +34,539 @@
         },
         {
             "Name": "Alder",
-            "IsVisible": false
+            "IsVisible": false,
+            "Leads": [
+                {
+                    "Name": "Archeops",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Boufallant",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Chandelure",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Conkeldurr",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Dragonite",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Druddigon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Escavalier",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Excadrill",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Feraligator",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Floatzel",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gigalith",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Krookodile",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Latias",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Latios",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Lucario",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Manectric",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Reuniclus",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Samurott",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Sandslash",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Classes": [
+                                ""
+                            ],
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                    "Classes": [
+                                        ""
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Seismitoad",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here",
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Vanilluxe",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Add step here",
+                            "Steps:": [
+                                {
+                                    "Description": "Add substep here"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Vaporeon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Use Trick.",
+                            "Steps:": [
+                                {
+                                    "Description": "If it uses Hydro Pump, use Stealth Rock, then switch into Poliwrath: Belly Drum + X.Speed."
+                                },
+                                {
+                                    "Description": "If it uses Scald, switch into Poliwrath: Belly Drum + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Conkeldurr, switch into Chandelure: 4x Calm Mind + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Volcarona, switch into Blissey, then switch into second Metagross and use Trick. Switch back into Chandelure: 4x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Latios, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Sandslash, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Volcarona",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey and use Stealth Rock.",
+                            "Steps:": [
+                                {
+                                    "Description": "If it says, switch into Chandelure, then switch into Metagross and use Trick. Switch back to Chandelure: 3x Calm Mind + X.Speed.",
+                                    "Steps:": [
+                                        {
+                                            "Description": "If it switches into Conkeldurr, switch into the second Metagross and use Trick. Switch back into Chandelure: 4x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Archeops, switch into Metagross and use Trick. Switch into Excadrill: 2x Swords Dance + X.Speed.",
+                                },
+                                {
+                                    "Description": "If it switches into Bouffalant, switch into Chandelure, then switch into Metagross and use Trick. Switch into Excadrill: 2x Swords Dance + X.Speed.",
+                                },
+                                {
+                                    "Description": "If it switches into Conkeldurr, switch into Chandelure, then switch into Metagross and use Trick. Switch back into Chandelure: 4x Calm Mind + X.Speed.",
+                                    "Steps:": [
+                                        {
+                                            "Description": "If it switches out into Vaporen, switch into Poliwrath: Belly Drum + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Escavalier, switch into Chandelure: Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Excadrill, switch into Chandelure, then switch into Metagross and use Trick. Switch into your own Excadrill: 2x Swords Dance + X.Speed."
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "If it doesn't get damaged by Life Orb.",
+                            "Steps:": [
+                                {
+                                    "Description": "If Excadrill is sent out, switch into Metagross and use Trick. Switch into your own Excadrill: 2x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If Lucario is sent out, use Stealth Rock again and see what happens:",
+                                    "Steps:": [
+                                        {
+                                            "Description": "If it uses Close Combat, send in Metagross and use Trick.",
+                                            "Steps:": [
+                                                {
+                                                    "Description": "If it stays, switch into Chandelure: 3x Calm Mind + X.Speed.",
+                                                    "Classes": [
+                                                        ""
+                                                    ]
+                                                },
+                                                {
+                                                    "Description": "If it switches into Dragonite, switch into Blissey and use Trick. Switch into Chandelure: 3x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "If it uses Crunch / Extreme Speed, switch into Metagross, then switch into Chandelure. Switch into Metagross, then switch into Chandelure, then switch into Metagross and use Trick. Switch back into Chandelure: Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it uses Meteor Smash, switch into Poliwrath: Belly Drum + X.Speed.",
+                                            "Steps:": [
+                                                {
+                                                    "Description": "If Lucario got an attack boost from Meteor Smash, switch into Chandelure and then use Flamethrower to kill. Switch into Metagross and use Trick.",
+                                                    "Steps": [
+                                                        {
+                                                            "Description": "If Braviary used Close Combat, switch into Chandelure: 2x Calm Mind + X.Speed.",
+                                                        },
+                                                        {
+                                                            "Description": "If Sandslash used Earthquake, switch into Excadrill: 2x Swords Dance + X.Speed.",
+                                                        },
+                                                        {
+                                                            "Description": "If Vaporeon used Hydro Pump, switch into Poliwrath: Belly Drum + X.Speed.",
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "If it switches into Reuniclus, switch into Metagross and use Trick. Switch into Chandelure: Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+            ]
         }
     ]
 }
