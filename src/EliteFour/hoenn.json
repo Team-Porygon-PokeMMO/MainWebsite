@@ -1796,7 +1796,224 @@
         
         {
             "Name": "Drake",
-            "IsVisible": false
+            "IsVisible": false,
+            "Leads": [
+                {
+                    "Name": "Aggron",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": " Step 1: Trick then use Stealth Rock. Switch into Chandelure 3x Calm Mind then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                ]
+            },
+            {
+                "Name": "Altaria",
+                "IsVisible": false,
+                "Steps": [
+                    {
+                        "Description": " Step 1: Trick then use Stealth Rock. Switch into Chandelure 2x Calm Mind then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    }
+            ]
+        },
+        {
+            "Name": "Ampharos",
+            "IsVisible": false,
+            "Steps": [
+                {
+                    "Description": " Step 1: Trick",
+                    "Classes": [],
+                    "Substeps": []
+                },
+                {
+                    "Description": " Step 2a: If opponent uses Volt Switch",
+                    "Classes": [],
+                    "Substeps": [
+                        {
+                            "Description": " Step 2a.a: and opponent sends out Feraligator, switch into Poliwrath Belly Drum + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": " Step 2a.b: and opponent sends out Salamence, switch to Chandelure and switch to the second Metagross and use Trick",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": " Step 2a.b.a: If opponent uses Earthquake, switch into Excadrill Stealth Rock then 2x Swords Dance + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": [
+                                        {
+                                            "Description": " Step 2a.b.a.a: If opponent switches into Lapras, switch into Poliwrath Belly Drum + 2x X.Speed then sweep",
+                                            "Classes": [],
+                                            "Substeps": []
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": " Step 2a.b.b: If opponent uses Fire Blast, switch into Chandelure 2x Calm Mind then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Description": " Step 2b: If opponent uses Thunderbolt, switch into Excadrill Stealth Rock then 2x Swords Dance + X.Speed then sweep",
+                    "Classes": [],
+                    "Substeps": []
+                },
+                {
+                    "Description": " Step 2c: If opponent switches into Altaria, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed then sweep",
+                    "Classes": [],
+                    "Substeps": []
+                },
+                {
+                    "Description": " Step 2d: If opponent switches into Salamence",
+                    "Classes": [],
+                    "Substeps": [
+                        {
+                            "Description": " Step 2d.a: and player gets Focus Sash, switch into Chandelure 4x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": " Step 2d.b: and player gets Life Orb, switch into Excadrill Stealth Rock then 2x Swords Dance + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": [
+                                {
+                                    "Description": " Step 2d.b.a: If opponent switches into Lapras, switch into Poliwrath Belly Drum + X.Speed then sweep",
+                                    "Classes": [],
+                                    "Substeps": []
+                                }
+                            ]
+                        },
+                        {
+                            "Description": " Step 2d.c: and player gets Leftovers, switch into Chandelure 2x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                },
+                {
+                    "Name": "Eelektross",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": " Step 1: Trick",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": " Step 2a: If opponent uses Fire Punch, switch into Chandelure 2x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": " Step 2b: If opponent uses Flamethrower, use Stealth Rock then switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                ]
+            },
+            {
+                "Name": "Empoleon",
+                "IsVisible": false,
+                "Steps": [
+                    {
+                        "Description": " Step 1: Trick then switch into Excadrill Stealth Rock then 2x Swords Dance + X.Speed then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    }
+            ]
+        },
+        {
+            "Name": "Feraligator",
+            "IsVisible": false,
+            "Steps": [
+                {
+                    "Description": " Step 1: Trick",
+                    "Classes": [],
+                    "Substeps": []
+                },
+                {
+                    "Description": " Step 2a: If opponent switches into Eelektross, use Stealth Rock then switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                    "Classes": [],
+                    "Substeps": []
+                },
+                {
+                    "Description": " Step 2b: If opponent switches into Salamence",
+                    "Classes": [],
+                    "Substeps": [
+                        {
+                            "Description": " Step 2b.a: and player gets Leftovers, switch into Chandelure 2x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        },
+                        {
+                            "Description": " Step 2b.b: and player gets Life Orb, use Stealth Rock then switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                            "Classes": [],
+                            "Substeps": []
+                        }
+                    ]
+                }
+        ]
+    },
+    {
+        "Name": "Floatzel",
+        "IsVisible": false,
+        "Steps": [
+            {
+                "Description": " Step 1: Trick",
+                "Classes": [],
+                "Substeps": []
+            },
+            {
+                "Description": " Step 2a: If opponent does not switch out, switch into Blissey then switch into the second Metagross and use Trick",
+                "Classes": [],
+                "Substeps": [
+                    {
+                        "Description": " Step 2a.a: If opponent switches into Gallade, switch into Chandelure 4x Calm Mind + 2x X.Speed then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    },
+                    {
+                        "Description": " Step 2a.b: If opponent switches into Krookodile, switch into Excadrill Stealth Rock then 2x Swords Dance + X.Speed then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    },
+                    {
+                        "Description": " Step 2a.c: If opponent switches into Salamence",
+                        "Classes": [],
+                        "Substeps": [
+                            {
+                                "Description": " Step 2a.c.a: and opponent switched into Feraligator before, switch into Chandelure 2x Calm Mind + 2x X.Speed then sweep",
+                                "Classes": [],
+                                "Substeps": []
+                            },
+                            {
+                                "Description": " Step 2a.c.b: and opponent switched into Gallade before, use Stealth Rock then switch into Chandelure 2x Calm Mind + 2x X.Speed then sweep",
+                                "Classes": [],
+                                "Substeps": []
+                            }
+                        ]
+                    },
+                    {
+                        "Description": " Step 2a.d: If opponent switches into Salamence, use Stealth Rock then switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    }
+                ]
+            }
+    ]
+}
+        ]
+    }
+        ]
         },
         {
             "Name": "Wallace",
