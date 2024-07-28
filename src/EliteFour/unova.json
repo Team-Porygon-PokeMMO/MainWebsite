@@ -321,7 +321,7 @@
                                 },
                                 {
                                     "Description": "If it switches into Mienshao, use Stealth Rock, then switch into Metagross and use Trick:",
-                                    "Steps"[
+                                    "Steps": [
                                         {
                                             "Description": "If it switches into Altaria, switch into Chandelure: 4x Calm Mind + X.Speed.",
                                             "Steps": [
@@ -364,7 +364,7 @@
                             ]
                         }
                     ]
-                },
+                }
             ]
         },
         {
