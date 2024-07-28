@@ -1813,6 +1813,8 @@
                                 }
                             ]
                         }
+                        
+                        
                     ]
                 },
                 {
@@ -1863,7 +1865,100 @@
         },
         {
             "Name": "Wallace",
-            "IsVisible": false
-        }
+            "IsVisible": false,
+            "Leads": [
+            {
+                "Name": "Altaria",
+                "IsVisible": false,
+                "Steps": [
+                    {
+                        "Description": "Step 1: Use Stealth Rock then switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    }
+                ]
+            },
+            {
+                "Name": "Dragonite",
+                "IsVisible": false,
+                "Steps": [
+                    {
+                        "Description": "Step 1: Trick then switch into Poliwrath Belly Drum + X.Speed then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    }
+                ]
+            },
+            {
+                "Name": "Eelektross",
+                "IsVisible": false,
+                "Steps": [
+                    {
+                        "Description": "Step 1: Trick",
+                        "Classes": [],
+                        "Substeps": []
+                    },
+                    {
+                        "Description": "Step 2a: If player gets Expert Belt, switch into Chandelure 4x Calm Mind + X.Speed then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    },
+                    {
+                        "Description": "Step 2b: If player gets Leftovers, switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    },
+                    {
+                        "Description": "Step 2c: If player gets Life Orb, use Stealth Rock then switch into Chandelure 3x Calm Mind + X.Speed then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    }
+                ]
+            },
+            {
+                "Name": "Empoleon",
+                "IsVisible": false,
+                "Steps": [
+                    {
+                        "Description": "Step 1: Trick",
+                        "Classes": [],
+                        "Substeps": []
+                    },
+                    {
+                        "Description": "Step 2a: If player gets Leftovers, switch into Poliwrath Belly Drum + X.Speed then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    },
+                    {
+                        "Description": "Step 2b: If player gets Life Orb, switch into Excadrill 2x Swords Dance + X.Speed then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    }
+                ]
+            },
+            {
+                "Name": "Gardevoir",
+                "IsVisible": false,
+                "Steps": [
+                    {
+                        "Description": "Step 1: Trick",
+                        "Classes": [],
+                        "Substeps": []
+                    },
+                    {
+                        "Description": "Step 2a: If player gets Leftovers, switch into Poliwrath Belly Drum + X.Speed then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    },
+                    {
+                        "Description": "Step 2b: If player gets Life Orb, switch into Excadrill 2x Swords Dance + X.Speed then sweep",
+                        "Classes": [],
+                        "Substeps": []
+                    }
+                ]
+            }
+
+    ]
+}
     ]
 }
