@@ -4,17 +4,20 @@ import kantoEliteFour from '~/src/EliteFour/kanto.json'
 import johtopEliteFour from '~/src/EliteFour/johto.json'
 import sinnohEliteFour from '~/src/EliteFour/sinnoh.json'
 import unovaEliteFour from '~/src/EliteFour/unova.json'
+import { Region } from '~/types/EliteFour.types.vue'
+
 export default {
     data() {
         return {
-            regions: [kantoEliteFour, hoennEliteFour, johtopEliteFour, sinnohEliteFour, unovaEliteFour]
+            regions: [kantoEliteFour, johtopEliteFour, hoennEliteFour, sinnohEliteFour, unovaEliteFour] as Region[],
         };
     },
     methods: {
         toggleView(option: any) {
             option.IsVisible = !option.IsVisible
         },
-    }
+    },
+    
 };
 </script>
 
@@ -105,42 +108,19 @@ export default {
                     <!-- region options -->
                     <li v-for="region in regions" :key="region.Name">
                         <a class="m-0" @click="toggleView(region)">{{ region.Name }} {{ region.IsVisible ?
-                            "-" : "+" }}</a>
-                        <div v-show="region.IsVisible" class="m-2">
+                            "🔽" : "▶" }}</a>
+                        <div v-show="region.IsVisible" class="pl-6">
                             <ul>
                                 <li v-for="gymTrainer in region.GymTrainers" :key="gymTrainer.Name">
                                     <a @click="toggleView(gymTrainer)">{{ gymTrainer.Name }} {{ gymTrainer.IsVisible ?
-                                        "-" : "+" }}</a>
-                                    <div v-show="gymTrainer.IsVisible" class="m-2">
+                                        "🔽" : "▶" }}</a>
+                                    <div v-show="gymTrainer.IsVisible" class="pl-6">
                                         <ul>
                                             <li v-for="lead in gymTrainer.Leads" :key="lead.Name">
-                                                <a @click="toggleView(lead)">{{ lead.Name }} {{ lead.IsVisible ? "-" :
-                                                    "+" }}</a>
-                                                <div v-show="lead.IsVisible" class="m-2">
-                                                    <ul>
-                                                        <li v-for="step in lead.Steps" :class="step?.Classes?.join(' ')">
-                                                            {{
-                                                                step.Description }}
-                                                            <div class="m-2.5">
-                                                                <ul>
-                                                                    <li v-for="subStep in step?.Substeps"
-                                                                        :class="subStep.Classes.join(' ')">
-                                                                        {{
-                                                                            subStep.Description }}
-                                                                        <div class="m-2.5">
-                                                                            <ul>
-                                                                                <li v-for="subSubStep in subStep.Substeps"
-                                                                                    :class="subSubStep.Classes.join(' ')">
-                                                                                    {{
-                                                                                        subSubStep.Description }}
-                                                                                </li>
-                                                                            </ul>
-                                                                        </div>
-                                                                    </li>
-                                                                </ul>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
+                                                <a @click="toggleView(lead)">{{ lead.Name }} {{ lead.IsVisible ? "🔽" :
+                                                    "▶" }}</a>
+                                                <div v-show="lead.IsVisible">
+                                                    <Steps v-for="(step, index) in lead.Steps" :currentStep="step"/>
                                                 </div>
                                             </li>
                                         </ul>
