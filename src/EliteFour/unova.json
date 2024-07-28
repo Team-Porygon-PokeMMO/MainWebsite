@@ -663,7 +663,7 @@
                     "Name": "Serperior",
                     "Steps": [
                         {
-                            "Description": "Trick:",
+                            "Description": "Trick;",
                             "Steps": [
                                 {
                                     "Description": "If you get Leftovers, switch into Poliwrath Belly Drum + X.Speed."
@@ -679,7 +679,7 @@
                     "Name": "Sigilyph",
                     "Steps": [
                         {
-                            "Description": "Trick:",
+                            "Description": "Trick;",
                             "Steps": [
                                 {
                                     "Description": "If it uses Heat Wave, switch into Blissey and use Trick. Make sure it's locked to Stone Edge and not High Jump Kick. Switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
@@ -732,7 +732,7 @@
                             "Description": "If it has Intimidate, switch into Chandelure: 6x Calm Mind + X.Speed."
                         },
                         {
-                            "Description": "If it doesn't, use Trick:",
+                            "Description": "If it doesn't, use Trick;",
                             "Steps": [
                                 {
                                     "Description": "If it stays, switch into Chandelure: 3x Calm Mind + X.Speed."
@@ -775,7 +775,7 @@
                                     "Description": "If it switches into Metagross, switch into Chandelure: 6x Calm Mind + X.Speed."
                                 },
                                 {
-                                    "Description": "If it switches into Mienshao, use Stealth Rock, then switch into Metagross and use Trick:",
+                                    "Description": "If it switches into Mienshao, use Stealth Rock, then switch into Metagross and use Trick;",
                                     "Steps": [
                                         {
                                             "Description": "If it switches into Altaria, switch into Chandelure: 4x Calm Mind + X.Speed.",
@@ -866,7 +866,7 @@
                     "Name": "Conkeldurr",
                     "Steps": [
                         {
-                            "Description": "Trick:",
+                            "Description": "Trick;",
                             "Steps": [
                                 {
                                     "Description": "If it uses Drain Punch, switch into Chandelure: 4x Calm Mind + X.Speed.",
@@ -927,7 +927,7 @@
                     "Name": "Excadrill",
                     "Steps": [
                         {
-                            "Description": "Trick:",
+                            "Description": "Trick;",
                             "Steps": [
                                 {
                                     "Description": "If it stays, switch into your own Excadrill: 2x Swords Dance + X.Speed."
@@ -943,7 +943,7 @@
                     "Name": "Feraligator",
                     "Steps": [
                         {
-                            "Description": "Trick:",
+                            "Description": "Trick;",
                             "Steps": [
                                 {
                                     "Description": "If it switches into Dragonite, switch into Blissey and use Trick. Use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed."
@@ -973,7 +973,7 @@
                     "Name": "Gigalith",
                     "Steps": [
                         {
-                            "Description": "Trick:",
+                            "Description": "Trick;",
                             "Steps": [
                                 {
                                     "Description": "If it stays, switch into Excadrill: Stealth Rock + 3x Swords Dance + X.Speed."
@@ -1021,7 +1021,7 @@
                     "Name": "Latios",
                     "Steps": [
                         {
-                            "Description": "Trick:",
+                            "Description": "Trick;",
                             "Steps": [
                                 {
                                     "Description": "If it uses Earthquake, switch into Excadrill: 2x Swords Dance + X.Speed.",
@@ -1149,7 +1149,7 @@
                     "Name": "Samurott",
                     "Steps": [
                         {
-                            "Description": "Trick:",
+                            "Description": "Trick;",
                             "Steps": [
                                 {
                                     "Description": "If it uses Megahorn, use Stealth Rock and then switch into Chandelure: Calm Mind + X.Speed."
@@ -1173,7 +1173,7 @@
                     "Name": "Sandslash",
                     "Steps": [
                         {
-                            "Description": "Trick:",
+                            "Description": "Trick;",
                             "Steps": [
                                 {
                                     "Description": "If you get Focus Sash, switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed.",

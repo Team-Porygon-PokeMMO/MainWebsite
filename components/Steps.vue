@@ -3,7 +3,7 @@ import { Step } from '~/types/EliteFour.types.vue'
 export default {
     props: {
         currentStep: {
-            type: Step,
+            type: Step || Object,
             required: true,
         },
     },
@@ -11,12 +11,15 @@ export default {
         toggleView() {
             this.currentStep.IsVisible = !this.currentStep.IsVisible
         },
+        getIfTrick() {
+            return this.currentStep?.Description?.length <= 8
+        },
         getIfExpandable() {
-            if (this.currentStep?.Steps != null) {
+            if (this.currentStep?.Steps != null && !this.getIfTrick()) {
                 return this.currentStep?.IsVisible ? '🔽' : '▶️'
             }
             return ''
-        },
+        }
     },
 };
 </script>
@@ -32,6 +35,6 @@ export default {
                 {{ getIfExpandable() }} {{ currentStep.Description }}
             </li>
         </ul>
-        <Steps v-for="subStep in currentStep.Steps" :currentStep="subStep" v-show="currentStep.IsVisible" />
+        <Steps v-for="subStep in currentStep.Steps" :currentStep="subStep" v-show="currentStep.IsVisible || getIfTrick()" />
     </div>
 </template>
