@@ -35,7 +35,7 @@ export default {
             return this.currentStep?.Description?.length <= 8
         },
         getIfExpandable() {
-            if (this.currentStep?.Steps != null && !this.getIfTrick()) {
+            if (this.currentStep?.Steps?.length > 0 && !this.getIfTrick()) {
                 return this.currentStep?.IsVisible ? '🔽' : '▶️'
             }
             return ''
