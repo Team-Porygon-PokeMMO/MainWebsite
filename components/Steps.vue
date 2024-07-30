@@ -1,9 +1,29 @@
 <script lang="ts">
-import { Step } from '~/types/EliteFour.types.vue'
+export class Step {
+    Description: string = "";
+    Classes: string[] = [];
+    Steps: Step[] = [];
+    IsVisible: boolean = false;
+}
+export class Trainer {
+    Name: string = "";
+    IsVisible: boolean = false;
+    Leads: Leads[] = [];
+}
+export class Leads {
+    Name: string = "";
+    IsVisible: boolean = false;
+    Steps: Step[] = [];
+}
+export class Region {
+    Name: string = "";
+    IsVisible: boolean = false;
+    GymTrainers: Trainer[] = [];
+}
 export default {
     props: {
         currentStep: {
-            type: Step || Object,
+            type: Step,
             required: true,
         },
     },

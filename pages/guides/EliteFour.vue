@@ -4,8 +4,27 @@ import kantoEliteFour from '~/src/EliteFour/kanto.json'
 import johtopEliteFour from '~/src/EliteFour/johto.json'
 import sinnohEliteFour from '~/src/EliteFour/sinnoh.json'
 import unovaEliteFour from '~/src/EliteFour/unova.json'
-import { Region } from '~/types/EliteFour.types.vue'
-
+export class Step {
+    Description: string = "";
+    Classes: string[] = [];
+    Steps: Step[] = [];
+    IsVisible: boolean = false;
+}
+export class Trainer {
+    Name: string = "";
+    IsVisible: boolean = false;
+    Leads: Leads[] = [];
+}
+export class Leads {
+    Name: string = "";
+    IsVisible: boolean = false;
+    Steps: Step[] = [];
+}
+export class Region {
+    Name: string = "";
+    IsVisible: boolean = false;
+    GymTrainers: Trainer[] = [];
+}
 export default {
     data() {
         return {
@@ -17,7 +36,7 @@ export default {
             option.IsVisible = !option.IsVisible
         },
     },
-    
+
 };
 </script>
 
@@ -120,7 +139,7 @@ export default {
                                                 <a @click="toggleView(lead)">{{ lead.Name }} {{ lead.IsVisible ? "🔽" :
                                                     "▶" }}</a>
                                                 <div v-show="lead.IsVisible">
-                                                    <Steps v-for="(step, index) in lead.Steps" :currentStep="step"/>
+                                                    <Steps v-for="(step, index) in lead.Steps" :currentStep="step" />
                                                 </div>
                                             </li>
                                         </ul>
