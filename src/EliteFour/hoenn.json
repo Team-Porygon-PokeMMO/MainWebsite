@@ -1600,7 +1600,8 @@
                                                     "Description": " Step 2a.a: If opponent Flygon is sent out, switch into Chandelure then switch into the second Metagross and use Trick. Switch into Excadrill Swords Dance + X.Speed then sweep",
                                                     "Steps": [
                                                         {
-                                                            "Description": " Step 2a.a.a: If opponent switches out into Lapras, switch into Poliwrath Belly Drum + X.Speed then sweep" }
+                                                            "Description": " Step 2a.a.a: If opponent switches out into Lapras, switch into Poliwrath Belly Drum + X.Speed then sweep"
+                                                        }
                                                     ]
                                                 }
                                             ]
@@ -1626,7 +1627,8 @@
                                                             ]
                                                         },
                                                         {
-                                                            "Description": " Step 2c.b.b: and opponent uses Fire Blast, switch into Blissey and use Trick. Switch into Chandelure 3x Calm Mind + X.Speed then sweep" }
+                                                            "Description": " Step 2c.b.b: and opponent uses Fire Blast, switch into Blissey and use Trick. Switch into Chandelure 3x Calm Mind + X.Speed then sweep"
+                                                        }
                                                     ]
                                                 }
                                             ]
@@ -1733,9 +1735,11 @@
                                                     "Description": " Step 2a.a.b.b: If opponent switches into Gallade, use Trick",
                                                     "Steps": [
                                                         {
-                                                            "Description": " Step 2a.a.b.b.a: If opponent uses Sacred Sword, switch into Chandelure 4x Calm Mind + X.Speed then sweep" },
+                                                            "Description": " Step 2a.a.b.b.a: If opponent uses Sacred Sword, switch into Chandelure 4x Calm Mind + X.Speed then sweep"
+                                                        },
                                                         {
-                                                            "Description": " Step 2a.a.b.b.b: If opponent switches out into Eelektross/Salamence, use Stealth Rock then switch into Chandelure 3x Calm Mind + X.Speed then sweep" }
+                                                            "Description": " Step 2a.a.b.b.b: If opponent switches out into Eelektross/Salamence, use Stealth Rock then switch into Chandelure 3x Calm Mind + X.Speed then sweep"
+                                                        }
                                                     ]
                                                 }
                                             ]

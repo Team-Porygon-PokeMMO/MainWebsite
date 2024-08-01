@@ -11,24 +11,19 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Step 1: Use Trick",
-                            "Classes": []
+                            "Description": "Step 1: Use Trick"
                         },
                         {
-                            "Description": "Step 2a) If opponent uses Night Slash, switch to Poliwrath X.Speed + Belly Drum then sweep",
-                            "Classes": []
+                            "Description": "Step 2a) If opponent uses Night Slash, switch to Poliwrath X.Speed + Belly Drum then sweep"
                         },
                         {
-                            "Description": "Step 2b) If opponent uses Close Combat, switch to Chandelure x4 Calm Mind + X.Speed then sweep",
-                            "Classes": []
+                            "Description": "Step 2b) If opponent uses Close Combat, switch to Chandelure x4 Calm Mind + X.Speed then sweep"
                         },
                         {
-                            "Description": "Step 2c) If opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick as it switches into Absol/Flareon, then switch to Chandelure x4 Calm Mind + X.Speed then sweep",
-                            "Classes": []
+                            "Description": "Step 2c) If opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick as it switches into Absol/Flareon, then switch to Chandelure x4 Calm Mind + X.Speed then sweep"
                         },
                         {
-                            "Description": "Step 2d) If opponent switches out into Empoleon, switch into Blissey and use Softboiled. Switch into Chandelure x4 Calm Mind + X.Speed then sweep",
-                            "Classes": []
+                            "Description": "Step 2d) If opponent switches out into Empoleon, switch into Blissey and use Softboiled. Switch into Chandelure x4 Calm Mind + X.Speed then sweep"
                         }
                     ]
                 },
@@ -37,8 +32,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Step 1: Use Trick",
-                            "Classes": []
+                            "Description": "Step 1: Use Trick"
                         },
                         {
                             "Description": "Step 2: If opponent uses Fire Blast",
@@ -66,8 +60,7 @@
                             "Description": "Step 2: If opponent uses Fire Flamethrower",
                             "Steps": [
                                 {
-                                    "Description": "Step 2a: Switch into Chandelure x3 Calm Mind + X.Speed then sweep",
-                                    "Classes": []
+                                    "Description": "Step 2a: Switch into Chandelure x3 Calm Mind + X.Speed then sweep"
                                 }
                             ]
                         },
@@ -75,12 +68,10 @@
                             "Description": "Step 2: If opponent switches out into Clefable",
                             "Steps": [
                                 {
-                                    "Description": "Step 2a: Switch to Blissey and use Trick as it switches out into Lucario.",
-                                    "Classes": []
+                                    "Description": "Step 2a: Switch to Blissey and use Trick as it switches out into Lucario."
                                 },
                                 {
-                                    "Description": "Step 2b: Switch into Chandelure x5 Calm Mind + X.Speed then sweep",
-                                    "Classes": []
+                                    "Description": "Step 2b: Switch into Chandelure x5 Calm Mind + X.Speed then sweep"
                                 }
                             ]
                         }
@@ -1471,16 +1462,13 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Step 1: Use Trick",
-                            "Classes": []
+                            "Description": "Step 1: Use Trick"
                         },
                         {
-                            "Description": "Step 2a: If Opponent switches out to Quagsire, switch to Excadrill Stealth Rock then ×3 Swords Dance + X.Speed then sweep",
-                            "Classes": []
+                            "Description": "Step 2a: If Opponent switches out to Quagsire, switch to Excadrill Stealth Rock then ×3 Swords Dance + X.Speed then sweep"
                         },
                         {
-                            "Description": "Step 2b: If Opponent switches out into Salamence, use Stealth Rock then switch in Chandelure ×3 Calm Mind + X.Speed then sweep",
-                            "Classes": []
+                            "Description": "Step 2b: If Opponent switches out into Salamence, use Stealth Rock then switch in Chandelure ×3 Calm Mind + X.Speed then sweep"
                         }
                     ]
                 },
@@ -1489,21 +1477,18 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Step 1: Use Trick",
-                            "Classes": []
+                            "Description": "Step 1: Use Trick"
                         },
                         {
                             "Description": "Step 2a: If Opponent switches out to Quagsire, switch to Excadrill Stealth Rock then ×3 Swords Dance + X.Speed then sweep",
                             "Classes": [
                                 {
-                                    "Description": "Step 2a.a: If Opponent switches out into Salamence after you use Stealth Rock, switch to Blissey and use Trick as it switches out into Absol Close Combat. Switch in Chandelure ×3 Calm Mind + X.Speed then sweep",
-                                    "Classes": []
+                                    "Description": "Step 2a.a: If Opponent switches out into Salamence after you use Stealth Rock, switch to Blissey and use Trick as it switches out into Absol Close Combat. Switch in Chandelure ×3 Calm Mind + X.Speed then sweep"
                                 }
                             ]
                         },
                         {
-                            "Description": "Step 2b: If Opponent switches out into Salamence, switch to Blissey and use Trick as it switches out into Absol Close Combat. Switch in Chandelure ×5 Calm Mind + X.Speed then sweep",
-                            "Classes": []
+                            "Description": "Step 2b: If Opponent switches out into Salamence, switch to Blissey and use Trick as it switches out into Absol Close Combat. Switch in Chandelure ×5 Calm Mind + X.Speed then sweep"
                         }
                     ]
                 },
@@ -1518,12 +1503,10 @@
                                     "Description": "Step 1.a: If Opponent switches out into Garchomp after using Trick, switch to Blissey and use Trick",
                                     "Classes": [
                                         {
-                                            "Description": "Step 1.a.a: If Opponent uses Earthquake, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
-                                            "Classes": []
+                                            "Description": "Step 1.a.a: If Opponent uses Earthquake, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep"
                                         },
                                         {
-                                            "Description": "Step 1.a.a: If Opponentswitches out into Feraligatr, switch into Poliwrath Belly Drum + X.Speed then sweep",
-                                            "Classes": []
+                                            "Description": "Step 1.a.a: If Opponentswitches out into Feraligatr, switch into Poliwrath Belly Drum + X.Speed then sweep"
                                         }
                                     ]
                                 }
