@@ -576,15 +576,7 @@
                         }
                     ]
                 },
-                {
-                    "Name": "Darmanitan",
-                    "IsVisible": false,
-                    "Steps": [
-                        {
-                            "Description": "Switch into Chandelure 2x Calm Mind then sweep"
-                        }
-                    ]
-                },
+
                 {
                     "Name": "Gliscor",
                     "IsVisible": false,
