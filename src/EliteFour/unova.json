@@ -4,6 +4,8 @@
     "GymTrainers": [
         {
             "Name": "Shauntal",
+            "Image": "https://archives.bulbagarden.net/media/upload/b/bf/Black_White_Shauntal.png",
+            "ImagePosition": "25% 10%",
             "Leads": [
                 {
                     "Name": "Absol",
@@ -497,6 +499,7 @@
         },
         {
             "Name": "Grimsley",
+            "Image": "https://archives.bulbagarden.net/media/upload/b/be/Sun_Moon_Grimsley.png",
             "Leads": [
                 {
                     "Name": "Absol",
@@ -976,6 +979,7 @@
         },
         {
             "Name": "Caitlin",
+            "Image": "https://archives.bulbagarden.net/media/upload/0/04/Black_White_Caitlin.png",
             "Leads": [
                 {
                     "Name": "Absol",
@@ -1762,6 +1766,8 @@
         },
         {
             "Name": "Marshal",
+            "Image": "https://archives.bulbagarden.net/media/upload/1/18/Black_White_Marshal.png",
+            "ImagePosition": "25% 5%",
             "Leads": [
                 {
                     "Name": "Aggron",
@@ -2435,6 +2441,8 @@
         },
         {
             "Name": "Alder",
+            "Image": "https://archives.bulbagarden.net/media/upload/7/71/Black_White_Alder.png",
+            "ImagePosition": "25% 10%",
             "Leads": [
                 {
                     "Name": "Archeops",
