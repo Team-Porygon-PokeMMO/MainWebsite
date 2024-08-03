@@ -164,10 +164,10 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description":"If player gets Life Orb, use Stealth Rock and immediately switch to Chandelure x3 Calm Mind + X.Speed then sweep"
+                            "Description":"If you get a Life Orb, use Stealth Rock and immediately switch to Chandelure x3 Calm Mind + X.Speed then sweep"
                         },
                         {
-                            "Description": "If player gets get Choice Scarf, switch to Blissey and use Trick then immediately switch to Chandelure x4 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get a Choice Scarf, switch to Blissey and use Trick then immediately switch to Chandelure x4 Calm Mind + X.Speed then sweep"
                         },
                         {
                             "Description": "If Opponent switches into Chansey, use Stealth Rock then switch to Chandelure ×2 Calm Mind + X.Speed then sweep"
@@ -322,10 +322,10 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description": "If player gets Leftovers, switch to Excadrill ×2 Swords Dance + X.Speed then sweep"
+                            "Description": "If you get a Leftovers, switch to Excadrill ×2 Swords Dance + X.Speed then sweep"
                         },
                         {
-                            "Description": "If player gets Expert Belt, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep"
+                            "Description": "If you get an Expert Belt, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep"
                         }
                     ]
                 },
@@ -472,13 +472,13 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description": "If player gets Assault Vest, switch to Chandelure ×4 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get an Assault Vest, switch to Chandelure ×4 Calm Mind + X.Speed then sweep"
                         },
                         {
-                            "Description": "If player gets Choice Specs, switch to Chandelure ×2 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get a Choice Specs, switch to Chandelure ×2 Calm Mind + X.Speed then sweep"
                         },
                         {
-                            "Description": "If player gets Leftovers, switch into Chandelure x5 Calm Mind + X.Speed then sweep (Crit Foul Play from Liepard doesn’t kill, no priority)"
+                            "Description": "If you get a Leftovers, switch into Chandelure x5 Calm Mind + X.Speed then sweep (Crit Foul Play from Liepard doesn’t kill, no priority)"
                         },
                         {
                             "Description": "If Opponent switches into Altaria, switch into Chandelure ×3 Calm Mind + X.Speed then sweep"
@@ -851,10 +851,10 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description": "If player gets Assault Vest, switch into Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep"
+                            "Description": "If you get an Assault Vest, switch into Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep"
                         },
                         {
-                            "Description": "If player gets Leftovers, switch into Excadrill Stealth Rock then ×3 Swords Dance + X.Speed then sweep"
+                            "Description": "If you get a Leftovers, switch into Excadrill Stealth Rock then ×3 Swords Dance + X.Speed then sweep"
                         }
                     ]
                 },
@@ -1074,10 +1074,10 @@
                             "Description": "Trick"
                         },
                         {
-                            "Description": "If Player gets Expert Belt, use Stealth Rock then switch to Chandelure ×3 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get an Expert Belt, use Stealth Rock then switch to Chandelure ×3 Calm Mind + X.Speed then sweep"
                         },
                         {
-                            "Description": "If Player gets Life Orb, switch to Chandelure ×2 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get a Life Orb, switch to Chandelure ×2 Calm Mind + X.Speed then sweep"
                         }
                     ]
                 },
@@ -1089,10 +1089,10 @@
                             "Description": "Trick"
                         },
                         {
-                            "Description": "If Player gets Assault Vest, send out Chandelure x4 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get an Assault Vest, send out Chandelure x4 Calm Mind + X.Speed then sweep"
                         },
                         {
-                            "Description": "If Player gets Life Orb/Leftovers, send out Chandelure x3 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get a Life Orb/Leftovers, send out Chandelure x3 Calm Mind + X.Speed then sweep"
                         }
                     ]
                 },
@@ -1227,7 +1227,7 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description": "If player gets Chesto Berry and it uses Dynamic Punch, switch to Chandelure ×4 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get a Chesto Berry and it uses Dynamic Punch, switch to Chandelure ×4 Calm Mind + X.Speed then sweep"
                         },
                         {
                             "Description": "If Opponent uses Drain Punch/you get Leftovers and it uses Dynamic Punch, use Stealth Rock then switch to Chandelure ×3 Calm Mind + X.Speed then sweep"
@@ -1239,10 +1239,10 @@
                             "Description": "If Opponent switches switches to Steelix and -",
                             "Steps": [
                                 {
-                                    "Description": "Player gets Choice Band, switch to Excadrill Stealth Rock into ×2 Swords Dance + X.Speed then sweep"
+                                    "Description": "you get a Choice Band, switch to Excadrill Stealth Rock into ×2 Swords Dance + X.Speed then sweep"
                                 },
                                 {
-                                    "Description": "Player gets Rocky Helmet, switch to Chandelure ×4 Calm Mind + X.Speed then sweep"
+                                    "Description": "you get a Rocky Helmet, switch to Chandelure ×4 Calm Mind + X.Speed then sweep"
                                 }
                             ]
                         },
@@ -1259,7 +1259,7 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description": "If Player gets Life Orb and it uses Hammer Arm, Stealth Rock then send out Chandelure x3 Calm Mind + X.Speed then sweep",
+                            "Description": "If you get a Life Orb and it uses Hammer Arm, Stealth Rock then send out Chandelure x3 Calm Mind + X.Speed then sweep",
                             "Steps": [
                                 {
                                     "Description": "If Opponent switches out to Salamence while you set up, switch into Chandelure as it will use Earthquake. Then switch back to the Metagross with Scarf. Trick, and it locks Earthquake. Then Switch to Excadrill x2 Swords Dance + X.Speed then sweep"
@@ -1267,7 +1267,7 @@
                             ]
                         },
                         {
-                            "Description": "If Player gets Light Clay, immediately switch into Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep"
+                            "Description": "If you get a Light Clay, immediately switch into Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep"
                         },
                         {
                             "Description": "If Opponent switches out into Eelektross, send out Chandelure x3 Calm Mind + X.Speed then sweep"
@@ -1312,10 +1312,10 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description": "If Player gets Life Orb, use Stealth Rock then switch to Chandelure ×3 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get a Life Orb, use Stealth Rock then switch to Chandelure ×3 Calm Mind + X.Speed then sweep"
                         },
                         {
-                            "Description": "If Player gets Choice Scarf, use Stealth Rock then switch into Chandelure ×2 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get a Choice Scarf, use Stealth Rock then switch into Chandelure ×2 Calm Mind + X.Speed then sweep"
                         },
                         {
                             "Description": "If Opponent switches into Steelix, switch into Excadrill Stealth Rock",
@@ -1341,7 +1341,7 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description": "If Player gets Choice Band, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed then sweep",
+                            "Description": "If you get a Choice Band, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed then sweep",
                             "Steps": [
                                 {
                                     "Description": "If Opponent switches out to Slowbro while you set up, switch to Blissey and use Trick",
@@ -1357,7 +1357,7 @@
                             ]
                         },
                         {
-                            "Description": "If Player gets Rocky Helmet, switch to Chandelure ×4 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get a Rocky Helmet, switch to Chandelure ×4 Calm Mind + X.Speed then sweep"
                         }
                     ]
                 },
@@ -1420,7 +1420,7 @@
                             "Description": "If Opponent switches into Steelix and ",
                             "Steps": [
                                 {
-                                    "Description": "Player gets Choice Band, switch into Excadrill Stealth Rock then x2 Swords Dance + X.Speed then sweep",
+                                    "Description": "you get a Choice Band, switch into Excadrill Stealth Rock then x2 Swords Dance + X.Speed then sweep",
                                     "Steps": [
                                         {
                                             "Description": "If Opponent switches out to Slowbro while you set up, switch to Blissey and use Trick",
@@ -1434,7 +1434,7 @@
                                             ]
                                         },
                                         {
-                                            "Description": "Player gets Rocky Helmet, switch to Chandelure ×4 Calm Mind + X.Speed then sweep"
+                                            "Description": "you get a Rocky Helmet, switch to Chandelure ×4 Calm Mind + X.Speed then sweep"
                                         }
                                     ]
                                 }
@@ -1838,7 +1838,7 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description": "If Player gets Dragon Gem, switch to Blissey then use Trick. It will switch out into Absol and locks Close Combat. Switch into Chandelure x5 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get a Dragon Gem, switch to Blissey then use Trick. It will switch out into Absol and locks Close Combat. Switch into Chandelure x5 Calm Mind + X.Speed then sweep"
                         },
                         {
                             "Description": "If Opponent gets Life Orb, switch to Excadrill Stealth Rock then Swords Dance + X.Speed then sweep"
@@ -1853,10 +1853,10 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description": "If Player gets Choice Band, switch to Blissey and use Trick. Switch to Excadrill Stealth Rock then x2 Swords Dance + X.Speed then sweep"
+                            "Description": "If you get a Choice Band, switch to Blissey and use Trick. Switch to Excadrill Stealth Rock then x2 Swords Dance + X.Speed then sweep"
                         },
                         {
-                            "Description": "If Player gets Leftovers, switch to Blissey then switch to the second Metagross and use Trick. Use Stealth Rock then switch to Excadrill x2 Swords Dance + X.Speed then sweep"
+                            "Description": "If you get a Leftovers, switch to Blissey then switch to the second Metagross and use Trick. Use Stealth Rock then switch to Excadrill x2 Swords Dance + X.Speed then sweep"
                         },
                         {
                             "Description": "If Opponent switches into Vileplume, use Stealth Rock then switch into Poliwrath Belly Drum",
@@ -2021,13 +2021,13 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description": "If Player gets Choice Band, use Stealth Rock then switch to Chandelure ×2 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get a Choice Band, use Stealth Rock then switch to Chandelure ×2 Calm Mind + X.Speed then sweep"
                         },
                         {
-                            "Description": "If Player gets Dragon Gem, switch to Poliwrath Belly Drum + X.Speed. Use Drain Punch afterwards then proceed to sweep"
+                            "Description": "If you get a Dragon Gem, switch to Poliwrath Belly Drum + X.Speed. Use Drain Punch afterwards then proceed to sweep"
                         },
                         {
-                            "Description": "If Player gets Leftovers",
+                            "Description": "If you get a Leftovers",
                             "Steps": [
                                 {
                                     "Description": "And Opponent uses Fire Punch, use Stealth Rock and switch to Poliwrath Belly Drum + X.Speed then sweep(Use burn heal if necessary)",
@@ -2046,7 +2046,7 @@
                             ]
                         },
                         {
-                            "Description": "If Player gets Life Orb, immediately switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
+                            "Description": "If you get a Life Orb, immediately switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
                             "Steps": [
                                 {
                                     "Description": "If Opponent switches into Lapras while you set up, switch to Poliwrath Belly Drum + X.Speed then sweep"
@@ -2098,16 +2098,16 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description": "If Player gets Choice Scarf, switch into Excadrill x2 Swords Dance + X.Speed then sweep"
+                            "Description": "If you get a Choice Scarf, switch into Excadrill x2 Swords Dance + X.Speed then sweep"
                         },
                         {
                             "Description": "If Opponent switches into Dragonite",
                             "Steps": [
                                 {
-                                    "Description": "and Player gets Dragon Gem, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed then sweep"
+                                    "Description": "and you get a Dragon Gem, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed then sweep"
                                 },
                                 {
-                                    "Description": "and Player gets get Leftovers, use Stealth Rock then switch to Chandelure, then switch back to Metagross",
+                                    "Description": "and you get a Leftovers, use Stealth Rock then switch to Chandelure, then switch back to Metagross",
                                     "Steps": [
                                         {
                                             "Description": ". and Opponent switches back into Dragonite, Switch into Chandelure ×3 Calm Mind + X.Defense + X.Speed then sweep"
@@ -2118,7 +2118,7 @@
                                     ]
                                 },
                                 {
-                                    "Description": "and Player gets Life Orb, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
+                                    "Description": "and you get a Life Orb, switch to Excadrill Stealth Rock then ×2 Swords Dance + X.Speed then sweep",
                                     "Steps": [
                                         {
                                             "Description": "If Opponent switches out into Lapras after setting up, switch to Poliwrath Belly Drum + X.Speed then sweep"
@@ -2327,7 +2327,7 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description": "If Player gets Leftovers, switch immediately to Excadrill Stealth Rock AND ",
+                            "Description": "If you get a Leftovers, switch immediately to Excadrill Stealth Rock AND ",
                             "Steps": [
                                 {
                                     "Description": "Opponent does not switch out, then x2 Swords Dance + X.Speed then sweep"
@@ -2338,7 +2338,7 @@
                             ]
                         },
                         {
-                            "Description": "If Player gets Life Orb AND",
+                            "Description": "If you get a Life Orb AND",
                             "Steps": [
                                 {
                                     "Description": "Opponent uses Hidden Power, use Stealth Rock then switch to Chandelure x4 Calm Mind + X.Speed then sweep"
@@ -2349,13 +2349,13 @@
                             ]
                         },
                         {
-                            "Description": "If Player gets Steel Gem, switch to Excadrill Stealth Rock into Swords Dance + X.Defend + X.Speed then sweep"
+                            "Description": "If you get a Steel Gem, switch to Excadrill Stealth Rock into Swords Dance + X.Defend + X.Speed then sweep"
                         },
                         {
                             "Description": "If Opponent switches into Dragonite AND",
                             "Steps": [
                                 {
-                                    "Description": "If Player gets Leftovers, use Stealth Rock then use Thunder Punch. Switch into Chandelure x3 Calm Mind + X.Speed + X.Defend then sweep",
+                                    "Description": "If you get a Leftovers, use Stealth Rock then use Thunder Punch. Switch into Chandelure x3 Calm Mind + X.Speed + X.Defend then sweep",
                                     "Steps": [
                                         {
                                             "Description": "If Opponent switches into Kangaskhan, switch into Poliwrath Belly Drum + X.Speed then sweep"
@@ -2388,10 +2388,10 @@
                             "Description": "If Opponent uses Bug Bite, use Stealth Rock and let Metagross be KO’ed. Send in Chandelure into X.Defend + ×3 Calm Mind + X.Speed then sweep (Use Healing Items if necessary) "
                         },
                         {
-                            "Description": "If Player gets Choice Band, use Stealth Rock and switch into Chandelure ×2 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get a Choice Band, use Stealth Rock and switch into Chandelure ×2 Calm Mind + X.Speed then sweep"
                         },
                         {
-                            "Description": "If Player gets Flying Gem, use Stealth Rock and switch into Chandelure ×3 Calm Mind + X.Speed then sweep"
+                            "Description": "If you get a Flying Gem, use Stealth Rock and switch into Chandelure ×3 Calm Mind + X.Speed then sweep"
                         },
                         {
                             "Description": "If Opponent switches out into Dragonite, switch immediately to Excadrill Stealth Rock then x2 Swords Dance + X.Speed then sweep",
@@ -2426,7 +2426,7 @@
                             "Description": "Use Trick"
                         },
                         {
-                            "Description": "If Player gets Rocky Helmet AND",
+                            "Description": "If you get a Rocky Helmet AND",
                             "Steps": [
                                 {
                                     "Description": "Opponent switches into Feraligator, switch into Poliwrath Belly Drum + X.Speed then sweep"
@@ -2437,10 +2437,10 @@
                             ]
                         },
                         {
-                            "Description": "If Player gets Liechi Berry, switch to Excadrill x2 Swords Dance + X.Speed then sweep"
+                            "Description": "If you get a Liechi Berry, switch to Excadrill x2 Swords Dance + X.Speed then sweep"
                         },
                         {
-                            "Description": "If Player gets Custap Berry, switch into Excadrill Stealth Rock AND",
+                            "Description": "If you get a Custap Berry, switch into Excadrill Stealth Rock AND",
                             "Steps": [
                                 {
                                     "Description": "Opponent uses Earthquake, use x2 Swords Dance + X.Speed then sweep"
