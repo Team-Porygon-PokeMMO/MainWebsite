@@ -5,12 +5,11 @@ type Credit = {
 }
 let baseCredits: { [id: string]: Credit; } = {};
 baseCredits["denzi"] = {
-    Name: "Denzi",
-    Tag: "@denzi"
+    Name: "FreeReign",
+    Tag: "@denzi_norski"
 }
 baseCredits["juggerton"] = {
-    Name: "Juggerton",
-    Tag: "@juggerton"
+    Name: "Juggerton"
 }
 baseCredits["dronad"] = {
     Name: "Dronad",

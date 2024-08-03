@@ -104,7 +104,7 @@ export default {
         <div class="menu p-4">
             <p class="menu-label" @click="toggleTips()">
                 Tips {{ tipsVisible ?
-                    "➖" : "➕" }}
+                    "🔽" : "▶️" }}
             </p>
             <ul class="menu-list" v-show="tipsVisible">
                 <Tips v-for="tip in tips" :currentTip="tip" />

@@ -20,7 +20,7 @@ export default {
         },
         getIfExpandable() {
             if (this.currentTip?.Tips?.length > 0) {
-                return this.currentTip?.IsVisible ? '➖' : '➕'
+                return this.currentTip?.IsVisible ? '🔽' : '▶️'
             }
             return ''
         }
@@ -30,7 +30,7 @@ export default {
 
 <style scoped>
 .link {
-    color: lightblue;
+    color: rgb(51, 40, 211);
     cursor: pointer;
 }
 </style>
