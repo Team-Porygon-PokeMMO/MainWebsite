@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script lang="ts">
 import '~/assets/main.css'
 const signatureLink = 'https://i.ibb.co/fq874Kt/Pory-Team-Signature.gif'
 
@@ -27,16 +27,42 @@ const content = [
     description: 'The rules are...'
   }
 ]
+
+export default {
+  data() {
+    return {
+      signatureLink,
+      content
+    }
+  },
+  head() {
+    return {
+      title: 'lmao',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Home page description'
+        }
+      ]
+    }
+  }
+}
 </script>
 
+<style scoped>
+img {
+  display: inline
+}
+</style>
+
 <template>
-  <UContainer>
-    <!-- <UBreadcrumb divider="/" :links="[{ label: 'Home', to: '/' }]" /> -->
-    <h1>Team Porygon [PokeMMO]</h1>
-    <img :src="signatureLink" alt="Team Porygon Signature" />
-    <div v-for="item in content">
+  <div class="text-center p-4">
+    <h1>Team Porygon Site (PokeMMO)</h1>
+    <img :src="signatureLink" alt="Team Porygon Signature" class="text-center" />
+    <!-- <div v-for="item in content">
       <h2>{{ item.title }}</h2>
       <h3>{{ item.description }}</h3>
-    </div>
-  </UContainer>
+    </div> -->
+  </div>
 </template>
