@@ -47,7 +47,7 @@ export default {
                     {{ getIfExpandable(item) }} {{ item.Description }}
                 </span>
             </li>
-            <Steps class="ml-4" v-if="item?.Steps?.length > 0" :items="item.Steps" v-show="getIfCanBeSeen(item)" />
+            <Steps class="ml-8" v-if="item?.Steps?.length > 0" :items="item.Steps" v-show="getIfCanBeSeen(item)" />
         </ul>
     </div>
 </template>
