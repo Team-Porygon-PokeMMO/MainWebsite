@@ -17,12 +17,15 @@ const content = [
   },
   {
     title: 'Requirements to join',
-    description: 'Team Pory does have a base set of requirements to join, this ensures all members are held to the same standard and treated equally. Team Pory Requirements can be seen below: ENTER RULES(Prerequisites) FROM https://forums.pokemmo.com/index.php?/topic/159984-openpory-team-porygon-is-recruiting/'
+    description: 'Team Pory does have a base set of requirements to join, this ensures all members are held to the same standard and treated equally. Team Pory Requirements can be seen below:',
+    rules: [
+      "All regions completed", "400 in-game hours", "Decent PvE understanding (We'll work with you to help you learn)", "Have a discord account. We use our team server quite a bit", "Active and friendly", "Active in team chat (Required)",
+    ]
   },
   {
     title: 'How to apply',
-    description: 'To apply to our team, please vist the post below and fill out the required information. Or, reach out directly to glortwort or vexious on discord.',
-    "Team Pory Application": [
+    description: 'To apply to our team, please vist the post below and fill out the required information. Or, reach out directly to @glortwort or vexious on discord.',
+    links: [
       {
         "Url": "https://forums.pokemmo.com/index.php?/topic/159984-openpory-team-porygon-is-recruiting/",
         "Name": "Team Pory Application"
@@ -36,15 +39,26 @@ const content = [
 img {
   display: inline
 }
+
+a {
+  color: rgb(51, 40, 211);
+  cursor: pointer;
+}
 </style>
 
 <template>
-  <div class="p-4 text-center">
+  <div class="p-1 text-center">
     <h1>Team Porygon (PokeMMO)</h1>
-    <div class="grid grid-cols-2 text-left">
-      <div v-for="item in content" class="p-4">
+    <div class="grid grid-cols-1 text-justify">
+      <div v-for="item in content" class="p-2">
         <h2>{{ item.title }}</h2>
         <h3>{{ item.description }}</h3>
+        <div v-if="item.links">
+          <a v-for="link in item.links" :href="link.Url" target="_blank">{{ link.Name }}</a>
+        </div>
+        <ul v-if="item.rules" class="pl-8" style="list-style-type:circle;">
+          <li v-for="rule in item.rules">{{ rule }}</li>
+        </ul>
       </div>
     </div>
     <img :src="signatureLink" alt="Team Porygon Signature" class="mt-4" />
