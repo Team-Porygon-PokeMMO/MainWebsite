@@ -50,7 +50,7 @@ baseCredits["Team Porygon"] = {
 const fullCredits = [
     {
         Name: "Pokeking English Translations & Contributions",
-        Credits: ["denzi", "juggerton", "dronad"]
+        Credits: ["denzi", "juggerton", "dronad", "jaddee", "jeriel", "manitos"]
     },
     {
         Name: "Solve Testers",
@@ -59,6 +59,10 @@ const fullCredits = [
     {
         Name: "Page Design",
         Credits: ["tcb"]
+    },
+    {
+        Name: "Code Contributors",
+        Credits: ["jaddee","panotxa","tcb"]
     }
 ]
 export default {
