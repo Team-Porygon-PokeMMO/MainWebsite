@@ -36,7 +36,7 @@ div.regions {
 }
 
 div.regions:hover {
-    background-color: rgb(0, 0, 0, 1);
+    background-color: rgba(75, 16, 16, 0.534);
 }
 
 .active {
@@ -48,7 +48,7 @@ div.regions:hover {
     <div class="text-center">
         <h2 class="p-1">Leads</h2>
         <div class="grid grid-cols-8">
-            <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }" class="regions">
+            <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }" class="regions text-label">
                 {{ item.Name }}
             </div>
         </div>

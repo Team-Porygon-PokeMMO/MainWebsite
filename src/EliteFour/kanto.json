@@ -4,6 +4,7 @@
     "GymTrainers": [
         {
             "Name": "Lorelei",
+            "Image": "https://archives.bulbagarden.net/media/upload/f/f7/Lets_Go_Pikachu_Eevee_Lorelei.png",
             "IsVisible": false,
             "Leads": [
                 {
@@ -483,6 +484,7 @@
         {
             "Name": "Bruno",
             "IsVisible": false,
+            "Image": "https://archives.bulbagarden.net/media/upload/thumb/4/4c/Lets_Go_Pikachu_Eevee_Bruno.png/510px-Lets_Go_Pikachu_Eevee_Bruno.png",
             "Leads": [
                 {
                     "Name": "Aggron",
@@ -1106,6 +1108,7 @@
         {
             "Name": "Agatha",
             "IsVisible": false,
+            "Image": "https://archives.bulbagarden.net/media/upload/5/5c/Lets_Go_Pikachu_Eevee_Agatha.png",
             "Leads": [
                 {
                     "Name": "Arbok",
@@ -1503,6 +1506,7 @@
         {
             "Name": "Lance",
             "IsVisible": false,
+            "Image": "https://archives.bulbagarden.net/media/upload/c/cd/Lets_Go_Pikachu_Eevee_Lance.png",
             "Leads": [
                 {
                     "Name": "Aerodactyl",
@@ -2133,6 +2137,7 @@
         {
             "Name": "Blue",
             "IsVisible": false,
+            "Image": "https://archives.bulbagarden.net/media/upload/2/20/Blue_PO.png",
             "Leads": [
                 {
                     "Name": "Aerodactyl",

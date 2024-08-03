@@ -4,6 +4,7 @@ export class Trainer {
     Name: string = "";
     IsVisible: boolean = false;
     Leads: Lead[] = [];
+    Image?: string;
 }
 export class Lead {
     Name: string = "";
@@ -27,6 +28,17 @@ export default {
         setActive(item: Trainer) {
             this.items.forEach(i => i.IsVisible = false)
             item.IsVisible = !item.IsVisible
+        },
+        getImageStyling(item: Trainer) {
+            if (item.Image) {
+                return {
+                    backgroundImage: `linear-gradient(rgb(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(${item.Image})`,
+                    backgroundSize: 'cover',
+                    backgroundPosition: '25% 15%',
+                    width: '100%',
+                    height: '100%',
+                }
+            }
         }
     },
 };
@@ -41,7 +53,7 @@ div.regions {
 }
 
 div.regions:hover {
-    background-color: rgb(0, 0, 0, 1);
+    background-color: rgba(75, 16, 16, 0.534);
 }
 
 .active {
@@ -53,11 +65,11 @@ div.regions:hover {
     <div class="text-center">
         <h2 class="p-1">Trainers</h2>
         <div class="grid grid-cols-5">
-            <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }" class="regions">
-                {{ item.Name }}
+            <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }" class="regions text-label"
+                :style="getImageStyling(item)">
+                <span>{{ item.Name }}</span>
             </div>
         </div>
         <Leads v-for="item in items" :items="item.Leads" v-show="item.IsVisible" />
     </div>
 </template>
-

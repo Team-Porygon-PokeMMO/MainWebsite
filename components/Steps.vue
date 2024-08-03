@@ -41,7 +41,7 @@ export default {
 
 <template>
     <div class="text-justify ">
-        <ul v-for="item in items" class="menu-list">
+        <ul v-for="item in items" class="menu-list ">
             <li class="menu-label ml-2" @click="toggleView(item)">
                 <span>
                     {{ getIfExpandable(item) }} {{ item.Description }}

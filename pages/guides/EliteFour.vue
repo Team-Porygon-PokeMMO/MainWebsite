@@ -60,6 +60,11 @@ export default {
     font-weight: bold;
 }
 
+.text-label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .menu-list {
     list-style: none;
 }
@@ -106,7 +111,7 @@ export default {
                 Tips {{ tipsVisible ?
                     "🔽" : "▶️" }}
             </p>
-            <ul class="menu-list" v-show="tipsVisible">
+            <ul class="menu-list text-label" v-show="tipsVisible">
                 <Tips v-for="tip in tips" :currentTip="tip" />
             </ul>
             <Regions :items="regions" class="menu-list" />
