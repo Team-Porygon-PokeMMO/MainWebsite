@@ -6,10 +6,490 @@
             "Name": "Shauntal",
             "Leads": [
                 {
-                    "Name": "",
+                    "Name": "Absol",
                     "Steps": [
                         {
-                            "Description": ""
+                            "Description": "Stealth Rock (use Flamethrower vs Hydreigon);",
+                            "Steps": [
+                                {
+                                    "Description": "if it stays, switch into Chandelure, then switch into Metagross and use Trick. Switch back into Chandelure:",
+                                    "Steps": [
+                                        {
+                                            "Description": "if it still stays: 5x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "if it switches into Hydreigon: 3x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if it switches into Hydreigon, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Banette",
+                    "Steps": [
+                        {
+                            "Description": "Stealth Rock (use Flamethrower vs Hydreigon);",
+                            "Steps": [
+                                {
+                                    "Description": "if it stays, siwtch into Blissey and use Trick. Switch into Chandelure: 5x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "if it switches into Hydreigon, switch into Chandelure: 2x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Bisharp",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "if it uses Low kick;",
+                                    "Steps": [
+                                        {
+                                            "Description": "and you get a Focus Sash, use Stealth Rock, then switch into Chandelure: 4x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "and you get a Life Orb, use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if it switches into Dragonite, use Stealth Rock;",
+                                    "Steps": [
+                                        {
+                                            "Description": "if you get a Leftovers, switch into Blissey and use Softboiled. Switch into Chandelure: 4x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "if you get a Sitrus Berry, switch into Chandelure: 4x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if it switches into Gliscor, switch into Excadrill: Stealth Rock + Swords Dance + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "if it switches into Jellicent, switch into Blissey and use Trick. Switch into Chandelure: 2x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if it switches into Umbreon, switch into Blissey and use Stealth Rock. Switch into Chandelure: 4x Calm Mind + X.Speed. When Kingambit comes out, switch into Poliwrath and use Drain Punch."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Bronzong",
+                    "Steps": [
+                        {
+                            "Description": "Stealth Rock;",
+                            "Steps": [
+                                {
+                                    "Description": "if it stays, switch into Blissey and use Trick. Switch into Chandelure: 5x Calm Mind + X.Speed (use Flamethrower vs Hydreigon)."
+                                },
+                                {
+                                    "Description": "If it switches into Hydreigon, switch into Chandelure: 2x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Chandelure",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey;",
+                            "Steps": [
+                                {
+                                    "Description": "if it uses Fire Blast;",
+                                    "Steps": [
+                                        {
+                                            "Description": "and it deals around 19.4-23% of damage, use Trick;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it switche sinto Absol, switch into Chandelure: 5x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "if it switches into Eelektross, use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed (use Shadow Ball vs Gengar)."
+                                                },
+                                                {
+                                                    "Description": "if it switches into Lucario, switch into Chandelure: 6x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "and it deals 29.1-34.4% damage, use Stealth Rock;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it stays, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "if it switches into Hydreigon, switch into Chandelure, then switch into Metagross and use Trick. Switch back into Chandelure: 3x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if it uses Flamethrower or it switches out into Umbreon, switch into Metagross;",
+                                    "Steps": [
+                                        {
+                                            "Description": "if it switches out into Dragonite, use Trick, then switch into Chandelure: 4x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "if it switches into Eelektross, use Trick, then use Stealth Rock. Switch into Chandelure: 2x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "if it switches into Toxicroak, use Stealth Rock;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it stays, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "if it switches into anything else, switch into Blissey and use Softboiled. Switch into Chandelure: 3x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if it switches out into Dragonite, switch into Metagross;",
+                                    "Steps": [
+                                        {
+                                            "Description": "if it uses Dragon Claw, use Stealth Rock, then switch into Blissey and use Softboiled. Switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "if it uses Flamethrower, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "if it uses Superpower, use Trick;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if you get a Leftovers, use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "if you get a Sitrus Berry, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "if it switches into Toxicroak, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it switches out, switch into Blissey and use Softboiled. Switch into Chandelure: 4x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if it switches into Eelektross, switch into Metagross and use Trick. Use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "if it switches into Hydreigon, use Stealth Rock;",
+                                    "Steps": [
+                                        {
+                                            "Description": "if it got damaged by Life Orb, switch into Chandelure, then switch into Metagross and use Trick. Switch into Chandelure: 3x"
+                                        },
+                                        {
+                                            "Description": "if not, switch into Chandelure: 2x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Dragonite",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "if it uses Dragon Claw, use Stealth Rock, then switch into Blissey and use Softboiled. Switch into Chandelure: 4x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "if it uses Fire Punch, use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "if it switches unto Umbreon, switch into Blissey and use Trick. Use Stealth Rock, then switch into Chandelure: 4x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Drifblim",
+                    "Steps": [
+                        {
+                            "Description": "Stealth Rock, then switch into Blissey and use Trick. Switch into Chandelure: 5x Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Eelektross",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then use Stealth Rock. Switch into Chandelure: 2x Calm Mind + X.Speed (use Shadow Ball vs Gengar)."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Froslass",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it stays, use Stealth Rock, then switch into Blissey and use Trick. Switch into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Dragonite, use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gengar",
+                    "Steps": [
+                        {
+                            "Description": "Switch to Blissey and use Stealth Rock. Switch into Chandelure, then switch into Excadrill and kill it with Earthquake. Switch back into Chandelure: 2x Calm Mind + X.Speed (use Shadow Ball vs Gengar)."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Golurk",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Hydreigon",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Chandelure;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Fire Blast, switch into Blissey, then switch into Metagross;",
+                                    "Steps": [
+                                        {
+                                            "Description": "if it switches into Absol, use Stelath Rock;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it stays, switch back into Chandelure, then switch into Metagross and use Trick. Switch again into Chandelure;",
+                                                    "Steps": [
+                                                        {
+                                                            "Description": "if it still stays: 5x Calm Mind + X.Speed."
+                                                        },
+                                                        {
+                                                            "Description": "if it switches into Hydreigon: 3x Calm Mind + X.Speed."
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Description": "If Hydreigon comes out, swithc back into Chandelure: 2x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it uses Flamethrower, switch into Metagross and use Trick. Switch into Poliwrath: Belly Drum + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Chandelure, switch into Blissey and use Stealth Rock. Switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Jolteon",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Excadrill: 2x Swords Dance + X.Speed (use Earthquake vs Umbreon)."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Liepard",
+                    "Steps": [
+                        {
+                            "Description": "Use Stealth Rock, then switch into Chandelure. Switch into Excadrill and use Earthquake. Switch back into Chandelure: Calm Mind + X.Speed (use Shadow Ball vs Gengar)."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Lucario",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Aura Sphere;",
+                                    "Steps": [
+                                        {
+                                            "Description": "and you get a Focus Sash, switch into Chandelure: 5x Calm Mind + X.Speed. Use Flamethrower vs Hydreigon.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it switches into Hydreigon, switch into Metagross and use Trick. Switch into Chandelure: 3x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "and you get a Life Orb, use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it uses Close Combat, switch into Chandelure: 6x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Dragonite or Eelektross, use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed (use Shadow Ball vs Gengar)."
+                                },
+                                {
+                                    "Description": "If it switches into Hydreigon, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Umbreon, switch into Blissey and use Trick. Switch into Chandelure: 6x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Luxray",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then use Stealth Rock. Switch into Chandelure;",
+                            "Steps": [
+                                {
+                                    "Description": "If it stays: 5x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Hydreigon: 2x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Milotic",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then use Stealth Rock. Switch into Chandelure: 3x Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Mismagius",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey, then use Stealth Rock. Switch into Chandelure: 4x Calm Mind + X.Speed. When Kingambit comes out, switch into Poliwrath and use Drain Punch."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Purugly",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it switches into Golurk, switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Hydreigon, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Rotom-Wash",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then use Stealth Rock;",
+                            "Steps": [
+                                {
+                                    "Description": "If you get a Chesto Berry, switch into Chandelure: 2x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If you get a Leftovers, switch into Chandelure: 3x Calm Mind + X.Speed (use Shadow Ball vs Gengar)."
+                                },
+                                {
+                                    "Description": "If it switches into Eelektross, switch into Chandelure, then switch into Excadrill and use Earthquake. Switch into Chadenlure: Calm Mind + X.Speed (use Shadow Ball vs Gengar."
+                                },
+                                {
+                                    "Description": "If it switches into Umbreon, switch into Blissey and use Trick. Switch into Chandelure: 5x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Toxicroak",
+                    "Steps": [
+                        {
+                            "Description": "Stealth Rock;",
+                            "Steps": [
+                                {
+                                    "Description": "If it stays, switch into Chandelure: 4x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into anything else, switch into Blissey and use Softboiled. Switch into Chandelure: 4x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Umbreon",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey, then switch into Metagross;",
+                            "Steps": [
+                                {
+                                    "Description": "If it switches into Lucario, use Trick, then switch into Chandelure: 6x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Toxicroak, use Stealth Rock;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it stays, switch into Chandelure: 4x Calm Mind + X.Speed.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it switches into anything else, switch into Blissey and use Softboiled. Switch into Chandelure: 4x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Zoroark",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey, then switch into Metagross Trick. Switch into Chandelure: 3x Calm Mind + X.Speed."
                         }
                     ]
                 }
@@ -19,23 +499,1149 @@
             "Name": "Marshal",
             "Leads": [
                 {
-                    "Name": "",
+                    "Name": "Aggron",
                     "Steps": [
                         {
-                            "Description": ""
+                            "Description": "Stealth Rock;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Low Kick, switch into Chandelure: 4x Calm Mind;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If Absol uses Sucker Punch and KO'es Chandelure, send out Blissey and use Trick. Revive Chandelure, then set up again."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Seismitoad, switch into Chandelure, then switch into Metagross. Switch back into Chandelure: 4x Calm Mind."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Breloom",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then use Stealth Rock. Switch into Chandelure: 5x Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Carracosta",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it switches into Conkeldurr, use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Golurk, switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Crawdaunt",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Crabhammer or Surf, switch into Poliwrath: Belly Drum + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Conkeldurr, use Drain Punch. Switch into Chandelure, then Metagross and Trick;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it uses High Jump Kick, switch into Chandelure: X.Special + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "If it switches into Salamence, use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it uses Crunch, use Stealth Rock, then switch into Poliwrath: Belly Drum + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Healing Items if needed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Conkeldurr, use Stealth Rock;",
+                                    "Steps": [
+                                        {
+                                            "Description": "if it uses Drain Punch, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it uses Payback, switch into Poliwrath: Belly Drum + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it uses Thunder Punch, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Gliscor, switch into Chandelure: 3x Calm Mind + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Conkeldurr, switch into the second Metagross and use Trick;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it uses Drain Punch, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "If it uses Payback, switch into Poliwrath: Belly Drum + X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Salamence;",
+                                    "Steps": [
+                                        {
+                                            "Description": "and you get a Choice Scarf, use Stealth Rock and switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "and you get a Life Orb;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it has Intimidate, use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "if it has Moxie, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Conkeldurr",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Close Combat; use Stealth Rock, then switch into Chandelure;",
+                                    "Steps": [
+                                        {
+                                            "Description": "if you get a Flame Orb: 3x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "if you get a Life Orb: 2x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it uses Drain Punch;",
+                                    "Steps": [
+                                        {
+                                            "Description": "and you get a Chesto Berry, use stealth Rock, then switch into Chandelure: 5x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "and you get a Flame Orb, use Stealth Rock, then switch into Chandelure: 4x Calm Mind.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If Chandelure dies, send Blissey and use Trick. Revive Chandelure, then set up again."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "and you get a Leftovers, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "and you get a Life Orb, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it switches into Salamence, switch into Chandelure, then switch into Metagross and use Trick. Switch back to Chandelure: 3x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "if it switches into Seismitoad, switch into Blissey, then switch into Chandelure. It must face Medicham. Switch into Poliwrath: Belly Drum + X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it uses Fire Punch, use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it uses Thunder Punch, switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If it uses Payback, use Stealth Rock, then switch into Poliwrath: Belly Drum + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Breloom, use Stealth Rock, then switch into Chandelure: 5x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Dusknoir, use Stealth Rock, then switch into Chandelure. Switch into Metagross and use Trick. Switch back into Chandelure: 5x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Gliscord, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Salamence, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Seismitoad, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Dusknoir",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Brick Break, use Stealth Rock, then switch into Chandelure. Switch to Blissey, then switch to Metagross;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it sends out Aggron, switch back into Chandelure: 4x Calm Mind."
+                                        },
+                                        {
+                                            "Description": "If Seismitoad stays, switch to Chandelure again, then switch back to Metagross and use Trick. Use Stealth Rock, then switch back into Chandelure: 4x Calm Mind."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it uses Will-o-Wisp, use Stealth Rock, then switch into Chandelure;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Breloom, switch into Metagross and use Trick. Switch back into Chandelure: 5x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it switches into Gyarados: 5x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Seismitoad, Stealth Rock, then switch back into Chandelure: 4x Calm Mind."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Electivire",
+                    "Steps": [
+                        {
+                            "Description": "Switch to Blissey and use Stealth Rock. Switch into Chandelure, then switch into Metagross and use Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Drain Punch or Dynamic Punch, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it uses Thunder Punch, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If it uses Payback, switch into Poliwrath: Belly Drum + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gliscor",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Chandelure: 3x Calm Mind + X.Speed.",
+                            "Steps": [
+                                {
+                                    "Description": "If it switches out into Conkeldurr, switch into Metagross and use Trick.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it uses Drain Punch, switch into Chandelure: 2x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it uses Payback, use Stealth Rock, then switch into Poliwrath: Belly Drum + X.Speed."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Golurk",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If you get an Expert Belt, switch into Excadrill Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If you get a Leftovers, switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Conkeldurr, switch into Chandelure, then switch into Metagross and use Trick. Switch back into Chandelure: 2x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it switches into Salamence, switch into Blissey and use Trick. Switch into Chandelure: 2x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gyarados",
+                    "Steps": [
+                        {
+                            "Description": "If it has Intimidate, use Thunder Punch. Switch into Excadrill, then switch into Metagross and use Trick. Switch back into Excadrill: 2x Swords Dance + X.Defend."
+                        },
+                        {
+                            "Description": "If it has Moxie, use Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If you get a Life Orb, switch into Poliwrath, then switch into the second Metagross and use Trick. Use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If you get a Wacan Berry, use Stealth Rock;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it uses Fire Blast, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it uses Waterfall, switch into Poliwrath: Belly Drum + X.Speed.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it switches into Conkeldurr, use Drain Punch;",
+                                                    "Steps": [
+                                                        {
+                                                            "Description": "If Luxray is sent out, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                                        },
+                                                        {
+                                                            "Description": "If Sawk is sent out, use X.Speed."
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "If it switches into Conkeldurr, use Thunder Punch then let it die. Switch into Chandelure and use Flamethrower.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it sends out Gyarados, switch into Poliwrath: Belly Drum + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "If it sends out Sawk, switch into Blissey and use Trick. Switch back into Chandelure: 3x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "If it switches into Conkeldurr, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Haxorus",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Krookodile",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Excadrill Stealth Rock. Switch into Poliwrath, then switch into the second Metagross and use Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Waterfall, switch into Poliwrath: Belly Drum + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Conkeldurr, use Drain Punch;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If Luxray is sent out, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "If Sawk is sent out, use X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it uses Fire Blast or it switches out into Conkeldurr, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Lucario",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Aura Sphere, use Stealth Rock, then switch into Chandelure: 2x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Golurk, switch into Excadrill and use Stealth Rock. Switch into Chandelure: 2x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Luxray",
+                    "Steps": [
+                        {
+                            "Description": "Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Machamp",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then use Stealth Rock. Switch into Chandelure: 3x Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Magnezone",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If you get a Life Orb, let Metagross die. Send in Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If you get a Petaya Berry, switch into Excadrill: Stealth Rock + 3x Swords Dance + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Medicham",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Chandelure then use Flamethrower to kill. Switch into Metagross and use Trick, then switch back into Chandelure: 2x Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Metagross",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If you get an Aguav Berry, switch into Excadrill: Stealth Rock + 3x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If you get a Life Orb or Rocky Helmet, switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Conkeldurr, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Salamence, use Stealth Rock, then switch into Chandelure;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it has Intimidate: 2x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it has Moxie, 3x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Mienshao",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses High Jump Kick, switch into Chandelure: X.Special + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Conkeldurr and Salamence, use Stealth Rock and then switch into Chandelure: 2x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Golurk, switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Conkeldurr, switch into Chandelure, then switch into the second Metagross and use Trick.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it uses Close Combat, switch into Chandelure: 2x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "If it uses Payback, switch into Poliwrath: Belly Drum + X.Speed."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "If it switches into Salamence, switch into Blissey and use Trick. Switch into Chandelure: 2x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Salamence",
+                    "Steps": [
+                        {
+                            "Description": "If it has Intimidate, switch into Blissey and use Stealth Rock;",
+                            "Steps": [
+                                {
+                                    "Description": "If it switches into Conkeldurr, switch into Chandelure, then switch into Metagross and use Trick. Switch back into Chandelure: 2x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Mienshao, switch into Metagross, then switch into the second Metagross. Switch into Chandelure, then switch into any Metagross and use Trick. Switch back into Chandelure: X.Special + X.Speed."
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "If it has Moxie, use Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it has a Choice Scarf, switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Conkeldurr, switch into Chandelure, then switch into the second Metagross and use Trick.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it uses Drain Punch, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "If it uses Thunder Punch, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "If it uses Payback, switch into Poliwrath: Belly Drum + X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it has a Life Orb, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Sawk",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Earthquake, switch into Chandelure: 4x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Conkeldurr, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Seismitoad",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Earth Power, switch into Chandelure: 2x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it uses Earthquake, use Stealth Rock, then switch into Chandelure: 4x Calm Mind."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Skarmory",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it switches into Conkeldurr, use Stealth Rock;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it uses Close Combat, switch into Chandelure: 2x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it uses Drain Punch, switch into Chandelure: 4x Calm Mind.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If Chandelure dies, send in the second Metagross and use Trick. Switch into Excadrill: 2x Swords Dance + X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Golurk, switch into Excadrill Stealth Rock, then swithc into Chandelure: 2x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Seismitoad, use Stealth Rock, then switch into Chandelure: 4x Calm Mind.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If Chandelure dies, send Blissey and use Trick. Revive Chandelure, then set up again."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Throh",
+                    "Steps": [
+                        {
+                            "Description": "Stealth Rock, then switch into Blissey. Switch into Metagross then switch into Chandelure: 4x Calm Mind.",
+                            "Steps": [
+                                {
+                                    "Description": "If Chandelure dies, send Blissey and use Trick. Revive Chandelure, then set up again."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Toxicroak",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Chandelure: 3x Calm Mind + X.Speed.",
+                            "Steps": [
+                                {
+                                    "Description": "If it switches into Conkeldurr, switch into Metagross and use Trick;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it uses Drain Punch, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it uses Payback, switch into Poliwrath: Belly Drum + X.Speed."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Tyranitar",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Excadrill: Stealth Rock + 3x Swords Dance + X.Defend + X.Speed."
                         }
                     ]
                 }
             ]
         },
         {
-            "Name": "Grimsly",
+            "Name": "Grimsley",
             "Leads": [
                 {
-                    "Name": "",
+                    "Name": "Absol",
                     "Steps": [
                         {
-                            "Description": ""
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Close Combat, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Salamence, switch into Excadrill: Stealth Rock + Swords Dance + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Bisharp",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Low Kick;",
+                                    "Steps": [
+                                        {
+                                            "Description": "and you get an Air Balloon, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "and you get a Focus Sash or Life Orb, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it uses Night Slash, switch into Poliwrath: Belly Drum + X.Speed."
+                                },
+                                {
+                                    "Description": "If it uses Thunder Wave, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Garchomp;",
+                                    "Steps": [
+                                        {
+                                            "Description": "and you get a Life Orb, switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it switches out into Gyarados, switch into Poliwrath, then switch into second Metagross and use Thunder Punch to kill. Switch into Chandelure: 3x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "and you get a Rocky Helmet, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Krookodile, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches out into Mismagius, switch into Blissey and use Trick. Switch into Chandelure: 4x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches out into Serperior, switch into Chandelure: 4x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches out into Staraptor, switch into Blissey and tank Final Gambit. Switch into Chandelure, then switch into the second Metagross and use Trick. switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Chandelure",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey;",
+                            "Steps": [
+                                {
+                                    "Description": "If it gets damaged by Life Orb, use Stealth Rock;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Garchomp, switch into Chandelure, then switch into Metagross and use Trick. Switch into Excadrill: 2x Swords Dance + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it switches into Honchkrow, switch into Chandelure, then switch into Metagross and use Thunder Punch. Switch into Excadrill: 2x Swords Dance."
+                                        },
+                                        {
+                                            "Description": "If it switches into Staraptor, switch into Chadndelure: 3x Calm Mind + X.Defend + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it uses any move other than Fire Blast but doesn't get damaged by Life Orb, use Trick;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Bisharp or Samurott, switch into Chandelure: 4x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it switches into Garchomp, switch into Excadrill: Stealth Rock as it sends out Gyarados. Switch into Poliwrath, then switch into Metagross and use Thunder Punch to kill. Switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it switches into Haxorus, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it uses Fire Blast but doesn't get damaged by Life Orb or it missed, use Stealth Rock;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Bisharp or Samurott, switch into Chandelure then switch into Metagross and use Trick.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it uses Aqua Tail, switch into Poliwrath: Belly Drum + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "If it uses Sacred Sword, swithc into Chandelure: 4x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "If it switches into Garchomp or Haxorus, switch into Chandelure, then switch into Metagross and use Trick. Switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it switches into Honchkrows, switch into Metagross and use Thunder Punch. switch into Excadrill: 2x Swords Dance."
+                                        },
+                                        {
+                                            "Description": "If it switches into Staraptor, switch into Chandelure: 3x Calm Mind + X.Defend + X.Speed."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Crobat",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Espeon",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it stays, switch into Chandelure: 2x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches out into Crobat, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Garchomp, switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Garchomp",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If you get a Life Orb, switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches out into Gyarados, switch into Poliwrath, then switch into second Metagross and use Thunder Punch to kill;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If Metagross HP is below 60%, switch into Blissey and use Trick. Switch into Chandeure: 3x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "If it switches into Chandelure: switch into your own Chandelure: 3x Calm Mind + X.Speed."
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If you get Rocky Helmet, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gyarados",
+                    "Steps": [
+                        {
+                            "Description": "Use Thunder Punch to kill. Switch into Blissey, then switch into Metagross and use Trick. Switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Haxorus",
+                    "Steps": [
+                        {
+                            "Description": "Trick then switch into Chandelure: 3x Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Honchkrow",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey;",
+                            "Steps": [
+                                {
+                                    "Description": "If it stays, switch into Metagross and use Thunder Punch. Switch into Excadrill: Stealth Rock + 2x Swords Dance."
+                                },
+                                {
+                                    "Description": "If it swiches into Krookodile, switch into Excadrill: Stealth Rock + 2x Swords Dance."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Houndoom",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey and use Trick. Switc into Chandelure: 5x Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Kingdra",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Waterfall, switch into Poliwrath: Belly Drum + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Krookodile, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Krookodile",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Excadrill: Stealth Rock + 2x Swords Dance."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Liepard",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey and use Trick. Switch into Excadrill: Stealt Rock + 2x Swords Dance + X.Speed.",
+                            "Steps": [
+                                {
+                                    "Description": "If it switches into Gyarados, switch into Poliwrath, then switch into Metagross and use Thunder Punch;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If Metagross HP is higher than 60%, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If Metagross HP is lower than 60%, switch into Blissey, then switch into Metagross and use Trick. Switch back into Excadrill: 2x Swords Dance + X.Speed."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Luxray",
+                    "Steps": [
+                        {
+                            "Description": "Stealth Rock;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Superpower, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it uses Thunderbolt, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Salamence, switch into Chandelure, then switch into Metagross and use Trick. Switch into Chandelure: 3x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Mismagius",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Flamethrower, switch into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it uses any other move, switch to Blissey and use Trick. Switch to Chandelure: 4x Calm Mind + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Tyranitar, switch into the second Metagross and use Trick. Switch into Poliwrath: Belly Drum + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Bisharp, switch into Chandelure: 4x Calm Mind + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Serperior, switch into the second Metagross and use Trick. Switch back into Chandelure: 4x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Garchomp, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Gliscor, switch into Chandelure: 3x Calm Mind + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Samurott, switch into Poliwrath: Belly Drum + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Salamence, use Stealth Rock, then switch into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Serperior, switch into Chandelure: 4x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Roserade",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Chandelure: 5x Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Samurott",
+                    "Steps": [
+                        {
+                            "Description": "Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Aqua Tail, switch into Poliwrath: Belly Drum + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Serperior, switch into the second Metagross and use Trick. Switch into Chandelure: 4x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it uses Megahorn, use Stealth Rock, then switch into Poliwrath: Belly Drum + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Dragonite, switch into Excadrill: Stealth Rock + Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Sharpedo, switch into Excadrill: 2x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "If it switches into Serperior, switch into Chandelure: 4x Calm Mind + X.Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Salamence",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed.",
+                            "Steps": [
+                                {
+                                    "Description": "If it sends out Kingambit last, switch into Poliwrath and use Drain Punch."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Scrafty",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Chandelure;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Foul Play, switch into Blissey and use Trick. Switch back into Chandelure: 3x Calm Mind + X.Speed."
+                                },
+                                {
+                                    "Description": "If it uses High Jump Kick, X. Special + X. Speed."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Serperior",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Chandelure: 4x Calm Mind + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Sharpedo",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Excadrill: 2x Swords Dance + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Spiritomb",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Foul Play, use Stealth Rock;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches out into Garchomp, switch into Chandelure, then switch into Metagross and use Trick. Switch into Excadrill: 2x Swords Dance + X.Speed."
+                                        },
+                                        {
+                                            "Description": "If it switches into Staraptor, switch into Chandelure: 3x Calm Mind + X.Speed + X.Defend."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it uses Will-o-Wisp, use Stealth Rock;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Honchkrow, switch into Metagross and use Thunder Punch. Switch into Excadrill: 2x Swords Dance."
+                                        },
+                                        {
+                                            "Description": "If it switches into Krookodile, switch into Excadrill: 2x Swords Dance."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Krookodile, switch into Excadrill: Stealth Rock + 2x Swords Dance."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Staraptor",
+                    "Steps": [
+                        {
+                            "Description": "Switch into Blissey to tank Final Gambit. Switch into Chandelure, then switch into Metagross and use Trick. Switch into Excadrill: Stealth Rock + Swords Dance + X.Speed."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Tyranitar",
+                    "Steps": [
+                        {
+                            "Description": "Trick, then switch into Chandelure: 3x Calm Mind + X.Speed. Heal Chandelure when Sandstorm is over. If Kingambit is sent out last, switch into Poliwrath and use Drain Punch."
                         }
                     ]
                 }
@@ -115,15 +1721,20 @@
                     "Name": "Blissey",
                     "Steps": [
                         {
-                            "Description": "If it uses Flamethrower, switch into Chandelure: 3x Calm Mind + X.Speed.",
+                            "Description": "Trick;",
                             "Steps": [
+                                {
+                                    "Description": "If it uses Flamethrower, switch into Chandelure: 3x Calm Mind + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Togekiss, switch into Blissey and use Trick. Switch back to Chandelure: 5x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
                                 {
                                     "Description": "If it switches into Togekiss, switch into Blissey and use Trick. Switch back to Chandelure: 5x Calm Mind + X.Speed."
                                 }
                             ]
-                        },
-                        {
-                            "Description": "If it switches into Togekiss, switch into Blissey and use Trick. Switch back to Chandelure: 5x Calm Mind + X.Speed."
                         }
                     ]
                 },

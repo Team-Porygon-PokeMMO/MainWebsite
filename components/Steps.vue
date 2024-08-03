@@ -5,56 +5,49 @@ export class Step {
     Steps: Step[] = [];
     IsVisible: boolean = false;
 }
-export class Trainer {
-    Name: string = "";
-    IsVisible: boolean = false;
-    Leads: Leads[] = [];
-}
-export class Leads {
-    Name: string = "";
-    IsVisible: boolean = false;
-    Steps: Step[] = [];
-}
-export class Region {
-    Name: string = "";
-    IsVisible: boolean = false;
-    GymTrainers: Trainer[] = [];
-}
 export default {
     props: {
-        currentStep: {
-            type: Step,
+        items: {
+            type: Array as PropType<Array<Step>>,
             required: true,
         },
     },
     methods: {
-        toggleView() {
-            this.currentStep.IsVisible = !this.currentStep.IsVisible
+        toggleView(item: Step) {
+            if (this.getIfTrick(item)) return
+            item.IsVisible = !item.IsVisible
         },
-        getIfTrick() {
-            return this.currentStep?.Description?.length <= 8
+        getIfTrick(item: Step) {
+            return item?.Description?.length <= 32
         },
-        getIfExpandable() {
-            if (this.currentStep?.Steps?.length > 0 && !this.getIfTrick()) {
-                return this.currentStep?.IsVisible ? '🔽' : '▶️'
+        getIfExpandable(item: Step) {
+            if (item?.Steps?.length > 0 && !this.getIfTrick(item)) {
+                return item?.IsVisible ? '➖' : '➕'
             }
             return ''
+        },
+        getIfCanBeSeen(item: Step) {
+            return item?.IsVisible || this.getIfTrick(item)
         }
     },
 };
 </script>
 
 <style scoped>
-/* Add your component styles here */
+.menu-list:hover{
+    background: none;
+}
 </style>
 
 <template>
-    <div class="pl-10 pt-2">
-        <ul>
-            <li @click="toggleView()">
-                {{ getIfExpandable() }} {{ currentStep.Description }}
+    <div class="text-justify">
+        <ul v-for="item in items" class="menu-list">
+            <li class="menu-label m-2" @click="toggleView(item)">
+                <span>
+                    {{ getIfExpandable(item) }} {{ item.Description }}
+                </span>
+                <Steps class="m-2" v-if="item?.Steps?.length > 0" :items="item.Steps" v-show="getIfCanBeSeen(item)" />
             </li>
         </ul>
-        <Steps v-for="subStep in currentStep.Steps" :currentStep="subStep" v-show="currentStep.IsVisible || getIfTrick()" />
     </div>
 </template>
