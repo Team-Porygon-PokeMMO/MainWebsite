@@ -1,0 +1,95 @@
+[
+    {
+        "Description": "Required items;",
+        "Tips": [
+            {
+                "Description": "Consumables",
+                "IsVisible": true,
+                "Tips": [
+                    {
+                        "Description": "1000x Potions (should last you 2-3 runs)."
+                    },
+                    {
+                        "Description": "50x Sitrus Berry (only to heal Blissey when she needs more than 12.5% HP healed)"
+                    },
+                    {
+                        "Description": "20x Burn Heal (should last you few runs)"
+                    },
+                    {
+                        "Description": "20x Antidote (should last some runs)"
+                    },
+                    {
+                        "Description": "20x Parlyz Heal (should last some runs)"
+                    },
+                    {
+                        "Description": "10x Energy Root"
+                    },
+                    {
+                        "Description": "40x Revival Herb"
+                    },
+                    {
+                        "Description": "For $ charm, Amulet Coin is at least recommended until you're comfortable with the run and can reach all 5 E4, then I'd move into 75% Riches Charm. 100% is not worth it."
+                    }
+                ]
+            },
+            {
+                "Description": "Hold Items",
+                "IsVisible": true,
+                "Tips": [
+                    {
+                        "Description": "50x Air Baloons (should last you few runs)"
+                    },
+                    {
+                        "Description": "50x Aguav Berries (should last you few runs)"
+                    }
+                ]
+            },
+            {
+                "Description": "Battle Items",
+                "IsVisible": true,
+                "Tips": [
+                    {
+                        "Description": "10x X.Defend (should last you few runs)"
+                    },
+                    {
+                        "Description": "10x X.Special (should last you few runs)"
+                    },
+                    {
+                        "Description": "10x X.Special Defense (should last you few runs)"
+                    },
+                    {
+                        "Description": "40x X.Speed (you will use at least 1 per fight)"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "Description": "Recommended path: Unova -> Johto -> Kanto -> Hoenn -> Sinnoh",
+        "Tips": [
+            {
+                "Description": "Kanto, Hoenn and Sinnoh can use mom to heal."
+            },
+            {
+                "Description": "On Unova, your party gets automatically healed after beating champion."
+            },
+            {
+                "Description": "On Johto, your mom doesn't heal nor beating the champion."
+            }
+        ]
+    },
+    {
+        "Description": "Useful Links",
+        "IsVisible": true,
+        "Tips": [
+            {
+                "Url": "https://c4vv.github.io/CharmCalc/",
+                "Name": "Charm Calc by caav"
+            },
+            {
+                "Url": "https://c4vv.github.io/BattlePointsItemValue/",
+                "Name": "Battle Points Converter by caav"
+            }
+        ]
+    }
+]

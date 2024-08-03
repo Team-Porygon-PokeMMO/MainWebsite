@@ -4,6 +4,15 @@ import kantoEliteFour from '~/src/EliteFour/kanto.json'
 import johtopEliteFour from '~/src/EliteFour/johto.json'
 import sinnohEliteFour from '~/src/EliteFour/sinnoh.json'
 import unovaEliteFour from '~/src/EliteFour/unova.json'
+import eliteFourTips from '~/src/EliteFour/tips.json'
+export class Tip {
+    Description: string = "";
+    Classes: string[] = [];
+    Tips: Tip[] = [];
+    IsVisible: boolean = false;
+    Url: string = "";
+    Name: string = "";
+}
 export class Step {
     Description: string = "";
     Classes: string[] = [];
@@ -29,12 +38,17 @@ export default {
     data() {
         return {
             regions: [kantoEliteFour, johtopEliteFour, hoennEliteFour, sinnohEliteFour, unovaEliteFour] as Region[],
+            tips: eliteFourTips as Tip[],
+            tipsVisible: false
         };
     },
     methods: {
         toggleView(option: any) {
             option.IsVisible = !option.IsVisible
         },
+        toggleTips() {
+            this.tipsVisible = !this.tipsVisible
+        }
     },
 
 };
@@ -58,7 +72,7 @@ export default {
 }
 
 .menu-list li {
-    margin-bottom: 10px;
+    margin: 0.125rem 0;
 }
 
 .menu-list a {
@@ -120,8 +134,22 @@ export default {
                 <h2>Elite Four</h2>
             </div>
             <aside class="menu p-5 m-0">
+                <p class="menu-label" @click="toggleTips()">
+                    Tips {{ tipsVisible ?
+                        "🔽" : "▶" }}
+                </p>
+                <ul class="menu-list m-2" v-show="tipsVisible">
+                    <li v-for="tip in tips" :key="tip.Description">
+                        <a @click="toggleView(tip)">{{ tip.Description }} {{ tip?.Tips?.length > 0 ? tip.IsVisible ?
+                            "🔽"
+                            : "▶" : '' }}</a>
+                        <div v-show="tip.IsVisible" class="pl-6">
+                            <Tips v-for="(subTip, index) in tip.Tips" :currentTip="subTip" :key="index" />
+                        </div>
+                    </li>
+                </ul>
                 <p class="menu-label">
-                    Region
+                    Regions
                 </p>
                 <ul class="menu-list m-2">
                     <!-- region options -->
