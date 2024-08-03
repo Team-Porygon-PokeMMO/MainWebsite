@@ -46,12 +46,13 @@ div.regions:hover {
 
 <template>
     <div class="text-center">
-        <h2 class="p-4">Leads</h2>
+        <h2 class="p-1">Leads</h2>
         <div class="grid grid-cols-8">
             <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }" class="regions">
                 {{ item.Name }}
             </div>
         </div>
+        <h2 class="p-1">Steps</h2>
         <Steps v-for="item in items" :items="item.Steps" v-show="item.IsVisible" />
     </div>
 </template>
