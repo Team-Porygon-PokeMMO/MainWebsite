@@ -7,39 +7,47 @@ export class Step {
 }
 export default {
     props: {
-        current: {
-            type: Step,
+        items: {
+            type: Array as PropType<Array<Step>>,
             required: true,
         },
     },
     methods: {
-        toggleView() {
-            this.current.IsVisible = !this.current.IsVisible
+        toggleView(item: Step) {
+            if (this.getIfTrick(item)) return
+            item.IsVisible = !item.IsVisible
         },
-        getIfTrick() {
-            return this.current?.Description?.length <= 8
+        getIfTrick(item: Step) {
+            return item?.Description?.length <= 32
         },
-        getIfExpandable() {
-            if (this.current?.Steps?.length > 0 && !this.getIfTrick()) {
-                return this.current?.IsVisible ? '🔽' : '▶️'
+        getIfExpandable(item: Step) {
+            if (item?.Steps?.length > 0 && !this.getIfTrick(item)) {
+                return item?.IsVisible ? '➖' : '➕'
             }
             return ''
+        },
+        getIfCanBeSeen(item: Step) {
+            return item?.IsVisible || this.getIfTrick(item)
         }
     },
 };
 </script>
 
 <style scoped>
-/* Add your component styles here */
+.menu-list:hover{
+    background: none;
+}
 </style>
 
 <template>
-    <div class="pl-10 pt-2">
-        <ul>
-            <li @click="toggleView()">
-                {{ getIfExpandable() }} {{ current.Description }}
+    <div class="text-justify">
+        <ul v-for="item in items" class="menu-list">
+            <li class="menu-label m-2" @click="toggleView(item)">
+                <span>
+                    {{ getIfExpandable(item) }} {{ item.Description }}
+                </span>
+                <Steps class="m-2" v-if="item?.Steps?.length > 0" :items="item.Steps" v-show="getIfCanBeSeen(item)" />
             </li>
         </ul>
-        <Steps v-for="step in current.Steps" :current="step" v-show="current.IsVisible || getIfTrick()" />
     </div>
 </template>

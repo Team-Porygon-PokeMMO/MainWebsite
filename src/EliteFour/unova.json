@@ -1721,15 +1721,20 @@
                     "Name": "Blissey",
                     "Steps": [
                         {
-                            "Description": "If it uses Flamethrower, switch into Chandelure: 3x Calm Mind + X.Speed.",
+                            "Description": "Trick;",
                             "Steps": [
+                                {
+                                    "Description": "If it uses Flamethrower, switch into Chandelure: 3x Calm Mind + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Togekiss, switch into Blissey and use Trick. Switch back to Chandelure: 5x Calm Mind + X.Speed."
+                                        }
+                                    ]
+                                },
                                 {
                                     "Description": "If it switches into Togekiss, switch into Blissey and use Trick. Switch back to Chandelure: 5x Calm Mind + X.Speed."
                                 }
                             ]
-                        },
-                        {
-                            "Description": "If it switches into Togekiss, switch into Blissey and use Trick. Switch back to Chandelure: 5x Calm Mind + X.Speed."
                         }
                     ]
                 },

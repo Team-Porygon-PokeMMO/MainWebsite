@@ -1,4 +1,5 @@
 <script lang="ts">
+import type { PropType } from 'vue';
 export class Region {
     Name: string = "";
     IsVisible: boolean = false;
@@ -22,39 +23,45 @@ export class Step {
 }
 export default {
     props: {
-        current: {
-            type: Region,
+        items: {
+            type: Array as PropType<Array<Region>>,
             required: true,
         },
     },
     methods: {
-        toggleView() {
-            this.current.IsVisible = !this.current.IsVisible
-        },
-        getIfExpandable() {
-            if (this.current?.GymTrainers?.length > 0) {
-                return this.current?.IsVisible ? '🔽' : '▶️'
-            }
-            return ''
+        setActive(item: Region) {
+            this.items.forEach(i => i.IsVisible = false)
+            item.IsVisible = !item.IsVisible
         }
     },
 };
 </script>
 
 <style scoped>
-.link {
-    color: lightblue;
+div.regions {
+    padding: 2rem 1rem;
+    margin: 0.1rem;
     cursor: pointer;
+    border: 1px solid black;
+}
+
+div.regions:hover {
+    background-color: rgb(0, 0, 0, 1);
+}
+
+.active {
+    background-color: rgba(182, 28, 28, 0.39);
 }
 </style>
 
 <template>
-    <div class="pl-2 pt-1">
-        <ul>
-            <li @click="toggleView()">
-                {{ current.Name }} {{ getIfExpandable() }}
-            </li>
-        </ul>
-        <Trainers v-for="trainer in current.GymTrainers" :current="trainer" v-show="current.IsVisible" />
+    <div class="text-center">
+        <h2 class="p-4">Regions</h2>
+        <div class="grid grid-cols-5">
+            <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }" class="regions">
+                {{ item.Name }}
+            </div>
+        </div>
+        <Trainers v-for="item in items" :items="item.GymTrainers" v-show="item.IsVisible" />
     </div>
 </template>

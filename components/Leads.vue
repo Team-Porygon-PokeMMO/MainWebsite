@@ -1,4 +1,5 @@
 <script lang="ts">
+import type { PropType } from 'vue';
 export class Lead {
     Name: string = "";
     IsVisible: boolean = false;
@@ -12,39 +13,45 @@ export class Step {
 }
 export default {
     props: {
-        current: {
-            type: Lead,
+        items: {
+            type: Array as PropType<Array<Lead>>,
             required: true,
         },
     },
     methods: {
-        toggleView() {
-            this.current.IsVisible = !this.current.IsVisible
+        setActive(item: Lead) {
+            this.items.forEach(i => i.IsVisible = false)
+            item.IsVisible = !item.IsVisible
         },
-        getIfExpandable() {
-            if (this.current?.Steps?.length > 0) {
-                return this.current?.IsVisible ? '🔽' : '▶️'
-            }
-            return ''
-        }
     },
 };
 </script>
 
 <style scoped>
-.link {
-    color: lightblue;
+div.regions {
+    padding: 2rem 1rem;
+    margin: 0.1rem;
     cursor: pointer;
+    border: 1px solid black;
+}
+
+div.regions:hover {
+    background-color: rgb(0, 0, 0, 1);
+}
+
+.active {
+    background-color: rgba(182, 28, 28, 0.39);
 }
 </style>
 
 <template>
-    <div class="pl-2 pt-1">
-        <ul>
-            <li @click="toggleView()">
-                {{ current.Name }} {{ getIfExpandable() }}
-            </li>
-        </ul>
-        <Steps v-for="step in current.Steps" :current="step" v-show="current.IsVisible" />
+    <div class="text-center">
+        <h2 class="p-4">Leads</h2>
+        <div class="grid grid-cols-8">
+            <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }" class="regions">
+                {{ item.Name }}
+            </div>
+        </div>
+        <Steps v-for="item in items" :items="item.Steps" v-show="item.IsVisible" />
     </div>
 </template>

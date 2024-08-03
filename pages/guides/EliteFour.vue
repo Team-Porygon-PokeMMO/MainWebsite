@@ -55,24 +55,13 @@ export default {
 </script>
 
 <style>
-/* Menu styles */
-.menu {
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 .menu-label {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    margin-bottom: 10px;
 }
 
 .menu-list {
     list-style: none;
-}
-
-.menu-list li {
-    margin: 0.125rem 0;
 }
 
 .menu-list a {
@@ -82,37 +71,17 @@ export default {
     transition: background-color 0.3s ease;
 }
 
-.menu-list a:hover {
-    background-color: grey;
-}
-
-/* Expansion styles */
-.expansion {
-    margin-top: 10px;
-    background-color: #f0f0f0;
-    border-radius: 4px;
-    padding: 10px;
-}
-
-.expansion ul {
-    list-style: none;
-    padding: 0;
-}
-
-.expansion li {
-    margin-bottom: 5px;
-}
-
-.expansion a {
-    text-decoration: none;
-}
-
-.expansion a:hover {
-    text-decoration: underline;
+.menu-list li {
+    padding-left: 10px;
+    padding-bottom: 4px;
 }
 
 .strong {
     font-weight: bold;
+}
+
+.main {
+    min-height: 100%;
 }
 
 /* Responsive styles */
@@ -128,26 +97,20 @@ export default {
 </style>
 
 <template>
-    <UContainer>
-        <UCard>
-            <div class="p-2">
-                <h2>Elite Four</h2>
-            </div>
-            <aside class="menu p-5 m-0">
-                <p class="menu-label" @click="toggleTips()">
-                    Tips {{ tipsVisible ?
-                        "🔽" : "▶" }}
-                </p>
-                <ul class="menu-list m-2" v-show="tipsVisible">
-                    <Tips v-for="tip in tips" :currentTip="tip" />
-                </ul>
-                <p class="menu-label">
-                    Regions
-                </p>
-                <ul class="menu-list m-2">
-                    <Regions v-for="region in regions" :current="region" />
-                </ul>
-            </aside>
-        </UCard>
-    </UContainer>
+    <div class="m-4 main">
+        <div class="p-2">
+            <h2>Elite Four</h2>
+        </div>
+        <div class="menu p-4">
+            <p class="menu-label" @click="toggleTips()">
+                Tips {{ tipsVisible ?
+                    "➖" : "➕" }}
+            </p>
+            <ul class="menu-list" v-show="tipsVisible">
+                <Tips v-for="tip in tips" :currentTip="tip" />
+            </ul>
+            <Regions :items="regions" class="menu-list" />
+        </div>
+        <EliteFourCredits />
+    </div>
 </template>

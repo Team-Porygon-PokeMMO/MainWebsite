@@ -20,7 +20,7 @@ export default {
         },
         getIfExpandable() {
             if (this.currentTip?.Tips?.length > 0) {
-                return this.currentTip?.IsVisible ? '🔽' : '▶️'
+                return this.currentTip?.IsVisible ? '➖' : '➕'
             }
             return ''
         }
