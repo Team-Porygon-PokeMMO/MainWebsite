@@ -4,12 +4,12 @@ const signatureLink = 'https://i.ibb.co/fq874Kt/Pory-Team-Signature.gif'
 
 const content = [
   {
-    title: 'Foundation',
-    description: 'Recognizing the need for a relaxed yet veteran focused team, Team Porygon [Pory] was founded on 07-30-2023 by Jaddee, Sythus, and DragoTamer. Pory aims to provide a relaxed and friendly while highly informative environment.'
-  },
-  {
     title: 'Who are we?',
     description: 'Team Porygon is made up of English-speaking players who want to enjoy the PvE PokeMMO experience! We believe that to build a team, there must be a goal and our goal is to enjoy the game as friends in a relaxed, friendly, and highly informative environment. Our fact-checked information, server structure, and helpful members will provide an unmatched PvE experience that we believe is second to none. Additionally, we have a variety of players from around the world to ensure that we provide you with a community from anywhere, at any time!'
+  },
+  {
+    title: 'Foundation',
+    description: 'Recognizing the need for a relaxed yet veteran focused team, Team Porygon [Pory] was founded on 07-30-2023 by Jaddee, Sythus, and DragoTamer. Pory aims to provide a relaxed and friendly while highly informative environment.'
   },
   {
     title: 'Main activities',
@@ -24,10 +24,10 @@ const content = [
     description: 'To apply to our team, please vist the post below and fill out the required information. Or, reach out directly to glortwort or vexious on discord.',
     "Team Pory Application": [
       {
-    "Url": "https://forums.pokemmo.com/index.php?/topic/159984-openpory-team-porygon-is-recruiting/",
-                            "Name": "Team Pory Application"
-                          }
-  ]
+        "Url": "https://forums.pokemmo.com/index.php?/topic/159984-openpory-team-porygon-is-recruiting/",
+        "Name": "Team Pory Application"
+      }
+    ]
   }
 ]
 </script>
@@ -39,12 +39,14 @@ img {
 </style>
 
 <template>
-  <div class="text-center p-4">
-    <h1>Team Porygon Site (PokeMMO)</h1>
-    <img :src="signatureLink" alt="Team Porygon Signature" class="text-center" />
-    <div v-for="item in content">
-      <h2>{{ item.title }}</h2>
-      <h3>{{ item.description }}</h3>
+  <div class="p-4 text-center">
+    <h1>Team Porygon (PokeMMO)</h1>
+    <div class="grid grid-cols-2 text-left">
+      <div v-for="item in content" class="p-4">
+        <h2>{{ item.title }}</h2>
+        <h3>{{ item.description }}</h3>
+      </div>
     </div>
+    <img :src="signatureLink" alt="Team Porygon Signature" class="mt-4" />
   </div>
 </template>
