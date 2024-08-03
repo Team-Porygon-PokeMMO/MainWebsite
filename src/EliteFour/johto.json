@@ -6,6 +6,7 @@
             "Name": "Will",
             "IsVisible": false,
             "Image": "https://archives.bulbagarden.net/media/upload/8/80/HeartGold_SoulSilver_Will.png",
+            "ImagePosition": "25% 10%",
             "Leads": [
                 {
                     "Name": "Absol",
@@ -515,6 +516,7 @@
             "Name": "Koga",
             "IsVisible": false,
             "Image": "https://archives.bulbagarden.net/media/upload/thumb/f/f4/Lets_Go_Pikachu_Eevee_Koga.png/529px-Lets_Go_Pikachu_Eevee_Koga.png",
+            "ImagePosition": "25% 40%",
             "Leads": [
                 {
                     "Name": "Ariados",
@@ -1017,6 +1019,7 @@
             "Name": "Bruno",
             "IsVisible": false,
             "Image": "https://archives.bulbagarden.net/media/upload/4/4c/Lets_Go_Pikachu_Eevee_Bruno.png",
+            "ImagePosition": "25% 30%",
             "Leads": [
                 {
                     "Name": "Aggron",
@@ -1460,6 +1463,7 @@
             "Name": "Karen",
             "IsVisible": false,
             "Image": "https://archives.bulbagarden.net/media/upload/thumb/4/4b/HeartGold_SoulSilver_Karen.png/260px-HeartGold_SoulSilver_Karen.png",
+            "ImagePosition": "25% 15%",
             "Leads": [
                 {
                     "Name": "Absol",
@@ -1945,7 +1949,8 @@
         {
             "Name": "Lance",
             "IsVisible": false,
-            "Image": "https://archives.bulbagarden.net/media/upload/thumb/0/0f/Lance_JN.png/564px-Lance_JN.png",
+            "Image": "https://archives.bulbagarden.net/media/upload/c/cd/Lets_Go_Pikachu_Eevee_Lance.png",
+            "ImagePosition": "25% 15%",
             "Leads": [
                 {
                     "Name": "Aerodactyl",

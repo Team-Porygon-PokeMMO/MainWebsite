@@ -5,6 +5,7 @@
         {
             "Name": "Lorelei",
             "Image": "https://archives.bulbagarden.net/media/upload/f/f7/Lets_Go_Pikachu_Eevee_Lorelei.png",
+            "ImagePosition": "25% 15%",
             "IsVisible": false,
             "Leads": [
                 {
@@ -485,6 +486,7 @@
             "Name": "Bruno",
             "IsVisible": false,
             "Image": "https://archives.bulbagarden.net/media/upload/thumb/4/4c/Lets_Go_Pikachu_Eevee_Bruno.png/510px-Lets_Go_Pikachu_Eevee_Bruno.png",
+            "ImagePosition": "25% 30%",
             "Leads": [
                 {
                     "Name": "Aggron",
@@ -2138,6 +2140,7 @@
             "Name": "Blue",
             "IsVisible": false,
             "Image": "https://archives.bulbagarden.net/media/upload/2/20/Blue_PO.png",
+            "ImagePosition": "25% 12%",
             "Leads": [
                 {
                     "Name": "Aerodactyl",

@@ -5,6 +5,7 @@ export class Trainer {
     IsVisible: boolean = false;
     Leads: Lead[] = [];
     Image?: string;
+    ImagePosition?: string;
 }
 export class Lead {
     Name: string = "";
@@ -34,7 +35,7 @@ export default {
                 return {
                     backgroundImage: `linear-gradient(rgb(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(${item.Image})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: '25% 15%',
+                    backgroundPosition: item?.ImagePosition ?? '25% 15%',
                     width: '100%',
                     height: '100%',
                 }

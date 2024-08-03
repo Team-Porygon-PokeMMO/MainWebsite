@@ -504,6 +504,7 @@
             "Name": "Phoebe",
             "IsVisible": false,
             "Image": "https://archives.bulbagarden.net/media/upload/f/f8/Omega_Ruby_Alpha_Sapphire_Phoebe.png",
+            "ImagePosition": "25% 10%",
             "Leads": [
                 {
                     "Name": "Arcanine",
@@ -961,6 +962,7 @@
             "Name": "Glacia",
             "IsVisible": false,
             "Image": "https://archives.bulbagarden.net/media/upload/3/3c/Omega_Ruby_Alpha_Sapphire_Glacia.png",
+            "ImagePosition": "25% 8%",
             "Leads": [
                 {
                     "Name": "Abomasnow",
@@ -1322,6 +1324,7 @@
             "Name": "Drake",
             "IsVisible": false,
             "Image": "https://archives.bulbagarden.net/media/upload/3/3e/Omega_Ruby_Alpha_Sapphire_Drake.png",
+            "ImagePosition": "25% 5%",
             "Leads": [
                 {
                     "Name": "Aggron",
@@ -1873,6 +1876,7 @@
             "Name": "Wallace",
             "IsVisible": false,
             "Image": "https://archives.bulbagarden.net/media/upload/e/e5/Omega_Ruby_Alpha_Sapphire_Wallace.png",
+            "ImagePosition": "25% 5%",
             "Leads": [
                 {
                     "Name": "Altaria",
