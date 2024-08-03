@@ -139,43 +139,13 @@ export default {
                         "🔽" : "▶" }}
                 </p>
                 <ul class="menu-list m-2" v-show="tipsVisible">
-                    <li v-for="tip in tips" :key="tip.Description">
-                        <a @click="toggleView(tip)">{{ tip.Description }} {{ tip?.Tips?.length > 0 ? tip.IsVisible ?
-                            "🔽"
-                            : "▶" : '' }}</a>
-                        <div v-show="tip.IsVisible" class="pl-6">
-                            <Tips v-for="(subTip, index) in tip.Tips" :currentTip="subTip" :key="index" />
-                        </div>
-                    </li>
+                    <Tips v-for="tip in tips" :currentTip="tip" />
                 </ul>
                 <p class="menu-label">
                     Regions
                 </p>
                 <ul class="menu-list m-2">
-                    <!-- region options -->
-                    <li v-for="region in regions" :key="region.Name">
-                        <a class="m-0" @click="toggleView(region)">{{ region.Name }} {{ region.IsVisible ?
-                            "🔽" : "▶" }}</a>
-                        <div v-show="region.IsVisible" class="pl-6">
-                            <ul>
-                                <li v-for="gymTrainer in region.GymTrainers" :key="gymTrainer.Name">
-                                    <a @click="toggleView(gymTrainer)">{{ gymTrainer.Name }} {{ gymTrainer.IsVisible ?
-                                        "🔽" : "▶" }}</a>
-                                    <div v-show="gymTrainer.IsVisible" class="pl-6">
-                                        <ul>
-                                            <li v-for="lead in gymTrainer.Leads" :key="lead.Name">
-                                                <a @click="toggleView(lead)">{{ lead.Name }} {{ lead.IsVisible ? "🔽" :
-                                                    "▶" }}</a>
-                                                <div v-show="lead.IsVisible">
-                                                    <Steps v-for="(step, index) in lead.Steps" :currentStep="step" />
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </li>
+                    <Regions v-for="region in regions" :current="region" />
                 </ul>
             </aside>
         </UCard>

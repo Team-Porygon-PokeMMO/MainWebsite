@@ -1,4 +1,9 @@
 <script lang="ts">
+export class Lead {
+    Name: string = "";
+    IsVisible: boolean = false;
+    Steps: Step[] = [];
+}
 export class Step {
     Description: string = "";
     Classes: string[] = [];
@@ -8,7 +13,7 @@ export class Step {
 export default {
     props: {
         current: {
-            type: Step,
+            type: Lead,
             required: true,
         },
     },
@@ -16,11 +21,8 @@ export default {
         toggleView() {
             this.current.IsVisible = !this.current.IsVisible
         },
-        getIfTrick() {
-            return this.current?.Description?.length <= 8
-        },
         getIfExpandable() {
-            if (this.current?.Steps?.length > 0 && !this.getIfTrick()) {
+            if (this.current?.Steps?.length > 0) {
                 return this.current?.IsVisible ? '🔽' : '▶️'
             }
             return ''
@@ -30,16 +32,19 @@ export default {
 </script>
 
 <style scoped>
-/* Add your component styles here */
+.link {
+    color: lightblue;
+    cursor: pointer;
+}
 </style>
 
 <template>
-    <div class="pl-10 pt-2">
+    <div class="pl-2 pt-1">
         <ul>
             <li @click="toggleView()">
-                {{ getIfExpandable() }} {{ current.Description }}
+                {{ current.Name }} {{ getIfExpandable() }}
             </li>
         </ul>
-        <Steps v-for="step in current.Steps" :current="step" v-show="current.IsVisible || getIfTrick()" />
+        <Steps v-for="step in current.Steps" :current="step" v-show="current.IsVisible" />
     </div>
 </template>
