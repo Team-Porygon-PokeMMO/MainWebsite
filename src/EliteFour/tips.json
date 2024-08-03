@@ -1,5 +1,20 @@
 [
     {
+        "Description": "Recommended Team",
+        "Tips": [
+            {
+                "Description": "See link below for the current team used. All testing was done using 5x pokemon. Budget breeds can be done, but to what limit was not tested.",
+                "IsVisible": true,
+                "Tips": [
+                    {
+                            "Url": "https://pokepast.es/010a4bd6157609b1",
+                            "Name": "E4 PokePaste"
+                    }
+                ]
+            }
+        ]
+    },
+    {
         "Description": "Required items;",
         "Tips": [
             {

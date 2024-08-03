@@ -20,7 +20,7 @@ const isDark = computed({
            <!-- <div>
                 <div>
                     Brought to you by: {{ formatContributors() }}
-                    <!-- <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray"
+                    <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray"
                         variant="ghost" aria-label="Theme" @click="isDark = !isDark" /> -->
                <!-- </div>
             </div> -->
