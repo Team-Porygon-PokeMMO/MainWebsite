@@ -5,6 +5,7 @@
         {
             "Name": "Aaron",
             "IsVisible": false,
+            "Image": "https://archives.bulbagarden.net/media/upload/b/bc/Diamond_Pearl_Aaron.png",
             "Leads": [
                 {
                     "Name": "Beautifly",
@@ -445,6 +446,7 @@
         {
             "Name": "Bertha",
             "IsVisible": false,
+            "Image": "https://archives.bulbagarden.net/media/upload/5/5e/Diamond_Pearl_Bertha.png",
             "Leads": [
                 {
                     "Name": "Absol",
@@ -964,6 +966,7 @@
         {
             "Name": "Flint",
             "IsVisible": false,
+            "Image": "https://archives.bulbagarden.net/media/upload/a/a8/Diamond_Pearl_Flint.png",
             "Leads": [
                 {
                     "Name": "Arcanine",
@@ -1541,6 +1544,7 @@
         {
             "Name": "Lucian",
             "IsVisible": false,
+            "Image": "https://archives.bulbagarden.net/media/upload/e/e1/Diamond_Pearl_Lucian.png",
             "Leads": [
                 {
                     "Name": "Absol",
@@ -1909,6 +1913,7 @@
         {
             "Name": "Cynthia",
             "IsVisible": false,
+            "Image": "https://archives.bulbagarden.net/media/upload/b/b3/Cynthia_JN.png",
             "Leads": [
                 {
                     "Name": "Aerodactyl",
