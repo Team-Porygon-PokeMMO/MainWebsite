@@ -15,15 +15,7 @@ const isDark = computed({
 </script>
 
 <template>
-    <footer class="p-2 shadow-md">
-        <UContainer>
-            <div>
-                <div>
-                    Brought to you by: {{ formatContributors() }}
-                    <!-- <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray"
-                        variant="ghost" aria-label="Theme" @click="isDark = !isDark" /> -->
-                </div>
-            </div>
-        </UContainer>
+    <footer class="text-right p-2 pr-4 opacity-10">
+        Brought to you by: {{ formatContributors() }}
     </footer>
 </template>

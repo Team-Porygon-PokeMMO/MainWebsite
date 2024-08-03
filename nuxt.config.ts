@@ -16,4 +16,9 @@ export default defineNuxtConfig({
       plugins: [tailwindTypography]
     }
   },
+  app: {
+    head: {
+      title: 'Team Porygon Site'
+    }
+  }
 })
