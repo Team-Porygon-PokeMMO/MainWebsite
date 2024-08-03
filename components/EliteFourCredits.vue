@@ -47,6 +47,10 @@ baseCredits["tcb"] = {
 baseCredits["Team Porygon"] = {
     Name: "Team Porygon"
 }
+baseCredits["jeriel"] = {
+    Name: "Odozo",
+    Tag: "@jeriel.xyz"
+}
 const fullCredits = [
     {
         Name: "Pokeking English Translations & Contributions",
@@ -78,13 +82,13 @@ export default {
             this.active = !this.active
         },
         getIfExpandable() {
-            return this.active ? '➖' : '➕'
+            return this.active ? '🔽' : '▶️'
         },
         getCredit(tag: string) {
             if (this.credits[tag].Tag) {
                 return `${this.credits[tag].Name} (${this.credits[tag].Tag})`
             }
-            return this.credits[tag].Name
+            return this.credits[tag]?.Name
         },
     },
 };

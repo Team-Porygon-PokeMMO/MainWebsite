@@ -22,7 +22,7 @@ export default {
         },
         getIfExpandable(item: Step) {
             if (item?.Steps?.length > 0 && !this.getIfTrick(item)) {
-                return item?.IsVisible ? '➖' : '➕'
+                return item?.IsVisible ? '🔽' : '▶️'
             }
             return ''
         },
@@ -40,14 +40,14 @@ export default {
 </style>
 
 <template>
-    <div class="text-justify">
+    <div class="text-justify ">
         <ul v-for="item in items" class="menu-list">
-            <li class="menu-label m-2" @click="toggleView(item)">
+            <li class="menu-label ml-2" @click="toggleView(item)">
                 <span>
                     {{ getIfExpandable(item) }} {{ item.Description }}
                 </span>
-                <Steps class="m-2" v-if="item?.Steps?.length > 0" :items="item.Steps" v-show="getIfCanBeSeen(item)" />
             </li>
+            <Steps class="ml-4" v-if="item?.Steps?.length > 0" :items="item.Steps" v-show="getIfCanBeSeen(item)" />
         </ul>
     </div>
 </template>

@@ -17,13 +17,13 @@ const isDark = computed({
 <template>
     <footer class="p-2 shadow-md">
         <UContainer>
-           <!-- <div>
+           <div>
                 <div>
                     Brought to you by: {{ formatContributors() }}
-                    <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray"
+                    <!-- <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray"
                         variant="ghost" aria-label="Theme" @click="isDark = !isDark" /> -->
-               <!-- </div>
-            </div> -->
+               </div>
+            </div>
         </UContainer>
     </footer>
 </template>
