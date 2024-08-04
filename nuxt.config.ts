@@ -20,5 +20,5 @@ export default defineNuxtConfig({
     head: {
       title: 'Team Porygon Site'
     }
-  }
+  },
 })

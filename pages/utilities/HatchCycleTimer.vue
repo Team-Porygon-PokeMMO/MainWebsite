@@ -114,7 +114,7 @@ export default {
             }
         },
         playAudio() {
-            const audio = new Audio('https://cdn.freesound.org/previews/352/352651_4019029-lq.ogg');
+            const audio = new Audio('/audio/piano-notification.ogg');
             audio.volume = this.volume / 100;
             audio.play();
         },
