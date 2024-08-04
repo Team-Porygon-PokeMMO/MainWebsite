@@ -232,7 +232,7 @@ export default {
                 <span v-for="day in getGameWeek" :class="{ isActive: day.active }">{{ day.name
                     }}{{ calculateRemainingTime(day) }}</span>
             </div>
-            <div v-if="getActiveAlteringCaveCycle.length > 0" class="container mx-auto grid grid-cols-1">
+            <!--<div v-if="getActiveAlteringCaveCycle.length > 0" class="container mx-auto grid grid-cols-1">
                 <h1>Altering Cave Rotation</h1>
                 <div class="grid grid-cols-4">
                     <span v-for="pokemon in getActiveAlteringCaveCycle">{{ pokemon }}</span>
@@ -240,7 +240,7 @@ export default {
                 <span>Credits: <a
                         href="https://discord.com/oauth2/authorize?client_id=731734090365141062&permissions=137707703360&scope=bot%20applications.commands"
                         target="_blank">Pokévents#7341</a> discord App.</span>
-            </div>
+            </div>-->
         </div>
     </UContainer>
 </template>
