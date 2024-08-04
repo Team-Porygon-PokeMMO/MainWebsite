@@ -5,7 +5,7 @@
         {
             "Name": "Sidney",
             "IsVisible": false,
-            "Image": "https://archives.bulbagarden.net/media/upload/f/fa/Omega_Ruby_Alpha_Sapphire_Sidney.png",
+            "Image": "/images/sidney.png",
             "Leads": [
                 {
                     "Name": "Absol",
@@ -503,7 +503,7 @@
         {
             "Name": "Phoebe",
             "IsVisible": false,
-            "Image": "https://archives.bulbagarden.net/media/upload/f/f8/Omega_Ruby_Alpha_Sapphire_Phoebe.png",
+            "Image": "/images/phoebe.png",
             "ImagePosition": "25% 10%",
             "Leads": [
                 {
@@ -961,7 +961,7 @@
         {
             "Name": "Glacia",
             "IsVisible": false,
-            "Image": "https://archives.bulbagarden.net/media/upload/3/3c/Omega_Ruby_Alpha_Sapphire_Glacia.png",
+            "Image": "/images/glacia.png",
             "ImagePosition": "25% 8%",
             "Leads": [
                 {
@@ -1323,7 +1323,7 @@
         {
             "Name": "Drake",
             "IsVisible": false,
-            "Image": "https://archives.bulbagarden.net/media/upload/3/3e/Omega_Ruby_Alpha_Sapphire_Drake.png",
+            "Image": "/images/drake.png",
             "ImagePosition": "25% 5%",
             "Leads": [
                 {
@@ -1875,7 +1875,7 @@
         {
             "Name": "Wallace",
             "IsVisible": false,
-            "Image": "https://archives.bulbagarden.net/media/upload/e/e5/Omega_Ruby_Alpha_Sapphire_Wallace.png",
+            "Image": "/images/wallace.png",
             "ImagePosition": "25% 5%",
             "Leads": [
                 {
