@@ -9,7 +9,7 @@ const content = [
   },
   {
     title: 'Foundation',
-    description: 'Recognizing the need for a relaxed yet veteran focused team, Team Porygon [Pory] was founded on 07-30-2023 by Jaddee, Sythus, and DragoTamer. Pory aims to provide a relaxed and friendly while highly informative environment.'
+    description: 'Recognizing the need for a relaxed yet veteran focused team, Team Porygon [Pory] was founded on 07-30-2023 and is led by its current founders Jaddee and Sythus. Pory aims to provide a relaxed and friendly while highly informative environment.'
   },
   {
     title: 'Main activities',
