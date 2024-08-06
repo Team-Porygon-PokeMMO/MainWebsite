@@ -232,7 +232,7 @@
                     ]
                 },
                 {
-                    "Name": "Exeggutor ",
+                    "Name": "Exeggutor",
                     "IsVisible": false,
                     "Steps": [
                         {
@@ -647,7 +647,7 @@
                     ]
                 },
                 {
-                    "Name": "Forretress ",
+                    "Name": "Forretress",
                     "IsVisible": false,
                     "Steps": [
                         {
@@ -1423,7 +1423,7 @@
                             ]
                         },
                         {
-                            "Description": "If Opponent switches into Steelix and ",
+                            "Description": "If Opponent switches into Steelix and;",
                             "Steps": [
                                 {
                                     "Description": "you get a Choice Band, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
@@ -2337,7 +2337,7 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get a Leftovers, switch immediately to Excadrill Stealth Rock AND ",
+                            "Description": "If you get a Leftovers, switch immediately to Excadrill Stealth Rock and;",
                             "Steps": [
                                 {
                                     "Description": "Opponent does not switch out, then 2x Swords Dance + X.Speed"

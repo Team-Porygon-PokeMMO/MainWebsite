@@ -574,13 +574,13 @@
                                     "Description": "and opponent uses Earthquake, switch to Excadrill 2x Swords Dance + X.Speed (Use Iron Head vs. Froslass)"
                                 },
                                 {
-                                    "Description": "and opponent uses Will-o-Wisp, use Stealth Rock",
+                                    "Description": "and opponent uses Will-o-Wisp, use Stealth Rock;",
                                     "Steps": [
                                         {
-                                            "Description": ", If opponent switches out into Houndoom, switch to Blissey and use Trick. Switch to Chandelure and use Flamethrower to kill Honchkrow. Switch to Poliwrath Belly Drum + X.Speed"
+                                            "Description": "if opponent switches out into Houndoom, switch to Blissey and use Trick. Switch to Chandelure and use Flamethrower to kill Honchkrow. Switch to Poliwrath Belly Drum + X.Speed"
                                         },
                                         {
-                                            "Description": ", If opponent switches out into Hydreigon, switch to Chandelure 3x Calm Mind + X.Speed + X.Defend"
+                                            "Description": "if opponent switches out into Hydreigon, switch to Chandelure 3x Calm Mind + X.Speed + X.Defend"
                                         }
                                     ]
                                 }
