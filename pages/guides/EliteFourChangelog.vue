@@ -21,12 +21,12 @@ export default {
 
 <template>
     <div class="m-6">
-        <h1>Elite Four Changelog</h1>
+        <h1>Elite Four Changelogs</h1>
         <div v-for="changelog in changelogs" :key="changelog.Year + changelog.Month + changelog.Day">
             <h2>{{ changelog.Year }}/{{ changelog.Month }}/{{ changelog.Day }}</h2>
             <ul>
-                <li v-for="change in changelog.Changes" :key="change.Solve">
-                    <h3>{{ change.Solve }}</h3>
+                <li v-for="change in changelog.Changes" :key="change.Solve" class="p-1">
+                    <b>{{ change.Solve }}</b>
                     <p>{{ change.Description }}</p>
                 </li>
             </ul>
