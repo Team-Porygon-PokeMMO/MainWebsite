@@ -23,6 +23,8 @@ export class Trainer {
     Name: string = "";
     IsVisible: boolean = false;
     Leads: Leads[] = [];
+    Image?: string;
+    ImagePosition?: string;
 }
 export class Leads {
     Name: string = "";

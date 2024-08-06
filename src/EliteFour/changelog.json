@@ -1,0 +1,13 @@
+[
+    {
+        "Year": 2024,
+        "Month": 8,
+        "Day": 5,
+        "Changes": [
+            {
+                "Solve": "Multiple Solves",
+                "Description": "Fixed formatting and text issues in the multiple solves section. Fixed writing."
+            }
+        ]
+    }
+]
