@@ -1355,7 +1355,7 @@
                             "Description": "If opponent uses Volt Switch",
                             "Steps": [
                                 {
-                                    "Description": "and opponent sends out Feraligator, switch to Poliwrath Belly Drum + X.Speed"
+                                    "Description": "and opponent sends out Feraligatr, switch to Poliwrath Belly Drum + X.Speed"
                                 },
                                 {
                                     "Description": "and opponent sends out Salamence, switch to Chandelure and switch to the second Metagross and use Trick",
@@ -1427,7 +1427,7 @@
                     ]
                 },
                 {
-                    "Name": "Feraligator",
+                    "Name": "Feraligatr",
                     "IsVisible": false,
                     "Steps": [
                         {
@@ -1469,7 +1469,7 @@
                                     "Description": "If opponent switches into Salamence",
                                     "Steps": [
                                         {
-                                            "Description": "and opponent switched into Feraligator before, switch to Chandelure 2x Calm Mind + 2x X.Speed"
+                                            "Description": "and opponent switched into Feraligatr before, switch to Chandelure 2x Calm Mind + 2x X.Speed"
                                         },
                                         {
                                             "Description": "and opponent switched into Gallade before, use Stealth Rock then switch to Chandelure 2x Calm Mind + 2x X.Speed"

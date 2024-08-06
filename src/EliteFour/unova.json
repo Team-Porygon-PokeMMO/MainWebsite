@@ -2461,7 +2461,7 @@
                     ]
                 },
                 {
-                    "Name": "Boufallant",
+                    "Name": "Bouffalant",
                     "Steps": [
                         {
                             "Description": "Use Trick, then use Stealth Rock. Switch to Chandelure Calm Mind + X.Speed."
@@ -2469,7 +2469,7 @@
                     ]
                 },
                 {
-                    "Name": "Bravery",
+                    "Name": "Braviary",
                     "Steps": [
                         {
                             "Description": "Use Trick, then use Stealth Rock. Switch to Chandelure: 3x Calm Mind + X.Speed."
@@ -2567,7 +2567,7 @@
                     ]
                 },
                 {
-                    "Name": "Feraligator",
+                    "Name": "Feraligatr",
                     "Steps": [
                         {
                             "Description": "Use Trick;",
