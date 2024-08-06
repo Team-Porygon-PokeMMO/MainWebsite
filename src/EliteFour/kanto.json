@@ -1737,7 +1737,7 @@
                     ]
                 },
                 {
-                    "Name": "Feraligator",
+                    "Name": "Feraligatr",
                     "IsVisible": false,
                     "Steps": [
                         {
@@ -1961,7 +1961,7 @@
                                             "Description": "If opponent switches into Arcanine, switch back into Chandelure 4x Calm Mind + X.Speed"
                                         },
                                         {
-                                            "Description": "If opponent switches into Dragonite, switch back into Blissey and use Softboiled as it sends out Feraligator. Switch to Poliwrath then switch to Excadrill as you should face Arcanine Wild Charge. Set up 2x Swords Dance + X.Speed"
+                                            "Description": "If opponent switches into Dragonite, switch back into Blissey and use Softboiled as it sends out Feraligatr. Switch to Poliwrath then switch to Excadrill as you should face Arcanine Wild Charge. Set up 2x Swords Dance + X.Speed"
                                         },
                                         {
                                             "Description": "If opponent switches out into Hydreigon, switch to the second Metagross and use Trick, then switch to Blissey then use Softboiled"

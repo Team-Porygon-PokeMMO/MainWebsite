@@ -1,5 +1,7 @@
 <script lang="ts">
 import type { PropType } from 'vue';
+import nameToDex from '~/src/nameToDex.json'
+
 export class Lead {
     Name: string = "";
     IsVisible: boolean = false;
@@ -23,6 +25,16 @@ export default {
             this.items.forEach(i => i.IsVisible = false)
             item.IsVisible = !item.IsVisible
         },
+        getImageStyling(item: Lead) {
+            let imgNumber:string = nameToDex[item.Name];
+            return {
+                backgroundImage: `linear-gradient(rgb(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(/images/leads/${imgNumber}.png)`,
+                backgroundSize: 'cover',
+                backgroundPosition: item?.ImagePosition ?? '25% 15%',
+                width: '100%',
+                height: '100%',
+            }
+        }
     },
 };
 </script>
@@ -48,7 +60,8 @@ div.regions:hover {
     <div class="text-center">
         <h2 class="p-1">Leads</h2>
         <div class="grid grid-cols-8">
-            <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }" class="regions text-label">
+            <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }" class="regions text-label"
+              :style="getImageStyling(item)">
                 {{ item.Name }}
             </div>
         </div>
