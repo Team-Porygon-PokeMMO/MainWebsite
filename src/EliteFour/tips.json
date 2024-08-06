@@ -100,6 +100,10 @@
             {
                 "Url": "https://c4vv.github.io/CharmCalc/",
                 "Name": "Charm Calc by caav"
+            },
+            {
+                "Url": "https://c4vv.github.io/BattlePointsItemValue/",
+                "Name": "Battle Points Item Values Calc by caav"
             }
         ]
     }

@@ -59,6 +59,10 @@
             {
                 "Solve": "Unova -> Alder -> Lucario",
                 "Description": "Removed step where it assumes Latios and Lucario are on the same team; they can’t."
+            },
+            {
+                "Solve": "Multiple Leads",
+                "Description": "Added sprite images for all pokemons. Addition by c4v."
             }
         ]
     }

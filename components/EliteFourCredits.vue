@@ -50,6 +50,10 @@ baseCredits["jeriel"] = {
     Name: "Odozo",
     Tag: "@jeriel.xyz"
 }
+baseCredits["c4v"] = {
+    Name: "caav",
+    Tag: "@c4v"
+}
 const fullCredits = [
     {
         Name: "Pokeking English Translations & Contributions",
@@ -65,7 +69,7 @@ const fullCredits = [
     },
     {
         Name: "Code Contributors",
-        Credits: ["jaddee","panotxa","tcb"]
+        Credits: ["jaddee","panotxa","tcb", "c4v"]
     }
 ]
 export default {
