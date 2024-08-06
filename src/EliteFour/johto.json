@@ -1893,7 +1893,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey and use Stealth Rock as it switch out into Feraligator, Poliwrath Belly Drum + X.Speed"
+                            "Description": "Switch to Blissey and use Stealth Rock as it switch out into Feraligatr, Poliwrath Belly Drum + X.Speed"
                         }
                     ]
                 },
@@ -2266,7 +2266,7 @@
                     ]
                 },
                 {
-                    "Name": "Kangashkhan",
+                    "Name": "Kangaskhan",
                     "IsVisible": false,
                     "Steps": [
                         {
@@ -2439,7 +2439,7 @@
                             "Description": "If you get a Rocky Helmet AND",
                             "Steps": [
                                 {
-                                    "Description": "Opponent switches into Feraligator, switch to Poliwrath Belly Drum + X.Speed"
+                                    "Description": "Opponent switches into Feraligatr, switch to Poliwrath Belly Drum + X.Speed"
                                 },
                                 {
                                     "Description": "Opponent uses Earthquake, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
