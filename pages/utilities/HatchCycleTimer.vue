@@ -23,8 +23,9 @@ export default {
         };
     },
     mounted() {
+        this.retrieveLocalStorage();
         this.updateTime();
-        let timer = setInterval(this.updateTime, 333);
+        setInterval(this.updateTime, 333);
     },
     methods: {
         updateTime() {
@@ -61,6 +62,7 @@ export default {
             }
         },
         startTimer() {
+            this.saveToLocalStorage()
             let startTimer = new Date()
             let eggHatchSecond = this.eggHatchSecond
             if (startTimer.getSeconds() < eggHatchSecond) {
@@ -124,6 +126,39 @@ export default {
             this.timerSet = false
             this.notificationSoundPlayed = true
         },
+        retrieveLocalStorage() {
+            if (process.client) {
+                const hasDonator = localStorage?.getItem('hasDonator')
+                const hasFlameBody = localStorage?.getItem('hasFlameBody')
+                const eggHatchSecond = localStorage?.getItem('eggHatchSecond')
+                const notificationSecondsBefore = localStorage?.getItem('notificationSecondsBefore')
+                const volume = localStorage?.getItem('volume')
+                if (hasDonator) {
+                    this.hasDonator = hasDonator === 'true';
+                }
+                if (hasFlameBody) {
+                    this.hasFlameBody = hasFlameBody === 'true';
+                }
+                if (eggHatchSecond) {
+                    this.eggHatchSecond = parseInt(eggHatchSecond);
+                }
+                if (notificationSecondsBefore) {
+                    this.notificationSecondsBefore = parseInt(notificationSecondsBefore);
+                }
+                if (volume) {
+                    this.volume = parseInt(volume);
+                }
+            }
+        },
+        saveToLocalStorage() {
+            if (process.client) {
+                localStorage?.setItem('hasDonator', this.hasDonator.toString())
+                localStorage?.setItem('hasFlameBody', this.hasFlameBody.toString())
+                localStorage?.setItem('eggHatchSecond', this.eggHatchSecond.toString())
+                localStorage?.setItem('notificationSecondsBefore', this.notificationSecondsBefore.toString())
+                localStorage?.setItem('volume', this.volume.toString())
+            }
+        }
     },
     computed: {
         getHatchCycleMinutes() {
