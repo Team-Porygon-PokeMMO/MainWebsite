@@ -24,7 +24,7 @@ export default {
         <h1>Elite Four Changelogs</h1>
         <div v-for="changelog in changelogs" :key="changelog.Year + changelog.Month + changelog.Day">
             <h2>{{ changelog.Year }}/{{ changelog.Month }}/{{ changelog.Day }}</h2>
-            <ul>
+            <ul style="list-style-type:disc;">
                 <li v-for="change in changelog.Changes" :key="change.Solve" class="p-1">
                     <b>{{ change.Solve }}</b>
                     <p>{{ change.Description }}</p>

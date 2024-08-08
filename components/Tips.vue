@@ -1,5 +1,5 @@
 <script lang="ts">
-export class Tip {
+class Tip {
     Description: string = "";
     Classes: string[] = [];
     Tips: Tip[] = [];
@@ -9,20 +9,31 @@ export class Tip {
 }
 export default {
     props: {
-        currentTip: {
-            type: Tip,
+        items: {
+            type: Array as PropType<Array<Tip>>,
             required: true,
         },
     },
     methods: {
-        toggleView() {
-            this.currentTip.IsVisible = !this.currentTip.IsVisible
+        toggleView(item: Tip) {
+            item.IsVisible = !item.IsVisible
         },
-        getIfExpandable() {
-            if (this.currentTip?.Tips?.length > 0) {
-                return this.currentTip?.IsVisible ? '🔽' : '▶️'
+        getIfExpandable(item: Tip) {
+            if (item?.Tips?.length > 0) {
+                return item?.IsVisible ? '🔽' : '▶️'
             }
             return ''
+        },
+        getBackgroundColorStyling() {
+            return {
+                backgroundColor: 'rgb(0,0,0, .2)',
+                border: '1px solid rgb(255, 255, 255, .2)',
+            }
+        },
+        getMoreStepsBackgroundColorStyling() {
+            return {
+                backgroundColor: 'rgb(255,255,255, .25)'
+            }
         }
     },
 };
@@ -36,17 +47,21 @@ export default {
 </style>
 
 <template>
-    <div class="pl-2 pt-1">
-        <ul v-if="currentTip.Url">
-            <li class="link">
-                <a :href="currentTip.Url ?? ''" target="_blank">{{ currentTip.Name }}</a>
+    <div class="pl-2 pt-1" :style="getBackgroundColorStyling()">
+        <ul v-for="item in items">
+            <li class="link" v-if="item.Url">
+                <a :href="item.Url ?? ''" target="_blank">{{ item.Name }}</a>
             </li>
-        </ul>
-        <ul v-if="!currentTip.Url">
-            <li @click="toggleView()">
-                {{ currentTip.Description }} {{ getIfExpandable() }}
+            <li v-else>
+                <span @click="toggleView(item)" :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">
+                    {{ item.Description }} {{ getIfExpandable(item) }}
+                </span>
             </li>
+            <div class="ml-12 h-4 rounded-full" v-show="getIfExpandable(item) && !item.IsVisible"
+                @click="toggleView(item)"
+                :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}, getMoreStepsBackgroundColorStyling()]">
+            </div>
+            <Tips :items="item?.Tips" v-if="item?.Tips?.length > 0" v-show="item.IsVisible" />
         </ul>
-        <Tips v-for="subTip in currentTip.Tips" :currentTip="subTip" v-show="currentTip.IsVisible" />
     </div>
 </template>

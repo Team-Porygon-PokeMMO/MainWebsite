@@ -2,8 +2,9 @@ import type { Config } from 'tailwindcss'
 const colors = require('tailwindcss/colors')
 const srcDir = 'src'
 
+
 export default <Partial<Config>>{
-    darkMode: 'class',
+    darkMode: 'selector',
     content: [
         `${srcDir}/components/**/*.{vue,js,ts}`,
         `${srcDir}/layouts/**/*.vue`,
@@ -16,5 +17,5 @@ export default <Partial<Config>>{
         `${srcDir}/Error.{js,ts,vue}`,
         `${srcDir}/error.{js,ts,vue}`,
         `${srcDir}/app.config.{js,ts}`
-    ]
+    ],
 }

@@ -54,11 +54,15 @@ div.regions {
 }
 
 div.regions:hover {
-    background-color: rgba(75, 16, 16, 0.534);
+    background-color: rgba(75, 16, 16, 0.9);
 }
 
 .active {
-    background-color: rgba(182, 28, 28, 0.39);
+    background-color: rgba(182, 28, 28, 0.15);
+}
+
+.name {
+    background-color: rgb(0, 0, 0, .25);
 }
 </style>
 
@@ -68,7 +72,7 @@ div.regions:hover {
         <div class="grid grid-cols-5">
             <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }" class="regions text-label"
                 :style="getImageStyling(item)">
-                <span>{{ item.Name }}</span>
+                <span class="name">{{ item.Name }}</span>
             </div>
         </div>
         <Leads v-for="item in items" :items="item.Leads" v-show="item.IsVisible" />

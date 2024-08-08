@@ -7,8 +7,8 @@
                 "IsVisible": true,
                 "Tips": [
                     {
-                            "Url": "https://pokepast.es/010a4bd6157609b1",
-                            "Name": "E4 PokePaste"
+                        "Url": "https://pokepast.es/010a4bd6157609b1",
+                        "Name": "E4 PokePaste"
                     }
                 ]
             }
@@ -19,7 +19,6 @@
         "Tips": [
             {
                 "Description": "Consumables",
-                "IsVisible": true,
                 "Tips": [
                     {
                         "Description": "1000x Potions (should last you 2-3 runs)."
@@ -49,7 +48,6 @@
             },
             {
                 "Description": "Hold Items",
-                "IsVisible": true,
                 "Tips": [
                     {
                         "Description": "50x Air Baloons (should last you few runs)"
@@ -61,7 +59,6 @@
             },
             {
                 "Description": "Battle Items",
-                "IsVisible": true,
                 "Tips": [
                     {
                         "Description": "10x X.Defend (should last you few runs)"

@@ -8,8 +8,10 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode'],
   colorMode: {
-    preference: 'system',
-    classSuffix: ''
+    preference: 'dark',
+    fallback: 'dark',
+    classSuffix: 'dark'
+
   },
   tailwindcss: {
     config: {

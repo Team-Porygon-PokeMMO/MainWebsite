@@ -22,31 +22,51 @@ export default {
         },
         getIfExpandable(item: Step) {
             if (item?.Steps?.length > 0 && !this.getIfTrick(item)) {
-                return item?.IsVisible ? '🔽' : '▶️'
+                return true
             }
-            return ''
+            return false
         },
         getIfCanBeSeen(item: Step) {
             return item?.IsVisible || this.getIfTrick(item)
+        },
+        getBackgroundColorStyling() {
+            return {
+                backgroundColor: 'rgb(0,0,0, .2)',
+                border: '1px solid rgb(255, 255, 255, .2)',
+            }
+        },
+        getMoreStepsBackgroundColorStyling() {
+            return {
+                backgroundColor: 'rgb(255,255,255, .25)'
+            }
         }
     },
 };
 </script>
 
 <style scoped>
-.menu-list:hover{
+.menu-list:hover {
     background: none;
 }
 </style>
 
 <template>
-    <div class="text-justify ">
-        <ul v-for="item in items" class="menu-list ">
-            <li class="menu-label ml-2" @click="toggleView(item)">
-                <span>
-                    {{ getIfExpandable(item) }} {{ item.Description }}
+    <div class="text-justify" :style="getBackgroundColorStyling()">
+        <ul v-for="item in items" class="menu-list">
+            <li class="menu-label ml-2">
+                <span @click="toggleView(item)" :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]"
+                    v-if="!item.IsVisible">
+                    {{ item.Description }}
+                </span>
+                <span v-else>
+                    {{ item.Description }}
                 </span>
             </li>
+
+            <div class="ml-12 h-4 rounded-full" v-show="getIfExpandable(item) && !item.IsVisible"
+                @click="toggleView(item)"
+                :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}, getMoreStepsBackgroundColorStyling()]">
+            </div>
             <Steps class="ml-8" v-if="item?.Steps?.length > 0" :items="item.Steps" v-show="getIfCanBeSeen(item)" />
         </ul>
     </div>
