@@ -54,11 +54,7 @@ export default {
     <div class="text-justify" :style="getBackgroundColorStyling()">
         <ul v-for="item in items" class="menu-list">
             <li class="menu-label ml-2">
-                <span @click="toggleView(item)" :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]"
-                    v-if="!item.IsVisible">
-                    {{ item.Description }}
-                </span>
-                <span v-else>
+                <span @click="toggleView(item)" :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">
                     {{ item.Description }}
                 </span>
             </li>
