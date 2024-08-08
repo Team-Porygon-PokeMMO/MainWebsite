@@ -9,7 +9,19 @@
   <UNotifications />
 </template>
 
-<script setup>
-const colorMode = useColorMode();
-colorMode.preference = 'dark';
+<script lang="ts">
+export default {
+  created() {
+    this.storage();
+    const colorMode = useColorMode();
+    colorMode.preference = 'dark';
+  },
+  methods: {
+    storage() {
+      if (process.browser) {
+        localStorage.setItem('nuxt-color-mode', 'dark');
+      }
+    }
+  }
+};
 </script>
