@@ -1,17 +1,8 @@
 <script setup>
 import { contributors } from '~/src/data.json'
-const colorMode = useColorMode()
 const formatContributors = () => {
     return contributors.join(', ')
 }
-const isDark = computed({
-    get() {
-        return colorMode.value === 'dark'
-    },
-    set() {
-        colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark'
-    }
-})
 </script>
 
 <template>

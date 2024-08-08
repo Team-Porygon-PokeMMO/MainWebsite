@@ -12,14 +12,17 @@
 <script lang="ts">
 export default {
   created() {
-    this.storage();
     const colorMode = useColorMode();
     colorMode.preference = 'dark';
+    this.storage();
   },
   methods: {
     storage() {
-      if (process.browser) {
+      if (process.client) {
         localStorage.setItem('nuxt-color-mode', 'dark');
+      }
+      else {
+        console.info('Local storage is not available');
       }
     }
   }
