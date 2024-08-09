@@ -25,7 +25,7 @@ export default {
     mounted() {
         this.retrieveLocalStorage();
         this.updateTime();
-        setInterval(this.updateTime, 333);
+        let timer = setInterval(this.updateTime, 333);
     },
     methods: {
         updateTime() {
@@ -62,7 +62,6 @@ export default {
             }
         },
         startTimer() {
-            this.saveToLocalStorage()
             let startTimer = new Date()
             let eggHatchSecond = this.eggHatchSecond
             if (startTimer.getSeconds() < eggHatchSecond) {
@@ -158,6 +157,10 @@ export default {
                 localStorage?.setItem('notificationSecondsBefore', this.notificationSecondsBefore.toString())
                 localStorage?.setItem('volume', this.volume.toString())
             }
+        },
+        buttonClick() {
+            this.saveToLocalStorage()
+            this.startTimer()
         }
     },
     computed: {
@@ -216,7 +219,7 @@ button {
                 </div>
             </div>
             <div class="gap-2 mb-2">
-                <UButton @click="startTimer()">Start</UButton>
+                <UButton @click="buttonClick()">Start</UButton>
                 <UButton @click="stopTimer()">Stop</UButton>
                 <UButton @click="missedInterval()">Missed Interval (+1 cycle)</UButton>
             </div>
