@@ -37,7 +37,7 @@ export default {
         },
         getMoreStepsBackgroundColorStyling() {
             return {
-                backgroundColor: 'rgb(255,255,255, .25)'
+                backgroundColor: 'rgb(155, 25, 25, .75)'
             }
         }
     },
