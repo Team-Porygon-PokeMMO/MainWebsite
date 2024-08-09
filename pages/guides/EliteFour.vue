@@ -58,7 +58,7 @@ export default {
 
 <style>
 .menu-label {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -76,11 +76,6 @@ export default {
     text-decoration: none;
     border-radius: 4px;
     transition: background-color 0.3s ease;
-}
-
-.menu-list li {
-    padding-left: 10px;
-    padding-bottom: 4px;
 }
 
 .strong {

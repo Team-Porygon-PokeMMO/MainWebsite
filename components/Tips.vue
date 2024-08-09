@@ -32,7 +32,7 @@ export default {
         },
         getMoreStepsBackgroundColorStyling() {
             return {
-                backgroundColor: 'rgb(255,255,255, .25)'
+                backgroundColor: 'rgb(155, 25, 25, .75)'
             }
         }
     },
@@ -47,21 +47,28 @@ export default {
 </style>
 
 <template>
-    <div class="pl-2 pt-1" :style="getBackgroundColorStyling()">
-        <ul v-for="item in items">
+    <div :style="getBackgroundColorStyling()">
+        <ul v-for="item in items" class="relative">
+            <div class="absolute left-0 expandable" @click="toggleView(item)"
+                :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">{{
+                    getIfExpandable(item) ? item.IsVisible ? '🔽' : '▶️' : '' }}
+            </div>
             <li class="link" v-if="item.Url">
                 <a :href="item.Url ?? ''" target="_blank">{{ item.Name }}</a>
             </li>
-            <li v-else>
+            <li class="ml-6" v-if="getIfExpandable(item)">
                 <span @click="toggleView(item)" :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">
-                    {{ item.Description }} {{ getIfExpandable(item) }}
+                    {{ item.Description }}
                 </span>
+            </li>
+            <li v-else>
+                {{ item.Description }}
             </li>
             <div class="ml-12 h-4 rounded-full" v-show="getIfExpandable(item) && !item.IsVisible"
                 @click="toggleView(item)"
                 :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}, getMoreStepsBackgroundColorStyling()]">
             </div>
-            <Tips :items="item?.Tips" v-if="item?.Tips?.length > 0" v-show="item.IsVisible" />
+            <Tips class="ml-8" :items="item?.Tips" v-if="item?.Tips?.length > 0" v-show="item.IsVisible" />
         </ul>
     </div>
 </template>
