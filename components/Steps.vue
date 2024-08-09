@@ -48,12 +48,18 @@ export default {
 .menu-list:hover {
     background: none;
 }
+
+.expandable {
+    margin-top: .15rem;
+}
 </style>
 
 <template>
     <div class="text-justify" :style="getBackgroundColorStyling()">
-        <ul v-for="item in items" class="menu-list">
-            <li class="menu-label ml-2">
+        <ul v-for="item in items" class="menu-list relative">
+            <div class="absolute left-0 expandable">{{ getIfExpandable(item) ? item.IsVisible ? '🔽' : '▶️' : '' }}
+            </div>
+            <li class="menu-label ml-3">
                 <span @click="toggleView(item)" :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">
                     {{ item.Description }}
                 </span>
