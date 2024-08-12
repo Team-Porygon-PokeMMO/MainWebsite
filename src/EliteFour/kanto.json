@@ -734,7 +734,7 @@
                                     "Description": "and opponent uses Drain Punch, switch to Chandelure 2x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "and opponent uses Dynamic Punch and infflicts confusion, use Stealth Rock;",
+                                    "Description": "and opponent uses Dynamic Punch, use Stealth Rock; (Dynamic Punch inflicts confusion)",
                                     "IsVisible": true,
                                     "Steps": [
                                         {
