@@ -26,7 +26,7 @@
             },
             {
                 "Solve": "Johto -> Bruno -> Blastoise",
-                "Description": "Added new possible switch in: < If Opponent uses Water Spout, switch to Blissey and use Trick as it switches into Machamp or Blaziken. Switch to Chandelure ×4 Calm Mind + X.Speed >."
+                "Description": "Added new possible switch in: < If opponent uses Water Spout, switch to Blissey and use Trick as it switches into Machamp or Blaziken. Switch to Chandelure ×4 Calm Mind + X.Speed >."
             },
             {
                 "Solve": "Johto -> Bruno -> Blastoise",
@@ -63,6 +63,41 @@
             {
                 "Solve": "Multiple Leads",
                 "Description": "Added sprite images for all pokemons. Addition by c4v."
+            }
+        ]
+    },
+    {
+        "Year": 2024,
+        "Month": 8,
+        "Day": 11,
+        "Changes": [
+            {
+                "Solve": "Johto -> Koga -> Nidoqueen",
+                "Description": "Fixed duplicated step."
+            },
+            {
+                "Solve": "Unova -> Shauntal -> Chandelure",
+                "Description": "Added more depth into Blissey -> Fire Blast -> Damage between 19.4% and 23% to 19.4% and 24.5%."
+            },
+            {
+                "Solve": "Unova -> Grimsley -> Samurott",
+                "Description": "No solve for Garchomp switch. Stealth Rock + 2x Swords Dance + X.Speed"
+            },
+            {
+                "Solve": "Unova -> Grimsley -> Chandelure",
+                "Description": "Removed X.Defend from Staraptor step."
+            },
+            {
+                "Solve": "Hoenn -> Glacia -> Walrein",
+                "Description": "Changed step on Leftovers -> Used surf."
+            },
+            {
+                "Solve": "Kanto -> Lorelei -> Bronzong",
+                "Description": "Sometimes Vileplume can come out after Golduck switches out."
+            },
+            {
+                "Solve": "Johto -> Karen -> Slowbro",
+                "Description": "Reduced choice band solve."
             }
         ]
     }
