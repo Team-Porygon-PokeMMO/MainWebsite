@@ -61,7 +61,12 @@
                             "Description": "If opponent switches into Dragonite, use Stealth Rock then switch to Blissey Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Golduck, switch to Poliwrath Belly Drum"
+                            "Description": "If opponent switches into Golduck, switch to Poliwrath Belly Drum",
+                            "Steps": [
+                                {
+                                    "Description": "If opponent switches into Vileplume, switch into second Metagross and use Trick as Lapras comes out to lock in Drill Run. Switch to Excadrill: 2x Swords Dance + X.Speed"
+                                }
+                            ]
                         },
                         {
                             "Description": "If opponent switches into Hariyama, switch to Chandelure 4x Calm Mind + X.Speed"
