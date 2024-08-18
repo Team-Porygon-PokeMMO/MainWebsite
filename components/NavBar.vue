@@ -27,6 +27,10 @@ const links = [[
     },
     {
         label: 'Missing Shiny Dex', to: 'https://forums.pokemmo.com/index.php?/topic/159671-pory-whose-left-to-shunt/', target: "_blank",
+        icon: 'i-heroicons-bars-3   ',
+    },
+    {
+        label: 'Contact Us', to: 'https://discord.gg/ERegmbRSyz', target: "_blank",
         icon: 'i-heroicons-bars-3-bottom-right',
     }
 ]]
