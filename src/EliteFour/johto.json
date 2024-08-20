@@ -1628,13 +1628,18 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick;"
-                        },
-                        {
-                            "Description": "If opponent switches out into Rhyperior, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
-                        },
-                        {
-                            "Description": "If opponent switches out into Vileplume, use Stealth Rock then switch to Blissey and use Trick as it switches out to Honchkrow once more. Switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "Use Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If it uses Superpower, Stealth Rock and switch into Chandelure: 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "If opponent switches out into Rhyperior, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                                },
+                                {
+                                    "Description": "If opponent switches out into Vileplume, use Stealth Rock then switch to Blissey and use Trick as it switches out to Honchkrow once more. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -1747,7 +1752,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then use Stealth Rock. Switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "Use Trick. Switch to Chandelure: 5x Calm Mind + X.Speed"
                         }
                     ]
                 },

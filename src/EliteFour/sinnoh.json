@@ -2059,13 +2059,15 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick;"
-                        },
-                        {
-                            "Description": "if it uses Fire Punch, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
-                        },
-                        {
-                            "Description": "if it uses Flamethrower, switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "Use Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "if it uses Fire Punch, switch to Chandelure: 4x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if it uses Flamethrower, switch to Chandelure 3x Calm Mind + X.Speed"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -2228,27 +2230,32 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick;"
-                        },
-                        {
-                            "Description": "If it uses Hydro Pump/Waterfall, switch to Poliwrath Belly Drum + X.Speed"
-                        },
-                        {
-                            "Description": "If it uses Surf, use Stealth Rock;",
+                            "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "If it stays, switch to Poliwrath Belly Drum + X.Speed"
+                                    "Description": "If it uses Hydro Pump/Waterfall, switch to Poliwrath Belly Drum + X.Speed"
                                 },
                                 {
-                                    "Description": "If it switches into Rayquaza, let it die. Send in Blissey Trick then switch to Chandelure 4x Calm Mind + X.Speed"
+                                    "Description": "If it uses Surf, use Stealth Rock;",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it stays, switch to Poliwrath Belly Drum + X.Speed"
+                                        },
+                                        {
+                                            "Description": "If it switches into Rayquaza, let it die. Send in Blissey Trick then switch to Chandelure 4x Calm Mind + X.Speed"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If it switches into Eelektross, switch to Chandelure: 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "If it switches into Garchomp, switch to Excadrill 2x Swords Dance + X.Speed"
+                                },
+                                {
+                                    "Description": "If it switches into Rayquaza, let it die. Send in the second Metagross and use Trick then switch to Chandelure 4x Calm Mind + X.Speed"
                                 }
                             ]
-                        },
-                        {
-                            "Description": "If it switches into Garchomp, switch to Excadrill 2x Swords Dance + X.Speed"
-                        },
-                        {
-                            "Description": "If it switches into Rayquaza, let it die. Send in the second Metagross and use Trick then switch to Chandelure 4x Calm Mind + X.Speed"
                         }
                     ]
                 },

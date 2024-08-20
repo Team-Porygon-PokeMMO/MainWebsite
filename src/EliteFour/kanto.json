@@ -865,10 +865,7 @@
                             "Description": "If Salamence has Moxie, use Trick",
                             "Steps": [
                                 {
-                                    "Description": "If you get a Life Orb, switch to Excadrill Stealth Rock. Use Swords Dance + X.Speed"
-                                },
-                                {
-                                    "Description": "If you get a Lum Berry, switch to Excadrill Stealth Rock. Use Swords Dance + X.Speed"
+                                    "Description": "If you get a Life Orb or Lum Berry, switch to Excadrill Stealth Rock. Use Swords Dance + X.Speed"
                                 }
                             ]
                         },
@@ -1529,19 +1526,19 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get a Choice Scarf, switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "If you get a Choice Scarf, switch to Excadrill: 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If you get a Life Orb, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                            "Description": "If you get a Life Orb, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
                         },
                         {
                             "Description": "If opponent switches out to Dragonite, use Stealth Rock",
                             "Steps": [
                                 {
-                                    "Description": "If opponent uses Fire Blast, switch to Chandelure 2x Calm Mind + X.Speed"
+                                    "Description": "If opponent uses Fire Blast, switch to Chandelure: 2x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent uses Fire Punch, switch to Blissey and use Trick, then switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "If opponent uses Fire Punch, switch to Chandelure: 3x Calm Mind + X.Speed"
                                 }
                             ]
                         }
