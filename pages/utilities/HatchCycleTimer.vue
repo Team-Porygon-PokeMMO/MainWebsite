@@ -132,6 +132,7 @@ export default {
                 const eggHatchSecond = localStorage?.getItem('eggHatchSecond')
                 const notificationSecondsBefore = localStorage?.getItem('notificationSecondsBefore')
                 const volume = localStorage?.getItem('volume')
+                const hatchCycleMinutes = localStorage?.getItem('hatchCycleMinutes')
                 if (hasDonator) {
                     this.hasDonator = hasDonator === 'true';
                 }
@@ -147,6 +148,9 @@ export default {
                 if (volume) {
                     this.volume = parseInt(volume);
                 }
+                if (hatchCycleMinutes) {
+                    this.hatchCycleMinutes = parseInt(hatchCycleMinutes);
+                }
             }
         },
         saveToLocalStorage() {
@@ -156,6 +160,7 @@ export default {
                 localStorage?.setItem('eggHatchSecond', this.eggHatchSecond.toString())
                 localStorage?.setItem('notificationSecondsBefore', this.notificationSecondsBefore.toString())
                 localStorage?.setItem('volume', this.volume.toString())
+                localStorage?.setItem('hatchCycleMinutes', this.hatchCycleMinutes.toString())
             }
         },
         buttonClick() {
@@ -172,7 +177,6 @@ export default {
             if (this.hasFlameBody) {
                 hatchCycleMinutes--
             }
-            this.hatchCycleMinutes = hatchCycleMinutes
             return hatchCycleMinutes
         }
     }
@@ -203,17 +207,19 @@ button {
                 <UDivider />
             </div>
             <div class="grid gap-2 mb-2 md:grid-cols-1">
-                <label>Egg-Hatching Second:</label>
+                <label for="eggHatchSecond">Egg-Hatching Second:</label>
                 <UInput v-model="eggHatchSecond" />
-                <label>Options:</label>
+                <span>Options:</span>
                 <UFormGroup label="Donator Status">
                     <UToggle color="primary" v-model="hasDonator" />
                 </UFormGroup>
                 <UFormGroup label="Flame Body">
                     <UToggle color="primary" v-model="hasFlameBody" />
                 </UFormGroup>
-                <label>Calculated time for hatch: {{ getHatchCycleMinutes }} minutes</label>
-                <label>Seconds before cycle ends for notification sound:</label>
+                <span>Calculated time for hatch: {{ getHatchCycleMinutes }} minutes</span>
+                <label for="hatchCycleMinutes">Notify after {{ hatchCycleMinutes }} cycles.</label>
+                <UInput placeholder="Minutes" v-model="hatchCycleMinutes" type="number" />
+                <label for="notificationSecondsBefore">Seconds before cycle ends for notification sound:</label>
                 <div class="grid grid-cols-3">
                     <UInput placeholder="Seconds" v-model="notificationSecondsBefore" />
                 </div>
@@ -232,7 +238,7 @@ button {
         <div class="gap-2 mb-2 grid grid-cols-1">
             <UDivider />
             <div v-if="notificationTimers && notificationTimers.length > 0">
-                <label>Notifications:</label>
+                <span>Notifications:</span>
             </div>
             <label>Notification Options:</label>
             <div class="gap-2 mb-2">
