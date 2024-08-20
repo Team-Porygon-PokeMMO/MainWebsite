@@ -2332,7 +2332,15 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey Trick then switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "Switch to Blissey;",
+                            "Steps": [
+                                {
+                                    "Description": "if it stays, use Trick as it switches into Lucario. Switch to Chandelure: 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if it switches into Rayquaza, use Stealth Rock, then switch to Chandelure, then switch to Metagross and use Trick. Switch back to Chandelure: 3x Calm Mind + X.Speed"
+                                }
+                            ]
                         }
                     ]
                 },

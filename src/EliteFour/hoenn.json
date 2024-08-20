@@ -1005,13 +1005,15 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then use Stealth Rock"
-                        },
-                        {
-                            "Description": "If opponent stays, switch to Blissey and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
-                        },
-                        {
-                            "Description": "If opponent switched out into Walrein, switch to Chandelure 3x Calm Mind + X.Speed (Use Energy Ball vs. Walrein and use Shadow Ball vs. Froslass)"
+                            "Description": "Use Trick and then Stealth Rock;",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent stays, switch to Blissey, use Trick. Switch to Chandelure as Hariyama comes outs: 4x Calm Mind + X.Speed (use Energy Ball vs Hariyama if Shadow Ball locked)"
+                                },
+                                {
+                                    "Description": "If opponent switched out into Walrein, switch to Chandelure: 3x Calm Mind + X.Speed (Use Energy Ball vs. Walrein and use Shadow Ball vs. Froslass)"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -1043,8 +1045,14 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Excadrill Stealth Rock into 2x Swords Dance + X.Speed",
+                            "Description": "Use Trick;",
                             "Steps": [
+                                {
+                                    "Description": "If it uses Earthquake, switch to Chandelure: Stealth Rock + 2x Swords Dance + X.Speed"
+                                },
+                                {
+                                    "Description": "If opponent switches into Alteria, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
+                                },
                                 {
                                     "Description": "If opponent switches into Walrein after setting up Stealth Rock, switch to Poliwrath Belly Drum + X.Speed"
                                 }
@@ -1340,7 +1348,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then use Stealth Rock. Switch to Chandelure 2x Calm Mind"
+                            "Description": "Use Trick, then use Stealth Rock. Switch to Chandelure: 2x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1937,19 +1945,19 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if you get a Leftovers, switch to Poliwrath Belly Drum + X.Speed"
+                                    "Description": "if opponent switches into Eelektross, use Stealth Rock. Switch to Chandelure 3x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "if you get a Life Orb, switch to Excadrill 2x Swords Dance + X.Speed"
+                                    "Description": "if opponent switches into Empoleon, switch to Excadrill: 2x Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "EXPERIMENTAL: if opponent switches into Eelektross, use Stealth Rock. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches into Milotic, switch to Poliwrath: Belly Drum + X.Speed"
                                 },
                                 {
-                                    "Description": "EXPERIMENTAL: if opponent switches into Togekiss, switch to Chandelure: 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches into Togekiss, switch to Chandelure: 3x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "EXPERIMENTAL: if opponent switches into Whiscash, switch to Excadrill: 2x Swords Dance + X.Speed"
+                                    "Description": "if opponent switches into Whiscash, switch to Excadrill: 2x Swords Dance + X.Speed"
                                 }
                             ]
                         }

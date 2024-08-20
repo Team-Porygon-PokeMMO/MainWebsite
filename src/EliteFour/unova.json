@@ -738,10 +738,13 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "If it uses Waterfall, switch to Poliwrath: Belly Drum + X.Speed."
+                                    "Description": "If it uses Waterfall, Stealth Rock and switch to Poliwrath: Belly Drum + X.Speed."
                                 },
                                 {
-                                    "Description": "If it switches into Krookodile, switch to Excadrill: 2x Swords Dance + X.Speed."
+                                    "Description": "If it switches into Krookodile, switch to Excadrill: Stealth Rock + Swords Dance"
+                                },
+                                {
+                                    "Description": "If it switches into Spiritomb, use Stealth Rock as it switches into Krookodile. Switch to Excadrill: Swords Dance."
                                 }
                             ]
                         }
@@ -956,7 +959,7 @@
                                     ]
                                 },
                                 {
-                                    "Description": "If it switches into Krookodile, switch to Excadrill: Stealth Rock + 2x Swords Dance."
+                                    "Description": "If it switches into Krookodile, switch to Excadrill: Stealth Rock + Swords Dance."
                                 }
                             ]
                         }
@@ -1026,7 +1029,7 @@
                                     "Description": "If it uses Fire Blast, switch to Blissey and use Stealth Rock. Switch to Chandelure then switch to the second Metagross and use Trick. Switch back into Chandelure 3x Calm Mind + X.Speed."
                                 },
                                 {
-                                    "Description": "If it uses Flamethrower, use Stealth Rock and then switch to Chandelr 3x Calm Mind + X.Speed.",
+                                    "Description": "If it uses Flamethrower, use Stealth Rock and then switch to Chandelure 3x Calm Mind + X.Speed.",
                                     "Steps": [
                                         {
                                             "Description": "If it switches into Entei, switch to the second Metagross and use Trick. Switch back into Chandelure 3x Calm Mind + X.Speed."

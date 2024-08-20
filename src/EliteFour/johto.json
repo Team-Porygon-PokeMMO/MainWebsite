@@ -2005,7 +2005,7 @@
                             "Description": "If opponent uses Flame Charge and damaged by Life Orb, use Trick then switch to Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent uses Flare Blitz, Trick then switch to Excadrill then switch to Chandelure 3x Calm Mind + X.Speed",
+                            "Description": "If opponent uses Flare Blitz, use Trick, switch to Excadrill to bait an extra turn, then switch to Chandelure 3x Calm Mind + X.Speed (Metagrosses should be 1-shotted, baiting an extra turn with Excadrill will avoid AI switching out)",
                             "Steps": [
                                 {
                                     "Description": "If opponent switches out into Hydreigon/Dragonite while you set up, switch to Blissey and use Trick as it switches into Feraligatr Superpower Then switch back to Chandelure 5x Calm Mind + X.Speed"
