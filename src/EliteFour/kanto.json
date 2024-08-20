@@ -1971,41 +1971,54 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick;"
-                        },
-                        {
-                            "Description": "If opponent uses Earthquake, switch to Excadrill Stealth Rock then Swords Dance",
+                            "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "If you get a Life Orb, Swords Dance + X.Speed"
+                                    "Description": "If opponent uses Earthquake, switch to Excadrill Stealth Rock then Swords Dance",
+                                    "Steps": [
+                                        {
+                                            "Description": "If you get a Life Orb, Swords Dance + X.Speed"
+                                        },
+                                        {
+                                            "Description": "If you get a Rocky Helmet, X.Speed"
+                                        }
+                                    ]
                                 },
                                 {
-                                    "Description": "If you get a Rocky Helmet, X.Speed"
-                                }
-                            ]
-                        },
-                        {
-                            "Description": "If opponent uses Hammer Arm, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
-                        },
-                        {
-                            "Description": "If opponent switches out into Dragonite, use Stealth Rock then switch to Blissey and use Trick",
-                            "Steps": [
-                                {
-                                    "Description": "If opponent switches out into Metagross with Life Orb, use Trick then switch to your own Metagross and use Trick. Switch to Excadrill 2x Swords Dance + X.Speed"
+                                    "Description": "If opponent uses Hammer Arm, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches out into any other Pokemon, switch to Chandelure 3x Calm Mind + X.Speed"
-                                }
-                            ]
-                        },
-                        {
-                            "Description": "If opponent switches out into Eelektross, use Stealth Rock then switch to Chandelure 4x Calm Mind + X.Speed"
-                        },
-                        {
-                            "Description": "If opponent switches into Garchomp, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
-                            "Steps": [
+                                    "Description": "If opponent switches out into Dragonite, use Stealth Rock then switch to Blissey and use Trick",
+                                    "Steps": [
+                                        {
+                                            "Description": "If opponent switches out into Metagross with Life Orb, use Trick then switch to your own Metagross and use Trick. Switch to Excadrill 2x Swords Dance + X.Speed"
+                                        },
+                                        {
+                                            "Description": "If opponent switches out into any other Pokemon, switch to Chandelure 3x Calm Mind + X.Speed"
+                                        }
+                                    ]
+                                },
                                 {
-                                    "Description": "If opponent switches into Lapras, switch to Poliwrath Belly Drum + X.Speed. Use Drain Punch vs. Garchomp"
+                                    "Description": "Experimental: if it switches into Dragonite, use Stealth Rock, Thunder Punch. If first Metagross dies, use second to Thunder Punch and switch to Blissey and Trick",
+                                    "Steps": [
+                                        {
+                                            "Description": "If opponent switches out into Metagross with Life Orb, use Trick then switch to your own Metagross and use Trick. Switch to Excadrill 2x Swords Dance + X.Speed"
+                                        },
+                                        {
+                                            "Description": "If opponent switches out into any other Pokemon, switch to Chandelure 3x Calm Mind + X.Speed"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "If opponent switches out into Eelektross, use Stealth Rock then switch to Chandelure 4x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "If opponent switches into Garchomp, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
+                                    "Steps": [
+                                        {
+                                            "Description": "If opponent switches into Lapras, switch to Poliwrath Belly Drum + X.Speed. Use Drain Punch vs. Garchomp"
+                                        }
+                                    ]
                                 }
                             ]
                         }
