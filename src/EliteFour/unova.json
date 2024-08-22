@@ -486,6 +486,7 @@
                     "Steps": [
                         {
                             "Description": "Switch to Blissey, then switch to Metagross;",
+                            "IsVisible": true,
                             "Steps": [
                                 {
                                     "Description": "If it switches into Lucario, use Trick, then switch to Chandelure 6x Calm Mind + X.Speed."
