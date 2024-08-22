@@ -428,6 +428,7 @@
                     "Steps": [
                         {
                             "Description": "Use Trick, then use Stealth Rock;",
+                            "IsVisible": true,
                             "Steps": [
                                 {
                                     "Description": "If you get a Chesto Berry and they switched Chandelure in, switch yourself to Chandelure: 2x Calm Mind + X.Speed."
@@ -661,7 +662,12 @@
                                     "Description": "If it switches out into Crobat, switch to Chandelure 3x Calm Mind + X.Speed."
                                 },
                                 {
-                                    "Description": "If it switches into Garchomp, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                                    "Description": "If it switches into Garchomp, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "if it switches into Gyarados, switch into Poliwrath, switch into Metagross and use Thunder Punch to kill. Opponent should switch out into Chandelure. Switch to Chandelure: 3x Calm Mind + X.Speed."
+                                        }
+                                    ]
                                 }
                             ]
                         }

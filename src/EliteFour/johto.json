@@ -2223,13 +2223,15 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick;"
-                        },
-                        {
-                            "Description": "If opponent uses Earthquake, switch immediately into Excadrill 2x Swords Dance + X.Speed + X.Defend"
-                        },
-                        {
-                            "Description": "If opponent switches into Dragonite, switch to Chandelure then switch to Metagross. Switch back into Chandelure 3x Calm Mind + X.Speed + X.Defend"
+                            "Description": "Use Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "If opponent uses Earthquake, switch immediately into Excadrill 2x Swords Dance + X.Speed + X.Defend"
+                                },
+                                {
+                                    "Description": "If opponent switches into Dragonite, use Stealth Rock and then switch to Chandelure: 3x Calm Mind + X.Speed + X.Defend"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -2275,7 +2277,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "(Experimental) Switch immediately into Excadrill 2x Swords Dance + X.Speed + X.Defend"
+                            "Description": "Switch immediately into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed + X.Defend"
                         }
                     ]
                 },
@@ -2299,16 +2301,29 @@
                             "Description": "If opponent uses Surf, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Dragonite, switch to Excadrill 3x Swords Dance + X.Speed",
+                            "Description": "If opponent switches out into Dragonite; switch to Excadrill 3x Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches out into Charizard, switch to Blissey then switch back to Metagross; (Try to get Tyranitar off the field to lock EQ)",
+                                    "Description": "and you get a Life Orb, use Stealth Rock, then switch into Excadrill: 2x Swords Dance + X.Speed",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent does not switch out and Charizard stays, switch to Chandelure then switch to Metagross. Switch to Excadrill 3x Swords Dance + X.Speed"
-                                        },
+                                            "Description": "if opponent switches into Lapras, switch into Poliwrath: Belly Drum + X.Speed"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "and you get a Leftovers, switch into Excadrill: 3x Swords Dance + X.Speed",
+                                    "Steps": [
                                         {
-                                            "Description": "If opponent switches into Tyranitar, then switch to Excadrill 3x Swords Dance + X.Speed"
+                                            "Description": "If opponent switches out into Charizard, switch to Blissey then switch back to Metagross; (Try to get Tyranitar off the field to lock EQ)",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If opponent does not switch out and Charizard stays, switch to Chandelure then switch to Metagross. Switch to Excadrill 3x Swords Dance + X.Speed"
+                                                },
+                                                {
+                                                    "Description": "If opponent switches into Tyranitar, then switch to Excadrill 3x Swords Dance + X.Speed"
+                                                }
+                                            ]
                                         }
                                     ]
                                 }

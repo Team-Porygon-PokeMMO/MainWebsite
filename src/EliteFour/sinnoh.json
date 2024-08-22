@@ -1664,13 +1664,21 @@
                                     ]
                                 },
                                 {
-                                    "Description": "If it switches out into Bronzong, use Stealth Rock as it switches out into Slowbro. Use Stealth Rock again to see what it does;",
+                                    "Description": "If it switches out into Bronzong, use Stealth Rock;",
                                     "Steps": [
                                         {
-                                            "Description": "If it uses Flamethrower, switch to Chandelure 2x Calm Mind + X.Speed"
+                                            "Description": "if it stays and uses Earthquake, switch into Chandelure 2x Calm Mind + X.Speed"
                                         },
                                         {
-                                            "Description": "If it uses Scald, switch to Poliwrath Belly Drum + X.Speed"
+                                            "Description": "if it switches into Slowbro, use Stealth Rock again to see what it does;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it uses Flamethrower, switch to Chandelure 2x Calm Mind + X.Speed"
+                                                },
+                                                {
+                                                    "Description": "If it uses Scald, switch to Poliwrath Belly Drum + X.Speed"
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
