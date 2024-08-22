@@ -146,7 +146,26 @@
                                     "Description": "if it uses Flamethrower or it switches out into Umbreon, switch to Metagross;",
                                     "Steps": [
                                         {
-                                            "Description": "if it switches out into Dragonite, use Trick, then switch to Chandelure 4x Calm Mind + X.Speed."
+                                            "Description": "if it switches out into Dragonite, use Trick;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it uses Dragon Claw, use Stealth Rock, then switch to Blissey and use Softboiled. Switch to Chandelure 3x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "if it uses Flamethrower, switch to Chandelure 3x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "if it uses Superpower, use Trick;",
+                                                    "Steps": [
+                                                        {
+                                                            "Description": "if you get a Leftovers, use Stealth Rock, then switch to Chandelure 2x Calm Mind + X.Speed."
+                                                        },
+                                                        {
+                                                            "Description": "if you get a Sitrus Berry, switch to Chandelure 3x Calm Mind + X.Speed."
+                                                        }
+                                                    ]
+                                                }
+                                            ]
                                         },
                                         {
                                             "Description": "if it switches into Eelektross, use Trick, then use Stealth Rock. Switch to Chandelure 2x Calm Mind + X.Speed."
@@ -686,10 +705,10 @@
                                             "Description": "If it switches out into Gyarados, switch to Poliwrath, then switch to second Metagross and use Thunder Punch to kill;",
                                             "Steps": [
                                                 {
-                                                    "Description": "If Metagross HP is below 60%, switch to Blissey and use Trick. Switch to Chandeur 3x Calm Mind + X.Speed."
+                                                    "Description": "If Metagross HP is below 60%, switch to Blissey and use Trick. Switch to Chandelure: 3x Calm Mind + X.Speed."
                                                 },
                                                 {
-                                                    "Description": "If it switches into Chandelure switch to your own Chandelure 3x Calm Mind + X.Speed."
+                                                    "Description": "If it switches into Chandelure switch to your own Chandelure: 3x Calm Mind + X.Speed."
                                                 }
                                             ]
                                         }
@@ -1289,7 +1308,7 @@
                                     "Description": "If it uses Earthquake;",
                                     "Steps": [
                                         {
-                                            "Description": "and you get Air Baloon, use Stealth Rock.",
+                                            "Description": "and you get an Air Balloon, use Stealth Rock.",
                                             "Steps": [
                                                 {
                                                     "Description": "If it switches into Emolga, switch to Excadrill, then switch to the second Metagross;",
@@ -2429,10 +2448,12 @@
                     "Name": "Toxicroak",
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Chandelure 3x Calm Mind + X.Speed.",
+                            "Description": "Use Trick (it should use Drain Punch or switch into Gliscor), switch to Chandelure: 3x Calm Mind + X.Speed.",
+                            "IsVisible": true,
                             "Steps": [
                                 {
                                     "Description": "If it switches into Conkeldurr, switch to Metagross and use Trick;",
+                                    "IsVisible": true,
                                     "Steps": [
                                         {
                                             "Description": "If it uses Drain Punch, switch to Chandelure 3x Calm Mind + X.Speed."
