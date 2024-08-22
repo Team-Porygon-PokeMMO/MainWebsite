@@ -494,10 +494,10 @@
                                     "Description": "If it switches into Toxicroak, use Stealth Rock;",
                                     "Steps": [
                                         {
-                                            "Description": "If it stays, switch to Chandelure 4x Calm Mind + X.Speed.",
+                                            "Description": "If it stays, switch to Chandelure 4x Calm Mind + X.Speed + X.Defend.",
                                             "Steps": [
                                                 {
-                                                    "Description": "If it switches into anything else, switch to Blissey and use Softboiled. Switch to Chandelure 4x Calm Mind + X.Speed."
+                                                    "Description": "If it switches into anything else, switch to Blissey and use Softboiled. Switch to Chandelure 4x Calm Mind + X.Speed + X.Defend."
                                                 }
                                             ]
                                         }

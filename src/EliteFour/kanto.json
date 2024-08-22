@@ -1166,7 +1166,7 @@
                             "Description": "Switch to Blissey",
                             "Steps": [
                                 {
-                                    "Description": "If opponent uses Flamethrower, use Trick then switch to Excadrill Stealth Rock then Swords Dance + X.Speed"
+                                    "Description": "If opponent uses Flamethrower, use Trick then switch to Excadrill: Stealth Rock + Swords Dance + X.Speed (Use Iron Head vs Gengar)"
                                 },
                                 {
                                     "Description": "If opponent uses Shadow Ball, use Trick",
@@ -1735,7 +1735,7 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Earthquake,  switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "If opponent uses Earthquake, switch to Excadrill 2x Swords Dance + X.Speed"
                         },
                         {
                             "Description": "If opponent uses Scald, use Stealth Rock then switch to Poliwrath X.Speed + Belly Drum"
@@ -1755,7 +1755,15 @@
                                     ]
                                 },
                                 {
-                                    "Description": "and you get a Leftovers, use Stealth Rock then switch to Blissey Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "and you get a Leftovers, use Stealth Rock;",
+                                    "Steps": [
+                                        {
+                                            "Description": "switch into Blissey and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                        },
+                                        {
+                                            "Description": "BURN RISK: switch into Poliwrath: Belly Drum + X.Speed"
+                                        }
+                                    ]
                                 },
                                 {
                                     "Description": "and you get a Life Orb, switch to Excadrill Swords Dance + X.Speed"
@@ -2513,10 +2521,10 @@
                             "Description": "If opponent stays, switch to Poliwrath and use Belly Drum. Use Drain Punch to kill.",
                             "Steps": [
                                 {
-                                    "Description": "If opponent sends out Jolteon, let Poliwrath die then switch to Metagross and use Trick. Switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
+                                    "Description": "If opponent sends out Jolteon, let Poliwrath die then switch to Metagross and use Trick. Switch to Excadrill: 3x Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches out into Nidoqueen, switch to Poliwrath then switch to Metagross and use Trick.  Switch to Excadrill Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                                    "Description": "If opponent switches out into Nidoqueen, switch to Poliwrath then switch to Metagross and use Trick. Switch to Chandelure: 2x Calm Mind + X.Speed"
                                 }
                             ]
                         },
