@@ -23,21 +23,6 @@ export default {
                 }
             ],
             items: [
-                {
-                    Id: 0,
-                    Smashed: true,
-                },
-                {
-                    Id: 1,
-                    Smashed: true,
-                    Pokemon: "Geodude"
-                },
-                {
-                    Id: 2,
-                    Smashed: true,
-                    Pokemon: "Geodude",
-                    Item: "Everstone"
-                }
             ] as RockRow[],
             selectedItems: [] as RockRow[],
             smashedPokemon: "",
