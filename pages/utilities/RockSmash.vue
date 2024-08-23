@@ -56,7 +56,7 @@ export default {
                 encounters,
                 items,
                 encountersPercentage: `${((encounters / this.items.length) * 100).toFixed(2)}%`,
-                itemsPercentage: `${((items / this.items.length) * 100).toFixed(2)}%`
+                itemsPercentage: `${((items / encounters) * 100).toFixed(2)}%`
             }
         }
     }
@@ -101,25 +101,27 @@ export default {
                 Add Smash
             </UButton>
         </div>
-        <UDivider class="mt-6 mb-4" />
-        <div class="grid grid-cols-1 text-center items-center">
-            <h2>Registered Smashes</h2>
-            <h2>Data</h2>
+        <div v-if="items.length > 0">
+            <UDivider class="mt-6 mb-4" />
+            <div class="grid grid-cols-1 text-center items-center">
+                <h2>Registered Smashes</h2>
+                <h2>Data</h2>
+            </div>
+            <div class="grid grid-cols-3 text-center">
+                <p><b>Total smashes:</b> {{ items.length }}</p>
+                <p><b>Total pokemon encountered:</b> {{ calculatedData.encounters }}</p>
+                <p><b>Total items obtained:</b> {{ calculatedData.items }}</p>
+                <p></p>
+                <p><b>Percentage of pokemon encountered:</b> {{ calculatedData.encountersPercentage }}</p>
+                <p><b>Total of items obtained from pokemon:</b> {{ calculatedData.itemsPercentage }}</p>
+            </div>
+            <UDivider class="mt-6 mb-4" />
+            <div class="grid grid-cols-1 mb-6">
+                <UButton block class="hover:cursor-pointer" @click="removeFromList">
+                    Remove selected from list
+                </UButton>
+            </div>
+            <UTable :rows="items" :columns="columns" v-model="selectedItems" />
         </div>
-        <div class="grid grid-cols-3 text-center">
-            <p><b>Total smashes:</b> {{ items.length }}</p>
-            <p><b>Total pokemon encountered:</b> {{ calculatedData.encounters }}</p>
-            <p><b>Total items obtained:</b> {{ calculatedData.items }}</p>
-            <p></p>
-            <p><b>Percentage of pokemon encountered:</b> {{ calculatedData.encountersPercentage }}</p>
-            <p><b>Total of items obtained from pokemon:</b> {{ calculatedData.itemsPercentage }}</p>
-        </div>
-        <UDivider class="mt-6 mb-4" />
-        <div class="grid grid-cols-1 mb-6">
-            <UButton block class="hover:cursor-pointer" @click="removeFromList">
-                Remove selected from list
-            </UButton>
-        </div>
-        <UTable :rows="items" :columns="columns" v-model="selectedItems" />
     </UContainer>
 </template>
