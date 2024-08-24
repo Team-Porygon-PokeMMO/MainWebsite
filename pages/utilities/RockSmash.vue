@@ -281,6 +281,9 @@ export default {
             }
         }
     },
+    mounted() {
+        this.retrieveLocalStorage();
+    },
     methods: {
         removeFromList() {
             // filter from items where id meets from selectedItems
@@ -299,6 +302,7 @@ export default {
                 Pokemon: this.smashedPokemon,
                 Item: this.smashedItem
             });
+            this.saveToLocalStorage();
         },
         setActiveRegion(index: number) {
             this.selectedRegionIndex = index;
@@ -324,6 +328,19 @@ export default {
         clearValues() {
             this.clearItem()
             this.clearName()
+        },
+        retrieveLocalStorage() {
+            if (process.client) {
+                const items = localStorage.getItem('rockSmashItems');
+                if (items) {
+                    this.items = JSON.parse(items);
+                }
+            }
+        },
+        saveToLocalStorage() {
+            if (process.client) {
+                localStorage.setItem('rockSmashItems', JSON.stringify(this.items));
+            }
         },
     },
     computed: {
@@ -374,6 +391,8 @@ export default {
                 return {
                     pokemon,
                     totalEncounters: pokemonItems.length,
+                    totalItems: pokemonItems.filter((pokemonItem: RockRow) => pokemonItem.Item).length,
+                    itemFoundPercentage: `${((pokemonItems.filter((pokemonItem: RockRow) => pokemonItem.Item).length / pokemonItems.length) * 100).toFixed(2)}%`,
                     items: uniqueItems.map((item: string) => {
                         return {
                             item,
@@ -429,7 +448,6 @@ div.regions:hover {
             <h1>Rock Smash Tracking Utility</h1>
             <img src="/images/rock.png" class="image" alt="Rock Smash" />
         </div>
-        Leave values empty if no pokemon nor pokemon was encountered.
         <div class="grid grid-cols-5">
             <div class="items text-label text-center items-center m-2 p-4 hover:cursor-pointer bg-red-900/75 hover:bg-red-400/10"
                 v-for="(option, index) in options" @click="setActiveRegion(index)"
@@ -438,6 +456,7 @@ div.regions:hover {
             </div>
         </div>
         <h2 class="center">{{ options[selectedRegionIndex].Name }}</h2>
+        Leave values empty if no pokemon nor item was encountered.
         <div class="grid grid-cols-2">
             <div class="m-2">
                 <label for="">Pokemon</label>
@@ -481,9 +500,14 @@ div.regions:hover {
             </div>
             <div class="grid grid-cols-4 text-center">
                 <p v-for="pokemon in getPokemonItems">
-                    <b>{{ pokemon.pokemon }} {{ '(' + pokemon.totalEncounters + ')' }}</b>
+                    <b>
+                        {{ pokemon.pokemon }} {{ '(' + pokemon.totalEncounters + ')' }}
+                    </b>
+                <p>Items found: {{ pokemon.totalItems }} {{ '(' + pokemon.itemFoundPercentage + ')' }}</p>
                 <p v-for="item in pokemon.items">
-                    <span>{{ item.item }}: {{ item.count }} ({{ item.percentage }})</span>
+                    <span>
+                        {{ item.item }}: {{ item.count }} ({{ item.percentage }})
+                    </span>
                 </p>
                 </p>
             </div>
