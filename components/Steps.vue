@@ -35,11 +35,6 @@ export default {
                 border: '1px solid rgb(255, 255, 255, .2)',
             }
         },
-        getMoreStepsBackgroundColorStyling() {
-            return {
-                backgroundColor: 'rgb(155, 25, 25, .75)'
-            }
-        }
     },
 };
 </script>
@@ -47,6 +42,10 @@ export default {
 <style scoped>
 .menu-list:hover {
     background: none;
+}
+
+.show-more {
+    margin-right: 40%
 }
 </style>
 
@@ -66,9 +65,9 @@ export default {
                 {{ item.Description }}
             </li>
 
-            <div class="ml-12 h-4 rounded-full" v-show="getIfExpandable(item) && !item.IsVisible"
-                @click="toggleView(item)"
-                :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}, getMoreStepsBackgroundColorStyling()]">
+            <div class="ml-8 h-2 text-center items-center rounded-full bg-blue-800 show-more hover:animate-pulse"
+                v-show="getIfExpandable(item) && !item.IsVisible" @click="toggleView(item)"
+                :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">
             </div>
             <Steps class="ml-8" v-if="item?.Steps?.length > 0" :items="item.Steps" v-show="getIfCanBeSeen(item)" />
         </ul>
