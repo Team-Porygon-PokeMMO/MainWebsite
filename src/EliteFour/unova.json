@@ -84,6 +84,9 @@
                                     ]
                                 },
                                 {
+                                    "Description": "if it switches into Eelektross, use Stealth Rock and then switch into Chandelure: 2x Calm Mind + X.Speed (use Shadow Ball vs Gengar)."
+                                },
+                                {
                                     "Description": "if it switches into Umbreon, switch to Blissey and use Stealth Rock. Switch to Chandelure 4x Calm Mind + X.Speed. When Bisharp comes out, switch to Poliwrath and use Drain Punch."
                                 }
                             ]
@@ -495,10 +498,10 @@
                                     "Description": "If it switches into Toxicroak, use Stealth Rock;",
                                     "Steps": [
                                         {
-                                            "Description": "If it stays, switch to Chandelure 4x Calm Mind + X.Speed + X.Defend.",
+                                            "Description": "If it stays, switch to Chandelure: 4x Calm Mind + X.Speed (if Bisharp is sent last, swap into Poliwrath and Drain Punch to kill)",
                                             "Steps": [
                                                 {
-                                                    "Description": "If it switches into anything else, switch to Blissey and use Softboiled. Switch to Chandelure 4x Calm Mind + X.Speed + X.Defend."
+                                                    "Description": "If it switches into Dragonite or Umbreon, switch to Blissey and use Softboiled. Switch to Chandelure: 4x Calm Mind + X.Speed."
                                                 }
                                             ]
                                         }
@@ -614,7 +617,7 @@
                                             "Description": "If it switches into Honchkrow, switch to Chandelure, then switch to Metagross and use Thunder Punch. Switch to Excadrill: 2x Swords Dance."
                                         },
                                         {
-                                            "Description": "If it switches into Staraptor, switch to Chadndelur 3x Calm Mind + X.Defend + X.Speed."
+                                            "Description": "If it switches into Staraptor, switch to Chandelure: 3x Calm Mind + X.Defend + X.Speed."
                                         }
                                     ]
                                 },
@@ -1885,13 +1888,16 @@
                                     "Description": "If it switches into Conkeldurr, use Stealth Rock;",
                                     "Steps": [
                                         {
+                                            "Description": "If it uses Close Combat / Drain Punch, switch to Chandelure: 2x Calm Mind + X.Speed."
+                                        },
+                                        {
                                             "Description": "if it uses Drain Punch, switch to Chandelure 3x Calm Mind + X.Speed."
                                         },
                                         {
-                                            "Description": "If it uses Payback, switch to Poliwrath: Belly Drum + X.Speed."
+                                            "Description": "If it uses Thunder Punch, switch to Excadrill: 2x Swords Dance + X.Speed."
                                         },
                                         {
-                                            "Description": "If it uses Thunder Punch, switch to Excadrill: 2x Swords Dance + X.Speed."
+                                            "Description": "If it uses Payback, switch to Poliwrath: Belly Drum + X.Speed."
                                         }
                                     ]
                                 },
@@ -2241,7 +2247,7 @@
                                     "Description": "If you get a Life Orb, let Metagross die. Send in Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
                                 },
                                 {
-                                    "Description": "If you get a Petaya Berry, switch to Excadrill: Stealth Rock + 3x Swords Dance + X.Speed."
+                                    "Description": "If you get a Petaya Berry, switch to Excadrill: Stealth Rock + 3x Swords Dance + X.Speed + X.Defend."
                                 }
                             ]
                         }
@@ -2947,10 +2953,7 @@
                                             "Description": "If it uses Close Combat, send in Metagross and use Trick.",
                                             "Steps": [
                                                 {
-                                                    "Description": "If it stays, switch to Chandelure 3x Calm Mind + X.Speed.",
-                                                    "Classes": [
-                                                        ""
-                                                    ]
+                                                    "Description": "If it stays, switch to Chandelure 3x Calm Mind + X.Speed."
                                                 },
                                                 {
                                                     "Description": "If it switches into Dragonite, switch to Blissey and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed."

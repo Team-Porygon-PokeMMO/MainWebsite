@@ -412,13 +412,16 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey then switch back to Metagross and use Trick"
-                        },
-                        {
-                            "Description": "If it switches out into Ferrothorn, switch to Excadrill 3x Swords Dance + X.Speed"
-                        },
-                        {
-                            "Description": "If it switches out into Gliscor, switch to Excadrill Stealth Rock then Swords Dance + X.Speed"
+                            "Description": "Switch to Blissey then switch back to Metagross and use Trick;",
+                            "IsVisible": true,
+                            "Steps": [
+                                {
+                                    "Description": "If it switches out into Ferrothorn, switch to Excadrill: 3x Swords Dance + X.Speed"
+                                },
+                                {
+                                    "Description": "If it switches out into Gliscor, switch to Excadrill: Stealth Rock + 3x Swords Dance + X.Speed"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -1455,7 +1458,18 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey then switch to Metagross. Switch to Chandelure and use Shadow Ball to KO Medicham. Out comes Houndoom/Ludicolo, so switch to Blissey Trick and use Stealth Rock. Switch back to Chandelure 3x Calm Mind + X.Speed."
+                            "Description": "Switch to Blissey then switch to Metagross. Switch to Chandelure and use Shadow Ball to KO Medicham. Out comes Houndoom/Ludicolo, so switch to Blissey Trick and use Stealth Rock. Switch back to Chandelure 3x Calm Mind + X.Speed.",
+                            "Steps": [
+                                {
+                                    "Description": "if it switches into Houndoom, switch into Metagross and use Trick, then switch into Chandelure: 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if it switches into Ludicolo, switch into Blissey, then switch into Metagross and use Trick as it switches into Typhlosion. Switch into Chandelure: 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if it switches into Magmortar, switch into Metagross and use Trick, then switch into Chandelure: 3x Calm Mind + X.Speed"
+                                }
+                            ]
                         }
                     ]
                 },
