@@ -806,7 +806,7 @@
                             "Description": "Switch to Blissey;",
                             "Steps": [
                                 {
-                                    "Description": "if it stays, switch to Metagross as it switches into Tangrowth then switch to Chandelure",
+                                    "Description": "if it stays, switch to Metagross as it switches into Tangrowth, use Trick;",
                                     "Steps": [
                                         {
                                             "Description": "if opponent uses Earthquake, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
