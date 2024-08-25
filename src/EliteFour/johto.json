@@ -16,16 +16,16 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Night Slash, switch to Poliwrath X.Speed + Belly Drum"
+                            "Description": "if opponent uses Night Slash, switch to Poliwrath X.Speed + Belly Drum"
                         },
                         {
-                            "Description": "If opponent uses Close Combat, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Close Combat, switch to Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick as it switches into Absol/Flareon, then switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick as it switches into Absol/Flareon, then switch to Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Empoleon, switch to Blissey and use Softboiled. Switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Empoleon, switch to Blissey and use Softboiled. Switch to Chandelure 4x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -37,26 +37,26 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "If opponent uses Fire Blast, switch immediately into Chandelure: 3x Calm Mind + X.Speed",
+                                    "Description": "if opponent uses Fire Blast, switch immediately into Chandelure: 3x Calm Mind + X.Speed",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches out into Empoleon while you set up, immediately switch to Poliwrath then switch to the second Metagross and use Trick;",
+                                            "Description": "if opponent switches out into Empoleon while you set up, immediately switch to Poliwrath then switch to the second Metagross and use Trick;",
                                             "Steps": [
                                                 {
-                                                    "Description": "If opponent switches back into Altaria, switch to Chandelure: 4x Calm Mind + X.Speed + X.Defend"
+                                                    "Description": "if opponent switches back into Altaria, switch to Chandelure: 4x Calm Mind + X.Speed + X.Defend"
                                                 },
                                                 {
-                                                    "Description": "If opponent does not swap out, switch back to Poliwrath: Belly Drum + X.Speed"
+                                                    "Description": "if opponent does not swap out, switch back to Poliwrath: Belly Drum + X.Speed"
                                                 }
                                             ]
                                         }
                                     ]
                                 },
                                 {
-                                    "Description": "If opponent uses Flamethrower, switch to Chandelure: 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent uses Flamethrower, switch to Chandelure: 3x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches out into Clefable;",
+                                    "Description": "if opponent switches out into Clefable;",
                                     "Steps": [
                                         {
                                             "Description": "Switch to Blissey and use Trick as it switches out into Lucario. Switch to Chandelure 5x Calm Mind + X.Speed"
@@ -78,16 +78,16 @@
                             "Description": "opponent switches into Exeggutor. Switch to Blissey and use Softboiled.",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches into Absol, switch to Chandelure 4x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches into Absol, switch to Chandelure 4x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches into Flareon, switch to Chandelure then use Flamethrower to kill Empoleon. Switch to Blissey and use Softboiled",
+                                    "Description": "if opponent switches into Flareon, switch to Chandelure then use Flamethrower to kill Empoleon. Switch to Blissey and use Softboiled",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches into Absol, If it switches into Absol, switch to Chandelure 4x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches into Absol, if it switches into Absol, switch to Chandelure 4x Calm Mind + X.Speed"
                                         },
                                         {
-                                            "Description": "If opponent switches into Flareon, switch to Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches into Flareon, switch to Chandelure 3x Calm Mind + X.Speed"
                                         }
                                     ]
                                 }
@@ -118,16 +118,16 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Seismic Toss, immediately switch to Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Seismic Toss, immediately switch to Chandelure 5x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent uses Fire Blast, immediately switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Fire Blast, immediately switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Golurk, switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches into Golurk, switch to Excadrill 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Umbreon, immediately switch to Blissey and use Trick as it switches out into Golurk. Switch to Chandelure 6x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Umbreon, immediately switch to Blissey and use Trick as it switches out into Golurk. Switch to Chandelure 6x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -154,16 +154,16 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get a Life Orb, use Stealth Rock and immediately switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if you get a Life Orb, use Stealth Rock and immediately switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If you get a Choice Scarf, switch to Blissey and use Trick then immediately switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if you get a Choice Scarf, switch to Blissey and use Trick then immediately switch to Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Chansey, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Chansey, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Umbreon, switch to Blissey and use Trick as it switches into Lucario. Switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Umbreon, switch to Blissey and use Trick as it switches into Lucario. Switch to Chandelure 4x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -187,35 +187,35 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent does not switch out and uses Hydro Pump/Surf, switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent does not switch out and uses Hydro Pump/Surf, switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick",
+                            "Description": "if opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches into Absol, then switch to Chandelure 4x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches into Absol, then switch to Chandelure 4x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches into Flareon, immediately switch to Chandelure and then use Flamethrower. Then switch to Blissey and use Softboiled",
+                                    "Description": "if opponent switches into Flareon, immediately switch to Chandelure and then use Flamethrower. Then switch to Blissey and use Softboiled",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches to Absol,then switch to Chandelure 4x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches to Absol,then switch to Chandelure 4x Calm Mind + X.Speed"
                                         },
                                         {
-                                            "Description": "If opponent switches to Flareon, switch to Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches to Flareon, switch to Chandelure 3x Calm Mind + X.Speed"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent switches out into Chansey, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Chansey, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Golurk, switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches into Golurk, switch to Excadrill 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Umbreon, immediately switch to Blissey and use Trick as it switches out into Golurk/Lucario. Switch to Chandelure 6x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Umbreon, immediately switch to Blissey and use Trick as it switches out into Golurk/Lucario. Switch to Chandelure 6x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -227,16 +227,16 @@
                             "Description": "Use Trick, then switch to Blissey. Use Softboiled"
                         },
                         {
-                            "Description": "If opponent switches to Absol, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches to Absol, switch to Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Flareon, switch to Chandelure then switch to Blissey and use Softboiled",
+                            "Description": "if opponent switches into Flareon, switch to Chandelure then switch to Blissey and use Softboiled",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches into Absol, switch to Chandelure 4x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches into Absol, switch to Chandelure 4x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches into Flareon, switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches into Flareon, switch to Chandelure 3x Calm Mind + X.Speed"
                                 }
                             ]
                         }
@@ -250,13 +250,13 @@
                             "Description": "Switch to Chandelure 2x Calm Mind + X.Speed."
                         },
                         {
-                            "Description": "If opponent switches and Empoleon is sent out, use Flamethrower to kill. Switch back into Blissey  and use Softboiled",
+                            "Description": "if opponent switches and Empoleon is sent out, use Flamethrower to kill. Switch back into Blissey  and use Softboiled",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches switches into Absol, switch to Chandelure 4x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches switches into Absol, switch to Chandelure 4x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches into Flareon, switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches into Flareon, switch to Chandelure 3x Calm Mind + X.Speed"
                                 }
                             ]
                         }
@@ -270,13 +270,13 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Shadow Ball, switch to Blissey and use Trick. Switch to Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Shadow Ball, switch to Blissey and use Trick. Switch to Chandelure 5x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Altaria, switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Altaria, switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Clefable, switch to the second Metagross and use Trick. Switch to Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Clefable, switch to the second Metagross and use Trick. Switch to Chandelure 5x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -288,10 +288,10 @@
                             "Description": "Use Trick as it switches out and locks Claydol. Switch to Excadrill Stealth Rock"
                         },
                         {
-                            "Description": "If opponent does not switch out 3x Swords Dance + X.Speed"
+                            "Description": "if opponent does not switch out 3x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Mantine, switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Mantine, switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -312,10 +312,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get a Leftovers, switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if you get a Leftovers, switch to Excadrill 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If you get an Expert Belt, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                            "Description": "if you get an Expert Belt, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -336,10 +336,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent switches out into Golurk, switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches out into Golurk, switch to Excadrill 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Umbreon, switch to Blissey Trick as it switches back to Golurk. Switch back to Chandelure 6x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Umbreon, switch to Blissey Trick as it switches back to Golurk. Switch back to Chandelure 6x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -360,10 +360,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Hidden Power, switch in Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Hidden Power, switch in Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Chansey, use Stealth Rock. Switch in Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Chansey, use Stealth Rock. Switch in Chandelure 2x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -375,10 +375,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent does not switch, switch to Blissey and use Trick it switches out to Golurk. Switch in Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent does not switch, switch to Blissey and use Trick it switches out to Golurk. Switch in Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Golurk, switch to Excadrill Stealth Rock into 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches into Golurk, switch to Excadrill Stealth Rock into 2x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -390,16 +390,16 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Close Combat, switch to Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Close Combat, switch to Chandelure 5x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out to Altaria, switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out to Altaria, switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out to Clefable, switch to Blissey then use Trick as it locks Lucario. Switch to Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out to Clefable, switch to Blissey then use Trick as it locks Lucario. Switch to Chandelure 5x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Umbreon, switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Umbreon, switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -447,10 +447,10 @@
                             "Description": "Switch to Blissey and use Trick"
                         },
                         {
-                            "Description": "If opponent switches out into Golurk, switch to Chandelure 6x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Golurk, switch to Chandelure 6x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Lucario, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Lucario, switch to Chandelure 4x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -462,39 +462,39 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get an Assault Vest, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if you get an Assault Vest, switch to Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If you get a Choice Specs, switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if you get a Choice Specs, switch to Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If you get a Leftovers, switch to Chandelure 5x Calm Mind + X.Speed (Crit Foul Play from Liepard doesn’t kill, no priority)"
+                            "Description": "if you get a Leftovers, switch to Chandelure 5x Calm Mind + X.Speed (Crit Foul Play from Liepard doesn’t kill, no priority)"
                         },
                         {
-                            "Description": "If opponent switches into Altaria, switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Altaria, switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches to Bronzong, switch to Blissey as it switches out into Exeggutor and use Trick as it switches out into Flareon. Switch out into Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches to Bronzong, switch to Blissey as it switches out into Exeggutor and use Trick as it switches out into Flareon. Switch out into Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Chansey, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Chansey, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Claydol, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
+                            "Description": "if opponent switches into Claydol, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches into Mantine while you set up, switch to Blissey Trick as it switches out into Girafarig. Then switch to Chandelure 4x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches into Mantine while you set up, switch to Blissey Trick as it switches out into Girafarig. Then switch to Chandelure 4x Calm Mind + X.Speed"
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent switches into Golurk and you get Leftovers, switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches into Golurk and you get Leftovers, switch to Excadrill 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Golurk and you get Expert Belt, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches into Golurk and you get Expert Belt, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Umbreon, switch to Blissey and use Trick as it switches into Lucario. Switch to Chandelure 6x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Umbreon, switch to Blissey and use Trick as it switches into Lucario. Switch to Chandelure 6x Calm Mind + X.Speed"
                         }
                     ]
                 }
@@ -514,10 +514,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent does not switch, switch to Chandelure and use Flamethrower to remove Sharpedo Focus Sash. Switch to Blissey and use Trick to lock Waterfall. Switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent does not switch, switch to Chandelure and use Flamethrower to remove Sharpedo Focus Sash. Switch to Blissey and use Trick to lock Waterfall. Switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Rhyperior/Tangrowth, switch to Excadrill Stealth Rock, then Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches into Rhyperior/Tangrowth, switch to Excadrill Stealth Rock, then Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -538,29 +538,29 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Heat Wave",
+                            "Description": "if opponent uses Heat Wave",
                             "Steps": [
                                 {
-                                    "Description": "If Player got Black Sludge, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                                    "Description": "if Player got Black Sludge, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If Player got Focus Sash, swap into Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if Player got Focus Sash, swap into Chandelure 3x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If Player got Life Orb, use Stealth Rock, if first Metagross dies, use second to set Stealth Rock, then switch to Chandelure 4x Calm Mind + X.Speed"
+                                    "Description": "if Player got Life Orb, use Stealth Rock, if first Metagross dies, use second to set Stealth Rock, then switch to Chandelure 4x Calm Mind + X.Speed"
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent uses Super Fang, use Stealth Rock and switch to Chandelure 2x Calm Mind + X.Speed",
+                            "Description": "if opponent uses Super Fang, use Stealth Rock and switch to Chandelure 2x Calm Mind + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If If Ditto is sent out, switch to Blissey and use Trick as it locks Flamethrower. Switch to Chandelure again and KO it with Shadow Ball"
+                                    "Description": "if if Ditto is sent out, switch to Blissey and use Trick as it locks Flamethrower. Switch to Chandelure again and KO it with Shadow Ball"
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent switches to Rhyperior, switch to Excadrill 3x Swords Dance + X.Speed"
+                            "Description": "if opponent switches to Rhyperior, switch to Excadrill 3x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -587,21 +587,21 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick; (If Ditto is sent out, switch to Blissey and use Trick as it locks Flamethrower. Switch to Chandelure again and KO it with Shadow Ball)"
+                            "Description": "Use Trick; (if Ditto is sent out, switch to Blissey and use Trick as it locks Flamethrower. Switch to Chandelure again and KO it with Shadow Ball)"
                         },
                         {
-                            "Description": "If opponent uses Leech Seed, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed",
+                            "Description": "if opponent uses Leech Seed, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches into Crobat, switch to Chandelure then switch to the second Metagross and use Trick. Switch back into Chandelure 2x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches into Crobat, switch to Chandelure then switch to the second Metagross and use Trick. Switch back into Chandelure 2x Calm Mind + X.Speed"
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent switches into Crobat, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Crobat, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent uses any other moves and stays, use Stealth Rock as it switches out into Crobat. Immediately switch to Chandelure then switch to the second Metagross and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent uses any other moves and stays, use Stealth Rock as it switches out into Crobat. Immediately switch to Chandelure then switch to the second Metagross and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -613,15 +613,15 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent does not switch out Stealth Rock then switch in Poliwrath Belly Drum + X.Speed",
+                            "Description": "if opponent does not switch out Stealth Rock then switch in Poliwrath Belly Drum + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent sends out last, switch Poliwrath to Chandelure Energy Ball"
+                                    "Description": "if opponent sends out last, switch Poliwrath to Chandelure Energy Ball"
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent switches into Crobat, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Crobat, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -642,24 +642,24 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Gyro Ball, switch to Blissey then switch to the second Metagross",
+                            "Description": "if opponent uses Gyro Ball, switch to Blissey then switch to the second Metagross",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches to Rhyperior, use Trick then switch to Excadrill 3x Swords Dance then X.Speed"
+                                    "Description": "if opponent switches to Rhyperior, use Trick then switch to Excadrill 3x Swords Dance then X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches out into Crobat, use Trick",
+                                    "Description": "if opponent switches out into Crobat, use Trick",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches to Rhyperior, switch to Excadrill. 3x Swords Dance then X.Speed"
+                                            "Description": "if opponent switches to Rhyperior, switch to Excadrill. 3x Swords Dance then X.Speed"
                                         },
                                         {
-                                            "Description": "If opponent switches into Samurott, use Thunder Punch to KO it. Rhyperior will be sent in, then immediately switch to Chandelure and switch to the Choice Band Metagross and use Trick. Switch to Excadrill 3x Swords Dance then X.Speed"
+                                            "Description": "if opponent switches into Samurott, use Thunder Punch to KO it. Rhyperior will be sent in, then immediately switch to Chandelure and switch to the Choice Band Metagross and use Trick. Switch to Excadrill 3x Swords Dance then X.Speed"
                                         }
                                     ]
                                 },
                                 {
-                                    "Description": "If opponent switches to Rhyperior, switch to Excadrill 3x Swords Dance then X.Speed"
+                                    "Description": "if opponent switches to Rhyperior, switch to Excadrill 3x Swords Dance then X.Speed"
                                 }
                             ]
                         }
@@ -673,10 +673,10 @@
                             "Description": "Immediately switch to Blissey and use Trick"
                         },
                         {
-                            "Description": "If opponent does not switch out, use Stealth Rock then switch to Chandelure. Switch to Metagross and use Trick, locking Earthquake. Switch to Chandelure 2x Calm Mind + 2x X.Speed "
+                            "Description": "if opponent does not switch out, use Stealth Rock then switch to Chandelure. Switch to Metagross and use Trick, locking Earthquake. Switch to Chandelure 2x Calm Mind + 2x X.Speed "
                         },
                         {
-                            "Description": "If opponent switches into Rhyperior, switch to Excadrill Stealth Rock then switch to Chandelure 2x Calm Mind + 2x X.Speed "
+                            "Description": "if opponent switches into Rhyperior, switch to Excadrill Stealth Rock then switch to Chandelure 2x Calm Mind + 2x X.Speed "
                         }
                     ]
                 },
@@ -706,10 +706,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent switches into Rhyperior, switch to Excadrill Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Rhyperior, switch to Excadrill Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent does not switch to Rhyperior, use Stealth Rock then switch in Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent does not switch to Rhyperior, use Stealth Rock then switch in Poliwrath Belly Drum + X.Speed"
                         }
                     ]
                 },
@@ -730,10 +730,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent switches out into Gliscor, then switch to Excadrill Stealth Rock then Swords Dance + X.Speed"
+                            "Description": "if opponent switches out into Gliscor, then switch to Excadrill Stealth Rock then Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent uses Close Combat, switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Close Combat, switch to Chandelure 3x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -754,16 +754,16 @@
                             "Description": "Switch to Blissey then switch back to Metagross"
                         },
                         {
-                            "Description": "If opponent Crobat is sent out, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent Crobat is sent out, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent Floatzel is sent out, switch to Poliwrath then switch to Metagross and use Trick. Switch back into Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent Floatzel is sent out, switch to Poliwrath then switch to Metagross and use Trick. Switch back into Poliwrath Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "If opponent does not switch and  Magmortar stays, use Earthquake to kill it. Switch to Chandelure then switch to Metagross and use Trick. Use Stealth Rock and switch to Chandelure 2x Calm Mind + X.Speed",
+                            "Description": "if opponent does not switch and  Magmortar stays, use Earthquake to kill it. Switch to Chandelure then switch to Metagross and use Trick. Use Stealth Rock and switch to Chandelure 2x Calm Mind + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If Ditto is sent out, switch to Blissey and use Trick as it locks Flamethrower. Switch to Chandelure again and KO it with Shadow Ball."
+                                    "Description": "if Ditto is sent out, switch to Blissey and use Trick as it locks Flamethrower. Switch to Chandelure again and KO it with Shadow Ball."
                                 }
                             ]
                         }
@@ -777,7 +777,7 @@
                             "Description": "Use Trick, then switch to Excadrill Stealth Rock, then switch to Chandelure 2x Calm Mind + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If Ditto is sent out, switch to Blissey and use Trick as it locks Flamethrower. Switch to Chandelure again and KO it with Shadow Ball"
+                                    "Description": "if Ditto is sent out, switch to Blissey and use Trick as it locks Flamethrower. Switch to Chandelure again and KO it with Shadow Ball"
                                 }
                             ]
                         }
@@ -791,7 +791,7 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Earth Power, switch to Excadrill Stealth Rock, then switch to Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Earth Power, switch to Excadrill Stealth Rock, then switch to Chandelure 5x Calm Mind + X.Speed"
                         },
                         {
                             "Description": "if it uses Flamethrower, switch to Chandelure: 6x Calm Mind + X.Speed."
@@ -803,26 +803,38 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey"
-                        },
-                        {
-                            "Description": "Ninetales stays, switch to Metagross as it switches into Tangrowth then switch to Chandelure",
+                            "Description": "Switch to Blissey;",
                             "Steps": [
                                 {
-                                    "Description": "If opponent uses Earthquake, switch to Excadrill Stealth Rock then Swords Dance + X.Speed"
+                                    "Description": "if it stays, switch to Metagross as it switches into Tangrowth then switch to Chandelure",
+                                    "Steps": [
+                                        {
+                                            "Description": "if opponent uses Earthquake, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
+                                        },
+                                        {
+                                            "Description": "if opponent uses Hidden Power, switch to Poliwrath: Belly Drum + X.Speed"
+                                        }
+                                    ]
                                 },
                                 {
-                                    "Description": "If opponent uses Hidden Power, switch to Poliwrath Belly Drum + X.Speed"
+                                    "Description": "if opponent switches into Tangrowth, switch to Metagross then switch to Blissey again and use Trick;",
+                                    "Steps": [
+                                        {
+                                            "Description": "if it uses Waterfall, switch into Poliwrath: Belly Drum + X.Speed"
+                                        },
+                                        {
+                                            "Description": "if it uses Earthquake, switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
+                                        },
+                                        {
+                                            "Description": "if it uses anything else, switch into Metagross and use Trick to bait Earthquake. Switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
+                                        }
+                                    ]
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent switches into Tangrowth, switch to Metagross then switch to Blissey again and use Trick as it locks Waterfall. Switch to Poliwrath Belly Drum + X.Speed",
-                            "Steps": [
-                                {
-                                    "Description": "If Blissey Trick locks into something else but Waterfall, switch to Metagross and use Trick to lock Earthquake. Switch to Excadrill Swords Dance + X.Speed"
-                                }
-                            ]
+                            "Description": "[PokeKing's Solve]: Switch into Chandelure, then switch into Blissey, then switch into Chandelure as it switches into Tangrowth, use Flamethrower to kill it. Sharpedo should come out. Switch into Chandelure, then into Metagross and use Trick to lock Earthquake. Switch into Excadrill: 2x Swords Dance + X.Speed",
+                            "Icons": "💡🥚💡-> Flamethrower 🪦 -> Sharpedo out -> 💡 Metagross Trick Lock EQ -> 🐹 4 + 2"
                         }
                     ]
                 },
@@ -843,10 +855,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get an Assault Vest, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                            "Description": "if you get an Assault Vest, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If you get a Leftovers, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
+                            "Description": "if you get a Leftovers, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -885,10 +897,10 @@
                             "Description": "Use Trick."
                         },
                         {
-                            "Description": "If opponent does not switch switch to Excadrill 3x Swords Dance + X.Speed"
+                            "Description": "if opponent does not switch switch to Excadrill 3x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent Skarmory switches out into a different Pokemon, expect it to be Zoroark. Switch to Chandelure then switch to the second Metagross and use Trick as it locks Flamethrower. Switch back to Chandelure 6x Calm Mind + X.Speed"
+                            "Description": "if opponent Skarmory switches out into a different Pokemon, expect it to be Zoroark. Switch to Chandelure then switch to the second Metagross and use Trick as it locks Flamethrower. Switch back to Chandelure 6x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -900,10 +912,10 @@
                             "Description": "Use Trick."
                         },
                         {
-                            "Description": "If opponent uses Fire Blast, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Fire Blast, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Gliscor, then switch to Excadrill Stealth Rock then Swords Dance + X.Speed"
+                            "Description": "if opponent switches out into Gliscor, then switch to Excadrill Stealth Rock then Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -942,22 +954,22 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent switches into Rhyperior, switch to Blissey and use Trick as it locks Earthquake. Switch to Excadrill Swords Dance + X.Speed"
+                            "Description": "if opponent switches into Rhyperior, switch to Blissey and use Trick as it locks Earthquake. Switch to Excadrill Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent does not switch switch to Excadrill Stealth Rock",
+                            "Description": "if opponent does not switch switch to Excadrill Stealth Rock",
                             "Steps": [
                                 {
-                                    "Description": "If opponent does not switch, Excadrill Swords Dance + X.Speed"
+                                    "Description": "if opponent does not switch, Excadrill Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches into Crobat, switch to Blissey and use Trick (experimental solve, no test yet)",
+                                    "Description": "if opponent switches into Crobat, switch to Blissey and use Trick (experimental solve, no test yet)",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches Rhyperior, Switch to Excadrill Swords Dance + X.Speed"
+                                            "Description": "if opponent switches Rhyperior, Switch to Excadrill Swords Dance + X.Speed"
                                         },
                                         {
-                                            "Description": "If opponent switches Sharpedo, switch to Poliwrath Belly Drum + X.Speed"
+                                            "Description": "if opponent switches Sharpedo, switch to Poliwrath Belly Drum + X.Speed"
                                         }
                                     ]
                                 }
@@ -1026,10 +1038,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent switches into Gliscor, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Gliscor, switch to Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent uses Water Spout, switch to Blissey and use Trick as it switches into Machamp or Blaziken. Switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Water Spout, switch to Blissey and use Trick as it switches into Machamp or Blaziken. Switch to Chandelure 4x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1068,10 +1080,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get an Expert Belt, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if you get an Expert Belt, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If you get a Life Orb, switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if you get a Life Orb, switch to Chandelure 2x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1083,10 +1095,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get an Assault Vest, send out Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if you get an Assault Vest, send out Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If you get a Life Orb/Leftovers, send out Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if you get a Life Orb/Leftovers, send out Chandelure 3x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1134,13 +1146,13 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent switches out into Salamence, switch to Excadrill 3x Swords Dance + X.Speed"
+                            "Description": "if opponent switches out into Salamence, switch to Excadrill 3x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Steelix, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Steelix, switch to Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Slowbro, switch to the second Metagross as it switches out into Salamence. Use Trick to lock Earthquake then switch to Excadrill 3x Swords Dance + X.Speed"
+                            "Description": "if opponent switches into Slowbro, switch to the second Metagross as it switches out into Salamence. Use Trick to lock Earthquake then switch to Excadrill 3x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -1152,7 +1164,7 @@
                             "Description": "Use Trick as it switches out into Salamance or Machoke, then switch to Chandelure 3x Calm Mind + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches out, switch to the second Metagross and use Trick. Switch back to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches out, switch to the second Metagross and use Trick. Switch back to Chandelure 3x Calm Mind + X.Speed"
                                 }
                             ]
                         }
@@ -1166,19 +1178,19 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent switches out into Slowbro, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Slowbro, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Steelix, switch to Excadrill Stealth Rock first then into 2x Swords Dance + X.Speed",
+                            "Description": "if opponent switches out into Steelix, switch to Excadrill Stealth Rock first then into 2x Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches into Slowbro while you set up, switch to Blissey and use Trick",
+                                    "Description": "if opponent switches into Slowbro while you set up, switch to Blissey and use Trick",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent does not switch switch to the second Metagross and use Trick, then switch back to Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "if opponent does not switch switch to the second Metagross and use Trick, then switch back to Chandelure 3x Calm Mind + X.Speed"
                                         },
                                         {
-                                            "Description": "If opponent switches into Heracross, switch to Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches into Heracross, switch to Chandelure 3x Calm Mind + X.Speed"
                                         }
                                     ]
                                 }
@@ -1221,16 +1233,16 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get a Chesto Berry and it uses Dynamic Punch, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if you get a Chesto Berry and it uses Dynamic Punch, switch to Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent uses Drain Punch/you get Leftovers and it uses Dynamic Punch, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Drain Punch/you get Leftovers and it uses Dynamic Punch, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches to Salamence, switch immediately to Excadrill 3x Swords Dance + X.Speed"
+                            "Description": "if opponent switches to Salamence, switch immediately to Excadrill 3x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches switches to Steelix and;",
+                            "Description": "if opponent switches switches to Steelix and;",
                             "Steps": [
                                 {
                                     "Description": "you get a Choice Band, switch to Excadrill Stealth Rock into 2x Swords Dance + X.Speed"
@@ -1241,7 +1253,7 @@
                             ]
                         },
                         {
-                            "Description": "If opponent switches out into Torterra, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Torterra, switch to Chandelure 4x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1253,30 +1265,30 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get a Life Orb and it uses Hammer Arm, Stealth Rock then send out Chandelure 3x Calm Mind + X.Speed",
+                            "Description": "if you get a Life Orb and it uses Hammer Arm, Stealth Rock then send out Chandelure 3x Calm Mind + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches out to Salamence while you set up, switch to Chandelure as it will use Earthquake. Then switch back to the Metagross with Scarf. Trick, and it locks Earthquake. Then Switch to Excadrill 2x Swords Dance + X.Speed"
+                                    "Description": "if opponent switches out to Salamence while you set up, switch to Chandelure as it will use Earthquake. Then switch back to the Metagross with Scarf. Trick, and it locks Earthquake. Then Switch to Excadrill 2x Swords Dance + X.Speed"
                                 }
                             ]
                         },
                         {
-                            "Description": "If you get a Light Clay, immediately switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                            "Description": "if you get a Light Clay, immediately switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Eelektross, send out Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Eelektross, send out Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Gliscor, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Gliscor, switch to Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out to Krookodile, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches out to Krookodile, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out to Salamence, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches out to Salamence, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Torterra, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Torterra, switch to Chandelure 4x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1306,24 +1318,24 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get a Life Orb, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if you get a Life Orb, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If you get a Choice Scarf, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if you get a Choice Scarf, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Steelix, switch to Excadrill Stealth Rock",
+                            "Description": "if opponent switches into Steelix, switch to Excadrill Stealth Rock",
                             "Steps": [
                                 {
-                                    "Description": "If opponent does not switch, switch to Excadrill 2x Swords Dance + X.Speed"
+                                    "Description": "if opponent does not switch, switch to Excadrill 2x Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches into Slowbro, switch to Blissey and use Trick as it switches out into Heracross, locking Close Combat. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches into Slowbro, switch to Blissey and use Trick as it switches out into Heracross, locking Close Combat. Switch to Chandelure 3x Calm Mind + X.Speed"
                                 }
                             ]
                         },
                         {
-                            "Description": "If it switches into Slowbro, use Stealth Rock then switch to Blissey and use Trick as it switches out into Heracross, locking Close Combat. Switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if it switches into Slowbro, use Stealth Rock then switch to Blissey and use Trick as it switches out into Heracross, locking Close Combat. Switch to Chandelure 3x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1335,23 +1347,23 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get a Choice Band, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
+                            "Description": "if you get a Choice Band, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches out to Slowbro while you set up, switch to Blissey and use Trick",
+                                    "Description": "if opponent switches out to Slowbro while you set up, switch to Blissey and use Trick",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches into Heracross Close Combat,switch to Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches into Heracross Close Combat,switch to Chandelure 3x Calm Mind + X.Speed"
                                         },
                                         {
-                                            "Description": "If opponent does not switch and Slowbro stays, switch to the second Metagross and use Trick as it switches out into Steelix. Switch in Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "if opponent does not switch and Slowbro stays, switch to the second Metagross and use Trick as it switches out into Steelix. Switch in Chandelure 3x Calm Mind + X.Speed"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "Description": "If you get a Rocky Helmet, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if you get a Rocky Helmet, switch to Chandelure 4x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1363,13 +1375,13 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent has Intimidate, switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent has Intimidate, switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent has Moxie, switch to Excadrill 3x Swords Dance + X.Speed",
+                            "Description": "if opponent has Moxie, switch to Excadrill 3x Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches into Slowbro, switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches into Slowbro, switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed"
                                 }
                             ]
                         }
@@ -1433,38 +1445,38 @@
                                     ]
                                 },
                                 {
-                                    "Description": "If opponent switches into Machamp, Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed",
+                                    "Description": "if opponent switches into Machamp, Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches out into Salamence while you set up, switch to the second Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches out into Salamence while you set up, switch to the second Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
                                         }
                                     ]
                                 },
                                 {
-                                    "Description": "If opponent switches into Salamence",
+                                    "Description": "if opponent switches into Salamence",
                                     "Steps": [
                                         {
-                                            "Description": "If Moxie, switch to Excadrill 3x Swords Dance + X.Speed"
+                                            "Description": "if Moxie, switch to Excadrill 3x Swords Dance + X.Speed"
                                         },
                                         {
-                                            "Description": "If Intimidate, switch to Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "if Intimidate, switch to Chandelure 3x Calm Mind + X.Speed"
                                         }
                                     ]
                                 },
                                 {
-                                    "Description": "If opponent switches into Steelix and;",
+                                    "Description": "if opponent switches into Steelix and;",
                                     "Steps": [
                                         {
                                             "Description": "you get a Choice Band, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
                                             "Steps": [
                                                 {
-                                                    "Description": "If opponent switches out to Slowbro while you set up, switch to Blissey and use Trick",
+                                                    "Description": "if opponent switches out to Slowbro while you set up, switch to Blissey and use Trick",
                                                     "Steps": [
                                                         {
-                                                            "Description": "If opponent switches into Heracross Close Combat, switch to Chandelure 3x Calm Mind + X.Speed"
+                                                            "Description": "if opponent switches into Heracross Close Combat, switch to Chandelure 3x Calm Mind + X.Speed"
                                                         },
                                                         {
-                                                            "Description": "If opponent does not switch and lowbro stays, switch to the second Metagross and use Trick as it switches out into Steelix. Switch in Chandelure 3x Calm Mind + X.Speed"
+                                                            "Description": "if opponent does not switch and lowbro stays, switch to the second Metagross and use Trick as it switches out into Steelix. Switch in Chandelure 3x Calm Mind + X.Speed"
                                                         }
                                                     ]
                                                 },
@@ -1504,10 +1516,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent switches out to Quagsire, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
+                            "Description": "if opponent switches out to Quagsire, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Salamence, use Stealth Rock then switch in Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Salamence, use Stealth Rock then switch in Chandelure 3x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1519,15 +1531,15 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent switches out to Quagsire, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed",
+                            "Description": "if opponent switches out to Quagsire, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches out into Salamence after you use Stealth Rock, switch to Blissey and use Trick as it switches out into Absol Close Combat. Switch in Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches out into Salamence after you use Stealth Rock, switch to Blissey and use Trick as it switches out into Absol Close Combat. Switch in Chandelure 3x Calm Mind + X.Speed"
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent switches out into Salamence, switch to Blissey and use Trick as it switches out into Absol Close Combat. Switch in Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Salamence, switch to Blissey and use Trick as it switches out into Absol Close Combat. Switch in Chandelure 5x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1539,13 +1551,13 @@
                             "Description": "Use Trick, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches out into Garchomp after using Trick, switch to Blissey and use Trick",
+                                    "Description": "if opponent switches out into Garchomp after using Trick, switch to Blissey and use Trick",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent uses Earthquake, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                                            "Description": "if opponent uses Earthquake, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                                         },
                                         {
-                                            "Description": "If opponent switches out into Feraligatr, switch to Poliwrath: Belly Drum + X.Speed"
+                                            "Description": "if opponent switches out into Feraligatr, switch to Poliwrath: Belly Drum + X.Speed"
                                         }
                                     ]
                                 }
@@ -1570,21 +1582,21 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent switches out into Garchomp, immediately switch to Excadrill Stealth Rock",
+                            "Description": "if opponent switches out into Garchomp, immediately switch to Excadrill Stealth Rock",
                             "Steps": [
                                 {
-                                    "Description": "If opponent does not switch out 2x Swords Dance + X.Speed"
+                                    "Description": "if opponent does not switch out 2x Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches out into Feraligatr, switch to Poliwrath Belly Drum + X.Speed"
+                                    "Description": "if opponent switches out into Feraligatr, switch to Poliwrath Belly Drum + X.Speed"
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent switches out into Rhyperior, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches out into Rhyperior, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out to Umbreon, switch to Blissey and use Stealth Rock as it switches out into Feraligatr. Switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent switches out to Umbreon, switch to Blissey and use Stealth Rock as it switches out into Feraligatr. Switch to Poliwrath Belly Drum + X.Speed"
                         }
                     ]
                 },
@@ -1614,10 +1626,10 @@
                             "Description": "Use Trick, then switch to Excadrill Stealth Rock"
                         },
                         {
-                            "Description": "If opponent does not switch out 2x Swords Dance + X.Speed"
+                            "Description": "if opponent does not switch out 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Feraligatr, switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent switches out into Feraligatr, switch to Poliwrath Belly Drum + X.Speed"
                         }
                     ]
                 },
@@ -1629,10 +1641,10 @@
                             "Description": "Switch to Blissey and use Trick"
                         },
                         {
-                            "Description": "If opponent switches out to Absol, then switch to Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out to Absol, then switch to Chandelure 5x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent Gengar doesn't switch out after using Trick, switch back to Metagross Trick as it switches back to Absol/Quagsire. Switch to Excadrill Stealth Rock into 3x Swords Dance + X.Speed"
+                            "Description": "if opponent Gengar doesn't switch out after using Trick, switch back to Metagross Trick as it switches back to Absol/Quagsire. Switch to Excadrill Stealth Rock into 3x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -1644,13 +1656,13 @@
                             "Description": "Switch to the second Metagross"
                         },
                         {
-                            "Description": "If opponent uses Earthquake, switch to Excadrill Stealth Rock. Switch to Blissey then switch to Metagross. Use Trick then switch back into Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if opponent uses Earthquake, switch to Excadrill Stealth Rock. Switch to Blissey then switch to Metagross. Use Trick then switch back into Excadrill 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent uses Waterfall, use Thunder Punch to KO’it. Out comes Rhyperior. Switch to Chandelure then switch to Blissey and use Trick as it locks Earthquake. switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if opponent uses Waterfall, use Thunder Punch to KO’it. Out comes Rhyperior. Switch to Chandelure then switch to Blissey and use Trick as it locks Earthquake. switch to Excadrill 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches to Excadrill comes out, use Trick then Stealth Rock. Then switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches to Excadrill comes out, use Trick then Stealth Rock. Then switch to Excadrill 2x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -1662,13 +1674,13 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "If it uses Superpower, Stealth Rock and switch into Chandelure: 3x Calm Mind + X.Speed"
+                                    "Description": "if it uses Superpower, Stealth Rock and switch into Chandelure: 3x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches out into Rhyperior, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                                    "Description": "if opponent switches out into Rhyperior, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches out into Vileplume, use Stealth Rock then switch to Blissey and use Trick as it switches out to Honchkrow once more. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches out into Vileplume, use Stealth Rock then switch to Blissey and use Trick as it switches out to Honchkrow once more. Switch to Chandelure 3x Calm Mind + X.Speed"
                                 }
                             ]
                         }
@@ -1682,16 +1694,16 @@
                             "Description": "Immediately switch to Blissey;",
                             "Steps": [
                                 {
-                                    "Description": "If Houndoom gets damaged by Life Orb, use Stealth Rock",
+                                    "Description": "if Houndoom gets damaged by Life Orb, use Stealth Rock",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches out to Rhyperior, switch to Excadrill, then switch to Blissey and use Trick;",
+                                            "Description": "if opponent switches out to Rhyperior, switch to Excadrill, then switch to Blissey and use Trick;",
                                             "Steps": [
                                                 {
-                                                    "Description": "If opponent uses Earthquake, switch to Chandelure: 3x Calm Mind + X.Speed"
+                                                    "Description": "if opponent uses Earthquake, switch to Chandelure: 3x Calm Mind + X.Speed"
                                                 },
                                                 {
-                                                    "Description": "If opponent uses Stone Edge, switch to the second Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                                    "Description": "if opponent uses Stone Edge, switch to the second Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
                                                 }
                                             ]
                                         },
@@ -1704,7 +1716,7 @@
                                     "Description": "Houndoom doesn’t take any damage after attacking, immediately switch back to Metagross",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches into Absol",
+                                            "Description": "if opponent switches into Absol",
                                             "Steps": [
                                                 {
                                                     "Description": "and it switches into Quagsire, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
@@ -1715,35 +1727,35 @@
                                             ]
                                         },
                                         {
-                                            "Description": "If opponent switches into Excadrill is sent out, use Trick, locking Earthquake. Switch to Excadrill then use Stealth Rock",
+                                            "Description": "if opponent switches into Excadrill is sent out, use Trick, locking Earthquake. Switch to Excadrill then use Stealth Rock",
                                             "Steps": [
                                                 {
-                                                    "Description": "If opponent does not switch, 2x Swords Dance + X.Speed"
+                                                    "Description": "if opponent does not switch, 2x Swords Dance + X.Speed"
                                                 },
                                                 {
-                                                    "Description": "If opponent switches out into Slowbro, switch to Poliwrath Belly Drum + X.Speed"
+                                                    "Description": "if opponent switches out into Slowbro, switch to Poliwrath Belly Drum + X.Speed"
                                                 }
                                             ]
                                         },
                                         {
-                                            "Description": "If opponent switches out into Primeape, use Stealth Rock as it switches out into Hydreigon. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches out into Primeape, use Stealth Rock as it switches out into Hydreigon. Switch to Chandelure 3x Calm Mind + X.Speed"
                                         },
                                         {
-                                            "Description": "If opponent switches out into Excadrill is sent out, switch back to Metagross then use Trick, locking Earthquake. Switch to Excadrill then use Stealth Rock. 2x Swords Dance + X.Speed"
+                                            "Description": "if opponent switches out into Excadrill is sent out, switch back to Metagross then use Trick, locking Earthquake. Switch to Excadrill then use Stealth Rock. 2x Swords Dance + X.Speed"
                                         },
                                         {
-                                            "Description": "If opponent switches out into Honchkrow, use Trick",
+                                            "Description": "if opponent switches out into Honchkrow, use Trick",
                                             "Steps": [
                                                 {
-                                                    "Description": "If opponent switches out into Vileplume, use Stealth Rock then switch to Blissey and use Trick as it switches out to Honchkrow once more. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                                    "Description": "if opponent switches out into Vileplume, use Stealth Rock then switch to Blissey and use Trick as it switches out to Honchkrow once more. Switch to Chandelure 3x Calm Mind + X.Speed"
                                                 },
                                                 {
-                                                    "Description": "If opponent switches out into Rhyperior, switch to Excadrill then use Stealth Rock. 2x Swords Dance + X.Speed"
+                                                    "Description": "if opponent switches out into Rhyperior, switch to Excadrill then use Stealth Rock. 2x Swords Dance + X.Speed"
                                                 }
                                             ]
                                         },
                                         {
-                                            "Description": "If opponent switches out Excadrill is sent out, switch to Chandelure then switch to Metagross then use Trick, locking Earthquake. Switch to Excadrill then use Stealth Rock. 2x Swords Dance + X.Speed"
+                                            "Description": "if opponent switches out Excadrill is sent out, switch to Chandelure then switch to Metagross then use Trick, locking Earthquake. Switch to Excadrill then use Stealth Rock. 2x Swords Dance + X.Speed"
                                         }
                                     ]
                                 }
@@ -1768,18 +1780,18 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent does not switch, use Stealth Rock",
+                            "Description": "if opponent does not switch, use Stealth Rock",
                             "Steps": [
                                 {
-                                    "Description": "If opponent does not switch, switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent does not switch, switch to Chandelure 3x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches out into Rhyperior, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
+                                    "Description": "if opponent switches out into Rhyperior, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent switches out into Rhyperior, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
+                            "Description": "if opponent switches out into Rhyperior, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -1809,10 +1821,10 @@
                             "Description": "Switch to Blissey;",
                             "Steps": [
                                 {
-                                    "Description": "If it switches into Umbreon, use Stealth Rock as it switches into Feraligatr. Switch into Poliwrath: Belly Drum + X.Speed"
+                                    "Description": "if it switches into Umbreon, use Stealth Rock as it switches into Feraligatr. Switch into Poliwrath: Belly Drum + X.Speed"
                                 },
                                 {
-                                    "Description": "If it switches into Garchomp, use Stealth Rock;",
+                                    "Description": "if it switches into Garchomp, use Stealth Rock;",
                                     "Steps": [
                                         {
                                             "Description": "if it stays, switch into Chandelure, then switch into Metagross and use Trick. Switch into Excadrill: 2x Swords Dance + X.Speed",
@@ -1872,13 +1884,13 @@
                             "Description": "Switch to Blissey and use Trick"
                         },
                         {
-                            "Description": "If opponent switches out into Absol, switch to Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Absol, switch to Chandelure 5x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out to Rapidash, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out to Rapidash, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Rhyperior, switch in Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
+                            "Description": "if opponent switches out into Rhyperior, switch in Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -1908,10 +1920,10 @@
                             "Description": "Stealth Rock"
                         },
                         {
-                            "Description": "If it stays, switch to Blissey and use Trick as it switches to Rhyperior. Switch to Excadrill 3x Swords Dance + X.Speed"
+                            "Description": "if it stays, switch to Blissey and use Trick as it switches to Rhyperior. Switch to Excadrill 3x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If it stays, switches to Rhyperior, send in Excadrill then switch to Blissey and use Trick to lock Earthquake. Switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if it stays, switches to Rhyperior, send in Excadrill then switch to Blissey and use Trick to lock Earthquake. Switch to Chandelure 3x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1923,10 +1935,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get a Dragon Gem, switch to Blissey then use Trick. It will switch out into Absol and locks Close Combat. Switch to Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if you get a Dragon Gem, switch to Blissey then use Trick. It will switch out into Absol and locks Close Combat. Switch to Chandelure 5x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent gets Life Orb, switch to Excadrill Stealth Rock then Swords Dance + X.Speed"
+                            "Description": "if opponent gets Life Orb, switch to Excadrill Stealth Rock then Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -1938,19 +1950,19 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get a Choice Band, use Stealth Rock, then switch into Poliwrath: Belly Drum + X.Speed"
+                            "Description": "if you get a Choice Band, use Stealth Rock, then switch into Poliwrath: Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "If you get a Leftovers, switch to Blissey then switch to the second Metagross and use Trick. Use Stealth Rock then switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if you get a Leftovers, switch to Blissey then switch to the second Metagross and use Trick. Use Stealth Rock then switch to Excadrill 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Vileplume, use Stealth Rock then switch to Poliwrath Belly Drum",
+                            "Description": "if opponent switches into Vileplume, use Stealth Rock then switch to Poliwrath Belly Drum",
                             "Steps": [
                                 {
-                                    "Description": "If opponent does not switch X.Speed"
+                                    "Description": "if opponent does not switch X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent dswitches out into Vileplume again, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                                    "Description": "if opponent dswitches out into Vileplume again, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                                 }
                             ]
                         }
@@ -1991,10 +2003,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent switches out into Slowbro, switch to Blissey and use Trick. Switch out to Excadrill Stealth Rock into 2x Swords Dance + X.Speed (Use Earthquake vs. Vileplume)"
+                            "Description": "if opponent switches out into Slowbro, switch to Blissey and use Trick. Switch out to Excadrill Stealth Rock into 2x Swords Dance + X.Speed (Use Earthquake vs. Vileplume)"
                         },
                         {
-                            "Description": "If opponent switches out to Rhyperior, switch out to Excadrill Stealth Rock into 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches out to Rhyperior, switch out to Excadrill Stealth Rock into 2x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -2006,16 +2018,16 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Low Kick, Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Low Kick, Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Vileplume, switch to the second Metagross and use Stealth Rock",
+                            "Description": "if opponent switches out into Vileplume, switch to the second Metagross and use Stealth Rock",
                             "Steps": [
                                 {
-                                    "Description": "If opponent does not switch, switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent does not switch, switch to Chandelure 3x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches into Slowbro, switch to Poliwrath: Belly Drum + X.Speed"
+                                    "Description": "if opponent switches into Slowbro, switch to Poliwrath: Belly Drum + X.Speed"
                                 }
                             ]
                         }
@@ -2050,13 +2062,13 @@
                                     "Description": "if it stays, switch into Blissey, then switch back into Metagross and use Trick as it switches into Tyranitar. Switch to Excadrill: 3x Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches into Blissey then switch to Metagross. Switch to Excadrill: 3x Swords Dance + X.Speed"
+                                    "Description": "if opponent switches into Blissey then switch to Metagross. Switch to Excadrill: 3x Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches into Dragonite, use Stealth Rock and switch in Poliwrath: Belly Drum + X.Speed"
+                                    "Description": "if opponent switches into Dragonite, use Stealth Rock and switch in Poliwrath: Belly Drum + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches into Hydreigon, use Stealth Rock and let it die. Send in Poliwrath: Belly Drum + X.Speed"
+                                    "Description": "if opponent switches into Hydreigon, use Stealth Rock and let it die. Send in Poliwrath: Belly Drum + X.Speed"
                                 }
                             ]
                         }
@@ -2070,10 +2082,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent switches out into Dragonite, use Stealth Rock and switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent switches out into Dragonite, use Stealth Rock and switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Eelektross, use Stealth Rock and switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Eelektross, use Stealth Rock and switch to Chandelure 3x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -2085,13 +2097,13 @@
                             "Description": "Stealth Rock"
                         },
                         {
-                            "Description": "If opponent uses Flame Charge and damaged by Life Orb, use Trick then switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Flame Charge and damaged by Life Orb, use Trick then switch to Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent uses Flare Blitz, use Trick, switch to Excadrill to bait an extra turn, then switch to Chandelure 3x Calm Mind + X.Speed (Metagrosses should be 1-shotted, baiting an extra turn with Excadrill will avoid AI switching out)",
+                            "Description": "if opponent uses Flare Blitz, use Trick, switch to Excadrill to bait an extra turn, then switch to Chandelure 3x Calm Mind + X.Speed (Metagrosses should be 1-shotted, baiting an extra turn with Excadrill will avoid AI switching out)",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches out into Hydreigon/Dragonite while you set up, switch to Blissey and use Trick as it switches into Feraligatr Superpower Then switch back to Chandelure 5x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches out into Hydreigon/Dragonite while you set up, switch to Blissey and use Trick as it switches into Feraligatr Superpower Then switch back to Chandelure 5x Calm Mind + X.Speed"
                                 }
                             ]
                         }
@@ -2114,22 +2126,22 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get a Choice Band, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if you get a Choice Band, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If you get a Dragon Gem, switch to Poliwrath Belly Drum + X.Speed. Use Drain Punch afterwards then proceed to sweep"
+                            "Description": "if you get a Dragon Gem, switch to Poliwrath Belly Drum + X.Speed. Use Drain Punch afterwards then proceed to sweep"
                         },
                         {
-                            "Description": "If you get a Leftovers",
+                            "Description": "if you get a Leftovers",
                             "Steps": [
                                 {
                                     "Description": "And opponent uses Fire Punch, use Stealth Rock and switch to Poliwrath Belly Drum + X.Speed(Use burn heal if necessary)",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches out into Gyarados after setting up, immediately switch to the second Metagross and use Thunder Punch to KO. It will send out Dragonite or Garchomp again. Switch to Chandelure then switch back to the second Metagross and use Trick to lock Earthquake. Switch to Excadrill 2x Swords Dance + X.Speed"
+                                            "Description": "if opponent switches out into Gyarados after setting up, immediately switch to the second Metagross and use Thunder Punch to KO. It will send out Dragonite or Garchomp again. Switch to Chandelure then switch back to the second Metagross and use Trick to lock Earthquake. Switch to Excadrill 2x Swords Dance + X.Speed"
                                         },
                                         {
-                                            "Description": "If opponent switches into Kingdra, switch to Blissey and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches into Kingdra, switch to Blissey and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
                                         }
                                     ]
                                 },
@@ -2139,23 +2151,23 @@
                             ]
                         },
                         {
-                            "Description": "If you get a Life Orb, immediately switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
+                            "Description": "if you get a Life Orb, immediately switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches into Lapras while you set up, switch to Poliwrath Belly Drum + X.Speed"
+                                    "Description": "if opponent switches into Lapras while you set up, switch to Poliwrath Belly Drum + X.Speed"
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent use Thunder Wave, click Earthquake. Then switch to Excadrill 2x Swords Dance + X.Speed",
+                            "Description": "if opponent use Thunder Wave, click Earthquake. Then switch to Excadrill 2x Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches out into Lapras, use Stealth Rock then Switch to Poliwrath Belly Drum + X.Speed"
+                                    "Description": "if opponent switches out into Lapras, use Stealth Rock then Switch to Poliwrath Belly Drum + X.Speed"
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent switches into Lapras, switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent switches into Lapras, switch to Poliwrath Belly Drum + X.Speed"
                         }
                     ]
                 },
@@ -2176,10 +2188,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent does not switch out, let Metagross die. Switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent does not switch out, let Metagross die. Switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Dragonite, use Stealth Rock and switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent switches into Dragonite, use Stealth Rock and switch to Poliwrath Belly Drum + X.Speed"
                         }
                     ]
                 },
@@ -2191,10 +2203,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get a Choice Scarf, switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if you get a Choice Scarf, switch to Excadrill 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Dragonite",
+                            "Description": "if opponent switches into Dragonite",
                             "Steps": [
                                 {
                                     "Description": "and you get a Dragon Gem, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
@@ -2214,23 +2226,23 @@
                                     "Description": "and you get a Life Orb, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches out into Lapras after setting up, switch to Poliwrath Belly Drum + X.Speed"
+                                            "Description": "if opponent switches out into Lapras after setting up, switch to Poliwrath Belly Drum + X.Speed"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent switches out into Flygon, Stealth Rock, locking Earthquake. Send out Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches out into Flygon, Stealth Rock, locking Earthquake. Send out Excadrill 2x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Hydreigon, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent switches out into Hydreigon, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Steelix, switch to Excadrill Stealth Rock into 2x Swords Dance + X.Speed",
+                            "Description": "if opponent switches out into Steelix, switch to Excadrill Stealth Rock into 2x Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches out into Lapras after setting up, switch to Poliwrath Belly Drum + X.Speed"
+                                    "Description": "if opponent switches out into Lapras after setting up, switch to Poliwrath Belly Drum + X.Speed"
                                 }
                             ]
                         }
@@ -2253,23 +2265,23 @@
                             "Description": "Use Thunder Punch. Switch to Chandelure then switch to Metagross then use Stealth Rock. Switch to Chandelure then switch to Metagross and use Trick",
                             "Steps": [
                                 {
-                                    "Description": "If opponent uses Fire Punch, switch to Poliwrath Belly Drum + X.Speed"
+                                    "Description": "if opponent uses Fire Punch, switch to Poliwrath Belly Drum + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches out into Gyarados, use Thunder Punch to KO it",
+                                    "Description": "if opponent switches out into Gyarados, use Thunder Punch to KO it",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches into Eelektross, switch to Chandelure then switch to the second Metagross and use Trick. Switch to Poliwrath Belly Drum + X.Speed"
+                                            "Description": "if opponent switches into Eelektross, switch to Chandelure then switch to the second Metagross and use Trick. Switch to Poliwrath Belly Drum + X.Speed"
                                         },
                                         {
-                                            "Description": "If opponent switches into Garchomp, switch to Chandelure then switch to the second Metagross, and use Trick. Then switch to Excadrill 2x Swords Dance + X.Speed"
+                                            "Description": "if opponent switches into Garchomp, switch to Chandelure then switch to the second Metagross, and use Trick. Then switch to Excadrill 2x Swords Dance + X.Speed"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent Garchomp comes out, switch to Chandelure then switch back to Metagross and use Trick. Switch immediately into Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                            "Description": "if opponent Garchomp comes out, switch to Chandelure then switch back to Metagross and use Trick. Switch immediately into Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -2281,16 +2293,16 @@
                             "Description": "Use Trick, then immediately switch to Excadrill Stealth Rock"
                         },
                         {
-                            "Description": "If opponent switches to Dragonite, switch to Blissey then switch to Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches to Dragonite, switch to Blissey then switch to Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Gyarados, switch to the second Metagross and use Thunder Punch to KO it",
+                            "Description": "if opponent switches into Gyarados, switch to the second Metagross and use Thunder Punch to KO it",
                             "Steps": [
                                 {
-                                    "Description": "If opponent sends out Dragonite, switch to Blissey then switch to Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent sends out Dragonite, switch to Blissey then switch to Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent sends out Garchomp, switch to Excadrill again then 2x Swords Dance"
+                                    "Description": "if opponent sends out Garchomp, switch to Excadrill again then 2x Swords Dance"
                                 }
                             ]
                         }
@@ -2304,10 +2316,10 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "If opponent uses Earthquake, switch immediately into Excadrill 2x Swords Dance + X.Speed + X.Defend"
+                                    "Description": "if opponent uses Earthquake, switch immediately into Excadrill 2x Swords Dance + X.Speed + X.Defend"
                                 },
                                 {
-                                    "Description": "If opponent switches into Dragonite, use Stealth Rock and then switch to Chandelure: 3x Calm Mind + X.Speed + X.Defend"
+                                    "Description": "if opponent switches into Dragonite, use Stealth Rock and then switch to Chandelure: 3x Calm Mind + X.Speed + X.Defend"
                                 }
                             ]
                         }
@@ -2321,7 +2333,7 @@
                             "Description": "Switch to Blissey Stealth Rock as it switches out into Arcanine. Switch to Chandelure 5x Calm Mind + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches back into Hydreigon, switch back into Metagross then use Trick. Switch back into Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches back into Hydreigon, switch back into Metagross then use Trick. Switch back into Chandelure 3x Calm Mind + X.Speed"
                                 }
                             ]
                         }
@@ -2335,18 +2347,18 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Fire Blast, switch to Blissey Stealth Rock",
+                            "Description": "if opponent uses Fire Blast, switch to Blissey Stealth Rock",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches into Electivire, switch to Chandelure 4x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches into Electivire, switch to Chandelure 4x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "If opponent switches to Feraligatr, switch to Poliwrath Belly Drum + 2x X.Speed"
+                                    "Description": "if opponent switches to Feraligatr, switch to Poliwrath Belly Drum + 2x X.Speed"
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent switches out into Dragonite, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent switches out into Dragonite, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
                         }
                     ]
                 },
@@ -2376,10 +2388,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Surf, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent uses Surf, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Dragonite; switch to Excadrill 3x Swords Dance + X.Speed",
+                            "Description": "if opponent switches out into Dragonite; switch to Excadrill 3x Swords Dance + X.Speed",
                             "Steps": [
                                 {
                                     "Description": "and you get a Life Orb, use Stealth Rock, then switch into Excadrill: 2x Swords Dance + X.Speed",
@@ -2393,13 +2405,13 @@
                                     "Description": "and you get a Leftovers, switch into Excadrill: 3x Swords Dance + X.Speed",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches out into Charizard, switch to Blissey then switch back to Metagross; (Try to get Tyranitar off the field to lock EQ)",
+                                            "Description": "if opponent switches out into Charizard, switch to Blissey then switch back to Metagross; (Try to get Tyranitar off the field to lock EQ)",
                                             "Steps": [
                                                 {
-                                                    "Description": "If opponent does not switch out and Charizard stays, switch to Chandelure then switch to Metagross. Switch to Excadrill 3x Swords Dance + X.Speed"
+                                                    "Description": "if opponent does not switch out and Charizard stays, switch to Chandelure then switch to Metagross. Switch to Excadrill 3x Swords Dance + X.Speed"
                                                 },
                                                 {
-                                                    "Description": "If opponent switches into Tyranitar, then switch to Excadrill 3x Swords Dance + X.Speed"
+                                                    "Description": "if opponent switches into Tyranitar, then switch to Excadrill 3x Swords Dance + X.Speed"
                                                 }
                                             ]
                                         }
@@ -2417,13 +2429,13 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Aura Sphere, use Stealth Rock as it switches out into Hydreigon. Use any move but Trick and let Metagross get KO’ed. Send in Blissey and use Trick as it switches out into Arcanine. Switch to Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Aura Sphere, use Stealth Rock as it switches out into Hydreigon. Use any move but Trick and let Metagross get KO’ed. Send in Blissey and use Trick as it switches out into Arcanine. Switch to Chandelure 5x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Dragonite, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent switches out into Dragonite, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Flygon, switch immediately to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches out into Flygon, switch immediately to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -2435,7 +2447,7 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If you get a Leftovers, switch immediately to Excadrill Stealth Rock and;",
+                            "Description": "if you get a Leftovers, switch immediately to Excadrill Stealth Rock and;",
                             "Steps": [
                                 {
                                     "Description": "opponent does not switch out, then 2x Swords Dance + X.Speed"
@@ -2446,7 +2458,7 @@
                             ]
                         },
                         {
-                            "Description": "If you get a Life Orb AND",
+                            "Description": "if you get a Life Orb AND",
                             "Steps": [
                                 {
                                     "Description": "opponent uses Hidden Power, use Stealth Rock then switch to Chandelure 4x Calm Mind + X.Speed"
@@ -2457,31 +2469,31 @@
                             ]
                         },
                         {
-                            "Description": "If you get a Steel Gem, switch to Excadrill Stealth Rock into Swords Dance + X.Defend + X.Speed"
+                            "Description": "if you get a Steel Gem, switch to Excadrill Stealth Rock into Swords Dance + X.Defend + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches into Dragonite AND",
+                            "Description": "if opponent switches into Dragonite AND",
                             "Steps": [
                                 {
-                                    "Description": "If you get a Leftovers, use Stealth Rock then use Thunder Punch. Switch to Chandelure 3x Calm Mind + X.Speed + X.Defend",
+                                    "Description": "if you get a Leftovers, use Stealth Rock then use Thunder Punch. Switch to Chandelure 3x Calm Mind + X.Speed + X.Defend",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches into Kangaskhan, switch to Poliwrath Belly Drum + X.Speed"
+                                            "Description": "if opponent switches into Kangaskhan, switch to Poliwrath Belly Drum + X.Speed"
                                         }
                                     ]
                                 },
                                 {
-                                    "Description": "If Player Life Orb, switch to Excadrill Stealth Rock into 2x Swords Dance + X.Speed",
+                                    "Description": "if Player Life Orb, switch to Excadrill Stealth Rock into 2x Swords Dance + X.Speed",
                                     "Steps": [
                                         {
-                                            "Description": "If opponent switches into Lapras, switch to Poliwrath Belly Drum + X.Speed"
+                                            "Description": "if opponent switches into Lapras, switch to Poliwrath Belly Drum + X.Speed"
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "Description": "If opponent switches out into Eelektross, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Eelektross, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -2493,19 +2505,19 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent uses Bug Bite, use Stealth Rock and let Metagross be KO’ed. Send in Chandelure into X.Defend + 3x Calm Mind + X.Speed (Use Healing Items if necessary) "
+                            "Description": "if opponent uses Bug Bite, use Stealth Rock and let Metagross be KO’ed. Send in Chandelure into X.Defend + 3x Calm Mind + X.Speed (Use Healing Items if necessary) "
                         },
                         {
-                            "Description": "If you get a Choice Band, use Stealth Rock and switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if you get a Choice Band, use Stealth Rock and switch to Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If you get a Flying Gem, use Stealth Rock and switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if you get a Flying Gem, use Stealth Rock and switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches out into Dragonite, switch immediately to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
+                            "Description": "if opponent switches out into Dragonite, switch immediately to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent switches out into Lapras is sent out while you set up, switch to Poliwrath Belly Drum + X.Speed"
+                                    "Description": "if opponent switches out into Lapras is sent out while you set up, switch to Poliwrath Belly Drum + X.Speed"
                                 }
                             ]
                         }
@@ -2519,10 +2531,10 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "If opponent does not switch, use Stealth Rock then switch to Blissey as it switches out into Dragonite. Use Trick as it switches out into Infernape, then Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent does not switch, use Stealth Rock then switch to Blissey as it switches out into Dragonite. Use Trick as it switches out into Infernape, then Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "If opponent switches to Dragonite, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent switches to Dragonite, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
                         }
                     ]
                 },
@@ -2546,10 +2558,10 @@
                                     ]
                                 },
                                 {
-                                    "Description": "If you get a Liechi Berry, switch to Excadrill 2x Swords Dance + X.Speed"
+                                    "Description": "if you get a Liechi Berry, switch to Excadrill 2x Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "If you get a Custap Berry, switch to Excadrill Stealth Rock AND",
+                                    "Description": "if you get a Custap Berry, switch to Excadrill Stealth Rock AND",
                                     "Steps": [
                                         {
                                             "Description": "opponent uses Earthquake, use 2x Swords Dance + X.Speed"
