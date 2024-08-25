@@ -47,6 +47,11 @@ const possibleSmashers = [
     },
     {
         Name: "Johto",
+        Fossils: [
+            "Helix Fossil",
+            "Dome Fossil",
+            "Old Amber"
+        ],
         Pokemon: [
             {
                 Name: "Geodude",
