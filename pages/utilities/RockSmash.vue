@@ -354,9 +354,7 @@ export default {
             const items = this.items.filter((item: RockRow) => item.Item).length;
             return {
                 encounters,
-                items,
-                encountersPercentage: `${((encounters / this.items.length) * 100).toFixed(2)}%`,
-                itemsPercentage: `${((items / encounters) * 100).toFixed(2)}%`
+                items
             }
         },
         orderedPokemon() {
@@ -397,12 +395,10 @@ export default {
                     pokemon,
                     totalEncounters: pokemonItems.length,
                     totalItems: pokemonItems.filter((pokemonItem: RockRow) => pokemonItem.Item).length,
-                    itemFoundPercentage: `${((pokemonItems.filter((pokemonItem: RockRow) => pokemonItem.Item).length / pokemonItems.length) * 100).toFixed(2)}%`,
                     items: uniqueItems.map((item: string) => {
                         return {
                             item,
                             count: pokemonItems.filter((pokemonItem: RockRow) => pokemonItem.Item && pokemonItem.Item === item).length,
-                            percentage: `${((pokemonItems.filter((pokemonItem: RockRow) => pokemonItem.Item && pokemonItem.Item === item).length / pokemonItems.length) * 100).toFixed(2)}%`
                         }
                     })
                 }
@@ -496,9 +492,6 @@ div.regions:hover {
                 <p><b>Total smashes:</b> {{ items.length }}</p>
                 <p><b>Total pokemon encountered:</b> {{ calculatedData.encounters }}</p>
                 <p><b>Total items obtained:</b> {{ calculatedData.items }}</p>
-                <p></p>
-                <p><b>Percentage of pokemon encountered:</b> {{ calculatedData.encountersPercentage }}</p>
-                <p><b>Total of items obtained from pokemon:</b> {{ calculatedData.itemsPercentage }}</p>
             </div>
             <div class="grid grid-cols-1 text-center items-center">
                 <h2>Data by Pokemon</h2>
@@ -506,13 +499,20 @@ div.regions:hover {
             <div class="grid grid-cols-4 text-center">
                 <p v-for="pokemon in getPokemonItems">
                     <b>
-                        {{ pokemon.pokemon }} {{ '(' + pokemon.totalEncounters + ')' }}
+                        {{ pokemon.pokemon }}
                     </b>
-                <p>Items found: {{ pokemon.totalItems }} {{ '(' + pokemon.itemFoundPercentage + ')' }}</p>
+                    ({{ pokemon.totalEncounters }})
+                <p>
+                    <b>
+                        Items
+                    </b>
+                    ({{ pokemon.totalItems }})
+                </p>
                 <p v-for="item in pokemon.items">
-                    <span>
-                        {{ item.item }}: {{ item.count }} ({{ item.percentage }})
-                    </span>
+                    <b>
+                        {{ item.item }}
+                    </b>
+                    ({{ item.count }})
                 </p>
                 </p>
             </div>
