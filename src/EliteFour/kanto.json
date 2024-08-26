@@ -59,7 +59,16 @@
                             "Description": "if opponent switches out into Chansey, use Stealth Rock then switch to Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "if opponent switches into Dragonite, use Stealth Rock then switch to Blissey Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Dragonite, use Stealth Rock;",
+                            "IsVisible": true,
+                            "Steps": [
+                                {
+                                    "Description": "switch to Blissey and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "Experimental: if Fire Punch does less than 47%, Thunder Punch and then swap to Chandelure: 3x Calm Mind + X.Speed"
+                                }
+                            ]
                         },
                         {
                             "Description": "if opponent switches into Golduck, switch to Poliwrath Belly Drum",
