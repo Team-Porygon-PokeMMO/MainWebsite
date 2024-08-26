@@ -2317,7 +2317,56 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "Use Trick;",
+                            "IsVisible": true,
+                            "Steps": [
+                                {
+                                    "Description": "if you get Leftovers;",
+                                    "Steps": [
+                                        {
+                                            "Description": "and it uses Flamethrower; switch into Chandelure: 3x Calm Mind + X.Speed"
+                                        },
+                                        {
+                                            "Description": "and it uses Aura Sphere, switch into Chandelure: 4x Calm Mind + X.Speed",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it switches into Ludicolo, switch into Poliwrath, then into Metagross and use Trick, locking Hydro Pump. Then switch into Poliwrath: Belly Drum + X.Speed"
+                                                },
+                                                {
+                                                    "Description": "if it switches into Empoleon, switch into Poliwrath: Belly Drum + X.Speed"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if you get Choice Specs;",
+                                    "Steps": [
+                                        {
+                                            "Description": "and it uses Flamethrower; switch into Chandelure: 4x Calm Mind + X.Speed",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it switches into Empoleon, switch into Poliwrath, then into Blissey and use Trick, locking Waterfall. Switch into Poliwrath: Belly Drum + X.Speed"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "and it uses Aura Sphere, switch into Chandelure: 4x Calm Mind + X.Speed",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it switches into Empoleon, switch into Poliwrath, then into Blissey and use Trick, locking Waterfall. Switch into Poliwrath: Belly Drum + X.Speed"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if it switches into Whiscash, switch into Chandelure: 4x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if it switches into Ludicolo, switch into Poliwrath: Belly Drum + X.Speed"
+                                }
+                            ]
                         }
                     ]
                 },
