@@ -1558,27 +1558,32 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if you get a Black Sludge, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                                    "Description": "if you get a Black Sludge, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "if you get a Rocky Helmet, switch to Excadrill Swords Dance + X.Speed"
+                                    "Description": "if you get a Rocky Helmet, switch to Excadrill: Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "if opponent switches out into Dragonite, use Stealth Rock then switch to Blissey and use Trick",
+                                    "Description": "if opponent switches out into Dragonite, swap into Poliwrath: Belly Drum + X.Speed (if you fear getting burned, follow sub steps)",
                                     "Steps": [
                                         {
-                                            "Description": "if opponent switches into Arcanine, switch to Chandelure 4x Calm Mind + X.Speed",
+                                            "Description": "use Stealth Rock, then switch into Blissey and use Trick;",
                                             "Steps": [
                                                 {
-                                                    "Description": "if opponent switches into Hydreigon, switch to the second Metagross and use Trick. Switch to Blissey Softboiled then switch to Chandelure 4x Calm Mind + X.Speed"
+                                                    "Description": "if opponent switches into Arcanine, switch to Chandelure: 4x Calm Mind + X.Speed",
+                                                    "Steps": [
+                                                        {
+                                                            "Description": "if opponent switches into Hydreigon, switch to the second Metagross and use Trick. Switch to Blissey and use Softboiled, then switch to Chandelure: 4x Calm Mind + X.Speed"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Description": "if opponent switches into Metagross, use Trick then switch to your own Metagross and use Trick. Switch to Excadrill: 2x Swords Dance + X.Speed"
+                                                },
+                                                {
+                                                    "Description": "if opponent switches into Tyranitar, then switch to Chandelure: 3x Calm Mind + X.Speed"
                                                 }
                                             ]
-                                        },
-                                        {
-                                            "Description": "if opponent switches into Metagross, use Trick then switch to your own Metagross and use Trick. Switch to Excadrill 2x Swords Dance + X.Speed"
-                                        },
-                                        {
-                                            "Description": "if opponent switches out into Tyranitar, then switch to Chandelure 3x Calm Mind + X.Speed"
                                         }
                                     ]
                                 },
@@ -1586,10 +1591,10 @@
                                     "Description": "if opponent switches out into Eelektross, Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "if opponent switches out into Hydreigon, use Stealth Rock then switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed",
+                                    "Description": "if opponent switches out into Hydreigon, use Stealth Rock then switch to Blissey and use Trick. Switch to Chandelure: 4x Calm Mind + X.Speed",
                                     "Steps": [
                                         {
-                                            "Description": "if opponent switches out into Hydreigon again, switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches out into Hydreigon again, switch to Blissey and use Trick. Switch to Chandelure: 4x Calm Mind + X.Speed"
                                         }
                                     ]
                                 }
