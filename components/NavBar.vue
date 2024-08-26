@@ -31,18 +31,16 @@ const links = [[
     {
         label: 'Hatching', to: '/utilities/HatchCycleTimer',
         icon: 'i-heroicons-question-mark-circle',
-    }], [
+    }], 
 
-    {
+    [{
         label: 'Team Pory',
         icon: 'i-heroicons-bars-3-bottom-left',
         sublinks: [
             { label: 'Forums Club', to: 'https://forums.pokemmo.com/index.php?/clubs/219-pory-porygon/'},
             { label: 'Shiny Showcase', to: 'https://forums.pokemmo.com/index.php?/topic/159659-pory-ot-shiny-showcase/'},
             { label: 'Missing Shiny Dex', to: 'https://forums.pokemmo.com/index.php?/topic/159671-pory-whose-left-to-shunt/'},
-    ]
-    },
-    
+    ]},
     {
         label: 'Common Resources',
         icon: 'i-heroicons-book-open',
@@ -56,10 +54,9 @@ const links = [[
             { label: 'Money Making Guides', to: 'https://forums.pokemmo.com/index.php?/topic/106742-money-guide-community-pickup-guide-2nd-edition/'},
             { label: 'Catching Breeders', to: 'https://forums.pokemmo.com/index.php?/topic/154142-breed-guide-breeder-catching-engesp/'},
             { label: 'Vanity Index', to: 'https://forums.pokemmo.com/index.php?/topic/145375-pokemmo-vanity-index/'},
-        ]
-    },
+    ]},
     {
-        label: 'Contact Us', to: 'https://discord.gg/ERegmbRSyz', target: "_blank",
+        label: 'Contact Us', to: 'https://discord.gg/ERegmbRSyz',
         icon: 'i-heroicons-bars-3-bottom-right',
     }
 ]]
