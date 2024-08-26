@@ -1947,13 +1947,15 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick;"
-                        },
-                        {
-                            "Description": "if you get a Leftovers, switch to Poliwrath Belly Drum + X.Speed"
-                        },
-                        {
-                            "Description": "if you get a Life Orb, switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "Use Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "if you get a Leftovers, switch to Poliwrath: Belly Drum + X.Speed"
+                                },
+                                {
+                                    "Description": "if you get a Life Orb or it switches out into Whiscash, switch to Excadrill: 2x Swords Dance + X.Speed"
+                                }
+                            ]
                         }
                     ]
                 },
