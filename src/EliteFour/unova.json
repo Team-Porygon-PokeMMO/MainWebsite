@@ -796,18 +796,27 @@
                     "Name": "Liepard",
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey and use Trick. Switch to Excadrill: Stealt Rock + 2x Swords Dance + X.Speed.",
+                            "Description": "Switch to Blissey;",
+                            "IsVisible": true,
                             "Steps": [
                                 {
-                                    "Description": "if it switches into Gyarados, switch to Poliwrath, then switch to Metagross and use Thunder Punch;",
+                                    "Description": "if it switches into Garchomp, use Trick, then switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed.",
                                     "Steps": [
                                         {
-                                            "Description": "if Metagross HP is higher than 60%, switch to Chandelure 3x Calm Mind + X.Speed."
-                                        },
-                                        {
-                                            "Description": "if Metagross HP is lower than 60%, switch to Blissey, then switch to Metagross and use Trick. Switch back into Excadrill: 2x Swords Dance + X.Speed."
+                                            "Description": "if it switches into Gyarados, switch to Poliwrath, then switch to Metagross and use Thunder Punch to kill, he will get Chandelure out;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if Metagross HP is higher than 60%, switch to Chandelure: 3x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "if Metagross HP is lower than 60%, switch to Blissey, then switch to Metagross and use Trick. Switch back into Excadrill: 2x Swords Dance + X.Speed."
+                                                }
+                                            ]
                                         }
                                     ]
+                                },
+                                {
+                                    "Description": "if it switches into anything else, use Stealth Rock, then switch into Chandelure, then into Metagross and use Trick as it switches into Garchomp. Switch into Chandelure: 3x Calm Mind + X.Speed."
                                 }
                             ]
                         }
@@ -1380,6 +1389,9 @@
                                             ]
                                         }
                                     ]
+                                },
+                                {
+                                    "Description": "if it uses Meteor Smash, switch into Poliwrath: X.Speed + Belly Drum"
                                 },
                                 {
                                     "Description": "if it switches into Altaria, use Stealth Rock, then switch to Chandelure 3x Calm Mind + X.Speed.",
