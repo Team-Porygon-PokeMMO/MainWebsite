@@ -24,7 +24,7 @@ const content = [
   },
   {
     title: 'How to apply',
-    description: 'To apply to our team, please vist the post below and fill out the required information. Or, reach out directly to @glortwort or vexious on discord.',
+    description: 'To apply to our team, please vist the post below and fill out the required information. Or, reach out directly to @glortwort or @vexious on discord.',
     links: [
       {
         "Url": "https://forums.pokemmo.com/index.php?/topic/159984-openpory-team-porygon-is-recruiting/",
