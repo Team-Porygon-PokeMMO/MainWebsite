@@ -848,7 +848,7 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if it uses Flamethrower, switch to Chandelure 3x Calm Mind + X.Speed."
+                                    "Description": "if it uses Flamethrower, switch to Chandelure 3x Calm Mind + X.Speed (if Bisharp is sent last, swap into Poliwrath and Drain Punch to kill it)"
                                 },
                                 {
                                     "Description": "if it uses any other move, switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed.",
@@ -870,7 +870,7 @@
                                     "Description": "if it switches into Garchomp, switch to Excadrill: 2x Swords Dance + X.Speed."
                                 },
                                 {
-                                    "Description": "if it switches into Gliscor, switch to Chandelure 3x Calm Mind + X.Speed.",
+                                    "Description": "if it switches into Gliscor, switch to Chandelure 3x Calm Mind + X.Speed (if Bisharp is sent last, swap into Poliwrath and Drain Punch to kill it)",
                                     "Steps": [
                                         {
                                             "Description": "if it switches into Samurott, switch to Poliwrath: Belly Drum + X.Speed."
