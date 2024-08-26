@@ -2173,7 +2173,13 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "if you get a Chesto Berry, use Stealth Rock then switch to Excadrill Swords Dance + X.Speed"
+                            "Description": "if you get a Chesto Berry, use Stealth Rock then switch to Excadrill: Swords Dance + X.Speed;",
+                            "IsVisible": true,
+                            "Steps": [
+                                {
+                                    "Description": "if it switches into Milotic, switch to Poliwrath: X.Speed + Belly Drum"
+                                }
+                            ]
                         },
                         {
                             "Description": "if you get a Choice Specs, switch to Excadrill 2x Swords Dance + X.Speed",

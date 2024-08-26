@@ -247,10 +247,10 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch to Chandelure 2x Calm Mind + X.Speed."
+                            "Description": "Switch to Chandelure: 2x Calm Mind + X.Speed."
                         },
                         {
-                            "Description": "if opponent switches and Empoleon is sent out, use Flamethrower to kill. Switch back into Blissey  and use Softboiled",
+                            "Description": "if opponent switches and Empoleon is sent out, switch into Poliwrath: Belly Drum + X.Speed",
                             "Steps": [
                                 {
                                     "Description": "if opponent switches switches into Absol, switch to Chandelure 4x Calm Mind + X.Speed"
@@ -1605,7 +1605,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch in Chandelure and switch to Metagross Stealth Rock. Then switch back to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "Switch in Chandelure and switch to Metagross Stealth Rock. Then switch back to Chandelure: 3x Calm Mind + X.Speed"
                         }
                     ]
                 },
