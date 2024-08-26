@@ -13,19 +13,21 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick;"
-                        },
-                        {
-                            "Description": "if opponent uses Night Slash, switch to Poliwrath X.Speed + Belly Drum"
-                        },
-                        {
-                            "Description": "if opponent uses Close Combat, switch to Chandelure 4x Calm Mind + X.Speed"
-                        },
-                        {
-                            "Description": "if opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick as it switches into Absol/Flareon, then switch to Chandelure 4x Calm Mind + X.Speed"
-                        },
-                        {
-                            "Description": "if opponent switches out into Empoleon, switch to Blissey and use Softboiled. Switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "Use Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent uses Night Slash, switch to Poliwrath X.Speed + Belly Drum"
+                                },
+                                {
+                                    "Description": "if opponent uses Close Combat, switch to Chandelure 4x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick as it switches into Absol/Flareon, then switch to Chandelure 4x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if opponent switches out into Empoleon, switch into Poliwrath: Belly Drum + X.Speed"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -75,19 +77,16 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "opponent switches into Exeggutor. Switch to Blissey and use Softboiled.",
+                            "Description": "if opponent switches into Exeggutor. Switch to Blissey and use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if opponent switches into Absol, switch to Chandelure 4x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches into Absol, switch to Chandelure: 4x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "if opponent switches into Flareon, switch to Chandelure then use Flamethrower to kill Empoleon. Switch to Blissey and use Softboiled",
+                                    "Description": "if opponent switches into Flareon, switch to Chandelure: 4x Calm Mind + X.Speed",
                                     "Steps": [
                                         {
-                                            "Description": "if opponent switches into Absol, if it switches into Absol, switch to Chandelure 4x Calm Mind + X.Speed"
-                                        },
-                                        {
-                                            "Description": "if opponent switches into Flareon, switch to Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches out into Empoleon, switch into Poliwrath: Belly Drum + X.Speed"
                                         }
                                     ]
                                 }
@@ -184,38 +183,37 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick;"
-                        },
-                        {
-                            "Description": "if opponent does not switch out and uses Hydro Pump/Surf, switch to Poliwrath Belly Drum + X.Speed"
-                        },
-                        {
-                            "Description": "if opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick",
+                            "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if opponent switches into Absol, then switch to Chandelure 4x Calm Mind + X.Speed"
+                                    "Description": "if opponent does not switch out and uses Hydro Pump / Surf, switch to Poliwrath: Belly Drum + X.Speed"
                                 },
                                 {
-                                    "Description": "if opponent switches into Flareon, immediately switch to Chandelure and then use Flamethrower. Then switch to Blissey and use Softboiled",
+                                    "Description": "if opponent switches into Bronzong / Exeggutor, switch to Blissey and use Trick;",
                                     "Steps": [
                                         {
-                                            "Description": "if opponent switches to Absol,then switch to Chandelure 4x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches into Absol, then switch to Chandelure: 4x Calm Mind + X.Speed"
                                         },
                                         {
-                                            "Description": "if opponent switches to Flareon, switch to Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches into Flareon, switch into Chandelure: 4x Calm Mind + X.Speed",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if opponent switches to Empoleon, switch into Poliwrath: Belly Drum + X.Speed"
+                                                }
+                                            ]
                                         }
                                     ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Chansey, use Stealth Rock then switch to Chandelure: 2x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if opponent switches into Golurk, switch to Excadrill: 2x Swords Dance + X.Speed"
+                                },
+                                {
+                                    "Description": "if opponent switches into Umbreon, immediately switch to Blissey and use Trick as it switches out into Golurk. Switch to Chandelure: 6x Calm Mind + X.Speed"
                                 }
                             ]
-                        },
-                        {
-                            "Description": "if opponent switches out into Chansey, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
-                        },
-                        {
-                            "Description": "if opponent switches into Golurk, switch to Excadrill 2x Swords Dance + X.Speed"
-                        },
-                        {
-                            "Description": "if opponent switches into Umbreon, immediately switch to Blissey and use Trick as it switches out into Golurk/Lucario. Switch to Chandelure 6x Calm Mind + X.Speed"
                         }
                     ]
                 },
