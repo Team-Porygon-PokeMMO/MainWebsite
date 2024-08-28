@@ -1,11 +1,8 @@
 <template>
   <NuxtLoadingIndicator />
-
-  <div class="flex flex-col h-screen justify-between dark">
-    <NavBar variant="sticky"/>
-    <NuxtPage class="mb-auto w-full dark" />
-    <!-- <Footer /> -->
-  </div>
+  <NavBar variant="sticky" />
+  <NuxtPage class="mb-auto w-full dark" />
+  <!-- <Footer /> -->
   <UNotifications />
 </template>
 
