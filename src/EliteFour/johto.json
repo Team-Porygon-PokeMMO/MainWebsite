@@ -1219,7 +1219,13 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then use Stealth Rock. Switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "Use Trick then stealth rock"
+                        },
+                        {
+                            "Description": "if opponent stays switch to Chandelure 3x Calm mind + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent switched to Slowbro then Salamence, switch to Chandelure, then switch to 2nd Metagross, trick then switch into Excadrill. 2x Swords Dance + X.Speed"
                         }
                     ]
                 },

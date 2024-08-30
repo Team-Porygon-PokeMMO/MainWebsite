@@ -2606,6 +2606,9 @@
                                     "Description": "if opponent uses Pursuit, switch to Blissey and use Trick. Switch to Chandelure 5x Calm Mind + X.Speed"
                                 },
                                 {
+                                    "Description": "if opponent uses Stone Edge, switch to Excadrill 3x Swords Dance + X.Speed (Heal Required in setup)"
+                                },
+                                {
                                     "Description": "if opponent switches out into Sandslash, switch to Metagross then switch to Blissey and use Trick. Use Softboiled then switch to Chandelure 5x Calm Mind + 2x X.Speed"
                                 }
                             ]

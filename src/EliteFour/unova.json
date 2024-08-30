@@ -125,7 +125,7 @@
                                                     "Description": "if it switches into Absol, switch into Metagross. Use Stealth Rock as it switches into Choice Scarf'd Hydreigon. Then switch into Chandelure: 3x Calm Mind + X.Speed."
                                                 },
                                                 {
-                                                    "Description": "if it switches into Eelektross, use Stealth Rock, then switch to Chandelure 2x Calm Mind + X.Speed (use Shadow Ball vs Gengar)."
+                                                    "Description": "if it switches into Eelektross, switch into metagross then use Stealth Rock, then switch to Chandelure 2x Calm Mind + X.Speed (use Shadow Ball vs Gengar)."
                                                 },
                                                 {
                                                     "Description": "if it switches into Lucario, switch to Chandelure 6x Calm Mind + X.Speed."
@@ -279,7 +279,7 @@
                                     "Description": "if it stays, use Stealth Rock, then switch to Blissey and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed."
                                 },
                                 {
-                                    "Description": "if it switches into Dragonite, use Stealth Rock, then switch to Chandelure 2x Calm Mind + X.Speed."
+                                    "Description": "if it switches into Eelektross/Dragonite, use Stealth Rock, then swap the Chandelure 3x Calm Mind + 2x X.Speed (Scarfed froslass outspeeds +2. Energy ball Froslass."
                                 }
                             ]
                         }
