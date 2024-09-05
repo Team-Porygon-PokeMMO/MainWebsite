@@ -955,10 +955,18 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if opponent uses Flamethrower,  switch to Blissey and use Trick as it switches Lucario in. Switch to Poliwrath Belly Drum + X.Speed",
+                                    "Description": "if opponent uses Flamethrower,  switch to Blissey and use Trick as it switches Lucario in.",
                                     "Steps": [
                                         {
-                                            "Description": "Experimental: use an Energy Root + X.Defense on Poliwrath to avoid RNG on Lucario crit and Zoroark Night Daze Accuracy drop."
+                                            "Description": "if opponent uses Close Combat, switch to Chandelure 3x Calm Mind + X.Speed"
+                                        },
+                                        {
+                                            "Description": "if opponent uses Meteor Mash, switch to Poliwrath Belly Drum + X.Speed",
+                                            "Steps": [
+                                                {
+                                                    "Description": "Experimental: use an Energy Root + X.Defense on Poliwrath to avoid RNG on Lucario crit and Zoroark Night Daze Accuracy drop."
+                                                }
+                                            ]
                                         }
                                     ]
                                 },

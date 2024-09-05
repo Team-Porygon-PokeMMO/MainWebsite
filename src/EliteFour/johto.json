@@ -39,7 +39,7 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if opponent uses Fire Blast, switch immediately into Chandelure: 3x Calm Mind + X.Speed",
+                                    "Description": "if opponent uses Fire Blast, switch immediately into Chandelure: 3x Calm Mind + X.Speed +X.Def",
                                     "Steps": [
                                         {
                                             "Description": "if opponent switches out into Empoleon while you set up, immediately switch to Poliwrath then switch to the second Metagross and use Trick;",
@@ -1954,7 +1954,7 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "if you get a Choice Band, use Stealth Rock, then switch into Poliwrath: Belly Drum + X.Speed"
+                            "Description": "if you get a Choice Band, use Stealth Rock, then switch into Poliwrath: Belly Drum + X.Speed (EQ vs Vileplume due to spore)"
                         },
                         {
                             "Description": "if you get a Leftovers, switch to Blissey then switch to the second Metagross and use Trick. Use Stealth Rock then switch to Excadrill 2x Swords Dance + X.Speed"

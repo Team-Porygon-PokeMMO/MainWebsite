@@ -266,7 +266,11 @@
                             "Description": "if opponent switches into Claydol, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "if opponent switches into Dragonite, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent switches into Dragonite, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed",
+                            "Steps": [
+                                {
+                                    "Description": "If opponent swaps into Slowbro during setup, continue to setup with X.Speed however ensure Poliwrath can survive ExtremeSpeed from Raichu"
+                                }]
                         },
                         {
                             "Description": "if opponent switches into Exeggutor, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
