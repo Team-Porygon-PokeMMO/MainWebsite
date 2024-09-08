@@ -735,6 +735,9 @@
                         },
                         {
                             "Description": "if it used Will-O-Wisp, switch to Chandelure then switch back to Metagross and use Trick. Use Stealth Rock then switch back into Chandelure 4x Calm Mind + X.Speed. Use Shadow Ball vs. Ginger"
+                        },
+                        {
+                            "Description": "if opponent swaps to Amoongus, use Trick. Excadrill 3x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -1346,7 +1349,7 @@
                                             "Description": "and it stays, use Trick",
                                             "Steps": [
                                                 {
-                                                    "Description": "if it uses Cross Chop, switch to Chandelure 2x Calm Mind + X.Speed"
+                                                    "Description": "if it uses Cross Chop, switch back to Metagross, Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
                                                 },
                                                 {
                                                     "Description": "if it uses Focus Blast, switch to Metagross and use Trick. Use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
@@ -1813,7 +1816,15 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch to Chandelure then use Shadow Ball. Switch to Metagross and use Trick, then switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "Switch to Chandelure then use Shadow Ball. Switch to Metagross and use Trick.",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent uses Surf, then switch to Poliwrath Belly Drum + X.Speed"
+                                },
+                                {
+                                    "Description": "if opponent uses Thunderbolt , switch to Excadrill 2x Swords Dance + X.Speed"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -2387,7 +2398,28 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "Use Trick",
+                            "Steps": [
+                                {
+                                    "Description": "if it stays, then switch to Chandelure 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if it switches to Milotic, Switch into Poliwrath.",
+                                    "Steps": [
+                                        {
+                                            "Description": "If it switches into Garchomp switch to leftovers Metagross. Send out Metagross, Trick. Switch into Chandelure 3x Calm Mind + X.Speed"
+                                        },
+                                        {
+                                            "Description": "If it stays, X.Speed + Belly Drum",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it switches into Garchomp during setup, then switch to leftovers Metagross. Send out Metagross, Trick. Switch into Chandelure 3x Calm Mind + X.Speed"
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 },
@@ -2414,7 +2446,7 @@
                                     "Description": "if it switches out into Garchomp, let Metagross die then switch to Blissey Trick. Switch to Excadrill 2x Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "if it switches out into Jellicent, switch to switch to Poliwrath Belly Drum + 2x X.Speed"
+                                    "Description": "if it switches out into Jellicent, switch to Poliwrath Belly Drum + 2x X.Speed"
                                 }
                             ]
                         },

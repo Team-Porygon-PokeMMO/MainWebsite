@@ -199,10 +199,10 @@
                                             "Description": "if it uses Superpower, use Trick;",
                                             "Steps": [
                                                 {
-                                                    "Description": "if you get a Leftovers, use Stealth Rock, then switch to Chandelure 2x Calm Mind + X.Speed."
+                                                    "Description": "if you get a Sitrus Berry, use Stealth Rock, then switch to Chandelure 2x Calm Mind + X.Speed."
                                                 },
                                                 {
-                                                    "Description": "if you get a Sitrus Berry, switch to Chandelure 3x Calm Mind + X.Speed."
+                                                    "Description": "if you get Leftovers, switch to Chandelure 3x Calm Mind + X.Speed."
                                                 }
                                             ]
                                         },
@@ -241,7 +241,12 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if it uses Dragon Claw, use Stealth Rock, then switch to Blissey and use Softboiled. Switch to Chandelure 4x Calm Mind + X.Speed."
+                                    "Description": "if it uses Dragon Claw, use Stealth Rock, then switch to Blissey and use Softboiled. Switch to Chandelure 4x Calm Mind + X.Speed.",
+                                   "Steps": [
+                                        {
+                                            "Description": "If Bisharp comes last send Poli to kill with drain punch"
+                                        }
+                                    ]
                                 },
                                 {
                                     "Description": "if it uses Fire Punch, use Stealth Rock, then switch to Chandelure 2x Calm Mind + X.Speed."
@@ -1072,21 +1077,13 @@
                                     "Description": "if it uses Fire Blast, switch to Blissey and use Stealth Rock. Switch to Chandelure then switch to the second Metagross and use Trick. Switch back into Chandelure 3x Calm Mind + X.Speed."
                                 },
                                 {
-                                    "Description": "if it uses Flamethrower, use Stealth Rock and then switch to Chandelure 3x Calm Mind + X.Speed.",
+                                    "Description": "if it uses Flamethrower, switch to Chandelure. Then switch to Blissey. Use Trick. Switch back to Chandelure 4x Calm Mind + X.Speed",
                                     "Steps": [
                                         {
-                                            "Description": "if it switches into Entei, switch to the second Metagross and use Trick. Switch back into Chandelure 3x Calm Mind + X.Speed."
+                                            "Description": "If Entei comes in, Switch back to Chandelure 4x Calm Mind + X.Speed"
                                         },
                                         {
-                                            "Description": "if it switches into Umbreon, switch to Blissey and use Trick. Use Softboiled until it switches out into Entei, then switch to the second Metagross and use Trick.",
-                                            "Steps": [
-                                                {
-                                                    "Description": "if it switches back to Umbreon, use Trick again then switch to Poliwrath and use Drain Punch to kill. It will send out Mienshao, so switch to Chandelure and use Flamethrower to kill. Out comes Entei, so switch to the Metagross with Choice Scarf and use Trick. Switch back to Chandelure 3x Calm Mind + X.Speed."
-                                                },
-                                                {
-                                                    "Description": "if it switches into Entei / Altaria, switch back into Chandelure 3x Calm Mind + X.Speed."
-                                                }
-                                            ]
+                                            "Description": "If Mienshao comes in instead of Entei, use Protect (will force Entei in), then switch to 2nd Metagross, Trick. Switch into Chandelure 4x Calm Mind + X.Speed"
                                         }
                                     ]
                                 },
@@ -1454,7 +1451,15 @@
                                     "Description": "if it stays, switch to Metagross and use Stealth Rock;",
                                     "Steps": [
                                         {
-                                            "Description": "if it still stays, switch back into Chandelure, then use Shadow Ball. Switch to the second Metagross and use Trick. Switch once more into Chandelure 3x Calm Mind + X.Speed."
+                                            "Description": "if it still stays, switch back into Chandelure, then use Shadow Ball. Switch to the second Metagross and use Trick.",
+                                            "Steps": [
+                                                {
+                                                    "Description": "If it switches to Jolteon, switch to Excadrill 2x Swords Dance + X.Speed"
+                                                },
+                                                {
+                                                    "Description": "Otherwise, switch into Chandelure 3x Calm Mind + X.Speed."
+                                                }
+                                            ]
                                         },
                                         {
                                             "Description": "if it switches into Altaria, switch to Chandelure 5x Calm Mind + X.Speed.",
@@ -1947,6 +1952,14 @@
                                             ]
                                         }
                                     ]
+                                },
+                                {
+                                    "Description": "if it switches into Golurk;",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Stealth Rock and switch to Chandelure 3x Calm Mind + X.Speed."
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -1984,7 +1997,7 @@
                                             ]
                                         },
                                         {
-                                            "Description": "and you get a Leftovers, use Stealth Rock, then switch to Chandelure 3x Calm Mind + X.Speed."
+                                            "Description": "and you get a Leftovers, switch to Chandelure 3x Calm Mind + X.Speed."
                                         },
                                         {
                                             "Description": "and you get a Life Orb, use Stealth Rock, then switch to Chandelure 3x Calm Mind + X.Speed.",

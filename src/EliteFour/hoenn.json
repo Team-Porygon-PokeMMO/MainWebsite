@@ -1105,7 +1105,7 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "if opponent uses Hidden Power, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Hidden Power, use Stealth Rock then switch to Chandelure 2x Calm Mind"
                         },
                         {
                             "Description": "if opponent uses Scald, switch to Poliwrath Ice Punch then X.Speed + Belly Drum",
@@ -1535,6 +1535,9 @@
                     "IsVisible": false,
                     "Steps": [
                         {
+                            "Description": "Use Trick."
+                        },
+                        {
                             "Description": "if opponent used Ice Punch, use Stealth Rock and switch to Poliwrath Belly Drum + X.Speed",
                             "Steps": [
                                 {
@@ -1846,10 +1849,10 @@
                                             ]
                                         },
                                         {
-                                            "Description": "if opponent uses Earthquake, switch to Excadrill Swords Dance + X.Speed",
+                                            "Description": "if opponent uses Earthquake, switch to Excadrill Stealth Rock then Swords Dance + X.Speed",
                                             "Steps": [
                                                 {
-                                                    "Description": "if opponent switches out into Lapras, switch to Poliwrath X.Speed + Belly Drum"
+                                                    "Description": "if opponent switches out into Lapras, switch to Poliwrath X.Speed + Belly Drum (EQ Ampharos)"
                                                 }
                                             ]
                                         }
