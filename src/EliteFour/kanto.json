@@ -245,17 +245,9 @@
                                 },
                                 {
                                     "Description": "and you get a Life Orb, switch to Blissey Trick then switch to Chandelure 5x Calm Mind + X.Speed"
-                                }
-                            ]
-                        },
-                        {
-                            "Description": "if opponent uses Surf",
-                            "Steps": [
-                                {
-                                    "Description": "and you get a Choice Scarf, switch to Poliwrath Belly Drum + X.Speed"
                                 },
                                 {
-                                    "Description": "and you get a Rocky Helmet, switch to Poliwrath X.Speed + Belly Drum"
+                                    "Description": "and you get a Life Orb, switch to Blissey Trick then switch to Chandelure 5x Calm Mind + X.Speed"
                                 }
                             ]
                         },
@@ -266,7 +258,11 @@
                             "Description": "if opponent switches into Claydol, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "if opponent switches into Dragonite, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent switches into Dragonite, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed",
+                            "Steps": [
+                                {
+                                    "Description": "If opponent swaps into Slowbro during setup, continue to setup with X.Speed however ensure Poliwrath can survive ExtremeSpeed from Raichu. AI will continue trying to burn."
+                                }]
                         },
                         {
                             "Description": "if opponent switches into Exeggutor, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
