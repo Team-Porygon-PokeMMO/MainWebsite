@@ -1077,7 +1077,7 @@
                                     "Description": "if it uses Fire Blast, switch to Blissey and use Stealth Rock. Switch to Chandelure then switch to the second Metagross and use Trick. Switch back into Chandelure 3x Calm Mind + X.Speed."
                                 },
                                 {
-                                    "Description": "if it uses Flamethrower, switch to Chandelure. Then switch to Blissey. Use Trick. Switch back to Chandelure 4x Calm Mind + X.Speed",
+                                    "Description": "if it uses Flamethrower, switch to Chandelure. Then switch to Blissey. Use Trick.",
                                     "Steps": [
                                         {
                                             "Description": "If Entei comes in, Switch back to Chandelure 4x Calm Mind + X.Speed"
