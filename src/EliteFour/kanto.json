@@ -245,9 +245,6 @@
                                 },
                                 {
                                     "Description": "and you get a Life Orb, switch to Blissey Trick then switch to Chandelure 5x Calm Mind + X.Speed"
-                                },
-                                {
-                                    "Description": "and you get a Life Orb, switch to Blissey Trick then switch to Chandelure 5x Calm Mind + X.Speed"
                                 }
                             ]
                         },
@@ -1436,7 +1433,7 @@
                                     ]
                                 },
                                 {
-                                    "Description": "if opponent uses Thunderbolt, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
+                                    "Description": "if opponent uses Thunderbolt, switch to Excadrill then 2x Swords Dance + X.Speed"
                                 },
                                 {
                                     "Description": "if opponent uses Will-O-Wisp, switch to Blissey",
@@ -1549,7 +1546,7 @@
                                     "Description": "if opponent uses Fire Blast, switch to Chandelure: 2x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "if opponent uses Fire Punch, switch to Chandelure: 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent uses Fire Punch, switch to Poliwrath Belly drum + X.Speed (Heal status if Poli gets burned)"
                                 }
                             ]
                         }
@@ -2479,7 +2476,20 @@
                             "Description": "Stealth Rock"
                         },
                         {
-                            "Description": "if opponent stays, let it die then send in the second Metagross and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent stays, let it die then send in the second Metagross and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed",
+                            "Steps": [
+                        {
+                            "Description": "If opponent missed, switch to Blissey. Use trick then switch to Chandelure.",
+                            "Steps": [
+                        {
+                            "Description": "if opponent sends out Rhyperior/Poliwrath/Sandlash, 2x Calm Mind + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent sends out Machamp,3x Calm Mind + X.Speed"
+                        }
+                    ]
+                        }
+                    ]
                         },
                         {
                             "Description": "if opponent switches out into Rhyperior, switch to Chandelure then switch to Metagross and use Trick. Switch back into Chandelure 2x Calm Mind + X.Speed"
