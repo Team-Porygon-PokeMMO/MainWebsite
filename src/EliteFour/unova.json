@@ -167,6 +167,9 @@
                                                             "Description": "if you get a Sitrus Berry, switch to Chandelure 3x Calm Mind + X.Speed."
                                                         }
                                                     ]
+                                                },
+                                                {
+                                                    "Description": "if it uses Fire Punch, switch to Chandelure 3x Calm Mind + X.Speed."
                                                 }
                                             ]
                                         },
@@ -294,7 +297,7 @@
                     "Name": "Gengar",
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey and use Stealth Rock. Switch to Chandelure, then switch to Excadrill and kill it with Earthquake. Switch back into Chandelure 2x Calm Mind + X.Speed (use Shadow Ball vs Gengar)."
+                            "Description": "Switch to Blissey and use Trick then Stealth Rock. Switch to Chandelure, 2x Calm Mind + X.Speed (use Shadow Ball vs Gengar)."
                         }
                     ]
                 },
@@ -793,7 +796,7 @@
                     "Name": "Krookodile",
                     "Steps": [
                         {
-                            "Description": "Switch to Excadrill: Stealth Rock + Swords Dance + X.Speed"
+                            "Description": "Switch to Excadrill: Stealth Rock + Swords Dance"
                         }
                     ]
                 },
@@ -859,7 +862,7 @@
                                     "Description": "if it uses any other move, switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed.",
                                     "Steps": [
                                         {
-                                            "Description": "if it switches into Tyranitar, switch to the second Metagross and use Trick. Switch to Poliwrath: Belly Drum + X.Speed."
+                                            "Description": "if it switches into Tyranitar, switch to the second Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed."
                                         }
                                     ]
                                 },
@@ -1728,7 +1731,7 @@
                     "Name": "Staraptor",
                     "Steps": [
                         {
-                            "Description": "if it has Intimidate, switch to Chandelure 6x Calm Mind + X.Speed."
+                            "Description": "if it has Intimidate, switch to Chandelure 6x Calm Mind"
                         },
                         {
                             "Description": "if it doesn't, use Trick;",
@@ -1833,15 +1836,10 @@
                             "Description": "Stealth Rock;",
                             "Steps": [
                                 {
-                                    "Description": "if it uses Low Kick, switch to Chandelure 4x Calm Mind;",
-                                    "Steps": [
-                                        {
-                                            "Description": "if Absol uses Sucker Punch and KO'es Chandelure, send out Blissey and use Trick. Revive Chandelure, then set up again."
-                                        }
-                                    ]
+                                    "Description": "if it uses Low Kick, switch to Chandelure 4x Calm Mind;"
                                 },
                                 {
-                                    "Description": "if it switches into Seismitoad, switch to Chandelure, then switch to Metagross. Switch back into Chandelure 4x Calm Mind."
+                                    "Description": "if it switches into Seismitoad, switch to Chandelure, then switch to Metagross. Use Trick. Switch back into Chandelure 4x Calm Mind."
                                 }
                             ]
                         }
@@ -2149,7 +2147,7 @@
                             "Description": "if it has Moxie, use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if you get a Life Orb, switch to Poliwrath, then switch to the second Metagross and use Trick. Use Stealth Rock, then switch to Chandelure 3x Calm Mind + X.Speed."
+                                    "Description": "if you get a Life Orb, switch to Poliwrath, then switch to the second Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed."
                                 },
                                 {
                                     "Description": "if you get a Wacan Berry, use Stealth Rock;",

@@ -56,7 +56,7 @@
                             ]
                         },
                         {
-                            "Description": "if opponent switches out into Chansey, use Stealth Rock then switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Chansey, switch to Chandelure 5x Calm Mind + X.Speed"
                         },
                         {
                             "Description": "if opponent switches into Dragonite, use Stealth Rock;",
@@ -238,16 +238,21 @@
                             ]
                         },
                         {
-                            "Description": "if opponent uses Hydro Pump",
+                            "Description": "If opponent uses Hydro Pump, use Stealth Rock.",
                             "Steps": [
                                 {
-                                    "Description": "and you get a Choice Specs, switch to Poliwrath Belly Drum + X.Speed"
+                                    "Description": "If opponent stayed, switch to Poliwrath, Belly Drum + X Speed."
                                 },
                                 {
-                                    "Description": "and you get a Life Orb, switch to Blissey Trick then switch to Chandelure 5x Calm Mind + X.Speed"
+                                    "Description": "If opponents attack missed",
+                                    "Steps": [
+                                {
+                                    "Description": "and opponent switched into Claydol, then switch to Chandelure 3x Calm Mind + X Speed."
                                 },
                                 {
-                                    "Description": "and you get a Life Orb, switch to Blissey Trick then switch to Chandelure 5x Calm Mind + X.Speed"
+                                    "Description": "and opponent switched into Dragonite, switch to 2nd Metagross and use Trick. Then switch to Poliwrath, Belly Drum + X Speed."
+                                }
+                            ]
                                 }
                             ]
                         },
@@ -1162,7 +1167,7 @@
                             "Description": "Stealth Rock"
                         },
                         {
-                            "Description": "if opponent switches out into Krookodile, switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Krookodile, switch to Chandelure 3x Calm Mind + X.Speed (Note to Flamethrower Gengar if Houndoom is not dead)"
                         },
                         {
                             "Description": "if opponent switches out into Rotom-W, switch to Blissey then use Softboiled. Switch to Chandelure 3x Calm Mind + X.Speed"
@@ -1309,7 +1314,12 @@
                             "Description": "if opponent has Moxie, switch to Excadrill using Stealth Rock then 2x Swords Dance + X.Speed (EQ Gengar)"
                         },
                         {
-                            "Description": "if opponent has Intimidate, use Trick then switch to Excadrill using Stealth Rock. Switch to Chandelure 3x Calm Mind + X.Speed (if Houndoom is not dead, use Flamethrower vs. Gengar)"
+                            "Description": "if opponent has Intimidate, use Trick then switch to Excadrill using Stealth Rock. Switch to Chandelure 3x Calm Mind + X.Speed (if Houndoom is not dead, use Flamethrower vs. Gengar)",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches to Mandibuzz during setup, switch to Blissey and Trick. Switch to Chandelure 3x Calm Mind + X.Speed (If Houndoom comes out first, use Shadow Ball to kill Gengar. If Houndoom doesn't come out, use Flamethrower to kill Gengar.)"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -1436,7 +1446,7 @@
                                     ]
                                 },
                                 {
-                                    "Description": "if opponent uses Thunderbolt, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
+                                    "Description": "if opponent uses Thunderbolt, switch to Excadrill then 2x Swords Dance + X.Speed"
                                 },
                                 {
                                     "Description": "if opponent uses Will-O-Wisp, switch to Blissey",
@@ -1549,7 +1559,7 @@
                                     "Description": "if opponent uses Fire Blast, switch to Chandelure: 2x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "if opponent uses Fire Punch, switch to Chandelure: 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent uses Fire Punch, switch to Poliwrath Belly drum + X.Speed (Heal status if Poli gets burned)"
                                 }
                             ]
                         }
@@ -1596,10 +1606,18 @@
                                     "Description": "if opponent switches out into Eelektross, Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "if opponent switches out into Hydreigon, use Stealth Rock then switch to Blissey and use Trick. Switch to Chandelure: 4x Calm Mind + X.Speed",
+                                    "Description": "if Hydreigon",
                                     "Steps": [
                                         {
-                                            "Description": "if opponent switches out into Hydreigon again, switch to Blissey and use Trick. Switch to Chandelure: 4x Calm Mind + X.Speed"
+                                            "Description": "Existing Solve: if opponent switches out into Hydreigon, use Stealth Rock then switch to Blissey and use Trick. Switch to Chandelure: 4x Calm Mind + X.Speed",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if opponent switches out into Hydreigon again, switch to Blissey and use Trick. Switch to Chandelure: 4x Calm Mind + X.Speed"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "Experimental Solve: if opponent switches out into Hydreigon, switch to Poliwrath, X Sp. Def then Belly Drum + X Speed" 
                                         }
                                     ]
                                 }
@@ -1832,7 +1850,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, Stealth Rock and then switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "Use Trick, Stealth Rock and then switch to Poliwrath Belly Drum + X.Speed (Stay if Gyarados switches out to Steelix, continue setting up. Be Mindful of crit chance risk)"
                         }
                     ]
                 },
@@ -2234,7 +2252,7 @@
                             ]
                         },
                         {
-                            "Description": "if opponent switches out into Leafeon, use Stealth Rock and switch to Chandelure Flamethrower. It sends out Nidoking, so switch to Excadrill then 3x Swords Dance + X.Speed"
+                            "Description": "if opponent switches out into Leafeon, use Stealth Rock and switch to Chandelure Flamethrower. It sends out Nidoking, so switch to Excadrill then 2x Swords Dance + X.Speed"
                         },
                         {
                             "Description": "if opponent switches out into Umbreon, use Stealth Rock then  switch to Blissey and use Trick. Switch to Chandelure 5x Calm Mind + X.Speed",
@@ -2479,7 +2497,20 @@
                             "Description": "Stealth Rock"
                         },
                         {
-                            "Description": "if opponent stays, let it die then send in the second Metagross and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent stays, let it die then send in the second Metagross and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed",
+                            "Steps": [
+                        {
+                            "Description": "If opponent missed, switch to Blissey. Use trick then switch to Chandelure.",
+                            "Steps": [
+                        {
+                            "Description": "if opponent sends out Rhyperior/Poliwrath/Sandlash, 2x Calm Mind + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent sends out Machamp,3x Calm Mind + X.Speed"
+                        }
+                    ]
+                        }
+                    ]
                         },
                         {
                             "Description": "if opponent switches out into Rhyperior, switch to Chandelure then switch to Metagross and use Trick. Switch back into Chandelure 2x Calm Mind + X.Speed"
@@ -2648,6 +2679,9 @@
                         },
                         {
                             "Description": "if opponent uses Scald, use Stealth Rock. Switch to Blissey and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent switches to Sandslash, Chandelure 3x Calm Mind + X.Speed"
                         }
                     ]
                 },

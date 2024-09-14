@@ -93,7 +93,7 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "if it uses Superpower, switch to Chandelure and use Flamethrower to kill it. Escavalier will come out next. Switch to Poliwrath Belly Drum + X.Speed sweep"
+                            "Description": "if it uses Superpower, use Stealth Rock Switch. Switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
                             "Description": "if it uses X-Scissor, switch to Poliwrath X.Defend + X.Speed. Use an Energy Root/Hyper Potion then use Belly Drum and sweep."
@@ -675,7 +675,7 @@
                             "Description": "Use Trick, then switch to Excadrill 3x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "if it switches out into Amoonguss, switch to Blissey and use Trick. Let Rhyperior come in and use Protect, then switch back to Excadrill 3x Swords Dance + X.Speed. Let Excadrill tank ROck Blast. Use Iron Head vs. Ginger."
+                            "Description": "if it switches out into Amoonguss, switch to Blissey and use Trick. Let Rhyperior come in and use Protect, then switch back to Excadrill 3x Swords Dance + X.Speed. Let Excadrill tank ROck Blast. Use Iron Head vs. Gengar."
                         }
                     ]
                 },
@@ -684,7 +684,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey and use Stealth Rock. (USE IRON HEAD/SHADOW BALL VS. GINGER)"
+                            "Description": "Switch to Blissey and use Stealth Rock. (USE IRON HEAD/SHADOW BALL VS. Gengar)"
                         },
                         {
                             "Description": "if it used Shadow Ball",
@@ -734,7 +734,7 @@
                             ]
                         },
                         {
-                            "Description": "if it used Will-O-Wisp, switch to Chandelure then switch back to Metagross and use Trick. Use Stealth Rock then switch back into Chandelure 4x Calm Mind + X.Speed. Use Shadow Ball vs. Ginger"
+                            "Description": "if it used Will-O-Wisp, switch to Chandelure then switch back to Metagross and use Trick. Use Stealth Rock then switch back into Chandelure 4x Calm Mind + X.Speed. Use Shadow Ball vs. Gengar"
                         },
                         {
                             "Description": "if opponent swaps to Amoongus, use Trick. Excadrill 3x Swords Dance + X.Speed"
@@ -841,7 +841,7 @@
                             "Description": "if Leftovers, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "Use Iron Head vs. Ginger"
+                                    "Description": "Use Iron Head vs. Gengar"
                                 }
                             ]
                         },
@@ -2298,7 +2298,13 @@
                     "Steps": [
                         {
                             "Description": "Use Stealth Rock then switch to Excadrill 2x Swords Dance"
+                            
+                        },
+                        {
+                            "Description": "if it switches into Gastrodon during setup, switch to Blissey, Trick then Excadrill 2x Swords Dance"
+                            
                         }
+
                     ]
                 },
                 {
@@ -2315,7 +2321,20 @@
                             "Description": "if it switches to Eelektross, switch to Chandelure 4x Calm Mind + X.Speed + X.Defend"
                         },
                         {
-                            "Description": "if it switches to Garchomp, switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if it switches to Garchomp",
+                            "Steps": [
+                                {
+                                    "Description": "If you get rocket helmet, switch to Excadrill and Stealth Rock 2x Swords Dance + X.Speed",
+                                    "Steps": [
+                                        {
+                                            "Description": "If if swaps to Rayquaza during setup, switch to the scarfless Metagross and let it die. Switch to the second Metagross and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if NO rocket helmet, switch to Excadrill 2x Swords Dance + X.Speed"
+                                }
+                            ]
                         },
                         {
                             "Description": "if it switches to Lapras, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed",
@@ -2418,6 +2437,9 @@
                                             ]
                                         }
                                     ]
+                                },
+                                {
+                                    "Description": "if it switches to Garchomp, Switch into 2x Swords Dance + X Speed."
                                 }
                             ]
                         }

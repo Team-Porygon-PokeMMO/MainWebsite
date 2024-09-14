@@ -515,7 +515,7 @@
                             "Description": "if opponent does not switch, switch to Chandelure and use Flamethrower to remove Sharpedo Focus Sash. Switch to Blissey and use Trick to lock Waterfall. Switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "if opponent switches into Rhyperior/Tangrowth, switch to Excadrill Stealth Rock, then Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches into Rhyperior/Tangrowth, switch to Excadrill, then Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -910,7 +910,12 @@
                             "Description": "Use Trick."
                         },
                         {
-                            "Description": "if opponent uses Fire Blast, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Fire Blast, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed",
+                            "Steps": [
+                                {
+                                    "Description": "If opponent switches to Gliscor during set up, switch to Excadrill. 2x Swords Dance + X.Speed (EQ Skuntank to avoid chip damage from Aftermath)"
+                                }
+                            ]
                         },
                         {
                             "Description": "if opponent switches out into Gliscor, then switch to Excadrill Stealth Rock then Swords Dance + X.Speed"
@@ -1243,7 +1248,12 @@
                             "Description": "if opponent uses Drain Punch/you get Leftovers and it uses Dynamic Punch, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "if opponent switches to Salamence, switch immediately to Excadrill 3x Swords Dance + X.Speed"
+                            "Description": "if opponent switches to Salamence, switch immediately to Excadrill 3x Swords Dance + X.Speed",
+                            "Steps": [
+                                {
+                                    "Description": "switch immediately to Excadrill 3x Swords Dance + X.Speed"
+                                }
+                            ]
                         },
                         {
                             "Description": "if opponent switches switches to Steelix and;",
@@ -1924,13 +1934,13 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Stealth Rock"
+                            "Description": "Trick"
                         },
                         {
-                            "Description": "if it stays, switch to Blissey and use Trick as it switches to Rhyperior. Switch to Excadrill 3x Swords Dance + X.Speed"
+                            "Description": "if it stays, switch to Blissey and use Stealth Rock as it switches to Rhyperior. Switch to Excadrill 3x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "if it stays, switches to Rhyperior, send in Excadrill then switch to Blissey and use Trick to lock Earthquake. Switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if it switches to Rhyperior, send in Excadrill, Stealth Rock 3x Swords Dance X.Speed"
                         }
                     ]
                 },
@@ -2158,12 +2168,7 @@
                             ]
                         },
                         {
-                            "Description": "if you get a Life Orb, immediately switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
-                            "Steps": [
-                                {
-                                    "Description": "if opponent switches into Lapras while you set up, switch to Poliwrath Belly Drum + X.Speed"
-                                }
-                            ]
+                            "Description": "if you get a Life Orb, switch to Excadrill Stealth Rock. Switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
                             "Description": "if opponent use Thunder Wave, click Earthquake. Then switch to Excadrill 2x Swords Dance + X.Speed",
