@@ -20,7 +20,7 @@ export default {
         },
         getIfExpandable(item: Tip) {
             if (item?.Tips?.length > 0) {
-                return item?.IsVisible ? '🔽' : '▶️'
+                return item?.IsVisible ? '▼ ' : '▶️'
             }
             return ''
         },
@@ -39,36 +39,32 @@ export default {
 };
 </script>
 
-<style scoped>
-.link {
-    color: rgb(51, 40, 211);
-    cursor: pointer;
-}
-</style>
-
 <template>
     <div :style="getBackgroundColorStyling()">
-        <ul v-for="item in items" class="relative">
-            <div class="absolute left-0 expandable" @click="toggleView(item)"
-                :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">{{
-                    getIfExpandable(item) ? item.IsVisible ? '🔽' : '▶️' : '' }}
-            </div>
-            <li class="link" v-if="item.Url">
-                <a :href="item.Url ?? ''" target="_blank">{{ item.Name }}</a>
-            </li>
-            <li class="ml-6" v-if="getIfExpandable(item)">
-                <span @click="toggleView(item)" :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">
+        <div v-for="item in items"
+            class="relative text-cool-50 text-lg tracking-tight sm:text-sm md:text-base lg:text-lg">
+            <div class="border py-0.25 px-0.5 rounded my-1 border-cool-700">
+                <div class="absolute left-1.5" @click="toggleView(item)"
+                    :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">{{
+                        getIfExpandable(item) ? item.IsVisible ? '▼' : '▶️' : '' }}
+                </div>
+                <div class="link ml-2 text-blue-600" v-if="item.Url">
+                    <a :href="item.Url ?? ''" target="_blank">{{ item.Name }}</a>
+                </div>
+                <div class="ml-6" v-if="getIfExpandable(item)">
+                    <span @click="toggleView(item)" :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">
+                        {{ item.Description }}
+                    </span>
+                </div>
+                <div v-else class="ml-2">
                     {{ item.Description }}
-                </span>
-            </li>
-            <li v-else>
-                {{ item.Description }}
-            </li>
-            <div class="ml-12 h-4 rounded-full" v-show="getIfExpandable(item) && !item.IsVisible"
-                @click="toggleView(item)"
-                :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}, getMoreStepsBackgroundColorStyling()]">
+                </div>
+                <div class="ml-8 mb-1 h-2 text-center items-center rounded-full bg-blue-800 show-more hover:animate-pulse"
+                    v-show="getIfExpandable(item) && !item.IsVisible" @click="toggleView(item)"
+                    :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}, getMoreStepsBackgroundColorStyling()]">
+                </div>
+                <Tips class="ml-4" :items="item?.Tips" v-if="item?.Tips?.length > 0" v-show="item.IsVisible" />
             </div>
-            <Tips class="ml-8" :items="item?.Tips" v-if="item?.Tips?.length > 0" v-show="item.IsVisible" />
-        </ul>
+        </div>
     </div>
 </template>

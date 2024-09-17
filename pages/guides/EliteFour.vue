@@ -57,37 +57,8 @@ export default {
 </script>
 
 <style>
-.menu-label {
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.text-label{
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.menu-list {
-    list-style: none;
-}
-
-.menu-list a {
-    display: block;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-.strong {
-    font-weight: bold;
-}
-
 .main {
     min-height: 100%;
-}
-
-.pointer {
-    cursor: pointer;
 }
 
 /* Responsive styles */
@@ -108,9 +79,9 @@ export default {
             <h2>Elite Four</h2>
         </div>
         <div class="menu p-4">
-            <p class="menu-label pointer" @click="toggleTips()">
-                Tips {{ tipsVisible ?
-                    "🔽" : "▶️" }}
+            <p class="menu-label cursor-pointer text-lg" @click="toggleTips()">
+                {{ tipsVisible ?
+                    "▼" : "▶️" }} Tips
             </p>
             <ul class="menu-list text-label" v-show="tipsVisible">
                 <Tips :items="tips" />
