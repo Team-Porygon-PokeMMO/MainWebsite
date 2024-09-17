@@ -51,8 +51,8 @@ export default {
 
 <template>
     <div class="text-left" :style="getBackgroundColorStyling()">
-        <ul v-for="item in items" class="menu-list menu-label relative">
-            <div class="absolute left-0 expandable" @click="toggleView(item)"
+        <ul v-for="item in items" class="relative">
+            <div class="absolute left-1 expandable" @click="toggleView(item)"
                 :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">{{
                     getIfExpandable(item) ? item.IsVisible ? '🔽' : '▶️' : '' }}
             </div>

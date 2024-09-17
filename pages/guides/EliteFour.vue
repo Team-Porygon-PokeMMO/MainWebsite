@@ -86,10 +86,6 @@ export default {
     min-height: 100%;
 }
 
-.pointer {
-    cursor: pointer;
-}
-
 /* Responsive styles */
 @media (max-width: 768px) {
     .menu {
@@ -105,13 +101,13 @@ export default {
 <template>
     <div class="m-4 main">
         <div class="p-2">
-            <h2>Elite Four</h2>
+            <h3>Elite Four</h3>
         </div>
-        <div class="menu p-4">
-            <p class="menu-label pointer" @click="toggleTips()">
+        <div class="menu p-2">
+            <div class="menu-label cursor-pointer" @click="toggleTips()">
                 Tips {{ tipsVisible ?
                     "🔽" : "▶️" }}
-            </p>
+            </div>
             <ul class="menu-list text-label" v-show="tipsVisible">
                 <Tips :items="tips" />
             </ul>

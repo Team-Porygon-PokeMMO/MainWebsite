@@ -45,13 +45,6 @@ export default {
 </script>
 
 <style scoped>
-div.regions {
-    padding: 2rem 1rem;
-    margin: 0.1rem;
-    cursor: pointer;
-    border: 1px solid black;
-}
-
 div.regions:hover {
     background-color: rgba(75, 16, 16, 0.9);
 }
@@ -67,10 +60,10 @@ div.regions:hover {
 
 <template>
     <div class="text-center">
-        <div class="grid py-1 lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-4">
-            <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }"
-                class="regions text-label" :style="getImageStyling(item)">
-                <span class="name p-0.25">{{ item.Name }}</span>
+        <div class="grid py-1 lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-6 lg:py-0.5 cursor-pointer">
+            <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }" class="sm:text-sm sm:py-2 border border-black m-0.25 md:text-base md:py-3 lg:py-5 regions"
+                :style="getImageStyling(item)">
+                <span class="name">{{ item.Name }}</span>
             </div>
         </div>
         <Steps v-for="item in items" :items="item.Steps" v-show="item.IsVisible" />
