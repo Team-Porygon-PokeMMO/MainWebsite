@@ -20,7 +20,7 @@ export default {
         },
         getIfExpandable(item: Tip) {
             if (item?.Tips?.length > 0) {
-                return item?.IsVisible ? '▼ ' : '▶️'
+                return item?.IsVisible ? '▼ ' : '▶'
             }
             return ''
         },
@@ -46,7 +46,7 @@ export default {
             <div class="border py-0.25 px-0.5 rounded my-1 border-cool-700">
                 <div class="absolute left-1.5" @click="toggleView(item)"
                     :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">{{
-                        getIfExpandable(item) ? item.IsVisible ? '▼' : '▶️' : '' }}
+                        getIfExpandable(item) ? item.IsVisible ? '▼' : '▶' : '' }}
                 </div>
                 <div class="link ml-2 text-blue-600" v-if="item.Url">
                     <a :href="item.Url ?? ''" target="_blank">{{ item.Name }}</a>

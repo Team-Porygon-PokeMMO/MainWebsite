@@ -81,7 +81,7 @@ export default {
         <div class="menu p-4">
             <p class="menu-label cursor-pointer text-lg" @click="toggleTips()">
                 {{ tipsVisible ?
-                    "▼" : "▶️" }} Tips
+                    "▼" : "▶" }} Tips
             </p>
             <ul class="menu-list text-label" v-show="tipsVisible">
                 <Tips :items="tips" />

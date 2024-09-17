@@ -85,7 +85,7 @@ export default {
             this.active = !this.active
         },
         getIfExpandable() {
-            return this.active ? '🔽' : '▶️'
+            return this.active ? '▼' : '▶'
         },
         getCredit(tag: string) {
             if (this.credits[tag].Tag) {
