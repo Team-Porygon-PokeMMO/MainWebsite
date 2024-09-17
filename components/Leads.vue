@@ -30,8 +30,7 @@ export default {
     },
     methods: {
         setActive(item: Lead) {
-            this.items.forEach(i => i.IsVisible = false)
-            item.IsVisible = !item.IsVisible
+            this.items.forEach((i) => i !== item ? i.IsVisible = false : i.IsVisible = !item.IsVisible);
         },
         getImageStyling(item: Lead) {
             let imgNumber: string = this.nameToDex[item.Name]
@@ -68,14 +67,12 @@ div.regions:hover {
 
 <template>
     <div class="text-center">
-        <h2 class="p-1">Leads</h2>
-        <div class="grid grid-cols-8">
+        <div class="grid py-1 lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-4">
             <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }"
                 class="regions text-label" :style="getImageStyling(item)">
                 <span class="name p-0.25">{{ item.Name }}</span>
             </div>
         </div>
-        <h2 class="p-1">Steps</h2>
         <Steps v-for="item in items" :items="item.Steps" v-show="item.IsVisible" />
     </div>
 </template>

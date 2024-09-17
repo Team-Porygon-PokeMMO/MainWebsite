@@ -27,8 +27,7 @@ export default {
     },
     methods: {
         setActive(item: Trainer) {
-            this.items.forEach(i => i.IsVisible = false)
-            item.IsVisible = !item.IsVisible
+            this.items.forEach((i) => i !== item ? i.IsVisible = false : i.IsVisible = !item.IsVisible);
         },
         getImageStyling(item: Trainer) {
             if (item.Image) {
@@ -68,10 +67,9 @@ div.regions:hover {
 
 <template>
     <div class="text-center">
-        <h2 class="p-1">Trainers</h2>
-        <div class="grid grid-cols-5">
-            <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }" class="regions text-label"
-                :style="getImageStyling(item)">
+        <div class="grid sm:grid-cols-5">
+            <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }"
+                class="regions text-label" :style="getImageStyling(item)">
                 <span class="name">{{ item.Name }}</span>
             </div>
         </div>
