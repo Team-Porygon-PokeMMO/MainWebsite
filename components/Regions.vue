@@ -73,7 +73,6 @@ div.regions:hover {
                 <span>{{ item.Name }}</span>
             </div>
         </div>
-        <UDivider class="my-2" />
         <Trainers v-for="item in items" :items="item.GymTrainers" v-show="item.IsVisible" />
     </div>
 </template>

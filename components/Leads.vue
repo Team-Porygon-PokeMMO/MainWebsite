@@ -60,13 +60,13 @@ div.regions:hover {
 
 <template>
     <div class="text-center">
+        <UDivider class="my-2" />
         <div class="grid lg:grid-cols-12 md:grid-cols-8 sm:grid-cols-6 lg:py-0.5 grid-cols-4 cursor-pointer">
             <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }" class="py-1 sm:text-sm sm:py-2 border border-black m-0.25 md:text-base md:py-3 lg:py-5 regions"
                 :style="getImageStyling(item)">
                 <span class="name">{{ item.Name }}</span>
             </div>
         </div>
-        <UDivider class="my-2" />
-        <Steps v-for="item in items" :items="item.Steps" v-show="item.IsVisible" />
+        <Steps class="mt-4" v-for="item in items" :items="item.Steps" v-show="item.IsVisible">test</Steps>
     </div>
 </template>
