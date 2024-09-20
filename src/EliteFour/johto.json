@@ -576,7 +576,15 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
+                            "Description": "Use Trick;",
+                            "Steps": [
+                                {
+                                    "Description": "if it uses Thunderbolt, switch into Excadrill: Stealth Rock + 3x Swords Dance + X.Speed."
+                                },
+                                {
+                                    "Description": "if it uses Flamethrower, switch into Chandelure: 6x Calm Mind + X.Speed (Disguised Zoroark)."
+                                }
+                            ]
                         }
                     ]
                 },
