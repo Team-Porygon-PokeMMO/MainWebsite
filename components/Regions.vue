@@ -34,8 +34,7 @@ export default {
     },
     methods: {
         setActive(item: Region) {
-            this.items.forEach(i => i.IsVisible = false)
-            item.IsVisible = !item.IsVisible
+            this.items.forEach((i) => i !== item ? i.IsVisible = false : i.IsVisible = !item.IsVisible);
         },
         getImageStyling(item: Region) {
             if (item.Image) {
@@ -53,13 +52,6 @@ export default {
 </script>
 
 <style scoped>
-div.regions {
-    padding: 2rem 1rem;
-    margin: 0.1rem;
-    cursor: pointer;
-    border: 1px solid black;
-}
-
 div.regions:hover {
     background-color: rgba(87, 9, 9, 0.9);
 }
@@ -74,11 +66,11 @@ div.regions:hover {
 </style>
 
 <template>
-    <div class="text-center mt-4">
-        <div class="grid grid-cols-5">
+    <div class="text-center">
+        <div class="grid grid-cols-5 lg:py-0.5 cursor-pointer">
             <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }"
-                class="regions text-label" :style="getImageStyling(item)">
-                <span class="name">{{ item.Name }}</span>
+                class="py-1 sm:text-sm sm:py-2 border border-black m-0.25 md:text-base md:py-3 lg:py-5 regions" :style="getImageStyling(item)">
+                <span>{{ item.Name }}</span>
             </div>
         </div>
         <Trainers v-for="item in items" :items="item.GymTrainers" v-show="item.IsVisible" />

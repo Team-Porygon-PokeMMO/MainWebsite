@@ -76,7 +76,7 @@ export default {
 <template>
     <div class="m-4 main">
         <div class="p-2">
-            <h2>Elite Four</h2>
+            <h3>Elite Four</h3>
         </div>
         <div class="menu p-4">
             <p class="menu-label cursor-pointer text-lg" @click="toggleTips()">

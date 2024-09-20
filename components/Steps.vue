@@ -47,7 +47,7 @@ export default {
 
 <template>
     <div class="text-left">
-        <div v-for="item in items" class="relative text-cool-50 text-lg tracking-tight sm:text-sm md:text-base lg:text-lg">
+        <div v-for="item in items" class="relative text-cool-50 tracking-tight text-sm md:text-base lg:text-lg">
             <div class="border py-0.25 px-0.5 rounded my-1 border-cool-700">
                 <div class="absolute left-1.5" @click="toggleView(item)"
                     :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">{{
