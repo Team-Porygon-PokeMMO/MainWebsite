@@ -4,6 +4,13 @@ import { useRouter } from 'vue-router';
 
 const router = useRouter();
 
+interface Link {
+    label: string,
+    to: string,
+    icon: string,
+    sublinks?: Link[]
+}
+
 // Define left and right links based on your original links array
 const leftLinks = [
     {
@@ -15,14 +22,23 @@ const leftLinks = [
         icon: 'i-heroicons-book-open',
     },
     {
-        label: 'Current Time', to: '/utilities/DayAndNightCycle',
-        icon: 'i-heroicons-clock',
-    },
-    {
-        label: 'Hatching', to: '/utilities/HatchCycleTimer',
-        icon: 'i-heroicons-question-mark-circle',
+        label: 'Utilities',
+        icon: 'i-heroicons-circle-stack',
+        sublinks: [
+            {
+                label: 'Current Time', to: '/utilities/DayAndNightCycle',
+            },
+            {
+                label: 'Hatching', to: '/utilities/HatchCycleTimer',
+                icon: 'i-heroicons-question-mark-circle',
+            },
+            {
+                label: 'Rock Smash Tracker',
+                to: '/utilities/RockSmash',
+            }
+        ]
     }
-];
+] as Link[]
 
 const rightLinks = [
     {
@@ -53,7 +69,7 @@ const rightLinks = [
         label: 'Contact Us', to: 'https://discord.gg/ERegmbRSyz',
         icon: 'i-heroicons-bars-3-bottom-right',
     }
-] as Link[];
+] as Link[]
 
 function handleClick(sublink: any) {
     if (sublink.to) {
@@ -95,10 +111,6 @@ function handleClick(sublink: any) {
     color: inherit;
 }
 
-.nav-button {
-    /* Add any additional styles specific to buttons */
-}
-
 .button-size:hover {
     background-color: rgba(0, 0, 0, 0.1);
     /* Hover effect */
@@ -116,23 +128,23 @@ function handleClick(sublink: any) {
                 <!-- Internal Links: NuxtLink without target="_blank" -->
                 <NuxtLink v-if="!link.sublinks && link.to.startsWith('/')" :to="link.to"
                     class="menu-link nav-button button-size" exact-active-class="bg-gray-700">
-                    <Icon :name="link.icon" class="flex-none w-5 ml-1 text-gray-400" aria-hidden="true" />
+                    <Icon :name="link.icon" class="flex-none w-5 mr-0.5 text-gray-400" aria-hidden="true" />
                     {{ link.label }}
                 </NuxtLink>
 
                 <!-- External Links -->
                 <a v-else-if="!link.sublinks && !link.to.startsWith('/')" :href="link.to" target="_blank"
                     rel="noopener noreferrer" class="menu-link nav-button button-size">
-                    <Icon :name="link.icon" class="flex-none w-5 ml-1 text-gray-400" aria-hidden="true" />
+                    <Icon :name="link.icon" class="flex-none w-5 mr-0.5 text-gray-400" aria-hidden="true" />
                     {{ link.label }}
                 </a>
 
                 <!-- Popover for Sublinks -->
                 <Popover v-else class="relative" as="div">
                     <PopoverButton class="menu-link nav-button button-size flex items-center">
-                        <Icon :name="link.icon" class="flex-none w-5 ml-1 text-gray-400" aria-hidden="true" />
+                        <Icon :name="link.icon" class="flex-none w-5 mr-0.5 text-gray-400" aria-hidden="true" />
                         {{ link.label }}
-                        <Icon name="heroicons:chevron-down" class="flex-none w-5 ml-1 text-gray-400"
+                        <Icon name="heroicons:chevron-down" class="flex-none w-5 mr-0.5 text-gray-400"
                             aria-hidden="true" />
                     </PopoverButton>
 
@@ -146,10 +158,10 @@ function handleClick(sublink: any) {
                                 <!-- Handle Internal and External Sublinks -->
                                 <button v-for="childItem in link.sublinks" :key="childItem.label"
                                     @click="handleClick(childItem)"
-                                    class="relative flex p-1 m-1 leading-6 transition duration-150 rounded-panel group gap-x-4 hover:bg-gray-900 button-size">
+                                    class="relative flex leading-6 transition duration-150 rounded-panel group gap-x-4 hover:bg-gray-900 button-size">
                                     <div class="items-center justify-center flex-none rounded-button">
-                                        <Icon :name="link.icon" class="text-gray-400 items-center text-center"
-                                            aria-hidden="true" />
+                                        <Icon :name="childItem.icon ?? link.icon"
+                                            class="text-gray-400 items-center text-center" aria-hidden="true" />
                                     </div>
                                     <div class="">
                                         <p class="block font-medium text-white font-display">
@@ -170,23 +182,23 @@ function handleClick(sublink: any) {
                 <!-- Internal Links: NuxtLink without target="_blank" -->
                 <NuxtLink v-if="!link.sublinks && link.to.startsWith('/')" :to="link.to"
                     class="menu-link nav-button button-size" exact-active-class="bg-gray-700">
-                    <Icon :name="link.icon" class="flex-none w-5 ml-1 text-gray-400" aria-hidden="true" />
+                    <Icon :name="link.icon" class="flex-none w-5 mr-0.5 text-gray-400" aria-hidden="true" />
                     {{ link.label }}
                 </NuxtLink>
 
                 <!-- External Links -->
                 <a v-else-if="!link.sublinks && !link.to.startsWith('/')" :href="link.to" target="_blank"
                     rel="noopener noreferrer" class="menu-link nav-button button-size">
-                    <Icon :name="link.icon" class="flex-none w-5 ml-1 text-gray-400" aria-hidden="true" />
+                    <Icon :name="link.icon" class="flex-none w-5 mr-0.5 text-gray-400" aria-hidden="true" />
                     {{ link.label }}
                 </a>
 
                 <!-- Popover for Sublinks -->
                 <Popover v-else class="relative" as="div">
                     <PopoverButton class="menu-link nav-button button-size flex items-center">
-                        <Icon :name="link.icon" class="flex-none w-5 ml-1 text-gray-400" aria-hidden="true" />
+                        <Icon :name="link.icon" class="flex-none w-5 mr-0.5 text-gray-400" aria-hidden="true" />
                         {{ link.label }}
-                        <Icon name="heroicons:chevron-down" class="flex-none w-5 ml-1 text-gray-400"
+                        <Icon name="heroicons:chevron-down" class="flex-none w-5 mr-0.5 text-gray-400"
                             aria-hidden="true" />
                     </PopoverButton>
 
@@ -202,8 +214,8 @@ function handleClick(sublink: any) {
                                     @click="handleClick(childItem)"
                                     class="relative flex p-1 m-1 leading-6 transition duration-150 rounded-panel group gap-x-4 hover:bg-gray-900 button-size">
                                     <div class="items-center justify-center flex-none rounded-button">
-                                        <Icon :name="link.icon" class="text-gray-400 items-center text-center"
-                                            aria-hidden="true" />
+                                        <Icon :name="childItem.icon ?? link.icon"
+                                            class="text-gray-400 items-center text-center" aria-hidden="true" />
                                     </div>
                                     <div class="">
                                         <p class="block font-medium text-white font-display">
