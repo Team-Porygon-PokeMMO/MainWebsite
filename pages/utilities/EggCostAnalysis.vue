@@ -27,6 +27,17 @@
         <p><b>Ditto Box Cost:</b> ${{ dittoBoxCost }}</p>
         <p><b>Mailing Fee:</b> ${{ mailingFee }}</p>
         <p><b>30 Day Donator Status:</b> ${{ donatorStatusCost }}</p>
+        <p><b>Ratio No Donator:</b> {{ ratioNoDonator }}</p>
+        <p><b>Ratio Donator:</b> {{ ratioDonator }}</p>
+        <p><b>Ratio Donator + Shiny Charm:</b> {{ ratioDonatorShinyCharm }}</p>
+      </div>
+  
+      <h2 class="mt-6">Inputs</h2>
+      <div class="inputs-section">
+        <div class="m-2">
+          <label for="actualEggs">Actual Eggs:</label>
+          <UInput v-model.number="actualEggs" type="number" @input="updateCosts" />
+        </div>
       </div>
   
       <h2 class="mt-6">Odds</h2>
@@ -148,6 +159,10 @@
         dittoBoxCost: 240000,
         mailingFee: 1600,
         donatorStatusCost: 3450000,
+        // Ratios
+        ratioNoDonator: 0.12,
+        ratioDonator: 0.13,
+        ratioDonatorShinyCharm: 0.14,
         // Odds values
         noDonatorOdds: 30000,
         batchesNoDonator: 0,
@@ -173,6 +188,8 @@
         noDonoBought: 0,
         donoBought: 0,
         donoCharmBought: 0,
+        // User input
+        actualEggs: 0,
       };
     },
     watch: {
@@ -183,6 +200,7 @@
       mailingFee: 'updateCosts',
       dittoBoxCost: 'updateCosts',
       monthsSpent: 'updateCosts',
+      actualEggs: 'updateCosts', // Watch the actual eggs input
     },
     methods: {
       calculateTotalCost() {
@@ -216,6 +234,7 @@
         this.noDonoBought = 0;
         this.donoBought = 0;
         this.donoCharmBought = 0;
+        this.actualEggs = 0; // Reset actual eggs
       },
       updateCosts() {
         this.totalNetballCost = (this.eggs * this.netballCost) / this.netballCatchRate; // Calculate Total Netball Cost
@@ -251,7 +270,8 @@
   .fixed-costs,
   .odds-section,
   .cost-per-batch,
-  .average-total {
+  .average-total,
+  .inputs-section {
     margin-top: 20px;
   }
   .large-subtitle {
