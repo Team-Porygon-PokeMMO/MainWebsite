@@ -142,20 +142,50 @@
           <UInput v-model.number="donoCharmBought" type="number" disabled :value="donoCharmBought" />
         </div>
       </div>
+  
+      <h2 class="mt-6">Total Spent for Shiny</h2>
+      <div class="total-spent">
+        <h3 class="large-subtitle">Caught</h3>
+        <div class="m-2">
+          <label>No Dono Caught:</label>
+          <UInput v-model.number="noDonoCaughtSpent" type="number" disabled :value="noDonoCaughtSpent" />
+        </div>
+        <div class="m-2">
+          <label>Dono Caught:</label>
+          <UInput v-model.number="donoCaught" type="number" disabled :value="donoCaught" />
+        </div>
+        <div class="m-2">
+          <label>Dono + Charm Caught:</label>
+          <UInput v-model.number="donoCharmCaught" type="number" disabled :value="donoCharmCaught" />
+        </div>
+  
+        <h3 class="large-subtitle">Bought</h3>
+        <div class="m-2">
+          <label>No Dono Bought:</label>
+          <UInput v-model.number="noDonoBought" type="number" disabled :value="noDonoBought" />
+        </div>
+        <div class="m-2">
+          <label>Dono Bought:</label>
+          <UInput v-model.number="donoBought" type="number" disabled :value="donoBought" />
+        </div>
+        <div class="m-2">
+          <label>Dono + Charm Bought:</label>
+          <UInput v-model.number="donoCharmBought" type="number" disabled :value="donoCharmBought" />
+        </div>
+      </div>
     </UContainer>
   </template>
   
-  <script lang="ts">
+  <script>
   export default {
     data() {
       return {
         costPrice: 0,
         quantity: 0,
-        totalCost: null as number | null,
-        // Fixed costs
-        netballCost: 1350,
-        pokeballCost: 200,
-        shinyCharmCost: 240000,
+        totalCost: null,
+        netballCost: 2400,
+        pokeballCost: 600,
+        shinyCharmCost: 120000,
         dittoBoxCost: 240000,
         mailingFee: 1600,
         donatorStatusCost: 3450000,
@@ -201,6 +231,11 @@
       dittoBoxCost: 'updateCosts',
       monthsSpent: 'updateCosts',
       actualEggs: 'updateCosts', // Watch the actual eggs input
+    },
+    computed: {
+      noDonoCaughtSpent() {
+        return this.noDonoCaught * this.ratioNoDonator;
+      },
     },
     methods: {
       calculateTotalCost() {
@@ -271,7 +306,8 @@
   .odds-section,
   .cost-per-batch,
   .average-total,
-  .inputs-section {
+  .inputs-section,
+  .total-spent {
     margin-top: 20px;
   }
   .large-subtitle {
