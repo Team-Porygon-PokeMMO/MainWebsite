@@ -102,22 +102,35 @@
       </div>
   
       <h2 class="mt-6">Average Total Per Shiny</h2>
-<div class="average-total">
-  <h2>Caught</h2> <!-- Changed to h2 for larger subtitle -->
-  <div class="m-2">
-    <label>No Dono Caught:</label>
-    <UInput v-model.number="noDonoCaught" type="number" disabled :value="noDonoCaught" />
-  </div>
-  <div class="m-2">
-    <label>Dono Caught:</label>
-    <UInput v-model.number="donoCaught" type="number" disabled :value="donoCaught" />
-  </div>
-  <div class="m-2">
-    <label>Dono + Charm Caught:</label>
-    <UInput v-model.number="donoCharmCaught" type="number" disabled :value="donoCharmCaught" />
-  </div>
-</div>
-
+      <div class="average-total">
+        <h3 class="large-subtitle">Caught</h3>
+        <div class="m-2">
+          <label>No Dono Caught:</label>
+          <UInput v-model.number="noDonoCaught" type="number" disabled :value="noDonoCaught" />
+        </div>
+        <div class="m-2">
+          <label>Dono Caught:</label>
+          <UInput v-model.number="donoCaught" type="number" disabled :value="donoCaught" />
+        </div>
+        <div class="m-2">
+          <label>Dono + Charm Caught:</label>
+          <UInput v-model.number="donoCharmCaught" type="number" disabled :value="donoCharmCaught" />
+        </div>
+  
+        <h3 class="large-subtitle">Bought</h3>
+        <div class="m-2">
+          <label>No Dono Bought:</label>
+          <UInput v-model.number="noDonoBought" type="number" disabled :value="noDonoBought" />
+        </div>
+        <div class="m-2">
+          <label>Dono Bought:</label>
+          <UInput v-model.number="donoBought" type="number" disabled :value="donoBought" />
+        </div>
+        <div class="m-2">
+          <label>Dono + Charm Bought:</label>
+          <UInput v-model.number="donoCharmBought" type="number" disabled :value="donoCharmBought" />
+        </div>
+      </div>
     </UContainer>
   </template>
   
@@ -156,6 +169,10 @@
         noDonoCaught: 0,
         donoCaught: 0,
         donoCharmCaught: 0,
+        // Average Total Per Shiny Bought
+        noDonoBought: 0,
+        donoBought: 0,
+        donoCharmBought: 0,
       };
     },
     watch: {
@@ -168,54 +185,61 @@
       monthsSpent: 'updateCosts',
     },
     methods: {
-  calculateTotalCost() {
-    this.totalCost =
-      this.costPrice * this.quantity +
-      this.netballCost +
-      this.pokeballCost +
-      this.shinyCharmCost +
-      this.dittoBoxCost +
-      this.mailingFee +
-      this.donatorStatusCost;
-  },
-  resetFields() {
-    this.costPrice = 0;
-    this.quantity = 0;
-    this.totalCost = null;
-    this.eggs = 0;
-    this.monthsSpent = 0;
-    this.totalNetballCost = 0;
-    this.totalPokeballCost = 0;
-    this.totalBallCost = 0;
-    this.totalMailingCost = 0;
-    this.totalBatchCost = 0;
-    this.totalBatchBuyingCost = 0;
-    this.batchesNoDonator = 0;
-    this.batchesDonator = 0;
-    this.batchesShinyCharm = 0;
-    this.noDonoCaught = 0;
-    this.donoCaught = 0;
-    this.donoCharmCaught = 0;
-  },
-  updateCosts() {
-    this.totalNetballCost = (this.eggs * this.netballCost) / this.netballCatchRate; // Total Netball Cost
-    this.totalPokeballCost = this.eggs * this.pokeballCost; // Total Pokeball Cost
-    this.totalBallCost = this.totalNetballCost + this.totalPokeballCost; // Total Ball Cost
-    this.totalMailingCost = (this.eggs / 5) * this.mailingFee; // Total Mailing Cost
-    this.totalBatchCost = this.totalBallCost + this.totalMailingCost + this.shinyCharmCost; // Total Batch Cost (Catching)
-    this.totalBatchBuyingCost = (this.totalPokeballCost + (this.dittoBoxCost * (this.eggs / 60)) + this.shinyCharmCost); // Total Batch Cost (Buying)
-
-    this.batchesNoDonator = this.noDonatorOdds / (this.eggs || 1); // Batches for No Donator Status
-    this.batchesDonator = this.donatorOdds / (this.eggs || 1); // Batches for Donator Status
-    this.batchesShinyCharm = this.shinyCharmOdds / (this.eggs || 1); // Batches for Donator + Shiny Charm
-
-    // Average Total Per Shiny Calculations
-    this.noDonoCaught = (this.totalBatchCost - this.shinyCharmCost) * this.batchesNoDonator; // Updated calculation
-    this.donoCaught = (this.totalBatchCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent); // Updated calculation
-    this.donoCharmCaught = (this.totalBatchCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent);
-  },
-},
-
+      calculateTotalCost() {
+        this.totalCost =
+          this.costPrice * this.quantity +
+          this.netballCost +
+          this.pokeballCost +
+          this.shinyCharmCost +
+          this.dittoBoxCost +
+          this.mailingFee +
+          this.donatorStatusCost;
+      },
+      resetFields() {
+        this.costPrice = 0;
+        this.quantity = 0;
+        this.totalCost = null;
+        this.eggs = 0;
+        this.monthsSpent = 0;
+        this.totalNetballCost = 0;
+        this.totalPokeballCost = 0;
+        this.totalBallCost = 0;
+        this.totalMailingCost = 0;
+        this.totalBatchCost = 0;
+        this.totalBatchBuyingCost = 0;
+        this.batchesNoDonator = 0;
+        this.batchesDonator = 0;
+        this.batchesShinyCharm = 0;
+        this.noDonoCaught = 0;
+        this.donoCaught = 0;
+        this.donoCharmCaught = 0;
+        this.noDonoBought = 0;
+        this.donoBought = 0;
+        this.donoCharmBought = 0;
+      },
+      updateCosts() {
+        this.totalNetballCost = (this.eggs * this.netballCost) / this.netballCatchRate; // Calculate Total Netball Cost
+        this.totalPokeballCost = this.eggs * this.pokeballCost; // Calculate Total Pokeball Cost
+        this.totalBallCost = this.totalNetballCost + this.totalPokeballCost; // Calculate Total Ball Cost
+        this.totalMailingCost = (this.eggs / 5) * this.mailingFee; // Calculate Total Mailing Cost
+        this.totalBatchCost = this.totalBallCost + this.totalMailingCost + this.shinyCharmCost; // Calculate Total Batch Cost (Catching)
+        this.totalBatchBuyingCost = (this.totalPokeballCost + (this.dittoBoxCost * (this.eggs / 60)) + this.shinyCharmCost); // Calculate Total Batch Cost (Buying)
+  
+        this.batchesNoDonator = this.noDonatorOdds / (this.eggs || 1); // Calculate Batches for No Donator Status
+        this.batchesDonator = this.donatorOdds / (this.eggs || 1); // Calculate Batches for Donator Status
+        this.batchesShinyCharm = this.shinyCharmOdds / (this.eggs || 1); // Calculate Batches for Donator + Shiny Charm
+  
+        // Average Total Per Shiny Calculations
+        this.noDonoCaught = (this.totalBatchCost - this.shinyCharmCost) * this.batchesNoDonator;
+        this.donoCaught = (this.totalBatchCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent);
+        this.donoCharmCaught = (this.totalBatchCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent);
+  
+        // Average Total Per Shiny Bought Calculations
+        this.noDonoBought = (this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesNoDonator;
+        this.donoBought = (this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent);
+        this.donoCharmBought = (this.totalBatchBuyingCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent);
+      },
+    },
   };
   </script>
   
@@ -224,8 +248,14 @@
     margin-top: 20px;
     font-weight: bold;
   }
-  .fixed-costs, .odds-section, .cost-per-batch, .average-total {
+  .fixed-costs,
+  .odds-section,
+  .cost-per-batch,
+  .average-total {
     margin-top: 20px;
+  }
+  .large-subtitle {
+    font-size: 1.5em; /* Adjust size as needed */
   }
   </style>
   
