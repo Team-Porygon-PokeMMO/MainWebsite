@@ -1984,7 +1984,33 @@
                                     "Description": "if opponent switches into Empoleon, switch to Excadrill: 2x Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "if opponent switches into Milotic, switch to Poliwrath: Belly Drum + X.Speed"
+                                    "Description": "if opponent switches into Milotic, switch to Poliwrath: Belly Drum + X.Speed",
+                                    "Steps": [
+                                        {
+                                            "Description": "if it switches into Gardevoir, switch to 2nd Metagross and use Trick;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it uses Shadow Ball, switch into Blissey and use Trick;",
+                                                    "Steps": [
+                                                        {
+                                                            "Description": "if it switches into Empoleon, switch into Excadrill: 2x Swords Dance + X.Speed"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "Description": "if it uses Focus Blast, switch into Chandelure: 3x Calm Mind + X.Speed"
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "if it switches into Togekiss, switch into 2nd Metagross and use Trick;",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it uses Aura Sphere or Flamethrower, swithc to Chandelure: 3x Calm Mind + X.Speed"
+                                                }
+                                            ]
+                                        }
+                                    ]
                                 },
                                 {
                                     "Description": "if opponent switches into Togekiss, switch to Chandelure: 3x Calm Mind + X.Speed"

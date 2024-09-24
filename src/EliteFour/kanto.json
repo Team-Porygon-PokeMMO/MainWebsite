@@ -1783,7 +1783,7 @@
                                     ]
                                 },
                                 {
-                                    "Description": "if opponent switches to Gyarados, use Thunder Punch. It will send out Arcanine/Steelix, so switch to Chandelure again then switch back to switch to Metagross and use Trick",
+                                    "Description": "if opponent switches to Gyarados, use Thunder Punch. It will send out Arcanine/Steelix, so switch to Chandelure again then switch back to Metagross and use Trick;",
                                     "Steps": [
                                         {
                                             "Description": "if opponent switches into Dragonite, Stealth Rock then switch to Blissey and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
@@ -2318,7 +2318,7 @@
                             "Description": "if opponent uses Superpower, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "if opponent switches out into Dragonite, use Stealth Rock then switch to Blissey and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Dragonite, switch to Blissey and use Stealth Rock. Switch to Chandelure as Tyranitar comes out: 3x Calm Mind + X.Speed"
                         }
                     ]
                 }
@@ -2577,19 +2577,21 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick;"
-                        },
-                        {
-                            "Description": "if opponent uses Hidden Power, Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
-                        },
-                        {
-                            "Description": "if opponent uses Thunderbolt",
+                            "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "and you get an Air Balloon, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                                    "Description": "if opponent uses Hidden Power, Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "and you get a Light Clay, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed + X.Special Defense"
+                                    "Description": "if opponent uses Thunderbolt",
+                                    "Steps": [
+                                        {
+                                            "Description": "and you get an Air Balloon, use Stealth Rock and wait to die, then switch into Excadrill: 2x Swords Dance + X.Speed"
+                                        },
+                                        {
+                                            "Description": "and you get a Light Clay, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed + X.Sp Def"
+                                        }
+                                    ]
                                 }
                             ]
                         }
