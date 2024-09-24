@@ -797,7 +797,7 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "if it uses Leech Life, switch to Poliwrath Belly Drum"
+                            "Description": "if it uses Leech Life, switch to Poliwrath, use Belly Drum as it switches out to Donphan. Kill it with Drain Punch. Blastoise comes out. Switch to Excadrill 2x Swords Dance and sweep "
                         },
                         {
                             "Description": "if it uses Leech Seed, use Stealth Rock as it switches out to Durant (Choice Band'ed), then switch to Chandelure: 2xCalm Mind + X.Speed",
@@ -1904,20 +1904,18 @@
                             "Description": "if it uses Focus Blast, switch to Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "if it uses Volt Tackle, switch to Excadrill Stealth Rock then Swords Dance + X.Speed",
+                            "Description": "if it uses Volt Tackle, switch to Excadrill Stealth Rock then Swords Dance + X.Speed"
+                        },
+                        {
+                            "Description": "if you get Focus Sash, switch to Excadrill Stealth Rock then Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "if you get Focus Sash, switch to Excadrill Stealth Rock then Swords Dance + X.Speed",
-                                    "Steps": [
-                                        {
-                                            "Description": "if it switches out, switch to Chandelure then switch to Metagross and use Trick. Then switch back to Chandelure 2x Calm Mind + X.Speed"
-                                        }
-                                    ]
-                                },
-                                {
-                                    "Description": "if you get Life Orb, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                                    "Description": "if it switches out, switch to Chandelure then switch to Metagross and use Trick. Then switch back to Chandelure 2x Calm Mind + X.Speed"
                                 }
                             ]
+                        },
+                        {
+                            "Description": "if you get Life Orb, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                         },
                         {
                             "Description": "if it switches out into Dragonite, switch to Poliwrath Belly Drum + X.Speed"
@@ -2397,13 +2395,15 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick as it switches out into Garchomp. Switch to Excadrill Swords Dance"
-                        },
-                        {
-                            "Description": "if it stays, 2x Swords Dance + X.Speed"
-                        },
-                        {
-                            "Description": "if it switches into Milotic, switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "Use Trick as it switches out into Garchomp. Switch to Excadrill Swords Dance",
+                            "Steps": [
+                                {
+                                    "Description": "if it stays, use another Swords Dance + X.Speed"
+                                },
+                                {
+                                    "Description": "if it switches into Milotic, switch to Poliwrath Belly Drum + X.Speed"
+                                }
+                            ]
                         }
                     ]
                 },

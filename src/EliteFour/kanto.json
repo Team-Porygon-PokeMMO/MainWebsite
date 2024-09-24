@@ -72,12 +72,7 @@
                                     ]
                                 },
                                 {
-                                    "Description": "if opponent switches into Golduck, switch to Poliwrath Belly Drum",
-                                    "Steps": [
-                                        {
-                                            "Description": "if opponent switches into Vileplume, switch into second Metagross and use Trick as Lapras comes out to lock in Drill Run. Switch to Excadrill: 2x Swords Dance + X.Speed"
-                                        }
-                                    ]
+                                    "Description": "if opponent switches to Golduck, switch to Poliwrath then switch into second Metagross. Use Trick as Lapras comes out to lock in Drill Run. Switch to Excadrill: 2x Swords Dance + X.Speed"
                                 },
                                 {
                                     "Description": "if opponent switches into Hariyama, switch to Chandelure 4x Calm Mind + X.Speed"
@@ -2041,11 +2036,8 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if opponent stays, use Trick",
+                                    "Description": "if opponent stays, use Stealth Rock, switch to Poliwrath Belly Drum + X.Speed",
                                     "Steps": [
-                                        {
-                                            "Description": "if opponent still stays, switch to Poliwrath Belly Drum + X.Speed"
-                                        },
                                         {
                                             "Description": "if opponent switches into Garchomp, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed",
                                             "Steps": [

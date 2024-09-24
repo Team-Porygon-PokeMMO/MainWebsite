@@ -2474,7 +2474,12 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "if opponent uses Aura Sphere, use Stealth Rock as it switches out into Hydreigon. Use any move but Trick and let Metagross get KO’ed. Send in Blissey and use Trick as it switches out into Arcanine. Switch to Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Aura Sphere, use Stealth Rock as it switches out into Hydreigon. Use any move but Trick and let Metagross get KO’ed. Send in Blissey and use Trick as it switches out into Arcanine. Switch to Chandelure 5x Calm Mind + X.Speed",
+                            "Steps": [
+                                {
+                                    "Description": "if lucario stays after Stealth Rock, switch to Chandelure 4x Calm Mind + X.Speed"
+                                }
+                            ]
                         },
                         {
                             "Description": "if opponent switches out into Dragonite, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"

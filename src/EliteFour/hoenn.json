@@ -365,7 +365,7 @@
                             "Description": "if opponent stays, switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "if opponent switches into Spiritomb, switch to Blissey and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Spiritomb, switch to Blissey and use Trick + Stealth Rock. Switch to Chandelure 3x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -445,7 +445,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Chandelure 4x Calm Mind + X.Speed (Use Shadow Ball vs. Hariyama)"
+                            "Description": "Use Trick, then switch to Chandelure 4x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -990,7 +990,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "Use Trick, then switch to Excadrill 2x Swords Dance + X.Speed (use Earthquake against Walrein)"
                         }
                     ]
                 },

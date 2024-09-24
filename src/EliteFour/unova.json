@@ -174,7 +174,7 @@
                                             ]
                                         },
                                         {
-                                            "Description": "if it switches into Eelektross, use Trick, then use Stealth Rock. Switch to Chandelure 2x Calm Mind + X.Speed."
+                                            "Description": "if it switches into Eelektross, use Trick, then use Stealth Rock. Switch to Chandelure 2x Calm Mind + X.Speed. (if bisharp is alive use Shadow ball vs Froslass)"
                                         },
                                         {
                                             "Description": "if it switches into Toxicroak, use Stealth Rock;",
@@ -2584,6 +2584,9 @@
                                 },
                                 {
                                     "Description": "if it switches into Vaporeon, switch to Poliwrath: Belly Drum + X.Speed."
+                                },
+                                {
+                                    "Description": "if it switches into Druddigon, switch to Excadrill, switch to second Metagross and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed."
                                 }
                             ]
                         }
