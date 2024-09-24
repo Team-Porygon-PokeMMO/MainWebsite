@@ -3,13 +3,17 @@ let currentTimer: Date | null = null
 let endTimer: Date | null = new Date()
 let notificationEndTimer: Date | null = null
 let volume = 100
+
+// Swap these values when a server reset happens to refresh it for all users
+let newEggHatchSecondStore = 'eggHatchSecondTwo'
+let oldEggHatchSecondStore = 'eggHatchSecond'
 export default {
     data() {
         return {
             currentTimer: new Date(),
             endTimer: endTimer as Date | null,
             timerSet: false,
-            eggHatchSecond: 6,
+            eggHatchSecond: 50,
             remainingTimer: '',
             remainingNotificationTimer: '',
             notificationSoundPlayed: true,
@@ -129,7 +133,10 @@ export default {
             if (process.client) {
                 const hasDonator = localStorage?.getItem('hasDonator')
                 const hasFlameBody = localStorage?.getItem('hasFlameBody')
-                const eggHatchSecond = localStorage?.getItem('eggHatchSecond')
+                if (localStorage?.getItem(oldEggHatchSecondStore)) {
+                    localStorage?.removeItem(oldEggHatchSecondStore);
+                }
+                const eggHatchSecond = localStorage?.getItem(newEggHatchSecondStore)
                 const notificationSecondsBefore = localStorage?.getItem('notificationSecondsBefore')
                 const volume = localStorage?.getItem('volume')
                 const hatchCycleMinutes = localStorage?.getItem('hatchCycleMinutes')
@@ -157,7 +164,7 @@ export default {
             if (process.client) {
                 localStorage?.setItem('hasDonator', this.hasDonator.toString())
                 localStorage?.setItem('hasFlameBody', this.hasFlameBody.toString())
-                localStorage?.setItem('eggHatchSecond', this.eggHatchSecond.toString())
+                localStorage?.setItem(newEggHatchSecondStore, this.eggHatchSecond.toString())
                 localStorage?.setItem('notificationSecondsBefore', this.notificationSecondsBefore.toString())
                 localStorage?.setItem('volume', this.volume.toString())
                 localStorage?.setItem('hatchCycleMinutes', this.hatchCycleMinutes.toString())
