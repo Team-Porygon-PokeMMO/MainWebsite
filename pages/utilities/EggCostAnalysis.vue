@@ -189,10 +189,6 @@ export default {
       dittoBoxCost: 240000,
       mailingFee: 1600,
       donatorStatusCost: 3450000,
-      // Ratios
-      ratioNoDonator: 0.12,
-      ratioDonator: 0.13,
-      ratioDonatorShinyCharm: 0.14,
       // Odds values
       noDonatorOdds: 30000,
       batchesNoDonator: 0,
@@ -222,6 +218,37 @@ export default {
       actualEggs: 0,
     };
   },
+  computed: {
+    ratioNoDonator() {
+      // Ensure no division by zero by using a fallback value
+      return this.actualEggs > 0 ? this.actualEggs / this.noDonatorOdds : 0;
+    },
+    noDonoCaughtSpent() {
+      return this.noDonoCaught * this.ratioNoDonator;
+    },
+    ratioDonator() {
+      return this.actualEggs > 0 ? this.actualEggs / this.donatorOdds : 0;
+    },
+    donoCaughtSpent() {
+      return this.donoCaught * this.ratioDonator;
+    },
+    ratioDonatorCharm() {
+      return this.actualEggs > 0 ? this.actualEggs / this.shinyCharmOdds : 0;
+    },
+    donoCharmCaughtSpent() {
+      return this.donoCharmCaught * this.ratioDonatorCharm;
+    },
+    noDonoBoughtSpent() {
+      return this.noDonoBought * this.ratioNoDonator;
+    },
+    donoBoughtSpent() {
+      return this.donoBought * this.ratioDonator;
+    },
+    donoCharmBoughtSpent() {
+      return this.donoCharmBought * this.ratioDonatorCharm;
+    },
+    // Other computed properties...
+  },
   watch: {
     eggs: 'updateCosts',
     netballCost: 'updateCosts',
@@ -231,29 +258,6 @@ export default {
     dittoBoxCost: 'updateCosts',
     monthsSpent: 'updateCosts',
     actualEggs: 'updateCosts', // Watch the actual eggs input
-  },
-  computed: {
-    noDonoCaughtSpent() {
-      return this.noDonoCaught * this.ratioNoDonator;
-    },
-    donoCaughtSpent() {
-      return this.donoCaught * this.ratioDonator;
-    },
-    donoCharmCaughtSpent() {
-      return this.donoCharmCaught * this.ratioDonatorShinyCharm;
-    },
-    noDonoBoughtSpent() {
-      return this.noDonoBought * this.ratioNoDonator;
-    },
-    donoBoughtSpent() {
-      return this.donoBought * this.ratioDonator;
-    },
-    donoCharmBoughtSpent() {
-      return this.donoCharmBought * this.ratioDonatorShinyCharm;
-    },
-    ratioNoDonator() {
-      return this.actualEggs / this.noDonatorOdds;
-    },
   },
   methods: {
     calculateTotalCost() {
@@ -314,6 +318,8 @@ export default {
   },
 };
 </script>
+
+
 
 <style scoped>
 .result {
