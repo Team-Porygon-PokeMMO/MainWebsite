@@ -55,8 +55,7 @@ export default {
                 <div v-else class="ml-2">
                     {{ item.Description }}
                 </div>
-
-                <div class="py-1 sm:text-sm sm:py-2 border border-black m-0.25 md:text-base md:py-3 lg:py-5 hover:bg-cyan-700"
+                <div class="ml-8 mb-1 h-2 text-center items-center rounded-full bg-blue-800 show-more hover:animate-pulse"
                     v-show="getIfExpandable(item) && !item.IsVisible" @click="toggleView(item)"
                     :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">
                 </div>
