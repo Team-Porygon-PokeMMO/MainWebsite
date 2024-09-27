@@ -61,6 +61,10 @@ export default {
     min-height: 100%;
 }
 
+.active {
+    background-color: rgba(51, 3, 3, 0.95);
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
     .menu {

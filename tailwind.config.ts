@@ -4,7 +4,7 @@ const srcDir = 'src'
 
 
 export default <Partial<Config>>{
-    darkMode: 'selector',
+    darkMode: ['selector', '[data-mode="dark"]'],
     content: [
         `${srcDir}/components/**/*.{vue,js,ts}`,
         `${srcDir}/layouts/**/*.vue`,
