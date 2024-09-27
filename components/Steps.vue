@@ -29,12 +29,6 @@ export default {
         getIfCanBeSeen(item: Step) {
             return item?.IsVisible || this.getIfTrick(item)
         },
-        getBackgroundColorStyling() {
-            return {
-                backgroundColor: 'rgb(0,0,0, .2)',
-                border: '1px solid rgb(255, 255, 255, .2)',
-            }
-        },
     },
 };
 </script>
@@ -46,7 +40,7 @@ export default {
 </style>
 
 <template>
-    <div class="text-left">
+    <div class="text-left bg-cool-950 bg-opacity-85">
         <div v-for="item in items" class="relative text-cool-50 tracking-tight text-sm md:text-base lg:text-lg">
             <div class="border py-0.25 px-0.5 rounded my-1 border-cool-700">
                 <div class="absolute left-1.5" @click="toggleView(item)"
@@ -61,7 +55,6 @@ export default {
                 <div v-else class="ml-2">
                     {{ item.Description }}
                 </div>
-
                 <div class="ml-8 mb-1 h-2 text-center items-center rounded-full bg-blue-800 show-more hover:animate-pulse"
                     v-show="getIfExpandable(item) && !item.IsVisible" @click="toggleView(item)"
                     :style="[getIfExpandable(item) ? { cursor: 'pointer' } : {}]">

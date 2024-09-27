@@ -32,7 +32,7 @@ export default {
         getImageStyling(item: Trainer) {
             if (item.Image) {
                 return {
-                    backgroundImage: `linear-gradient(rgb(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(${item.Image})`,
+                    backgroundImage: `linear-gradient(rgb(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(${item.Image})`,
                     backgroundSize: 'cover',
                     backgroundPosition: item?.ImagePosition ?? '25% 15%',
                     width: '100%',
@@ -44,27 +44,13 @@ export default {
 };
 </script>
 
-<style scoped>
-div.regions:hover {
-    background-color: rgba(79, 27, 27, 0.8);
-}
-
-.active {
-    background-color: rgba(241, 9, 9, 0.45);
-}
-
-.name {
-    background-color: rgb(0, 0, 0, .50);
-}
-</style>
-
 <template>
     <div class="text-center">
         <UDivider class="my-2" />
         <div class="grid grid-cols-5 lg:py-0.5 cursor-pointer">
             <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }"
-                class="py-1 sm:text-sm sm:py-2 border border-black m-0.25 md:text-base md:py-3 lg:py-5 regions" :style="getImageStyling(item)">
-                <span class="name">{{ item.Name }}</span>
+                class="py-1 sm:text-sm sm:py-2 border border-black m-0.25 md:text-base md:py-3 lg:py-5 hover:bg-cyan-700" :style="getImageStyling(item)">
+                <span class="bg-black bg-opacity-50 text-white p-0.5">{{ item.Name }}</span>
             </div>
         </div>
         <Leads v-for="item in items" :items="item.Leads" v-show="item.IsVisible" />

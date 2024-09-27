@@ -39,7 +39,7 @@ export default {
         getImageStyling(item: Region) {
             if (item.Image) {
                 return {
-                    backgroundImage: `linear-gradient(rgb(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(${item.Image})`,
+                    backgroundImage: `linear-gradient(rgb(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(${item.Image})`,
                     backgroundSize: 'cover',
                     backgroundPosition: item?.ImagePosition ?? '25% 15%',
                     width: '100%',
@@ -51,26 +51,13 @@ export default {
 };
 </script>
 
-<style scoped>
-div.regions:hover {
-    background-color: rgba(87, 9, 9, 0.9);
-}
-
-.active {
-    background-color: rgba(238, 11, 11, 0.15);
-}
-
-.name {
-    background-color: rgb(0, 0, 0, .25);
-}
-</style>
-
 <template>
     <div class="text-center">
         <div class="grid grid-cols-5 lg:py-0.5 cursor-pointer">
             <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }"
-                class="py-1 sm:text-sm sm:py-2 border border-black m-0.25 md:text-base md:py-3 lg:py-5 regions" :style="getImageStyling(item)">
-                <span>{{ item.Name }}</span>
+                class="py-1 sm:text-sm sm:py-2 border border-black m-0.25 md:text-base md:py-3 lg:py-5 hover:bg-cyan-700"
+                :style="getImageStyling(item)">
+                <span class="bg-black bg-opacity-50 text-white p-0.5">{{ item.Name }}</span>
             </div>
         </div>
         <Trainers v-for="item in items" :items="item.GymTrainers" v-show="item.IsVisible" />

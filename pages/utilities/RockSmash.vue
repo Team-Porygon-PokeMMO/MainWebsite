@@ -428,18 +428,6 @@ div.regions {
     cursor: pointer;
     border: 1px solid black;
 }
-
-div.regions:hover {
-    background-color: rgba(75, 16, 16, 0.9);
-}
-
-.active {
-    background-color: rgba(182, 28, 28, 0.15);
-}
-
-.name {
-    background-color: rgb(0, 0, 0, .25);
-}
 </style>
 
 <template>
@@ -450,10 +438,10 @@ div.regions:hover {
             <img src="/images/rock.png" class="image" alt="Rock Smash" />
         </div>
         <div class="grid grid-cols-5">
-            <div class="items text-label text-center items-center m-2 p-4 hover:cursor-pointer bg-red-900/75 hover:bg-red-400/10"
+            <div class="items text-label text-center items-center m-2 p-4 hover:cursor-pointer border-black border hover:bg-blue-500"
                 v-for="(option, index) in options" @click="setActiveRegion(index)"
                 :class="{ active: index === selectedRegionIndex }">
-                <span class="name p-1">{{ option.Name }}</span>
+                <span class="bg-black bg-opacity-50 text-white p-0.5">{{ option.Name }}</span>
             </div>
         </div>
         <h2 class="center">{{ options[selectedRegionIndex].Name }}</h2>
@@ -465,7 +453,7 @@ div.regions:hover {
                     optionAttribute="Name" v-model="smashedPokemon" @change="clearItem" />
             </div>
             <div class="m-2">
-                <label for="">Item</label>
+                <p>Item</p>
                 <USelect v-if="!smashedPokemon || orderedItems(selectedRegionIndex, smashedPokemon).length === 0"
                     disabled />
                 <USelect v-else :options="[emptyOption, ...orderedItems(selectedRegionIndex, smashedPokemon)]"
