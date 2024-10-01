@@ -219,36 +219,35 @@ export default {
     };
   },
   computed: {
-    ratioNoDonator() {
-      // Ensure no division by zero by using a fallback value
-      return this.actualEggs > 0 ? this.actualEggs / this.noDonatorOdds : 0;
-    },
-    noDonoCaughtSpent() {
-      return this.noDonoCaught * this.ratioNoDonator;
-    },
-    ratioDonator() {
-      return this.actualEggs > 0 ? this.actualEggs / this.donatorOdds : 0;
-    },
-    donoCaughtSpent() {
-      return this.donoCaught * this.ratioDonator;
-    },
-    ratioDonatorCharm() {
-      return this.actualEggs > 0 ? this.actualEggs / this.shinyCharmOdds : 0;
-    },
-    donoCharmCaughtSpent() {
-      return this.donoCharmCaught * this.ratioDonatorCharm;
-    },
-    noDonoBoughtSpent() {
-      return this.noDonoBought * this.ratioNoDonator;
-    },
-    donoBoughtSpent() {
-      return this.donoBought * this.ratioDonator;
-    },
-    donoCharmBoughtSpent() {
-      return this.donoCharmBought * this.ratioDonatorCharm;
-    },
-    // Other computed properties...
+  ratioNoDonator() {
+    return this.actualEggs > 0 ? this.actualEggs / this.noDonatorOdds : 0;
   },
+  ratioDonator() {
+    return this.actualEggs > 0 ? this.actualEggs / this.donatorOdds : 0;
+  },
+  ratioDonatorShinyCharm() {
+    return this.actualEggs > 0 ? this.actualEggs / this.shinyCharmOdds : 0;
+  },
+  noDonoCaughtSpent() {
+    return Math.round(this.noDonoCaught * this.ratioNoDonator); // Ensure rounding
+  },
+  donoCaughtSpent() {
+    return Math.round(this.donoCaught * this.ratioDonator); // Ensure rounding
+  },
+  donoCharmCaughtSpent() {
+    return Math.round(this.donoCharmCaught * this.ratioDonatorShinyCharm); // Ensure rounding
+  },
+  noDonoBoughtSpent() {
+    return Math.round(this.noDonoBought * this.ratioNoDonator); // Ensure rounding
+  },
+  donoBoughtSpent() {
+    return Math.round(this.donoBought * this.ratioDonator); // Ensure rounding
+  },
+  donoCharmBoughtSpent() {
+    return Math.round(this.donoCharmBought * this.ratioDonatorShinyCharm); // Ensure rounding
+  }
+}
+,
   watch: {
     eggs: 'updateCosts',
     netballCost: 'updateCosts',
