@@ -315,10 +315,10 @@ button {
             </div>
             <p>Notification Options</p>
             <div class="gap-2 mb-2">
-                <label for="default-range" class="block mb-2 text-sm font-medium text-gray-900">Audio
+                <label for="default-range" class="block mb-2 text-sm font-medium">Audio
                     Volume</label>
                 <input id="default-range" v-model="volume" type="range"
-                    class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer">
+                    class="w-full h-2 bg-slate-500 rounded-lg appearance-none cursor-pointer">
             </div>
             <div class="gap-2 mb-2">
                 <UButton @click="playAudio()">Test Audio</UButton>
