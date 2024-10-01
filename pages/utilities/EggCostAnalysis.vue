@@ -1,24 +1,5 @@
 <template>
   <UContainer>
-    <h1>Total Cost Calculator</h1>
-    <div class="grid">
-      <div class="m-2">
-        <label for="costPrice">Cost Price:</label>
-        <UInput v-model.number="costPrice" type="number" />
-      </div>
-      <div class="m-2">
-        <label for="quantity">Quantity Purchased:</label>
-        <UInput v-model.number="quantity" type="number" />
-      </div>
-    </div>
-    <div class="center">
-      <UButton @click="calculateTotalCost">Calculate Total Cost</UButton>
-      <UButton @click="resetFields">Reset</UButton>
-    </div>
-    <div v-if="totalCost !== null" class="result">
-      <h2>Total Cost: {{ totalCost }}</h2>
-    </div>
-
     <h2 class="mt-6">Fixed Costs</h2>
     <div class="fixed-costs">
       <p><b>Netballs:</b> ${{ netballCost }}</p>
