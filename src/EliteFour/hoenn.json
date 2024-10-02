@@ -2289,37 +2289,27 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick;"
-                        },
-                        {
-                            "Description": "if opponent uses Glare, use Stealth Rock",
+                            "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if opponent switches into Eelektross, switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + 2x X.Speed"
-                                },
-                                {
-                                    "Description": "if opponent switches into Mienshao, switch to Chandelure then switch to the second Metagross and use Trick. Switch to Chandelure again then 4x Calm Mind + 2x X.Speed"
-                                }
-                            ]
-                        },
-                        {
-                            "Description": "if opponent uses Hidden Power, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
-                        },
-                        {
-                            "Description": "if opponent uses Leaf Storm, use Trick again, then proceed to Protect;",
-                            "Steps": [
-                                {
-                                    "Description": "if it uses Flamethrower, use Stealth Rock then switch to Chandelure: 3x Calm Mind + X.Speed"
-                                },
-                                {
-                                    "Description": "EXPERIMENTAL: if it uses Leaf Storm, sacrifice Poliwrath to safely switch to Blissey. Use X.SpDef and use Trick;",
-                                    "IsVisible": true,
+                                    "Description": "if opponent uses Glare, use Stealth Rock",
                                     "Steps": [
                                         {
-                                            "Description": "if it doesn't switch out and keeps using Leaf Storm, pretty much out of luck. Could try Tricking and Protecting until it changes move."
+                                            "Description": "if opponent switches into Eelektross, switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + 2x X.Speed"
                                         },
                                         {
-                                            "Description": "if it switches out, switch to Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "if opponent switches into Mienshao, switch to Chandelure then switch to the second Metagross and use Trick. Switch to Chandelure again then 4x Calm Mind + 2x X.Speed"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent uses Hidden Power, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if opponent uses Leaf Storm, switch to Poliwrath and sacrifice it to to safely switch to Blissey: X.SpDef + Stealth Rock;",
+                                    "Steps": [
+                                        {
+                                            "Description": "if opponent switches into Eelektross, switch to second Metagross and use Trick, then switch into Chandelure: 3x Calm Mind + X.Speed"
                                         }
                                     ]
                                 }
