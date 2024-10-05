@@ -992,7 +992,7 @@
                             "Description": "if Salamence has Moxie, use Trick",
                             "Steps": [
                                 {
-                                    "Description": "if you get a Life Orb or Lum Berry, switch to Excadrill Stealth Rock. Use Swords Dance + X.Speed"
+                                    "Description": "if you get a Life Orb or Lum Berry, switch to Excadrill Stealth Rock. Use Swords Dance + X.Speed (If Lum Berry, Stealth Rock is not needed)"
                                 }
                             ]
                         },
@@ -1330,7 +1330,7 @@
                                             "Description": "if opponent switches out into Muk, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed",
                                             "Steps": [
                                                 {
-                                                    "Description": "Use Iron Head vs. Gengar. if it gets Cursed Body and Gyarados comes out, switch to Chandelure 5x Calm Mind + X.Speed"
+                                                    "Description": "Use Iron Head vs. Gengar. if it gets Cursed Body and Gyarados comes out, switch to Poliwrath Belly Drum + X.Speed"
                                                 }
                                             ]
                                         },
@@ -1562,7 +1562,7 @@
                                     ]
                                 },
                                 {
-                                    "Description": "if opponent uses Thunderbolt, switch to Excadrill then 2x Swords Dance + X.Speed"
+                                    "Description": "if opponent uses Thunderbolt, switch to Excadrill then use Stealth Rocks. 3x Swords Dance + X.Speed"
                                 },
                                 {
                                     "Description": "if opponent uses Will-O-Wisp, switch to Blissey",
@@ -1847,7 +1847,7 @@
                                     "Description": "and opponent uses Fire Punch, use Stealth Rock then switch to Poliwrath X.Speed + Belly Drum"
                                 },
                                 {
-                                    "Description": "and opponent uses Fire Blast, switch to Poliwrath X.Speed + Belly Drum"
+                                    "Description": "and opponent uses Fire Blast, switch to Poliwrath X.Speed + Belly Drum (Use Drain Punch vs Haxorus)"
                                 }
                             ]
                         },
@@ -2285,7 +2285,10 @@
                             "Description": "if you get a Rocky Helmet, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "if opponent switches out into Metagross, switch to Poliwrath then switch to the second Metagross and use Trick. Then switch back to Belly Drum + X.Speed"
+                                    "Description": "if opponent switches out into Metagross, switch to Poliwrath then switch to the second Metagross and use Trick. Then switch back to Poliwrath Belly Drum + X.Speed"
+                                },
+                                {
+                                    "Description": "if opponent switches out into Gyarados, switch to Poliwrath then switch to the second Metagross and use Trick. Then switch back to Poliwrath X.Speed + Belly Drum"
                                 }
                             ]
                         }

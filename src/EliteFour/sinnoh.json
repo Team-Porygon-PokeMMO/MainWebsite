@@ -51,7 +51,7 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "Switch to Excadrill Swords Dance + X.Speed sweep"
+                            "Description": "Switch to Excadrill 3x Swords Dance + X.Speed sweep"
                         }
                     ]
                 },
@@ -173,7 +173,7 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "Flygon will come, switch to Excadrill 3x Swords Dance + X.Speed"
+                            "Description": "Flygon will come, switch to Excadrill 2x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -502,7 +502,7 @@
                             "Description": "if you get Chesto Berry, switch to Blissey and use Trick as it switches out into Rhyperior. Switch to Excadrill 3x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "if you get Choice Scarf, switch to Poliwrath Belly Drum"
+                            "Description": "if you get Choice Scarf, switch to Poliwrath then switch to second Metagross as it switches out to Donphan/Rhyperior. Use Trick then switch to Excadrill 2x Swords Dance + X.Speed"
                         },
                         {
                             "Description": "if it switches out into Rhyperior, switch to Excadrill 3x Swords Dance + X.Speed"
@@ -800,7 +800,7 @@
                             "Description": "if it uses Leech Life, switch to Poliwrath, use Belly Drum as it switches out to Donphan. Kill it with Drain Punch. Blastoise comes out. Switch to Excadrill 2x Swords Dance and sweep "
                         },
                         {
-                            "Description": "if it uses Leech Seed, use Stealth Rock as it switches out to Durant (Choice Band'ed), then switch to Chandelure: 2xCalm Mind + X.Speed",
+                            "Description": "if it uses Leech Seed, use Stealth Rock as it switches out to Durant (Choice Band'ed), then switch to Chandelure: 2xCalm Mind + X.Speed (Energy root if needed)",
                             "Steps": [
                                 {
                                     "Description": "if it switches into Rhyperior, switch to Chandelure then switch to the second Metagross and use Trick. Switch to Chandelure Calm Mind + X.Speed"
@@ -817,7 +817,7 @@
                             "Description": "Switch to Excadrill then switch to Blissey Trick as it switches out into Rhyperior."
                         },
                         {
-                            "Description": "if you get Leftovers, switch to Excadrill 3x Swords Dance + X.Speed"
+                            "Description": "if you get Leftovers, switch to Excadrill 3x Swords Dance + X.Speed (Iron Head vs Gengar)"
                         },
                         {
                             "Description": "if you get Life Orb, switch to Chandelure Calm Mind"
@@ -1829,6 +1829,9 @@
                                 },
                                 {
                                     "Description": "if opponent uses Thunderbolt , switch to Excadrill 2x Swords Dance + X.Speed"
+                                },
+                                {
+                                    "Description": "if opponent switches to Dragonite, switch to Poliwrath Belly Drum + X.Speed"
                                 }
                             ]
                         }
@@ -2042,6 +2045,9 @@
                                     "Description": "if it sends out Chandelure, let it die then send in the second Metagross and use Trick. Switch to your own Chandelure 3x Calm Mind + X.Speed"
                                 },
                                 {
+                                    "Description": "if it sends out Excadrill , switch to Excadrill then switch to 2nd Metagross, use Trick then switch back to Excadrill 2x Swords Dance + X.Speed"
+                                },
+                                {
                                     "Description": "if it sends in Garchomp, let it die;",
                                     "Steps": [
                                         {
@@ -2078,7 +2084,7 @@
                             "Description": "if it stays, switch to your own Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "if it switches out into Garchomp, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                            "Description": "if it switches out into Garchomp, switch to Excadrill Stealth Rock then 2x Swords Dance"
                         }
                     ]
                 },
@@ -2104,7 +2110,7 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if it uses Fire Punch, switch to Chandelure: 4x Calm Mind + X.Speed"
+                                    "Description": "if it uses Fire Punch, switch to Chandelure: 3x Calm Mind + X.Speed"
                                 },
                                 {
                                     "Description": "if it uses Flamethrower, switch to Chandelure 3x Calm Mind + X.Speed"
@@ -2118,7 +2124,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Excadrill then 2x Swords Dance + X.Speed + X.Accuracy"
+                            "Description": "Use Trick, then switch to Excadrill then Swords Dance + X.Speed + X.Accuracy"
                         }
                     ]
                 },
@@ -2343,7 +2349,7 @@
                             "Description": "if it switches to Garchomp",
                             "Steps": [
                                 {
-                                    "Description": "If you get rocket helmet, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed",
+                                    "Description": "If you get rockey helmet, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed",
                                     "Steps": [
                                         {
                                             "Description": "If if swaps to Rayquaza during setup, switch to the scarfless Metagross and let it die. Switch to the second Metagross and use Trick. Switch to Chandelure: 4x Calm Mind + X.Speed"
@@ -2351,7 +2357,7 @@
                                     ]
                                 },
                                 {
-                                    "Description": "if NO rocket helmet, switch to Excadrill: 2x Swords Dance + X.Speed"
+                                    "Description": "if NO rockey helmet, switch to Excadrill: 2x Swords Dance + X.Speed"
                                 }
                             ]
                         },
@@ -2387,7 +2393,9 @@
                                     "Description": "if it switches out into Milotic, switch to the second Metagross and use Trick. Switch to Poliwrath X.Speed + Belly Drum"
                                 }
                             ]
-                        }
+                        },
+                        {
+                            "Description": "if it switches into Eelektross, switch to Chandelure: 4x Calm Mind + X.Speed"}
                     ]
                 },
                 {
@@ -2503,7 +2511,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey Trick then switch to Chandelure 4x Calm Mind + X.Speed + X.Defend"
+                            "Description": "Switch to Blissey Trick then switch to Chandelure 4x Calm Mind + X.Speed"
                         }
                     ]
                 },
