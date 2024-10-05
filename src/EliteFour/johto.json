@@ -3,147 +3,147 @@
     "IsVisible": false,
     "GymTrainers": [
         {
-            "Name": "Will",
-            "IsVisible": false,
-            "Image": "/images/will.png",
-            "ImagePosition": "25% 10%",
-            "Leads": [
-                {
-                    "Name": "Absol",
-                    "IsVisible": false,
-                    "Steps": [
-                        {
-                            "Description": "Use Trick;",
-                            "Steps": [
-                                {
-                                    "Description": "if opponent uses Night Slash, switch to Poliwrath X.Speed + Belly Drum"
-                                },
-                                {
-                                    "Description": "if opponent uses Close Combat, switch to Chandelure 4x Calm Mind + X.Speed"
-                                },
-                                {
-                                    "Description": "if opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick as it switches into Absol/Flareon, then switch to Chandelure 4x Calm Mind + X.Speed"
-                                },
-                                {
-                                    "Description": "if opponent switches out into Empoleon, switch into Poliwrath: Belly Drum + X.Speed"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "Name": "Altaria",
-                    "IsVisible": false,
-                    "Steps": [
-                        {
-                            "Description": "Use Trick;",
-                            "Steps": [
-                                {
-                                    "Description": "if opponent uses Fire Blast, switch immediately into Chandelure: 3x Calm Mind + X.Speed + X.Def",
-                                    "Steps": [
-                                        {
-                                            "Description": "if opponent switches out into Empoleon while you set up, immediately switch to Poliwrath then switch to the second Metagross and use Trick;",
-                                            "Steps": [
-                                                {
-                                                    "Description": "if opponent switches back into Altaria, switch to Chandelure: 4x Calm Mind + X.Speed + X.Defend"
-                                                },
-                                                {
-                                                    "Description": "if opponent does not swap out, switch back to Poliwrath: Belly Drum + X.Speed"
-                                                }
-                                            ]
-                                        }
-                                    ]
-                                },
-                                {
-                                    "Description": "if opponent uses Flamethrower, switch to Chandelure: 3x Calm Mind + X.Speed"
-                                },
-                                {
-                                    "Description": "if opponent switches out into Clefable;",
-                                    "Steps": [
-                                        {
-                                            "Description": "Switch to Blissey and use Trick as it switches out into Lucario. Switch to Chandelure 5x Calm Mind + X.Speed"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "Name": "Bronzong",
-                    "IsVisible": false,
-                    "Steps": [
-                        {
-                            "Description": "Use Trick;"
-                        },
-                        {
-                            "Description": "if opponent switches into Exeggutor. Switch to Blissey and use Trick;",
-                            "Steps": [
-                                {
-                                    "Description": "if opponent switches into Absol, switch to Chandelure: 4x Calm Mind + X.Speed"
-                                },
-                                {
-                                    "Description": "if opponent switches into Flareon, switch to Chandelure: 4x Calm Mind + X.Speed",
-                                    "Steps": [
-                                        {
-                                            "Description": "if opponent switches out into Empoleon, switch into Poliwrath: Belly Drum + X.Speed"
-                                        }
-                                    ]
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "Name": "Claydol",
-                    "IsVisible": false,
-                    "Steps": [
-                        {
-                            "Description": "Switch to Blissey and use Trick as it switches into Girafarig"
-                        },
-                        {
-                            "Description": "Use Stealth Rock"
-                        },
-                        {
-                            "Description": "Switch to Chandelure 4x Calm Mind + X.Speed"
-                        }
-                    ]
-                },
-                {
-                    "Name": "Clefable",
-                    "IsVisible": false,
-                    "Steps": [
-                        {
-                            "Description": "Use Trick;"
-                        },
-                        {
-                            "Description": "if opponent uses Seismic Toss, immediately switch to Chandelure 5x Calm Mind + X.Speed"
-                        },
-                        {
-                            "Description": "if opponent uses Fire Blast, immediately switch to Chandelure 3x Calm Mind + X.Speed"
-                        },
-                        {
-                            "Description": "if opponent switches into Golurk, switch to Excadrill 2x Swords Dance + X.Speed"
-                        },
-                        {
-                            "Description": "if opponent switches into Umbreon, immediately switch to Blissey and use Trick as it switches out into Golurk. Switch to Chandelure 6x Calm Mind + X.Speed"
-                        }
-                    ]
-                },
-                {
-                    "Name": "Chansey",
-                    "IsVisible": false,
-                    "Steps": [
-                        {
-                            "Description": "Use Trick;"
-                        },
-                        {
-                            "Description": "Use Stealth Rock"
-                        },
-                        {
-                            "Description": "Switch to Chandelure 2x Calm Mind + X.Speed"
-                        }
-                    ]
+        "Name": "Will",
+        "IsVisible": false,
+        "Image": "/images/will.png",
+        "ImagePosition": "25% 10%",
+        "Leads": [
+            {
+                "Name": "Absol",
+                "IsVisible": false,
+                "Steps": [
+                    {
+                        "Description": "Use Trick;",
+                        "Steps": [
+                            {
+                                "Description": "if opponent uses Night Slash, switch to Poliwrath X.Speed + Belly Drum"
+                            },
+                            {
+                                "Description": "if opponent uses Close Combat, switch to Chandelure 4x Calm Mind + X.Speed"
+                            },
+                            {
+                                "Description": "if opponent switches into Bronzong/Exeggutor, switch to Blissey and use Trick as it switches into Absol/Flareon, then switch to Chandelure 4x Calm Mind + X.Speed"
+                            },
+                            {
+                                "Description": "if opponent switches out into Empoleon, switch into Poliwrath: Belly Drum + X.Speed"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Name": "Altaria",
+                "IsVisible": false,
+                "Steps": [
+                    {
+                        "Description": "Use Trick;",
+                        "Steps": [
+                            {
+                                "Description": "if opponent uses Fire Blast, switch immediately into Chandelure: 3x Calm Mind + X.Speed + X.Def",
+                                "Steps": [
+                                    {
+                                        "Description": "if opponent switches out into Empoleon while you set up, immediately switch to Poliwrath then switch to the second Metagross and use Trick;",
+                                        "Steps": [
+                                            {
+                                                "Description": "if opponent switches back into Altaria, switch to Chandelure: 4x Calm Mind + X.Speed + X.Defend"
+                                            },
+                                            {
+                                                "Description": "if opponent does not swap out, switch back to Poliwrath: Belly Drum + X.Speed"
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "Description": "if opponent uses Flamethrower, switch to Chandelure: 3x Calm Mind + X.Speed"
+                            },
+                            {
+                                "Description": "if opponent switches out into Clefable;",
+                                "Steps": [
+                                    {
+                                        "Description": "Switch to Blissey and use Trick as it switches out into Lucario. Switch to Chandelure 5x Calm Mind + X.Speed"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Name": "Bronzong",
+                "IsVisible": false,
+                "Steps": [
+                    {
+                        "Description": "Use Trick;"
+                    },
+                    {
+                        "Description": "if opponent switches into Exeggutor. Switch to Blissey and use Trick;",
+                        "Steps": [
+                            {
+                                "Description": "if opponent switches into Absol, switch to Chandelure: 4x Calm Mind + X.Speed"
+                            },
+                            {
+                                "Description": "if opponent switches into Flareon, switch to Chandelure: 4x Calm Mind + X.Speed",
+                                "Steps": [
+                                    {
+                                        "Description": "if opponent switches out into Empoleon, switch into Poliwrath: Belly Drum + X.Speed"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "Name": "Claydol",
+                "IsVisible": false,
+                "Steps": [
+                    {
+                        "Description": "Switch to Blissey and use Trick as it switches into Girafarig"
+                    },
+                    {
+                        "Description": "Use Stealth Rock"
+                    },
+                    {
+                        "Description": "Switch to Chandelure 4x Calm Mind + X.Speed"
+                    }
+                ]
+            },
+            {
+                "Name": "Clefable",
+                "IsVisible": false,
+                "Steps": [
+                    {
+                        "Description": "Use Trick;"
+                    },
+                    {
+                        "Description": "if opponent uses Seismic Toss, immediately switch to Chandelure 5x Calm Mind + X.Speed"
+                    },
+                    {
+                        "Description": "if opponent uses Fire Blast, immediately switch to Chandelure 3x Calm Mind + X.Speed"
+                    },
+                    {
+                        "Description": "if opponent switches into Golurk, switch to Excadrill 2x Swords Dance + X.Speed"
+                    },
+                    {
+                        "Description": "if opponent switches into Umbreon, immediately switch to Blissey and use Trick as it switches out into Golurk. Switch to Chandelure 6x Calm Mind + X.Speed"
+                    }
+                ]
+            },
+            {
+                "Name": "Chansey",
+                "IsVisible": false,
+                "Steps": [
+                    {
+                        "Description": "Use Trick;"
+                    },
+                    {
+                        "Description": "Use Stealth Rock"
+                    },
+                    {
+                        "Description": "Switch to Chandelure 2x Calm Mind + X.Speed"
+                    }
+                ]
                 },
                 {
                     "Name": "Electivire",
@@ -2211,6 +2211,9 @@
                         },
                         {
                             "Description": "if opponent switches into Lapras, switch to Poliwrath Belly Drum + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent switches into Tyranitar, switch to Excadrill. Stealth Rock then 2x Swords Dance + X.Speed"
                         }
                     ]
                 },

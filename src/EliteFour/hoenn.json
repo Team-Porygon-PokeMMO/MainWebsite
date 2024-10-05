@@ -676,18 +676,31 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "if players Metagross is faster, switch to Blissey and use Stealth Rock",
+                            "Description": "if you get Focus Sash, switch to Chandelure 3x Calm Mind + X Speed"},
+                        {
+                            "Description": "if you get Choice Scarf, switch to Blissey and use Trick. Switch to Chandelure and use Flamethrower to kill Honchkrow. Out comes Hydreigon, switch to Poliwrath Belly Drum + X Speed",
                             "Steps": [
                                 {
-                                    "Description": "if opponent switches into Lucario, switch to Chandelure 5x Calm Mind + X.Speed"
-                                },
-                                {
-                                    "Description": "if opponent switches into Mawile, switch to the second Metagross and use Trick. Switch back into Blissey and use Trick. Then switch to Poliwrath X.Defend into Belly Drum then X.Speed"
-                                }
-                            ]
-                        },
-                        {
-                            "Description": "Metagross is slower, switch to Blissey and use Trick. Switch to Chandelure and use Flamethrower to kill Honchkrow. Out comes Hydreigon, so switch to Poliwrath X.SpDef (if Hydreigon used Dark Pulse) + X.Speed + Belly Drum"
+                                    "Description": "if you get Life Orb",
+                                    "Steps": [
+                                        {
+                                            "Description": "and opponent lands Fire Blast, switch to Blissey and use Stealth Rock",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if opponent switches into Lucario, switch to Chandelure 5x Calm Mind + X.Speed"
+                                                },
+                                                {
+                                                    "Description": "if opponent switches into Mawile, switch to the second Metagross and use Trick. Switch back into Blissey and use Trick. Then switch to Poliwrath X.Defend into Belly Drum then X.Speed"
+                                                }
+                                                    ]
+                                                },
+                                                {
+                                                    "Description": "and opponent misses Fire Blast, use Stealth Rock then switch to Chandelure 3x Calm Mind + X Speed",
+                                                    "Steps": [
+                                                        {
+                                                            "Description": "if opponent switches into Umbreon, switch to Blissey and use Trick as it switches out to Mawile. Switch to Poliwrath X.Defend into Belly Drum then X.Speed"
+                                                        }
+                                                    ]
                         }
                     ]
                 },
