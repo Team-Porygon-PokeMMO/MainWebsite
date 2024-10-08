@@ -2769,7 +2769,7 @@
                                             ]
                                         },
                                         {
-                                            "Description": "if it sends in Sandslash, use Trick, then switch to Excadrill: 2x Swords Dance + X.Speed."
+                                            "Description": "if it sends in Sandslash, use Trick, then switch to Excadrill: Stealth rock, 2x Swords Dance + X.Speed."
                                         },
                                         {
                                             "Description": "if it sends in Vaporeon or Volcarona, use Stealth Rock, then switch to Blissey and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed."
@@ -2822,6 +2822,14 @@
                                                 },
                                                 {
                                                     "Description": "if Vaporeon used Hydro Pump, switch to Poliwrath: Belly Drum + X.Speed."
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "Description": "if it switches out to Braviary",
+                                            "Steps": [
+                                                {
+                                                    "Description": "Switch in Chandelure, then switch in Metagross Trick. Switch back in Chandelure, 3x Calm Mind + X.Speed"
                                                 }
                                             ]
                                         }

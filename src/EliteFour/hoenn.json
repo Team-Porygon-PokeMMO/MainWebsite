@@ -2332,22 +2332,16 @@
                                             "Description": "if opponent uses Hidden Power, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                                         },
                                         {
-                                            "Description": "if opponent uses Leaf Storm, use Trick again, then proceed to Protect;",
+                                            "Description": "if opponent uses Leaf Storm, switch to Blissey and trick.",
                                             "Steps": [
                                                 {
-                                                    "Description": "if it uses Flamethrower, use Stealth Rock then switch to Chandelure: 3x Calm Mind + X.Speed"
+                                                    "Description": "if opponent switches to Eelektross and you get Life Orb, use Stealth Rock then switch to Chandelure 3x Calm Mind + X Speed"
                                                 },
                                                 {
-                                                    "Description": "EXPERIMENTAL: if it uses Leaf Storm, sacrifice Poliwrath to safely switch to Blissey. Use X.SpDef and use Trick;",
-                                                    "IsVisible": true,
-                                                    "Steps": [
-                                                        {
-                                                            "Description": "if it doesn't switch out and keeps using Leaf Storm, pretty much out of luck. Could try Tricking and Protecting until it changes move."
-                                                        },
-                                                        {
-                                                            "Description": "if it switches out, switch to Chandelure 3x Calm Mind + X.Speed"
-                                                        }
-                                                    ]
+                                                    "Description": "if opponent switches to Eelektross and you get Expert Belt, switch to Chandelure 3x Calm Mind + X Speed."
+                                                },
+                                                {
+                                                    "Description": "if opponent stays, use Protect then switch to 2nd Metagross. Use Trick and Stealth Rock, then switch to Chandelure 3x Calm Mind + X speed."
                                                 }
                                             ]
                                         }
