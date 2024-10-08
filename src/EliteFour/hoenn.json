@@ -2077,7 +2077,12 @@
                             "Description": "if you get a Rocky Helmet",
                             "Steps": [
                                 {
-                                    "Description": "and opponent uses Scald, switch to Poliwrath Belly Drum + X.Speed"
+                                    "Description": "and opponent uses Scald, switch to Poliwrath Belly Drum + X.Speed",
+                                    "Steps": [
+                                        {
+                                            "Description": "if opponent switches into Togekiss, switch to the second Metagross and use Trick. Switch to  Chandelure 3x Calm Mind + X.Speed"
+                                        }
+                                    ]
                                 },
                                 {
                                     "Description": "and opponent uses Thunderbolt, switch to Excadrill 2x Swords Dance + X.Speed"
