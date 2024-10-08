@@ -800,7 +800,7 @@
                             "Description": "if it uses Leech Life, switch to Poliwrath, use Belly Drum as it switches out to Donphan. Kill it with Drain Punch. Blastoise comes out. Switch to Excadrill 2x Swords Dance and sweep "
                         },
                         {
-                            "Description": "if it uses Leech Seed, use Stealth Rock as it switches out to Durant (Choice Band'ed), then switch to Chandelure: 2xCalm Mind + X.Speed (Energy root if needed)",
+                            "Description": "if it uses Leech Seed, use Stealth Rock as it switches out to Durant (Choice Band'ed), then switch to Chandelure:  X. SpA + X. Speed",
                             "Steps": [
                                 {
                                     "Description": "if it switches into Rhyperior, switch to Chandelure then switch to the second Metagross and use Trick. Switch to Chandelure Calm Mind + X.Speed"
