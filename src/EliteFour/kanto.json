@@ -1287,6 +1287,9 @@
                         },
                         {
                             "Description": "if opponent switches out into Rotom-W, switch to Blissey then use Softboiled. Switch to Chandelure 3x Calm Mind + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent switches out into Seismitoad, switch to Blissey then use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
                         }
                     ]
                 },

@@ -1799,9 +1799,12 @@
                                             ]
                                         },
                                         {
-                                            "Description": "if opponent switches out Excadrill is sent out, switch to Chandelure then switch to Metagross then use Trick, locking Earthquake. Switch to Excadrill then use Stealth Rock. 2x Swords Dance + X.Speed"
+                                            "Description": "if opponent switches into Excadrill, switch to Chandelure then switch to Metagross then use Trick, locking Earthquake. Switch to Excadrill then use Stealth Rock. 2x Swords Dance + X.Speed"
                                         }
                                     ]
+                                },
+                                {
+                                    "Description": "if opponent switches into Excadrill, switch to Chandelure then switch to Metagross then use Trick, locking Earthquake. Stealth Rock then Switch to Excadrill 2x Swords Dance + X.Speed"
                                 }
                             ]
                         }
@@ -1997,7 +2000,7 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "if you get a Dragon Gem, switch to Blissey then use Trick. It will switch out into Absol and locks Close Combat. Switch to Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if you get a Dragon Gem, switch to Blissey then use Trick. It will switch out into Absol and locks Close Combat. Switch to Chandelure 5x Calm Mind + X.Speed (Flamethrower Vs.Gengar)"
                         },
                         {
                             "Description": "if opponent gets Life Orb, switch to Excadrill Stealth Rock then Swords Dance + X.Speed"
