@@ -628,7 +628,7 @@
                             "Description": "if opponent does not switch out Stealth Rock then switch in Poliwrath Belly Drum + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "if opponent sends out last, switch Poliwrath to Chandelure Energy Ball"
+                                    "Description": "if opponent sends out Ditto last, switch Poliwrath to Chandelure Energy Ball"
                                 }
                             ]
                         },

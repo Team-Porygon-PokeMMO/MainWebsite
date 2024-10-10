@@ -502,7 +502,12 @@
                             "Description": "if you get Chesto Berry, switch to Blissey and use Trick as it switches out into Rhyperior. Switch to Excadrill 3x Swords Dance + X.Speed"
                         },
                         {
-                            "Description": "if you get Choice Scarf, switch to Poliwrath then switch to second Metagross as it switches out to Donphan/Rhyperior. Use Trick then switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if you get Choice Scarf, switch to Poliwrath then switch to second Metagross as it switches out to Donphan/Rhyperior. Use Trick then switch to Excadrill 2x Swords Dance + X.Speed",
+                            "Steps": [
+                        {
+                            "Description": "If it swaps back to Blastoise during setup switch to Poli, then switch to Metagross Stealth Rock, then Excadrill 2x Swords Dance + X.Speed"
+                        }
+                    ]
                         },
                         {
                             "Description": "if it switches out into Rhyperior, switch to Excadrill 3x Swords Dance + X.Speed"

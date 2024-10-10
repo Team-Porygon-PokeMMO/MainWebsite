@@ -57,7 +57,12 @@
                                     ]
                                 },
                                 {
-                                    "Description": "if opponent switches out into Chansey, switch to Chandelure 5x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches out into Chansey, switch to Chandelure 5x Calm Mind + X.Speed",
+                                    "Steps": [
+                                        {
+                                            "Description": "if Mantine comes out, swap into Metagross and Trick. Switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
+                                        }
+                                    ]
                                 },
                                 {
                                     "Description": "if opponent switches into Dragonite, use Stealth Rock;",
@@ -405,7 +410,7 @@
                                             "Icons": "📌🥚Trick💡3+2"
                                         },
                                         {
-                                            "Description": "BURN RISK: switch into Poliwrath: Belly Drum + X.Speed",
+                                            "Description": "BURN RISK: switch into Poliwrath: Belly Drum + X.Speed (Continue to setup and X.Speed vs Slowbro)",
                                             "Icons": "🔥⚠️: 🐸6+2"
                                         }
                                     ]
@@ -1654,7 +1659,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "Use Trick, then switch to Excadrill 2x Swords Dance"
                         }
                     ]
                 },
@@ -1698,7 +1703,7 @@
                                     "Description": "if you get a Rocky Helmet, switch to Excadrill: Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "if opponent switches out into Dragonite, swap into Poliwrath: Belly Drum + X.Speed (if you fear getting burned, follow sub steps)",
+                                    "Description": "if opponent switches out into Dragonite, swap into Poliwrath: Belly Drum + X.Speed (Drain punch Aerodactyl. If you fear getting burned, follow sub steps)",
                                     "Steps": [
                                         {
                                             "Description": "use Stealth Rock, then switch into Blissey and use Trick;",
@@ -1792,7 +1797,7 @@
                                     ]
                                 },
                                 {
-                                    "Description": "if opponent switches into Hydreigon, Trick and Stealth Rock, then switch to Poliwrath X.Speed + Energy Root + Belly Drum",
+                                    "Description": "if opponent switches into Hydreigon, Trick. Switch to Poliwrath 2x X.Speed + Energy Root + Belly Drum",
                                     "Steps": [
                                         {
                                             "Description": "if opponent switches into Arcanine, switch to Chandelure 4x Calm Mind + X.Speed",
