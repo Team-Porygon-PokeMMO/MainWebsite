@@ -389,7 +389,7 @@
                                             ]
                                         },
                                         {
-                                            "Description": "and you get a Life Orb, use Stealth Rock, then switch to Chandelure 2x Calm Mind + X.Speed."
+                                            "Description": "and you get a Life Orb, use Stealth Rock, then switch to Chandelure 2x Calm Mind + X.Speed. (Shadow Ball Vs. Froslass if Bisharp still alive)"
                                         }
                                     ]
                                 },
@@ -468,7 +468,7 @@
                                     "Description": "if you get a Chesto Berry and they switched Chandelure in, switch yourself to Chandelure: 2x Calm Mind + X.Speed."
                                 },
                                 {
-                                    "Description": "if you get a Leftovers, switch to Chandelure 3x Calm Mind + X.Speed (use Shadow Ball vs Gengar)."
+                                    "Description": "if you get a Leftovers, spam Stealth rock until opponents Chandelure comes out. Switch to Chandelure 3x Calm Mind + X.Speed (use Shadow Ball vs Gengar). "
                                 },
                                 {
                                     "Description": "if it switches into Eelektross, switch to Chandelure, then switch to Excadrill and use Earthquake to kill it. Switch to Chadenlure: Calm Mind + X.Speed (use Shadow Ball vs Gengar)."
@@ -871,14 +871,6 @@
                                     "Description": "if it uses Flamethrower, switch to Chandelure 3x Calm Mind + X.Speed (if Bisharp is sent last, swap into Poliwrath and Drain Punch to kill it)"
                                 },
                                 {
-                                    "Description": "if it uses any other move, switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed.",
-                                    "Steps": [
-                                        {
-                                            "Description": "if it switches into Tyranitar, switch to the second Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed."
-                                        }
-                                    ]
-                                },
-                                {
                                     "Description": "if it switches into Bisharp, switch to Chandelure 4x Calm Mind + X.Speed.",
                                     "Steps": [
                                         {
@@ -907,10 +899,21 @@
                                     "Description": "if it stays, switch to Blissey and use Trick.",
                                     "Steps": [
                                         {
-                                            "Description": "if it switches into Samurott, switch to Chandelure 5x Calm Mind + X.Speed."
+                                            "Description": "if you get Life Orb",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if it switches into Samurott, switch to Chandelure 5x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "if it switches into Absol, switch to Chandelure 3x Calm Mind + X.Speed."
+                                                },
+                                                {
+                                                    "Description": "if it switches into Tyranitar, switch to the second Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed."
+                                                }
+                                            ]
                                         },
                                         {
-                                            "Description": "if it switches into Absol, switch to Chandelure 3x Calm Mind + X.Speed."
+                                            "Description": "if you get Choice Scarf use Trick until opponent swaps out into Samurott, switch to Chandelure 4x Calm Mind + X.Speed."
                                         }
                                     ]
                                 }
@@ -1800,7 +1803,7 @@
                                     "Description": "if it switches into Metagross, switch to Chandelure 6x Calm Mind + X.Speed."
                                 },
                                 {
-                                    "Description": "if it switches into Mienshao, use Stealth Rock, then switch to Metagross and use Trick;",
+                                    "Description": "if it switches into Mienshao, use Protect, then switch to Metagross and use Trick;",
                                     "Steps": [
                                         {
                                             "Description": "if it switches into Altaria, switch to Chandelure 4x Calm Mind + X.Speed.",
@@ -1811,13 +1814,13 @@
                                             ]
                                         },
                                         {
-                                            "Description": "if it switches into Entei, switch to Chandelure 3x Calm Mind + X.Speed.",
+                                            "Description": "if it switches into Entei, switch to Chandelure 4x Calm Mind + X.Speed.",
                                             "Steps": [
                                                 {
                                                     "Description": "if it switches into Umbreon, switch to Blissey and use Softboiled.",
                                                     "Steps": [
                                                         {
-                                                            "Description": "if it switches into Entei, switch to Chandelure 3x Calm Mind + X.Speed."
+                                                            "Description": "if it switches into Entei, switch to Chandelure 4x Calm Mind + X.Speed."
                                                         },
                                                         {
                                                             "Description": "if it switches into Mienshao, use Softboiled twice, then switch back into Chandelure 3x Calm Mind + X.Speed."
@@ -2616,7 +2619,12 @@
                                     ]
                                 },
                                 {
-                                    "Description": "if it switches into Volcarona, switch to Blissey and use Trick. Switch back into Chandelure 4x Calm Mind + X.Speed."
+                                    "Description": "if it switches into Volcarona, switch to Blissey and use Trick. Switch back into Chandelure 4x Calm Mind + X.Speed.",
+                                    "Steps": [
+                                        {
+                                            "Description": "if it switches into Archeops , switch into Excadrill and 2x Swords Dance and X.Speed"
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -2764,7 +2772,7 @@
                                                     "Description": "if it uses Close Combat, switch to Chandelure 2x Calm Mind + X.Speed."
                                                 },
                                                 {
-                                                    "Description": "if it switches into Sandslash, switch to Excadrill: 2x Swords Dance + X.Speed."
+                                                    "Description": "if it switches into Sandslash, switch to Excadrill: Stealth rock then 2x Swords Dance + X.Speed."
                                                 }
                                             ]
                                         },
@@ -2826,7 +2834,7 @@
                                             ]
                                         },
                                         {
-                                            "Description": "if it switches out to Braviary",
+                                            "Description": "if it switches out to Braviary/Lucario",
                                             "Steps": [
                                                 {
                                                     "Description": "Switch in Chandelure, then switch in Metagross Trick. Switch back in Chandelure, 3x Calm Mind + X.Speed"
@@ -2995,6 +3003,9 @@
                                                         },
                                                         {
                                                             "Description": "if it switches into Dragonite, switch to Blissey and use Trick. Switch to Chandelure: 3x Calm Mind + X.Speed"
+                                                        },
+                                                        {
+                                                            "Description": "if it switches into Krookodile, switch in Excadrill: 2x Swords Dance + X.Speed."
                                                         }
                                                     ]
                                                 },
@@ -3037,6 +3048,9 @@
                                 },
                                 {
                                     "Description": "if it switches into Reuniclus, switch to Metagross and use Trick, then Stealth Rock and switch to Chandelure: Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if it switches into Latios, Trick. Switch into Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
                                 }
                             ]
                         }
