@@ -2,15 +2,15 @@
   <UContainer>
     <h2 class="mt-6">Fixed Costs</h2>
     <div class="fixed-costs">
-      <p><b>Netballs:</b> ${{ netballCost }}</p>
-      <p><b>Pokeballs:</b> ${{ pokeballCost }}</p>
-      <p><b>Shiny Charms:</b> ${{ shinyCharmCost }}</p>
-      <p><b>Ditto Box Cost:</b> ${{ dittoBoxCost }}</p>
-      <p><b>Mailing Fee:</b> ${{ mailingFee }}</p>
-      <p><b>30 Day Donator Status:</b> ${{ donatorStatusCost }}</p>
-      <p><b>Ratio No Donator:</b> {{ ratioNoDonator }}</p>
-      <p><b>Ratio Donator:</b> {{ ratioDonator }}</p>
-      <p><b>Ratio Donator + Shiny Charm:</b> {{ ratioDonatorShinyCharm }}</p>
+      <p><b>Netballs:</b> ${{ netballCost.toLocaleString() }}</p>
+      <p><b>Pokeballs:</b> ${{ pokeballCost.toLocaleString() }}</p>
+      <p><b>Shiny Charms:</b> ${{ shinyCharmCost.toLocaleString() }}</p>
+      <p><b>Ditto Box Cost:</b> ${{ dittoBoxCost.toLocaleString() }}</p>
+      <p><b>Mailing Fee:</b> ${{ mailingFee.toLocaleString() }}</p>
+      <p><b>30 Day Donator Status:</b> ${{ donatorStatusCost.toLocaleString() }}</p>
+      <p><b>Ratio No Donator:</b> {{ ratioNoDonator.toLocaleString() }}</p>
+      <p><b>Ratio Donator:</b> {{ ratioDonator.toLocaleString() }}</p>
+      <p><b>Ratio Donator + Shiny Charm:</b> {{ ratioDonatorShinyCharm.toLocaleString() }}</p>
     </div>
 
     <h2 class="mt-6">Inputs</h2>
@@ -54,106 +54,106 @@
     </div>
 
     <h2 class="mt-6">Cost per Batch</h2>
-    <div class="cost-per-batch">
-      <div class="m-2">
-        <label for="eggs">Eggs:</label>
-        <UInput v-model.number="eggs" type="number" @input="updateCosts" />
-      </div>
-      <div class="m-2">
-        <label for="monthsSpent">Months Spent Egging:</label>
-        <UInput v-model.number="monthsSpent" type="number" @input="updateCosts" />
-      </div>
-      <div class="m-2">
-        <label>Total Netball Cost:</label>
-        <UInput v-model.number="totalNetballCost" type="number" disabled :value="totalNetballCost" />
-      </div>
-      <div class="m-2">
-        <label>Total Pokeball Cost:</label>
-        <UInput v-model.number="totalPokeballCost" type="number" disabled :value="totalPokeballCost" />
-      </div>
-      <div class="m-2">
-        <label>Total Ball Cost:</label>
-        <UInput v-model.number="totalBallCost" type="number" disabled :value="totalBallCost" />
-      </div>
-      <div class="m-2">
-        <label>Total Mailing Cost:</label>
-        <UInput v-model.number="totalMailingCost" type="number" disabled :value="totalMailingCost" />
-      </div>
-      <div class="m-2">
-        <label>Shiny Charm Cost:</label>
-        <UInput v-model.number="shinyCharmCost" type="number" disabled :value="shinyCharmCost" />
-      </div>
-      <div class="m-2">
-        <label>Total Batch Cost (Catching):</label>
-        <UInput v-model.number="totalBatchCost" type="number" disabled :value="totalBatchCost" />
-      </div>
-      <div class="m-2">
-        <label>Total Batch Cost (Buying):</label>
-        <UInput v-model.number="totalBatchBuyingCost" type="number" disabled :value="totalBatchBuyingCost" />
-      </div>
-    </div>
+<div class="cost-per-batch">
+  <div class="m-2">
+    <label for="eggs">Eggs:</label>
+    <UInput v-model.number="eggs" type="number" @input="updateCosts" />
+  </div>
+  <div class="m-2">
+    <label for="monthsSpent">Months Spent Egging:</label>
+    <UInput v-model.number="monthsSpent" type="number" @input="updateCosts" />
+  </div>
+  <div class="m-2">
+    <label>Total Netball Cost:</label>
+    <UInput :value="formattedTotalNetballCost" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Total Pokeball Cost:</label>
+    <UInput :value="formattedTotalPokeballCost" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Total Ball Cost:</label>
+    <UInput :value="formattedTotalBallCost" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Total Mailing Cost:</label>
+    <UInput :value="formattedTotalMailingCost" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Shiny Charm Cost:</label>
+    <UInput :value="formattedShinyCharmCost" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Total Batch Cost (Catching):</label>
+    <UInput :value="formattedTotalBatchCost" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Total Batch Cost (Buying):</label>
+    <UInput :value="formattedTotalBatchBuyingCost" type="text" disabled />
+  </div>
+</div>
 
     <h2 class="mt-6">Average Total Per Shiny</h2>
-    <div class="average-total">
-      <h3 class="large-subtitle">Caught</h3>
-      <div class="m-2">
-        <label>No Dono Caught:</label>
-        <UInput v-model.number="noDonoCaught" type="number" disabled :value="noDonoCaught" />
-      </div>
-      <div class="m-2">
-        <label>Dono Caught:</label>
-        <UInput v-model.number="donoCaught" type="number" disabled :value="donoCaught" />
-      </div>
-      <div class="m-2">
-        <label>Dono + Charm Caught:</label>
-        <UInput v-model.number="donoCharmCaught" type="number" disabled :value="donoCharmCaught" />
-      </div>
+<div class="average-total">
+  <h3 class="large-subtitle">Caught</h3>
+  <div class="m-2">
+    <label>No Dono Caught:</label>
+    <UInput :value="formattedNoDonoCaught" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Dono Caught:</label>
+    <UInput :value="formattedDonoCaught" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Dono + Charm Caught:</label>
+    <UInput :value="formattedDonoCharmCaught" type="text" disabled />
+  </div>
 
-      <h3 class="large-subtitle">Bought</h3>
-      <div class="m-2">
-        <label>No Dono Bought:</label>
-        <UInput v-model.number="noDonoBought" type="number" disabled :value="noDonoBought" />
-      </div>
-      <div class="m-2">
-        <label>Dono Bought:</label>
-        <UInput v-model.number="donoBought" type="number" disabled :value="donoBought" />
-      </div>
-      <div class="m-2">
-        <label>Dono + Charm Bought:</label>
-        <UInput v-model.number="donoCharmBought" type="number" disabled :value="donoCharmBought" />
-      </div>
-    </div>
+  <h3 class="large-subtitle">Bought</h3>
+  <div class="m-2">
+    <label>No Dono Bought:</label>
+    <UInput :value="formattedNoDonoBought" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Dono Bought:</label>
+    <UInput :value="formattedDonoBought" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Dono + Charm Bought:</label>
+    <UInput :value="formattedDonoCharmBought" type="text" disabled />
+  </div>
+</div>
 
     <h2 class="mt-6">Total Spent for Shiny</h2>
     <div class="total-spent">
-      <h3 class="large-subtitle">Caught</h3>
-      <div class="m-2">
-        <label>No Dono Caught:</label>
-        <UInput v-model.number="noDonoCaughtSpent" type="number" disabled :value="noDonoCaughtSpent" />
-      </div>
-      <div class="m-2">
-        <label>Dono Caught:</label>
-        <UInput v-model.number="donoCaughtSpent" type="number" disabled :value="donoCaughtSpent" />
-      </div>
-      <div class="m-2">
-        <label>Dono + Charm Caught:</label>
-        <UInput v-model.number="donoCharmCaughtSpent" type="number" disabled :value="donoCharmCaughtSpent" />
-      </div>
+  <h3 class="large-subtitle">Caught</h3>
+  <div class="m-2">
+    <label>No Dono Caught:</label>
+    <UInput :value="formattedNoDonoCaughtSpent" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Dono Caught:</label>
+    <UInput :value="formattedDonoCaughtSpent" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Dono + Charm Caught:</label>
+    <UInput :value="formattedDonoCharmCaughtSpent" type="text" disabled />
+  </div>
 
-      <h3 class="large-subtitle">Bought</h3>
-      <div class="m-2">
-        <label>No Dono Bought:</label>
-        <UInput v-model.number="noDonoBoughtSpent" type="number" disabled :value="noDonoBoughtSpent" />
-      </div>
-      <div class="m-2">
-        <label>Dono Bought:</label>
-        <UInput v-model.number="donoBoughtSpent" type="number" disabled :value="donoBoughtSpent" />
-      </div>
-      <div class="m-2">
-        <label>Dono + Charm Bought:</label>
-        <UInput v-model.number="donoCharmBoughtSpent" type="number" disabled :value="donoCharmBoughtSpent" />
-      </div>
-    </div>
+  <h3 class="large-subtitle">Bought</h3>
+  <div class="m-2">
+    <label>No Dono Bought:</label>
+    <UInput :value="formattedNoDonoBoughtSpent" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Dono Bought:</label>
+    <UInput :value="formattedDonoBoughtSpent" type="text" disabled />
+  </div>
+  <div class="m-2">
+    <label>Dono + Charm Bought:</label>
+    <UInput :value="formattedDonoCharmBoughtSpent" type="text" disabled />
+  </div>
+</div>
   </UContainer>
 </template>
 
@@ -191,6 +191,9 @@ export default {
       noDonoCaught: 0,
       donoCaught: 0,
       donoCharmCaught: 0,
+      noDonoBought: 0, 
+      donoBought: 0,   
+      donoCharmBought: 0, 
       // Average Total Per Shiny Bought
       noDonoBought: 0,
       donoBought: 0,
@@ -226,9 +229,75 @@ donoBoughtSpent() {
 },
 donoCharmBoughtSpent() {
   return Math.round(this.donoCharmBought * this.ratioDonatorShinyCharm);
-}
-}
-,
+},
+formattedNoDonoCaught() {
+    return `$${this.noDonoCaught.toLocaleString()}`;
+  },
+  formattedDonoCaught() {
+    return `$${this.donoCaught.toLocaleString()}`;
+  },
+  formattedDonoCharmCaught() {
+    return `$${this.donoCharmCaught.toLocaleString()}`;
+  },
+  
+  formattedNoDonoBought() {
+    return `$${this.noDonoBought.toLocaleString()}`;
+  },
+  formattedDonoBought() {
+    return `$${this.donoBought.toLocaleString()}`;
+  },
+  formattedDonoCharmBought() {
+    return `$${this.donoCharmBought.toLocaleString()}`;
+  },
+  formattedNoDonoBought() {
+    return `$${this.noDonoBought.toLocaleString()}`;
+  },
+  formattedDonoBought() {
+    return `$${this.donoBought.toLocaleString()}`;
+  },
+  formattedDonoCharmBought() {
+    return `$${this.donoCharmBought.toLocaleString()}`;
+  },
+  formattedTotalNetballCost() {
+    return `$${this.totalNetballCost.toLocaleString()}`;
+  },
+  formattedTotalPokeballCost() {
+    return `$${this.totalPokeballCost.toLocaleString()}`;
+  },
+  formattedTotalBallCost() {
+    return `$${this.totalBallCost.toLocaleString()}`;
+  },
+  formattedTotalMailingCost() {
+    return `$${this.totalMailingCost.toLocaleString()}`;
+  },
+  formattedShinyCharmCost() {
+    return `$${this.shinyCharmCost.toLocaleString()}`;
+  },
+  formattedTotalBatchCost() {
+    return `$${this.totalBatchCost.toLocaleString()}`;
+  },
+  formattedTotalBatchBuyingCost() {
+    return `$${this.totalBatchBuyingCost.toLocaleString()}`;
+  },
+  formattedNoDonoCaughtSpent() {
+    return `$${this.noDonoCaughtSpent.toLocaleString()}`;
+  },
+  formattedDonoCaughtSpent() {
+    return `$${this.donoCaughtSpent.toLocaleString()}`;
+  },
+  formattedDonoCharmCaughtSpent() {
+    return `$${this.donoCharmCaughtSpent.toLocaleString()}`;
+  },
+  formattedNoDonoBoughtSpent() {
+    return `$${this.noDonoBoughtSpent.toLocaleString()}`;
+  },
+  formattedDonoBoughtSpent() {
+    return `$${this.donoBoughtSpent.toLocaleString()}`;
+  },
+  formattedDonoCharmBoughtSpent() {
+    return `$${this.donoCharmBoughtSpent.toLocaleString()}`;
+  },
+},
   watch: {
     eggs: 'updateCosts',
     netballCost: 'updateCosts',
