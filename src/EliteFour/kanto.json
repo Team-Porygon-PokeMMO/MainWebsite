@@ -1131,6 +1131,9 @@
                         },
                         {
                             "Description": "if opponent switches out into Salamence, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent switches out into Steelix and you get a Metal Coat, switch in Excadrill and Stealth Rock. Switch in Chandelure, 3x Calm Mind + X.Speed"
                         }
                     ]
                 },
