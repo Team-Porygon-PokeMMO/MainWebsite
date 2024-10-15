@@ -210,23 +210,23 @@ export default {
     return this.actualEggs > 0 ? this.actualEggs / this.shinyCharmOdds : 0;
   },
   noDonoCaughtSpent() {
-    return Math.round(this.noDonoCaught * this.ratioNoDonator); // Ensure rounding
-  },
-  donoCaughtSpent() {
-    return Math.round(this.donoCaught * this.ratioDonator); // Ensure rounding
-  },
-  donoCharmCaughtSpent() {
-    return Math.round(this.donoCharmCaught * this.ratioDonatorShinyCharm); // Ensure rounding
-  },
-  noDonoBoughtSpent() {
-    return Math.round(this.noDonoBought * this.ratioNoDonator); // Ensure rounding
-  },
-  donoBoughtSpent() {
-    return Math.round(this.donoBought * this.ratioDonator); // Ensure rounding
-  },
-  donoCharmBoughtSpent() {
-    return Math.round(this.donoCharmBought * this.ratioDonatorShinyCharm); // Ensure rounding
-  }
+  return Math.round(this.noDonoCaught * this.ratioNoDonator);
+},
+donoCaughtSpent() {
+  return Math.round(this.donoCaught * this.ratioDonator);
+},
+donoCharmCaughtSpent() {
+  return Math.round(this.donoCharmCaught * this.ratioDonatorShinyCharm);
+},
+noDonoBoughtSpent() {
+  return Math.round(this.noDonoBought * this.ratioNoDonator);
+},
+donoBoughtSpent() {
+  return Math.round(this.donoBought * this.ratioDonator);
+},
+donoCharmBoughtSpent() {
+  return Math.round(this.donoCharmBought * this.ratioDonatorShinyCharm);
+}
 }
 ,
   watch: {
@@ -274,26 +274,26 @@ export default {
       this.actualEggs = 0; // Reset actual eggs
     },
     updateCosts() {
-      this.totalNetballCost = (this.eggs * this.netballCost) / this.netballCatchRate; // Calculate Total Netball Cost
-      this.totalPokeballCost = this.eggs * this.pokeballCost; // Calculate Total Pokeball Cost
-      this.totalBallCost = this.totalNetballCost + this.totalPokeballCost; // Calculate Total Ball Cost
-      this.totalMailingCost = (this.eggs / 5) * this.mailingFee; // Calculate Total Mailing Cost
-      this.totalBatchCost = this.totalBallCost + this.totalMailingCost + this.shinyCharmCost; // Calculate Total Batch Cost (Catching)
-      this.totalBatchBuyingCost = (this.totalPokeballCost + (this.dittoBoxCost * (this.eggs / 60)) + this.shinyCharmCost); // Calculate Total Batch Cost (Buying)
+  this.totalNetballCost = Math.round((this.eggs * this.netballCost) / this.netballCatchRate); // Calculate Total Netball Cost
+  this.totalPokeballCost = Math.round(this.eggs * this.pokeballCost); // Calculate Total Pokeball Cost
+  this.totalBallCost = Math.round(this.totalNetballCost + this.totalPokeballCost); // Calculate Total Ball Cost
+  this.totalMailingCost = Math.round((this.eggs / 5) * this.mailingFee); // Calculate Total Mailing Cost
+  this.totalBatchCost = Math.round(this.totalBallCost + this.totalMailingCost + this.shinyCharmCost); // Calculate Total Batch Cost (Catching)
+  this.totalBatchBuyingCost = Math.round((this.totalPokeballCost + (this.dittoBoxCost * (this.eggs / 60)) + this.shinyCharmCost)); // Calculate Total Batch Cost (Buying)
 
-      this.batchesNoDonator = this.noDonatorOdds / (this.eggs || 1); // Calculate Batches for No Donator Status
-      this.batchesDonator = this.donatorOdds / (this.eggs || 1); // Calculate Batches for Donator Status
-      this.batchesShinyCharm = this.shinyCharmOdds / (this.eggs || 1); // Calculate Batches for Donator + Shiny Charm
+  this.batchesNoDonator = Math.round(this.noDonatorOdds / (this.eggs || 1)); // Calculate Batches for No Donator Status
+  this.batchesDonator = Math.round(this.donatorOdds / (this.eggs || 1)); // Calculate Batches for Donator Status
+  this.batchesShinyCharm = Math.round(this.shinyCharmOdds / (this.eggs || 1)); // Calculate Batches for Donator + Shiny Charm
 
-      // Average Total Per Shiny Calculations
-      this.noDonoCaught = (this.totalBatchCost - this.shinyCharmCost) * this.batchesNoDonator;
-      this.donoCaught = (this.totalBatchCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent);
-      this.donoCharmCaught = (this.totalBatchCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent);
+  // Average Total Per Shiny Calculations
+  this.noDonoCaught = Math.round((this.totalBatchCost - this.shinyCharmCost) * this.batchesNoDonator);
+  this.donoCaught = Math.round((this.totalBatchCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent));
+  this.donoCharmCaught = Math.round((this.totalBatchCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent));
 
-      // Average Total Per Shiny Bought Calculations
-      this.noDonoBought = (this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesNoDonator;
-      this.donoBought = (this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent);
-      this.donoCharmBought = (this.totalBatchBuyingCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent);
+  // Average Total Per Shiny Bought Calculations
+  this.noDonoBought = Math.round((this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesNoDonator);
+  this.donoBought = Math.round((this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent));
+  this.donoCharmBought = Math.round((this.totalBatchBuyingCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent));
     },
   },
 };
