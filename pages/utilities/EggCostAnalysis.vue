@@ -1,5 +1,9 @@
 <template>
   <UContainer>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+    <h2 class="mt-6">Egg Cost for Genderless Breeding</h2>
+    <p style="font-size: 0.8em; text-align: center;">Ensure all input fields are filled out in both the input section, and in the Cost per Batch section.</p>
+</div>
     <h2 class="mt-6">Fixed Costs</h2>
     <div class="fixed-costs">
       <p><b>Netballs:</b> ${{ netballCost.toLocaleString() }}</p>
@@ -13,7 +17,7 @@
     <h2 class="mt-6">Inputs</h2>
     <div class="inputs-section">
       <div class="m-2">
-        <label for="actualEggs">Actual Eggs:</label>
+        <label for="actualEggs">Actual Number of Eggs Hatched for Shiny:</label>
         <UInput v-model.number="actualEggs" type="number" @input="updateCosts" />
       </div>
         <div>
@@ -53,27 +57,27 @@
     <h2 class="mt-6">Odds</h2>
     <div class="odds-section">
       <div class="m-2">
-        <label>No Donator Status:</label>
+        <label>Odds with No Donator Status:</label>
         <UInput v-model.number="noDonatorOdds" type="number" disabled :value="noDonatorOdds" />
       </div>
       <div class="m-2">
-        <label>Batches (No Donator Status):</label>
+        <label>Batches of Eggs (No Donator Status):</label>
         <UInput v-model.number="batchesNoDonator" type="number" disabled :value="batchesNoDonator" />
       </div>
       <div class="m-2">
-        <label>Donator Status:</label>
+        <label>Odds with Donator Status:</label>
         <UInput v-model.number="donatorOdds" type="number" disabled :value="donatorOdds" />
       </div>
       <div class="m-2">
-        <label>Batches (Donator Status):</label>
+        <label>Batches of Eggs (Donator Status):</label>
         <UInput v-model.number="batchesDonator" type="number" disabled :value="batchesDonator" />
       </div>
       <div class="m-2">
-        <label>Donator Status + Shiny Charm:</label>
+        <label>Odds with Donator Status + Shiny Charm:</label>
         <UInput v-model.number="shinyCharmOdds" type="number" disabled :value="shinyCharmOdds" />
       </div>
       <div class="m-2">
-        <label>Batches (Donator Status + Shiny Charm):</label>
+        <label>Batches of Eggs (Donator Status + Shiny Charm):</label>
         <UInput v-model.number="batchesShinyCharm" type="number" disabled :value="batchesShinyCharm" />
       </div>
       <div class="m-2">
@@ -83,9 +87,11 @@
     </div>
 
     <h2 class="mt-6">Cost per Batch</h2>
+    <p style="font-size: 0.8em; text-align: left;">Caught section is based on catching your own dittos for egging.</p>
+    <p style="font-size: 0.8em; text-align: left;">Bought section is based on purchasing your dittos for egging.</p>
 <div class="cost-per-batch">
   <div class="m-2">
-    <label for="eggs">Eggs:</label>
+    <label for="eggs">Eggs made per Shiny Charm:</label>
     <UInput v-model.number="eggs" type="number" @input="updateCosts" />
   </div>
   <div class="m-2">
@@ -123,6 +129,8 @@
 </div>
 
     <h2 class="mt-6">Average Total Per Shiny</h2>
+    <p style="font-size: 0.8em; text-align: left;">Caught section is based on catching your own dittos for egging.</p>
+    <p style="font-size: 0.8em; text-align: left;">Bought section is based on purchasing your dittos for egging.</p>
 <div class="average-total">
   <h3 class="large-subtitle">Caught</h3>
   <div class="m-2">
@@ -154,6 +162,8 @@
 </div>
 
     <h2 class="mt-6">Total Spent for Shiny</h2>
+    <p style="font-size: 0.8em; text-align: left;">Caught section is based on catching your own dittos for egging.</p>
+    <p style="font-size: 0.8em; text-align: left;">Bought section is based on purchasing your dittos for egging.</p>
     <div class="total-spent">
   <h3 class="large-subtitle">Caught</h3>
   <div class="m-2">
