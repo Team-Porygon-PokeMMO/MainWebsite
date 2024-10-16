@@ -242,89 +242,79 @@ export default {
     return this.actualEggs > 0 ? this.actualEggs / this.shinyCharmOdds : 0;
   },
   noDonoCaughtSpent() {
-  return Math.round(this.noDonoCaught * this.ratioNoDonator);
-},
-donoCaughtSpent() {
-  return Math.round(this.donoCaught * this.ratioDonator);
-},
-donoCharmCaughtSpent() {
-  return Math.round(this.donoCharmCaught * this.ratioDonatorShinyCharm);
-},
-noDonoBoughtSpent() {
-  return Math.round(this.noDonoBought * this.ratioNoDonator);
-},
-donoBoughtSpent() {
-  return Math.round(this.donoBought * this.ratioDonator);
-},
-donoCharmBoughtSpent() {
-  return Math.round(this.donoCharmBought * this.ratioDonatorShinyCharm);
-},
-formattedNoDonoCaught() {
-    return `$${this.noDonoCaught.toLocaleString()}`;
+    return parseInt(this.noDonoCaught * this.ratioNoDonator);
+  },
+  donoCaughtSpent() {
+    return parseInt(this.donoCaught * this.ratioDonator);
+  },
+  donoCharmCaughtSpent() {
+    return parseInt(this.donoCharmCaught * this.ratioDonatorShinyCharm);
+  },
+  noDonoBoughtSpent() {
+    return parseInt(this.noDonoBought * this.ratioNoDonator);
+  },
+  donoBoughtSpent() {
+    return parseInt(this.donoBought * this.ratioDonator);
+  },
+  donoCharmBoughtSpent() {
+    return parseInt(this.donoCharmBought * this.ratioDonatorShinyCharm);
+  },
+  formattedNoDonoCaught() {
+    return `$${parseInt(this.noDonoCaught).toLocaleString()}`;
   },
   formattedDonoCaught() {
-    return `$${this.donoCaught.toLocaleString()}`;
+    return `$${parseInt(this.donoCaught).toLocaleString()}`;
   },
   formattedDonoCharmCaught() {
-    return `$${this.donoCharmCaught.toLocaleString()}`;
-  },
-  
-  formattedNoDonoBought() {
-    return `$${this.noDonoBought.toLocaleString()}`;
-  },
-  formattedDonoBought() {
-    return `$${this.donoBought.toLocaleString()}`;
-  },
-  formattedDonoCharmBought() {
-    return `$${this.donoCharmBought.toLocaleString()}`;
+    return `$${parseInt(this.donoCharmCaught).toLocaleString()}`;
   },
   formattedNoDonoBought() {
-    return `$${this.noDonoBought.toLocaleString()}`;
+    return `$${parseInt(this.noDonoBought).toLocaleString()}`;
   },
   formattedDonoBought() {
-    return `$${this.donoBought.toLocaleString()}`;
+    return `$${parseInt(this.donoBought).toLocaleString()}`;
   },
   formattedDonoCharmBought() {
-    return `$${this.donoCharmBought.toLocaleString()}`;
+    return `$${parseInt(this.donoCharmBought).toLocaleString()}`;
   },
   formattedTotalNetballCost() {
-    return `$${this.totalNetballCost.toLocaleString()}`;
+    return `$${parseInt(this.totalNetballCost).toLocaleString()}`;
   },
   formattedTotalPokeballCost() {
-    return `$${this.totalPokeballCost.toLocaleString()}`;
+    return `$${parseInt(this.totalPokeballCost).toLocaleString()}`;
   },
   formattedTotalBallCost() {
-    return `$${this.totalBallCost.toLocaleString()}`;
+    return `$${parseInt(this.totalBallCost).toLocaleString()}`;
   },
   formattedTotalMailingCost() {
-    return `$${this.totalMailingCost.toLocaleString()}`;
+    return `$${parseInt(this.totalMailingCost).toLocaleString()}`;
   },
   formattedShinyCharmCost() {
-    return `$${this.shinyCharmCost.toLocaleString()}`;
+    return `$${parseInt(this.shinyCharmCost).toLocaleString()}`;
   },
   formattedTotalBatchCost() {
-    return `$${this.totalBatchCost.toLocaleString()}`;
+    return `$${parseInt(this.totalBatchCost).toLocaleString()}`;
   },
   formattedTotalBatchBuyingCost() {
-    return `$${this.totalBatchBuyingCost.toLocaleString()}`;
+    return `$${parseInt(this.totalBatchBuyingCost).toLocaleString()}`;
   },
   formattedNoDonoCaughtSpent() {
-    return `$${this.noDonoCaughtSpent.toLocaleString()}`;
+    return `$${parseInt(this.noDonoCaughtSpent).toLocaleString()}`;
   },
   formattedDonoCaughtSpent() {
-    return `$${this.donoCaughtSpent.toLocaleString()}`;
+    return `$${parseInt(this.donoCaughtSpent).toLocaleString()}`;
   },
   formattedDonoCharmCaughtSpent() {
-    return `$${this.donoCharmCaughtSpent.toLocaleString()}`;
+    return `$${parseInt(this.donoCharmCaughtSpent).toLocaleString()}`;
   },
   formattedNoDonoBoughtSpent() {
-    return `$${this.noDonoBoughtSpent.toLocaleString()}`;
+    return `$${parseInt(this.noDonoBoughtSpent).toLocaleString()}`;
   },
   formattedDonoBoughtSpent() {
-    return `$${this.donoBoughtSpent.toLocaleString()}`;
+    return `$${parseInt(this.donoBoughtSpent).toLocaleString()}`;
   },
   formattedDonoCharmBoughtSpent() {
-    return `$${this.donoCharmBoughtSpent.toLocaleString()}`;
+    return `$${parseInt(this.donoCharmBoughtSpent).toLocaleString()}`;
   },
 },
   watch: {
@@ -372,27 +362,35 @@ formattedNoDonoCaught() {
       this.actualEggs = 0; // Reset actual eggs
     },
     updateCosts() {
-  this.totalNetballCost = Math.round((this.eggs * this.netballCost) / this.netballCatchRate); // Calculate Total Netball Cost
-  this.totalPokeballCost = Math.round(this.eggs * this.pokeballCost); // Calculate Total Pokeball Cost
-  this.totalBallCost = Math.round(this.totalNetballCost + this.totalPokeballCost); // Calculate Total Ball Cost
-  this.totalMailingCost = Math.round((this.eggs / 5) * this.mailingFee); // Calculate Total Mailing Cost
-  this.totalBatchCost = Math.round(this.totalBallCost + this.totalMailingCost + this.shinyCharmCost); // Calculate Total Batch Cost (Catching)
-  this.totalBatchBuyingCost = Math.round((this.totalPokeballCost + (this.dittoBoxCost * (this.eggs / 60)) + this.shinyCharmCost)); // Calculate Total Batch Cost (Buying)
+  this.totalNetballCost = (this.eggs * this.netballCost) / this.netballCatchRate; 
+  this.totalPokeballCost = this.eggs * this.pokeballCost; 
+  this.totalBallCost = this.totalNetballCost + this.totalPokeballCost; 
+  this.totalMailingCost = (this.eggs / 5) * this.mailingFee; 
+  this.totalBatchCost = this.totalBallCost + this.totalMailingCost + this.shinyCharmCost; 
+  this.totalBatchBuyingCost = this.totalPokeballCost + (this.dittoBoxCost * (this.eggs / 60)) + this.shinyCharmCost;
 
-  this.batchesNoDonator = Math.round(this.noDonatorOdds / (this.eggs || 1)); // Calculate Batches for No Donator Status
-  this.batchesDonator = Math.round(this.donatorOdds / (this.eggs || 1)); // Calculate Batches for Donator Status
-  this.batchesShinyCharm = Math.round(this.shinyCharmOdds / (this.eggs || 1)); // Calculate Batches for Donator + Shiny Charm
+  this.batchesNoDonator = this.noDonatorOdds / (this.eggs || 1); 
+  this.batchesDonator = this.donatorOdds / (this.eggs || 1); 
+  this.batchesShinyCharm = this.shinyCharmOdds / (this.eggs || 1); 
 
-  // Average Total Per Shiny Calculations
-  this.noDonoCaught = Math.round((this.totalBatchCost - this.shinyCharmCost) * this.batchesNoDonator);
-  this.donoCaught = Math.round((this.totalBatchCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent));
-  this.donoCharmCaught = Math.round((this.totalBatchCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent));
+  // Update caught calculations without rounding
+  this.noDonoCaught = (this.totalBatchCost - this.shinyCharmCost) * this.batchesNoDonator;
+  this.donoCaught = (this.totalBatchCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent);
+  this.donoCharmCaught = (this.totalBatchCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent);
 
-  // Average Total Per Shiny Bought Calculations
-  this.noDonoBought = Math.round((this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesNoDonator);
-  this.donoBought = Math.round((this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent));
-  this.donoCharmBought = Math.round((this.totalBatchBuyingCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent));
-    },
+  // Update bought calculations without rounding
+  this.noDonoBought = (this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesNoDonator;
+  this.donoBought = (this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent);
+  this.donoCharmBought = (this.totalBatchBuyingCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent);
+  
+  // Convert to integers for display
+  this.noDonoCaught = parseInt(this.noDonoCaught);
+  this.donoCaught = parseInt(this.donoCaught);
+  this.donoCharmCaught = parseInt(this.donoCharmCaught);
+  this.noDonoBought = parseInt(this.noDonoBought);
+  this.donoBought = parseInt(this.donoBought);
+  this.donoCharmBought = parseInt(this.donoCharmBought);
+},
   },
 };
 </script>
