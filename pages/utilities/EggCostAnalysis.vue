@@ -194,6 +194,7 @@
   </div>
 </div>
   </UContainer>
+  <EggCostAnalysisCredits />
 </template>
 
 <script>

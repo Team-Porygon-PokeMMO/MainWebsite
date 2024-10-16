@@ -36,9 +36,9 @@ const leftLinks = [
                 label: 'Rock Smash Tracker',
                 to: '/utilities/RockSmash',
             },
-            // {
-           //      label: 'Egg Cost Analysis', to: '/utilities/EggCostAnalysis',
-            // }, 
+             {
+                 label: 'Egg Cost Analysis', to: '/utilities/EggCostAnalysis',
+             }, 
         ]
     }
 ] as Link[]
