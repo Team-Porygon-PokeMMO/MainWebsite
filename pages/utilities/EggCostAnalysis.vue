@@ -4,10 +4,7 @@
     <div class="fixed-costs">
       <p><b>Netballs:</b> ${{ netballCost.toLocaleString() }}</p>
       <p><b>Pokeballs:</b> ${{ pokeballCost.toLocaleString() }}</p>
-      <p><b>Shiny Charms:</b> ${{ shinyCharmCost.toLocaleString() }}</p>
-      <p><b>Ditto Box Cost:</b> ${{ dittoBoxCost.toLocaleString() }}</p>
       <p><b>Mailing Fee:</b> ${{ mailingFee.toLocaleString() }}</p>
-      <p><b>30 Day Donator Status:</b> ${{ donatorStatusCost.toLocaleString() }}</p>
       <p><b>Ratio No Donator:</b> {{ ratioNoDonator.toLocaleString() }}</p>
       <p><b>Ratio Donator:</b> {{ ratioDonator.toLocaleString() }}</p>
       <p><b>Ratio Donator + Shiny Charm:</b> {{ ratioDonatorShinyCharm.toLocaleString() }}</p>
@@ -19,6 +16,38 @@
         <label for="actualEggs">Actual Eggs:</label>
         <UInput v-model.number="actualEggs" type="number" @input="updateCosts" />
       </div>
+        <div>
+          <div class="m-2">
+    <label for="shinyCharmCost">Shiny Charm Cost:</label>
+    <UInput 
+      v-model="shinyCharmCost" 
+      placeholder="Enter cost" 
+      type="number" 
+    />
+  </div>
+  </div>
+
+  <div>
+    <div class="m-2">
+    <label for="dittoBoxCost">Ditto Box Cost:</label>
+    <UInput 
+      v-model="dittoBoxCost" 
+      placeholder="Enter cost" 
+      type="number" 
+    />
+  </div>
+  </div>
+
+  <div>
+    <div class="m-2">
+    <label for="donatorStatusCost">30 Day Donator Status Cost:</label>
+    <UInput 
+      v-model="donatorStatusCost" 
+      placeholder="Enter cost" 
+      type="number" 
+    />
+  </div>
+  </div>
     </div>
 
     <h2 class="mt-6">Odds</h2>
@@ -166,10 +195,10 @@ export default {
       totalCost: null,
       netballCost: 1350,
       pokeballCost: 200,
-      shinyCharmCost: 240000,
-      dittoBoxCost: 240000,
+      shinyCharmCost: 0,
+      dittoBoxCost: 0,
       mailingFee: 1600,
-      donatorStatusCost: 3450000,
+      donatorStatusCost: 0,
       // Odds values
       noDonatorOdds: 30000,
       batchesNoDonator: 0,
