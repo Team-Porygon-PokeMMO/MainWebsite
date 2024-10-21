@@ -701,7 +701,7 @@
                                             "Description": "if you get Black Sludge and it locks Focus Blast, switch to Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
                                         },
                                         {
-                                            "Description": "if you get Life Orb and it locked Focus Blast, use Softboiled;",
+                                            "Description": "if you get Life Orb and it locked Focus Blast, use Protect",
                                             "Steps": [
                                                 {
                                                     "Description": "if you get a -1 SpDef debuff, immediately switch to Chandelure 3x Calm Mind + X.Speed"
@@ -726,15 +726,18 @@
                                             ]
                                         },
                                         {
+                                            "Description": "if you get Life Orb and it locked Thunderbolt, switch to Excadrill 2x Swords Dance + X.Speed"
+                                        },
+                                        {
                                             "Description": "if it switches into Rhyperior, switch to Excadrill 3x Swords Dance + X.Speed"
                                         }
                                     ]
                                 },
                                 {
-                                    "Description": "Step2. And it switches into Durant, switch to Chandelure 2x X.Speed"
+                                    "Description": "And it switches into Durant, switch to Chandelure 2x X.Speed"
                                 },
                                 {
-                                    "Description": "Step2. And it switches into Rhyperior, switch back to Excadrill then switch to Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "And it switches into Rhyperior, switch back to Excadrill then switch to Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
                                 }
                             ]
                         },
@@ -1223,7 +1226,11 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "if it uses High Jump Kick, use Stealth Rock then switch to Chandelure X.Special + X.Speed"
+                            "Description": "if it uses High Jump Kick, use Stealth Rock then switch to Chandelure X.Special + X.Speed",
+                            "Steps": [{
+                                "Description": "if it uses High Jump Kick misses vs. Metagross, Stealth Rock then swap to Chandelure and Flamethrower to kill it. Entei will come out, switch to Metagross (with scarf) and Trick. Switch back to Chandelure, 2x Calm Mind and X.Speed"
+                            }
+                            ]
                         },
                         {
                             "Description": "if it switches out to Steelix, switch to Excadrill Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
@@ -1725,7 +1732,15 @@
                                     "Description": "if it switches out into Hydreigon;",
                                     "Steps": [
                                         {
-                                            "Description": "and you get Choice Scarf, switch to Blissey and use Stealth Rock. Then switch to Metagross and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
+                                            "Description": "and you get Choice Scarf, switch to Blissey and use Stealth Rock. Then switch to Metagross and use Trick.",
+                                            "Steps": [
+                                        {
+                                            "Description": "if opponent switches back to Hydreigon, switch to Chandelure 2x Calm Mind + X.Speed"
+                                        },
+                                        {
+                                            "Description": "if Gallade stays locked on Sacred Sword, switch to Chandelure 4x Calm Mind + X.Speed"
+                                        }
+                                    ]
                                         },
                                         {
                                             "Description": "and you get Life Orb, switch to Chandelure 3x Calm Mind + X.Speed"

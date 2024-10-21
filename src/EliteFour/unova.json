@@ -226,7 +226,7 @@
                                     "Description": "if it switches into Hydreigon, use Stealth Rock;",
                                     "Steps": [
                                         {
-                                            "Description": "if it got damaged by Life Orb, switch to Chandelure, then switch to Metagross and use Trick. Switch to Chandelure 3x"
+                                            "Description": "if it got damaged by Life Orb, switch to Chandelure, then switch to Metagross and use Trick. Switch to Chandelure 3x calm Mind + X.Speed"
                                         },
                                         {
                                             "Description": "if not, switch to Chandelure 2x Calm Mind + X.Speed."
@@ -461,7 +461,7 @@
                     "Name": "Rotom-Wash",
                     "Steps": [
                         {
-                            "Description": "Use Trick, then use Stealth Rock;",
+                            "Description": "Use Trick, then use 2x Stealth Rock (Twice to scout)",
                             "IsVisible": true,
                             "Steps": [
                                 {
@@ -953,7 +953,12 @@
                                     "Description": "if it switches into Salamance, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
                                 },
                                 {
-                                    "Description": "if it switches into Serperior, switch to Chandelure 4x Calm Mind + X.Speed."
+                                    "Description": "if it switches into Serperior, switch to Chandelure 4x Calm Mind + X.Speed.",
+                                    "Steps": [{
+                                        "Description": "if it switches into Bisharp, switch in 2nd Metagross Trick. Switch in Chandelure, 4x Calm Mind + X.Speed"
+                                    }
+                                     ]
+                                    
                                 },
                                 {
                                     "Description": "if it switches into Sharpedo, switch to Excadrill: 2x Swords Dance + X.Speed."
@@ -1889,7 +1894,7 @@
                                     "Description": "if it switches into Conkeldurr, use Stealth Rock, then switch to Chandelure 2x Calm Mind + X.Speed."
                                 },
                                 {
-                                    "Description": "if it switches into Golurk, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                                    "Description": "if it switches into Golurk, switch to Excadrill Stealth Rock, then switch to Chandelure 2x Calm Mind + X.Speed"
                                 }
                             ]
                         }
@@ -2279,7 +2284,7 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if you get a Life Orb, let Metagross die. Send in Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                                    "Description": "if you get a Life Orb, Stealth Rock and let Metagross die. Send in Excadrill: 2x Swords Dance + X.Speed."
                                 },
                                 {
                                     "Description": "if you get a Petaya Berry, switch to Excadrill: Stealth Rock + 3x Swords Dance + X.Speed + X.Defend."
@@ -2704,7 +2709,7 @@
                     "Name": "Krookodile",
                     "Steps": [
                         {
-                            "Description": "Switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed."
+                            "Description": "Switch to Excadrill: Stealth Rock + Swords Dance + X.Speed."
                         }
                     ]
                 },
@@ -2983,6 +2988,14 @@
                                         },
                                         {
                                             "Description": "if it switches into Escavalier, switch to Chandelure: Calm Mind + X.Speed."
+                                        },
+                                        {
+                                            "Description": "if special attack boost on turn 1 procs, and it stays on the field",
+                                            "Steps": [
+                                                {
+                                                    "Description": " switch to Chandelure then back to Metagross, Trick, switch back to Chandelure 2x Calm Mind + X.Speed"
+                                                }
+                                            ]
                                         }
                                     ]
                                 },
