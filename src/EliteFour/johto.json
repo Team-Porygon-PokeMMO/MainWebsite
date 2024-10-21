@@ -754,7 +754,12 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Chandelure 2x Calm Mind + X.Speed (might need Antidote)"
+                            "Description": "Use Trick, then switch to Chandelure 2x Calm Mind + X.Speed (might need Antidote)",
+                            "Steps": [
+                                        {
+                                            "Description": "if opponent switches to Rhyperior, switch to Metagross (with Scarf). Trick then switch to Excadrill. Stealth Rock then 2x Swords Dance + X.Speed"
+                                        }
+                                    ]
                         }
                     ]
                 },
@@ -1180,7 +1185,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick as it switches out into Salamance or Machoke, then switch to Chandelure 3x Calm Mind + X.Speed",
+                            "Description": "Use Trick as it switches out into Salamance or Machamp, then switch to Chandelure 3x Calm Mind + X.Speed",
                             "Steps": [
                                 {
                                     "Description": "if opponent switches out, switch to the second Metagross and use Trick. Switch back to Chandelure 3x Calm Mind + X.Speed"

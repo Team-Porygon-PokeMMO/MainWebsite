@@ -968,6 +968,9 @@
                                     ]
                                 }
                             ]
+                        },
+                        {
+                            "Description": "if opponent switches out into Seismitoad, switch to Excadrill then Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -1131,6 +1134,9 @@
                         },
                         {
                             "Description": "if opponent switches out into Salamence, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent switches out into Steelix and you get a Metal Coat, switch in Excadrill and Stealth Rock. Switch in Chandelure, 3x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1478,7 +1484,15 @@
                             "Description": "if opponent stays, switch to Blissey Trick. Switch to Chandelure 5x Calm Mind + X.Speed (if Houndoom is not dead, use Flamethrower vs. Gengar)"
                         },
                         {
-                            "Description": "if opponent switches out into Krookodile, switch to Excadrill Stealth Rock. Switch to Blissey Trick then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches out into Krookodile, switch to Excadrill Stealth Rock. Switch to Blissey Trick then switch to Chandelure 3x Calm Mind + X.Speed",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches out, Switch to Blissey Trick then switch to Chandelure 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if opponent doesnt switch out, 3x Swords Dance + X.Speed"
+                                }
+                            ]
                         },
                         {
                             "Description": "if opponent switches out into Seismitoad, switch to Excadrill Stealth Rock then switch to Chandelure 4x Calm Mind + X.Speed",
@@ -1570,7 +1584,7 @@
                                     ]
                                 },
                                 {
-                                    "Description": "if opponent uses Thunderbolt, switch to Excadrill then use Stealth Rocks. 3x Swords Dance + X.Speed"
+                                    "Description": "if opponent uses Thunderbolt, switch to Excadrill 3x Swords Dance + X.Speed"
                                 },
                                 {
                                     "Description": "if opponent uses Will-O-Wisp, switch to Blissey",
@@ -1640,6 +1654,9 @@
                         {
                             "Description": "Switch to Blissey Trick then switch to Excadrill 2x Swords Dance + X.Speed",
                             "Steps": [
+                                {
+                                    "Description": "if opponent switches out to Arbok switch Metagross in, Trick then swap Excadrill in 2x Swords Dance + X.Speed"
+                                },
                                 {
                                     "Description": "if Excadrill gets locked out of Iron Head by Cursed Body, switch to Chandelure 5x Calm Mind + X.Speed"
                                 }

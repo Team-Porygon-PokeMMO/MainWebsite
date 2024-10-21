@@ -281,7 +281,12 @@
                             "Description": "Trick",
                             "Steps": [
                                 {
-                                    "Description": "if opponent doesn’t have Intimidate, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent doesn’t have Intimidate, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed",
+                                    "Steps": [
+                                        {
+                                            "Description": "if opponent stays, switch to 2nd Meta, trick, and switch back to Chandelure 3x Calm Mind + X.Speed"
+                                        }
+                                    ]
                                 },
                                 {
                                     "Description": "if opponent has Intimidate, use Trick",
@@ -1080,7 +1085,7 @@
                             ]
                         },
                         {
-                            "Description": "if opponent switches into anything else, use Stealth Rock then switch to Chandelure 2x Calm Mind"
+                            "Description": "if opponent stays/switches into anything else, use Stealth Rock then switch to Chandelure 2x Calm Mind"
                         }
                     ]
                 },
@@ -1196,7 +1201,22 @@
                             "Description": "if opponent switches into Serperior, switch to Chandelure 3x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "if opponent switches into Togekiss/Walrein, switch to Blissey and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Togekiss switch to Blissey and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent switches to Walrein",
+                            "Steps": [
+                                {
+                                    "Description": "and it has Chesto Berry, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed (use Shadow Ball against Froslass)"
+                                },
+                                {
+                                    "Description": "and it has Leftovers, switch to Poliwrath Belly Drum + X.Speed"
+                                },
+                                {
+                                    "Description": "and it has Choice Specs, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
+                                }
+                            ]
+                            
                         }
                     ]
                 },
@@ -1345,6 +1365,9 @@
                                     "Steps": [
                                         {
                                             "Description": "if opponent switches into Skarmory, switch to Blissey and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
+                                        },
+                                        {
+                                            "Description": "if opponent switches into Beartic, switch to Chandelure then switch to 2nd Metagross. Trick, then switch back to Chandelure 2x Calm Mind"
                                         }
                                     ]
                                 }
@@ -2277,7 +2300,10 @@
                             "Description": "if opponent switches into Dragonite, switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "if opponent switches into Eelektross/Swampert, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Eelektross switch to Chandelure 4x Calm Mind + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent switches into Swampert, use Stealth Rock then switch to Excadrill 2x Swords Dance + X.Speed"
                         }
                     ]
                 },
