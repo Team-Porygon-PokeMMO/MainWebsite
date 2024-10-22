@@ -297,9 +297,11 @@ export default {
                 return !this.selectedItems.some((selectedItem: RockRow) => selectedItem.Id === item.Id);
             });
             this.selectedItems = [];
+            this.saveToLocalStorage();
         },
         cleanList() {
             this.items = [];
+            this.saveToLocalStorage();
         },
         addSmash(pokemonName: string, itemName: string) {
             this.items.push({
