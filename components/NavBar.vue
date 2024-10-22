@@ -63,23 +63,23 @@ const rightLinks = [
     {
         image: TeamPory,
         sublinks: [ 
-            { label: 'Forums Club', to: 'https://forums.pokemmo.com/index.php?/clubs/219-pory-porygon/' }, 
-            { label: 'Shiny Showcase', to: 'https://forums.pokemmo.com/index.php?/topic/159659-pory-ot-shiny-showcase/' },
-            { label: 'Missing Shiny Dex', to: 'https://forums.pokemmo.com/index.php?/topic/159671-pory-whose-left-to-shunt/' },
+            { label: 'Forums Club', to: 'https://forums.pokemmo.com/index.php?/clubs/219-pory-porygon/', icon: 'i-heroicons-link' },
+            { label: 'Shiny Showcase', to: 'https://forums.pokemmo.com/index.php?/topic/159659-pory-ot-shiny-showcase/', icon: 'i-heroicons-link' },
+            { label: 'Missing Shiny Dex', to: 'https://forums.pokemmo.com/index.php?/topic/159671-pory-whose-left-to-shunt/', icon: 'i-heroicons-link' },
         ]
     },
     {
         image: CommonResources,
         sublinks: [
-            { label: 'Pory Guides', to: 'https://forums.pokemmo.com/index.php?/forum/605-poryguides/' },
-            { label: 'Apricorn Map', to: 'https://forums.pokemmo.com/index.php?/topic/160158-johto-apricorn-guide/#comment-2025208' },
-            { label: 'Berry Farming', to: 'https://www.youtube.com/watch?v=z5BBUKFAvWo&ab_channel=TheClosedBox' },
-            { label: 'PokeMMO Hub', to: 'https://pokemmohub.com/' },
-            { label: 'Happiness Using Berries', to: 'https://forums.pokemmo.com/index.php?/topic/154921-guide-raising-happiness-using-berries/' },
-            { label: 'EV Training and Leveling', to: 'https://forums.pokemmo.com/index.php?/topic/77490-simple-ev-training-leveling-guide-using-horde/#comment-1515139' },
-            { label: 'Money Making Guides', to: 'https://forums.pokemmo.com/index.php?/topic/106650-in-depth-money-making-guide-multiple-methods-2nd-edition/' },
-            { label: 'Catching Breeders', to: 'https://forums.pokemmo.com/index.php?/topic/154142-breed-guide-breeder-catching-engesp/' },
-            { label: 'Vanity Index', to: 'https://forums.pokemmo.com/index.php?/topic/145375-pokemmo-vanity-index/' },
+            { label: 'Pory Guides', to: 'https://forums.pokemmo.com/index.php?/forum/605-poryguides/', icon: 'i-heroicons-newspaper' },
+            { label: 'Apricorn Map', to: 'https://forums.pokemmo.com/index.php?/topic/160158-johto-apricorn-guide/#comment-2025208', icon: 'i-heroicons-newspaper' },
+            { label: 'Berry Farming', to: 'https://www.youtube.com/watch?v=z5BBUKFAvWo&ab_channel=TheClosedBox', icon: 'i-heroicons-newspaper' },
+            { label: 'PokeMMO Hub', to: 'https://pokemmohub.com/', icon: 'i-heroicons-newspaper' },
+            { label: 'Happiness Using Berries', to: 'https://forums.pokemmo.com/index.php?/topic/154921-guide-raising-happiness-using-berries/', icon: 'i-heroicons-newspaper' },
+            { label: 'EV Training and Leveling', to: 'https://forums.pokemmo.com/index.php?/topic/77490-simple-ev-training-leveling-guide-using-horde/#comment-1515139', icon: 'i-heroicons-newspaper' },
+            { label: 'Money Making Guides', to: 'https://forums.pokemmo.com/index.php?/topic/106650-in-depth-money-making-guide-multiple-methods-2nd-edition/', icon: 'i-heroicons-newspaper' },
+            { label: 'Catching Breeders', to: 'https://forums.pokemmo.com/index.php?/topic/154142-breed-guide-breeder-catching-engesp/', icon: 'i-heroicons-newspaper' },
+            { label: 'Vanity Index', to: 'https://forums.pokemmo.com/index.php?/topic/145375-pokemmo-vanity-index/', icon: 'i-heroicons-newspaper' },
         ]
     },
     {
@@ -235,26 +235,27 @@ function handleClick(sublink: any) {
         leave-active-class="transition duration-150 ease-in"
         leave-from-class="translate-y-0 opacity-100" leave-to-class="translate-y-1 opacity-0">
         <PopoverPanel class="absolute z-10 w-screen max-w-md overflow-hidden bg-gray-800 shadow-lg rounded-panel top-full">
-            <div class="p-2">
-                <!-- Handle Internal and External Sublinks -->
-                <button v-for="childItem in link.sublinks" :key="childItem.label"
-                    @click="handleClick(childItem)"
-                    class="relative flex p-1 m-1 leading-6 transition duration-150 rounded-panel group gap-x-4 hover:bg-gray-900 button-size">
-                    
-                    <!-- Check if sublink has an image -->
-                    <div class="items-center justify-center flex-none rounded-button">
-                        <img v-if="childItem.image" :src="childItem.image" alt="Sublink Image" class="button-image" />
-                        <Icon v-else :name="childItem.icon ?? link.icon" class="text-gray-400 items-center text-center" aria-hidden="true" />
-                    </div>
-                    
-                    <div>
-                        <p class="block font-medium text-white font-display">
-                            {{ childItem.label }}
-                        </p>
-                    </div>
-                </button>
+    <div class="p-2">
+        <!-- Handle Internal and External Sublinks -->
+        <button v-for="childItem in link.sublinks" :key="childItem.label"
+            @click="handleClick(childItem)"
+            class="relative flex p-1 m-1 leading-6 transition duration-150 rounded-panel group gap-x-4 hover:bg-gray-900 button-size">
+            
+            <!-- Check if sublink has an image or icon -->
+            <div class="items-center justify-center flex-none rounded-button">
+                <Icon v-if="childItem.icon" :name="childItem.icon" class="text-gray-400" aria-hidden="true" />
+
+                <Icon v-else :name="childItem.icon ?? link.icon" class="text-gray-400 items-center text-center" aria-hidden="true" />
             </div>
-        </PopoverPanel>
+            
+            <div>
+                <p class="block font-medium text-white font-display">
+                    {{ childItem.label }}
+                </p>
+            </div>
+        </button>
+    </div>
+</PopoverPanel>
     </transition>
 </Popover>
     </div>
