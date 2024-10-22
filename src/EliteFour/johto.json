@@ -2103,6 +2103,9 @@
                                     "Description": "if opponent switches into Slowbro, switch to Poliwrath: Belly Drum + X.Speed"
                                 }
                             ]
+                        },
+                        {
+                            "Description": "if opponent switches into Slowbro, Stealth Rock then switch to Poliwrath: Belly Drum + X.Speed"
                         }
                     ]
                 }
