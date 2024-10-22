@@ -29,12 +29,14 @@ const leftLinks = [
         image: e4Image,
     },
     {
+
       
         image: PoryUtility,
         sublinks: [
             {
                 label: 'Current Time',
                 to: '/utilities/DayAndNightCycle',
+                icon: 'i-heroicons-clock',
                 //image: '/path/to/image1.png',
             },
             {
@@ -46,10 +48,12 @@ const leftLinks = [
             {
                 label: 'Rock Smash Tracker',
                 to: '/utilities/RockSmash',
+                icon: 'i-heroicons-light-bulb',
             },
             {
                 label: 'Egg Cost Analysis',
                 to: '/utilities/EggCostAnalysis',
+                icon: 'i-heroicons-chart-pie',
             }
         ]
     }
@@ -58,8 +62,8 @@ const leftLinks = [
 const rightLinks = [
     {
         image: TeamPory,
-        sublinks: [
-            { label: 'Forums Club', to: 'https://forums.pokemmo.com/index.php?/clubs/219-pory-porygon/' },
+        sublinks: [ 
+            { label: 'Forums Club', to: 'https://forums.pokemmo.com/index.php?/clubs/219-pory-porygon/' }, 
             { label: 'Shiny Showcase', to: 'https://forums.pokemmo.com/index.php?/topic/159659-pory-ot-shiny-showcase/' },
             { label: 'Missing Shiny Dex', to: 'https://forums.pokemmo.com/index.php?/topic/159671-pory-whose-left-to-shunt/' },
         ]
