@@ -7,7 +7,20 @@ import PoryUtility from '@/assets/images/NavBar/120x40_UtilitiesCornersWithArrow
 import TeamPory from '@/assets/images/NavBar/120x40_Team_PoryCornersWithArrow.png';
 import CommonResources from '@/assets/images/NavBar/120x40_ResourcesCornersWithArrow.png';
 import ContactUs from '@/assets/images/NavBar/120x40_Contact_UsCorners.png';
-
+import Icon_Apricorn_Map from '@/assets/images/NavBar/NavBarIcons/Icon_Apricorn_Map.png';
+import Icon_Berry from '@/assets/images/NavBar/NavBarIcons/Icon_Berry.png';
+import Icon_Clock from '@/assets/images/NavBar/NavBarIcons/Icon_Clock.png';
+import Icon_Egg from '@/assets/images/NavBar/NavBarIcons/Icon_Egg.png';
+import Icon_Missing_Shiny_Showcase from '@/assets/images/NavBar/NavBarIcons/Icon_Missing_Shiny_Showcase.png';
+import Icon_Money from '@/assets/images/NavBar/NavBarIcons/Icon_Money.png';
+import Icon_PokeMMO from '@/assets/images/NavBar/NavBarIcons/Icon_PokeMMO.png';
+import Icon_PokeMMOHub from '@/assets/images/NavBar/NavBarIcons/Icon_PokeMMOHub.png';
+import Icon_Pory_Guides from '@/assets/images/NavBar/NavBarIcons/Icon_Pory_Guides.png';
+import Icon_Rock from '@/assets/images/NavBar/NavBarIcons/Icon_Rock.png';
+import Icon_Shiny_Showcase from '@/assets/images/NavBar/NavBarIcons/Icon_Shiny_Showcase.png';
+import Icon_Training from '@/assets/images/NavBar/NavBarIcons/Icon_Training.png';
+import Icon_Vanity from '@/assets/images/NavBar/NavBarIcons/Icon_Vanity.png';
+import Icon_Happiness from '@/assets/images/NavBar/NavBarIcons/Icon_Happiness.png';
 
 const router = useRouter();
 
@@ -36,24 +49,22 @@ const leftLinks = [
             {
                 label: 'Current Time',
                 to: '/utilities/DayAndNightCycle',
-                icon: 'i-heroicons-clock',
-                //image: '/path/to/image1.png',
+                image: Icon_Clock,
             },
             {
                 label: 'Hatching',
                 to: '/utilities/HatchCycleTimer',
-                icon: 'i-heroicons-question-mark-circle',
-               // image: '/path/to/image2.png',
+                image: Icon_Egg,
             },
             {
                 label: 'Rock Smash Tracker',
                 to: '/utilities/RockSmash',
-                icon: 'i-heroicons-light-bulb',
+                image: Icon_Rock,
             },
             {
                 label: 'Egg Cost Analysis',
                 to: '/utilities/EggCostAnalysis',
-                icon: 'i-heroicons-chart-pie',
+               // icon: Icon_Money,
             }
         ]
     }
@@ -63,23 +74,23 @@ const rightLinks = [
     {
         image: TeamPory,
         sublinks: [ 
-            { label: 'Forums Club', to: 'https://forums.pokemmo.com/index.php?/clubs/219-pory-porygon/', icon: 'i-heroicons-link' },
-            { label: 'Shiny Showcase', to: 'https://forums.pokemmo.com/index.php?/topic/159659-pory-ot-shiny-showcase/', icon: 'i-heroicons-link' },
-            { label: 'Missing Shiny Dex', to: 'https://forums.pokemmo.com/index.php?/topic/159671-pory-whose-left-to-shunt/', icon: 'i-heroicons-link' },
+            { label: 'Forums Club', to: 'https://forums.pokemmo.com/index.php?/clubs/219-pory-porygon/', image: Icon_PokeMMO },
+            { label: 'Shiny Showcase', to: 'https://forums.pokemmo.com/index.php?/topic/159659-pory-ot-shiny-showcase/', image: Icon_Shiny_Showcase },
+            { label: 'Missing Shiny Dex', to: 'https://forums.pokemmo.com/index.php?/topic/159671-pory-whose-left-to-shunt/', image: Icon_Missing_Shiny_Showcase },
         ]
     },
     {
         image: CommonResources,
         sublinks: [
-            { label: 'Pory Guides', to: 'https://forums.pokemmo.com/index.php?/forum/605-poryguides/', icon: 'i-heroicons-newspaper' },
-            { label: 'Apricorn Map', to: 'https://forums.pokemmo.com/index.php?/topic/160158-johto-apricorn-guide/#comment-2025208', icon: 'i-heroicons-newspaper' },
-            { label: 'Berry Farming', to: 'https://www.youtube.com/watch?v=z5BBUKFAvWo&ab_channel=TheClosedBox', icon: 'i-heroicons-newspaper' },
-            { label: 'PokeMMO Hub', to: 'https://pokemmohub.com/', icon: 'i-heroicons-newspaper' },
-            { label: 'Happiness Using Berries', to: 'https://forums.pokemmo.com/index.php?/topic/154921-guide-raising-happiness-using-berries/', icon: 'i-heroicons-newspaper' },
-            { label: 'EV Training and Leveling', to: 'https://forums.pokemmo.com/index.php?/topic/77490-simple-ev-training-leveling-guide-using-horde/#comment-1515139', icon: 'i-heroicons-newspaper' },
-            { label: 'Money Making Guides', to: 'https://forums.pokemmo.com/index.php?/topic/106650-in-depth-money-making-guide-multiple-methods-2nd-edition/', icon: 'i-heroicons-newspaper' },
-            { label: 'Catching Breeders', to: 'https://forums.pokemmo.com/index.php?/topic/154142-breed-guide-breeder-catching-engesp/', icon: 'i-heroicons-newspaper' },
-            { label: 'Vanity Index', to: 'https://forums.pokemmo.com/index.php?/topic/145375-pokemmo-vanity-index/', icon: 'i-heroicons-newspaper' },
+            { label: 'Pory Guides', to: 'https://forums.pokemmo.com/index.php?/forum/605-poryguides/', image: Icon_Pory_Guides },
+            { label: 'Apricorn Map', to: 'https://forums.pokemmo.com/index.php?/topic/160158-johto-apricorn-guide/#comment-2025208', image: Icon_Apricorn_Map },
+            { label: 'Berry Farming', to: 'https://www.youtube.com/watch?v=z5BBUKFAvWo&ab_channel=TheClosedBox', image: Icon_Berry},
+            { label: 'PokeMMO Hub', to: 'https://pokemmohub.com/', image: Icon_PokeMMOHub },
+            { label: 'Happiness Using Berries', to: 'https://forums.pokemmo.com/index.php?/topic/154921-guide-raising-happiness-using-berries/', image: Icon_Happiness },
+            { label: 'EV Training and Leveling', to: 'https://forums.pokemmo.com/index.php?/topic/77490-simple-ev-training-leveling-guide-using-horde/#comment-1515139', image: Icon_Training },
+            { label: 'Money Making Guides', to: 'https://forums.pokemmo.com/index.php?/topic/106650-in-depth-money-making-guide-multiple-methods-2nd-edition/', image: Icon_Money },
+            { label: 'Catching Breeders', to: 'https://forums.pokemmo.com/index.php?/topic/154142-breed-guide-breeder-catching-engesp/', image: 'i-heroicons-newspaper' },
+            { label: 'Vanity Index', to: 'https://forums.pokemmo.com/index.php?/topic/145375-pokemmo-vanity-index/', image: Icon_Vanity },
         ]
     },
     {
@@ -235,27 +246,26 @@ function handleClick(sublink: any) {
         leave-active-class="transition duration-150 ease-in"
         leave-from-class="translate-y-0 opacity-100" leave-to-class="translate-y-1 opacity-0">
         <PopoverPanel class="absolute z-10 w-screen max-w-md overflow-hidden bg-gray-800 shadow-lg rounded-panel top-full">
-    <div class="p-2">
-        <!-- Handle Internal and External Sublinks -->
-        <button v-for="childItem in link.sublinks" :key="childItem.label"
-            @click="handleClick(childItem)"
-            class="relative flex p-1 m-1 leading-6 transition duration-150 rounded-panel group gap-x-4 hover:bg-gray-900 button-size">
-            
-            <!-- Check if sublink has an image or icon -->
-            <div class="items-center justify-center flex-none rounded-button">
-                <Icon v-if="childItem.icon" :name="childItem.icon" class="text-gray-400" aria-hidden="true" />
-
-                <Icon v-else :name="childItem.icon ?? link.icon" class="text-gray-400 items-center text-center" aria-hidden="true" />
+            <div class="p-2">
+                <!-- Handle Internal and External Sublinks -->
+                <button v-for="childItem in link.sublinks" :key="childItem.label"
+                    @click="handleClick(childItem)"
+                    class="relative flex p-1 m-1 leading-6 transition duration-150 rounded-panel group gap-x-4 hover:bg-gray-900 button-size">
+                    
+                    <!-- Check if childItem has image -->
+                    <div class="items-center justify-center flex-none rounded-button">
+                        <img v-if="childItem.image" :src="childItem.image" alt="Sublink Image" class="button-image" />
+                        <Icon v-else :name="childItem.icon ?? link.icon" class="text-gray-400 items-center text-center" aria-hidden="true" />
+                    </div>
+                    
+                    <div>
+                        <p class="block font-medium text-white font-display">
+                            {{ childItem.label }}
+                        </p>
+                    </div>
+                </button>
             </div>
-            
-            <div>
-                <p class="block font-medium text-white font-display">
-                    {{ childItem.label }}
-                </p>
-            </div>
-        </button>
-    </div>
-</PopoverPanel>
+        </PopoverPanel>
     </transition>
 </Popover>
     </div>
