@@ -283,7 +283,8 @@ export default {
             emptyOption: {
                 Name: ""
             },
-            nameToDex: nameToDex as IDictionary
+            nameToDex: nameToDex as IDictionarym,
+            ign: '' as string
         }
     },
     mounted() {
@@ -328,11 +329,15 @@ export default {
             if (process.client) {
                 const items = localStorage.getItem('rockSmashItems');
                 const selectedRegionIndex = localStorage.getItem('rockSmashSelectedRegion');
+                const ign = localStorage.getItem('ign');
                 if (items) {
                     this.items = JSON.parse(items);
                 }
                 if (selectedRegionIndex) {
                     this.selectedRegionIndex = JSON.parse(selectedRegionIndex);
+                }
+                if (ign) {
+                    this.ign = JSON.parse(ign);
                 }
             }
         },
@@ -340,6 +345,7 @@ export default {
             if (process.client) {
                 localStorage.setItem('rockSmashItems', JSON.stringify(this.items));
                 localStorage.setItem('rockSmashSelectedRegion', JSON.stringify(this.selectedRegionIndex));
+                localStorage.setItem('ign', JSON.stringify(this.ign));
             }
         },
         getImageStyling(name: string) {
@@ -478,10 +484,15 @@ export default {
                 :style=getImageStyling(pokemon.Name) title="No Encounter" @click="addSmash(pokemon.Name, item)" v-else>
             </div>
         </div>
+        <div>
+            <label for="ign">In-Game Name</label>
+            <UInput v-model="ign" type="text" onValueChange="saveToLocalStorage" />
+        </div>
         <div v-if="items.length > 0">
             <UDivider class="mt-6 mb-4" />
             <div class="grid grid-cols-1 text-center items-center">
                 <b>Registered Smashes</b>
+                <span><b>IGN:</b> {{ ign }}</span>
                 <h2>Data</h2>
             </div>
             <p class="grid grid-cols-3 text-center">
@@ -492,7 +503,7 @@ export default {
             <p class="grid grid-cols-1 text-center items-center">
                 <h2>Data by Pokemon</h2>
             </p>
-            <p class="grid grid-cols-4 text-center">
+            <div class="grid grid-cols-4 text-center">
                 <span v-for="pokemon in getPokemonItems">
                     <b>
                         {{ pokemon.pokemon }}
@@ -511,18 +522,18 @@ export default {
                         ({{ item.count }})
                     </div>
                 </span>
-            </p>
+            </div>
             <p class="grid grid-cols-1 text-center items-center">
                 <h2>Data by Item</h2>
             </p>
-            <p class="grid grid-cols-4 text-center">
+            <div class="grid grid-cols-4 text-center">
                 <span v-for="item in getTotalItems">
                     <b>
                         {{ item.Name }}
                     </b>
                     ({{ item.Totals }})
                 </span>
-            </p>
+            </div>
             <UDivider class="mt-6 mb-4" />
             <div class="grid grid-cols-1 mb-6">
                 <UButton block class="hover:cursor-pointer m-2" @click="cleanList">
