@@ -441,7 +441,7 @@ export default {
 }
 
 .pokemonImage {
-    width: 75px;
+    width: 70px;
     height: 35px;
 }
 
@@ -482,6 +482,7 @@ export default {
             </div>
             <div class="flex relative pokemonImage cursor-pointer hover:bg-red-500 m-0.5"
                 :style=getImageStyling(pokemon.Name) title="No Encounter" @click="addSmash(pokemon.Name, item)" v-else>
+                <img :src="`/images/items/Empty.png`" alt="item" class="pokemonItem absolute right-0 bottom-0" />
             </div>
         </div>
         <div>
