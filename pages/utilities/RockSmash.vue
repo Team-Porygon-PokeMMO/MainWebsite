@@ -1,4 +1,5 @@
 <script lang="ts">
+import nameToDex from '~/src/nameToDex.json'
 export class RockRow {
     Id: number = 0;
     Smashed: boolean = false;
@@ -234,7 +235,7 @@ const possibleSmashers = [
                 ]
             },
             {
-                Name: 'Goleet',
+                Name: 'Golett',
                 Items: [
                     'Light Clay'
                 ]
@@ -278,12 +279,12 @@ export default {
             ] as RockRow[],
             selectedItems: [] as RockRow[],
             options: possibleSmashers,
-            smashedPokemon: "",
-            smashedItem: "",
             selectedRegionIndex: 0,
             emptyOption: {
                 Name: ""
-            }
+            },
+            nameToDex: nameToDex as IDictionarym,
+            ign: '' as string
         }
     },
     mounted() {
@@ -296,22 +297,24 @@ export default {
                 return !this.selectedItems.some((selectedItem: RockRow) => selectedItem.Id === item.Id);
             });
             this.selectedItems = [];
+            this.saveToLocalStorage();
         },
         cleanList() {
             this.items = [];
+            this.saveToLocalStorage();
         },
-        addSmash() {
+        addSmash(pokemonName: string, itemName: string) {
             this.items.push({
                 Id: this.items.length,
                 Smashed: true,
-                Pokemon: this.smashedPokemon,
-                Item: this.smashedItem
+                Pokemon: pokemonName === 'Empty' ? '' : pokemonName,
+                Item: itemName === 'Empty' ? '' : itemName
             });
             this.saveToLocalStorage();
         },
         setActiveRegion(index: number) {
             this.selectedRegionIndex = index;
-            this.clearValues()
+            this.saveToLocalStorage();
         },
         orderedNames(names: any) {
             return names.sort((a: any, b: any) => {
@@ -324,29 +327,37 @@ export default {
                 return 0;
             });
         },
-        clearItem() {
-            this.smashedItem = "";
-        },
-        clearName() {
-            this.smashedPokemon = "";
-        },
-        clearValues() {
-            this.clearItem()
-            this.clearName()
-        },
         retrieveLocalStorage() {
             if (process.client) {
                 const items = localStorage.getItem('rockSmashItems');
+                const selectedRegionIndex = localStorage.getItem('rockSmashSelectedRegion');
+                const ign = localStorage.getItem('ign');
                 if (items) {
                     this.items = JSON.parse(items);
+                }
+                if (selectedRegionIndex) {
+                    this.selectedRegionIndex = JSON.parse(selectedRegionIndex);
+                }
+                if (ign) {
+                    this.ign = JSON.parse(ign);
                 }
             }
         },
         saveToLocalStorage() {
             if (process.client) {
                 localStorage.setItem('rockSmashItems', JSON.stringify(this.items));
+                localStorage.setItem('rockSmashSelectedRegion', JSON.stringify(this.selectedRegionIndex));
+                localStorage.setItem('ign', JSON.stringify(this.ign));
             }
         },
+        getImageStyling(name: string) {
+            let imgNumber: string = this.nameToDex[name]
+            return {
+                backgroundImage: `linear-gradient(rgb(0, 0, 0, 0.2), rgba(0, 0, 0, .6)), url(/images/leads/${imgNumber}.png)`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+            }
+        }
     },
     computed: {
         calculatedData() {
@@ -359,7 +370,7 @@ export default {
         },
         orderedPokemon() {
             return (pokemon: any) => {
-                return pokemon.sort((a: any, b: any) => {
+                let sortedPokemon = pokemon.sort((a: any, b: any) => {
                     if (a.Name < b.Name) {
                         return -1;
                     }
@@ -368,6 +379,10 @@ export default {
                     }
                     return 0;
                 });
+                let emptyPokemon = {
+                    Name: 'Empty'
+                };
+                return [emptyPokemon, ...sortedPokemon];
             }
         },
         orderedItems() {
@@ -375,7 +390,7 @@ export default {
                 let items = this.options[index].Pokemon.find((poke: any) => poke.Name === pokemon)?.Items ?? [];
                 let fossils = this.options[index].Fossils ?? [];
                 let allItems = [...items, ...fossils];
-                return allItems.sort((a: any, b: any) => {
+                let sortedItems = allItems.sort((a: any, b: any) => {
                     if (a < b) {
                         return -1;
                     }
@@ -384,6 +399,7 @@ export default {
                     }
                     return 0;
                 });
+                return ['Empty', ...sortedItems];
             }
         },
         getPokemonItems() {
@@ -404,6 +420,16 @@ export default {
                 }
             });
             return pokemonItemRatio
+        },
+        getTotalItems() {
+            const uniqueItems = [...new Set(this.items.map((item: RockRow) => item.Item as string))].filter((item: string) => item);
+            const itemTotals = uniqueItems.map((item: string) => {
+                return {
+                    Name: item,
+                    Totals: this.items.filter((pokemonItem: RockRow) => pokemonItem.Item && pokemonItem.Item === item).length
+                }
+            });
+            return itemTotals
         }
     }
 }
@@ -416,17 +442,20 @@ export default {
     margin: 2rem
 }
 
+.pokemonImage {
+    width: 70px;
+    height: 35px;
+}
+
+.pokemonItem {
+    height: 25px;
+    width: 25px;
+}
+
 .center {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-div.regions {
-    padding: 2rem 1rem;
-    margin: 0.1rem;
-    cursor: pointer;
-    border: 1px solid black;
 }
 </style>
 
@@ -445,64 +474,68 @@ div.regions {
             </div>
         </div>
         <h2 class="center">{{ options[selectedRegionIndex].Name }}</h2>
-        Leave values empty if no pokemon nor item was encountered.
-        <div class="grid grid-cols-2">
-            <div class="m-2">
-                <label for="">Pokemon</label>
-                <USelect :options="[emptyOption, ...orderedPokemon(options[selectedRegionIndex].Pokemon)]"
-                    optionAttribute="Name" v-model="smashedPokemon" @change="clearItem" />
+        <div v-for="(pokemon, index) in orderedPokemon(options[selectedRegionIndex].Pokemon)"
+            class="grid grid-cols-8 place-content-evenly center text-center">
+            <div v-for="(item, index) in orderedItems(selectedRegionIndex, pokemon.Name)"
+                :style="getImageStyling(pokemon.Name)" :title="pokemon.Name + ' + ' + item"
+                class="flex relative pokemonImage cursor-pointer hover:bg-red-500 m-0.5" v-if="pokemon.Name != 'Empty'"
+                @click="addSmash(pokemon.Name, item)">
+                <img :src="`/images/items/${item}.png`" alt="item" class="pokemonItem absolute right-0 bottom-0" />
             </div>
-            <div class="m-2">
-                <p>Item</p>
-                <USelect v-if="!smashedPokemon || orderedItems(selectedRegionIndex, smashedPokemon).length === 0"
-                    disabled />
-                <USelect v-else :options="[emptyOption, ...orderedItems(selectedRegionIndex, smashedPokemon)]"
-                    optionAttribute="Name" v-model="smashedItem" />
+            <div class="flex relative pokemonImage cursor-pointer hover:bg-red-500 m-0.5"
+                :style=getImageStyling(pokemon.Name) title="No Encounter" @click="addSmash(pokemon.Name, item)" v-else>
+                <img :src="`/images/items/Empty.png`" alt="item" class="pokemonItem absolute right-0 bottom-0" />
             </div>
         </div>
-        <div class="center">
-            <UButton block color="green" class="hover:cursor-pointer m-1" @click="addSmash">
-                Add Smash
-            </UButton>
-        </div>
-        <div class="center">
-            <UButton block color="red" class="hover:cursor-pointer m-1" @click="clearValues">
-                Clear Values
-            </UButton>
+        <div>
+            <label for="ign">In-Game Name</label>
+            <UInput v-model="ign" type="text" onValueChange="saveToLocalStorage" />
         </div>
         <div v-if="items.length > 0">
             <UDivider class="mt-6 mb-4" />
             <div class="grid grid-cols-1 text-center items-center">
-                <h2>Registered Smashes</h2>
+                <b>Registered Smashes</b>
+                <span><b>IGN:</b> {{ ign }}</span>
                 <h2>Data</h2>
             </div>
-            <div class="grid grid-cols-3 text-center">
-                <p><b>Total smashes:</b> {{ items.length }}</p>
-                <p><b>Total pokemon encountered:</b> {{ calculatedData.encounters }}</p>
-                <p><b>Total items obtained:</b> {{ calculatedData.items }}</p>
-            </div>
-            <div class="grid grid-cols-1 text-center items-center">
+            <p class="grid grid-cols-3 text-center">
+                <span><b>Total smashes:</b> {{ items.length }}</span>
+                <span><b>Total pokemon encountered:</b> {{ calculatedData.encounters }}</span>
+                <span><b>Total items obtained:</b> {{ calculatedData.items }}</span>
+            </p>
+            <p class="grid grid-cols-1 text-center items-center">
                 <h2>Data by Pokemon</h2>
-            </div>
+            </p>
             <div class="grid grid-cols-4 text-center">
-                <p v-for="pokemon in getPokemonItems">
+                <span v-for="pokemon in getPokemonItems">
                     <b>
                         {{ pokemon.pokemon }}
                     </b>
                     ({{ pokemon.totalEncounters }})
-                <p>
+                    <div>
+                        <b>
+                            Items
+                        </b>
+                        ({{ pokemon.totalItems }})
+                    </div>
+                    <div v-for="item in pokemon.items">
+                        <b>
+                            {{ item.item }}
+                        </b>
+                        ({{ item.count }})
+                    </div>
+                </span>
+            </div>
+            <p class="grid grid-cols-1 text-center items-center">
+                <h2>Data by Item</h2>
+            </p>
+            <div class="grid grid-cols-4 text-center">
+                <span v-for="item in getTotalItems">
                     <b>
-                        Items
+                        {{ item.Name }}
                     </b>
-                    ({{ pokemon.totalItems }})
-                </p>
-                <p v-for="item in pokemon.items">
-                    <b>
-                        {{ item.item }}
-                    </b>
-                    ({{ item.count }})
-                </p>
-                </p>
+                    ({{ item.Totals }})
+                </span>
             </div>
             <UDivider class="mt-6 mb-4" />
             <div class="grid grid-cols-1 mb-6">
@@ -513,7 +546,7 @@ div.regions {
                     Remove selected from list
                 </UButton>
             </div>
-            <UTable :rows="items" :columns="columns" v-model="selectedItems" />
+            <UTable :rows="items" :columns="columns" v-model="selectedItems" class="bg-slate-200" />
         </div>
     </UContainer>
 </template>
