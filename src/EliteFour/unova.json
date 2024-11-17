@@ -1715,20 +1715,7 @@
                     "Name": "Sigilyph",
                     "Steps": [
                         {
-                            "Description": "Use Trick;",
-                            "Steps": [
-                                {
-                                    "Description": "if it uses Heat Wave, switch to Blissey and use Trick. Make sure it's locked to Stone Edge and not High Jump Kick. Switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
-                                },
-                                {
-                                    "Description": "if it switches into Snorlax, use Stealth Rock, then switch to Chandelure 3x Calm Mind + X.Speed",
-                                    "Steps": [
-                                        {
-                                            "Description": "if it switches into Mienshao, switch to Chandelure, then switch to Metagross. Switch back into Chandelure, then switch to Poliwrath: Belly Drum + X.Speed"
-                                        }
-                                    ]
-                                }
-                            ]
+                            "Description": "<< Untested >> Use Trick. Switch to Blissey, Trick and Protect. Use Stealth Rock as it switches to Metagross. Switch to Chandelure 4x Calm Mind + X.Speed."
                         }
                     ]
                 },
