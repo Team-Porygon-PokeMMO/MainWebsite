@@ -80,7 +80,8 @@ export default {
 <template>
     <div class="m-4 main">
         <div class="p-2">
-            <h3>Elite Four</h3>
+            <h2 class="text-center">Elite Four</h2>
+            <h3 class="text-center">Pre-Requisites:</h3>
         </div>
         <div class="menu p-4">
             <p class="menu-label cursor-pointer text-lg" @click="toggleTips()">
