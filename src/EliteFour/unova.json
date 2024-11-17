@@ -2215,7 +2215,7 @@
                     "Name": "Haxorus",
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "Use Trick, switch to Excadrill and use Stealth Rock. Switch to Chandelure 3x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -2946,7 +2946,7 @@
                                     "IsVisible": true,
                                     "Steps": [
                                         {
-                                            "Description": "if it switches into Conkeldurr after Belly Drum, kill it with Drain Punch and use an X.Speed afterwards"
+                                            "Description": "if it switches into Conkeldurr after Belly Drum,  kill it with Drain Punch. Then switch to 2nd Metagross, use Trick and switch to Excadrill 2x Swords Dance + X.Speed"
                                         }
                                     ]
                                 },

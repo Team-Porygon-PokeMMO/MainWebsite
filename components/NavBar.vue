@@ -35,6 +35,7 @@ interface Link {
 
 const leftLinks = [
     { to: '/', image: PoryHome },
+    { to: '/team/AwardGallery' },
     { to: '/guides/EliteFour', image: e4Image },
     {
         image: PoryUtility,
@@ -186,24 +187,24 @@ function handleClick(sublink: Link) {
             </div>
         </div>
 
-        <!-- Right Side Content (Iframe) -->
+        <!-- Right Side Content (GIF) -->
         <div class="flex-grow">
-            <!-- Iframe visible only on the home page -->
-            <iframe
+            <!-- GIF visible only on the home page -->
+            <img
                 v-if="route.path === '/'"
-                src="https://forums.pokemmo.com/index.php?/topic/159984-openpory-team-porygon-is-recruiting"
+                src="/assets/PoryBanner.gif"
+                alt="Your GIF"
                 width="100%"
-                height="600"
-                class="iframe-class"
-            ></iframe>
+                height="auto"
+                class="gif-class"
+            />
         </div>
     </div>
 </template>
 
-  
-  <style scoped>
-  /* Existing Navigation Styles */
-  .button-size {
+<style scoped>
+/* Existing Navigation Styles */
+.button-size {
     padding: 0.0rem 0rem;
     min-width: 120px;
     height: 40px;
@@ -212,41 +213,41 @@ function handleClick(sublink: Link) {
     justify-content: flex-start;
     text-align: center;
     overflow: hidden;
-  }
-  
-  .menu-link {
+}
+
+.menu-link {
     display: flex;
     align-items: center;
     white-space: nowrap;
     text-decoration: none;
     color: inherit;
-  }
-  
-  .button-size:hover {
+}
+
+.button-size:hover {
     background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  .button-image {
+}
+
+.button-image {
     max-width: 100%;
     max-height: 40px;
     object-fit: cover;
-  }
-  
-  /* Flex container for left and right content below nav bar */
-  .content-container {
+}
+
+/* Flex container for left and right content below nav bar */
+.content-container {
     display: flex;
     height: calc(100vh - 60px); /* Adjust based on navbar height */
     margin-top: 1rem;
-  }
-  
-  .left-side {
+}
+
+.left-side {
     flex: 1;
     padding: 1rem;
     background-color: #f0f0f0;
     overflow-y: auto;
-  }
-  
-  .right-side {
+}
+
+.right-side {
     flex: 1;
     display: flex;
     justify-content: center;
@@ -254,12 +255,12 @@ function handleClick(sublink: Link) {
     padding: 1rem;
     background-color: #ffffff;
     overflow-y: auto;
-  }
-  
-  .iframe-content {
+}
+
+.gif-class {
     width: 100%;
-    height: 100%;
+    height: auto;
     border: none;
-  }
-  </style>
+}
+</style>
   
