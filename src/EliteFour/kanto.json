@@ -1,6 +1,8 @@
 {
     "Name": "Kanto",
     "IsVisible": false,
+    "Image": "/images/KantoBase.png",
+    "ImagePosition": "25% 35%",
     "GymTrainers": [
         {
             "Name": "Lorelei",
