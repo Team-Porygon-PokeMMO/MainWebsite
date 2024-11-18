@@ -1,13 +1,14 @@
 <template>
   <UContainer>
+    <div style="display: flex; flex-direction: column; align-items: center;">
+    <h2 class="mt-6">Egg Cost for Genderless Breeding</h2>
+    <p style="font-size: 0.8em; text-align: center;">Ensure all input fields are filled out in both the input section, and in the Cost per Batch section.</p>
+</div>
     <h2 class="mt-6">Fixed Costs</h2>
     <div class="fixed-costs">
       <p><b>Netballs:</b> ${{ netballCost.toLocaleString() }}</p>
       <p><b>Pokeballs:</b> ${{ pokeballCost.toLocaleString() }}</p>
-      <p><b>Shiny Charms:</b> ${{ shinyCharmCost.toLocaleString() }}</p>
-      <p><b>Ditto Box Cost:</b> ${{ dittoBoxCost.toLocaleString() }}</p>
       <p><b>Mailing Fee:</b> ${{ mailingFee.toLocaleString() }}</p>
-      <p><b>30 Day Donator Status:</b> ${{ donatorStatusCost.toLocaleString() }}</p>
       <p><b>Ratio No Donator:</b> {{ ratioNoDonator.toLocaleString() }}</p>
       <p><b>Ratio Donator:</b> {{ ratioDonator.toLocaleString() }}</p>
       <p><b>Ratio Donator + Shiny Charm:</b> {{ ratioDonatorShinyCharm.toLocaleString() }}</p>
@@ -16,35 +17,67 @@
     <h2 class="mt-6">Inputs</h2>
     <div class="inputs-section">
       <div class="m-2">
-        <label for="actualEggs">Actual Eggs:</label>
+        <label for="actualEggs">Actual Number of Eggs Hatched for Shiny:</label>
         <UInput v-model.number="actualEggs" type="number" @input="updateCosts" />
       </div>
+        <div>
+          <div class="m-2">
+    <label for="shinyCharmCost">Shiny Charm Cost:</label>
+    <UInput 
+      v-model="shinyCharmCost" 
+      placeholder="Enter cost" 
+      type="number" 
+    />
+  </div>
+  </div>
+
+  <div>
+    <div class="m-2">
+    <label for="dittoBoxCost">Ditto Box Cost:</label>
+    <UInput 
+      v-model="dittoBoxCost" 
+      placeholder="Enter cost" 
+      type="number" 
+    />
+  </div>
+  </div>
+
+  <div>
+    <div class="m-2">
+    <label for="donatorStatusCost">30 Day Donator Status Cost:</label>
+    <UInput 
+      v-model="donatorStatusCost" 
+      placeholder="Enter cost" 
+      type="number" 
+    />
+  </div>
+  </div>
     </div>
 
     <h2 class="mt-6">Odds</h2>
     <div class="odds-section">
       <div class="m-2">
-        <label>No Donator Status:</label>
+        <label>Odds with No Donator Status:</label>
         <UInput v-model.number="noDonatorOdds" type="number" disabled :value="noDonatorOdds" />
       </div>
       <div class="m-2">
-        <label>Batches (No Donator Status):</label>
+        <label>Batches of Eggs (No Donator Status):</label>
         <UInput v-model.number="batchesNoDonator" type="number" disabled :value="batchesNoDonator" />
       </div>
       <div class="m-2">
-        <label>Donator Status:</label>
+        <label>Odds with Donator Status:</label>
         <UInput v-model.number="donatorOdds" type="number" disabled :value="donatorOdds" />
       </div>
       <div class="m-2">
-        <label>Batches (Donator Status):</label>
+        <label>Batches of Eggs (Donator Status):</label>
         <UInput v-model.number="batchesDonator" type="number" disabled :value="batchesDonator" />
       </div>
       <div class="m-2">
-        <label>Donator Status + Shiny Charm:</label>
+        <label>Odds with Donator Status + Shiny Charm:</label>
         <UInput v-model.number="shinyCharmOdds" type="number" disabled :value="shinyCharmOdds" />
       </div>
       <div class="m-2">
-        <label>Batches (Donator Status + Shiny Charm):</label>
+        <label>Batches of Eggs (Donator Status + Shiny Charm):</label>
         <UInput v-model.number="batchesShinyCharm" type="number" disabled :value="batchesShinyCharm" />
       </div>
       <div class="m-2">
@@ -54,9 +87,11 @@
     </div>
 
     <h2 class="mt-6">Cost per Batch</h2>
+    <p style="font-size: 0.8em; text-align: left;">Caught section is based on catching your own dittos for egging.</p>
+    <p style="font-size: 0.8em; text-align: left;">Bought section is based on purchasing your dittos for egging.</p>
 <div class="cost-per-batch">
   <div class="m-2">
-    <label for="eggs">Eggs:</label>
+    <label for="eggs">Eggs made per Shiny Charm:</label>
     <UInput v-model.number="eggs" type="number" @input="updateCosts" />
   </div>
   <div class="m-2">
@@ -94,6 +129,8 @@
 </div>
 
     <h2 class="mt-6">Average Total Per Shiny</h2>
+    <p style="font-size: 0.8em; text-align: left;">Caught section is based on catching your own dittos for egging.</p>
+    <p style="font-size: 0.8em; text-align: left;">Bought section is based on purchasing your dittos for egging.</p>
 <div class="average-total">
   <h3 class="large-subtitle">Caught</h3>
   <div class="m-2">
@@ -125,6 +162,8 @@
 </div>
 
     <h2 class="mt-6">Total Spent for Shiny</h2>
+    <p style="font-size: 0.8em; text-align: left;">Caught section is based on catching your own dittos for egging.</p>
+    <p style="font-size: 0.8em; text-align: left;">Bought section is based on purchasing your dittos for egging.</p>
     <div class="total-spent">
   <h3 class="large-subtitle">Caught</h3>
   <div class="m-2">
@@ -155,6 +194,7 @@
   </div>
 </div>
   </UContainer>
+  <EggCostAnalysisCredits />
 </template>
 
 <script>
@@ -166,10 +206,10 @@ export default {
       totalCost: null,
       netballCost: 1350,
       pokeballCost: 200,
-      shinyCharmCost: 240000,
-      dittoBoxCost: 240000,
+      shinyCharmCost: 0,
+      dittoBoxCost: 0,
       mailingFee: 1600,
-      donatorStatusCost: 3450000,
+      donatorStatusCost: 0,
       // Odds values
       noDonatorOdds: 30000,
       batchesNoDonator: 0,
@@ -213,89 +253,79 @@ export default {
     return this.actualEggs > 0 ? this.actualEggs / this.shinyCharmOdds : 0;
   },
   noDonoCaughtSpent() {
-  return Math.round(this.noDonoCaught * this.ratioNoDonator);
-},
-donoCaughtSpent() {
-  return Math.round(this.donoCaught * this.ratioDonator);
-},
-donoCharmCaughtSpent() {
-  return Math.round(this.donoCharmCaught * this.ratioDonatorShinyCharm);
-},
-noDonoBoughtSpent() {
-  return Math.round(this.noDonoBought * this.ratioNoDonator);
-},
-donoBoughtSpent() {
-  return Math.round(this.donoBought * this.ratioDonator);
-},
-donoCharmBoughtSpent() {
-  return Math.round(this.donoCharmBought * this.ratioDonatorShinyCharm);
-},
-formattedNoDonoCaught() {
-    return `$${this.noDonoCaught.toLocaleString()}`;
+    return parseInt(this.noDonoCaught * this.ratioNoDonator);
+  },
+  donoCaughtSpent() {
+    return parseInt(this.donoCaught * this.ratioDonator);
+  },
+  donoCharmCaughtSpent() {
+    return parseInt(this.donoCharmCaught * this.ratioDonatorShinyCharm);
+  },
+  noDonoBoughtSpent() {
+    return parseInt(this.noDonoBought * this.ratioNoDonator);
+  },
+  donoBoughtSpent() {
+    return parseInt(this.donoBought * this.ratioDonator);
+  },
+  donoCharmBoughtSpent() {
+    return parseInt(this.donoCharmBought * this.ratioDonatorShinyCharm);
+  },
+  formattedNoDonoCaught() {
+    return `$${parseInt(this.noDonoCaught).toLocaleString()}`;
   },
   formattedDonoCaught() {
-    return `$${this.donoCaught.toLocaleString()}`;
+    return `$${parseInt(this.donoCaught).toLocaleString()}`;
   },
   formattedDonoCharmCaught() {
-    return `$${this.donoCharmCaught.toLocaleString()}`;
-  },
-  
-  formattedNoDonoBought() {
-    return `$${this.noDonoBought.toLocaleString()}`;
-  },
-  formattedDonoBought() {
-    return `$${this.donoBought.toLocaleString()}`;
-  },
-  formattedDonoCharmBought() {
-    return `$${this.donoCharmBought.toLocaleString()}`;
+    return `$${parseInt(this.donoCharmCaught).toLocaleString()}`;
   },
   formattedNoDonoBought() {
-    return `$${this.noDonoBought.toLocaleString()}`;
+    return `$${parseInt(this.noDonoBought).toLocaleString()}`;
   },
   formattedDonoBought() {
-    return `$${this.donoBought.toLocaleString()}`;
+    return `$${parseInt(this.donoBought).toLocaleString()}`;
   },
   formattedDonoCharmBought() {
-    return `$${this.donoCharmBought.toLocaleString()}`;
+    return `$${parseInt(this.donoCharmBought).toLocaleString()}`;
   },
   formattedTotalNetballCost() {
-    return `$${this.totalNetballCost.toLocaleString()}`;
+    return `$${parseInt(this.totalNetballCost).toLocaleString()}`;
   },
   formattedTotalPokeballCost() {
-    return `$${this.totalPokeballCost.toLocaleString()}`;
+    return `$${parseInt(this.totalPokeballCost).toLocaleString()}`;
   },
   formattedTotalBallCost() {
-    return `$${this.totalBallCost.toLocaleString()}`;
+    return `$${parseInt(this.totalBallCost).toLocaleString()}`;
   },
   formattedTotalMailingCost() {
-    return `$${this.totalMailingCost.toLocaleString()}`;
+    return `$${parseInt(this.totalMailingCost).toLocaleString()}`;
   },
   formattedShinyCharmCost() {
-    return `$${this.shinyCharmCost.toLocaleString()}`;
+    return `$${parseInt(this.shinyCharmCost).toLocaleString()}`;
   },
   formattedTotalBatchCost() {
-    return `$${this.totalBatchCost.toLocaleString()}`;
+    return `$${parseInt(this.totalBatchCost).toLocaleString()}`;
   },
   formattedTotalBatchBuyingCost() {
-    return `$${this.totalBatchBuyingCost.toLocaleString()}`;
+    return `$${parseInt(this.totalBatchBuyingCost).toLocaleString()}`;
   },
   formattedNoDonoCaughtSpent() {
-    return `$${this.noDonoCaughtSpent.toLocaleString()}`;
+    return `$${parseInt(this.noDonoCaughtSpent).toLocaleString()}`;
   },
   formattedDonoCaughtSpent() {
-    return `$${this.donoCaughtSpent.toLocaleString()}`;
+    return `$${parseInt(this.donoCaughtSpent).toLocaleString()}`;
   },
   formattedDonoCharmCaughtSpent() {
-    return `$${this.donoCharmCaughtSpent.toLocaleString()}`;
+    return `$${parseInt(this.donoCharmCaughtSpent).toLocaleString()}`;
   },
   formattedNoDonoBoughtSpent() {
-    return `$${this.noDonoBoughtSpent.toLocaleString()}`;
+    return `$${parseInt(this.noDonoBoughtSpent).toLocaleString()}`;
   },
   formattedDonoBoughtSpent() {
-    return `$${this.donoBoughtSpent.toLocaleString()}`;
+    return `$${parseInt(this.donoBoughtSpent).toLocaleString()}`;
   },
   formattedDonoCharmBoughtSpent() {
-    return `$${this.donoCharmBoughtSpent.toLocaleString()}`;
+    return `$${parseInt(this.donoCharmBoughtSpent).toLocaleString()}`;
   },
 },
   watch: {
@@ -343,27 +373,35 @@ formattedNoDonoCaught() {
       this.actualEggs = 0; // Reset actual eggs
     },
     updateCosts() {
-  this.totalNetballCost = Math.round((this.eggs * this.netballCost) / this.netballCatchRate); // Calculate Total Netball Cost
-  this.totalPokeballCost = Math.round(this.eggs * this.pokeballCost); // Calculate Total Pokeball Cost
-  this.totalBallCost = Math.round(this.totalNetballCost + this.totalPokeballCost); // Calculate Total Ball Cost
-  this.totalMailingCost = Math.round((this.eggs / 5) * this.mailingFee); // Calculate Total Mailing Cost
-  this.totalBatchCost = Math.round(this.totalBallCost + this.totalMailingCost + this.shinyCharmCost); // Calculate Total Batch Cost (Catching)
-  this.totalBatchBuyingCost = Math.round((this.totalPokeballCost + (this.dittoBoxCost * (this.eggs / 60)) + this.shinyCharmCost)); // Calculate Total Batch Cost (Buying)
+  this.totalNetballCost = (this.eggs * this.netballCost) / this.netballCatchRate; 
+  this.totalPokeballCost = this.eggs * this.pokeballCost; 
+  this.totalBallCost = this.totalNetballCost + this.totalPokeballCost; 
+  this.totalMailingCost = (this.eggs / 5) * this.mailingFee; 
+  this.totalBatchCost = this.totalBallCost + this.totalMailingCost + this.shinyCharmCost; 
+  this.totalBatchBuyingCost = this.totalPokeballCost + (this.dittoBoxCost * (this.eggs / 60)) + this.shinyCharmCost;
 
-  this.batchesNoDonator = Math.round(this.noDonatorOdds / (this.eggs || 1)); // Calculate Batches for No Donator Status
-  this.batchesDonator = Math.round(this.donatorOdds / (this.eggs || 1)); // Calculate Batches for Donator Status
-  this.batchesShinyCharm = Math.round(this.shinyCharmOdds / (this.eggs || 1)); // Calculate Batches for Donator + Shiny Charm
+  this.batchesNoDonator = this.noDonatorOdds / (this.eggs || 1); 
+  this.batchesDonator = this.donatorOdds / (this.eggs || 1); 
+  this.batchesShinyCharm = this.shinyCharmOdds / (this.eggs || 1); 
 
-  // Average Total Per Shiny Calculations
-  this.noDonoCaught = Math.round((this.totalBatchCost - this.shinyCharmCost) * this.batchesNoDonator);
-  this.donoCaught = Math.round((this.totalBatchCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent));
-  this.donoCharmCaught = Math.round((this.totalBatchCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent));
+  // Update caught calculations without rounding
+  this.noDonoCaught = (this.totalBatchCost - this.shinyCharmCost) * this.batchesNoDonator;
+  this.donoCaught = (this.totalBatchCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent);
+  this.donoCharmCaught = (this.totalBatchCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent);
 
-  // Average Total Per Shiny Bought Calculations
-  this.noDonoBought = Math.round((this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesNoDonator);
-  this.donoBought = Math.round((this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent));
-  this.donoCharmBought = Math.round((this.totalBatchBuyingCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent));
-    },
+  // Update bought calculations without rounding
+  this.noDonoBought = (this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesNoDonator;
+  this.donoBought = (this.totalBatchBuyingCost - this.shinyCharmCost) * this.batchesDonator + (this.donatorStatusCost * this.monthsSpent);
+  this.donoCharmBought = (this.totalBatchBuyingCost * this.batchesShinyCharm) + (this.donatorStatusCost * this.monthsSpent);
+  
+  // Convert to integers for display
+  this.noDonoCaught = parseInt(this.noDonoCaught);
+  this.donoCaught = parseInt(this.donoCaught);
+  this.donoCharmCaught = parseInt(this.donoCharmCaught);
+  this.noDonoBought = parseInt(this.noDonoBought);
+  this.donoBought = parseInt(this.donoBought);
+  this.donoCharmBought = parseInt(this.donoCharmBought);
+},
   },
 };
 </script>

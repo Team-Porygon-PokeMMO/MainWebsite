@@ -690,7 +690,7 @@
                             "Description": "if opponent does not switch out, use Stealth Rock then switch to Chandelure. Switch to Metagross and use Trick, locking Earthquake. Switch to Chandelure 2x Calm Mind + 2x X.Speed "
                         },
                         {
-                            "Description": "if opponent switches into Rhyperior, switch to Excadrill Stealth Rock then switch to Chandelure 2x Calm Mind + 2x X.Speed "
+                            "Description": "if opponent switches into Rhyperior, switch to Excadrill Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed "
                         }
                     ]
                 },
@@ -874,10 +874,7 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if you get an Assault Vest, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
-                                },
-                                {
-                                    "Description": "if you get a Leftovers, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed (use Earthquake vs Gengar)"
+                                    "Description": "Switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
                                 }
                             ]
                         }
@@ -1229,9 +1226,17 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Immediately switch to Excadrill Stealth Rock. 2x Swords Dance + X.Speed"
-                        }
-                    ]
+                            "Description": "Immediately switch to Excadrill Stealth Rock. 2x Swords Dance + X.Speed",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches to Krookodile switch into Excadrill 2x Swords Dance and X.Speed"
+                                }
+                                    ]
+                                },
+                                {
+                                        "Description": "Experimental: if opponent stays and uses drain punch switch into Chandelure and 4x Calm Mind + X.Speed"
+                                }
+                            ]
                 },
                 {
                     "Name": "Lucario",
@@ -2040,7 +2045,7 @@
                             "Description": "if you get a Choice Band, use Stealth Rock, then switch into Poliwrath: Belly Drum + X.Speed (EQ vs Vileplume due to spore)"
                         },
                         {
-                            "Description": "if you get a Leftovers, switch to Blissey then switch to the second Metagross and use Trick. Use Stealth Rock then switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if you get a Leftovers, switch to Blissey then switch to the second Metagross and use Trick. Switch to Excadrill Stealth Rock 2x Swords Dance + X.Speed (Iron Head Vs. Excadrill)"
                         },
                         {
                             "Description": "if opponent switches into Vileplume, use Stealth Rock then switch to Poliwrath Belly Drum",
