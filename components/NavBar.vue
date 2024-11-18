@@ -7,6 +7,9 @@ import PoryUtility from '@/assets/images/NavBar/120x40_UtilitiesCornersWithArrow
 import TeamPory from '@/assets/images/NavBar/120x40_Team_PoryCornersWithArrow.png';
 import CommonResources from '@/assets/images/NavBar/120x40_ResourcesCornersWithArrow.png';
 import ContactUs from '@/assets/images/NavBar/120x40_Contact_UsCorners.png';
+import Awards from '@/assets/images/NavBar/NavBarIcons/120x40_AwardsCorners.png';
+
+
 import Icon_Clock from '@/assets/images/NavBar/NavBarIcons/Icon_Clock.png';
 import Icon_Egg from '@/assets/images/NavBar/NavBarIcons/Icon_Egg.png';
 import Icon_Rock from '@/assets/images/NavBar/NavBarIcons/Icon_Rock.png';
@@ -22,6 +25,7 @@ import Icon_Happiness from '@/assets/images/NavBar/NavBarIcons/Icon_Happiness.pn
 import Icon_Training from '@/assets/images/NavBar/NavBarIcons/Icon_Training.png';
 import Icon_Vanity from '@/assets/images/NavBar/NavBarIcons/Icon_Vanity.png';
 
+
 const router = useRouter();
 const route = useRoute();
 
@@ -35,7 +39,6 @@ interface Link {
 
 const leftLinks = [
     { to: '/', image: PoryHome },
-    { to: '/team/AwardGallery' },
     { to: '/guides/EliteFour', image: e4Image },
     {
         image: PoryUtility,
@@ -43,7 +46,7 @@ const leftLinks = [
             { label: 'Current Time', to: '/utilities/DayAndNightCycle', image: Icon_Clock },
             { label: 'Hatching', to: '/utilities/HatchCycleTimer', image: Icon_Egg },
             { label: 'Rock Smash Tracker', to: '/utilities/RockSmash', image: Icon_Rock },
-            { label: 'Egg Cost Analysis', to: '/utilities/EggCostAnalysis', image: Icon_Money }
+           //{ label: 'Egg Cost Analysis', to: '/utilities/EggCostAnalysis', image: Icon_Money } 
         ]
     }
 ] as Link[];

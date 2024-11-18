@@ -1,7 +1,5 @@
 {
     "Name": "Johto",
-   "Image": "/images/JohtoBase.png",
-   "ImagePosition": "25% 10%",
     "IsVisible": false,
     "GymTrainers": [
         {

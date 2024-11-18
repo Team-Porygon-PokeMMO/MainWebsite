@@ -2684,7 +2684,7 @@
                             "Description": "if opponent stays, let it die then send in the second Metagross and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "If opponent missed, switch to Blissey. Use trick then switch to Chandelure.",
+                                    "Description": "If opponent missed, switch to Blissey. Use trick then switch to Chandelure. (Leafeon switch experimental)",
                                     "Steps": [
                                         {
                                             "Description": "if opponent sends out Rhyperior/Poliwrath/Sandlash, 2x Calm Mind + X.Speed"
@@ -2698,6 +2698,9 @@
                         },
                         {
                             "Description": "if opponent switches out into Rhyperior, switch to Chandelure then switch to Metagross and use Trick. Switch back into Chandelure 2x Calm Mind + X.Speed"
+                        },
+                        {
+                            "Description": "If opponent switches into Leafeon, switch to second Metagross and use Trick. Switch to Chandelure 2x Calm Mind + X Speed."
                         }
                     ]
                 },
@@ -2859,7 +2862,16 @@
                             "Description": "if opponent uses Hydro Pump, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "if opponent uses Scald, use Stealth Rock. Switch to Blissey and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "if opponent uses Scald, use Stealth Rock. Switch to Blissey and use Trick.",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches to Sandslash, switch to Chandelure 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if opponent switches to Gyarados, switch to 2nd Metagross and use Trick as it switches to Sandslash. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                }
+
+                            ]
                         },
                         {
                             "Description": "if opponent switches to Sandslash, Chandelure 3x Calm Mind + X.Speed"
