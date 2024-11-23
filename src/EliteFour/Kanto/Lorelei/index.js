@@ -1,0 +1,1 @@
+export {default as articuno} from './articuno.json'

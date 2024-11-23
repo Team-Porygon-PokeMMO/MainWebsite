@@ -5,6 +5,7 @@ import johtopEliteFour from '~/src/EliteFour/johto.json'
 import sinnohEliteFour from '~/src/EliteFour/sinnoh.json'
 import unovaEliteFour from '~/src/EliteFour/unova.json'
 import eliteFourTips from '~/src/EliteFour/tips.json'
+
 export class Tip {
     Description: string = "";
     Classes: string[] = [];
@@ -35,6 +36,8 @@ export class Region {
     Name: string = "";
     IsVisible: boolean = false;
     GymTrainers: Trainer[] = [];
+    Image?: string;
+    ImagePosition?: string;
 }
 export default {
     data() {
