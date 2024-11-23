@@ -5,15 +5,15 @@ let notificationEndTimer: Date | null = null
 let volume = 100
 
 // Swap these values when a server reset happens to refresh it for all users
-let newEggHatchSecondStore = 'eggHatchSecondTwo'
-let oldEggHatchSecondStore = 'eggHatchSecond'
+let newEggHatchSecondStore = 'eggHatchSecond'
+let oldEggHatchSecondStore = 'eggHatchSecondTwo'
 export default {
     data() {
         return {
             currentTimer: new Date(),
             endTimer: endTimer as Date | null,
             timerSet: false,
-            eggHatchSecond: 50,
+            eggHatchSecond: 51,
             remainingTimer: '',
             remainingSeconds: 0,
             totalSeconds: 0,
