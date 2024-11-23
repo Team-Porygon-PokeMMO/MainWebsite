@@ -1644,7 +1644,7 @@
                                             "Description": "and you get a Leftovers, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
                                         },
                                         {
-                                            "Description": "and you get a Rocky Helmet, switch to Excadrill 2x Swords Dance + X.Speed"
+                                            "Description": "and you get a Rocky Helmet, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
                                         }
                                     ]
                                 }
@@ -2231,15 +2231,7 @@
                                             ]
                                         },
                                         {
-                                            "Description": "Experimental: if Fire Punch did less than 47% damage, use Thunder Punch, then switch to Blissey and use Trick;",
-                                            "Steps": [
-                                                {
-                                                    "Description": "if opponent switches out into Metagross with Life Orb, use Trick then switch to your own Metagross and use Trick. Switch to Excadrill 2x Swords Dance + X.Speed"
-                                                },
-                                                {
-                                                    "Description": "if opponent switches out into any other Pokemon, switch to Chandelure 3x Calm Mind + X.Speed"
-                                                }
-                                            ]
+                                            "Description": "Experimental: if Fire Punch did less than 47% damage, uuse Thunder Punch, then switch to Chandelure 3x Calm Mind + X Speed."
                                         }
                                     ]
                                 },

@@ -637,7 +637,7 @@
                                             "Description": "if it switches into Honchkrow, switch to Chandelure, then switch to Metagross and use Thunder Punch. Switch to Excadrill: 2x Swords Dance."
                                         },
                                         {
-                                            "Description": "if it switches into Staraptor, switch to Chandelure: 3x Calm Mind + X.Defend + X.Speed"
+                                            "Description": "if it switches into Staraptor, switch to Chandelure: 3x Calm Mind + X.Speed"
                                         }
                                     ]
                                 },
@@ -1405,7 +1405,12 @@
                                                             "Description": "if it stays, switch to Chandelure 3x Calm Mind + X.Speed"
                                                         },
                                                         {
-                                                            "Description": "if it switches into Mienshao, switch to Poliwrath: Belly Drum + X.Speed (use Healing Items if necessary)"
+                                                            "Description": "if it switches into Mienshao, switch to Poliwrath: Belly Drum + X.Speed (use Healing Items if necessary)",
+                                                            "Steps": [
+                                                                {
+                                                                    "Description": "if it U-Turned into Cincinno switch to second Metagross, Trick then Chandelure 3x Calm Mind + X.Speed "
+                                                                }
+                                                            ]
                                                         }
                                                     ]
                                                 }
@@ -2595,7 +2600,7 @@
                     "Name": "Dragonite",
                     "Steps": [
                         {
-                            "Description": "Stealth Rock, then switch to Blissey and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "Stealth Rock, then switch to Blissey and use Trick. Switch to Chandelure Calm Mind + X.Speed"
                         }
                     ]
                 },
