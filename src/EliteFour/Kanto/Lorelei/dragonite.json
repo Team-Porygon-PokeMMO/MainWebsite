@@ -1,0 +1,28 @@
+{
+    "Name": "Dragonite",
+    "IsVisible": false,
+    "Steps": [
+        {
+            "Description": "Use Trick;",
+            "Icons": "Trick",
+            "Steps": [
+                {
+                    "Description": "if you get a Leftovers, use Stealth Rock and switch into Blissey, then use Trick as Lucario switches in. Switch to Chandelure: 3x Calm Mind + X.Speed",
+                    "Icons": "📌🥚Trick💡3+2"
+                },
+                {
+                    "Description": "if you get an Expert Belt;",
+                    "Steps": [
+                        {
+                            "Description": "and it uses Flamethrower, switch into Poliwrath: Belly Drum + X.Speed",
+                            "Icons": "🐸6+2"
+                        },
+                        {
+                            "Description": "and it uses Fire Punch, use Stealth Rock and switch into Blissey, then use Trick as Lucario switches in. Switch to Chandelure: 3x Calm Mind + X.Speed"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

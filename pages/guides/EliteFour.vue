@@ -1,48 +1,12 @@
 <script lang="ts">
-import hoennEliteFour from '~/src/EliteFour/hoenn.json'
-import kantoEliteFour from '~/src/EliteFour/kanto.json'
-import johtopEliteFour from '~/src/EliteFour/johto.json'
-import sinnohEliteFour from '~/src/EliteFour/sinnoh.json'
-import unovaEliteFour from '~/src/EliteFour/unova.json'
 import eliteFourTips from '~/src/EliteFour/tips.json'
-
-export class Tip {
-    Description: string = "";
-    Classes: string[] = [];
-    Tips: Tip[] = [];
-    IsVisible: boolean = false;
-    Url: string = "";
-    Name: string = "";
-}
-export class Step {
-    Description: string = "";
-    Classes: string[] = [];
-    Steps: Step[] = [];
-    IsVisible: boolean = false;
-}
-export class Trainer {
-    Name: string = "";
-    IsVisible: boolean = false;
-    Leads: Leads[] = [];
-    Image?: string;
-    ImagePosition?: string;
-}
-export class Leads {
-    Name: string = "";
-    IsVisible: boolean = false;
-    Steps: Step[] = [];
-}
-export class Region {
-    Name: string = "";
-    IsVisible: boolean = false;
-    GymTrainers: Trainer[] = [];
-    Image?: string;
-    ImagePosition?: string;
-}
+import { kantoEliteFour } from '~/src/EliteFour/Kanto/index'
+import { Region, Tip } from '~/utilities/datatypes'
 export default {
     data() {
         return {
-            regions: [kantoEliteFour, johtopEliteFour, hoennEliteFour, sinnohEliteFour, unovaEliteFour] as Region[],
+            // regions: [kantoEliteFour, johtopEliteFour, hoennEliteFour, sinnohEliteFour, unovaEliteFour] as Region[],
+            regions: [kantoEliteFour] as Region[],
             tips: eliteFourTips as Tip[],
             tipsVisible: false
         };
@@ -85,14 +49,18 @@ export default {
         <div class="p-2">
             <h2 class="text-center">Elite Four</h2>
             <h3 class="text-center">Pre-Requisites:</h3>
-            <h3 class="text-center">This guide is based around the recommended team (Seen under Tips). Straying from this team could possibly lead to issues.</h3>
-            <h3 class="text-center">Players must complete each E4 in each region 5 times before guides will be accurate.</h3>
-            <h3 class="text-center">Solves assume the team is properly itemed for each battle, and healed to full health after each fight.</h3>
+            <h3 class="text-center">This guide is based around the recommended team (Seen under Tips). Straying from
+                this team could possibly lead to issues.</h3>
+            <h3 class="text-center">Players must complete each E4 in each region 5 times before guides will be accurate.
+            </h3>
+            <h3 class="text-center">Solves assume the team is properly itemed for each battle, and healed to full health
+                after each fight.</h3>
         </div>
         <h3 class="text-center"></h3>
         <div class="p-2"></div>
         <h3 class="text-center">Note:</h3>
-        <h3 class="text-center">Using budget teams can introduce issues and cause inaccuracies. Solves do not accommodate this.</h3>
+        <h3 class="text-center">Using budget teams can introduce issues and cause inaccuracies. Solves do not
+            accommodate this.</h3>
         <div class="menu p-4">
             <p class="menu-label cursor-pointer text-lg" @click="toggleTips()">
                 {{ tipsVisible ?

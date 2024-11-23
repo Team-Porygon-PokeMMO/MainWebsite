@@ -1,0 +1,9 @@
+{
+    "Name": "Raichu",
+    "IsVisible": false,
+    "Steps": [
+        {
+            "Description": "Use Trick, then switch to Excadrill 3x Swords Dance + X.Speed"
+        }
+    ]
+}

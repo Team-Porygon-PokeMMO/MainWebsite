@@ -1,0 +1,13 @@
+{
+    "Name": "Hariyama",
+    "IsVisible": false,
+    "Steps": [
+        {
+            "Description": "Use Trick, then switch to Chandelure: 4x Calm Mind + X.Speed",
+            "Icons": "Trick💡4+2",
+            "Warning": {
+                "Description": "Shadow Ball"
+            }
+        }
+    ]
+}

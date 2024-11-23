@@ -1,0 +1,47 @@
+{
+    "Name": "Magnezone",
+    "IsVisible": false,
+    "Steps": [
+        {
+            "Description": "Switch to Blissey then switch to Metagross",
+            "Steps": [
+                {
+                    "Description": "if opponent switches into Golduck, Trick",
+                    "Steps": [
+                        {
+                            "Description": "if opponent stays, switch to Blissey then use Stealth Rock",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches into Exeggutor, switch to Chandelure then switch to then second  Metagross Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if opponent switches into Lapras, switch to Poliwrath Belly Drum + X.Speed"
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "if opponent switches into Exeggutor, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent switches into Lapras, use Stealth Rock",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent uses Drill Run, switch to Chandelure 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if opponent uses Waterfall, switch to Poliwrath Belly Drum + X.Speed"
+                                },
+                                {
+                                    "Description": "if opponent switches into Exeggutor, switch to Chandelure then switch to Metagross Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Description": "Experimental: Trick, then switch into Excadrill: 3x Swords Dance + X.Speed*"
+        }
+    ]
+}

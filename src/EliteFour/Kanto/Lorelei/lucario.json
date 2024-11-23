@@ -1,0 +1,39 @@
+{
+    "Name": "Lucario",
+    "IsVisible": false,
+    "Steps": [
+        {
+            "Description": "Use Trick;",
+            "Icons": "Trick",
+            "Steps": [
+                {
+                    "Description": "if you get a Focus Sash, switch to Chandelure: 5x Calm Mind + X.Speed",
+                    "Icons": "Focus Sash -> 💡5+2"
+                },
+                {
+                    "Description": "if you get a Life Orb, switch to Chandelure: 3x Calm Mind + X.Speed",
+                    "Icons": "Life Orb -> 💡3+2"
+                },
+                {
+                    "Description": "if opponent switches into Claydol, use Stealth Rock then switch to Chandelure: 3x Calm Mind + X.Speed",
+                    "Icons": "Claydol -> 📌💡3+2"
+                },
+                {
+                    "Description": "if opponent switches into Dragonite;",
+                    "Icons": "Dragonite -> ?",
+                    "IsVisible": true,
+                    "Steps": [
+                        {
+                            "Description": "use Stealth Rock, then switch into Blissey and use Trick. Switch to Chandelure: 3x Calm Mind + X.Speed",
+                            "Icons": "📌🥚Trick💡3+2"
+                        },
+                        {
+                            "Description": "BURN RISK: switch into Poliwrath: Belly Drum + X.Speed (Continue to setup and X.Speed vs Slowbro)",
+                            "Icons": "🔥⚠️: 🐸6+2"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

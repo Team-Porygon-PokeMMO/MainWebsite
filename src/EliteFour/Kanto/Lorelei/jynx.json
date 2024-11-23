@@ -1,0 +1,10 @@
+{
+    "Name": "Jynx",
+    "IsVisible": false,
+    "Steps": [
+        {
+            "Description": "Switch to Chandelure: 4x Calm Mind + X.Speed",
+            "Icons": "💡4+2"
+        }
+    ]
+}

@@ -14,5 +14,8 @@
     "nuxt": "^3.14.159",
     "vue": "^3.4.19",
     "vue-router": "^4.3.0"
+  },
+  "devDependencies": {
+    "@types/webpack-env": "^1.18.5"
   }
 }

@@ -1,0 +1,46 @@
+{
+    "Name": "Golduck",
+    "IsVisible": false,
+    "Steps": [
+        {
+            "Description": "Use Trick;",
+            "Icons": "Trick",
+            "Steps": [
+                {
+                    "Description": "if opponent stays, switch to Blissey and use Stealth Rock;",
+                    "Steps": [
+                        {
+                            "Description": "if opponent switches out into Exeggutor, switch to Chandelure and then switch to the second Metagross and use Trick. Switch back to Chandelure: 3x Calm Mind + X.Speed",
+                            "Warning": {
+                                "Description": "Don't use Energy Ball against Mantine"
+                            }
+                        },
+                        {
+                            "Description": "if opponent switches out into Lapras, switch to Poliwrath: Belly Drum + X.Speed"
+                        }
+                    ]
+                },
+                {
+                    "Description": "if opponent switches into Exeggutor, use Stealth Rock then switch to Chandelure: 3x Calm Mind + X.Speed"
+                },
+                {
+                    "Description": "if opponent switches out into Lapras, use Stealth Rock;",
+                    "Steps": [
+                        {
+                            "Description": "if opponent uses Aqua Tail, switch to Poliwrath: Belly Drum + X.Speed",
+                            "Warning": {
+                                "Description": "Ice Punch against Mantine"
+                            }
+                        },
+                        {
+                            "Description": "if opponent uses Drill Run, switch to Chandelure: 3x Calm Mind + X.Speed",
+                            "Warning": {
+                                "Description": "Don't use Energy Ball against Mantine"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,19 @@
+{
+    "Name": "Togekiss",
+    "IsVisible": false,
+    "Steps": [
+        {
+            "Description": "Use Trick, then switch to Chandelure 4x Calm Mind + X.Speed Use Shadow Ball vs. Hariyama",
+            "Steps": [
+                {
+                    "Description": "if opponent switches out into Hariyama while you set up vs. Togekiss, switch to the second Metagross and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed Use Shadow Ball",
+                    "Steps": [
+                        {
+                            "Description": "if opponent switches into Lapras, switch to Poliwrath Belly Drum + X.Speed"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

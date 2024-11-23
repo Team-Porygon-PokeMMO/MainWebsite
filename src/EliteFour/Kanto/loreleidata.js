@@ -1,1 +1,0 @@
-import { articuno } from './Lorelei'

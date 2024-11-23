@@ -1,0 +1,13 @@
+{
+    "Name": "Exeggutor",
+    "IsVisible": false,
+    "Steps": [
+        {
+            "Description": "Use Trick and then use Stealth Rock. Switch to Chandelure: 3x Calm Mind + X.Speed",
+            "Icons": "Trick📌💡3+2",
+            "Warning": {
+                "Description": "Don't use Energy Ball against Mantine"
+            }
+        }
+    ]
+}

@@ -1,0 +1,11 @@
+
+{
+    "Name": "Chansey",
+    "IsVisible": false,
+    "Steps": [
+        {
+            "Description": "Use Trick and then use Stealth Rock. Switch to Chandelure: 4x Calm Mind + X.Speed",
+            "Icons": "Trick📌💡4+2"
+        }
+    ]
+}

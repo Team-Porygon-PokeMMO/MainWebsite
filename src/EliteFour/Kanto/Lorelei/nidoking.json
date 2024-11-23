@@ -1,0 +1,48 @@
+{
+    "Name": "Nidoking",
+    "IsVisible": false,
+    "Steps": [
+        {
+            "Description": "Switch to Blissey then switch to Metagross Trick"
+        },
+        {
+            "Description": "if opponent switches out into Chansey, switch to Chandelure 6x Calm Mind + X.Speed",
+            "Steps": [
+                {
+                    "Description": "if opponent switches out into Mantine, switch to Blissey again then switch to the second Metagross and use Stealth Rock. Switch to Chandelure 4x Calm Mind + X.Speed"
+                }
+            ]
+        },
+        {
+            "Description": "if opponent switches out into Claydol, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+        },
+        {
+            "Description": "if opponent switches out into Exeggutor, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+        },
+        {
+            "Description": "if opponent switches out into Golduck, switch to Blissey and use Stealth Rock",
+            "Steps": [
+                {
+                    "Description": "if opponent switches into Exeggutor, switch to Chandelure then switch to the second Metagross Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                },
+                {
+                    "Description": "if opponent switches into Lapras comes out, switch to Poliwrath Belly Drum + X.Speed"
+                }
+            ]
+        },
+        {
+            "Description": "if opponent switches out into Lapras, use Stealth Rock",
+            "Steps": [
+                {
+                    "Description": "if opponent uses Drill Run, switch to Excadrill 2x Swords Dance + X.Speed"
+                },
+                {
+                    "Description": "if opponent uses Waterfall, switch to Poliwrath Belly Drum + X.Speed"
+                }
+            ]
+        },
+        {
+            "Description": "if opponent switches out into Lucario, switch to Chandelure 5x Calm Mind + X.Speed"
+        }
+    ]
+}
