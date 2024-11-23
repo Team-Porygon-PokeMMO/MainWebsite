@@ -49,6 +49,7 @@ a {
 <template>
   <div class="p-1 text-center">
     <h1>Team Porygon (PokeMMO)</h1>
+    <a href="/pokedex/index.html">View Pokedex</a>
     <div class="grid grid-cols-1 text-justify">
       <div v-for="item in content" class="p-2">
         <h2>{{ item.title }}</h2>
