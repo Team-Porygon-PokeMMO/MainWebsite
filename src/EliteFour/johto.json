@@ -420,7 +420,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey and use Trick as it switches out into Girafarig. Use Stealth Rock then switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": " Trick and switch Excadrill. Stealth Rock then 3x Swords Dance + X Speed"
                         }
                     ]
                 },
@@ -564,6 +564,9 @@
                                             "Description": "if Ditto is sent out, switch to Blissey and use Trick as it locks Flamethrower. Switch to Chandelure again and KO it with Shadow Ball"
                                         }
                                     ]
+                                },
+                                {
+                                    "Description": "if opponent uses to Flamethrower, use Trick. Then switch to Chandelure 6x Calm Mind + X.Speed"
                                 },
                                 {
                                     "Description": "if opponent switches to Rhyperior, switch to Excadrill: 2x Swords Dance + X.Speed"
