@@ -1,6 +1,8 @@
 {
     "Name": "Sinnoh",
     "IsVisible": false,
+    "Image": "/images/SinnohBase.png",
+    "ImagePosition": "25% 35%",
     "GymTrainers": [
         {
             "Name": "Aaron",

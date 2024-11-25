@@ -45,12 +45,10 @@ export default {
             if (item.Image) {
                 return {
                     backgroundImage: `linear-gradient(rgb(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(${item.Image})`,
-                    backgroundSize: '45%',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: item?.ImagePosition ?? '25% 35%',
+                    backgroundSize: 'cover',
+                    backgroundPosition: item?.ImagePosition ?? '25% 15%',
                     width: '100%',
                     height: '100%',
-
                 }
             }
         }

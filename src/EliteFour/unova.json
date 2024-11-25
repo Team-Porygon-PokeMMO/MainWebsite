@@ -1,6 +1,8 @@
 {
     "Name": "Unova",
     "IsVisible": false,
+    "Image": "/images/UnovaBase.png",
+    "ImagePosition": "25% 35%",
     "GymTrainers": [
         {
             "Name": "Shauntal",
@@ -781,7 +783,7 @@
                     "Name": "Houndoom",
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey and use Trick. Switc into Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "Switch to Blissey and use Trick. Switch into Chandelure 5x Calm Mind + X.Speed"
                         }
                     ]
                 },

@@ -1,6 +1,8 @@
 {
     "Name": "Hoenn",
     "IsVisible": false,
+    "Image": "/images/HoennBase.png",
+    "ImagePosition": "25% 35%",
     "GymTrainers": [
         {
             "Name": "Sidney",
