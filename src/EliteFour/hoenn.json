@@ -2542,7 +2542,12 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "Use Trick, then switch to Chandelure 3x Calm Mind + X.Speed",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches into Seaking , switch to Poliwarth Belly Drum + X.Speed (If Milotic comes out during setup, heal as needed)"
+                                }
+                            ]
                         }
                     ]
                 },

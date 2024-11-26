@@ -2294,6 +2294,9 @@
                         },
                         {
                             "Description": "if it switches into Excadrill, let it die then send in Blissey and use Trick. Switch to Excadrill 2x Swords Dance + X.Speed"
+                        },
+                        {
+                            "Description": "if it switches into Garchomp, switch to Chandelure then switch back to Metagross and use Trick. Switch to Excadrill 2x Swords Dance + X.Speed"
                         }
                     ]
                 },
