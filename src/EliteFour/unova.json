@@ -973,12 +973,7 @@
                     "Name": "Salamence",
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed",
-                            "Steps": [
-                                {
-                                    "Description": "if it sends out Bisharp last, switch to Poliwrath and use Drain Punch."
-                                }
-                            ]
+                            "Description": "Use Trick, then switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -1216,6 +1211,9 @@
                                 },
                                 {
                                     "Description": "if it switches into Emolga, switch to Excadrill Stealth Rock. Switch to the second Metagross and use Trick, then use Earthquake. Switch to Excadrill then switch to any Metagross to bait out Earthquake from Caitlin's Metagross. Switch back into Excadrill: 2x Swords Dance + X.Speed"
+                                },
+                                {
+                                    "Description": "if it switches into Entei, Stealth Rock. Switch Chandelure 4x Calm Mind + X.Speed"
                                 }
                             ]
                         }
@@ -2036,7 +2034,7 @@
                                     ]
                                 },
                                 {
-                                    "Description": "if it uses Fire Punch, use Stealth Rock, then switch to Chandelure 2x Calm Mind + X.Speed"
+                                    "Description": "if it uses Fire Punch, use Stealth Rock, then switch to Chandelure 3x Calm Mind + X.Speed"
                                 },
                                 {
                                     "Description": "if it uses Thunder Punch, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
@@ -2101,11 +2099,44 @@
                 {
                     "Name": "Electivire",
                     "Steps": [
-                        {
-                            "Description": "Sealth Rock, switch Chandelure, then switch second Metagross. Use Trick then switch back to Chandelure 3x Calm Mind + X Speed."
-                        }
+                      {
+                        "Description": "Trick.",
+                        "Steps": [
+                          {
+                            "Description": "Switch to Blissey and use Stealth Rock",
+                            "Steps": [
+                              {
+                                "Description": "if it switches into Conkeldurr, switch to Chandelure then switch into second Metagross and Trick.",
+                                "Steps": [
+                                  {
+                                    "Description": "if it uses Drain Punch, switch to Chandelure 3x Calm Mind + X.Speed"
+                                  },
+                                  {
+                                    "Description": "if it uses Thunder Punch, switch to Excadrill: 2x Swords Dance + X.Speed"
+                                  },
+                                  {
+                                    "Description": "if it uses Payback, switch to Poliwrath: Belly Drum + X.Speed"
+                                  }
+                                ]
+                              },
+                              {
+                                "Description": "if it switches into Machamp, switch to Chandelure then switch into second Metagross and Trick.",
+                                "Steps": [
+                                  {
+                                    "Description": "if it uses Payback, switch to Poliwrath: Belly Drum + X.Speed"
+                                  },
+                                  {
+                                    "Description": "Otherwise, switch to Chandelure 3x Calm Mind + X.Speed"
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
                     ]
-                },
+                  }
+                  ,
                 {
                     "Name": "Gliscor",
                     "Steps": [
