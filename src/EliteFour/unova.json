@@ -2593,10 +2593,10 @@
                     "Name": "Chandelure",
                     "Steps": [
                         {
-                            "Description": "Switch to your own Chandelure 2x Calm Mind + X.Speed",
+                            "Description": "Stealth Rock, then switch to your own Chandelure 2x Calm Mind + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "if it switches into Excadrill, switch to Metagross and use Trick. Switch to your own Excadrill: Swords Dance + X.Speed"
+                                    "Description": "if it switches into Excadrill, switch to Metagross and use Trick. Switch to your own Excadrill: Stealth Rock, Swords Dance + X.Speed"
                                 }
                             ]
                         }

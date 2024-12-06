@@ -1509,7 +1509,7 @@
                             "Description": "if opponent stays, switch to Blissey Trick. Switch to Chandelure 5x Calm Mind + X.Speed (if Houndoom is not dead, use Flamethrower vs. Gengar)"
                         },
                         {
-                            "Description": "if opponent switches out into Krookodile, switch to Excadrill Stealth Rock. Switch to Blissey Trick then switch to Chandelure 3x Calm Mind + X.Speed",
+                            "Description": "if opponent switches out into Krookodile, switch to Excadrill Stealth Rock.",
                             "Steps": [
                                 {
                                     "Description": "if opponent switches out, Switch to Blissey Trick then switch to Chandelure 3x Calm Mind + X.Speed"
