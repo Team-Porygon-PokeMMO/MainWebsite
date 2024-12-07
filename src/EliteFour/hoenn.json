@@ -158,7 +158,7 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if you get an Air Balloon, use Stealth Rock then switch to Excadrill Stealth Rock into 2x Swords Dance + X.Speed"
+                                    "Description": "if you get an Air Balloon, switch to Excadrill Stealth Rock into 2x Swords Dance + X.Speed"
                                 },
                                 {
                                     "Description": "if you get a Focus Sash, switch to your own Excadrill Stealth Rock into 2x Swords Dance + X.Speed"
@@ -1213,7 +1213,12 @@
                                                     "Description": "if opponent switches out into Skarmory, switch to Blissey and use Trick. Switch to Chandelure: 2x Calm Mind + X.Speed"
                                                 },
                                                 {
-                                                    "Description": "if opponent got an Attack Boost from Meteor Mash before using Belly Drum, use Earthquake to kill, as it sends out Mamoswine. Switch to Excadrill then switch to the second Metagross and use Trick. Switch back into Excadrill: 3x Swords Dance + X.Speed"
+                                                    "Description": "if opponent got an Attack Boost from Meteor Mash before using Belly Drum, use Earthquake to kill, as it sends out Mamoswine. Switch to Excadrill then switch to the second Metagross and use Trick. Switch back into Excadrill: 3x Swords Dance + X.Speed",
+                                                    "Steps": [
+                                                        {
+                                                            "Description": "if Mismagius came out instead of Mamoswine, swap into Metagross. Trick as Mamoswine should come out. Switch into Excadrill: 3x Swords Dance + X.Speed"
+                                                        }
+                                                    ]
                                                 }
                                             ]
                                         },
@@ -2291,7 +2296,7 @@
                             ]
                         },
                         {
-                            "Description": "if opponent switches into Swampert, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Swampert, Stealth Rock then switch to Excadrill 2x Swords Dance"
                         },
                         {
                             "Description": "if opponent switches into Togekiss, switch to Chandelure 4x Calm Mind + X.Speed",

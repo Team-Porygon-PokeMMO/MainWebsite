@@ -2620,7 +2620,12 @@
                                     ]
                                 },
                                 {
-                                    "Description": "if it switches into Vaporeon, switch to Poliwrath: Belly Drum + X.Speed"
+                                    "Description": "if it switches into Vaporeon, switch to Poliwrath: Belly Drum + X.Speed",
+                                    "Steps": [
+                                        {
+                                            "Description": "if it switches back to Conkeldurr, switch to second Metagross, use Trick then switch Chandelure 4x Calm Mind + X Speed"
+                                        }
+                                    ]
                                 },
                                 {
                                     "Description": "if it switches into Druddigon, switch to Excadrill, switch to second Metagross and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed"
