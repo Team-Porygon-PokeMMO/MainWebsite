@@ -1126,7 +1126,7 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "if you get an Assault Vest, send out Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if you get an Assault Vest, send out Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
                             "Description": "if you get a Life Orb/Leftovers, send out Chandelure 3x Calm Mind + X.Speed"
@@ -2203,12 +2203,14 @@
                         {
                             "Description": "if opponent switches out into Gyarados during setup, swap into Metagross and kill Gyarados. Swap to Chandelure then swap to Metagross and Trick. Switch to Excadrill: 2x Swords Dance + X.Speed"
                         
-                        },
+                        }
+                    ]
+                    },
                         {
                             "Description": "if opponent switches out into Eelektross, use Stealth Rock and switch to Chandelure 3x Calm Mind + X.Speed"
                         }
-                    ]
-                }
+                    
+                
                 ]
                 },
                 {
