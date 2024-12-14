@@ -584,6 +584,9 @@
                             "Description": "if you get a Life Orb, switch to Excadrill Stealth Rock into 2x Swords Dance + X.Speed",
                             "Steps": [
                                 {
+                                    "Description": "if opponent used flamethrower, switch to Chandelure 3x Calm Mind + X.Speed"
+                                },
+                                {
                                     "Description": "if opponent switches out into Meganium, switch to Blissey and use Trick. Then switch to Poliwrath as Lucario comes out",
                                     "Steps": [
                                         {
@@ -1284,7 +1287,12 @@
                             ]
                         },
                         {
-                            "Description": "if opponent switches into Altaria, switch to Metagross and use Trick. Switch to Excadrill and use Stealth Rock. Switch to Poliwrath Belly Drum + X.Speed"
+                            "Description": "if opponent switches into Altaria, switch to Metagross and use Trick. Switch to Excadrill and use Stealth Rock. 2x Swords Dance + X.Speed",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches into Walrein, Switch to Poliwrath Belly Drum + X.Speed"
+                                }
+                            ]
                         },
                         {
                             "Description": "if opponent switches into Blissey, switch to Metagross and use Trick then Stealth Rock. Switch back into Chandelure 4x Calm Mind + X.Speeds"
@@ -1422,7 +1430,7 @@
                             "Description": "if opponent switches into Altaria, switch to Excadrill Stealth Rock. Switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
-                            "Description": "if opponent switches into Beartic, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Beartic, use Stealth Rock then switch to Chandelure 2x Calm Mind"
                         },
                         {
                             "Description": "if opponent switches into Blissey, use Stealth Rock then switch to Chandelure 4x Calm Mind + X.Speed"
@@ -1604,6 +1612,12 @@
                                     "Description": "if opponent switches into Salamence, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                                 }
                             ]
+                        },
+                        {
+                            "Description": "if opponent switches into Krookodile, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent switches into Salamence, use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1745,7 +1759,7 @@
                             ]
                         },
                         {
-                            "Description": "if you get a Life Orb, switch to Chandelure 5x Calm Mind + X.Speed"
+                            "Description": "if you get a Life Orb, use Stealth Rock then switch to Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
                             "Description": "if opponent uses Final Gambit, send another Metagross Trick",
