@@ -2342,15 +2342,7 @@
                                     "Description": "and you get a Dragon Gem, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
                                 },
                                 {
-                                    "Description": "and you get a Leftovers, use Stealth Rock then switch to Chandelure, then switch back to Metagross",
-                                    "Steps": [
-                                        {
-                                            "Description": "and opponent switches back into Dragonite, Switch to Chandelure 3x Calm Mind + X.Defense + X.Speed"
-                                        },
-                                        {
-                                            "Description": "and opponent switches out to Kangaskhan, switch to Excadrill into 2x Swords Dance + X.Defend + X.Speed"
-                                        }
-                                    ]
+                                    "Description": "if you get a Leftovers, Stealth Rock then switch to Chandelure 3x Calm Mind + X Defense + X Speed"
                                 },
                                 {
                                     "Description": "and you get a Life Orb, switch to Excadrill Stealth Rock then 2x Swords Dance",
@@ -2676,6 +2668,9 @@
                                             "Description": "and you get a Leftovers, use Stealth Rock and Thunder Punch, then switch into Chandelure: X.Defend + 3x Calm Mind + X.Speed"
                                         }
                                     ]
+                                },
+                                {
+                                    "Description": "If Scizor uses U-Turn, Stealth Rock then switch to second Metagross and Tricj. Switch into Chandelure, 2x Calm Mind + X.Speed."
                                 }
                             ]
                         }

@@ -88,7 +88,7 @@
                                     "Description": "if opponent switches into Lapras",
                                     "Steps": [
                                         {
-                                            "Description": "and you get an Expert Belt, switch to Chandelure 3x Calm Mind",
+                                            "Description": "and you get an Expert Belt, switch to Excadrill 2x Swords Dance",
                                             "Steps": [
                                                 {
                                                     "Description": "if opponent used Waterfall, switch to Poliwrath Belly Drum + X.Speed"
@@ -2399,7 +2399,12 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick, then use Stealth Rock. Switch to Blissey and use Trick then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "Use Trick, then use Stealth Rock. Switch to Blissey and use Trick then switch to Chandelure 3x Calm Mind + X.Speed",
+                            "Steps": [
+                                {
+                                    "Description": "if Alakazam switches out to Gyarados, switch to 2nd Metagross. Use Trick then switch to Excadrill 2x Swords Dance + 2x X.Speed"
+                                }
+                            ]
                         }
                     ]
                 },
