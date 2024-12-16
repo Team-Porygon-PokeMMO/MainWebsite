@@ -56,7 +56,7 @@ const rightLinks = [
         image: TeamPory,
         sublinks: [
             { label: 'Forums Club', to: 'https://forums.pokemmo.com/index.php?/clubs/219-pory-porygon/', image: Icon_PokeMMO },
-            { label: 'Shiny Showcase', to: 'https://forums.pokemmo.com/index.php?/topic/159659-pory-ot-shiny-showcase/', image: Icon_Shiny_Showcase },
+            { label: 'Shiny Showcase', to: 'https://forums.pokemmo.com/index.php?/topic/184615-pory-ot-shiny-showcase/', image: Icon_Shiny_Showcase },
             { label: 'Missing Shiny Dex', to: 'https://forums.pokemmo.com/index.php?/topic/159671-pory-whose-left-to-shunt/', image: Icon_Missing_Shiny_Showcase },
         ]
     },
