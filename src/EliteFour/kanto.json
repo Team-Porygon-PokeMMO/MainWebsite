@@ -2283,7 +2283,7 @@
                             "Description": "if opponent switches into Dragonite",
                             "Steps": [
                                 {
-                                    "Description": "if you get a Leftovers, switch to Poliwrath X.Speed + Belly Drum"
+                                    "Description": "if you get a Leftovers, switch to Poliwrath X.Speed + Belly Drum (Drain Punch Vs. Haxorus)"
                                 },
                                 {
                                     "Description": "if you get a Life Orb, switch to Excadrill Swords Dance + X.Speed"
@@ -2402,7 +2402,7 @@
                             "Description": "Use Trick, then use Stealth Rock. Switch to Blissey and use Trick then switch to Chandelure 3x Calm Mind + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "if Alakazam switches out to Gyarados, switch to 2nd Metagross. Use Trick then switch to Excadrill 2x Swords Dance + 2x X.Speed"
+                                    "Description": "if Alakazam switches out to Gyarados, switch to 2nd Metagross. Use Trick then switch to Poliwrath Belly Drum + X.Speed + X.Defense"
                                 }
                             ]
                         }
