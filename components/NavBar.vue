@@ -58,6 +58,7 @@ const rightLinks = [
             { label: 'Forums Club', to: 'https://forums.pokemmo.com/index.php?/clubs/219-pory-porygon/', image: Icon_PokeMMO },
             { label: 'Shiny Showcase', to: 'https://forums.pokemmo.com/index.php?/topic/184615-pory-ot-shiny-showcase/', image: Icon_Shiny_Showcase },
             { label: 'Missing Shiny Dex', to: 'https://forums.pokemmo.com/index.php?/topic/184928-pory-whose-left-to-shunt/', image: Icon_Missing_Shiny_Showcase },
+            { label: 'MarketPlace', to: 'https://discord.com/oauth2/authorize?client_id=1329853108083232790&response_type=token&redirect_uri=http%3A%2F%2Flocalhost%3A8090%2Fauth%2Fdiscord%2Fcallback&scope=identify+email', image: Icon_Missing_Shiny_Showcase }
         ]
     },
     {
