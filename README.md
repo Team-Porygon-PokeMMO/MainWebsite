@@ -73,3 +73,18 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+#### Frontweb
+1. clone repo
+2. delete the file `package-lock.json`
+3. install the dependencies `npm install`
+4. run `npm run serve` for a dev server
+5. navigate to `http://localhost:8080/`
+
+#### Fake API
+1. install JSON Server `npm install -g json-server`
+2. start JSON Server `json-server --watch db.json`
+3. navigate to resources `http://localhost:3000`
+
+Resources
+- http://localhost:3000/pokemons

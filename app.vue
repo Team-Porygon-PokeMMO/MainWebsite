@@ -2,6 +2,7 @@
   <NuxtLoadingIndicator />
   <NavBar variant="sticky" />
   <NuxtPage class="mb-auto w-full dark" />
+  <router-view></router-view>
   <!-- <Footer /> -->
   <UNotifications />
 
