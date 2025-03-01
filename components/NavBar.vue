@@ -44,9 +44,9 @@ const leftLinks = [
         image: PoryUtility,
         sublinks: [
             { label: 'Current Time', to: '/utilities/DayAndNightCycle', image: Icon_Clock },
-            { label: 'Hatching', to: '/utilities/HatchCycleTimer', image: Icon_Egg },
             { label: 'Rock Smash Tracker', to: '/utilities/RockSmash', image: Icon_Rock },
            //{ label: 'Egg Cost Analysis', to: '/utilities/EggCostAnalysis', image: Icon_Money } 
+            { label: 'Hatching (Deprecated)', to: '/utilities/HatchCycleTimer', image: Icon_Egg },
         ]
     }
 ] as Link[];
