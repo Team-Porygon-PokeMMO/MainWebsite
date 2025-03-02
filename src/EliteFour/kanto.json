@@ -15,8 +15,16 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Stealth Rock as it switches into a Scarfed Claydol, then switch to Chandelure: 3x Calm Mind + X.Speed",
+                            "Description": "Stealth Rock as it switches into a Scarfed Claydol, then switch to Chandelure 3x Calm Mind + X.Speed",
+                            "Icons": "📌💡3+2", 
+                            "Steps": [
+                        {
+                            "Description": "If Claydol switches to out into Lapras, Swap to Blissey (Baiting Lucario). Trick, then switch to Chandelure 3x Calm Mind + X.Speed",
                             "Icons": "📌💡3+2"
+                            
+                        }
+                    ]
+                            
                         }
                     ]
                 },
@@ -1207,7 +1215,7 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "if players gets Metal Coat, switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if players gets Metal Coat, switch to Excadrill 3x Swords Dance + X.Speed"
                         },
                         {
                             "Description": "if players gets Rocky Helmet, switch to Chandelure 3x Calm Mind + X.Speed"
@@ -2171,27 +2179,22 @@
                             "Description": "if opponent uses Close Combat, switch to Chandelure 4x Calm Mind + X.Speed + X.Defend"
                         },
                         {
-                            "Description": "if opponent switches into Dragonite",
+                            "Description": "if opponent switches into Dragonite (Experimental)",
                             "Steps": [
+                                
                                 {
-                                    "Description": "if you get a Choice Band, use Stealth Rock then switch to Blissey and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if you get a Muscle Band, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
                                 },
                                 {
-                                    "Description": "if you get an Expert Belt/Leftovers, use Stealth Rock then switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed",
+                                    "Description": "if you get a Expert Belt, Sealth Rock then switch to Poliwrath Belly Drum + X.Speed (If worry of Burn, follow expanded steps)",
                                     "Steps": [
                                         {
-                                            "Description": "if opponent switches into Arcanine, switch back into Chandelure 4x Calm Mind + X.Speed"
-                                        },
-                                        {
-                                            "Description": "if opponent switches into Dragonite, switch back into Blissey and use Softboiled as it sends out Feraligatr. Switch to Poliwrath then switch to Excadrill as you should face Arcanine Wild Charge. Set up 2x Swords Dance + X.Speed"
-                                        },
-                                        {
-                                            "Description": "if opponent switches out into Hydreigon, switch to the second Metagross and use Trick, then switch to Blissey then use Softboiled"
-                                        },
-                                        {
-                                            "Description": "if opponent switches back into Lucario while you switch back to Chandelure, switch to the second Metagross and use Trick, then switch back to Chandelure 4x Calm Mind + X.Speed"
+                                            "Description": "Stealth Rock then switch to Blissey and Trick. Lucario will be sent out. Switch to Chandelure 4x Calm Mind + X.Speed"
                                         }
                                     ]
+                                },
+                                {
+                                    "Description": "if you get an Leftovers switch to Poliwrath Belly Drum + X.Speed (Note Burn Chance)"
                                 }
                             ]
                         }
@@ -2891,7 +2894,7 @@
                                     "Description": "if opponent stays, switch to Chandelure 2x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "if opponent swaps out into Magnezone comes out, use Earthquake to kill. Let Metagross die and switch to the second one and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
+                                    "Description": "if opponent swaps out into Magnezone, use Earthquake to kill. Let Metagross die and switch to the second one and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
                                 }
                             ]
                         },

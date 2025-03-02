@@ -492,7 +492,7 @@
                                     "Description": "if it stays, switch to Chandelure 4x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "if it switches into anything else, switch to Blissey and use Softboiled. Switch to Chandelure 4x Calm Mind + X.Speed"
+                                    "Description": "if it switches into anything else, switch to Metagross and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed (Experimental)"
                                 }
                             ]
                         }
@@ -664,7 +664,12 @@
                                             "Description": "if it switches into Bisharp or Samurott, switch to Chandelure then switch to Metagross and use Trick.",
                                             "Steps": [
                                                 {
-                                                    "Description": "if it uses Aqua Tail, switch to Poliwrath: Belly Drum + X.Speed"
+                                                    "Description": "if it uses Aqua Tail, switch to Poliwrath: Belly Drum + X.Speed",
+                                                    "Steps": [
+                                                        {
+                                                            "Description": "if it switches into Serperior, switch to the second Metagross and use Trick. Switch back into Chandelure 4x Calm Mind + X.Speed"
+                                                        }
+                                                    ]
                                                 },
                                                 {
                                                     "Description": "if it uses Sacred Sword, swithc into Chandelure 4x Calm Mind + X.Speed"

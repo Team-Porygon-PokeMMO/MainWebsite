@@ -81,15 +81,8 @@ export default {
     <div class="m-4 main">
         <div class="p-2">
             <h2 class="text-center">Elite Four</h2>
-            <h3 class="text-center">Pre-Requisites:</h3>
-            <h3 class="text-center">This guide is based around the recommended team (Seen under Tips). Straying from this team could possibly lead to issues.</h3>
-            <h3 class="text-center">Players must complete each E4 in each region 5 times before guides will be accurate.</h3>
-            <h3 class="text-center">Solves assume the team is properly itemed for each battle, and healed to full health after each fight.</h3>
+            <h3 class="text-center">This guide is based around the recommended team (Seen under Tips).</h3>
         </div>
-        <h3 class="text-center"></h3>
-        <div class="p-2"></div>
-        <h3 class="text-center">Note:</h3>
-        <h3 class="text-center">Using budget teams can introduce issues and cause inaccuracies. Solves do not accommodate this.</h3>
         <div class="menu p-4">
             <p class="menu-label cursor-pointer text-lg" @click="toggleTips()">
                 {{ tipsVisible ?
