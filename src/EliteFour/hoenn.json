@@ -264,11 +264,15 @@
                                     "Description": "if opponent switches into Excadrill, use Stealth Rock then switch to Poliwrath X.Speed + Belly Drum"
                                 },
                                 {
-                                    "Description": "if opponent switches into Garchomp, switch to Excadrill Stealth Rock into 3x Swords Dance + X.Speed",
+                                    "Description": "if opponent switches into Garchomp, Stealth Rock",
                                     "Steps": [
                                         {
-                                            "Description": "if opponent switches into Gyarados, switch to Poliwrath Belly Drum + X.Speed"
+                                            "Description": "if opponent uses Earthquake and Metagross dies, switch to Excadrill Stealth Rock as it switches to Gyarados. Switch to Poliwrath Belly Drum + X.Speed"
+                                        },
+                                        {
+                                            "Description": "if opponent uses Fire Fang, switch to Chandelure. Calm Mind as it switches to Gyarados. Switch to Poliwrath Belly Drum + X.Speed"
                                         }
+
                                     ]
                                 }
                             ]
@@ -1384,10 +1388,13 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick; (Use Energy Ball vs. Walrein"
+                            "Description": "Use Trick; (Use Energy Ball vs. Walrein)"
                         },
                         {
                             "Description": "if opponent uses Hidden Power or it switches into Nidoqueen, switch to Chandelure 2x Calm Mind + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent uses Blizzard switch to Poliwrath Belly Drum + X.Speed"
                         },
                         {
                             "Description": "if opponent switches into Walrein, switch to Blissey and use Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
