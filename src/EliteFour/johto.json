@@ -2355,7 +2355,18 @@
                             ]
                         },
                         {
-                            "Description": "if opponent switches out into Flygon, Stealth Rock, locking Earthquake. Send out Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "if opponent switches out into Flygon, Stealth Rock",
+                            "Steps": [
+                                        {
+                                            "Description": "if opponent uses Earthquake, Send out Excadrill 2x Swords Dance + X.Speed"
+                                        },
+                                        {
+                                            "Description": "if opponent uses Fire Blast, switch to Chandelure. Calm Mind as it switches into Dragonite. Switch to Poliwrath Belly Drum + X.Speed"
+                                        },
+                                        {
+                                            "Description": "if opponent switches into Draonite, Send out Chandelure 3x Calm Mind + X.Speed"
+                                        }
+                                    ]
                         },
                         {
                             "Description": "if opponent switches out into Hydreigon, use Stealth Rock then switch to Poliwrath Belly Drum + X.Speed"
