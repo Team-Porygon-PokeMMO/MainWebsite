@@ -81,7 +81,7 @@ export default {
     <div class="m-4 main">
         <div class="p-2">
             <h2 class="text-center">Elite Four</h2>
-            <h3 class="text-center">This guide is based around the recommended team (Seen under Tips). Straying from this team could possibly lead to issues.</h3>
+            <h3 class="text-center">This guide is based around the recommended team (Seen under Tips).</h3>
         </div>
         <div class="menu p-4">
             <p class="menu-label cursor-pointer text-lg" @click="toggleTips()">
