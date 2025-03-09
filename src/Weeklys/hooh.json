@@ -3,18 +3,30 @@
     "IsVisible": false,
     "Image": "/images/weeklys/hooh.png",
     "ImagePosition": "25% 35%",
-    "Steps": [
-      {
-        "Description": "Turn 1:",
-        "IsVisible": false,
-        "Steps": [
-          {
-            "Description": "Chand: Safeguard Rotom: Nasty Plot Luna: Protect",
+    "GymTrainers": [
+        {
+            "Name": "Lorelei",
+            "Image": "/images/lorelei.png",
+            "ImagePosition": "25% 30%",
             "IsVisible": false,
-            "Steps": []  // An empty array, as there are no further steps
-          }
-        ]
-      }
+            "Leads": [
+                {
+                    "Name": "Articuno",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Stealth Rock as it switches into a Scarfed Claydol, then switch to Chandelure 3x Calm Mind + X.Speed",
+                            "Steps": [
+                        {
+                            "Description": "If Claydol switches to out into Lapras, Swap to Blissey (Baiting Lucario). Trick, then switch to Chandelure 3x Calm Mind + X.Speed"
+                        }
+                    ]
+                            
+                        }
+                    ]
+                }
+    ]
+}
     ]
   }
   
