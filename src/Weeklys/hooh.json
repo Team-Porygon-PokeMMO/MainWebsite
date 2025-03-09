@@ -1,0 +1,20 @@
+{
+    "Name": "Ho-Oh",
+    "IsVisible": false,
+    "Image": "/images/weeklys/hooh.png",
+    "ImagePosition": "25% 35%",
+    "Steps": [
+      {
+        "Description": "Turn 1:",
+        "IsVisible": false,
+        "Steps": [
+          {
+            "Description": "Chand: Safeguard Rotom: Nasty Plot Luna: Protect",
+            "IsVisible": false,
+            "Steps": []  // An empty array, as there are no further steps
+          }
+        ]
+      }
+    ]
+  }
+  
