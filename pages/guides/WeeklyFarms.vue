@@ -98,26 +98,36 @@ export default {
                 Image: "/images/weeklys/tri_monthly.png", // Tri-Monthly Image
                 ImagePosition: "center"
             },
-            showHoOh: false, // Controls expansion to show Ho-Oh
-            showLugia: false, // Controls expansion to show Lugia
+            showHoOh: false, // Controls expansion for Ho-Oh
+            showLugia: false, // Controls expansion for Lugia
             showHoOhSteps: false, // Controls visibility of Ho-Oh steps
             showLugiaSteps: false // Controls visibility of Lugia steps
         };
     },
     methods: {
         toggleHoOh() {
-            this.showHoOh = !this.showHoOh; // Toggle expansion for Ho-Oh
+            // Close Tri-Monthly menu if it's open
+            this.showLugia = false;
+            this.showLugiaSteps = false;
+            
+            // Toggle Ho-Oh visibility
+            this.showHoOh = !this.showHoOh;
             if (!this.showHoOh) this.showHoOhSteps = false; // Close steps if collapsing
         },
         toggleLugia() {
-            this.showLugia = !this.showLugia; // Toggle expansion for Lugia
+            // Close Weekly Farms menu if it's open
+            this.showHoOh = false;
+            this.showHoOhSteps = false;
+            
+            // Toggle Lugia visibility
+            this.showLugia = !this.showLugia;
             if (!this.showLugia) this.showLugiaSteps = false; // Close steps if collapsing
         },
         toggleHoOhSteps() {
-            this.showHoOhSteps = !this.showHoOhSteps; // Toggle steps visibility
+            this.showHoOhSteps = !this.showHoOhSteps; // Toggle steps visibility for Ho-Oh
         },
         toggleLugiaSteps() {
-            this.showLugiaSteps = !this.showLugiaSteps; // Toggle steps visibility
+            this.showLugiaSteps = !this.showLugiaSteps; // Toggle steps visibility for Lugia
         },
         getImageStyling(item: any) {
             return {
