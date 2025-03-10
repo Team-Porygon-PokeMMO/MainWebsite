@@ -1,19 +1,29 @@
 [
     {
-      "Name": "Ho-Oh",
-      "IsVisible": false,
-      "Image": "/images/weeklys/hooh.png",
-      "ImagePosition": "25% 35%",
+      "Name": "Weekly Re-Runs",
+      "Image": "weekly.jpg",
+      "IsVisible": true,
       "Leads": [
         {
-          "Name": "Lorelei",
-          "IsVisible": false,
-          "Steps": [
+          "Name": "Ho-Oh",
+          "Image": "/images/weeklys/hooh.png",
+          "IsVisible": true,
+          "Missions": [
             {
-              "Description": "Step 1",
-              "Classes": ["class1"],
-              "Steps": [],
-              "IsVisible": false
+              "Name": "Mission 1",
+              "Image": "mission1.jpg",
+              "Steps": [
+                { "Description": "Step 1: Do this" },
+                { "Description": "Step 2: Do that" }
+              ]
+            },
+            {
+              "Name": "Mission 2",
+              "Image": "mission2.jpg",
+              "Steps": [
+                { "Description": "Step 1: Go here" },
+                { "Description": "Step 2: Complete task" }
+              ]
             }
           ]
         }

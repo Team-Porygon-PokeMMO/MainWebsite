@@ -22,7 +22,7 @@ export class Step {
 export default {
   data() {
     return {
-      Battle: hooh as Battle[], // Ensure that hooh is typed as Battle[]
+      Battles: hooh as Battle[], // Ensure that hooh is typed as Battle[]
       tips: eliteFourTips as Tip[],
       tipsVisible: false,
     };
@@ -41,8 +41,7 @@ export default {
 <template>
   <div class="m-4 main">
     <div class="p-2">
-      <h2 class="text-center">Dick and balls</h2>
-      <h3 class="text-center">A love story</h3>
+      <h2 class="text-center">Weekly Leads</h2>
     </div>
     <div class="menu p-4">
       <p class="menu-label cursor-pointer text-lg" @click="toggleTips()">
@@ -52,7 +51,7 @@ export default {
         <Tips :items="tips" />
       </ul>
       <!-- Pass Battle data to the Weeklys component -->
-      <Weeklys :items="Battle" class="menu-list" />
+      <Weeklys :items="Battles" class="menu-list" />
     </div>
     <EliteFourCredits />
   </div>
