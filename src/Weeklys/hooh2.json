@@ -98,7 +98,86 @@
                 }
                 
             ]
-        }    
+        },
+        {
+            "Name": "Red",
+            "IsVisible": false,
+            "Image": "/images/weeklys/hooh.png",
+            "ImagePosition": "25% 35%",
+            "Leads": [
+                {
+                    "Name": "Gen 1",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Turn 1:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Safegaurd Rotom: Nasty Plot Luna: Protect"
+                                                }
+                                    ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gen 2",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Turn 1:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Safegaurd Rotom: Nasty Plot Luna: Protect"
+                                                }
+                                    ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gen 3",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Turn 1:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Safegaurd Rotom: Nasty Plot Luna: Protect"
+                                                }
+                                    ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gen 4",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Turn 1:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Safegaurd Rotom: Nasty Plot Luna: Protect"
+                                                }
+                                    ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Gen 5",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Turn 1:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Safegaurd Rotom: Nasty Plot Luna: Protect"
+                                                }
+                                    ]
+                        }
+                    ]
+                }
+                
+            ]
+        }      
         
     ]
 }

@@ -9,6 +9,8 @@ import CommonResources from '@/assets/images/NavBar/120x40_ResourcesCornersWithA
 import ContactUs from '@/assets/images/NavBar/120x40_Contact_UsCorners.png';
 import Awards from '@/assets/images/NavBar/NavBarIcons/120x40_AwardsCorners.png';
 
+import { RiFileExcel2Line } from "oh-vue-icons/icons";
+
 
 import Icon_Clock from '@/assets/images/NavBar/NavBarIcons/Icon_Clock.png';
 import Icon_Egg from '@/assets/images/NavBar/NavBarIcons/Icon_Egg.png';
@@ -30,13 +32,22 @@ const router = useRouter();
 const route = useRoute();
 
 interface Link {
+    action: any;
     label: string,
     to: string,
     icon?: string,
     image?: string;
     sublinks?: Link[]
 }
-
+function downloadExcel() {
+    const excelUrl = '/files/AltTracker.xlsx'; 
+    const link = document.createElement('a');
+    link.href = excelUrl;
+    link.download = 'AltTracker.xlsx'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
 const leftLinks = [
     { to: '/', image: PoryHome },
     { to: '/guides/EliteFour', image: e4Image },
@@ -48,6 +59,7 @@ const leftLinks = [
             { label: 'Hatching', to: '/utilities/HatchCycleTimer', image: Icon_Egg },
             { label: 'Rock Smash Tracker', to: '/utilities/RockSmash', image: Icon_Rock },
            //{ label: 'Egg Cost Analysis', to: '/utilities/EggCostAnalysis', image: Icon_Money } 
+           { label: 'Alt Tracker (Download)', image: Icon_Pory_Guides, action: downloadExcel } //need art
         ]
     }
 ] as Link[];
@@ -123,8 +135,8 @@ function handleClick(sublink: Link) {
                                 <PopoverPanel class="absolute z-10 w-screen max-w-md overflow-hidden bg-gray-800 shadow-lg rounded-panel top-full">
                                     <div class="p-2">
                                         <button v-for="childItem in link.sublinks" :key="childItem.label"
-                                            @click="handleClick(childItem)"
-                                            class="relative flex p-1 m-1 leading-6 transition duration-150 rounded-panel group gap-x-4 hover:bg-gray-900 button-size">
+    @click="childItem.action ? childItem.action() : handleClick(childItem)"
+    class="relative flex p-1 m-1 leading-6 transition duration-150 rounded-panel group gap-x-4 hover:bg-gray-900 button-size">
                                             <div class="items-center justify-center flex-none rounded-button">
                                                 <img v-if="childItem.image" :src="childItem.image" alt="Sublink Image" class="button-image" />
                                             </div>
