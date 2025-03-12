@@ -36,7 +36,7 @@ export default {
     data() {
         return {
             regions: [hooh] as Region[],
-            tips: accreditation as Tip[],
+            tips: accreditation as unknown as Tip[],
             tipsVisible: false
         };
     },
