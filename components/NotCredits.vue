@@ -60,20 +60,12 @@ baseCredits["SlyferTP"] = {
 }
 const fullCredits = [
     {
-        Name: "Pokeking English Translations & Contributions",
-        Credits: ["denzi", "juggerton", "dronad", "jaddee", "jeriel", "manitos"]
-    },
-    {
-        Name: "Solve Testers",
-        Credits: ["jaddee", "shrimplad", "panotxa", "dareeka", "manitos", "jerizzle", "tcb", "Team Porygon"]
-    },
-    {
         Name: "Page Design",
-        Credits: ["tcb"]
+        Credits: ["jaddee"]
     },
     {
         Name: "Code Contributors",
-        Credits: ["jaddee","panotxa","tcb", "c4v"]
+        Credits: ["jaddee"]
     },
     {
         Name: "Art",

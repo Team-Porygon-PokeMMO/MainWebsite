@@ -40,7 +40,7 @@ interface Link {
 const leftLinks = [
     { to: '/', image: PoryHome },
     { to: '/guides/EliteFour', image: e4Image },
-    { to: '/guides/WeeklyFarms', image: e4Image },
+    { to: '/guides/Reruns', image: e4Image },
     {
         image: PoryUtility,
         sublinks: [

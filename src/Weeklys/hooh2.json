@@ -1,0 +1,104 @@
+{
+    "Name": "Weekly",
+    "IsVisible": false,
+    "Image": "",
+    "ImagePosition": "25% 35%",
+    "GymTrainers": [
+        {
+            "Name": "Ho-Oh",
+            "IsVisible": false,
+            "Image": "/images/weeklys/hooh.png",
+            "ImagePosition": "25% 35%",
+            "Leads": [
+                {
+                    "Name": "Trick Room Team",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Turn 1:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Safegaurd Rotom: Nasty Plot Luna: Protect"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 2:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Protect Rotom: Nasty Plot Luna: Trick room"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 3:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Swap with Luna Rotom: Tbolt AD (Hidden Power if Raikou) Luna: Psych Up (Target Rotom)"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 4:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Swap with Luna Rotom: TBolt AD (If present) (Hidden Power if Raikou) otherwise hooh Luna: Power Gem Hooh"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 5:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Swap with Luna Rotom: TBolt AD (If present) (Hidden Power if Raikou) otherwise hooh Luna: Power Gem Hooh"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 6:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Swap with Luna Rotom: TBolt AD (If present) (Hidden Power if Raikou) otherwise hooh Luna: Power Gem Hooh"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 7:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Swap with Luna Rotom: Light Screen Luna: Trick Room"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 8:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Psych Up (Target Rotom) Rotom: Nasty Plot Luna: Power Gem"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "(Rebirth) Turn 9:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Shadowball Rotom: TBolt  Luna: Power Gem"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 10:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Chand: Shadowball Rotom: TBolt Luna: Dies"
+                                                }
+                                    ]
+                        }
+                    ]
+                }
+                
+            ]
+        }    
+        
+    ]
+}
