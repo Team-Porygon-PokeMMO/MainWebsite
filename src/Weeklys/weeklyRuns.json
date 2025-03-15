@@ -174,7 +174,39 @@
                             "Description": "Turn 1:",
                             "Steps": [
                                                 {
-                                                    "Description": "Chand: Safegaurd Rotom: Nasty Plot Luna: Protect"
+                                                    "Description": "Lead Metagross and Trick Scarf on"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 2:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Swap in Cloyster"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 3:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Substitute"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 4 - 6:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Shell Smash (Until +6)"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 7:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Icicle Spear Sweep (Use backup that has Focus Sash + Earthquake for Pikachu)"
                                                 }
                                     ]
                         }
