@@ -19,5 +19,29 @@
                 "Name": "Written Guide"
             }
         ]
+    },
+    {
+        "Description": "Red Gen 2, 3, and 4 Details and Accreditation",
+        "Tips": [
+            {
+                "Description": "Huge thanks to caav for providing this content to the community. Caav's details are below."
+            },
+            {
+                "Url": "https://www.youtube.com/watch?v=M9mic0JvpwI&ab_channel=caav",
+                "Name": "YouTube Video"
+            }
+        ]
+    },
+    {
+        "Description": "Red Gen 5 Details and Accreditation",
+        "Tips": [
+            {
+                "Description": "Huge thanks to caav for providing this content to the community. Caav's details are below."
+            },
+            {
+                "Url": "https://www.bilibili.com/video/BV1Cy4y1w7Vt/?vd_source=a4d63fef7dfbfe8174c7acb193e5c03d",
+                "Name": "Video (CN)"
+            }
+        ]
     }
 ]

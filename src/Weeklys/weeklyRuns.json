@@ -220,7 +220,39 @@
                             "Description": "Turn 1:",
                             "Steps": [
                                                 {
-                                                    "Description": "Chand: Safegaurd Rotom: Nasty Plot Luna: Protect"
+                                                    "Description": "Lead Cloyster to get swapped into Metagross"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 2:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Trick Scarf on, then let Metagross faint. If you have a Rock Climb mon, sac it"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 3:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Send out Cloyster and Substitute"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 4 - 6:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Shell Smash (Until +6)"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 7:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Icicle Spear Sweep"
                                                 }
                                     ]
                         }
@@ -234,7 +266,25 @@
                             "Description": "Turn 1:",
                             "Steps": [
                                                 {
-                                                    "Description": "Chand: Safegaurd Rotom: Nasty Plot Luna: Protect"
+                                                    "Description": "Lead Blissey and Stealth Rock"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 2:",
+                            "Steps": [
+                                                {
+                                                    "Description": "If Exca lead: let Blissey faint. Then sent out Jellicent and Trick, let Jellicent faint. Send out Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
+                                                    
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 2:",
+                            "Steps": [
+                                                {
+                                                    "Description": "If Other leads: Switch to Jellicent, then Trick. Swap to Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
+                                                    
                                                 }
                                     ]
                         }

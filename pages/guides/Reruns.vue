@@ -82,7 +82,7 @@ export default {
         <div class="menu p-4">
             <p class="menu-label cursor-pointer text-lg" @click="toggleTips()">
                 {{ tipsVisible ?
-                    "▼" : "▶" }} Accreditation
+                    "▼" : "▶" }} Accreditation and Additional Information
             </p>
             <ul class="menu-list text-label" v-show="tipsVisible">
                 <NotTips :items="tips" />
