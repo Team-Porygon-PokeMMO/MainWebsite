@@ -1,5 +1,5 @@
 <script lang="ts">
-import hooh from '~/src/Weeklys/hooh2.json'
+import hooh from '~/src/Weeklys/weeklyRuns.json'
 import accreditation from '~/src/Weeklys/weeklyAccreditation.json'
 export class Tip {
     Description: string = "";

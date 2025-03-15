@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import '~/assets/main.css'
+
 const signatureLink = 'https://i.ibb.co/fq874Kt/Pory-Team-Signature.gif'
+
+const twitchEmbedUrl1 = "https://player.twitch.tv/?channel=ampyros&parent=team-porygon-pokemmo.pages.dev";
+const twitchEmbedUrl2 = "https://player.twitch.tv/?channel=young_cabbage&parent=team-porygon-pokemmo.pages.dev";
 
 const content = [
   {
@@ -9,11 +13,11 @@ const content = [
   },
   {
     title: 'Foundation',
-    description: 'Recognizing the need for a relaxed yet veteran focused team, Team Porygon [Pory] was founded on 07-30-2023 and is led by its current founder Jaddee. Pory aims to provide a relaxed and friendly while highly informative environment.'
+    description: 'Recognizing the need for a relaxed yet veteran-focused team, Team Porygon [Pory] was founded on 07-30-2023 and is led by its current founder Jaddee. Pory aims to provide a relaxed and friendly while highly informative environment.'
   },
   {
     title: 'Main activities',
-    description: 'Team Pory has a focus on maintaining a variety of events for the team, including but not limited to - team shiny bounties, catch events and various pvp events! In addition, Team Pory has members actively developing or contributing to research or guides aiming to provide players with additional knowledge to promote growth in all aspects of the game. Some of these efforts currently include advanced gym run guides, alt speed runs and fossil farming efficiency statistics.'
+    description: 'Team Pory has a focus on maintaining a variety of events for the team, including but not limited to - team shiny bounties, catch events and various PvP events! In addition, Team Pory has members actively developing or contributing to research or guides aiming to provide players with additional knowledge to promote growth in all aspects of the game. Some of these efforts currently include advanced gym run guides, alt speed runs, and fossil farming efficiency statistics.'
   },
   {
     title: 'Requirements to join',
@@ -24,7 +28,7 @@ const content = [
   },
   {
     title: 'How to apply',
-    description: 'To apply to our team, please vist the post below and fill out the required information. Or, reach out directly to @glortwort or @vexious on discord.',
+    description: 'To apply to our team, please visit the post below and fill out the required information. Or, reach out directly to @glortwort or @vexious on discord.',
     links: [
       {
         "Url": "https://forums.pokemmo.com/index.php?/topic/159984-openpory-team-porygon-is-recruiting/",
@@ -37,30 +41,47 @@ const content = [
 
 <style scoped>
 img {
-  display: inline
+  display: inline;
 }
 
 a {
   color: rgb(51, 40, 211);
   cursor: pointer;
 }
+
+.video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 </style>
 
 <template>
   <div class="p-1 text-center">
     <h1>Team Porygon (PokeMMO)</h1>
-    <div class="grid grid-cols-1 text-justify">
-      <div v-for="item in content" class="p-2">
-        <h2>{{ item.title }}</h2>
-        <h3>{{ item.description }}</h3>
-        <div v-if="item.links">
-          <a v-for="link in item.links" :href="link.Url" target="_blank">{{ link.Name }}</a>
-        </div>
-        <ul v-if="item.rules" class="pl-8" style="list-style-type:circle;">
-          <li v-for="rule in item.rules">{{ rule }}</li>
-        </ul>
-      </div>
+    <div class="video-container">
+      <iframe
+        class="videoplayer"
+        :src="twitchEmbedUrl1"
+        height="400"
+        width="600"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
     </div>
+    
+    <div v-for="item in content" class="p-2">
+      <h2>{{ item.title }}</h2>
+      <h3>{{ item.description }}</h3>
+      <div v-if="item.links">
+        <a v-for="link in item.links" :href="link.Url" target="_blank">{{ link.Name }}</a>
+      </div>
+      <ul v-if="item.rules" class="pl-8" style="list-style-type:circle;">
+        <li v-for="rule in item.rules">{{ rule }}</li>
+      </ul>
+    </div>
+
     <img :src="signatureLink" alt="Team Porygon Signature" class="mt-4" />
   </div>
 </template>

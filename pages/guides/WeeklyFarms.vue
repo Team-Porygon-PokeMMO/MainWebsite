@@ -1,5 +1,5 @@
 <script lang="ts">
-import hooh from '~/src/Weeklys/hooh.json';
+import weeklyReruns from '~/src/Weeklys/weeklyRuns.json';
 import eliteFourTips from '~/src/EliteFour/tips.json';
 import type { Battle } from '~/components/Weeklys.vue'; // Import the correct type for Battle
 
@@ -22,7 +22,7 @@ export class Step {
 export default {
   data() {
     return {
-      Battles: hooh as Battle[], // Ensure that hooh is typed as Battle[]
+      Battles: weeklyReruns as Battle[], // Ensure that hooh is typed as Battle[]
       tips: eliteFourTips as Tip[],
       tipsVisible: false,
     };

@@ -108,6 +108,7 @@
                 {
                     "Name": "Gen 1",
                     "IsVisible": false,
+                    
                     "Steps": [
                         {
                             "Description": "Turn 1:",
@@ -127,7 +128,39 @@
                             "Description": "Turn 1:",
                             "Steps": [
                                                 {
-                                                    "Description": "Chand: Safegaurd Rotom: Nasty Plot Luna: Protect"
+                                                    "Description": "Lead Metagross Trick Scarf on locking Earthquake"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 2:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Swap in Cloyster"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 3 - 5:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Shell Smash (Until +6)"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 6:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Substitute"
+                                                }
+                                    ]
+                        },
+                        {
+                            "Description": "Turn 7:",
+                            "Steps": [
+                                                {
+                                                    "Description": "Icicle Spear Sweep"
                                                 }
                                     ]
                         }
