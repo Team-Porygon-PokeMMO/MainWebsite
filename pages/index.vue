@@ -11,7 +11,7 @@ const signatureLink = 'https://i.ibb.co/fq874Kt/Pory-Team-Signature.gif'
 
 const content = [
   {
-    title: "Welcome to Team Porygon",
+    title: "Team Pory Shiny War:",
     description: "A competitive and social team in PokeMMO!",
     links: [
       { Name: "Official Forum", Url: "https://pokemmo.eu/" },
@@ -31,6 +31,8 @@ const content = [
     ]
   }
 ]
+
+
 
 // Carousel data
 const currentIndex = ref(0)
@@ -88,8 +90,6 @@ onBeforeUnmount(stopAutoScroll)
         >
           <div v-for="(image, index) in images" :key="index" class="flex-shrink-0 w-full">
             <img :src="image.src" :alt="image.alt" class="w-full h-96 object-contain" />
-
-
           </div>
         </div>
 
@@ -114,27 +114,17 @@ onBeforeUnmount(stopAutoScroll)
           ></span>
         </div>
       </div>
-    </div>
+  </div>
 
     <!-- Team Content -->
     <div v-for="(item, index) in content" :key="index" class="p-2">
-      <h2 class="text-xl font-bold">{{ item.title }}</h2>
-      <h3 class="text-lg text-gray-700">{{ item.description }}</h3>
+  <h2 class="text-xl font-bold">{{ item.title }}</h2>
 
-      <div v-if="item.links" class="mt-2">
-        <a v-for="(link, linkIndex) in item.links" 
-           :key="linkIndex" 
-           :href="link.Url" 
-           target="_blank" 
-           class="block text-blue-600 hover:underline">
-          {{ link.Name }}
-        </a>
-      </div>
-
-      <ul v-if="item.rules" class="pl-8 mt-2 list-disc text-left inline-block">
-        <li v-for="(rule, ruleIndex) in item.rules" :key="ruleIndex">{{ rule }}</li>
-      </ul>
-    </div>
+  <!-- Show countdown timer only after "Welcome to Team Porygon" (index 0) -->
+  <client-only v-if="index === 0">
+    <vue3-flip-countdown deadline="2025-04-17 22:00:00"/>
+  </client-only>
+</div>
 
     <img :src="signatureLink" alt="Team Porygon Signature" class="mt-4" />
   </div>
