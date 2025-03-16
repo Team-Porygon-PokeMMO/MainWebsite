@@ -49,7 +49,6 @@ const leftLinks = [
            //{ label: 'Egg Cost Analysis', to: '/utilities/EggCostAnalysis', image: Icon_Money } 
             { label: 'Hatching (Deprecated)', to: '/utilities/HatchCycleTimer', image: Icon_Egg },
            //{ label: 'Alt Tracker (Download)', image: Icon_Pory_Guides, action: downloadExcel } //need art
-
         ]
     }
 ] as Link[];
