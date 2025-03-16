@@ -124,6 +124,7 @@ onBeforeUnmount(stopAutoScroll)
   <client-only v-if="index === 0">
     <vue3-flip-countdown deadline="2025-04-17 22:00:00"/>
   </client-only>
+  
 </div>
 
     <img :src="signatureLink" alt="Team Porygon Signature" class="mt-4" />
