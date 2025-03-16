@@ -2,10 +2,10 @@
 import '~/assets/main.css'
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-// Import local image properly
-import GamblinImage from '/images/TeamPics/Gamblin.png' 
-import HalloweenImage from '/images/TeamPics/Halloween24_4.png' 
-import TeamPicShinyWar24 from '/images/TeamPics/teampicFinal.png' 
+// Import local images properly
+import GamblinImage from '/images/TeamPics/Gamblin.png'
+import HalloweenImage from '/images/TeamPics/Halloween24_4.png'
+import TeamPicShinyWar24 from '/images/TeamPics/teampicFinal.png'
 
 const signatureLink = 'https://i.ibb.co/fq874Kt/Pory-Team-Signature.gif'
 
@@ -15,40 +15,16 @@ const content = [
     description: "A competitive and social team in PokeMMO!",
     links: [
       { Name: "Official Forum", Url: "https://pokemmo.eu/" },
-      { Name: "Discord", Url: "https://discord.gg/example" }
     ],
-    rules: [
-      "Be respectful to all members.",
-      "Follow PokeMMO's rules and guidelines.",
-      "No spamming or advertising without permission."
-    ]
   },
-  {
-    title: "Team Events",
-    description: "Join us for exciting tournaments and giveaways!",
-    links: [
-      { Name: "Upcoming Events", Url: "https://pokemmo.eu/events" }
-    ]
-  }
 ]
-
-
 
 // Carousel data
 const currentIndex = ref(0)
 const images = [
-  {
-    src: GamblinImage, // Use imported image
-    alt: "Image 1"
-  },
-  {
-    src: HalloweenImage,
-    alt: "Image 2"
-  },
-  {
-    src: TeamPicShinyWar24,
-    alt: "Image 3"
-  }
+  { src: GamblinImage, alt: "Image 1" },
+  { src: HalloweenImage, alt: "Image 2" },
+  { src: TeamPicShinyWar24, alt: "Image 3" }
 ]
 
 let interval: ReturnType<typeof setInterval> | null = null
@@ -75,6 +51,9 @@ const stopAutoScroll = () => {
 
 onMounted(startAutoScroll)
 onBeforeUnmount(stopAutoScroll)
+
+// Static prize pool amount
+const prizePool = ref(82095713) // Set a fixed number for the prize pool
 </script>
 
 <template>
@@ -114,18 +93,26 @@ onBeforeUnmount(stopAutoScroll)
           ></span>
         </div>
       </div>
-  </div>
+    </div>
 
     <!-- Team Content -->
     <div v-for="(item, index) in content" :key="index" class="p-2">
-  <h2 class="text-xl font-bold">{{ item.title }}</h2>
+      <h2 class="text-xl font-bold">{{ item.title }}</h2>
 
-  <!-- Show countdown timer only after "Welcome to Team Porygon" (index 0) -->
-  <client-only v-if="index === 0">
-    <vue3-flip-countdown deadline="2025-04-17 22:00:00"/>
-  </client-only>
-  
-</div>
+      <!-- Show countdown timer & prize pool only after "Team Pory Shiny War" (index 0) -->
+      <div v-if="index === 0">
+        <client-only>
+          <vue3-flip-countdown deadline="2025-04-17 22:00:00" />
+        </client-only>
+
+        <!-- Prize Pool Display -->
+        <div class="mt-4 text-green-600 text-3xl font-mono">
+        <h3 class="text-xl text-white">Current Prize Pool:</h3>
+        ${{ prizePool.toLocaleString() }}
+        </div>
+        </div>
+
+    </div>
 
     <img :src="signatureLink" alt="Team Porygon Signature" class="mt-4" />
   </div>
