@@ -2,7 +2,15 @@ import type { Config } from 'tailwindcss'
 const colors = require('tailwindcss/colors')
 const srcDir = 'src'
 
-
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+    content: ["./src/**/*.{html,js}"],
+    theme: {
+      extend: {},
+    },
+    plugins: [],
+  }
+  
 export default <Partial<Config>>{
     darkMode: ['selector', '[data-mode="dark"]'],
     content: [
