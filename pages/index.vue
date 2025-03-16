@@ -1,64 +1,11 @@
-<script setup lang="ts">
-import '~/assets/main.css'
-import { ref, onMounted, onBeforeUnmount } from 'vue'
-
-// Import local images properly
-import GamblinImage from '/images/TeamPics/Gamblin.png'
-import HalloweenImage from '/images/TeamPics/Halloween24_4.png'
-import TeamPicShinyWar24 from '/images/TeamPics/teampicFinal.png'
-
-const signatureLink = 'https://i.ibb.co/fq874Kt/Pory-Team-Signature.gif'
-
-const content = [
-  {
-    title: "Team Pory Shiny War:",
-    description: "A competitive and social team in PokeMMO!",
-    links: [
-      { Name: "Official Forum", Url: "https://pokemmo.eu/" },
-    ],
-  },
-]
-
-// Carousel data
-const currentIndex = ref(0)
-const images = [
-  { src: GamblinImage, alt: "Image 1" },
-  { src: HalloweenImage, alt: "Image 2" },
-  { src: TeamPicShinyWar24, alt: "Image 3" }
-]
-
-let interval: ReturnType<typeof setInterval> | null = null
-
-const nextSlide = () => {
-  currentIndex.value = (currentIndex.value + 1) % images.length
-}
-
-const prevSlide = () => {
-  currentIndex.value = currentIndex.value === 0 ? images.length - 1 : currentIndex.value - 1
-}
-
-const goToSlide = (index: number) => {
-  currentIndex.value = index
-}
-
-const startAutoScroll = () => {
-  interval = setInterval(nextSlide, 3000)
-}
-
-const stopAutoScroll = () => {
-  if (interval) clearInterval(interval)
-}
-
-onMounted(startAutoScroll)
-onBeforeUnmount(stopAutoScroll)
-
-// Static prize pool amount
-const prizePool = ref(82095713) // Set a fixed number for the prize pool
-</script>
-
 <template>
   <div class="p-1 text-center">
-    <h1>Team Porygon (PokeMMO)</h1>
+    <h1>
+      <span v-for="(char, index) in splitTitle('Team Porygon')" :key="index"
+        :class="index % 2 === 0 ? 'text-blue-500' : 'text-pink-500'">
+        {{ char }}
+      </span>
+    </h1>
 
     <!-- Carousel Section -->
     <div class="flex justify-center items-center py-6">
@@ -99,7 +46,7 @@ const prizePool = ref(82095713) // Set a fixed number for the prize pool
     <div v-for="(item, index) in content" :key="index" class="p-2">
       <h2 class="text-xl font-bold">{{ item.title }}</h2>
 
-      <!-- Show countdown timer & prize pool only after "Team Pory Shiny War" (index 0) -->
+      <!-- Show countdown timer & prize pool only for "Team Pory Shiny War" -->
       <div v-if="index === 0">
         <client-only>
           <vue3-flip-countdown deadline="2025-04-17 22:00:00" />
@@ -107,16 +54,82 @@ const prizePool = ref(82095713) // Set a fixed number for the prize pool
 
         <!-- Prize Pool Display -->
         <div class="mt-4 text-green-600 text-3xl font-mono">
-        <h3 class="text-xl text-white">Current Prize Pool:</h3>
-        ${{ prizePool.toLocaleString() }}
+          <h3 class="text-xl text-white">Current Prize Pool:</h3>
+          ${{ prizePool.toLocaleString() }}
         </div>
-        </div>
-
+      </div>
     </div>
 
     <img :src="signatureLink" alt="Team Porygon Signature" class="mt-4" />
   </div>
 </template>
+
+<script setup lang="ts">
+import '~/assets/main.css'
+import { ref, onMounted, onBeforeUnmount } from 'vue'
+
+// Import local images properly
+import GamblinImage from '/images/TeamPics/Gamblin.png'
+import HalloweenImage from '/images/TeamPics/Halloween24_4.png'
+import TeamPicShinyWar24 from '/images/TeamPics/teampicFinal.png'
+
+const signatureLink = 'https://i.ibb.co/fq874Kt/Pory-Team-Signature.gif'
+
+const content = [
+  {
+    title: "Team Pory Shiny War:",
+    description: "A competitive and social team in PokeMMO!",
+    links: [
+      { Name: "Official Forum", Url: "https://pokemmo.eu/" },
+      { Name: "Discord", Url: "https://discord.gg/example" }
+    ],
+    rules: [
+      "Be respectful to all members.",
+      "Follow PokeMMO's rules and guidelines.",
+      "No spamming or advertising without permission."
+    ]
+  }
+]
+
+// Function to split the title into characters
+const splitTitle = (title: string) => title.split('')
+
+// Carousel data
+const currentIndex = ref(0)
+const images = [
+  { src: GamblinImage, alt: "Image 1" },
+  { src: HalloweenImage, alt: "Image 2" },
+  { src: TeamPicShinyWar24, alt: "Image 3" }
+]
+
+let interval: ReturnType<typeof setInterval> | null = null
+
+const nextSlide = () => {
+  currentIndex.value = (currentIndex.value + 1) % images.length
+}
+
+const prevSlide = () => {
+  currentIndex.value = currentIndex.value === 0 ? images.length - 1 : currentIndex.value - 1
+}
+
+const goToSlide = (index: number) => {
+  currentIndex.value = index
+}
+
+const startAutoScroll = () => {
+  interval = setInterval(nextSlide, 3000)
+}
+
+const stopAutoScroll = () => {
+  if (interval) clearInterval(interval)
+}
+
+onMounted(startAutoScroll)
+onBeforeUnmount(stopAutoScroll)
+
+// Static prize pool amount
+const prizePool = ref(82095713) // Set a fixed number for the prize pool
+</script>
 
 <style scoped>
 img {
