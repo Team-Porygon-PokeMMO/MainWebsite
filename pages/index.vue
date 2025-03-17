@@ -52,24 +52,12 @@
           <vue3-flip-countdown deadline="2025-04-17 22:00:00" />
         </client-only>
 
-        <!-- Prize Pool Display 
+        <!-- Prize Pool Display -->
         <div class="mt-4 text-green-600 text-3xl font-mono">
           <h3 class="text-xl text-white">Current Prize Pool:</h3>
           ${{ prizePool.toLocaleString() }}
-        </div> -->
+        </div> 
 
-        <!-- YouTube Video Link -->
-<div class="mt-4">
-  <h3 class="text-xl text-white">Shiny War Rules and Prizes:</h3>
-  <a 
-    href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" 
-    target="_blank" 
-    rel="noopener noreferrer" 
-    class="text-blue-400 hover:underline"
-  >
-  Details here!
-  </a>
-</div>
 
       </div>
     </div>
