@@ -130,7 +130,7 @@ onMounted(startAutoScroll)
 onBeforeUnmount(stopAutoScroll)
 
 // Static prize pool amount
-const prizePool = ref(82095713) // Set a fixed number for the prize pool
+const prizePool = ref(89095713) // Set a fixed number for the prize pool
 </script>
 
 <style scoped>
