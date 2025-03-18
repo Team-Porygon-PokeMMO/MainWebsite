@@ -87,6 +87,8 @@ export default {
             <ul class="menu-list text-label" v-show="tipsVisible">
                 <NotTips :items="tips" />
             </ul>
+
+            <!-- TODO: Implement a way to make this more dynamic component than it is to avoid having two files for the same purpose #TheClosedBox -->
             <NotRegions :items="regions" class="menu-list" />
         </div>
         <NotCredits />

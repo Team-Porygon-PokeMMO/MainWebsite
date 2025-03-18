@@ -59,7 +59,7 @@ export default {
 <template>
     <div class="text-center">
         <!-- Region Selector: List of Regions -->
-        <div class="grid grid-cols-5 lg:py-0.5 cursor-pointer">
+        <div class="grid grid-cols-1 lg:py-0.5 cursor-pointer">
             <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }"
                 class="py-1 sm:text-sm sm:py-2 border border-black m-0.25 md:text-base md:py-3 lg:py-5 hover:bg-cyan-700"
                 :style="getImageStyling(item)">
@@ -68,6 +68,6 @@ export default {
         </div>
 
         <!-- Trainers within the selected Region -->
-        <Trainers v-for="item in items" :items="item.GymTrainers" v-show="item.IsVisible" />
+        <NotTrainers v-for="item in items" :items="item.GymTrainers" v-show="item.IsVisible" />
     </div>
 </template>
