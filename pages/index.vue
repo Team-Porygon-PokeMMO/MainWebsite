@@ -1,34 +1,80 @@
 <template>
-  <div class="p-1 text-center">
-    <h1>
-      <span v-for="(char, index) in splitTitle('Team Porygon')" :key="index"
-        :class="index % 2 === 0 ? 'text-blue-500' : 'text-pink-500'">
-        {{ char }}
-      </span>
-    </h1>
+  <div class="flex lg:flex-row flex-col min-h-screen bg-surface-0 dark:bg-surface-900">
 
-    <!-- Carousel Section -->
-    <div class="flex justify-center items-center py-6">
-      <div class="relative w-full max-w-3xl overflow-hidden">
+    <!-- Left Side (About Us Section) -->
+    <div class="flex-1 p-1 flex flex-col items-center justify-start"> 
+      
+      <!-- About Us Title -->
+      <h1 class="text-center">
+        <span v-for="(char, index) in splitTitle('About Us')" :key="index"
+          :class="index % 2 === 0 ? 'text-blue-500' : 'text-pink-500'">
+          {{ char }}
+        </span>
+      </h1>
+
+      <!-- Accordion Items Below Title -->
+      <div class="w-full max-w-3xl mt-6">
+  <div class="space-y-2">
+    <AccordionItem
+      title="Who are we?"
+      :leftEmoji="leftImage"
+      :rightEmoji="rightImage"
+    >
+      Vue.js is a progressive JavaScript framework for building user interfaces.
+    </AccordionItem>
+  </div>
+</div>
+<div class="w-full max-w-3xl mt-6">
+  <div class="space-y-2">
+    <AccordionItem
+      title="How can I join?"
+      :leftEmoji="leftImage"
+      :rightEmoji="rightImage"
+    >
+      Vue.js is a progressive JavaScript framework for building user interfaces.
+    </AccordionItem>
+  </div>
+</div>
+<div class="w-full max-w-3xl mt-6">
+  <div class="space-y-2">
+    <AccordionItem
+      title="Why is glort a sussy baka?"
+      :leftEmoji="leftImage"
+      :rightEmoji="rightImage"
+    >
+      We dont really know. Hes just strange.
+    </AccordionItem>
+  </div>
+</div>
+
+    </div>
+
+    <!-- Right Side (Full-Screen Carousel) -->
+    <div class="flex-1 relative w-full lg:w-1/2 h-full">
+      <div class="relative w-full h-full overflow-hidden">
+
+        <!-- Carousel Wrapper -->
         <div
           :style="{ transform: 'translateX(' + -100 * currentIndex + '%' }"
-          class="flex transition-transform duration-500 ease-in-out"
+          class="flex transition-transform duration-500 ease-in-out h-full"
         >
-          <div v-for="(image, index) in images" :key="index" class="flex-shrink-0 w-full">
-            <img :src="image.src" :alt="image.alt" class="w-full h-96 object-contain" />
+          <div v-for="(image, index) in images" :key="index" class="flex-shrink-0 w-full h-full">
+            <img :src="image.src" :alt="image.alt" class="w-full h-full object-cover" />
           </div>
         </div>
 
         <!-- Carousel Controls -->
-        <button @click="prevSlide" class="absolute top-1/2 left-2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transform -translate-y-1/2">
+        <button @click="prevSlide" 
+          class="absolute top-1/2 left-4 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-70 transform -translate-y-1/2 z-10">
           &#10094;
         </button>
-        <button @click="nextSlide" class="absolute top-1/2 right-2 bg-black bg-opacity-50 text-white p-2 rounded-full hover:bg-opacity-70 transform -translate-y-1/2">
+        <button @click="nextSlide" 
+          class="absolute top-1/2 right-4 bg-black bg-opacity-50 text-white p-3 rounded-full hover:bg-opacity-70 transform -translate-y-1/2 z-10">
           &#10095;
         </button>
 
         <!-- Indicators -->
-        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+        <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2 z-10">
           <span
             v-for="(image, index) in images"
             :key="index"
@@ -42,35 +88,17 @@
       </div>
     </div>
 
-    <!-- Team Content -->
-    <div v-for="(item, index) in content" :key="index" class="p-2">
-      <h2 class="text-xl font-bold">{{ item.title }}</h2>
-
-      <!-- Show countdown timer & prize pool only for "Team Pory Shiny War" -->
-      <div v-if="index === 0">
-        <client-only>
-          <vue3-flip-countdown deadline="2025-04-17 22:00:00" />
-        </client-only>
-
-        <!-- Prize Pool Display -->
-        <div class="mt-4 text-green-600 text-3xl font-mono">
-          <h3 class="text-xl text-white">Current Prize Pool:</h3>
-          ${{ prizePool.toLocaleString() }}
-        </div> 
-
-
-      </div>
-    </div>
-
-    <img :src="signatureLink" alt="Team Porygon Signature" class="mt-4" />
   </div>
 </template>
 
 <script setup lang="ts">
+import leftImage from '@/assets/images/NavBar/NavBarIcons/porycrown.png';
+import rightImage from '@/assets/images/NavBar/NavBarIcons/porycrownFlipped.png';
 import '~/assets/main.css'
+import AccordionItem from '~/components/AccordionItem.vue';
 import { ref, onMounted, onBeforeUnmount } from 'vue'
 
-// Import local images properly
+// Import images
 import GamblinImage from '/images/TeamPics/Gamblin.png'
 import HalloweenImage from '/images/TeamPics/Halloween24_4.png'
 import TeamPicShinyWar24 from '/images/TeamPics/teampicFinal.png'
@@ -93,7 +121,7 @@ const content = [
   }
 ]
 
-// Function to split the title into characters
+// Title split function
 const splitTitle = (title: string) => title.split('')
 
 // Carousel data
@@ -129,8 +157,8 @@ const stopAutoScroll = () => {
 onMounted(startAutoScroll)
 onBeforeUnmount(stopAutoScroll)
 
-// Static prize pool amount
-const prizePool = ref(89095713) // Set a fixed number for the prize pool
+// Prize pool amount
+const prizePool = ref(97435719) 
 </script>
 
 <style scoped>

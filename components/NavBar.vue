@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue';
 import { useRouter, useRoute } from 'vue-router';
 import e4Image from '@/assets/images/NavBar/e4120x40corner.png';
@@ -30,6 +31,9 @@ import Icon_Vanity from '@/assets/images/NavBar/NavBarIcons/Icon_Vanity.png';
 
 const router = useRouter();
 const route = useRoute();
+
+// Title split function
+const splitTitle = (title: string) => title.split('')
 
 interface Link {
     action: any;
@@ -98,6 +102,15 @@ function handleClick(sublink: Link) {
         }
     }
 }
+
+const content = ref([
+    {
+        title: "Team Porygon Event",
+        description: "Join us for an exciting event with incredible rewards!"
+    }
+]);
+
+const prizePool = ref(97435719);  // Initial prize pool value
 </script>
 
 
@@ -207,13 +220,51 @@ function handleClick(sublink: Link) {
         <div class="flex-grow">
             <!-- GIF visible only on the home page -->
             <img
-                v-if="route.path === '/'"
-                src="/assets/PoryBanner.gif"
-                alt="Your GIF"
-                width="100%"
-                height="auto"
-                class="gif-class"
-            />
+    v-if="route.path === '/'"
+    src="/assets/PoryBanner.gif"
+    alt="Your GIF"
+    class="gif-class"
+/>
+<!-- Text Field -->
+<!-- Team Content -->
+<!-- Team Content -->
+<div v-if="route.path === '/'" v-for="(item, index) in content" :key="index" class="p-4">
+   
+    
+    <div class="flex justify-center mt-4">
+    <h1>
+        <span v-for="(char, index) in splitTitle('Team Porygon')" :key="index"
+          :class="index % 2 === 0 ? 'text-blue-500' : 'text-pink-500'">
+          {{ char }}
+        </span>
+      </h1>
+      </div>
+      
+      <div class="flex justify-center mt-2">
+    <h2>
+        <span v-for="(char, index) in splitTitle('Shiny Wars in:')" :key="index"
+          :class="index % 2 === 0 ? 'text-blue-500' : 'text-pink-500'">
+          {{ char }}
+        </span>
+    </h2>
+</div>
+
+
+    <!-- Countdown Timer & Centered Prize Pool -->
+    <div v-if="index === 0" class="mt-6 text-center">
+        <client-only>
+            <vue3-flip-countdown deadline="2025-04-17 22:00:00" />
+        </client-only>
+
+        <!-- Centered Prize Pool -->
+        <div class="mt-4 flex justify-center">
+            <div class="text-green-600 text-3xl font-mono">
+                <h3 class="text-xl text-white">Current Prize Pool:</h3>
+                ${{ prizePool.toLocaleString() }}
+            </div>
+        </div>
+    </div>
+</div>
         </div>
     </div>
 </template>
@@ -274,9 +325,29 @@ function handleClick(sublink: Link) {
 }
 
 .gif-class {
-    width: 100%;
-    height: auto;
-    border: none;
+    max-width: 80%;          /* Limits the width to 80% of the container */
+    max-height: 400px;        /* Maximum height to prevent it from being too tall */
+    object-fit: contain;      /* Ensures the GIF maintains its aspect ratio */
+    display: block;           /* Removes extra inline space */
+    margin: 0 auto;           /* Center the GIF horizontally */
 }
+
+.banner-text {
+    width: 80%;              /* Match the banner width */
+    max-width: 600px;        /* Cap the maximum width */
+    padding: 10px 15px;      /* Add inner spacing */
+    font-size: 16px;         /* Make text readable */
+    border: 1px solid #ccc;  /* Add a subtle border */
+    border-radius: 5px;      /* Rounded corners */
+    outline: none;           /* Remove outline on focus */
+    display: block;
+    margin: 20px auto;       /* Add spacing and center it */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow */
+}
+
+.banner-text:focus {
+    border-color: #007BFF;   /* Highlight color on focus */
+}
+
 </style>
   
