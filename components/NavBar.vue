@@ -2,7 +2,8 @@
 
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue';
 import { useRouter, useRoute } from 'vue-router';
-import e4Image from '@/assets/images/NavBar/e4120x40corner.png';
+import e4Image from '@/assets/images/NavBar/Elite_Four_2.png';
+import reRuns from '@/assets/images/NavBar/Reruns_1.png';
 import PoryHome from '@/assets/images/NavBar/120x40_PoryHomeCorners.png';
 import PoryUtility from '@/assets/images/NavBar/120x40_UtilitiesCornersWithArrow.png';
 import TeamPory from '@/assets/images/NavBar/120x40_Team_PoryCornersWithArrow.png';
@@ -55,7 +56,7 @@ function downloadExcel() {
 const leftLinks = [
     { to: '/', image: PoryHome },
     { to: '/guides/EliteFour', image: e4Image },
-    { to: '/guides/Reruns', image: e4Image },
+    { to: '/guides/Reruns', image: reRuns },
     {
         image: PoryUtility,
         sublinks: [
