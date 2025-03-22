@@ -286,23 +286,16 @@ const prizePool = ref(97435719);  // Initial prize pool value
   
         <button @click="prevSlide" class="carousel-control left">&#10094;</button>
         <button @click="nextSlide" class="carousel-control right">&#10095;</button>
-  
-        <div class="carousel-indicators">
-          <span v-for="(image, index) in images" :key="index"
-                @click="goToSlide(index)"
-                :class="{ active: currentIndex === index }"></span>
-        </div>
       </div>
   
       <!-- Event Section -->
       <div class="flex justify-center mt-2">
-        <h2 class="text-center">
+        <h1 class="text-center">
         <span v-for="(char, index) in splitTitle('Shiny Wars in:')" :key="index"
           :class="index % 2 === 0 ? 'text-blue-500' : 'text-pink-500'">
           {{ char }}
         </span>
-        
-      </h2>
+      </h1>
       </div>
 </div>
   
@@ -402,39 +395,50 @@ const prizePool = ref(97435719);  // Initial prize pool value
   object-fit: contain;
 }
 
+/* 🌟 Carousel Container */
 .carousel-wrapper {
   width: 100%;
-  max-width: 1200px;               /* Maximum width */
-  height: 600px;                    /* Consistent height */
-  overflow: hidden;
+  max-width: 1200px;               /* Max width */
+  height: 600px;                    /* Fixed height */
   position: relative;
-  margin: 0 auto;                    /* Center horizontally */
+  margin: 0 auto;                   /* Center horizontally */
   display: flex;
-  align-items: center;               /* Center vertically */
-  justify-content: center;           /* Center horizontally */
-  background-color: #000;            /* Background color for contrast */
+  align-items: center;              /* Center vertically */
+  justify-content: center;          /* Center horizontally */
+  overflow: hidden;                 /* No overflow */
+  background: transparent;          /* ✅ Remove black background */
 }
 
+/* 🎯 Carousel Track */
 .carousel-track {
   display: flex;
   transition: transform 0.5s ease-in-out;
-}
-
-.carousel-slide {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-width: 100%;
+  width: 100%;
   height: 100%;
 }
 
-.carousel-image {
-  width: 100%;                       /* Full width */
-  height: auto;                      /* Maintain aspect ratio */
-  max-height: 100%;                  /* Ensure it fits inside */
-  object-fit: contain;               /* Prevent cropping */
+/* ✅ Carousel Slides */
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;           /* Consistent sizing */
+  overflow: hidden;                 /* Prevent overflow */
+  background: transparent;          /* ✅ Remove black background */
 }
 
+/* 🌟 Carousel Images */
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;              /* Show the full image without cropping */
+  display: block;
+  background: transparent;          /* ✅ Ensure image background is transparent */
+}
+
+/* 🚀 Improved Arrow Styles */
 .carousel-control {
   position: absolute;
   top: 50%;
@@ -446,8 +450,10 @@ const prizePool = ref(97435719);  // Initial prize pool value
   cursor: pointer;
   z-index: 10;
   font-size: 24px;
+  transition: background 0.3s ease;
 }
 
+/* ✅ Move arrows slightly outside */
 .carousel-control.left {
   left: 15px;
 }
@@ -456,25 +462,11 @@ const prizePool = ref(97435719);  // Initial prize pool value
   right: 15px;
 }
 
-.carousel-indicators {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
+/* Add hover effect */
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.9);
 }
 
-.carousel-indicators span {
-  width: 12px;
-  height: 12px;
-  margin: 5px;
-  background: gray;
-  display: inline-block;
-  border-radius: 50%;
-  cursor: pointer;
-}
-
-.carousel-indicators .active {
-  background: white;
-}
 
 /* Event Section */
 .event-section {
