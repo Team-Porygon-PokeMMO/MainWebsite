@@ -19,7 +19,7 @@ import Icon_Egg from '@/assets/images/NavBar/NavBarIcons/Icon_Egg.png';
 import Icon_Rock from '@/assets/images/NavBar/NavBarIcons/Icon_Rock.png';
 import Icon_Money from '@/assets/images/NavBar/NavBarIcons/Icon_Analysis.png';
 import Icon_PokeMMO from '@/assets/images/NavBar/NavBarIcons/Icon_PokeMMO.png';
-import Icon_Shiny_Showcase from '@/assets/images/NavBar/NavBarIcons/Icon_Shiny_Showcase.png';
+import Icon_Shiny_Showcase from '@/assets/images/NavBar/NavBarIcons/Icon_Shiny_Showcase_2.png';
 import Icon_Missing_Shiny_Showcase from '@/assets/images/NavBar/NavBarIcons/Icon_Missing_Shiny_Showcase.png';
 import Icon_Pory_Guides from '@/assets/images/NavBar/NavBarIcons/Icon_Pory_Guides.png';
 import Icon_Apricorn_Map from '@/assets/images/NavBar/NavBarIcons/Icon_Apricorn_Map.png';
@@ -92,7 +92,7 @@ function downloadExcel() {
 const leftLinks = [
     { to: '/', image: PoryHome },
     { to: '/guides/EliteFour', image: e4Image },
-    { to: '/guides/Reruns', image: reRuns },
+   // to: '/guides/Reruns', image: reRuns },
     {
         image: PoryUtility,
         sublinks: [
@@ -147,7 +147,6 @@ const content = ref([
     }
 ]);
 
-// ✅ Added a computed property to check if the current page is the home page
 const isHomePage = computed(() => route.path === '/');
 
 const prizePool = ref(104095713);  // Initial prize pool value

@@ -46,7 +46,7 @@ const fullCredits = [
     },
     {
         Name: "Code Contributors",
-        Credits: ["jaddee"]
+        Credits: ["jaddee", "tcb"]
     },
     {
         Name: "Art",
