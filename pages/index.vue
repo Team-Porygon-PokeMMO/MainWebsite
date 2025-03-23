@@ -41,7 +41,7 @@
     </div>
 
     <!-- Team Calendar -->
-    <div class="mt-16 w-full max-w-4xl">
+    <!--<div class="mt-16 w-full max-w-4xl">
       <h1 class="text-center">
         <span v-for="(char, index) in splitTitle('Team Calendar')" :key="index"
           :class="index % 2 === 0 ? 'text-blue-500' : 'text-pink-500'">
@@ -56,8 +56,10 @@
           class="w-full max-w-2xl h-auto rounded-lg shadow-lg"
         />
       </div>
+    </div> -->
+    <div>
+        <GeneralCredits />
     </div>
-
   </div>
 </template>
 
