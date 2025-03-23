@@ -4,13 +4,6 @@ type Credit = {
     Tag?: string
 }
 let baseCredits: { [id: string]: Credit; } = {};
-baseCredits["denzi"] = {
-    Name: "FreeReign",
-    Tag: "@denzi_norski"
-}
-baseCredits["juggerton"] = {
-    Name: "Juggerton"
-}
 baseCredits["dronad"] = {
     Name: "Dronad",
     Tag: "@dronad"
@@ -31,24 +24,12 @@ baseCredits["dareeka"] = {
     Name: "Dareeka",
     Tag: "@dareeka"
 }
-baseCredits["manitos"] = {
-    Name: "Manitos",
-    Tag: "@manitoss"
-}
-baseCredits["jerizzle"] = {
-    Name: "Jerizzle",
-    Tag: "@jiro.san"
-}
 baseCredits["tcb"] = {
     Name: "TheClosedBox",
     Tag: "@theclosedbox"
 }
 baseCredits["Team Porygon"] = {
     Name: "Team Porygon"
-}
-baseCredits["jeriel"] = {
-    Name: "Odozo",
-    Tag: "@jeriel.xyz"
 }
 baseCredits["c4v"] = {
     Name: "caav",
@@ -60,20 +41,12 @@ baseCredits["SlyferTP"] = {
 }
 const fullCredits = [
     {
-        Name: "Pokeking English Translations & Contributions",
-        Credits: ["denzi", "juggerton", "dronad", "jaddee", "jeriel", "manitos"]
-    },
-    {
-        Name: "Solve Testers",
-        Credits: ["jaddee", "shrimplad", "panotxa", "dareeka", "manitos", "jerizzle", "tcb", "Team Porygon"]
-    },
-    {
         Name: "Page Design",
-        Credits: ["tcb"]
+        Credits: ["jaddee", "tcb"]
     },
     {
         Name: "Code Contributors",
-        Credits: ["jaddee","panotxa","tcb", "c4v"]
+        Credits: ["jaddee", "tcb"]
     },
     {
         Name: "Art",
@@ -116,12 +89,12 @@ export default {
     <div class="text-center">
         <h3 class="m-4 menu-label title" @click="toggleView()">Credits {{ getIfExpandable() }}</h3>
         <div v-if="active">
-            <div v-for="(creditSection, index) in fullCredits">
+            <div v-for="(creditSection, index) in fullCredits" :key="index">
                 <UDivider class="p-2" v-if="index > 0" />
                 <span class="menu-label">{{ creditSection.Name }}</span>
                 <div class="grid grid-flow-col-dense auto-cols-auto">
-                    <div v-for="credit in creditSection.Credits">
-                        <span>{{ getCredit(credit) }}</span>
+                    <div v-for="(credit, i) in creditSection.Credits" :key="i">
+                        <span class="mr-2">{{ getCredit(credit) }}</span> <!-- Add margin -->
                     </div>
                 </div>
             </div>

@@ -1,0 +1,47 @@
+[
+    {
+        "Description": "Ho-Oh Trick Room Details and Accreditation",
+        "Tips": [
+            {
+                "Description": "Huge thanks to caav for providing this content to the community. Caav's details are below."
+            },
+            {
+                "Url": "https://www.youtube.com/watch?v=_fcYxnPJKA0&t=12s&ab_channel=caav",
+                "Name": "YouTube Video"
+            },
+            {
+                "Url": "https://pokepast.es/bf35cfea0d1b7356",
+                "Name": "PokePaste"
+            },
+            {
+            
+                "Url": "https://docs.google.com/document/d/e/2PACX-1vSmrRoPFDQrXLB6Y6LzrUc5HTaJndRBhPXOXuvU3vauNukgB0USl0-i7TXB6lNb8WtYLrw2wOIygfWH/pub",
+                "Name": "Written Guide"
+            }
+        ]
+    },
+    {
+        "Description": "Red Gen 2, 3, and 4 Details and Accreditation",
+        "Tips": [
+            {
+                "Description": "Huge thanks to caav for providing this content to the community. Caav's details are below."
+            },
+            {
+                "Url": "https://www.youtube.com/watch?v=M9mic0JvpwI&ab_channel=caav",
+                "Name": "YouTube Video"
+            }
+        ]
+    },
+    {
+        "Description": "Red Gen 5 Details and Accreditation",
+        "Tips": [
+            {
+                "Description": "Huge thanks to caav for providing this content to the community. Caav's details are below."
+            },
+            {
+                "Url": "https://www.bilibili.com/video/BV1Cy4y1w7Vt/?vd_source=a4d63fef7dfbfe8174c7acb193e5c03d",
+                "Name": "Video (CN)"
+            }
+        ]
+    }
+]

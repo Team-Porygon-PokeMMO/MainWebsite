@@ -1,43 +1,85 @@
-<script setup lang="ts">
-import '~/assets/main.css'
-const signatureLink = 'https://i.ibb.co/fq874Kt/Pory-Team-Signature.gif'
+<template>
+  <div class="flex flex-col items-center min-h-screen bg-surface-0 dark:bg-surface-900">
 
-const content = [
-  {
-    title: 'Who are we?',
-    description: 'Team Porygon is made up of English-speaking players who want to enjoy the PvE PokeMMO experience! We believe that to build a team, there must be a goal and our goal is to enjoy the game as friends in a relaxed, friendly, and highly informative environment. Our fact-checked information, server structure, and helpful members will provide an unmatched PvE experience that we believe is second to none. Additionally, we have a variety of players from around the world to ensure that we provide you with a community from anywhere, at any time!'
-  },
-  {
-    title: 'Foundation',
-    description: 'Recognizing the need for a relaxed yet veteran focused team, Team Porygon [Pory] was founded on 07-30-2023 and is led by its current founder Jaddee. Pory aims to provide a relaxed and friendly while highly informative environment.'
-  },
-  {
-    title: 'Main activities',
-    description: 'Team Pory has a focus on maintaining a variety of events for the team, including but not limited to - team shiny bounties, catch events and various pvp events! In addition, Team Pory has members actively developing or contributing to research or guides aiming to provide players with additional knowledge to promote growth in all aspects of the game. Some of these efforts currently include advanced gym run guides, alt speed runs and fossil farming efficiency statistics.'
-  },
-  {
-    title: 'Requirements to join',
-    description: 'Team Pory does have a base set of requirements to join, this ensures all members are held to the same standard and treated equally. Team Pory Requirements can be seen below:',
-    rules: [
-      "All regions completed", "400 in-game hours", "Decent PvE understanding (We'll work with you to help you learn)", "Have a discord account. We use our team server quite a bit", "Active and friendly", "Active in team chat (Required)",
-    ]
-  },
-  {
-    title: 'How to apply',
-    description: 'To apply to our team, please vist the post below and fill out the required information. Or, reach out directly to @glortwort or @vexious on discord.',
-    links: [
-      {
-        "Url": "https://forums.pokemmo.com/index.php?/topic/159984-openpory-team-porygon-is-recruiting/",
-        "Name": "Team Pory Application"
-      }
-    ]
-  }
-]
+    <!-- About Us Section -->
+    <div class="mt-16 w-full max-w-4xl">
+      <h1 class="text-center">
+        <span v-for="(char, index) in splitTitle('About Us')" :key="index"
+          :class="index % 2 === 0 ? 'text-blue-500' : 'text-pink-500'">
+          {{ char }}
+        </span>
+      </h1>
+
+      <!-- Accordion Items -->
+      <div class="space-y-6 mt-6">
+        <AccordionItem title="Who are we?" :leftEmoji="leftImage" :rightEmoji="rightImage">
+          Founded July 30th, 2023, Team Porygon is an English-speaking community for those who want to enjoy the PokeMMO PvE experience to the fullest! We believe to build a team, there must be a goal, ours is to enjoy the game as friends in a relaxed, friendly, and highly informative manner.
+        </AccordionItem>
+
+        <AccordionItem title="What are our team requirements?" :leftEmoji="leftImage" :rightEmoji="rightImage">
+          <li> All regions completed </li>
+          <li> 400 in-game hours </li>
+          <li> Decent PvE understanding (We'll work with you to help you learn) </li>
+          <li> Have a Discord account. We use our team server quite a bit </li>
+          <li> Active and friendly </li>
+          <li> Active in team chat (Required) </li>
+        </AccordionItem>
+
+        <AccordionItem title="Why you should apply" :leftEmoji="leftImage" :rightEmoji="rightImage">
+          Our fact-checked information, server structure, and helpful members from around the globe provide an unmatched PvE experience that we believe is second to none. We also host events regularly with prizes funded by charitable donations from our members.
+          <br />
+          <a 
+            href="https://forums.pokemmo.com/index.php?/topic/159984-openpory-team-porygon-is-recruiting/#comment-2023997" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            class="text-blue-500 hover:underline"
+          >
+            View our recruitment page
+          </a>
+        </AccordionItem>
+      </div>
+    </div>
+
+    <!-- Team Calendar -->
+    <!--<div class="mt-16 w-full max-w-4xl">
+      <h1 class="text-center">
+        <span v-for="(char, index) in splitTitle('Team Calendar')" :key="index"
+          :class="index % 2 === 0 ? 'text-blue-500' : 'text-pink-500'">
+          {{ char }}
+        </span>
+      </h1>
+
+      <div class="flex justify-center mt-6">
+        <img 
+          src="~/assets/images/NavBar/TeamCal/PorycalendarMAR25.png" 
+          alt="Team Calendar" 
+          class="w-full max-w-2xl h-auto rounded-lg shadow-lg"
+        />
+      </div>
+    </div> -->
+    <div>
+        <GeneralCredits />
+    </div>
+  </div>
+</template>
+
+---
+
+### ✅ **Script Section:**
+```ts
+<script setup lang="ts">
+import leftImage from '@/assets/images/NavBar/NavBarIcons/porycrown.png';
+import rightImage from '@/assets/images/NavBar/NavBarIcons/porycrownFlipped.png';
+import '~/assets/main.css';
+import AccordionItem from '~/components/AccordionItem.vue';
+
+// Title split function
+const splitTitle = (title: string) => title.split('');
 </script>
 
 <style scoped>
 img {
-  display: inline
+  display: inline;
 }
 
 a {
@@ -45,22 +87,3 @@ a {
   cursor: pointer;
 }
 </style>
-
-<template>
-  <div class="p-1 text-center">
-    <h1>Team Porygon (PokeMMO)</h1>
-    <div class="grid grid-cols-1 text-justify">
-      <div v-for="item in content" class="p-2">
-        <h2>{{ item.title }}</h2>
-        <h3>{{ item.description }}</h3>
-        <div v-if="item.links">
-          <a v-for="link in item.links" :href="link.Url" target="_blank">{{ link.Name }}</a>
-        </div>
-        <ul v-if="item.rules" class="pl-8" style="list-style-type:circle;">
-          <li v-for="rule in item.rules">{{ rule }}</li>
-        </ul>
-      </div>
-    </div>
-    <img :src="signatureLink" alt="Team Porygon Signature" class="mt-4" />
-  </div>
-</template>

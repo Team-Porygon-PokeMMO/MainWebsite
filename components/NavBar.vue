@@ -1,13 +1,17 @@
 <script setup lang="ts">
+
 import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue';
 import { useRouter, useRoute } from 'vue-router';
-import e4Image from '@/assets/images/NavBar/e4120x40corner.png';
-import PoryHome from '@/assets/images/NavBar/120x40_PoryHomeCorners.png';
-import PoryUtility from '@/assets/images/NavBar/120x40_UtilitiesCornersWithArrow.png';
-import TeamPory from '@/assets/images/NavBar/120x40_Team_PoryCornersWithArrow.png';
-import CommonResources from '@/assets/images/NavBar/120x40_ResourcesCornersWithArrow.png';
-import ContactUs from '@/assets/images/NavBar/120x40_Contact_UsCorners.png';
+import e4Image from '@/assets/images/NavBar/Elite_Four_2.png';
+import reRuns from '@/assets/images/NavBar/Reruns_1.png';
+import PoryHome from '@/assets/images/NavBar/NavBarIcons/Home_1.png';
+import PoryUtility from '@/assets/images/NavBar/NavBarIcons/Utilities_1.png';
+import TeamPory from '@/assets/images/NavBar/NavBarIcons/Team_Pory_1.png';
+import CommonResources from '@/assets/images/NavBar/NavBarIcons/Resources_1.png';
+import ContactUs from '@/assets/images/NavBar/NavBarIcons/Contact_Us_1.png';
 import Awards from '@/assets/images/NavBar/NavBarIcons/120x40_AwardsCorners.png';
+
+import { RiFileExcel2Line } from "oh-vue-icons/icons";
 
 
 import Icon_Clock from '@/assets/images/NavBar/NavBarIcons/Icon_Clock.png';
@@ -15,7 +19,7 @@ import Icon_Egg from '@/assets/images/NavBar/NavBarIcons/Icon_Egg.png';
 import Icon_Rock from '@/assets/images/NavBar/NavBarIcons/Icon_Rock.png';
 import Icon_Money from '@/assets/images/NavBar/NavBarIcons/Icon_Analysis.png';
 import Icon_PokeMMO from '@/assets/images/NavBar/NavBarIcons/Icon_PokeMMO.png';
-import Icon_Shiny_Showcase from '@/assets/images/NavBar/NavBarIcons/Icon_Shiny_Showcase.png';
+import Icon_Shiny_Showcase from '@/assets/images/NavBar/NavBarIcons/Icon_Shiny_Showcase_2.png';
 import Icon_Missing_Shiny_Showcase from '@/assets/images/NavBar/NavBarIcons/Icon_Missing_Shiny_Showcase.png';
 import Icon_Pory_Guides from '@/assets/images/NavBar/NavBarIcons/Icon_Pory_Guides.png';
 import Icon_Apricorn_Map from '@/assets/images/NavBar/NavBarIcons/Icon_Apricorn_Map.png';
@@ -29,24 +33,74 @@ import Icon_Vanity from '@/assets/images/NavBar/NavBarIcons/Icon_Vanity.png';
 const router = useRouter();
 const route = useRoute();
 
+// Title split function
+const splitTitle = (title: string) => title.split('')
+
+import GamblinImage from '/images/TeamPics/Gamblin.png'
+import HalloweenImage from '/images/TeamPics/Halloween24_4.png'
+import TeamPicShinyWar24 from '/images/TeamPics/teampicFinal.png'
+// Carousel data
+const currentIndex = ref(0)
+const images = [
+  { src: GamblinImage, alt: "Image 1" },
+  { src: HalloweenImage, alt: "Image 2" },
+  { src: TeamPicShinyWar24, alt: "Image 3" }
+]
+
+let interval: ReturnType<typeof setInterval> | null = null
+
+const nextSlide = () => {
+  currentIndex.value = (currentIndex.value + 1) % images.length
+}
+
+const prevSlide = () => {
+  currentIndex.value = currentIndex.value === 0 ? images.length - 1 : currentIndex.value - 1
+}
+
+const goToSlide = (index: number) => {
+  currentIndex.value = index
+}
+
+const startAutoScroll = () => {
+  interval = setInterval(nextSlide, 3000)
+}
+
+const stopAutoScroll = () => {
+  if (interval) clearInterval(interval)
+}
+
+onMounted(startAutoScroll)
+onBeforeUnmount(stopAutoScroll)
+
 interface Link {
+    action: any;
     label: string,
     to: string,
     icon?: string,
     image?: string;
     sublinks?: Link[]
 }
-
+function downloadExcel() {
+    const excelUrl = '/files/AltTracker.xlsx'; 
+    const link = document.createElement('a');
+    link.href = excelUrl;
+    link.download = 'AltTracker.xlsx'; 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+}
 const leftLinks = [
     { to: '/', image: PoryHome },
     { to: '/guides/EliteFour', image: e4Image },
+   // to: '/guides/Reruns', image: reRuns },
     {
         image: PoryUtility,
         sublinks: [
             { label: 'Current Time', to: '/utilities/DayAndNightCycle', image: Icon_Clock },
             { label: 'Rock Smash Tracker', to: '/utilities/RockSmash', image: Icon_Rock },
            //{ label: 'Egg Cost Analysis', to: '/utilities/EggCostAnalysis', image: Icon_Money } 
-            { label: 'Hatching (Deprecated)', to: '/utilities/HatchCycleTimer', image: Icon_Egg },
+            { label: 'Alt Tracker (Download)', image: Icon_Pory_Guides, action: downloadExcel },
+            { label: 'Hatching (Deprecated)', to: '/utilities/HatchCycleTimer', image: Icon_Egg }
         ]
     }
 ] as Link[];
@@ -85,125 +139,180 @@ function handleClick(sublink: Link) {
         }
     }
 }
+
+const content = ref([
+    {
+        title: "Team Porygon Event",
+        description: "Join us for an exciting event with incredible rewards!"
+    }
+]);
+
+const isHomePage = computed(() => route.path === '/');
+
+const prizePool = ref(104095713);  // Initial prize pool value
 </script>
 
 
 <template>
     <div class="page-container">
-        <!-- Left Side: Navbar -->
-        <div class="flex flex-col">
-            <div class="flex items-center justify-between">
-                <!-- Left Side Links -->
-                <div class="flex items-center space-x-0">
-                    <div v-for="link in leftLinks" :key="link.label || link.to" class="flex items-center">
-                        <NuxtLink v-if="!link.sublinks && link.to.startsWith('/')" :to="link.to"
-                            class="menu-link nav-button button-size" exact-active-class="bg-gray-700">
-                            <img v-if="link.image" :src="link.image" alt="Elite Four" class="button-image" />
-                            <span v-if="link.label">{{ link.label }}</span> <!-- Render only if label exists -->
-                        </NuxtLink>
-
-                        <!-- External Links -->
-                        <a v-else-if="!link.sublinks && !link.to.startsWith('/')" :href="link.to" target="_blank"
-                            rel="noopener noreferrer" class="menu-link nav-button button-size">
-                            <span>{{ link.label }}</span>
-                        </a>
-
-                        <!-- Popover for Sublinks -->
-                        <Popover v-else class="relative" as="div">
-                            <PopoverButton class="menu-link nav-button button-size flex items-center">
-                                <img v-if="link.image" :src="link.image" alt="Parent Image" class="button-image" />
-                                <span>{{ link.label }}</span>
-                            </PopoverButton>
-
-                            <transition enter-active-class="transition duration-200 ease-out"
-                                enter-from-class="translate-y-1 opacity-0" enter-to-class="translate-y-0 opacity-100"
-                                leave-active-class="transition duration-150 ease-in"
-                                leave-from-class="translate-y-0 opacity-100" leave-to-class="translate-y-1 opacity-0">
-                                <PopoverPanel class="absolute z-10 w-screen max-w-md overflow-hidden bg-gray-800 shadow-lg rounded-panel top-full">
-                                    <div class="p-2">
-                                        <button v-for="childItem in link.sublinks" :key="childItem.label"
-                                            @click="handleClick(childItem)"
-                                            class="relative flex p-1 m-1 leading-6 transition duration-150 rounded-panel group gap-x-4 hover:bg-gray-900 button-size">
-                                            <div class="items-center justify-center flex-none rounded-button">
-                                                <img v-if="childItem.image" :src="childItem.image" alt="Sublink Image" class="button-image" />
-                                            </div>
-                                            <div>
-                                                <p class="block font-medium text-white font-display">
-                                                    {{ childItem.label }}
-                                                </p>
-                                            </div>
-                                        </button>
-                                    </div>
-                                </PopoverPanel>
-                            </transition>
-                        </Popover>
+  
+      <!-- Navigation Bar -->
+      <div class="nav-container">
+        <div class="flex justify-between items-center">
+  
+          <!-- Left Navigation Links -->
+          <div class="flex items-center space-x-0">
+            <div v-for="link in leftLinks" :key="link.label || link.to" class="flex items-center">
+              
+              <!-- Internal Links -->
+              <NuxtLink v-if="!link.sublinks && link.to.startsWith('/')" :to="link.to"
+                        class="menu-link nav-button button-size" exact-active-class="bg-gray-700">
+                <img v-if="link.image" :src="link.image" alt="Nav Image" class="button-image" />
+                <span>{{ link.label }}</span>
+              </NuxtLink>
+  
+              <!-- External Links -->
+              <a v-else-if="!link.sublinks && !link.to.startsWith('/')" :href="link.to" target="_blank"
+                 rel="noopener noreferrer" class="menu-link nav-button button-size">
+                <span>{{ link.label }}</span>
+              </a>
+  
+              <!-- Left Sublinks -->
+              <Popover v-else class="relative" as="div">
+                <PopoverButton class="menu-link nav-button button-size flex items-center">
+                  <img v-if="link.image" :src="link.image" alt="Parent Image" class="button-image" />
+                  <span>{{ link.label }}</span>
+                </PopoverButton>
+  
+                <transition enter-active-class="transition duration-200 ease-out"
+                            enter-from-class="translate-y-1 opacity-0" enter-to-class="translate-y-0 opacity-100"
+                            leave-active-class="transition duration-150 ease-in"
+                            leave-from-class="translate-y-0 opacity-100" leave-to-class="translate-y-1 opacity-0">
+                  <PopoverPanel class="absolute z-10 w-screen max-w-md overflow-hidden bg-gray-800 shadow-lg rounded-panel top-full">
+                    <div class="p-2">
+                      <button v-for="childItem in link.sublinks" :key="childItem.label"
+                              @click="childItem.action ? childItem.action() : handleClick(childItem)"
+                              class="relative flex p-1 m-1 leading-6 transition duration-150 rounded-panel group gap-x-4 hover:bg-gray-900 button-size">
+                        <div class="items-center justify-center flex-none rounded-button">
+                          <img v-if="childItem.image" :src="childItem.image" alt="Sublink Image" class="button-image" />
+                        </div>
+                        <div>
+                          <p class="block font-medium text-white font-display">
+                            {{ childItem.label }}
+                          </p>
+                        </div>
+                      </button>
                     </div>
-                </div>
-
-                <!-- Right Side Links -->
-                <div class="flex items-center space-x-0">
-                    <div v-for="link in rightLinks" :key="link.label" class="flex items-center">
-                        <NuxtLink v-if="!link.sublinks && link.to.startsWith('/')" :to="link.to"
-                            class="menu-link nav-button button-size" exact-active-class="bg-gray-700">
-                            <img v-if="link.image" :src="link.image" alt="Right Link Image" class="button-image" />
-                            {{ link.label }}
-                        </NuxtLink>
-
-                        <!-- External Links -->
-                        <a v-else-if="!link.sublinks && !link.to.startsWith('/')" :href="link.to" target="_blank"
-                            rel="noopener noreferrer" class="menu-link nav-button button-size">
-                            <img v-if="link.image" :src="link.image" alt="Right Link Image" class="button-image" />
-                            {{ link.label }}
-                        </a>
-
-                        <!-- Popover for Sublinks -->
-                        <Popover v-else class="relative" as="div">
-                            <PopoverButton class="menu-link nav-button button-size flex items-center">
-                                <img v-if="link.image" :src="link.image" alt="Right Link Image" class="button-image" />
-                                {{ link.label }}
-                            </PopoverButton>
-
-                            <transition enter-active-class="transition duration-200 ease-out"
-                                enter-from-class="translate-y-1 opacity-0" enter-to-class="translate-y-0 opacity-100"
-                                leave-active-class="transition duration-150 ease-in"
-                                leave-from-class="translate-y-0 opacity-100" leave-to-class="translate-y-1 opacity-0">
-                                <PopoverPanel class="absolute z-10 w-screen max-w-md overflow-hidden bg-gray-800 shadow-lg rounded-panel top-full">
-                                    <div class="p-2">
-                                        <button v-for="childItem in link.sublinks" :key="childItem.label"
-                                            @click="handleClick(childItem)"
-                                            class="relative flex p-1 m-1 leading-6 transition duration-150 rounded-panel group gap-x-4 hover:bg-gray-900 button-size">
-                                            <div class="items-center justify-center flex-none rounded-button">
-                                                <img v-if="childItem.image" :src="childItem.image" alt="Sublink Image" class="button-image" />
-                                            </div>
-                                            <div>
-                                                <p class="block font-medium text-white font-display">
-                                                    {{ childItem.label }}
-                                                </p>
-                                            </div>
-                                        </button>
-                                    </div>
-                                </PopoverPanel>
-                            </transition>
-                        </Popover>
-                    </div>
-                </div>
+                  </PopoverPanel>
+                </transition>
+              </Popover>
             </div>
+          </div>
+  
+          <!-- Right Navigation Links -->
+          <div class="flex items-center space-x-0">
+  
+            <div v-for="link in rightLinks" :key="link.label" class="flex items-center">
+              
+              <!-- Right External/Internal Links -->
+              <NuxtLink v-if="!link.sublinks && link.to.startsWith('/')" :to="link.to"
+                        class="menu-link nav-button button-size" exact-active-class="bg-gray-700">
+                <img v-if="link.image" :src="link.image" alt="Right Link Image" class="button-image" />
+                {{ link.label }}
+              </NuxtLink>
+  
+              <a v-else-if="!link.sublinks && !link.to.startsWith('/')" :href="link.to" target="_blank"
+                 rel="noopener noreferrer" class="menu-link nav-button button-size">
+                <img v-if="link.image" :src="link.image" alt="Right Link Image" class="button-image" />
+                {{ link.label }}
+              </a>
+  
+              <!-- Right Sublinks -->
+              <Popover v-else class="relative" as="div">
+                <PopoverButton class="menu-link nav-button button-size flex items-center">
+                  <img v-if="link.image" :src="link.image" alt="Right Link Image" class="button-image" />
+                  <span>{{ link.label }}</span>
+                </PopoverButton>
+  
+                <transition enter-active-class="transition duration-200 ease-out"
+                            enter-from-class="translate-y-1 opacity-0" enter-to-class="translate-y-0 opacity-100"
+                            leave-active-class="transition duration-150 ease-in"
+                            leave-from-class="translate-y-0 opacity-100" leave-to-class="translate-y-1 opacity-0">
+                  <PopoverPanel class="absolute z-10 w-screen max-w-md overflow-hidden bg-gray-800 shadow-lg rounded-panel top-full">
+                    <div class="p-2">
+                      <button v-for="childItem in link.sublinks" :key="childItem.label"
+                              @click="childItem.action ? childItem.action() : handleClick(childItem)"
+                              class="relative flex p-1 m-1 leading-6 transition duration-150 rounded-panel group gap-x-4 hover:bg-gray-900 button-size">
+                        <div class="items-center justify-center flex-none rounded-button">
+                          <img v-if="childItem.image" :src="childItem.image" alt="Sublink Image" class="button-image" />
+                        </div>
+                        <div>
+                          <p class="block font-medium text-white font-display">
+                            {{ childItem.label }}
+                          </p>
+                        </div>
+                      </button>
+                    </div>
+                  </PopoverPanel>
+                </transition>
+              </Popover>
+            </div>
+          </div>
         </div>
+      </div>
+    
 
-        <!-- Right Side Content (GIF) -->
-        <div class="flex-grow">
-            <!-- GIF visible only on the home page -->
-            <img
-                v-if="route.path === '/'"
-                src="/assets/PoryBanner.gif"
-                alt="Your GIF"
-                width="100%"
-                height="auto"
-                class="gif-class"
-            />
+      <template v-if="isHomePage">
+      <div class="flex justify-center mt-2">
+        <h1 class="text-center">
+        <span v-for="(char, index) in splitTitle('Team Porygon')" :key="index"
+          :class="index % 2 === 0 ? 'text-blue-500' : 'text-pink-500'">
+          {{ char }}
+        </span>
+      </h1>
+      </div>
+  
+      <!-- Carousel Section -->
+      <div class="carousel-wrapper">
+        <div class="carousel-track" :style="{ transform: `translateX(-${100 * currentIndex}%)` }">
+          <div v-for="(image, index) in images" :key="index" class="carousel-slide">
+            <img :src="image.src" :alt="image.alt" class="carousel-image" />
+          </div>
         </div>
+  
+        <button @click="prevSlide" class="carousel-control left">&#10094;</button>
+        <button @click="nextSlide" class="carousel-control right">&#10095;</button>
+      </div>
+  
+      <!-- Event Section -->
+      <div class="flex justify-center mt-2">
+        <h1 class="text-center">
+        <span v-for="(char, index) in splitTitle('Shiny Wars in:')" :key="index"
+          :class="index % 2 === 0 ? 'text-blue-500' : 'text-pink-500'">
+          {{ char }}
+        </span>
+      </h1>
     </div>
+  
+<div class="countdown-container">
+    <client-only>
+        <vue3-flip-countdown deadline="2025-04-17 22:00:00" />
+    </client-only>
+</div>
+
+<!-- Centered Prize Pool Display -->
+<div class="flex justify-center items-center mt-4">
+    <div class="text-green-600 text-3xl font-mono text-center">
+        <h3 class="text-xl text-white">Current Prize Pool:</h3>
+        ${{ prizePool.toLocaleString() }}
+    </div>
+      </div>
+    </template>
+</div>
 </template>
+  
+
+
 
 <style scoped>
 /* Existing Navigation Styles */
@@ -260,10 +369,122 @@ function handleClick(sublink: Link) {
     overflow-y: auto;
 }
 
+/* Centered GIF */
+.gif-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px; /* Ensures space around the GIF */
+  
+}
+
+.gif-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+}
+
 .gif-class {
-    width: 100%;
-    height: auto;
-    border: none;
+  max-width: 20%;       /* Scale GIF size */
+  max-width: 800px;
+  height: 300px;       
+  object-fit: contain;
+}
+
+/* 🌟 Carousel Container */
+.carousel-wrapper {
+  width: 100%;
+  max-width: 1200px;               /* Max width */
+  height: 600px;                    /* Fixed height */
+  position: relative;
+  margin: 0 auto;                   /* Center horizontally */
+  display: flex;
+  align-items: center;              /* Center vertically */
+  justify-content: center;          /* Center horizontally */
+  overflow: hidden;                 /* No overflow */
+  background: transparent;          /* ✅ Remove black background */
+}
+
+/* 🎯 Carousel Track */
+.carousel-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+/* ✅ Carousel Slides */
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;           /* Consistent sizing */
+  overflow: hidden;                 /* Prevent overflow */
+  background: transparent;          /* ✅ Remove black background */
+}
+
+/* 🌟 Carousel Images */
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;              /* Show the full image without cropping */
+  display: block;
+  background: transparent;          /* ✅ Ensure image background is transparent */
+}
+
+/* 🚀 Improved Arrow Styles */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  padding: 15px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 24px;
+  transition: background 0.3s ease;
+}
+
+/* ✅ Move arrows slightly outside */
+.carousel-control.left {
+  left: 15px;
+}
+
+.carousel-control.right {
+  right: 15px;
+}
+
+/* Add hover effect */
+.carousel-control:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+
+/* Event Section */
+.event-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.event-title {
+  font-size: 2rem;
+  color: #3498db;
+}
+
+.countdown-container {
+  margin: 30px 0;
+}
+
+.prize-pool {
+  margin-top: 20px;
+  color: #00e676;
+  font-size: 2rem;
 }
 </style>
   

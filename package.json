@@ -12,7 +12,13 @@
   "dependencies": {
     "@nuxt/ui": "^2.14.1",
     "nuxt": "^3.14.159",
+    "oh-vue-icons": "^1.0.0-rc3",
+    "primevue": "^4.3.2",
     "vue": "^3.4.19",
-    "vue-router": "^4.3.0"
+    "vue-router": "^4.3.0",
+    "vue3-flip-countdown": "^0.1.6"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.4.17"
   }
 }
