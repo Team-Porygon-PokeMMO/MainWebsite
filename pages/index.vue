@@ -16,17 +16,17 @@
           Founded July 30th, 2023, Team Porygon is an English-speaking community for those who want to enjoy the PokeMMO PvE experience to the fullest! We believe to build a team, there must be a goal, ours is to enjoy the game as friends in a relaxed, friendly, and highly informative manner.
         </AccordionItem>
 
-        <AccordionItem title="What are our team requirements?" :leftEmoji="leftImage" :rightEmoji="rightImage">
+        <AccordionItem title="How can I apply?" :leftEmoji="leftImage" :rightEmoji="rightImage">
+           You can apply if you've met all the teams requirements by reaching out to @glortwort or @vexious via Discord, or by leaving a comment on the teams recruitment post!
+           <br />
+           Team Requirements:
           <li> All regions completed </li>
           <li> 400 in-game hours </li>
           <li> Decent PvE understanding (We'll work with you to help you learn) </li>
           <li> Have a Discord account. We use our team server quite a bit </li>
           <li> Active and friendly </li>
           <li> Active in team chat (Required) </li>
-        </AccordionItem>
 
-        <AccordionItem title="Why you should apply" :leftEmoji="leftImage" :rightEmoji="rightImage">
-          Our fact-checked information, server structure, and helpful members from around the globe provide an unmatched PvE experience that we believe is second to none. We also host events regularly with prizes funded by charitable donations from our members.
           <br />
           <a 
             href="https://forums.pokemmo.com/index.php?/topic/159984-openpory-team-porygon-is-recruiting/#comment-2023997" 
@@ -34,8 +34,12 @@
             rel="noopener noreferrer" 
             class="text-blue-500 hover:underline"
           >
-            View our recruitment page
+            Click here for more information!
           </a>
+        </AccordionItem>
+
+        <AccordionItem title="Why you should apply" :leftEmoji="leftImage" :rightEmoji="rightImage">
+          Our fact-checked information, server structure, and helpful members from around the globe provide an unmatched PvE experience that we believe is second to none. We also host events regularly with prizes funded by charitable donations from our members.
         </AccordionItem>
       </div>
     </div>
