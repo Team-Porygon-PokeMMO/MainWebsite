@@ -4,11 +4,11 @@ import { Popover, PopoverButton, PopoverPanel } from '@headlessui/vue';
 import { useRouter, useRoute } from 'vue-router';
 import e4Image from '@/assets/images/NavBar/Elite_Four_2.png';
 import reRuns from '@/assets/images/NavBar/Reruns_1.png';
-import PoryHome from '@/assets/images/NavBar/120x40_PoryHomeCorners.png';
-import PoryUtility from '@/assets/images/NavBar/120x40_UtilitiesCornersWithArrow.png';
-import TeamPory from '@/assets/images/NavBar/120x40_Team_PoryCornersWithArrow.png';
-import CommonResources from '@/assets/images/NavBar/120x40_ResourcesCornersWithArrow.png';
-import ContactUs from '@/assets/images/NavBar/120x40_Contact_UsCorners.png';
+import PoryHome from '@/assets/images/NavBar/NavBarIcons/Home_1.png';
+import PoryUtility from '@/assets/images/NavBar/NavBarIcons/Utilities_1.png';
+import TeamPory from '@/assets/images/NavBar/NavBarIcons/Team_Pory_1.png';
+import CommonResources from '@/assets/images/NavBar/NavBarIcons/Resources_1.png';
+import ContactUs from '@/assets/images/NavBar/NavBarIcons/Contact_Us_1.png';
 import Awards from '@/assets/images/NavBar/NavBarIcons/120x40_AwardsCorners.png';
 
 import { RiFileExcel2Line } from "oh-vue-icons/icons";
@@ -147,7 +147,10 @@ const content = ref([
     }
 ]);
 
-const prizePool = ref(97435719);  // Initial prize pool value
+// ✅ Added a computed property to check if the current page is the home page
+const isHomePage = computed(() => route.path === '/');
+
+const prizePool = ref(104095713);  // Initial prize pool value
 </script>
 
 
@@ -258,7 +261,9 @@ const prizePool = ref(97435719);  // Initial prize pool value
           </div>
         </div>
       </div>
+    
 
+      <template v-if="isHomePage">
       <div class="flex justify-center mt-2">
         <h1 class="text-center">
         <span v-for="(char, index) in splitTitle('Team Porygon')" :key="index"
@@ -267,14 +272,6 @@ const prizePool = ref(97435719);  // Initial prize pool value
         </span>
       </h1>
       </div>
-  
-      <!-- Centered GIF Section -->
-      <div v-if="route.path === '/'" class="gif-container">
-        <div class="gif-wrapper">
-          <img src="/assets/PoryBanner.gif" alt="Pory Banner GIF" class="gif-class" />
-        </div>
-      </div>
-
   
       <!-- Carousel Section -->
       <div class="carousel-wrapper">
@@ -296,8 +293,7 @@ const prizePool = ref(97435719);  // Initial prize pool value
           {{ char }}
         </span>
       </h1>
-      </div>
-</div>
+    </div>
   
 <div class="countdown-container">
     <client-only>
@@ -311,8 +307,10 @@ const prizePool = ref(97435719);  // Initial prize pool value
         <h3 class="text-xl text-white">Current Prize Pool:</h3>
         ${{ prizePool.toLocaleString() }}
     </div>
+      </div>
+    </template>
 </div>
-  </template>
+</template>
   
 
 
@@ -378,7 +376,7 @@ const prizePool = ref(97435719);  // Initial prize pool value
   justify-content: center;
   align-items: center;
   min-height: 400px; /* Ensures space around the GIF */
-  padding: 40px 0;
+  
 }
 
 .gif-wrapper {
@@ -390,8 +388,9 @@ const prizePool = ref(97435719);  // Initial prize pool value
 }
 
 .gif-class {
-  max-width: 100%;
-  height: auto;
+  max-width: 20%;       /* Scale GIF size */
+  max-width: 800px;
+  height: 300px;       
   object-fit: contain;
 }
 
