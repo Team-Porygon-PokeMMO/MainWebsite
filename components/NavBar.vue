@@ -80,15 +80,6 @@ interface Link {
     image?: string;
     sublinks?: Link[]
 }
-function downloadExcel() {
-    const excelUrl = '/files/AltTracker.xlsx'; 
-    const link = document.createElement('a');
-    link.href = excelUrl;
-    link.download = 'AltTracker.xlsx'; 
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
 const leftLinks = [
     { to: '/', image: PoryHome },
     { to: '/guides/EliteFour', image: e4Image },
@@ -99,7 +90,7 @@ const leftLinks = [
             { label: 'Current Time', to: '/utilities/DayAndNightCycle', image: Icon_Clock },
             { label: 'Rock Smash Tracker', to: '/utilities/RockSmash', image: Icon_Rock },
            //{ label: 'Egg Cost Analysis', to: '/utilities/EggCostAnalysis', image: Icon_Money } 
-            { label: 'Alt Tracker (Download)', image: Icon_Pory_Guides, action: downloadExcel },
+            { label: 'Alt Tracker', image: Icon_Pory_Guides, to: 'https://docs.google.com/spreadsheets/d/1Q78Q3T-LuNbtLesCuVsFlKcOdOiY9eoKF9gd02uXnCY/edit?usp=sharing' },
             { label: 'Hatching (Deprecated)', to: '/utilities/HatchCycleTimer', image: Icon_Egg }
         ]
     }
