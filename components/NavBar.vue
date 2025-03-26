@@ -140,7 +140,7 @@ const content = ref([
 
 const isHomePage = computed(() => route.path === '/');
 
-const prizePool = ref(11385719);  // Initial prize pool value
+const prizePool = ref(12385719);  // Initial prize pool value
 </script>
 
 
