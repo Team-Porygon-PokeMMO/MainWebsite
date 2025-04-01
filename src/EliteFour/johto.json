@@ -1532,7 +1532,7 @@
                                     "Description": "if opponent switches into Salamence",
                                     "Steps": [
                                         {
-                                            "Description": "if Moxie, switch to Excadrill 3x Swords Dance + X.Speed"
+                                            "Description": "if Moxie, switch to Excadrill 2x Swords Dance + X.Speed"
                                         },
                                         {
                                             "Description": "if Intimidate, switch to Chandelure 3x Calm Mind + X.Speed"
