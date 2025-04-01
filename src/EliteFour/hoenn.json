@@ -158,10 +158,7 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if you get an Air Balloon, switch to Excadrill Stealth Rock into 2x Swords Dance + X.Speed"
-                                },
-                                {
-                                    "Description": "if you get a Focus Sash, switch to your own Excadrill Stealth Rock into 2x Swords Dance + X.Speed"
+                                    "Description": "Switch to Excadrill Stealth Rock into 2x Swords Dance + X.Speed"
                                 }
                             ]
                         }
@@ -1153,7 +1150,12 @@
                             "Description": "Use Trick, then use Stealth Rock. Switch to Chandelure 3x Calm Mind + X.Speed",
                             "Steps": [
                                 {
-                                    "Description": "if opponent switches out into Walrein, switch to Chandelure then switch to the second Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "if opponent switches out into Walrein, switch to Chandelure then switch to the second Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed",
+                                    "Steps": [
+                                {
+                                    "Description": "if opponent switches into Lanturn, kill lanturn with Energy Ball, AI sends out Skarmory, switch to second Metagross. Trick on the incoming Walrein, switch to Chandelure 3x Calm Mind + X.Speed"
+                                }
+                                            ]
                                 }
                             ]
                         }
