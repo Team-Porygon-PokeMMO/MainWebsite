@@ -281,7 +281,7 @@ const prizePool = ref(162125138);  // Initial prize pool value
   <iframe 
     width="1000" 
     height="562" 
-    src="https://www.youtube.com/embed/DY1fIa9LTdQ?rel=0&modestbranding=1&autoplay=0&controls=1" 
+    src="https://www.youtube.com/embed/jXOSxHiTC3w?rel=0&modestbranding=1&autoplay=0&controls=1" 
     title="YouTube video player" 
     frameborder="0" 
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -316,8 +316,6 @@ const prizePool = ref(162125138);  // Initial prize pool value
 </div>
 </template>
   
-
-
 
 <style scoped>
 /* Existing Navigation Styles */

@@ -1,7 +1,5 @@
 <script lang="ts">
-import { type PropType } from 'vue';
-
-// Your existing classes and types
+import type { PropType } from 'vue';
 export class Trainer {
     Name: string = "";
     IsVisible: boolean = false;
@@ -9,68 +7,27 @@ export class Trainer {
     Image?: string;
     ImagePosition?: string;
 }
-
-interface Lead {
-    Name: string;
-    IsGenSelected: boolean;
-    IsPokemonStartSelected: boolean;
-    IsVisible: boolean;
-    PokemonStartOptions?: PokemonStart[];  // Optional now
+export class Lead {
+    Name: string = "";
+    IsVisible: boolean = false;
+    Steps: Step[] = [];
 }
-
-interface Gen {
-    Name: string;
-    IsVisible: boolean;
-    Image: string;
-    ImagePosition: string;
-    GymTrainers: GymTrainer[];
-    
-}
-
-interface GymTrainer {
-    Name: string;
-    IsVisible: boolean;
-    Image: string;
-    ImagePosition: string;
-    Leads: Lead[];
-}
-
-interface PokemonStart {
-    Name: string;
-    Steps: Step[];
-}
-
 export class Step {
     Description: string = "";
     Classes: string[] = [];
     Steps: Step[] = [];
     IsVisible: boolean = false;
 }
-
 export default {
     props: {
         items: {
-            type: Array as PropType<Array<Trainer>>,  // Change Gen to Trainer
+            type: Array as PropType<Array<Trainer>>,
             required: true,
         },
     },
-    data() {
-        return {
-            selectedTrainer: null as Trainer | null,  // Change selectedGen to selectedTrainer
-            selectedPokemon: null as PokemonStart | null,  // Selected Pokémon
-        };
-    },
     methods: {
-        setTrainerActive(item: Trainer) {
-            this.selectedTrainer = item;  // Set selected Trainer
-            this.selectedPokemon = null;  // Reset selected Pokémon
-        },
-        setPokemonStartActive(pokemon: PokemonStart | null) {
-            if (pokemon) {
-                this.selectedPokemon = pokemon;  // Select Pokémon if not null
-            } else {
-                this.selectedPokemon = null;  // Reset if null
-            }
+        setActive(item: Trainer) {
+            this.items.forEach((i) => i !== item ? i.IsVisible = false : i.IsVisible = !item.IsVisible);
         },
         getImageStyling(item: Trainer) {
             if (item.Image) {
@@ -80,7 +37,7 @@ export default {
                     backgroundPosition: item?.ImagePosition ?? '25% 15%',
                     width: '100%',
                     height: '100%',
-                };
+                }
             }
         }
     },
@@ -90,44 +47,12 @@ export default {
 <template>
     <div class="text-center">
         <UDivider class="my-2" />
-
-        <!-- Trainer Selection -->
-        <div class="grid grid-cols-5">
-            <div
-                v-for="item in items"
-                :key="item.Name"
-                @click="setTrainerActive(item)"
-                :class="{ active: selectedTrainer?.Name === item.Name }"
-                class="border border-black p-2 cursor-pointer"
-            >
-                {{ item.Name }}
+        <div class="grid grid-cols-5 lg:py-0.5 cursor-pointer">
+            <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }"
+                class="py-1 sm:text-sm sm:py-2 border border-black m-0.25 md:text-base md:py-3 lg:py-5 hover:bg-cyan-700" :style="getImageStyling(item)">
+                <span class="bg-black bg-opacity-50 text-white p-0.5">{{ item.Name }}</span>
             </div>
         </div>
-
-        <!-- Pokémon Selection (Visible when a Trainer is selected) -->
-        <div v-if="selectedTrainer" class="grid grid-cols-5 mt-4">
-            <div
-                v-for="lead in selectedTrainer.Leads"
-                :key="lead.Name"
-                @click="setPokemonStartActive(lead.PokemonStartOptions ? lead.PokemonStartOptions[0] : null)" 
-                :class="{ active: selectedPokemon?.Name === lead.Name }"
-                class="border border-black p-2 cursor-pointer"
-            >
-                {{ lead.Name }}
-            </div>
-        </div>
-
-        <!-- Steps (Visible when a Pokémon is selected) -->
-        <div v-if="selectedPokemon" class="mt-4">
-            <h3>Steps for {{ selectedPokemon.Name }}</h3>
-            <div v-for="step in selectedPokemon.Steps" :key="step.Description">
-                <h4>{{ step.Description }}</h4>
-                <ul>
-                    <li v-for="subStep in step.Steps" :key="subStep.Description">
-                        {{ subStep.Description }}
-                    </li>
-                </ul>
-            </div>
-        </div>
+        <Leads v-for="item in items" :items="item.Leads" v-show="item.IsVisible" />
     </div>
 </template>
