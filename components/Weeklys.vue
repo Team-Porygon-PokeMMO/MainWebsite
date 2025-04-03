@@ -1,6 +1,7 @@
 <script lang="ts">
 import { defineComponent, type PropType } from 'vue';
 
+
 export class Battle {
   Name: string = "";
   IsVisible: boolean = false;

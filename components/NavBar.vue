@@ -83,7 +83,7 @@ interface Link {
 const leftLinks = [
     { to: '/', image: PoryHome },
     { to: '/guides/EliteFour', image: e4Image },
-   // to: '/guides/Reruns', image: reRuns },
+    //{ to: '/guides/Reruns', image: reRuns },
     {
         image: PoryUtility,
         sublinks: [
@@ -264,6 +264,8 @@ const prizePool = ref(162125138);  // Initial prize pool value
       </div>
   
       <!-- Carousel Section -->
+        <!-- Commented out for Shiny War-->
+       <!--
       <div class="carousel-wrapper">
         <div class="carousel-track" :style="{ transform: `translateX(-${100 * currentIndex}%)` }">
           <div v-for="(image, index) in images" :key="index" class="carousel-slide">
@@ -274,7 +276,18 @@ const prizePool = ref(162125138);  // Initial prize pool value
         <button @click="prevSlide" class="carousel-control left">&#10094;</button>
         <button @click="nextSlide" class="carousel-control right">&#10095;</button>
       </div>
-  
+  -->
+  <div class="flex justify-center mt-4">
+  <iframe 
+    width="1000" 
+    height="562" 
+    src="https://www.youtube.com/embed/jXOSxHiTC3w?rel=0&modestbranding=1&autoplay=0&controls=1" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+  </iframe>
+</div>
       <!-- Event Section -->
       <div class="flex justify-center mt-2">
         <h1 class="text-center">
@@ -285,6 +298,7 @@ const prizePool = ref(162125138);  // Initial prize pool value
       </h1>
     </div>
   
+    
 <div class="countdown-container">
     <client-only>
         <vue3-flip-countdown deadline="2025-04-17 22:00:00" />
@@ -302,8 +316,6 @@ const prizePool = ref(162125138);  // Initial prize pool value
 </div>
 </template>
   
-
-
 
 <style scoped>
 /* Existing Navigation Styles */

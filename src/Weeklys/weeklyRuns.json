@@ -1,298 +1,379 @@
 {
-    "Name": "Weekly",
+    "Name": "Reruns",
     "IsVisible": false,
-    "Image": "",
+    "Image": "/images/HoennBase.png",
     "ImagePosition": "25% 35%",
     "GymTrainers": [
         {
             "Name": "Ho-Oh",
             "IsVisible": false,
             "Image": "/images/weeklys/hooh.png",
-            "ImagePosition": "25% 35%",
             "Leads": [
                 {
-                    "Name": "Trick Room Team",
+                    "Name": "Ho-Oh",
                     "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Turn 1:",
                             "Steps": [
-                                                {
-                                                    "Description": "Chand: Safegaurd Rotom: Nasty Plot Luna: Protect"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Chand: Safegaurd Rotom: Nasty Plot Luna: Protect"
+                                }
+                            ]
                         },
                         {
                             "Description": "Turn 2:",
                             "Steps": [
-                                                {
-                                                    "Description": "Chand: Protect Rotom: Nasty Plot Luna: Trick room"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Chand: Protect Rotom: Nasty Plot Luna: Trick room"
+                                }
+                            ]
                         },
                         {
                             "Description": "Turn 3:",
                             "Steps": [
-                                                {
-                                                    "Description": "Chand: Swap with Luna Rotom: Tbolt AD (Hidden Power if Entei/Raikou) Luna: Psych Up (Target Rotom)"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Chand: Swap with Luna Rotom: Tbolt AD (Hidden Power if Entei/Raikou) Luna: Psych Up (Target Rotom)"
+                                }
+                            ]
                         },
                         {
                             "Description": "Turn 4:",
                             "Steps": [
-                                                {
-                                                    "Description": "Chand: Swap with Luna Rotom: TBolt AD (If present) (Hidden Power if Entei/Raikou) otherwise Ho-Oh Luna: Power Gem Hooh"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Chand: Swap with Luna Rotom: TBolt AD (If present) (Hidden Power if Entei/Raikou) otherwise Ho-Oh Luna: Power Gem Hooh"
+                                }
+                            ]
                         },
                         {
                             "Description": "Turn 5:",
                             "Steps": [
-                                                {
-                                                    "Description": "Chand: Swap with Luna Rotom: TBolt AD (If present) (Hidden Power if Entei/Raikou) otherwise Ho-Oh Luna: Power Gem Hooh"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Chand: Swap with Luna Rotom: TBolt AD (If present) (Hidden Power if Entei/Raikou) otherwise Ho-Oh Luna: Power Gem Hooh"
+                                }
+                            ]
                         },
                         {
                             "Description": "Turn 6:",
                             "Steps": [
-                                                {
-                                                    "Description": "Chand: Swap with Luna Rotom: TBolt AD (If present) (Hidden Power if Entei/Raikou) otherwise Ho-Oh Luna: Power Gem Hooh"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Chand: Swap with Luna Rotom: TBolt AD (If present) (Hidden Power if Entei/Raikou) otherwise Ho-Oh Luna: Power Gem Hooh"
+                                }
+                            ]
                         },
                         {
                             "Description": "Turn 7:",
                             "Steps": [
-                                                {
-                                                    "Description": "Chand: Swap with Luna Rotom: Light Screen Luna: Trick Room"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Chand: Swap with Luna Rotom: Light Screen Luna: Trick Room"
+                                }
+                            ]
                         },
                         {
                             "Description": "Turn 8:",
                             "Steps": [
-                                                {
-                                                    "Description": "Chand: Psych Up (Target Rotom) Rotom: Nasty Plot Luna: Power Gem"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Chand: Psych Up (Target Rotom) Rotom: Nasty Plot Luna: Power Gem"
+                                }
+                            ]
                         },
                         {
-                            "Description": "(Rebirth) Turn 9:",
+                            "Description": "Turn 9:",
                             "Steps": [
-                                                {
-                                                    "Description": "Chand: Shadowball Rotom: TBolt  Luna: Power Gem"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Chand: Shadowball Rotom: TBolt  Luna: Power Gem"
+                                }
+                            ]
                         },
                         {
                             "Description": "Turn 10:",
                             "Steps": [
-                                                {
-                                                    "Description": "Chand: Shadowball Rotom: TBolt Luna: Dies"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Chand: Shadowball Rotom: TBolt Luna: Dies"
+                                }
+                            ]
                         }
                     ]
                 }
-                
             ]
         },
         {
-            "Name": "Red",
+            "Name": "Red Gen 1",
             "IsVisible": false,
-            "Image": "/images/weeklys/hooh.png",
+            "Image": "/images/KantoBase.png",
             "ImagePosition": "25% 35%",
             "Leads": [
                 {
-                    "Name": "Gen 1",
+                    "Name": "Charizard",
                     "IsVisible": false,
-                    
                     "Steps": [
                         {
-                            "Description": "Turn 1:",
+                            "Description": "Part 1 (Lead):",
                             "Steps": [
+                                {
+                                    "Description": "Use Sucker Punch, faint out.",
+                                    "Steps": [
+                                        {
+                                            "Description": "Bring in Honchkrow to Sucker Punch",
+                                            "Steps": [
                                                 {
-                                                    "Description": "Chand: Safegaurd Rotom: Nasty Plot Luna: Protect"
+                                                    "Description": "if opponent sends out: Blastoise",
+                                                    "Steps": [
+                                                        {
+                                                            "Description": "Use Sucker Punch. If Water Spout crits and does more than 40% damage, be prepared to deal with one Pokemon. Otherwise, Sucker Punch again.",
+                                                            "Steps": [
+                                                                {
+                                                                    "Description": "if opponent sends out: Blastoise",
+                                                                    "Steps": []
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
                                                 }
-                                    ]
+                                            ]
+                                        },
+                                        {
+                                            "Description": "if opponent uses Gyro Ball, switch to Poliwrath",
+                                            "Steps": [
+                                                {
+                                                    "Description": "if Lapras comes out, Belly Drum. if Golduck is sent out, let it use Toxic on you then use Ice Punch on Vileplume"
+                                                },
+                                                {
+                                                    "Description": "if opponent swaps to Vileplume, switch to Blissey and use Trick",
+                                                    "Steps": [
+                                                        {
+                                                            "Description": "if opponent does not swap out, switch to Excadrill 2x Swords Dance",
+                                                            "Steps": [
+                                                                {
+                                                                    "Description": "if opponent switches out into Dewgong while you are setting up, switch to Poliwrath Belly Drum. if Golduck is sent out, let it use Toxic on you (use Drain Punch), then use Ice Punch on Vileplume"
+                                                                },
+                                                                {
+                                                                    "Description": "if opponent switches out into Lapras comes out, switch to Poliwrath Belly Drum. if Golduck is sent out, let it use Toxic on you (use Belly Drum), then use Ice Punch on Vileplume"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "Description": "if opponent switches out into Dewgong, switch to Poliwrath Belly Drum. if Golduck is sent out, let it use Toxic on you (use Belly Drum), then use Ice Punch on Vileplume"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                            ]
+                                }
+                            ]
                         }
                     ]
-                },
+                }
+            ]
+        },
+        {
+            "Name": "Red Gen 2",
+            "IsVisible": false,
+            "Image": "/images/JohtoBase.png",
+            "ImagePosition": "25% 35%",
+            "Leads": [
                 {
-                    "Name": "Gen 2",
+                    "Name": "Gliscor",
                     "IsVisible": false,
                     "Steps": [
                         {
                             "Description": "Turn 1:",
                             "Steps": [
-                                                {
-                                                    "Description": "Lead Metagross Trick Scarf on locking Earthquake"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Lead Metagross Trick Scarf on locking Earthquake"
+                                }
+                            ]
                         },
                         {
                             "Description": "Turn 2:",
                             "Steps": [
-                                                {
-                                                    "Description": "Swap in Cloyster"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Swap in Cloyster"
+                                }
+                            ]
                         },
                         {
                             "Description": "Turn 3 - 5:",
                             "Steps": [
-                                                {
-                                                    "Description": "Shell Smash (Until +6)"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Shell Smash (Until +6)"
+                                }
+                            ]
                         },
                         {
                             "Description": "Turn 6:",
                             "Steps": [
-                                                {
-                                                    "Description": "Substitute"
-                                                }
-                                    ]
+                                {
+                                    "Description": "Substitute"
+                                }
+                            ]
                         },
                         {
                             "Description": "Turn 7:",
                             "Steps": [
-                                                {
-                                                    "Description": "Icicle Spear Sweep"
-                                                }
-                                    ]
-                        }
-                    ]
-                },
-                {
-                    "Name": "Gen 3",
-                    "IsVisible": false,
-                    "Steps": [
-                        {
-                            "Description": "Turn 1:",
-                            "Steps": [
-                                                {
-                                                    "Description": "Lead Metagross and Trick Scarf on"
-                                                }
-                                    ]
-                        },
-                        {
-                            "Description": "Turn 2:",
-                            "Steps": [
-                                                {
-                                                    "Description": "Swap in Cloyster"
-                                                }
-                                    ]
-                        },
-                        {
-                            "Description": "Turn 3:",
-                            "Steps": [
-                                                {
-                                                    "Description": "Substitute"
-                                                }
-                                    ]
-                        },
-                        {
-                            "Description": "Turn 4 - 6:",
-                            "Steps": [
-                                                {
-                                                    "Description": "Shell Smash (Until +6)"
-                                                }
-                                    ]
-                        },
-                        {
-                            "Description": "Turn 7:",
-                            "Steps": [
-                                                {
-                                                    "Description": "Icicle Spear Sweep (Use backup that has Assault Gear + Earthquake for Pikachu)"
-                                                }
-                                    ]
-                        }
-                    ]
-                },
-                {
-                    "Name": "Gen 4",
-                    "IsVisible": false,
-                    "Steps": [
-                        {
-                            "Description": "Turn 1:",
-                            "Steps": [
-                                                {
-                                                    "Description": "Lead Cloyster to get swapped into Metagross"
-                                                }
-                                    ]
-                        },
-                        {
-                            "Description": "Turn 2:",
-                            "Steps": [
-                                                {
-                                                    "Description": "Trick Scarf on, then let Metagross faint. If you have a Rock Climb mon, sac it"
-                                                }
-                                    ]
-                        },
-                        {
-                            "Description": "Turn 3:",
-                            "Steps": [
-                                                {
-                                                    "Description": "Send out Cloyster and Substitute"
-                                                }
-                                    ]
-                        },
-                        {
-                            "Description": "Turn 4 - 6:",
-                            "Steps": [
-                                                {
-                                                    "Description": "Shell Smash (Until +6)"
-                                                }
-                                    ]
-                        },
-                        {
-                            "Description": "Turn 7:",
-                            "Steps": [
-                                                {
-                                                    "Description": "Icicle Spear Sweep"
-                                                }
-                                    ]
-                        }
-                    ]
-                },
-                {
-                    "Name": "Gen 5",
-                    "IsVisible": false,
-                    "Steps": [
-                        {
-                            "Description": "Turn 1:",
-                            "Steps": [
-                                                {
-                                                    "Description": "Lead Blissey and Stealth Rock"
-                                                }
-                                    ]
-                        },
-                        {
-                            "Description": "Turn 2:",
-                            "Steps": [
-                                                {
-                                                    "Description": "If Exca lead: let Blissey faint. Then sent out Jellicent and Trick, let Jellicent faint. Send out Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
-                                                    
-                                                }
-                                    ]
-                        },
-                        {
-                            "Description": "Turn 2:",
-                            "Steps": [
-                                                {
-                                                    "Description": "If Other leads: Switch to Jellicent, then Trick. Swap to Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
-                                                    
-                                                }
-                                    ]
+                                {
+                                    "Description": "Icicle Spear Sweep"
+                                }
+                            ]
                         }
                     ]
                 }
-                
             ]
-        }      
-        
-    ]
-}
+        },
+        {
+            "Name": "Red Gen 3",
+            "IsVisible": false,
+            "Image": "/images/HoennBase.png",
+            "ImagePosition": "25% 35%",
+            "Leads": [
+                {
+                    "Name": "Swampert",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Turn 1:",
+                            "Steps": [
+                                {
+                                   "Description": "Lead Metagross and Trick Scarf on"
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Turn 2:",
+                            "Steps": [
+                                {
+                                    "Description": "Swap in Cloyster"
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Turn 4-6:",
+                            "Steps": [
+                                {
+                                    "Description": "Shell Smash (Until +6)"
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Turn 7:",
+                            "Steps": [
+                                {
+                          "Description": "Icicle Spear Sweep (Use backup that has Assault Gear + Earthquake for Pikachu)"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Red Gen 4",
+            "IsVisible": false,
+            "Image": "/images/SinnohBase.png",
+            "ImagePosition": "25% 35%",
+            "Leads": [
+                {
+                    "Name": "Staraptor",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Turn 1:",
+                            "Steps": [
+                                {
+                                 "Description": "Lead Cloyster to get swapped into Metagross"
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Turn 2:",
+                            "Steps": [
+                                {
+                                 "Description": "Trick Scarf on, then let Metagross faint. If you have a Rock Climb mon, sac it"
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Turn 3:",
+                            "Steps": [
+                                {
+                              "Description": "Send out Cloyster and Substitute"
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Turn 4 - 6:",
+                            "Steps": [
+                                {
+                         "Description": "Shell Smash (Until +6)"
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Turn 7:",
+                            "Steps": [
+                                {
+                                    "Description": "Icicle Spear Sweep"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "Name": "Red Gen 5",
+            "IsVisible": false,
+            "Image": "/images/UnovaBase.png",
+            "ImagePosition": "25% 35%",
+            "Leads": [
+                {
+                    "Name": "Excadrill",
+                    "Steps": [
+                        {
+                            "Description": "Turn 1:",
+                            "Steps": [
+                                {
+                             "Description": "Lead Blissey and Stealth Rock"
+                                } 
+                            ]
+                        },
+                        {
+                            "Description": "Turn 2:",
+                            "Steps": [
+                                {
+                            "Description": "let Blissey faint. Then sent out Jellicent and Trick, let Jellicent faint. Send out Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
+                                } 
+                                        
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Any Other Lead",
+                    "Steps": [
+                        {
+                            "Description": "Turn 1:",
+                            "Steps": [
+                                {
+                             "Description": "Lead Blissey and Stealth Rock"
+                                }
+                                        
+                            ]
+                        },
+                        {
+                            "Description": "Turn 2:",
+                            "Steps": [
+                                {
+                            "Description": "Switch to Jellicent, then Trick. Swap to Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
+                                        
+                                } 
+                                        
+                            ]
+                        }
+                    ]
+                }
+                    ]
+                }
+            ]
+        }

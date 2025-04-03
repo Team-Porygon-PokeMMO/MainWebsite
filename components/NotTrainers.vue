@@ -47,12 +47,12 @@ export default {
 <template>
     <div class="text-center">
         <UDivider class="my-2" />
-        <div class="grid grid-cols-2 lg:py-0.5 cursor-pointer">
+        <div class="grid grid-cols-5 lg:py-0.5 cursor-pointer">
             <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }"
                 class="py-1 sm:text-sm sm:py-2 border border-black m-0.25 md:text-base md:py-3 lg:py-5 hover:bg-cyan-700" :style="getImageStyling(item)">
                 <span class="bg-black bg-opacity-50 text-white p-0.5">{{ item.Name }}</span>
             </div>
         </div>
-        <NotLeads v-for="item in items" :items="item.Leads" v-show="item.IsVisible" />
+        <Leads v-for="item in items" :items="item.Leads" v-show="item.IsVisible" />
     </div>
 </template>
