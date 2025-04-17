@@ -140,7 +140,7 @@ const content = ref([
 
 const isHomePage = computed(() => route.path === '/');
 
-const prizePool = ref(305606939);  // Initial prize pool value
+const prizePool = ref(319932495);  // Initial prize pool value
 </script>
 
 
@@ -291,19 +291,18 @@ const prizePool = ref(305606939);  // Initial prize pool value
       <!-- Event Section -->
       <div class="flex justify-center mt-2">
         <h1 class="text-center">
-        <span v-for="(char, index) in splitTitle('Shiny Wars in:')" :key="index"
+        <span v-for="(char, index) in splitTitle('Shiny Wars is here!')" :key="index"
           :class="index % 2 === 0 ? 'text-blue-500' : 'text-pink-500'">
           {{ char }}
         </span>
       </h1>
     </div>
   
-    
-<div class="countdown-container">
+<!-- <div class="countdown-container">
     <client-only>
         <vue3-flip-countdown deadline="2025-04-17 22:00:00" />
     </client-only>
-</div>
+</div> -->
 
 <!-- Centered Prize Pool Display -->
 <div class="flex justify-center items-center mt-4">
@@ -312,6 +311,10 @@ const prizePool = ref(305606939);  // Initial prize pool value
         ${{ prizePool.toLocaleString() }}
     </div>
       </div>
+      <h3 class="text-xl text-white"></h3>
+      <div style="display: flex; justify-content: center;">
+  <img src="@/assets/Team_Roster.png" alt="Image" style="max-width: 40%; height: 40%;" />
+</div>
     </template>
 </div>
 </template>
