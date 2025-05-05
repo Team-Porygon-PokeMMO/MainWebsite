@@ -26,8 +26,8 @@
     <!-- Display lootbox contents -->
     <div id="lootboxContents" v-if="selectedLootbox" class="lootbox-contents ">
       <h3>Contents:</h3>
-      <ul class="content-list">
-        <li v-for="(item, index) in selectedLootbox.contents" :key="index" class="content-item" @click="redirectHub(item)">
+      <ul class="content-list"> <!-- @click="redirectHub(item)" -->
+        <li v-for="(item, index) in selectedLootbox.contents" :key="index" class="content-item" >
           {{ item }}
         </li>
       </ul>
@@ -36,6 +36,7 @@
       <p>Please select a lootbox to view its contents.</p>
     </div>
   </div>
+  <p style="width: 100%; justify-content: center; display: flex;">Please keep in mind this is a Work-in-Progress page and as such it might not be fully completed.</p>
 </template>
 
 <script>
