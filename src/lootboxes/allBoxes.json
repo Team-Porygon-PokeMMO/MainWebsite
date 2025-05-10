@@ -795,7 +795,18 @@
             "Ground Elfbot Outfit",
             "Fire Elfbot Hat",
             "Ground Elfbot Hat",
-            "Gingerbread Man"
+            "Gingerbread Man",
+            "Star Piece x5",
+            "Big Pearl x5",
+            "Everstone x3",
+            "Nugget x5",
+            "Rare Candy x3",
+            "Big Mushroom x10",
+            "Elixir x4",
+            "Red Shard x3",
+            "Blue Shard x3",
+            "Yellow Shard x3",
+            "TM-Ice Beam x5"
         ]
     },
     {
@@ -804,7 +815,22 @@
         "iconUrl":"/images/lootboxes/goodiebag.png",
         "contents": [
             "Scythe",
-            "Skeleton Costume"
+            "Skeleton Costume",
+            "Black Glasses x3",
+            "TM-Shadow Ball x2",
+            "Rare Candy x2",
+            "TM-Taunt x2",
+            "Bunny Ears",
+            "Calcium x3",
+            "Spell Tag x3",
+            "TM-Flamethrower x2",
+            "TM-Torment x2",
+            "Candy Horns",
+            "Emerald Hat",
+            "Cat Ear",
+            "Lava Cookie",
+            "TM-Snatch x2",
+            "Carbos x3"
         ]
     },
     {
@@ -815,7 +841,8 @@
             "Holly Hairclip",
             "Santa's Little Helper Hat",
             "Candy Cane",
-            "Santa's Little Helper Outfit"
+            "Santa's Little Helper Outfit",
+            "Elfbot Hat"
         ]
     },
     {
@@ -824,7 +851,17 @@
         "iconUrl":"/images/lootboxes/goodiebag.png",
         "contents": [
             "Ghost Costume",
-            "Witch's Broomstick"
+            "Witch's Broomstick",
+            "Calcium x3",
+            "Chef Hat ?",
+            "Candy Horns ?",
+            "Bunny Ears ?",
+            "Jester Hat ?",
+            "Lava Cookie x?",
+            "Rare Candy x?",
+            "Black Glasses x?",
+            "HP Up x3?",
+            "Spell Tag x?"
         ]
     },
     {
@@ -842,7 +879,19 @@
         "iconUrl":"/images/lootboxes/mysterybox.png",
 
         "contents": [
-            "Cloud Nest Hat"
+            "Cloud Nest Hat",
+            "PP Max x3",
+            "Rare Candy x5",
+            "Elixir x3",
+            "TM-Iron Tail x3",
+            "Luxury Ball x20",
+            "Ether x5",
+            "TM-Shadow Ball x3",
+            "Tuxedo",
+            "TM-Ice Beam x3",
+            "Sweatband",
+            "Full Restore x4",
+            "PP Up x5"
         ]
     }
 ]
