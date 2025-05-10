@@ -108,64 +108,78 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Part 1 (Lead):",
+                            "Description": "Second Pokemon (or +1):",
                             "Steps": [
                                 {
-                                    "Description": "Use Sucker Punch, faint out.",
+                                    "Description": "if opponent switches out into Blastoise",
                                     "Steps": [
                                         {
-                                            "Description": "Bring in Honchkrow to Sucker Punch",
-                                            "Steps": [
-                                                {
-                                                    "Description": "if opponent sends out: Blastoise",
-                                                    "Steps": [
-                                                        {
-                                                            "Description": "Use Sucker Punch. If Water Spout crits and does more than 40% damage, be prepared to deal with one Pokemon. Otherwise, Sucker Punch again.",
-                                                            "Steps": [
-                                                                {
-                                                                    "Description": "if opponent sends out: Blastoise",
-                                                                    "Steps": []
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "Description": "if opponent uses Gyro Ball, switch to Poliwrath",
-                                            "Steps": [
-                                                {
-                                                    "Description": "if Lapras comes out, Belly Drum. if Golduck is sent out, let it use Toxic on you then use Ice Punch on Vileplume"
-                                                },
-                                                {
-                                                    "Description": "if opponent swaps to Vileplume, switch to Blissey and use Trick",
-                                                    "Steps": [
-                                                        {
-                                                            "Description": "if opponent does not swap out, switch to Excadrill 2x Swords Dance",
-                                                            "Steps": [
-                                                                {
-                                                                    "Description": "if opponent switches out into Dewgong while you are setting up, switch to Poliwrath Belly Drum. if Golduck is sent out, let it use Toxic on you (use Drain Punch), then use Ice Punch on Vileplume"
-                                                                },
-                                                                {
-                                                                    "Description": "if opponent switches out into Lapras comes out, switch to Poliwrath Belly Drum. if Golduck is sent out, let it use Toxic on you (use Belly Drum), then use Ice Punch on Vileplume"
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "Description": "if opponent switches out into Dewgong, switch to Poliwrath Belly Drum. if Golduck is sent out, let it use Toxic on you (use Belly Drum), then use Ice Punch on Vileplume"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
+                                            "Description": "Use Sucker Punch. If Water Spout crits and does more than 40% damage, be prepared to deal with one Pokemon. Otherwise, Sucker Punch again."
                                         }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Charizard",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Protect once for Solar Power Chip. (only 87.5% chance to OHKO without protect). Then Sucker Punch."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Espeon",
+                                    "Steps": [
+                                        {
+                                            "Description": "If you are at 0 atk stage due to Superpower, protect once to negate wish on next turn, in case Charizard comes out. Then Sucker Punch."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Venusaur",
+                                    "Steps": [
+                                        {
+                                            "Description": "if sun is up use Sucker Punch, otherwise Aerial Ace."
+                                        }
+                                    ]
+                                }
+                                                     
                             ]
+                                
+                            
+                        },       
+                        {
+                            "Description": "The Rest (+2)",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches out into Snorlax",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Superpower. Honchkrow needs +2 for Superpower to OHKO through reflect. If it didnt’ lead, it usually comes out 5th or 6th so you’ll be fine."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Pikachu/Espeon/Blastoise/Charizard",
+                                    "Steps": [
+                                        {
+                                            "Description": "Sucker Punch"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Venusaur",
+                                    "Steps": [
+                                        {
+                                            "Description": "if sun is up use Sucker Punch, otherwise Aerial Ace."
+                                        }
+                                    ]
                                 }
                             ]
                         }
                     ]
                 }
             ]
+
         },
         {
             "Name": "Red Gen 2",
