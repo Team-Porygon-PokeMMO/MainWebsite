@@ -1,6 +1,6 @@
 [
     {
-        "Description": "Ho-Oh Trick Room Details and Accreditation",
+        "Description": "Ho-Oh Details, Accreditation & PokePaste",
         "Tips": [
             {
                 "Description": "Huge thanks to caav for providing this content to the community. Caav's details are below."
@@ -21,27 +21,49 @@
         ]
     },
     {
-        "Description": "Red Gen 2, 3, and 4 Details and Accreditation",
+        "Description": "Red Details and Accreditation",
         "Tips": [
             {
-                "Description": "Huge thanks to caav for providing this content to the community. Caav's details are below."
+                "Url": "https://docs.google.com/document/d/e/2PACX-1vRDwnlB8bsbWs4iwhXhrZBQxXYfoXIf1GQwzqD6pYpRsM5ywAZrmYn94gmwonFGonYcHcV5o4qxOf-z/pub",
+                "Name": "Written Guide of all strats by c4v & secretgg & Xanarchy & Rainer"
+            },
+            {
+                "Url": "https://docs.google.com/spreadsheets/d/1OQEcz4lVXPoMS-6AyPQUPvhk-wETeZnV2T6GF6eTqIo/edit?gid=849575436#gid=849575436",
+                "Name": "Reds Team info by secretgg"
+            },
+            {
+                "Url": "https://docs.google.com/document/d/e/2PACX-1vRCIUQ-RVxxjyWaezsOWI5coa3H5ZEePFmT0JJtlw3N1uRPZc8mPiRMGxD6xpUNQuP_Ii-muKuqJgcc/pub",
+                "Name": "Written Guide of Gen 1 by c4v"
+            },
+            {
+                "Url": "https://www.youtube.com/watch?v=orSMl0CviBw&ab_channel=caav",
+                "Name": "Video of Gen 1 by c4v"
             },
             {
                 "Url": "https://www.youtube.com/watch?v=M9mic0JvpwI&ab_channel=caav",
-                "Name": "YouTube Video"
+                "Name": "Gen 2/3/4 Video by c4v"
+            },
+            {
+                "Url": "https://www.bilibili.com/video/BV1Cy4y1w7Vt/?vd_source=a4d63fef7dfbfe8174c7acb193e5c03d",
+                "Name": "Gen 5 Video (CN)"
             }
         ]
     },
     {
-        "Description": "Red Gen 5 Details and Accreditation",
+        "Description": "PokePaste",
         "Tips": [
             {
-                "Description": "Huge thanks to caav for providing this content to the community. Caav's details are below."
+                "Url": "https://pokepast.es/513634f4aac1a1b0",
+                "Name": "Gen 1 PokePaste"
             },
             {
-                "Url": "https://www.bilibili.com/video/BV1Cy4y1w7Vt/?vd_source=a4d63fef7dfbfe8174c7acb193e5c03d",
-                "Name": "Video (CN)"
+                "Url": "https://pokepast.es/9a2eb067d340bef9",
+                "Name": "Gen 2/3/4 PokePaste"
+            },
+            {
+                "Url": "https://pokepast.es/5cec038e838aeb31",
+                "Name": "Gen 5 PokePaste"
             }
-        ]
+                ]
     }
 ]
