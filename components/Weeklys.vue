@@ -115,5 +115,8 @@ export default defineComponent({
         <p>{{ step.Description }}</p>
       </div>
     </div>
+    <div>
+        <ReRunCredits />
+    </div>
   </div>
 </template>
