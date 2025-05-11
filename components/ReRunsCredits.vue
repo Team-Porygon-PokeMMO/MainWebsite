@@ -4,13 +4,6 @@ type Credit = {
     Tag?: string
 }
 let rerunCredits: { [id: string]: Credit; } = {};
-rerunCredits["denzi"] = {
-    Name: "FreeReign",
-    Tag: "@denzi_norski"
-}
-rerunCredits["juggerton"] = {
-    Name: "Juggerton"
-}
 rerunCredits["dronad"] = {
     Name: "Dronad",
     Tag: "@dronad"
@@ -31,24 +24,12 @@ rerunCredits["dareeka"] = {
     Name: "Dareeka",
     Tag: "@dareeka"
 }
-rerunCredits["manitos"] = {
-    Name: "Manitos",
-    Tag: "@manitoss"
-}
-rerunCredits["jerizzle"] = {
-    Name: "Jerizzle",
-    Tag: "@jiro.san"
-}
 rerunCredits["tcb"] = {
     Name: "TheClosedBox",
     Tag: "@theclosedbox"
 }
 rerunCredits["Team Porygon"] = {
     Name: "Team Porygon"
-}
-rerunCredits["jeriel"] = {
-    Name: "Odozo",
-    Tag: "@jeriel.xyz"
 }
 rerunCredits["c4v"] = {
     Name: "caav",
@@ -108,12 +89,12 @@ export default {
     <div class="text-center">
         <h3 class="m-4 menu-label title" @click="toggleView()">Credits {{ getIfExpandable() }}</h3>
         <div v-if="active">
-            <div v-for="(creditSection, index) in fullCredits">
+            <div v-for="(creditSection, index) in fullCredits" :key="index">
                 <UDivider class="p-2" v-if="index > 0" />
                 <span class="menu-label">{{ creditSection.Name }}</span>
                 <div class="grid grid-flow-col-dense auto-cols-auto">
-                    <div v-for="credit in creditSection.Credits">
-                        <span>{{ getCredit(credit) }}</span>
+                    <div v-for="(credit, i) in creditSection.Credits" :key="i">
+                        <span class="mr-2">{{ getCredit(credit) }}</span> <!-- Add margin -->
                     </div>
                 </div>
             </div>

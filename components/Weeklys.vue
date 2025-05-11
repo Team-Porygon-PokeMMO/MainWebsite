@@ -1,5 +1,7 @@
 <script lang="ts">
 import { defineComponent, type PropType } from 'vue';
+import RerunsCredits from '@/components/RerunsCredits.vue';
+
 
 
 export class Battle {
@@ -114,9 +116,6 @@ export default defineComponent({
       <div v-for="step in selectedMission.Steps" :key="step.Description" class="py-2">
         <p>{{ step.Description }}</p>
       </div>
-    </div>
-    <div>
-        <ReRunCredits />
     </div>
   </div>
 </template>

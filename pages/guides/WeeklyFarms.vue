@@ -91,6 +91,6 @@ export default {
             </ul>
             <Regions :items="regions" class="menu-list" />
         </div>
-    <EliteFourCredits />
+  <RerunsCredits />
   </div>
 </template>
