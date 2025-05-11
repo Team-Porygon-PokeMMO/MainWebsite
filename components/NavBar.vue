@@ -13,7 +13,6 @@ import Awards from '@/assets/images/NavBar/NavBarIcons/120x40_AwardsCorners.png'
 
 import { RiFileExcel2Line } from "oh-vue-icons/icons";
 
-
 import Icon_Clock from '@/assets/images/NavBar/NavBarIcons/Icon_Clock.png';
 import Icon_Egg from '@/assets/images/NavBar/NavBarIcons/Icon_Egg.png';
 import Icon_Rock from '@/assets/images/NavBar/NavBarIcons/Icon_Rock.png';
@@ -36,15 +35,17 @@ const route = useRoute();
 // Title split function
 const splitTitle = (title: string) => title.split('')
 
+import TeamPicShinyWar2 from '/images/TeamPics/SW2_Picture.png'
 import GamblinImage from '/images/TeamPics/Gamblin.png'
 import HalloweenImage from '/images/TeamPics/Halloween24_4.png'
 import TeamPicShinyWar24 from '/images/TeamPics/teampicFinal.png'
 // Carousel data
 const currentIndex = ref(0)
 const images = [
-  { src: GamblinImage, alt: "Image 1" },
+  { src: TeamPicShinyWar2, alt: "Image 1" },
   { src: HalloweenImage, alt: "Image 2" },
-  { src: TeamPicShinyWar24, alt: "Image 3" }
+  { src: TeamPicShinyWar24, alt: "Image 3" },
+  { src: GamblinImage, alt: "Image 4" }
 ]
 
 let interval: ReturnType<typeof setInterval> | null = null
@@ -83,7 +84,7 @@ interface Link {
 const leftLinks = [
     { to: '/', image: PoryHome },
     { to: '/guides/EliteFour', image: e4Image },
-    //{ to: '/guides/Reruns', image: reRuns },
+    { to: '/guides/Reruns', image: reRuns },
     {
         image: PoryUtility,
         sublinks: [
@@ -91,8 +92,8 @@ const leftLinks = [
             { label: 'Rock Smash Tracker', to: '/utilities/RockSmash', image: Icon_Rock },
            //{ label: 'Egg Cost Analysis', to: '/utilities/EggCostAnalysis', image: Icon_Money } 
             { label: 'Alt Tracker', image: Icon_Pory_Guides, to: 'https://docs.google.com/spreadsheets/d/1Q78Q3T-LuNbtLesCuVsFlKcOdOiY9eoKF9gd02uXnCY/edit?usp=sharing' },
-            { label: 'Hatching (Deprecated)', to: '/utilities/HatchCycleTimer', image: Icon_Egg },
-            { label: 'Goodies', to: '/utilities/Goodies', image: Icon_Vanity }
+            { label: 'Goodies', to: '/utilities/Goodies', image: Icon_Vanity },
+            { label: 'Hatching (Deprecated)', to: '/utilities/HatchCycleTimer', image: Icon_Egg }
         ]
     }
 ] as Link[];
@@ -265,8 +266,8 @@ const prizePool = ref(319932495);  // Initial prize pool value
       </div>
   
       <!-- Carousel Section -->
-        <!-- Commented out for Shiny War-->
-       <!--
+       
+       
       <div class="carousel-wrapper">
         <div class="carousel-track" :style="{ transform: `translateX(-${100 * currentIndex}%)` }">
           <div v-for="(image, index) in images" :key="index" class="carousel-slide">
@@ -277,7 +278,9 @@ const prizePool = ref(319932495);  // Initial prize pool value
         <button @click="prevSlide" class="carousel-control left">&#10094;</button>
         <button @click="nextSlide" class="carousel-control right">&#10095;</button>
       </div>
-  -->
+ 
+      <!-- Commented out for reuse later -->
+       <!--
   <div class="flex justify-center mt-4">
   <iframe 
     width="1000" 
@@ -289,15 +292,7 @@ const prizePool = ref(319932495);  // Initial prize pool value
     allowfullscreen>
   </iframe>
 </div>
-      <!-- Event Section -->
-      <div class="flex justify-center mt-2">
-        <h1 class="text-center">
-        <span v-for="(char, index) in splitTitle('Shiny Wars is here!')" :key="index"
-          :class="index % 2 === 0 ? 'text-blue-500' : 'text-pink-500'">
-          {{ char }}
-        </span>
-      </h1>
-    </div>
+-->
   
 <!-- <div class="countdown-container">
     <client-only>
@@ -305,7 +300,9 @@ const prizePool = ref(319932495);  // Initial prize pool value
     </client-only>
 </div> -->
 
+<!-- Commented out for reuse later -->
 <!-- Centered Prize Pool Display -->
+ <!--
 <div class="flex justify-center items-center mt-4">
     <div class="text-green-600 text-3xl font-mono text-center">
         <h3 class="text-xl text-white">Current Prize Pool:</h3>
@@ -316,6 +313,7 @@ const prizePool = ref(319932495);  // Initial prize pool value
       <div style="display: flex; justify-content: center;">
   <img src="@/assets/Team_Roster.png" alt="Image" style="max-width: 40%; height: 40%;" />
 </div>
+-->
     </template>
 </div>
 </template>

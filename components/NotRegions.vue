@@ -46,9 +46,10 @@ export default {
                 return {
                     backgroundImage: `linear-gradient(rgb(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(${item.Image})`,
                     backgroundSize: 'cover',
-                    backgroundPosition: item?.ImagePosition ?? '25% 15%',
-                    width: '100%',
-                    height: '100%',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    width: '50%',
+                    height: '300px',
                 }
             }
         }
@@ -59,11 +60,11 @@ export default {
 <template>
     <div class="text-center">
         <!-- Region Selector: List of Regions -->
-        <div class="grid grid-cols-1 lg:py-0.5 cursor-pointer">
+        <div class="grid grid-cols-1 justify-items-center lg:py-0.5 cursor-pointer">
             <div v-for="item in items" @click="setActive(item)" :class="{ active: item.IsVisible }"
                 class="py-1 sm:text-sm sm:py-2 border border-black m-0.25 md:text-base md:py-3 lg:py-5 hover:bg-cyan-700"
                 :style="getImageStyling(item)">
-                <span class="bg-black bg-opacity-50 text-white p-0.5">{{ item.Name }}</span>
+               
             </div>
         </div>
 

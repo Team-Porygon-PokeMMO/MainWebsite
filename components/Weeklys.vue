@@ -1,5 +1,7 @@
 <script lang="ts">
 import { defineComponent, type PropType } from 'vue';
+import RerunsCredits from '@/components/RerunsCredits.vue';
+
 
 
 export class Battle {

@@ -1,8 +1,6 @@
 {
-    "Name": "Reruns",
     "IsVisible": false,
-    "Image": "/images/HoennBase.png",
-    "ImagePosition": "25% 35%",
+    "Image": "/images/Reruns_Logo.png",
     "GymTrainers": [
         {
             "Name": "Ho-Oh",
@@ -100,66 +98,340 @@
         {
             "Name": "Red Gen 1",
             "IsVisible": false,
-            "Image": "/images/KantoBase.png",
-            "ImagePosition": "25% 35%",
+            "Image": "/images/Red.png",
+            "ImagePosition": "center",
             "Leads": [
                 {
                     "Name": "Charizard",
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Part 1 (Lead):",
+                            "Description": "Use Sucker Punch, faint out. Then Bring in Honchkrow to Sucker Punch."
+                        },
+                        {
+                            "Description": "Second Pokemon (or +1):",
                             "Steps": [
                                 {
-                                    "Description": "Use Sucker Punch, faint out.",
+                                    "Description": "if opponent switches out into Blastoise",
                                     "Steps": [
                                         {
-                                            "Description": "Bring in Honchkrow to Sucker Punch",
-                                            "Steps": [
-                                                {
-                                                    "Description": "if opponent sends out: Blastoise",
-                                                    "Steps": [
-                                                        {
-                                                            "Description": "Use Sucker Punch. If Water Spout crits and does more than 40% damage, be prepared to deal with one Pokemon. Otherwise, Sucker Punch again.",
-                                                            "Steps": [
-                                                                {
-                                                                    "Description": "if opponent sends out: Blastoise",
-                                                                    "Steps": []
-                                                                }
-                                                            ]
-                                                        }
-                                                    ]
-                                                }
-                                            ]
-                                        },
-                                        {
-                                            "Description": "if opponent uses Gyro Ball, switch to Poliwrath",
-                                            "Steps": [
-                                                {
-                                                    "Description": "if Lapras comes out, Belly Drum. if Golduck is sent out, let it use Toxic on you then use Ice Punch on Vileplume"
-                                                },
-                                                {
-                                                    "Description": "if opponent swaps to Vileplume, switch to Blissey and use Trick",
-                                                    "Steps": [
-                                                        {
-                                                            "Description": "if opponent does not swap out, switch to Excadrill 2x Swords Dance",
-                                                            "Steps": [
-                                                                {
-                                                                    "Description": "if opponent switches out into Dewgong while you are setting up, switch to Poliwrath Belly Drum. if Golduck is sent out, let it use Toxic on you (use Drain Punch), then use Ice Punch on Vileplume"
-                                                                },
-                                                                {
-                                                                    "Description": "if opponent switches out into Lapras comes out, switch to Poliwrath Belly Drum. if Golduck is sent out, let it use Toxic on you (use Belly Drum), then use Ice Punch on Vileplume"
-                                                                }
-                                                            ]
-                                                        },
-                                                        {
-                                                            "Description": "if opponent switches out into Dewgong, switch to Poliwrath Belly Drum. if Golduck is sent out, let it use Toxic on you (use Belly Drum), then use Ice Punch on Vileplume"
-                                                        }
-                                                    ]
-                                                }
-                                            ]
+                                            "Description": "Use Sucker Punch. If Water Spout crits and does more than 40% damage, be prepared to deal with one Pokemon. Otherwise, Sucker Punch again."
                                         }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Espeon",
+                                    "Steps": [
+                                        {
+                                            "Description": "If you are at 0 atk stage due to Superpower, protect once to negate wish on next turn, in case Charizard comes out. Then Sucker Punch."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Venusaur",
+                                    "Steps": [
+                                        {
+                                            "Description": "if sun is up use Sucker Punch, otherwise Aerial Ace."
+                                        }
+                                    ]
+                                }
                             ]
+                        },
+                        {
+                            "Description": "The Rest (+2)",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches out into Snorlax",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Superpower. Honchkrow needs +2 for Superpower to OHKO through reflect. If it didnt’ lead, it usually comes out 5th or 6th so you’ll be fine."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Pikachu/Espeon/Blastoise",
+                                    "Steps": [
+                                        {
+                                            "Description": "Sucker Punch"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Venusaur",
+                                    "Steps": [
+                                        {
+                                            "Description": "if sun is up use Sucker Punch, otherwise Aerial Ace."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Espeon",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Sac swap to bring in Honchkrow cleanly and Sucker Punch."
+                        },
+                        {
+                            "Description": "Second Pokemon (or +1):",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches out into Blastoise",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Sucker Punch. If Water Spout crits and does more than 40% damage, be prepared to deal with one Pokemon. Otherwise, Sucker Punch again."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Charizard",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Protect once for Solar Power Chip. (only 87.5% chance to OHKO without protect). Then Sucker Punch."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Venusaur",
+                                    "Steps": [
+                                        {
+                                            "Description": "if sun is up use Sucker Punch, otherwise Aerial Ace."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "The Rest (+2)",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches out into Snorlax",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Superpower. Honchkrow needs +2 for Superpower to OHKO through reflect. If it didnt’ lead, it usually comes out 5th or 6th so you’ll be fine."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Pikachu/Blastoise/Charizard",
+                                    "Steps": [
+                                        {
+                                            "Description": "Sucker Punch"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Venusaur",
+                                    "Steps": [
+                                        {
+                                            "Description": "if sun is up use Sucker Punch, otherwise Aerial Ace."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Blastoise",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Use Sucker Punch. If you crit, do nothing because we don’t want to faint Blastoise. If you don’t crit and Blastoise does not crit you, use Sucker Punch again and faint out. Bring in Honchkrow to Sucker Punch"
+                        },
+                        {
+                            "Description": "Second Pokemon (or +1):",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches out into Charizard",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Protect once for Solar Power Chip. (only 87.5% chance to OHKO without protect). Then Sucker Punch."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Venusaur",
+                                    "Steps": [
+                                        {
+                                            "Description": "if sun is up use Sucker Punch, otherwise Aerial Ace."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Espeon",
+                                    "Steps": [
+                                        {
+                                            "Description": "If you are at 0 atk stage due to Superpower, protect once to negate wish on next turn, in case Charizard comes out. Then Sucker Punch."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "The Rest (+2)",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches out into Snorlax",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Superpower. Honchkrow needs +2 for Superpower to OHKO through reflect. If it didnt’ lead, it usually comes out 5th or 6th so you’ll be fine."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Pikachu/Espeon/Charizard",
+                                    "Steps": [
+                                        {
+                                            "Description": "Sucker Punch"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Venusaur",
+                                    "Steps": [
+                                        {
+                                            "Description": "if sun is up use Sucker Punch, otherwise Aerial Ace."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Venusaur",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Use Sucker Punch. If you crit, do nothing because we don’t want to faint Venusaur with another crit. If you don’t crit and Venusuar does not crit you, use Sucker Punch again and faint out Bring in Honchkrow to Aerial Ace."
+                        },
+                        {
+                            "Description": "Second Pokemon (or +1):",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches out into Charizard",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Protect once for Solar Power Chip. (only 87.5% chance to OHKO without protect). Then Sucker Punch."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Blastoise",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Sucker Punch. If Water Spout crits and does more than 40% damage, be prepared to deal with one Pokemon. Otherwise, Sucker Punch again."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Espeon",
+                                    "Steps": [
+                                        {
+                                            "Description": "If you are at 0 atk stage due to Superpower, protect once to negate wish on next turn, in case Charizard comes out. Then Sucker Punch."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "The Rest (+2)",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches out into Snorlax",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Superpower. Honchkrow needs +2 for Superpower to OHKO through reflect. If it didnt’ lead, it usually comes out 5th or 6th so you’ll be fine."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Pikachu/Espeon/Blastoise",
+                                    "Steps": [
+                                        {
+                                            "Description": "Sucker Punch"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Venusaur",
+                                    "Steps": [
+                                        {
+                                            "Description": "if sun is up use Sucker Punch, otherwise Aerial Ace."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Pikachu",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Swap to a sacrifice pokemon that will get OHKO’d by Volt Switch. The AI will always bring in Snorlax, so bring in Skuntank. Then proceed to Snorlax as a lead strategy."
+                        }
+                    ]
+                },
+                {
+                    "Name": "Snorlax",
+                    "IsVisible": false,
+                    "Steps": [
+                        {
+                            "Description": "Use Defog to clear Reflect. Use Explosion. Bring in Honchkrow. If Snorlax is below 45.5% use Sucker Punch, Otherwise use Super Power."
+                        },
+                        {
+                            "Description": "Second Pokemon (or +1):",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches out into Charizard",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Protect once for Solar Power Chip. (only 87.5% chance to OHKO without protect). Then Sucker Punch."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Blastoise",
+                                    "Steps": [
+                                        {
+                                            "Description": "Use Sucker Punch. If Water Spout crits and does more than 40% damage, be prepared to deal with one Pokemon. Otherwise, Sucker Punch again."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Espeon",
+                                    "Steps": [
+                                        {
+                                            "Description": "If you are at 0 atk stage due to Superpower, protect once to negate wish on next turn, in case Charizard comes out. Then Sucker Punch."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "The Rest (+2)",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switches out into Pikachu/Espeon/Blastoise",
+                                    "Steps": [
+                                        {
+                                            "Description": "Sucker Punch"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "Description": "if opponent switches out into Venusaur",
+                                    "Steps": [
+                                        {
+                                            "Description": "if sun is up use Sucker Punch, otherwise Aerial Ace."
+                                        }
+                                    ]
                                 }
                             ]
                         }
@@ -170,8 +442,8 @@
         {
             "Name": "Red Gen 2",
             "IsVisible": false,
-            "Image": "/images/JohtoBase.png",
-            "ImagePosition": "25% 35%",
+            "Image": "/images/Red.png",
+            "ImagePosition": "center",
             "Leads": [
                 {
                     "Name": "Gliscor",
@@ -224,8 +496,8 @@
         {
             "Name": "Red Gen 3",
             "IsVisible": false,
-            "Image": "/images/HoennBase.png",
-            "ImagePosition": "25% 35%",
+            "Image": "/images/Red.png",
+            "ImagePosition": "center",
             "Leads": [
                 {
                     "Name": "Swampert",
@@ -235,7 +507,7 @@
                             "Description": "Turn 1:",
                             "Steps": [
                                 {
-                                   "Description": "Lead Metagross and Trick Scarf on"
+                                    "Description": "Lead Metagross and Trick Scarf on"
                                 }
                             ]
                         },
@@ -259,7 +531,7 @@
                             "Description": "Turn 7:",
                             "Steps": [
                                 {
-                          "Description": "Icicle Spear Sweep (Use backup that has Assault Gear + Earthquake for Pikachu)"
+                                    "Description": "Icicle Spear Sweep (Use backup that has Assault Gear + Earthquake for Pikachu)"
                                 }
                             ]
                         }
@@ -270,8 +542,8 @@
         {
             "Name": "Red Gen 4",
             "IsVisible": false,
-            "Image": "/images/SinnohBase.png",
-            "ImagePosition": "25% 35%",
+            "Image": "/images/Red.png",
+            "ImagePosition": "center",
             "Leads": [
                 {
                     "Name": "Staraptor",
@@ -281,7 +553,7 @@
                             "Description": "Turn 1:",
                             "Steps": [
                                 {
-                                 "Description": "Lead Cloyster to get swapped into Metagross"
+                                    "Description": "Lead Cloyster to get swapped into Metagross"
                                 }
                             ]
                         },
@@ -289,7 +561,7 @@
                             "Description": "Turn 2:",
                             "Steps": [
                                 {
-                                 "Description": "Trick Scarf on, then let Metagross faint. If you have a Rock Climb mon, sac it"
+                                    "Description": "Trick Scarf on, then let Metagross faint. If you have a Rock Climb mon, sac it"
                                 }
                             ]
                         },
@@ -297,7 +569,7 @@
                             "Description": "Turn 3:",
                             "Steps": [
                                 {
-                              "Description": "Send out Cloyster and Substitute"
+                                    "Description": "Send out Cloyster and Substitute"
                                 }
                             ]
                         },
@@ -305,7 +577,7 @@
                             "Description": "Turn 4 - 6:",
                             "Steps": [
                                 {
-                         "Description": "Shell Smash (Until +6)"
+                                    "Description": "Shell Smash (Until +6)"
                                 }
                             ]
                         },
@@ -324,8 +596,8 @@
         {
             "Name": "Red Gen 5",
             "IsVisible": false,
-            "Image": "/images/UnovaBase.png",
-            "ImagePosition": "25% 35%",
+            "Image": "/images/Red.png",
+            "ImagePosition": "center",
             "Leads": [
                 {
                     "Name": "Excadrill",
@@ -334,17 +606,53 @@
                             "Description": "Turn 1:",
                             "Steps": [
                                 {
-                             "Description": "Lead Blissey and Stealth Rock"
-                                } 
+                                    "Description": "Lead Blissey and Stealth Rock"
+                                }
                             ]
                         },
                         {
                             "Description": "Turn 2:",
                             "Steps": [
                                 {
-                            "Description": "let Blissey faint. Then sent out Jellicent and Trick, let Jellicent faint. Send out Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
-                                } 
-                                        
+                                    "Description": "let Blissey faint. Then sent out Jellicent and Trick, let Jellicent faint. Send out Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Pikachu",
+                    "Steps": [
+                        {
+                            "Description": "Turn 1:",
+                            "Steps": [
+                                {
+                                    "Description": "Trick Specs with Chansey."
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Turn 2:",
+                            "Steps": [
+                                {
+                                    "Description": "Click Stealth Rock"
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Turn 3",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent stays, make sure everything else is fainted for Roar. 3x Dragon Dance and Sub Vs. Electric"
+                                },
+                                {
+                                    "Description": "if opponent switches out into Emboar",
+                                    "Steps": [
+                                        {
+                                            "Description": "Go Hard on Jellicent, it may stay in and wild charge, if so 3x Dragon Dance and Sub Vs. Electric. If it switches back to Pikachu, go back to Chansey. If it stays on electric, you’re fine to set up. If it switches a final time to Excadrill, just do the Excadrill start which is faint and go to Jellicent again to trick on ground."
+                                        }
+                                    ]
+                                }
                             ]
                         }
                     ]
@@ -356,24 +664,21 @@
                             "Description": "Turn 1:",
                             "Steps": [
                                 {
-                             "Description": "Lead Blissey and Stealth Rock"
+                                    "Description": "Lead Blissey and Stealth Rock"
                                 }
-                                        
                             ]
                         },
                         {
                             "Description": "Turn 2:",
                             "Steps": [
                                 {
-                            "Description": "Switch to Jellicent, then Trick. Swap to Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
-                                        
-                                } 
-                                        
+                                    "Description": "Switch to Jellicent, then Trick. Swap to Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
+                                }
                             ]
                         }
                     ]
                 }
-                    ]
-                }
             ]
         }
+    ]
+}

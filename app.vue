@@ -25,17 +25,17 @@ export default {
     }
     colorMode.preference = themePreference
   },
-  methods: {
-    toggleTheme() {
-      const colorMode = useColorMode();
-      colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark';
-      localStorage?.setItem('colorMode', colorMode.preference);
-    }
-  },
   computed: {
     getThemeToggle() {
       const colorMode = useColorMode();
       return colorMode.preference === 'dark' ? 'Light Mode' : 'Dark Mode';
+    }
+  },
+   methods: {
+    toggleTheme() {
+      const colorMode = useColorMode();
+      colorMode.preference = colorMode.preference === 'dark' ? 'light' : 'dark';
+      localStorage?.setItem('colorMode', colorMode.preference);
     }
   }
 };

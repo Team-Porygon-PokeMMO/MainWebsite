@@ -37,6 +37,9 @@
     </div>
   </div>
   <p style="width: 100%; justify-content: center; display: flex;">Please keep in mind this is a Work-in-Progress page and as such it might not be fully completed.</p>
+  <div>
+        <GoodiesCredits />
+    </div>
 </template>
 
 <script>
