@@ -80,7 +80,7 @@ export default {
         <div class="menu p-4 ">
             <p class="menu-label cursor-pointer text-lg mx-auto max-w-2xl text-center" @click="toggleTips()">
                 {{ tipsVisible ?
-                    "▼" : "▶" }} Accreditation and Additional Information
+                    "▼" : "▶" }} PokePastes, Written Guides, Accreditations and Additional Information
             </p>
             <ul class="menu-list text-label" v-show="tipsVisible">
                 <NotTips :items="tips" />
