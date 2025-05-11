@@ -29,7 +29,7 @@ export default {
 </script>
 
 <template>
-    <div class="text-left bg-cool-950 bg-opacity-85">
+    <div class="text-left bg-cool-950 bg-opacity-85 mx-auto max-w-2xl text-center">
         <div v-for="item in items"
             class="relative text-cool-50 text-lg tracking-tight sm:text-sm md:text-base lg:text-lg">
             <div class="border py-0.25 px-0.5 rounded my-1 border-cool-700">

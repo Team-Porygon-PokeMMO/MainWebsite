@@ -1,8 +1,6 @@
 {
-    "Name": "Reruns",
     "IsVisible": false,
-    "Image": "/images/HoennBase.png",
-    "ImagePosition": "25% 35%",
+    "Image": "/images/Reruns_Logo.png",
     "GymTrainers": [
         {
             "Name": "Ho-Oh",
@@ -100,8 +98,8 @@
         {
             "Name": "Red Gen 1",
             "IsVisible": false,
-            "Image": "/images/KantoBase.png",
-            "ImagePosition": "25% 35%",
+            "Image": "/images/Red.png",
+            "ImagePosition": "center",
             "Leads": [
                 {
                     "Name": "Charizard",
@@ -137,11 +135,8 @@
                                         }
                                     ]
                                 }
-                                                     
                             ]
-                                
-                            
-                        },    
+                        },
                         {
                             "Description": "The Rest (+2)",
                             "Steps": [
@@ -207,9 +202,8 @@
                                         }
                                     ]
                                 }
-                                                     
                             ]
-                        },    
+                        },
                         {
                             "Description": "The Rest (+2)",
                             "Steps": [
@@ -275,9 +269,8 @@
                                         }
                                     ]
                                 }
-                                                     
                             ]
-                        },    
+                        },
                         {
                             "Description": "The Rest (+2)",
                             "Steps": [
@@ -343,9 +336,8 @@
                                         }
                                     ]
                                 }
-                                                     
                             ]
-                        },    
+                        },
                         {
                             "Description": "The Rest (+2)",
                             "Steps": [
@@ -420,9 +412,8 @@
                                         }
                                     ]
                                 }
-                                                     
                             ]
-                        },    
+                        },
                         {
                             "Description": "The Rest (+2)",
                             "Steps": [
@@ -447,13 +438,12 @@
                     ]
                 }
             ]
-
         },
         {
             "Name": "Red Gen 2",
             "IsVisible": false,
-            "Image": "/images/JohtoBase.png",
-            "ImagePosition": "25% 35%",
+            "Image": "/images/Red.png",
+            "ImagePosition": "center",
             "Leads": [
                 {
                     "Name": "Gliscor",
@@ -506,8 +496,8 @@
         {
             "Name": "Red Gen 3",
             "IsVisible": false,
-            "Image": "/images/HoennBase.png",
-            "ImagePosition": "25% 35%",
+            "Image": "/images/Red.png",
+            "ImagePosition": "center",
             "Leads": [
                 {
                     "Name": "Swampert",
@@ -517,7 +507,7 @@
                             "Description": "Turn 1:",
                             "Steps": [
                                 {
-                                   "Description": "Lead Metagross and Trick Scarf on"
+                                    "Description": "Lead Metagross and Trick Scarf on"
                                 }
                             ]
                         },
@@ -541,7 +531,7 @@
                             "Description": "Turn 7:",
                             "Steps": [
                                 {
-                          "Description": "Icicle Spear Sweep (Use backup that has Assault Gear + Earthquake for Pikachu)"
+                                    "Description": "Icicle Spear Sweep (Use backup that has Assault Gear + Earthquake for Pikachu)"
                                 }
                             ]
                         }
@@ -552,8 +542,8 @@
         {
             "Name": "Red Gen 4",
             "IsVisible": false,
-            "Image": "/images/SinnohBase.png",
-            "ImagePosition": "25% 35%",
+            "Image": "/images/Red.png",
+            "ImagePosition": "center",
             "Leads": [
                 {
                     "Name": "Staraptor",
@@ -563,7 +553,7 @@
                             "Description": "Turn 1:",
                             "Steps": [
                                 {
-                                 "Description": "Lead Cloyster to get swapped into Metagross"
+                                    "Description": "Lead Cloyster to get swapped into Metagross"
                                 }
                             ]
                         },
@@ -571,7 +561,7 @@
                             "Description": "Turn 2:",
                             "Steps": [
                                 {
-                                 "Description": "Trick Scarf on, then let Metagross faint. If you have a Rock Climb mon, sac it"
+                                    "Description": "Trick Scarf on, then let Metagross faint. If you have a Rock Climb mon, sac it"
                                 }
                             ]
                         },
@@ -579,7 +569,7 @@
                             "Description": "Turn 3:",
                             "Steps": [
                                 {
-                              "Description": "Send out Cloyster and Substitute"
+                                    "Description": "Send out Cloyster and Substitute"
                                 }
                             ]
                         },
@@ -587,7 +577,7 @@
                             "Description": "Turn 4 - 6:",
                             "Steps": [
                                 {
-                         "Description": "Shell Smash (Until +6)"
+                                    "Description": "Shell Smash (Until +6)"
                                 }
                             ]
                         },
@@ -606,8 +596,8 @@
         {
             "Name": "Red Gen 5",
             "IsVisible": false,
-            "Image": "/images/UnovaBase.png",
-            "ImagePosition": "25% 35%",
+            "Image": "/images/Red.png",
+            "ImagePosition": "center",
             "Leads": [
                 {
                     "Name": "Excadrill",
@@ -616,17 +606,53 @@
                             "Description": "Turn 1:",
                             "Steps": [
                                 {
-                             "Description": "Lead Blissey and Stealth Rock"
-                                } 
+                                    "Description": "Lead Blissey and Stealth Rock"
+                                }
                             ]
                         },
                         {
                             "Description": "Turn 2:",
                             "Steps": [
                                 {
-                            "Description": "let Blissey faint. Then sent out Jellicent and Trick, let Jellicent faint. Send out Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
-                                } 
-                                        
+                                    "Description": "let Blissey faint. Then sent out Jellicent and Trick, let Jellicent faint. Send out Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "Name": "Pikachu",
+                    "Steps": [
+                        {
+                            "Description": "Turn 1:",
+                            "Steps": [
+                                {
+                                    "Description": "Trick Specs with Chansey."
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Turn 2:",
+                            "Steps": [
+                                {
+                                    "Description": "Click Stealth Rock"
+                                }
+                            ]
+                        },
+                        {
+                            "Description": "Turn 3",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent stays, make sure everything else is fainted for Roar. 3x Dragon Dance and Sub Vs. Electric"
+                                },
+                                {
+                                    "Description": "if opponent switches out into Emboar",
+                                    "Steps": [
+                                        {
+                                            "Description": "Go Hard on Jellicent, it may stay in and wild charge, if so 3x Dragon Dance and Sub Vs. Electric. If it switches back to Pikachu, go back to Chansey. If it stays on electric, you’re fine to set up. If it switches a final time to Excadrill, just do the Excadrill start which is faint and go to Jellicent again to trick on ground."
+                                        }
+                                    ]
+                                }
                             ]
                         }
                     ]
@@ -638,24 +664,21 @@
                             "Description": "Turn 1:",
                             "Steps": [
                                 {
-                             "Description": "Lead Blissey and Stealth Rock"
+                                    "Description": "Lead Blissey and Stealth Rock"
                                 }
-                                        
                             ]
                         },
                         {
                             "Description": "Turn 2:",
                             "Steps": [
                                 {
-                            "Description": "Switch to Jellicent, then Trick. Swap to Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
-                                        
-                                } 
-                                        
+                                    "Description": "Switch to Jellicent, then Trick. Swap to Flygon then 3x Dragon Dance into Substitute. Dragon Claw for Hydreigon/Serperior and Earthquake the rest."
+                                }
                             ]
                         }
                     ]
                 }
-                    ]
-                }
             ]
         }
+    ]
+}
