@@ -76,8 +76,6 @@ export default {
 <template>
     <div class="m-4 main">
         <div class="p-2">
-            <h2 class="text-center">Re-runs</h2>
-            <h3 class="text-center">Blep.</h3>
         </div>
         <div class="menu p-4 ">
             <p class="menu-label cursor-pointer text-lg mx-auto max-w-2xl text-center" @click="toggleTips()">
