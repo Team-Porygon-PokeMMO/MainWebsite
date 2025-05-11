@@ -1,0 +1,756 @@
+
+[
+    {
+    "name": "Lucky Red Envelope",
+    "id": "lucky red envelope",
+    "contents": [
+      "Battle Points Charm (+100%)",
+      "Bad Face Slate",
+      "Steel Slate",
+      "Cobra Hoodie",
+      "Sand Snake Coat",
+      "Riches Charm (+100%)",
+      "Memorial Orb",
+      "Mystic Mirror",
+      "Mandarin Fruit (Mandarin)",
+      "Elegant Antennae",
+      "Coiled Snake Hat",
+      "Dumplings",
+      "Traditional New Year Outfit",
+      "Flower Crown",
+      "Lucky Red Envelope",
+      "Fireball Slate",
+      "Water Drop Slate",
+      "Thunder Slate",
+      "Aquamarine Slate",
+      "Elegant Scarf",
+      "Icicle Slate",
+      "Sand Snake Scarf",
+      "Fist Slate",
+      "Poisonous Slate",
+      "Earth Slate",
+      "Blue Sky Slate",
+      "EXP Charm (+100%)",
+      "Miraculous Slate",
+      "Jade Insect Slate",
+      "Item Magnet Charm (+100%)",
+      "Ogre Slate",
+      "Dragon Slate",
+      "Tiny White Wings",
+      "Golden Cuffed Ponytail",
+      "Spring Flower Hairpin"
+    ]
+  },
+  {
+    "name": "Red Envelope",
+    "contents": [
+      "Bad Face Slate",
+      "Steel Slate",
+      "Sand Snake Coat",
+      "Riches Charm (+75%)",
+      "Red Firework",
+      "Purple Firework",
+      "Memorial Ball",
+      "Yellow Firework",
+      "Green Firework",
+      "Mandarin",
+      "Elegant Antennae",
+      "Dumplings",
+      "Traditional New Year Outfit",
+      "Flower Crown",
+      "Fireball Slate",
+      "Splash Slate",
+      "Thunder Slate",
+      "Aquamarine Slate",
+      "Elegant Scarf",
+      "Icicle Slate",
+      "Sand Snake Scarf",
+      "Fist Slate",
+      "Poison Slate",
+      "Futou",
+      "EXP Charm (+50%)",
+      "Earth Slate",
+      "Blue Sky Slate",
+      "Magical Slate",
+      "Jade Worm Slate",
+      "Rock Slate",
+      "Ogre Slate",
+      "Dragon Slate"
+    ]
+  },
+  {
+    "name": "Santa's Present",
+    "contents": [
+      "Battle Points Charm (+100%)",
+      "Christmas Beard",
+      "Riches Charm (+100%)",
+      "Premier Ball",
+      "Xmas Present",
+      "Snowboarder Scarf",
+      "Snow Leopard Tail",
+      "Snow Leopard Ears",
+      "Red Wish Tag Earrings",
+      "Green Wish Tag Earrings",
+      "EXP Charm (+100%)",
+      "Snow Leopard Outfit",
+      "Item Magnet Charm (+100%)",
+      "Teal Star Rod",
+      "Red Star Rod"
+    ]
+  },
+  {
+    "name": "Xmas Present",
+    "contents": [
+      "Snowboarder Scarf",
+      "Snow Leopard Tail",
+      "Snow Leopard Ears",
+      "Santa Beard",
+      "Red Wish Tag Earrings",
+      "Teal Wish Tag Earrings",
+      "Mystery Elf Ball",
+      "Mystery Super Ball",
+      "Premier Ball"
+    ]
+  },
+  {
+    "name": "Pumpkin Goodie Bag",
+    "contents": [
+      "Riches Charm (+100%)",
+      "Goodie Bag",
+      "Shovel",
+      "Shadow Cape",
+      "Mini Halloween Top Hat",
+      "Premier Ball",
+      "Ghostly Candle",
+      "Candy Corn Shoes",
+      "Candy Corn Pants",
+      "Shiny Dark Crystal Particle Effect",
+      "EXP Charm (+100%)",
+      "Candy Corn Sweater",
+      "Trick or Treat Bucket",
+      "Item Magnet Charm (+100%)"
+    ]
+  },
+  {
+    "name": "Goodie Bag",
+    "contents": [
+      "Ghostly Candle",
+      "Candy Corn Shoes",
+      "Candy Corn Pants",
+      "Candy Corn Sweater",
+      "Trick or Treat Bucket",
+      "Mini Halloween Top Hat",
+      "Rage Candy Bar",
+      "Premier Ball"
+    ]
+  },
+  {
+    "name": "Lucky Red Envelope (2024)",
+    "contents": [
+      "Bad Face Slate",
+      "Iron Slate",
+      "Riches Charm (+100%)",
+      "Premier Ball",
+      "Mystic Mirror",
+      "Red Envelope - 2024",
+      "Mandarin",
+      "Dragon Antlers",
+      "Wyrm Worm",
+      "Dumplings",
+      "Traditional New Year Outfit",
+      "Temporal Cape",
+      "Battle Axe",
+      "Fireball Slate",
+      "Water Drop Slate",
+      "Thunder Slate",
+      "Spirit of Spring Particle Effect",
+      "Aquamarine Slate",
+      "Icicle Slate",
+      "Fist Slate",
+      "Poison Slate",
+      "Earth Slate",
+      "EXP Charm (+100% of the total)",
+      "Blue Sky Slate",
+      "Magical Slate",
+      "Jade Worm Slate",
+      "Rock Slate",
+      "Ogre Slate",
+      "Spring Flower Hairpin",
+      "Dragon Slate"
+    ]
+  },
+  {
+    "name": "Red Envelope (2024)",
+    "contents": [
+      "Bad Face Slate",
+      "Steel Slate",
+      "Riches Charm (+75%)",
+      "Red Firework",
+      "Premier Ball",
+      "Purple Firework",
+      "Yellow Firework",
+      "Green Firework",
+      "Mandarin Fruit",
+      "Apple Worms",
+      "Wyrm Worm",
+      "Dumplings",
+      "Traditional New Year Outfit",
+      "Battle Axe",
+      "Dragon Wings",
+      "Fireball Slab",
+      "Water Drop Slab",
+      "Thunder Slab",
+      "Aqua Slab",
+      "Icicle Slab",
+      "Fist Slab",
+      "Futou",
+      "Poison Slab",
+      "EXP Charm (+50%)",
+      "Earth Slab (+50%)",
+      "Earth Slate",
+      "Blue Sky Slate",
+      "Magical Slate",
+      "Jade Worm Slate",
+      "Rock Slate",
+      "Demon Slate",
+      "Dragon Slate"
+    ]
+  },
+  {
+    "name": "Pumpkin Goodie Bag (2023)",
+    "contents": [
+      "Mummy Body Wrap",
+      "Halloween Gift Bag - 2023 (Goodie Bag)",
+      "Riches Charm (+100%)",
+      "Bat Hat",
+      "Shiny Phantom Particle Effect",
+      "Ghostly Lantern",
+      "EXP Charm (+100%)",
+      "Mini Halloween Top Hat",
+      "Mummy Head Wrap",
+      "Premier Ball",
+      "Item Magnet Charm (+100%)"
+    ]
+  },
+  {
+    "name": "Goodie Bag (2023)",
+    "contents": [
+      "Rage Candy Bar",
+      "Mummy Body Wrap",
+      "Mummy Head Wrap",
+      "Halloween Trick or Treat Bucket",
+      "Mini Halloween Top Hat",
+      "Premier Ball"
+    ]
+  },
+  {
+    "name": "Lucky Red Envelope 2023",
+    "contents": [
+      "Bunny Tail",
+      "Traditional New Year Outfit",
+      "Spirit of Spring Particle Effect",
+      "Riches Charm (+100%)",
+      "Futou",
+      "EXP Charm (+100%)",
+      "Premier Ball",
+      "White Rabbit Plush",
+      "Mandarin",
+      "Dumplings",
+      "Spring Flower Hairpin"
+    ]
+  },
+  {
+    "name": "Red Envelope 2023",
+    "contents": [
+      "Traditional New Year Outfit",
+      "Riches Charm (+75%)",
+      "Futou",
+      "EXP Charm (+50%)",
+      "Red Firework",
+      "Premier Ball",
+      "Purple Firework",
+      "Yellow Firework",
+      "Green Firework",
+      "Mandarin",
+      "Dumplings"
+    ]
+  },
+  {
+    "name": "Santa's Present 2022",
+    "contents": [
+      "Battle Points Charm (+100%)",
+      "Red Christmas Present Costume",
+      "Xmas Decorations Particle Effect",
+      "Pink Christmas Present Costume",
+      "Riches Charm (+100%)",
+      "Red Christmas Present Hat",
+      "Pink Christmas Present Hat",
+      "EXP Charm (+100%)",
+      "Psychic Bird Mask",
+      "Item Magnet Charm (+100%)"
+    ]
+  },
+  {
+    "name": "Xmas Present 2022",
+    "contents": [
+      "Red Christmas Present Costume",
+      "Pink Christmas Present Costume",
+      "Red Christmas Present Hat",
+      "Pink Christmas Present Hat",
+      "Premier Ball",
+      "Reindeer Costume",
+      "Reindeer Hood"
+    ]
+  },
+  {
+    "name": "2022 Pumpkin Goodie Bag",
+    "contents": [
+      "Riches Charm (+100%)",
+      "Shinigami Robe",
+      "Premier Ball",
+      "Halloween Gift Bag - 2022 (Goodie Bag)",
+      "Bones Uniform",
+      "Bones Cap",
+      "Shiny Menacing Spirit Particle Effect",
+      "Skull Helmet",
+      "Shadow Skull Helmet",
+      "Bone Club",
+      "Shadow Bone Club",
+      "EXP Charm (+100%)",
+      "Item Magnet Charm (+100%)"
+    ]
+  },
+  {
+    "name": "Goodie Bag 2022",
+    "contents": [
+      "Rage Candy Bar",
+      "Hellcat Costume",
+      "Hellcat Hood",
+      "Skull Helmet",
+      "Bone Club",
+      "Iron Hero Costume",
+      "Premier Ball",
+      "Iron Hero Helmet"
+    ]
+  },
+  {
+    "name": "Golden Anniversary Chest",
+    "contents": [
+      "Fox Tail",
+      "Battle Points Charm (+100%)",
+      "Riches Charm (+100%)",
+      "Bug Enthusiast Outfit",
+      "Fishing Outfit",
+      "Psychic Training Helmet",
+      "Fishing Cap",
+      "Anniversary Cake Particle Effect",
+      "Shiny Johto Friends Particle Effect",
+      "Tamer Outfit",
+      "Anniversary Medallion",
+      "Lollipop",
+      "Trainer's Jacket",
+      "EXP Charm (+100%)",
+      "Item Magnet Charm (+100%)"
+    ]
+  },
+  {
+    "name": "Anniversary Chest",
+    "contents": [
+      "Fox Tail",
+      "Riches Charm (+75%)",
+      "Bug Enthusiast Outfit",
+      "Fishing Outfit",
+      "PokeMMO Cap",
+      "Red Firework",
+      "Psychic Training Helmet",
+      "Purple Firework",
+      "Fishing Cap",
+      "Yellow Firework",
+      "Green Firework",
+      "Anniversary Cake Particle Effect",
+      "Tamer Outfit",
+      "Anniversary Medallion",
+      "Lollipop",
+      "Trainer's Jacket",
+      "EXP Charm (+50%)",
+      "Item Magnet Charm (+50%)",
+      "Battle Points Charm (+50%)"
+    ]
+  },
+  {
+    "name": "2022 Lucky Red Envelope",
+    "contents": [
+      "Battle Points Charm (+100%)",
+      "Riches Charm (+100%)",
+      "Red Mandarin Hat",
+      "Red Firework",
+      "Red Envelope - 2022",
+      "Premier Ball",
+      "Purple Firework",
+      "Yellow Firework",
+      "Tiger Tail",
+      "Green Firework",
+      "Tiger Costume",
+      "Item Magnet Charm (+100%)",
+      "Tiger Hood"
+    ]
+  },
+  {
+    "name": "2022 Red Envelope",
+    "contents": [
+      "Traditional New Year Outfit",
+      "Red Firework",
+      "Premier Ball",
+      "Purple Firework",
+      "Yellow Firework",
+      "Tiger Tail",
+      "Green Firework",
+      "Tiger Costume",
+      "Mandarin",
+      "Futou",
+      "EXP Charm (+50%)",
+      "Dumplings",
+      "Tiger Hood"
+    ]
+  },
+  {
+    "name": "Santa's Present 2021",
+    "contents": [
+      "Riches Charm (+100%)",
+      "Xmas Gift Sack",
+      "Xmas Present - 2021",
+      "Winged Helmet",
+      "Premier Ball",
+      "Item Magnet Charm (+50%)",
+      "Nutcracker Doll",
+      "Battle Points Charm (+50%)"
+    ]
+  },
+  {
+    "name": "2021 Xmas Present",
+    "contents": [
+      "Ice Cream Clerk Uniform",
+      "Riches Charm (+75%)",
+      "EXP Charm (+25%)",
+      "Red Xmas Stocking",
+      "Ice Cream Hood",
+      "Premier Ball"
+    ]
+  },
+  {
+    "name": "2021 Pumpking Goodie Bag",
+    "contents": [
+      "Goodie Bag - 2021",
+      "Pointed Hat",
+      "Zombie Head",
+      "Zombie Costume",
+      "Red Oni Mask",
+      "Pumpking's Delight Particle Effect",
+      "Eerie Howl Particle Effect",
+      "Mage's Staff",
+      "Graveyard Particle Effect",
+      "Teddy Ears"
+    ]
+  },
+  {
+    "name": "2021 Goodie Bag",
+    "contents": [
+      "Angry Buns",
+      "Pointed Hat",
+      "Zombie Head",
+      "Zombie Costume",
+      "Red Oni Mask",
+      "Teddy Ears"
+    ]
+  },
+  {
+    "name": "2021 Lucky Red Envelope",
+    "contents": [
+      "Battle Points Charm (+100%)",
+      "Traditional New Year Outfit",
+      "Ox Horns",
+      "Red Envelope - 2021",
+      "Riches Charm (+100%)",
+      "Ox Costume",
+      "Ox Tail",
+      "Zodiac Particle Effect",
+      "Red Firework",
+      "Premier Ball",
+      "Purple Firework",
+      "Yellow Firework",
+      "Green Firework",
+      "EXP Charm (+100%)",
+      "Item Magnet Charm (+100%)"
+    ]
+  },
+  {
+    "name": "Red Envelope 2021",
+    "contents": [
+      "Traditional New Year Outfit",
+      "Ox Horns",
+      "Riches Charm (+75%)",
+      "Ox Costume",
+      "Ox Tail",
+      "Zodiac Particle Effect",
+      "Red Firework",
+      "Premier Ball",
+      "Purple Firework",
+      "Yellow Firework",
+      "Green Firework",
+      "Mandarin",
+      "EXP Charm (+50%)",
+      "Dumplings"
+    ]
+  },
+  {
+    "name": "2020 Santa's Present",
+    "contents": [
+      "Toy Plane",
+      "Retro Games Handheld",
+      "Teddy Bear",
+      "Normal Elfbot Outfit",
+      "EXP Charm (+100%)",
+      "Premier Ball",
+      "Normal Elfbot Hat",
+      "Xmas Present - 2020",
+      "Battle Points Charm (+50%)"
+    ]
+  },
+  {
+    "name": "2020 Xmas Present",
+    "contents": [
+      "Riches Charm (+75%)",
+      "Teddy Bear",
+      "Normal Elfbot Outfit",
+      "EXP Charm (+25%)",
+      "Premier Ball",
+      "Normal Elfbot Hat"
+    ]
+  },
+  {
+    "name": "2020 Pumpking Goodie Bag",
+    "contents": [
+      "Crook & Flail",
+      "Pointed Hat",
+      "Spinning Scythe Particle Effect",
+      "Spider's Web Particle Effect",
+      "Zombie Grip Particle Effect",
+      "Pumpking's Delight Particle Effect",
+      "Pharaoh Headdress",
+      "Goodie Bag - 2020",
+      "Teddy Ears",
+      "Pharaoh Outfit"
+    ]
+  },
+  {
+    "name": "2020 Goodie Bag",
+    "contents": [
+      "Angry Buns",
+      "Crook & Flail",
+      "Pointed Hat",
+      "Pharaoh Headdress",
+      "Teddy Ears",
+      "Pharaoh Outfit"
+    ]
+  },
+  {
+    "name": "2020 Lucky Red Envelope",
+    "contents": [
+      "EXP Charm (+25%)",
+      "Red Envelope - 2020",
+      "Small Black Rat Costume",
+      "Red Firework",
+      "Item Magnet Charm (+25%)",
+      "Premier Ball",
+      "Purple Firework",
+      "Yellow Firework",
+      "Small Black Rat Hood",
+      "Green Firework",
+      "Battle Points Charm (+25%)",
+      "Small Black Rat Tail"
+    ]
+  },
+  {
+    "name": "2020 Red Envelope",
+    "contents": [
+      "EXP Charm (+25%)",
+      "Small Purple Rat Costume",
+      "Red Firework",
+      "Premier Ball",
+      "Purple Firework",
+      "Small Purple Rat Hood",
+      "Yellow Firework",
+      "Green Firework",
+      "Small Purple Rat Tail",
+      "Mandarin"
+    ]
+  },
+  {
+    "name": "2019 Pumpking Goodie Bag",
+    "contents": [
+      "Pungent Stench Particle Effect",
+      "Kaiju Costume",
+      "Goodie Bag - 2019",
+      "Witch's Haze Particle Effect",
+      "Pumpkin Costume",
+      "Pumpking's Delight Particle Effect",
+      "Kaiju Hood",
+      "Pumpkin Cap"
+    ]
+  },
+  {
+    "name": "2019 Goodie Bag",
+    "contents": [
+      "Kaiju Costume",
+      "Angry Buns",
+      "Pumpkin Costume",
+      "Pointed Hat",
+      "Teddy Ears",
+      "Kaiju Hood",
+      "Pumpkin Cap"
+    ]
+  },
+  {
+    "name": "2019 Lucky Red Envelope",
+    "contents": [
+      "Paper Lantern Particle Effect"
+    ]
+  },
+  {
+    "name": "2019 Red Envelope",
+    "contents": [
+      "Pig Costume",
+      "Pig Hood",
+      "Pig Tail",
+      "Premier Ball",
+      "Mandarin"
+    ]
+  },
+  {
+    "name": "Santa's Present 2018",
+    "contents": [
+      "Steel Elfbot Outfit",
+      "Ice Elfbot Outfit",
+      "Dark Elfbot Outfit",
+      "Xmas Present - 2018",
+      "Premier Ball",
+      "Fighting Elfbot Hat",
+      "Poison Elfbot Hat",
+      "Steel Elfbot Hat",
+      "Ice Elfbot Hat",
+      "Dark Elfbot Hat",
+      "Snowflake Particle Effect",
+      "Fighting Elfbot Outfit",
+      "Present Particle Effect",
+      "Poison Elfbot Outfit"
+    ]
+  },
+  {
+    "name": "2018 Xmas Present",
+    "contents": [
+      "Steel Elfbot Outfit",
+      "Ice Elfbot Outfit",
+      "Dark Elfbot Outfit",
+      "Snowman Hood",
+      "Premier Ball",
+      "Fighting Elfbot Hat",
+      "Poison Elfbot Hat",
+      "Snowman Costume",
+      "Steel Elfbot Hat",
+      "Ice Elfbot Hat",
+      "Dark Elfbot Hat",
+      "Fighting Elfbot Outfit",
+      "Poison Elfbot Outfit"
+    ]
+  },
+  {
+    "name": "2018 Pumpking Goodie Bag",
+    "contents": [
+      "Hitodama Particle Effect",
+      "Ghosts Particle Effect",
+      "The Eye Particle Effect",
+      "Pumpking's Delight Particle Effect",
+      "Premier Ball"
+    ]
+  },
+  {
+    "name": "2018 Goodie Bag",
+    "contents": [
+      "Ghost Purging Outfit",
+      "Ecto Goggles",
+      "Proto Pack"
+    ]
+  },
+  {
+    "name": "2017 Xmas Present",
+    "contents": [
+      "Flying Elfbot Hat",
+      "Bug Elfbot Outfit",
+      "Ghost Elfbot Outfit",
+      "Bug Elfbot Hat",
+      "Ghost Elfbot Hat",
+      "Dragon Elfbot Outfit",
+      "Dragon Elfbot Hat",
+      "Gingerbread Costume",
+      "Sleigh Bell Ribbons",
+      "Flying Elfbot Outfit",
+      "Gingerbread Hood"
+    ]
+  },
+  {
+    "name": "2016 Xmas Present",
+    "contents": [
+      "Nutcracker Uniform",
+      "Nutcracker Hat",
+      "Electric Elfbot Outfit",
+      "Grass Elfbot Outfit",
+      "Electric Elfbot Hat",
+      "Psychic Elfbot Outfit",
+      "Grass Elfbot Hat",
+      "Water Elfbot Outfit",
+      "Psychic Elfbot Hat",
+      "Fire Elfbot Outfit",
+      "Water Elfbot Hat",
+      "Ground Elfbot Outfit",
+      "Fire Elfbot Hat",
+      "Ground Elfbot Hat",
+      "Gingerbread Man"
+    ]
+  },
+  {
+    "name": "2016 Goodie Bag",
+    "contents": [
+      "Scythe",
+      "Skeleton Costume"
+    ]
+  },
+  {
+    "name": "2015 Xmas Present",
+    "contents": [
+      "Holly Hairclip",
+      "Santa's Little Helper Hat",
+      "Candy Cane",
+      "Santa's Little Helper Outfit"
+    ]
+  },
+  {
+    "name": "2015 Goodie Bag",
+    "contents": [
+      "Ghost Costume",
+      "Witch's Broomstick"
+    ]
+  },
+  {
+    "name": "Mystery Box",
+    "contents": [
+      "Jester Hat",
+      "R Cap"
+    ]
+  },
+  {
+    "name": "PVP Mystery Box Legacy",
+    "contents": [
+      "Cloud Nest Hat"
+    ]
+  }
+]
