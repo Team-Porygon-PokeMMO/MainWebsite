@@ -91,7 +91,8 @@ const leftLinks = [
             { label: 'Rock Smash Tracker', to: '/utilities/RockSmash', image: Icon_Rock },
            //{ label: 'Egg Cost Analysis', to: '/utilities/EggCostAnalysis', image: Icon_Money } 
             { label: 'Alt Tracker', image: Icon_Pory_Guides, to: 'https://docs.google.com/spreadsheets/d/1Q78Q3T-LuNbtLesCuVsFlKcOdOiY9eoKF9gd02uXnCY/edit?usp=sharing' },
-            { label: 'Hatching (Deprecated)', to: '/utilities/HatchCycleTimer', image: Icon_Egg }
+            { label: 'Hatching (Deprecated)', to: '/utilities/HatchCycleTimer', image: Icon_Egg },
+            { label: 'Goodies', to: '/utilities/Goodies', image: Icon_Vanity }
         ]
     }
 ] as Link[];
