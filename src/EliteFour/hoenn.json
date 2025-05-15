@@ -1189,7 +1189,7 @@
                             "Description": "if opponent uses Thunderbolt, switch to Excadrill and use Stealth Rock then switch to Blissey and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "if opponent switches into Blissey, use Stealth Rock then switch to Chandelure 4x Calm Mind + X.Speed"
+                            "Description": "if opponent switches into Blissey, use Stealth Rock then switch to Chandelure 4x Calm Mind + X.Speed (If opponent switches into Walrein continue setup)"
                         }
                     ]
                 },

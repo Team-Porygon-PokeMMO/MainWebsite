@@ -512,7 +512,7 @@
                                             "Description": "if it stays, switch into Chandelure: 6x Calm Mind + X.Speed"
                                         },
                                         {
-                                            "Description": "if it switches into Umbreon, switch into Blissey and use Trick as Lucario comes out. Switch to Chandelure: 6x Calm Mind + X.Speed"
+                                            "Description": "if it switches into Umbreon, switch into Blissey and use Trick as Lucario comes out. Switch to Chandelure: 5x Calm Mind + X.Speed"
                                         }
                                     ]
                                 },
@@ -2344,7 +2344,12 @@
                                     "Description": "if you get an Aguav Berry, switch to Excadrill: Stealth Rock + 3x Swords Dance + X.Speed"
                                 },
                                 {
-                                    "Description": "if you get a Life Orb or Rocky Helmet, switch to Excadrill: Stealth Rock + 2x Swords Dance + X.Speed"
+                                    "Description": "if you get a Life Orb or Rocky Helmet, switch to Excadrill: 2x Swords Dance + X.Speed then Stealth Rock",
+                                 "Steps": [
+                                        {
+                                            "Description": "if opponent switches out to Salamence, switch to Chandelure. Switch to second Metagross. Use Trick then switch to Chandelure Calm Mind + X.Speed "
+                                        }
+                                 ]
                                 },
                                 {
                                     "Description": "if it switches into Conkeldurr, use Stealth Rock, then switch to Chandelure 3x Calm Mind + X.Speed"
@@ -2676,6 +2681,9 @@
                                             "Description": "if it switches into Archeops , switch into Excadrill and 2x Swords Dance and X.Speed"
                                         }
                                     ]
+                                },
+                                 {
+                                    "Description": "if it switches into Conkeldurr, switch 2nd Metagross in, Trick to lock Close Combat. Switch back into Chandelure 4x Calm Mind + X.Speed"
                                 }
                             ]
                         }

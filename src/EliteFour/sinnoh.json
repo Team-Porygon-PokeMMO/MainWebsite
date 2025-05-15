@@ -313,7 +313,7 @@
                             "Description": "if it stays, use Stealth Rock then switch to Chandelure 2x Calm Mind + X.Speed"
                         },
                         {
-                            "Description": "if Steelix is sent out, switch to Excadrill Stealth Rock then Swords Dance + X.Speed"
+                            "Description": "if Steelix is sent out, switch to Excadrill Swords Dance + X.Speed then Stealth Rock (Experimental)"
                         }
                     ]
                 },
@@ -740,6 +740,9 @@
                                 },
                                 {
                                     "Description": "And it switches into Rhyperior, switch back to Excadrill then switch to Metagross and use Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "And it switches into Absol, switch to Metagross and Trick to lock Flamethrower. Switch to Chandelure 3x Calm Mind + X.Speed"
                                 }
                             ]
                         },
@@ -759,7 +762,12 @@
                             "Description": "Use Trick;"
                         },
                         {
-                            "Description": "Switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
+                            "Description": "Switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed",
+                            "Steps": [
+                        {
+                            "Description": "if opponent swaps to Durant, switch to Chandelure. Switch to second Metagross and use Trick, switch back to Chandelure and 4x Calm Mind + X.Speed"
+                        }
+                    ]
                         }
                     ]
                 },
@@ -1083,7 +1091,7 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch to Excadrill and use Stealth Rock. Switch to Blissey then switch to Chandelure. Switch back into Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "Switch to Excadrill and use Stealth Rock. Switch to Blissey and Trick. Switch back into Excadrill 2x Swords Dance + X.Speed"
                         }
                     ]
                 },
@@ -1893,7 +1901,15 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey then switch to Metagross and use Trick. Use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "Switch to Blissey.",
+                             "Steps": [
+                                {
+                                    "Description": "if it switched into Hydreigon use Stealth Rock. Then switch to Chandelure 3x Calm Mind + X.Speed"
+                                },
+                                {
+                                    "Description": "if it stays then switch to Metagross and use Trick. Use Stealth Rock then switch to Chandelure 3x Calm Mind + X.Speed"
+                                }
+                            ]
                         }
                     ]
                 },
