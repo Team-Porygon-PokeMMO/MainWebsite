@@ -2290,6 +2290,9 @@
                         },
                         {
                             "Description": "if opponent switches into Tyranitar, switch to Excadrill. Stealth Rock then 2x Swords Dance + X.Speed"
+                        },
+                        {
+                            "Description": "if opponent switches into Kangaskan, switch to second Metagross. Switch to Chandelure 2x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -2298,7 +2301,15 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Use Trick as it locks Flamethrower. Use Stealth Rock then switch out into Chandelure 3x Calm Mind + X.Speed"
+                            "Description": "Use Trick as it locks Flamethrower. Use Stealth Rock then switch out into Chandelure 3x Calm Mind + X.Speed",
+                             "Steps": [
+                                        {
+                                            "Description": "if opponent switches out to Gyarados, switch to 2nd Metagross and use Trick. Switch to Poliwrath Belly Drum + X Speed"
+                                        },
+                                        {
+                                            "Description": "if Gyarados switches back to Eelektross, switch to Excadrill 2x Swords Dance + X Speed"
+                                        }
+                                    ]
                         }
                     ]
                 },
