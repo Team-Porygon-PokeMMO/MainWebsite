@@ -1485,7 +1485,7 @@
                             ]
                         },
                         {
-                            "Description": "if you get Life Orb, switch to Chandelure and use Shadow Ball. Out comes Magmortar, so switch to Blissey Trick and use Stealth Rock. Switch back to Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "if you get Life Orb, switch to Chandelure and use Shadow Ball. Out comes Salamence/Magmortar, so switch to Blissey Trick and use Stealth Rock. Switch back to Chandelure 2x Calm Mind + X.Speed"
                         }
                     ]
                 },
@@ -1572,6 +1572,9 @@
                             "Steps": [
                                 {
                                     "Description": "if it switches into Dragonite, switch to Blissey then switch to Chandelure. Switch to Excadrill 2x Swords Dance + X.Speed"
+                                },
+                                {
+                                    "Description": "if it switches into Charizard, switch to Blissey and Trick. Switch to Chandelure 2x Calm Mind + X.Speed"
                                 }
                             ]
                         },
@@ -2009,7 +2012,12 @@
                     "IsVisible": false,
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey then use Trick. Switch to Excadrill 2x Swords Dance + X.Speed"
+                            "Description": "Switch to Blissey then use Trick. Switch to Excadrill 2x Swords Dance + X.Speed",
+                            "Steps": [
+                                {
+                                    "Description": "if opponent switch to Lapras, switch to Poliwrath Belly Drum + X Speed"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -2145,10 +2153,7 @@
                             "Description": "Use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if it uses Fire Punch, switch to Chandelure: 3x Calm Mind + X.Speed"
-                                },
-                                {
-                                    "Description": "if it uses Flamethrower, switch to Chandelure 3x Calm Mind + X.Speed"
+                                    "Description": "switch to Chandelure: 3x Calm Mind + X.Speed"
                                 }
                             ]
                         }
