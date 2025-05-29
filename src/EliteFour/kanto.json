@@ -5,7 +5,7 @@
     "ImagePosition": "25% 35%",
     "GymTrainers": [
         {
-            "Name": "Lorelei",
+            "Name": "Lapras",
             "Image": "/images/lorelei.png",
             "ImagePosition": "25% 30%",
             "IsVisible": false,
@@ -87,7 +87,7 @@
                                     ]
                                 },
                                 {
-                                    "Description": "if opponent switches to Golduck, switch to Poliwrath then switch into second Metagross. Use Trick as Lapras comes out to lock in Drill Run. Switch to Excadrill: 2x Swords Dance + X.Speed"
+                                    "Description": "if opponent switches to Golduck, switch to Poliwrath then use Belly Drum + X.Speed and sweep."
                                 },
                                 {
                                     "Description": "if opponent switches into Hariyama, switch to Chandelure 4x Calm Mind + X.Speed"
@@ -1651,7 +1651,12 @@
                                     "Description": "if opponent uses Earthquake",
                                     "Steps": [
                                         {
-                                            "Description": "and you get a Leftovers, switch to Excadrill Stealth Rock then 3x Swords Dance + X.Speed"
+                                            "Description": "and you get a Leftovers, switch to Excadrill 3x Swords Dance then Stealth Rock + X.Speed",
+                                    "Steps": [
+                                        {
+                                        "Description": "if opponent switched to Mandibuzz switch to Blissey. Use Trick as it switches to Lucario. Swap to Chandelure 5x Calm Mind + X.Speed (If Gengar sent before Houndoom use Flamethrower)"
+                                        }
+                                    ]
                                         },
                                         {
                                             "Description": "and you get a Rocky Helmet, switch to Excadrill Stealth Rock then 2x Swords Dance + X.Speed"

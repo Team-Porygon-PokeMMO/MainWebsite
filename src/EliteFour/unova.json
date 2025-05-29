@@ -492,7 +492,7 @@
                                     "Description": "if it stays, switch to Chandelure 4x Calm Mind + X.Speed"
                                 },
                                 {
-                                    "Description": "if it switches into anything else, switch to Metagross and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed (Experimental)"
+                                    "Description": "if it switches into anything else, Switch back to Metagross then switch into Blissey. Switch into Chandelure, 4x Calm Mind + X.Speed. When Bisharp is sent out, switch to Poliwrath and kill it"
                                 }
                             ]
                         }
@@ -1438,13 +1438,13 @@
                                     "Description": "if it uses Meteor Smash, switch into Poliwrath: X.Speed + Belly Drum"
                                 },
                                 {
-                                    "Description": "if it switches into Altaria, use Stealth Rock, then switch to Chandelure 3x Calm Mind + X.Speed",
+                                    "Description": "if it switches into Altaria",
                                     "Steps": [
                                         {
-                                            "Description": "if it switches into Entei, switch to the second Metagross and use Trick. Switch back into Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "and you get Choice Specs, use Stealth Rock, then switch to Chandelure 3x Calm Mind + X.Speed"
                                         },
                                         {
-                                            "Description": "if it switches into Umbreon, switch to Blissey then use Trick. Use Stealth Rock then switch to the second Metagross and use Trick. Switch back into Chandelure 3x Calm Mind + X.Speed"
+                                            "Description": "and you get a Leftovers, switch to Chandelure baiting Flamethrower. Switch to second Metagross and use Trick. Switch to Chandelure 4x Calm Mind + X.Speed"
                                         }
                                     ]
                                 },
@@ -2256,20 +2256,7 @@
                             "Description": "Use Trick, then switch to Excadrill Stealth Rock. Switch to Poliwrath, then switch to the second Metagross and use Trick;",
                             "Steps": [
                                 {
-                                    "Description": "if it uses Waterfall, switch to Poliwrath: Belly Drum + X.Speed",
-                                    "Steps": [
-                                        {
-                                            "Description": "if it switches into Conkeldurr, use Drain Punch;",
-                                            "Steps": [
-                                                {
-                                                    "Description": "if Luxray is sent out, switch to Excadrill: 2x Swords Dance + X.Speed"
-                                                },
-                                                {
-                                                    "Description": "if Sawk is sent out, use X.Speed"
-                                                }
-                                            ]
-                                        }
-                                    ]
+                                    "Description": "if it uses Waterfall, switch to Poliwrath. Switch to Blissey and Trick. Switch to Chandelure 3x Calm Mind + X.Speed"
                                 },
                                 {
                                     "Description": "if it uses Fire Blast or it switches out into Conkeldurr, switch to Chandelure 3x Calm Mind + X.Speed"
