@@ -439,7 +439,12 @@
                     "Name": "Mismagius",
                     "Steps": [
                         {
-                            "Description": "Switch to Blissey, then use Stealth Rock. Switch to Chandelure 4x Calm Mind + X.Speed When Bisharp comes out, switch to Poliwrath and use Drain Punch."
+                            "Description": "Switch to Blissey, then use Stealth Rock. Switch to Chandelure 4x Calm Mind + X.Speed When Bisharp comes out, switch to Poliwrath and use Drain Punch.",
+                            "Steps": [
+                                {
+                                    "Description": "if it switches into Dragonite, switch back to Metagross. Then switch to Blissey as it switches back to Toxicroak. Then Switch to Chandelure 3x Calm Mind + X.Speed"
+                                }
+                            ]
                         }
                     ]
                 },
@@ -493,6 +498,9 @@
                                 },
                                 {
                                     "Description": "if it switches into anything else, Switch back to Metagross then switch into Blissey. Switch into Chandelure, 4x Calm Mind + X.Speed. When Bisharp is sent out, switch to Poliwrath and kill it"
+                                },
+                                 {
+                                    "Description": "Beware: When Bisharp is sent out - switch to Poliwrath to Drain Punch. Then, switch into Blissey if needed (Mid solve). Then Trick. Then switch to Chandelure 3x Calm Mind + X.Speed"
                                 }
                             ]
                         }
@@ -2317,7 +2325,7 @@
                     "Name": "Medicham",
                     "Steps": [
                         {
-                            "Description": "Switch to Chandelure then use Flamethrower to kill. Switch to Metagross and use Trick, then switch back into Chandelure 2x Calm Mind + X.Speed"
+                            "Description": "Switch to Chandelure then use Flamethrower to kill. Switch to Metagross and use Trick, then switch back into Chandelure 2x Calm Mind"
                         }
                     ]
                 },
@@ -2651,7 +2659,7 @@
                     "Name": "Druddigon",
                     "Steps": [
                         {
-                            "Description": "Use Trick, then switch to Chandelure 4x Calm Mind + X.Speed",
+                            "Description": "Use Trick, then switch to Excadrill: 2x Swords Dance + X.Speed",
                             "Steps": [
                                 {
                                     "Description": "if it switches into Vaporeon, switch to Poliwrath: Belly Drum + X.Speed",
