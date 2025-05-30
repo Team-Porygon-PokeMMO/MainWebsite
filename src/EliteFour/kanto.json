@@ -5,7 +5,7 @@
     "ImagePosition": "25% 35%",
     "GymTrainers": [
         {
-            "Name": "Lapras",
+            "Name": "Lorelei",
             "Image": "/images/lorelei.png",
             "ImagePosition": "25% 30%",
             "IsVisible": false,
